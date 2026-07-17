@@ -1,0 +1,571 @@
+/* ───────────────────────────────────────────────────────────────────────
+   Global stylesheet
+   Priority 5.1 note: this file replaces the GLOBAL_CSS template string
+   that used to be re-injected via a fresh <style> tag on every single
+   page mount (Landing → Loading → Results each remounted an identical
+   <style> block). Importing it once here means the browser parses this
+   CSS exactly once for the whole session instead of on every navigation
+   — a real, measurable rendering-performance win with zero visual change.
+   Every rule below the "ORIGINAL RULES" marker is byte-for-byte the same
+   as the original GLOBAL_CSS. Everything below "PRIORITY 5.1 ADDITIONS"
+   is new: responsive, accessibility, and readability improvements that
+   preserve the existing colors, branding, and animation vocabulary.
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* Fonts (Cinzel/Inter) are loaded via a direct <link> in index.html rather
+   than an @import here — see the Priority 5.1 note there. An @import
+   inside this file wouldn't even start downloading the font CSS until
+   this whole stylesheet was fetched and parsed first. */
+
+/* ── V3.0 PHASE 1: DESIGN SYSTEM & THEME ENGINE ───────────────────────
+   `tokens.css` is a same-project, build-time-bundled import (Vite inlines
+   it — unlike the font note above, there's no extra network round trip),
+   so it's imported here rather than as a second <link> in index.html. It
+   defines every `--nv-*` custom property (color, typography, spacing,
+   radius, shadow, motion, glass) consumed throughout this file and by the
+   shared components in src/components/common/. See tokens.css and
+   styles/themes.js for the full design-system reference. */
+@import "./tokens.css";
+
+/* ── ORIGINAL RULES (unchanged) ─────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+@keyframes twinkle { 0%{opacity:0.15} 100%{opacity:0.85} }
+@keyframes floatUp { 0%{transform:translateY(0)} 100%{transform:translateY(-10px)} }
+@keyframes glow { 0%,100%{filter:drop-shadow(0 0 8px #9040ff)} 50%{filter:drop-shadow(0 0 20px #ffd700)} }
+@keyframes fadeIn { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+@keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.04)} }
+@keyframes fadeInOut { 0%,100%{opacity:0.4} 50%{opacity:1} }
+@keyframes shimmer { 0%{background-position:200% center} 100%{background-position:-200% center} }
+@keyframes spin { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
+@keyframes slideIn { from{opacity:0;transform:translateX(-10px)} to{opacity:1;transform:translateX(0)} }
+@keyframes orbitSpin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+@keyframes orbitCounterSpin { from{transform:rotate(0deg)} to{transform:rotate(-360deg)} }
+/* Subtle "living cosmos" ambient drift for the background wash — a slow,
+   gentle pan across the gradient (not a hard color change), same in both
+   themes since it's driven by backgroundSize/position, not color. Kept
+   slow (24s) and low-amplitude so it reads as atmosphere, not distraction;
+   prefers-reduced-motion (below) shortens it to effectively nothing. */
+@keyframes bgDrift { 0%{background-position:0% 30%} 50%{background-position:100% 70%} 100%{background-position:0% 30%} }
+/* Gentle glow pulse for "AI Insight" badges — reinforces those specific
+   moments as the premium/AI-powered highlight of a card, using the
+   restored (theme-aware) glow tokens rather than a hardcoded color, so
+   it's visible-but-soft on both themes. */
+@keyframes aiGlowPulse {
+  0%, 100% { box-shadow: 0 0 0 rgba(255,215,0,0); }
+  50% { box-shadow: var(--nv-shadow-glow-gold, 0 0 14px rgba(255,215,0,0.35)); }
+}
+
+input:focus { border-color: var(--nv-input-focus-border, rgba(191,127,255,0.7)) !important; box-shadow: 0 0 0 3px var(--nv-input-focus-ring, rgba(123,47,255,0.15)) !important; outline: none; }
+input::placeholder { color: var(--nv-input-placeholder, rgba(200,160,255,0.35)); }
+input[type=date]::-webkit-calendar-picker-indicator,
+input[type=time]::-webkit-calendar-picker-indicator { filter: invert(0.6) sepia(1) hue-rotate(230deg); cursor: pointer; }
+[data-theme="light"] input[type=date]::-webkit-calendar-picker-indicator,
+[data-theme="light"] input[type=time]::-webkit-calendar-picker-indicator { filter: invert(0.25) sepia(1) hue-rotate(230deg) saturate(3); }
+.submit-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 40px rgba(123,47,255,0.55) !important; }
+.submit-btn:active { transform: scale(0.98); }
+.tab-btn:hover { background: var(--nv-accent-wash, rgba(191,127,255,0.12)) !important; color: var(--nv-text-primary, #e8d5ff) !important; }
+.glass-card:hover { border-color: var(--nv-surface-border-hover, rgba(191,127,255,0.4)) !important; transform: translateY(-3px) scale(1.006); box-shadow: var(--nv-shadow-lg, 0 10px 40px rgba(123,47,255,0.28)), inset 0 1px 0 var(--nv-surface-inset-highlight, rgba(255,255,255,0.07)); }
+.glass-card { transition: border-color var(--nv-duration-base, 0.22s) var(--nv-ease-standard, ease), transform var(--nv-duration-base, 0.22s) var(--nv-ease-standard, ease), box-shadow var(--nv-duration-base, 0.22s) var(--nv-ease-standard, ease), background var(--nv-duration-base, 0.22s) var(--nv-ease-standard, ease); }
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: var(--nv-scrollbar-track, rgba(20,0,40,0.4)); }
+::-webkit-scrollbar-thumb { background: var(--nv-scrollbar-thumb, rgba(123,47,255,0.4)); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--nv-surface-border-hover, rgba(200,142,255,0.46)); }
+* { scrollbar-width: thin; scrollbar-color: var(--nv-scrollbar-thumb, rgba(123,47,255,0.4)) var(--nv-scrollbar-track, rgba(20,0,40,0.4)); }
+
+/* Base app text color/background — Sacred Dawn needs an explicit light
+   background painted behind CosmicBg's gradient wash (CosmicBg is
+   `position:fixed`, so without this the raw white <body> background can
+   flash before it paints) and a readable default text color for any
+   element that doesn't set its own (matches --nv-text-primary per theme). */
+body {
+  background: var(--nv-bg-wash);
+  color: var(--nv-text-primary, #e8d5ff);
+  transition: color var(--nv-duration-base, 0.2s) var(--nv-ease-standard, ease);
+}
+
+/* ── PRIORITY 5.1 ADDITIONS ─────────────────────────────────────────── */
+
+/* Responsive baseline / eliminate horizontal scrolling.
+   Belt-and-braces alongside the per-component fixes (e.g. the zodiac
+   wheel SVG is now viewBox-scaled rather than fixed-pixel) — this is the
+   safety net that guarantees no stray element can ever force the page to
+   scroll sideways on any viewport from 320px up. */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* Prevents the whole page from "rubber-banding"/bouncing past its own edge
+   on trackpads while a nested scroll region (drawer, dropdown, modal body)
+   is mid-scroll — the nested region still scrolls normally, this only
+   stops that momentum from leaking into the page behind it. */
+html {
+  overscroll-behavior-y: contain;
+}
+#root {
+  width: 100%;
+  min-width: 0; /* allow flex/grid children to shrink below content size */
+  overflow-x: hidden;
+}
+
+/* Readability: consistent font smoothing across the app (Inter/Cinzel
+   render noticeably crisper on dark backgrounds with this enabled). */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Any image/SVG that doesn't already manage its own responsive sizing
+   never overflows its container. */
+img, svg {
+  max-width: 100%;
+}
+
+/* Accessibility: a visible, on-brand focus ring for keyboard users on
+   every interactive element, without adding any visual noise for mouse
+   users (":focus-visible" only activates for keyboard/assistive-tech
+   focus, not for mouse clicks) or changing the existing input:focus
+   treatment above. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--nv-input-focus-border, rgba(191,127,255,0.85));
+  outline-offset: 3px;
+  border-radius: 4px;
+  transition: outline-offset 0.2s var(--nv-ease-standard, ease), outline-color 0.2s var(--nv-ease-standard, ease);
+}
+
+/* Accessibility: respect the OS-level "reduce motion" preference. Every
+   decorative animation in this app (twinkle, float, glow, orbit, pulse,
+   etc.) is purely cosmetic, so disabling/shortening it changes nothing
+   functionally for people who've asked their system to minimize motion. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Mobile spacing: every GlassCard in the app uses generous desktop
+   padding (20–40px) passed via inline style. Rather than special-case
+   every call site, tighten the shared .glass-card padding on narrow
+   viewports so content has more breathing room relative to the screen —
+   a pure spacing/density improvement, no layout or color changes. */
+@media (max-width: 480px) {
+  .glass-card {
+    padding: 18px !important;
+  }
+}
+@media (max-width: 360px) {
+  .glass-card {
+    padding: 14px !important;
+  }
+}
+
+/* Tab strip: a soft edge fade hints that there's more to scroll
+   horizontally, so the intentionally-scrollable pill navigation (by
+   design, since a 9-tab strip cannot all fit on a narrow phone) doesn't
+   look like it dead-ends. Purely decorative — no functional change. */
+.tab-scroll-region {
+  -webkit-mask-image: linear-gradient(to right, transparent 0, black 12px, black calc(100% - 12px), transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, black 12px, black calc(100% - 12px), transparent 100%);
+}
+
+/* ── PHASE 1 ADDITIONS (Loading & Feedback / Motion & Interactions) ──── */
+
+/* Small pill-shaped action buttons (Dashboard's View/PDF/Delete/Log Out
+   buttons) previously had no hover/active feedback at all beyond the
+   browser default cursor — everything else in the app (`.submit-btn`,
+   `.tab-btn`, `.glass-card`) already has a hover treatment, so this brings
+   pill buttons in line with that existing vocabulary rather than
+   inventing a new one. */
+.pill-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: var(--nv-shadow-sm, 0 4px 14px rgba(123,47,255,0.3)); }
+.pill-btn:active:not(:disabled) { transform: scale(0.97); }
+.pill-btn:disabled { cursor: default; opacity: 0.55; }
+.pill-btn { transition: transform var(--nv-duration-base, 0.22s) var(--nv-ease-standard, ease), box-shadow var(--nv-duration-base, 0.22s) var(--nv-ease-standard, ease), opacity var(--nv-duration-base, 0.22s) var(--nv-ease-standard, ease); }
+
+/* Dropdown menu items (AccountMenu's Dashboard/Logout entries) previously
+   had no hover feedback — the only signal they were clickable was the
+   cursor. */
+.menu-item { transition: background-color var(--nv-duration-fast, 0.15s) var(--nv-ease-standard, ease); }
+.menu-item:hover { background-color: var(--nv-accent-wash, rgba(180,120,255,0.12)) !important; }
+
+/* AccountMenu's dropdown panel previously appeared with no transition at
+   all (an abrupt display toggle). This reuses the existing `fadeIn`
+   keyframe (see ORIGINAL RULES above) already used everywhere else for
+   entrance motion, applied to a new, narrowly-scoped class name. */
+.dropdown-panel { animation: fadeIn 0.18s ease both; transform-origin: top right; }
+
+/* ── PREMIUM SAAS POLISH PASS ─────────────────────────────────────────
+   Presentation-only additions layered on top of the existing Phase 2
+   interactive birth chart (ZodiacWheel hover/click, KundliTab detail
+   panel, tab bar). Nothing here touches astrology calculations, data
+   shape, or component contracts — only how those existing interactions
+   look and feel: tooltip motion, house/planet highlight breathing,
+   touch-friendly tap targets, a sliding tab indicator, and consistent
+   micro-interaction feedback across every card/button in the app. */
+
+/* Touch devices: kill the default blue/gray tap-flash rectangle and make
+   sure every custom interactive element responds immediately to a tap. */
+button, [role="button"], .tab-btn, .pill-btn, [role="tab"] {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Animated tooltip pop — used by ZodiacWheel's planet/house tooltip.
+   A quick scale+fade with a slight overshoot reads as "premium" rather
+   than a flat opacity fade. */
+@keyframes tooltipPop {
+  0%   { opacity: 0; transform: translate(-50%, -100%) scale(0.85); }
+  60%  { opacity: 1; transform: translate(-50%, -100%) scale(1.03); }
+  100% { opacity: 1; transform: translate(-50%, -100%) scale(1); }
+}
+
+/* Breathing glow for the currently active/highlighted house wedge in the
+   birth chart — makes the "this is selected" state feel alive. */
+@keyframes housePulse {
+  0%, 100% { filter: drop-shadow(0 0 0px rgba(255,215,0,0.0)); }
+  50%      { filter: drop-shadow(0 0 6px rgba(255,215,0,0.55)); }
+}
+.house-wedge-active { animation: housePulse 1.8s ease-in-out infinite; }
+
+/* Sliding pill indicator behind the active tab (TabBar). */
+.tab-indicator {
+  transition: transform 0.32s var(--nv-ease-standard, cubic-bezier(0.22,1,0.36,1)), width 0.32s var(--nv-ease-standard, cubic-bezier(0.22,1,0.36,1));
+}
+
+/* Every GlassCard already lifts slightly on hover (see ORIGINAL RULES);
+   this adds the touch/click-equivalent tactile confirmation. */
+.glass-card:active { transform: translateY(0) scale(0.994); }
+
+/* Detail-panel entrance: a touch richer than the plain fadeIn used
+   elsewhere — slight scale-up alongside the fade reads as the panel
+   "arriving" from the planet/house that was just clicked. */
+@keyframes panelIn {
+  from { opacity: 0; transform: translateY(8px) scale(0.985); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.detail-panel-in { animation: panelIn 0.32s var(--nv-ease-standard, cubic-bezier(0.22,1,0.36,1)) both; }
+
+/* One-shot confirmation ripple on the row/cell that was just selected,
+   distinct from the persistent hover/active highlight. */
+@keyframes selectPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(255,215,0,0.4); }
+  100% { box-shadow: 0 0 0 8px rgba(255,215,0,0); }
+}
+.select-pulse { animation: selectPulse 0.5s ease-out; }
+
+/* Generic tap/press feedback for rows, cells, and buttons throughout the
+   astrology tabs (planetary-position rows, house-overview cells, tab
+   pills, etc.) — a quick scale-down on press so touch interactions feel
+   as responsive/tactile as a native app, not just a color change. */
+.tap-scale { transition: background var(--nv-duration-base, 0.2s) var(--nv-ease-standard, ease), border-color var(--nv-duration-base, 0.2s) var(--nv-ease-standard, ease), transform var(--nv-duration-fast, 0.15s) var(--nv-ease-standard, ease), box-shadow var(--nv-duration-base, 0.2s) var(--nv-ease-standard, ease); }
+/* !important: several call sites also set `transform` inline (translateX
+   hover nudge, etc.); the press-down feedback should still win in the
+   brief moment a finger/cursor is actually down. */
+.tap-scale:active { transform: scale(0.97) !important; }
+
+/* ── PHASE 3 ADDITIONS (Premium AI Report Presentation) ───────────────
+   Presentation-only additions for the new `KeyHighlights` overview panel
+   and the richer `AiText` component. Nothing here touches the astrology
+   engine, rule engine, Gemini integration, or any report data shape —
+   only how the existing AI-generated text looks, loads, and reveals. */
+
+/* Key-highlight summary chips (Overview tab): a gentle lift + glow on
+   hover, matching the existing `.glass-card`/`.pill-btn` hover vocabulary,
+   so it's clear each card is tappable and jumps to its full tab. */
+.highlight-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(123,47,255,0.22);
+  border-color: rgba(191,127,255,0.5) !important;
+}
+
+/* ── PHASE 4 ADDITIONS (Dashboard & Report Management) ─────────────────
+   Presentation-only additions for the redesigned Dashboard: the new
+   report cards, the search/filter bar, the delete confirmation dialog,
+   and the report preview drawer. Nothing here touches reportsApi.js, the
+   backend routes it calls, or any data shape — purely how the existing
+   report list looks, filters, and confirms/previews actions. */
+
+/* Confirmation dialog: a soft scale+fade "pop" entrance, consistent with
+   the existing `panelIn`/`tooltipPop` premium-motion vocabulary above. */
+@keyframes dialogPop {
+  from { opacity: 0; transform: scale(0.94) translateY(6px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+.confirm-dialog-pop { animation: dialogPop 0.22s var(--nv-ease-standard, cubic-bezier(0.22,1,0.36,1)) both; }
+
+/* Report preview drawer: slides in from the right edge of the viewport. */
+@keyframes drawerSlideIn {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.report-preview-drawer { animation: drawerSlideIn 0.28s var(--nv-ease-standard, cubic-bezier(0.22,1,0.36,1)) both; }
+
+/* Report card action buttons show an icon + text label at comfortable
+   widths; below 420px (a single report card's own width on a narrow
+   phone, not the whole viewport) the label collapses to icon-only so four
+   actions (Preview/View/PDF/Delete) never wrap or overflow a row. */
+@media (max-width: 420px) {
+  .report-card-action-label { display: none; }
+}
+
+/* Report grid cards get the same lift as every other .glass-card on
+   hover (inherited) plus a slightly stronger glow, reinforcing that the
+   whole card — not just its buttons — is a coherent unit. */
+.report-card-grid:hover {
+  box-shadow: 0 10px 40px rgba(123,47,255,0.28), inset 0 1px 0 var(--nv-surface-inset-highlight, rgba(255,255,255,0.05)) !important;
+}
+
+/* Phase 4 polish: Saved Reports delete animation. A deleted card fades +
+   slides out in place (duration matches `EXIT_ANIMATION_MS` in
+   DashboardPage.jsx, which removes it from the list only once this has
+   finished); the remaining cards then reflow smoothly via the FLIP
+   transform DashboardPage applies inline, rather than snapping into
+   their new position — together these remove the layout jump a plain
+   delete would otherwise cause. `prefers-reduced-motion` is already
+   handled globally above. */
+@keyframes reportCardExit {
+  from { opacity: 1; transform: translateX(0) scale(1); }
+  to   { opacity: 0; transform: translateX(-18px) scale(0.96); }
+}
+.report-card-exit {
+  animation: reportCardExit 280ms ease both;
+  pointer-events: none;
+}
+
+/* ── FINAL V1.0 UI POLISH PATCH ────────────────────────────────────────
+   Last presentation-only pass before Performance & Production
+   Optimization: closes a handful of small gaps left in the hover/press/
+   focus/disabled vocabulary built up across every phase above. Nothing
+   here changes layout, routes, data, or any existing visual default —
+   only what was missing (a disabled button still looked "live" on hover,
+   an icon-only button had no press feedback, a native <select> had no
+   focus/hover treatment matching every other field in the app). */
+
+/* `.submit-btn`'s hover/active lift (ORIGINAL RULES, above) doesn't check
+   `:disabled` — so a submit button mid-request (Login/Signup/Forgot
+   Password, all `disabled={busy}`) still lifted and glowed if the pointer
+   happened to be resting on it. These are higher-specificity than the
+   plain `:hover`/`:active` rules above (an extra pseudo-class each) and
+   both come later in the cascade, so they correctly win only while
+   disabled — the normal enabled hover/press feel is completely untouched. */
+.submit-btn:disabled:hover { transform: none !important; box-shadow: 0 4px 28px rgba(123,47,255,0.38) !important; }
+.submit-btn:disabled:active { transform: none !important; }
+.submit-btn:disabled { cursor: default; }
+
+/* Generic icon-only button feedback (report-preview close, toast dismiss,
+   and similar circular/plain-icon buttons) — brings them in line with the
+   hover/press/disabled vocabulary `.pill-btn` already has, without giving
+   every icon button `.pill-btn`'s pill-specific box-shadow lift. */
+.icon-btn { transition: background-color var(--nv-duration-base, 0.22s) var(--nv-ease-standard, ease), transform var(--nv-duration-base, 0.22s) var(--nv-ease-standard, ease), opacity var(--nv-duration-base, 0.22s) var(--nv-ease-standard, ease); }
+.icon-btn:hover:not(:disabled) { background-color: rgba(180,120,255,0.16); }
+.icon-btn:active:not(:disabled) { transform: scale(0.92); }
+.icon-btn:disabled { opacity: 0.45; cursor: default; }
+
+/* Native <select> elements (e.g. Dashboard's Saved Reports sort control)
+   previously fell back to the plain browser-default outline on focus and
+   had no hover treatment at all — every other field in the app (`input`,
+   `.auth-input`) already has a custom purple focus ring, so this brings
+   selects into that same, already-established visual language. */
+.select-input { transition: border-color var(--nv-duration-fast, 0.15s) var(--nv-ease-standard, ease), box-shadow var(--nv-duration-fast, 0.15s) var(--nv-ease-standard, ease); }
+.select-input:hover:not(:disabled) { border-color: rgba(191,127,255,0.5); }
+.select-input:focus-visible {
+  border-color: rgba(191,127,255,0.75) !important;
+  box-shadow: 0 0 0 3px rgba(123,47,255,0.18) !important;
+  outline: none;
+}
+.select-input:disabled { opacity: 0.5; cursor: default; }
+
+/* ── PHASE 6.2 ADDITIONS (Premium Account Menu) ────────────────────────
+   Scoped entirely to AccountMenu.jsx's own classnames — no other
+   component's markup, layout, or behavior changes. Reuses the existing
+   glass/purple/gold vocabulary and the `dialogPop`/`select-input` focus
+   patterns already established above instead of inventing new colors,
+   easings, or dependencies. */
+
+/* Trigger button: a touch more lift/glow than the generic `.pill-btn`
+   hover, so the account button reads as the one persistent, premium
+   affordance in the corner (matching the ChatGPT/Notion/GitHub account
+   button feel this phase asks for). */
+.account-trigger:hover { box-shadow: 0 6px 24px rgba(123,47,255,0.4) !important; border-color: rgba(191,127,255,0.5) !important; }
+.account-trigger:active { transform: scale(0.97); }
+.account-chevron { transition: transform var(--nv-duration-base, 0.2s) var(--nv-ease-standard, ease); }
+
+/* Dropdown entrance: fade + scale (rather than the plain fadeIn used
+   elsewhere) — same "premium pop" feel as `dialogPop` above, just
+   anchored to the top-right corner the panel actually opens from. */
+@keyframes accountDropdownIn {
+  from { opacity: 0; transform: scale(0.94) translateY(-6px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+.account-dropdown { animation: accountDropdownIn 0.16s var(--nv-ease-standard, cubic-bezier(0.22,1,0.36,1)) both; transform-origin: top right; }
+
+/* Consistent, visible keyboard-focus ring for every interactive element in
+   this component (trigger button, each menu item, Sign In/Sign Up) —
+   reuses the exact ring already defined for `.select-input:focus-visible`
+   above so focus styling stays visually consistent app-wide. */
+.account-focusable:focus-visible {
+  border-color: rgba(191,127,255,0.75);
+  box-shadow: 0 0 0 3px rgba(123,47,255,0.22);
+  outline: none;
+}
+
+/* Mobile: full-width-ish dropdown with comfortable touch targets is
+   already handled inline (`minHeight: 44`, `width: min(280px, 88vw)`) —
+   this only tightens the corner offset so the panel never touches the
+   viewport edge on very narrow screens. */
+@media (max-width: 420px) {
+  .account-dropdown { right: -6px !important; }
+}
+
+/* ── PHASE 6.4 ADDITIONS (Account Settings & Preferences) ──────────────
+   `[data-motion]` — the Settings page's "Animation Level" preference
+   sets this attribute on <html> (utils/settingsStorage.js) as an
+   explicit, in-app override of `prefers-reduced-motion`, reusing the
+   exact same near-instant-animation rule already defined above for
+   that OS-level signal.
+
+   (The `:root` / `[data-theme="light"]` color-token block that used to
+   live here has moved to styles/tokens.css and grown into the full
+   V3.0 Phase 1 design-token set — see that file. `context/
+   ThemeContext.jsx` is still the only thing that ever sets `data-theme`
+   on <html>; nothing about that mechanism changed.) */
+
+[data-motion="reduced"] *, [data-motion="reduced"] *::before, [data-motion="reduced"] *::after,
+[data-motion="none"] *, [data-motion="none"] *::before, [data-motion="none"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* SettingsPage.jsx — scoped entirely to its own classnames, same pattern
+   as the Phase 6.2 `.account-*` block above. */
+.settings-focusable:focus-visible {
+  border-color: rgba(191,127,255,0.75) !important;
+  box-shadow: 0 0 0 3px rgba(123,47,255,0.22) !important;
+  outline: none;
+}
+.settings-nav-item:hover { background: var(--nv-accent-wash, rgba(191,127,255,0.08)); color: var(--nv-text-primary, #e8d5ff); }
+
+/* Desktop: fixed-width sidebar beside the content panel. Narrow
+   viewports: the sidebar collapses into a horizontally-scrollable strip
+   above the content instead (same "scrollable tab strip" pattern
+   TabBar.jsx already uses for its 9 report tabs on mobile), so every
+   section stays reachable without cramming a two-column layout onto a
+   320px screen. */
+@media (max-width: 720px) {
+  .settings-shell { grid-template-columns: 1fr !important; }
+  .settings-nav-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .settings-nav-scroll [role="tablist"] { flex-direction: row !important; min-width: max-content; }
+}
+
+/* ── V3.0 PHASE 1 ADDITIONS (Design System & Theme Engine) ─────────────
+   Presentation-only, token-driven polish for both themes. Nothing here
+   touches layout, routes, data, or component contracts.
+
+   1. `color-scheme` tells the browser which native-UI palette
+      (scrollbars, form-control chrome, etc.) to draw, so those bits
+      match Sacred Dawn instead of always assuming dark.
+   2. Dark theme ("Midnight Cosmic") gets a touch more depth/contrast on
+      its glass surfaces and a slightly richer card-hover glow, per
+      Section 4 (Improve Dark Theme) — every value is an intensification
+      of the *existing* vocabulary already in this file, not a new one.
+   3. Sacred Dawn gets the equivalent, theme-appropriate treatment: a
+      crisp white card surface with a soft (not glowing) shadow, so it
+      reads as "premium SaaS on paper" rather than a dimmed-down dark
+      theme. */
+
+:root { color-scheme: dark; }
+[data-theme="light"] { color-scheme: light; }
+
+/* Dark theme: a subtle inner highlight + slightly stronger border make
+   glass cards read as more distinctly "glass" against the busier cosmic
+   background, and the hover glow gains a touch more presence. */
+[data-theme="dark"] .glass-card,
+:root:not([data-theme]) .glass-card {
+  box-shadow: var(--nv-shadow-md, 0 4px 30px rgba(80,0,180,0.18)), inset 0 1px 0 var(--nv-surface-inset-highlight, rgba(255,255,255,0.05));
+}
+
+/* Sacred Dawn: cards get a crisp, shallow shadow (no purple glow —
+   glow reads as "dark mode" even on a light background) and a slightly
+   firmer border so white-on-white card edges stay legible. */
+[data-theme="light"] .glass-card {
+  box-shadow: var(--nv-shadow-md), inset 0 1px 0 var(--nv-surface-inset-highlight);
+}
+[data-theme="light"] .glass-card:hover {
+  box-shadow: var(--nv-shadow-lg), inset 0 1px 0 var(--nv-surface-inset-highlight);
+}
+
+/* Button consistency: every shared button class (`.submit-btn`,
+   `.pill-btn`, `.tab-btn`, `.icon-btn`, `.navbar-cta`) already shares the
+   same hover-lift / active-press vocabulary defined above; this adds the
+   one thing Sacred Dawn needs that Midnight Cosmic didn't — solid
+   (non-transparent-background) buttons keep sufficient contrast against
+   a white page, so their border gets a touch more presence there. */
+[data-theme="light"] .pill-btn,
+[data-theme="light"] .tab-btn,
+[data-theme="light"] .submit-btn {
+  border-color: var(--nv-accent-border);
+}
+
+/* Layered hover glow for primary buttons, replacing the single flat
+   dark-purple shadow (.submit-btn:hover above) with a theme-appropriate
+   pairing of a close contact shadow + a softer ambient glow — reads as
+   "lifted" rather than just "glowing", on both themes. */
+[data-theme="light"] .submit-btn:hover {
+  box-shadow: 0 4px 12px rgba(55, 20, 100, 0.16), 0 14px 34px rgba(123, 47, 255, 0.32) !important;
+}
+[data-theme="dark"] .submit-btn:hover,
+:root:not([data-theme]) .submit-btn:hover {
+  box-shadow: 0 4px 14px rgba(10, 0, 20, 0.4), 0 14px 42px rgba(123, 47, 255, 0.5) !important;
+}
+
+/* ── FINAL POLISH PASS (premium refinement only — no new colors/tokens) ──
+   Both utilities below reuse existing --nv-* tokens verbatim; they add no
+   new palette values. Applied selectively to the true "hero" moments
+   (HomePage/LandingPage hero title + planet, HomePage section titles)
+   rather than every heading, so the effect stays a restrained accent
+   rather than a glow on every gold-colored label in the app. */
+
+/* Very soft gold glow behind a major heading's own glyphs. drop-shadow
+   (not text-shadow) so it follows the gradient-clipped letterforms
+   themselves rather than sitting behind the whole box. */
+.nv-heading-glow {
+  filter: drop-shadow(var(--nv-shadow-glow-gold, 0 0 16px rgba(255,215,0,0.35)));
+}
+
+/* Subtle ambient radial glow sitting behind the hero planet/logo glyph.
+   Purely decorative, absolutely positioned so it adds no layout space;
+   the glyph itself is unchanged (its own pulsing drop-shadow from the
+   existing `glow` keyframe is untouched). */
+.nv-hero-glow-wrap {
+  position: relative;
+  display: inline-block;
+}
+.nv-hero-glow-wrap::before {
+  content: "";
+  position: absolute;
+  inset: -46%;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--nv-accent-wash-strong, rgba(123,47,255,0.4)) 0%, var(--nv-accent-wash, rgba(123,47,255,0.15)) 45%, transparent 72%);
+  filter: blur(6px);
+  pointer-events: none;
+}
+
+/* ── V5.0 Phase 5A (Explorer Infrastructure) ─────────────────────────────
+   Same "sidebar collapses above content on narrow viewports" pattern as
+   .settings-shell above, applied to the new Explorer tab's side panel +
+   main panel grid. */
+@media (max-width: 720px) {
+  .explorer-grid { grid-template-columns: 1fr !important; }
+}
+
+

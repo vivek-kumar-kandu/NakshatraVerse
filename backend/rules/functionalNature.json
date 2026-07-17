@@ -1,0 +1,18 @@
+{
+  "_comment": "Functional benefic/malefic (Karyesha) classification rules, consumed by functionalNatureRuleEvaluator.js. Rather than hardcoding a static table of results per each of the 12 possible Lagnas, this is derived algorithmically from house lordship relative to the Lagna, reusing the existing kendra/trikona/dusthana house groups from rules/houses.json — keeping this scalable and config-driven per the Priority 3 requirement ('without hardcoding logic').",
+  "priorityRules": [
+    { "id": "lagnaLord", "result": "benefic", "priority": 1, "description": "Lord of the 1st house (Lagna) is always functionally benefic, regardless of any other house it also owns." },
+    { "id": "yogakaraka", "result": "yogakaraka", "priority": 2, "description": "Owns both a kendra house (1/4/7/10) and a trikona house (1/5/9) - the strongest functional benefic role (e.g. Mars for Cancer/Leo Lagna, Saturn for Libra/Taurus Lagna)." },
+    { "id": "trikonaOnly", "result": "benefic", "priority": 3, "description": "Owns a trikona house (5th/9th) and no dusthana house (6th/8th/12th)." },
+    { "id": "dusthanaOnly", "result": "malefic", "priority": 4, "description": "Owns only dusthana house(s) (6th/8th/12th), with no kendra/trikona lordship." },
+    { "id": "kendraOnly", "result": "neutral", "priority": 5, "description": "Owns only kendra house(s) (4th/7th/10th) with no trikona/dusthana lordship - removes the planet's natural malefic tendency (Kendradhipati Dosha context) without granting strong extra benefic strength." },
+    { "id": "mixedTrikonaDusthana", "result": "neutral", "priority": 6, "description": "Owns both a trikona and a dusthana house - mixed classical results; treated as neutral in this foundation phase rather than asserting a specific tie-break." },
+    { "id": "default", "result": "neutral", "priority": 99, "description": "Fallback when no other rule applies." }
+  ],
+  "nodesFallback": {
+    "description": "Rahu/Ketu own no sign classically, so house-lordship rules do not apply to them. Foundation approximation: derive their functional nature from their natural (Naisargika) dignity, softened to neutral when placed in a kendra/trikona house from the Lagna and kept/worsened to malefic when placed in a dusthana house.",
+    "softenedInKendraOrTrikona": "neutral",
+    "worsenedInDusthana": "malefic",
+    "otherwise": "malefic"
+  }
+}

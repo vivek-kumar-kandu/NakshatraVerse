@@ -1,0 +1,12 @@
+{
+  "_comment": "Reference data for classical planetary aspects (drishti). The original application never computed aspects — this file exists to complete the requested rules/ folder shape and to give future rule authors a ready-made, config-driven place to add aspect-based yogas/doshas WITHOUT touching engine code. It is intentionally NOT wired into the active detection pipeline yet, so introducing it here causes zero change to current behavior or API response shape (same safe-extension-point pattern already used by planetStrengthEngine.js in this codebase).",
+  "defaultAspect": {
+    "housesAhead": 7,
+    "description": "Every planet aspects the house 7 places ahead of its own (the classical 7th-house aspect)."
+  },
+  "specialAspects": {
+    "Mars": { "housesAhead": [4, 8], "description": "Mars additionally aspects the 4th and 8th houses from its position." },
+    "Jupiter": { "housesAhead": [5, 9], "description": "Jupiter additionally aspects the 5th and 9th houses from its position." },
+    "Saturn": { "housesAhead": [3, 10], "description": "Saturn additionally aspects the 3rd and 10th houses from its position." }
+  }
+}

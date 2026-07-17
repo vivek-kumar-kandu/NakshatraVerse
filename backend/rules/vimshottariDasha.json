@@ -1,0 +1,17 @@
+{
+  "_comment": "Configuration-driven Vimshottari Dasha data (Priority 3.2). The 120-year Vimshottari cycle, its fixed 9-lord sequence, and each lord's duration in years — pure reference data, consumed by dashaRuleEvaluator.js. The sequence order also matches nakshatraProfile.json's lordCycle (both start the cycle at Ashwini/Ketu), so Mahadasha-at-birth is derived by locating the birth Nakshatra's lord in this same sequence.",
+  "totalYears": 120,
+  "sequence": ["Ketu", "Venus", "Sun", "Moon", "Mars", "Rahu", "Jupiter", "Saturn", "Mercury"],
+  "durations": {
+    "Ketu": 7,
+    "Venus": 20,
+    "Sun": 6,
+    "Moon": 10,
+    "Mars": 7,
+    "Rahu": 18,
+    "Jupiter": 16,
+    "Saturn": 19,
+    "Mercury": 17
+  },
+  "daysPerYear": 365.25
+}

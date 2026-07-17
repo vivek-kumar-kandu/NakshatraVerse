@@ -1,0 +1,13 @@
+{
+  "_comment": "Named house groupings referenced by yogas.json / doshas.json rule conditions (via \"houseGroup\"), instead of inlining raw house-number arrays in code.",
+  "totalHouses": 12,
+  "houseGroups": {
+    "kendra": [1, 4, 7, 10],
+    "trikona": [1, 5, 9],
+    "dusthana": [6, 8, 12],
+    "upachaya": [3, 6, 10, 11],
+    "manglikHouses": [1, 2, 4, 7, 8, 12],
+    "kendraTrikona": [1, 4, 5, 7, 9, 10],
+    "dusthanaOthers": [6, 8, 12]
+  }
+}

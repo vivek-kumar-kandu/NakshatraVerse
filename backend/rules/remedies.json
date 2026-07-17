@@ -1,0 +1,36 @@
+{
+  "_comment": "Configuration-driven remedy content. Text/order preserved exactly from the original hardcoded remedyEngine.js to guarantee backward compatibility.",
+  "planetRemedyInfo": {
+    "Sun": { "gemstone": "Ruby", "mantra": "Om Suryaya Namah", "day": "Sunday", "deity": "Surya" },
+    "Moon": { "gemstone": "Pearl", "mantra": "Om Chandraya Namah", "day": "Monday", "deity": "Chandra" },
+    "Mars": { "gemstone": "Red Coral", "mantra": "Om Angarakaya Namah", "day": "Tuesday", "deity": "Hanuman" },
+    "Mercury": { "gemstone": "Emerald", "mantra": "Om Budhaya Namah", "day": "Wednesday", "deity": "Vishnu" },
+    "Jupiter": { "gemstone": "Yellow Sapphire", "mantra": "Om Gurave Namah", "day": "Thursday", "deity": "Brihaspati" },
+    "Venus": { "gemstone": "Diamond / White Sapphire", "mantra": "Om Shukraya Namah", "day": "Friday", "deity": "Lakshmi" },
+    "Saturn": { "gemstone": "Blue Sapphire", "mantra": "Om Shanaischaraya Namah", "day": "Saturday", "deity": "Shani" }
+  },
+  "lagnaLordRemedies": [
+    {
+      "type": "General (Lagna Lord)",
+      "template": "As the Lagna lord is {lord}, wearing a {gemstone} (after professional consultation) and chanting \"{mantra}\" is traditionally suggested."
+    },
+    {
+      "type": "Fasting",
+      "template": "Observing a fast on {day}, the day associated with {deity}, is a traditional practice linked to the Lagna lord."
+    }
+  ],
+  "doshaRemedies": {
+    "Mangal Dosha": {
+      "type": "Mangal Dosha Remedy",
+      "detail": "Reciting the Hanuman Chalisa and worshipping Hanuman on Tuesdays is a traditional remedy associated with Mangal Dosha."
+    },
+    "Kaal Sarp Dosha": {
+      "type": "Kaal Sarp Dosha Remedy",
+      "detail": "Performing a Rahu-Ketu shanti puja or Nag Panchami rituals is a traditional remedy associated with Kaal Sarp Dosha."
+    }
+  },
+  "generalRemedy": {
+    "type": "Charity",
+    "detail": "Traditional texts also suggest charitable acts — donating food, clothing, or helping the needy — as a general remedy supportive of planetary harmony."
+  }
+}

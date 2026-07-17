@@ -1,0 +1,9 @@
+{
+  "_comment": "Priority 3.2 Divisional Chart (Varga) FOUNDATION registry. Each entry is pure configuration — { key, name, divisions, significance } — consumed generically by divisionalChartEngine.js's computeDivisionalChart()/computeAllDivisionalCharts(). Adding a brand-new Varga (e.g. D2 Hora, D3 Drekkana, D24 Siddhamsa) requires ONLY a new entry here; no code in divisionalChartEngine.js needs to change (Open/Closed Principle). Sign-mapping here is a documented foundation-phase approximation (see divisionalChartEngine.js), consistent with this backend's existing non-ephemeris approach — not a substitute for a full parashari varga engine.",
+  "vargas": {
+    "D9": { "name": "Navamsa", "divisions": 9, "significance": "Marriage, spouse, and overall dharma/fortune refinement of the birth chart." },
+    "D10": { "name": "Dashamsa", "divisions": 10, "significance": "Career, profession, and public standing." },
+    "D7": { "name": "Saptamsa", "divisions": 7, "significance": "Children, progeny, and creative legacy." },
+    "D12": { "name": "Dwadashamsa", "divisions": 12, "significance": "Parents, ancestry, and family lineage." }
+  }
+}

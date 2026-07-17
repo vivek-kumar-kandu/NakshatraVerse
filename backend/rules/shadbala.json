@@ -1,0 +1,16 @@
+{
+  "_comment": "Foundation-only Shadbala configuration, consumed by shadbalaRuleEvaluator.js. Full classical Shadbala = Sthana Bala + Dig Bala + Kaala Bala + Chesta Bala + Naisargika Bala + Drik Bala. This phase implements Sthana Bala (from sign dignity + planetary friendship), Dig Bala, Naisargika Bala, and a simplified Chesta Bala proxy driven by retrograde status. Kaala Bala (time-of-day / lunar-month / hemisphere strength) and Drik Bala (aspectual strength from other planets) require finer-grained ephemeris and aspect data than this engine currently models and are intentionally left out of this foundation phase — see CHANGELOG recommendations for the next phase.",
+  "sthanaBalaByDignity": {
+    "exalted": 60,
+    "ownSign": 45,
+    "friendSign": 30,
+    "neutral": 15,
+    "enemySign": 7.5,
+    "debilitated": 0
+  },
+  "chestaBalaVirupas": { "retrograde": 60, "direct": 30 },
+  "chestaBalaExempt": ["Sun", "Moon"],
+  "chestaBalaExemptValue": 30,
+  "components": ["sthanaBala", "digBala", "naisargikaBala", "chestaBala"],
+  "omittedComponents": ["kaalaBala", "drikBala"]
+}

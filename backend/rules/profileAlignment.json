@@ -1,0 +1,95 @@
+{
+  "_comment": "V2.0 Phase 7.2B (Nakshatra Profile Intelligence) — config-driven data consumed by services/rules/profileAlignmentRuleEvaluator.js. Two things live here: (1) lordExtendedTraits — Emotional Pattern / Learning Style / Leadership Style / Health Tendencies per classical Nakshatra-lord (Ketu/Venus/Sun/Moon/Mars/Rahu/Jupiter/Saturn/Mercury — the same 9-lord cycle already present in rules/nakshatraProfile.json's lordCycle). This is a SEPARATE lookup table, not an edit to rules/nakshatraProfile.json — the Nakshatra Profile schema itself is untouched, per Phase 7.2B constraints. (2) categoryTraitMap / ganaFavorableCategories / numerologyPlanetRulers / weights — deterministic, already-classical associations used only to score alignment between the existing Nakshatra Profile and the existing prediction categories; no new astrology calculation, just config-driven lookup exactly like every other rules/*.json file in this backend.",
+  "categoryTraitMap": {
+    "career": ["careerTendencies", "leadershipStyle"],
+    "finance": ["careerTendencies", "leadershipStyle"],
+    "marriage": ["relationshipTendencies", "emotionalPattern"],
+    "education": ["personalityTraits", "learningStyle"],
+    "health": ["healthTendencies", "personalityTraits"],
+    "family": ["relationshipTendencies", "emotionalPattern"],
+    "spiritualGrowth": ["spiritualTendencies", "personalityTraits"],
+    "general": ["personalityTraits", "careerTendencies", "relationshipTendencies", "spiritualTendencies", "emotionalPattern", "learningStyle", "leadershipStyle", "healthTendencies"]
+  },
+  "ganaFavorableCategories": {
+    "Deva": ["spiritualGrowth", "education", "general"],
+    "Manushya": ["career", "finance", "marriage", "family", "general"],
+    "Rakshasa": ["career", "finance", "health", "general"]
+  },
+  "numerologyPlanetRulers": {
+    "1": "Sun", "2": "Moon", "3": "Jupiter", "4": "Rahu", "5": "Mercury",
+    "6": "Venus", "7": "Ketu", "8": "Saturn", "9": "Mars"
+  },
+  "lordExtendedTraits": {
+    "Sun": {
+      "emotionalPattern": "traditionally steady and self-directed, with emotions expressed through confidence and a need for recognition",
+      "learningStyle": "traditionally learns best through leadership, independent effort, and hands-on authority over a subject",
+      "leadershipStyle": "traditionally a natural, authority-driven leader who prefers to set direction rather than follow it",
+      "healthTendencies": "traditionally associated with vitality and the heart/eyes; classical caution around overexertion and stress-driven strain"
+    },
+    "Moon": {
+      "emotionalPattern": "traditionally sensitive and receptive, with emotions that shift with mood and circumstance",
+      "learningStyle": "traditionally learns best through intuition, emotional connection, and reflective, unhurried absorption",
+      "leadershipStyle": "traditionally a nurturing, consensus-seeking leader who leads through empathy rather than command",
+      "healthTendencies": "traditionally associated with mind and fluid balance; classical caution around emotional stress affecting digestion/sleep"
+    },
+    "Mars": {
+      "emotionalPattern": "traditionally intense and quick to react, with emotions channeled into action rather than words",
+      "learningStyle": "traditionally learns best through direct action, competition, and practical trial-and-error",
+      "leadershipStyle": "traditionally a bold, decisive leader who leads from the front, sometimes impulsively",
+      "healthTendencies": "traditionally associated with blood, muscle, and injury-proneness; classical caution around accidents and inflammation"
+    },
+    "Mercury": {
+      "emotionalPattern": "traditionally adaptable and analytical, processing emotions through thought and conversation",
+      "learningStyle": "traditionally learns best through reading, discussion, and quick-moving intellectual variety",
+      "leadershipStyle": "traditionally a communicative, strategic leader who leads through persuasion and information",
+      "healthTendencies": "traditionally associated with the nervous system and skin; classical caution around overthinking and restlessness"
+    },
+    "Jupiter": {
+      "emotionalPattern": "traditionally optimistic and generous, with emotions expressed through faith and reassurance",
+      "learningStyle": "traditionally learns best through mentorship, broad conceptual study, and philosophical reflection",
+      "leadershipStyle": "traditionally a wise, principled leader who leads by guidance and moral example",
+      "healthTendencies": "traditionally associated with liver and weight balance; classical caution around excess and overindulgence"
+    },
+    "Venus": {
+      "emotionalPattern": "traditionally warm and harmony-seeking, with emotions expressed through affection and aesthetics",
+      "learningStyle": "traditionally learns best through beauty, art, and collaborative, pleasant environments",
+      "leadershipStyle": "traditionally a diplomatic, relationship-first leader who leads by charm and fairness",
+      "healthTendencies": "traditionally associated with reproductive health and the kidneys; classical caution around indulgence-related imbalance"
+    },
+    "Saturn": {
+      "emotionalPattern": "traditionally reserved and disciplined, with emotions processed slowly and privately",
+      "learningStyle": "traditionally learns best through repetition, structure, and patient, long-term mastery",
+      "leadershipStyle": "traditionally a disciplined, methodical leader who leads through structure and endurance",
+      "healthTendencies": "traditionally associated with bones/joints and chronic conditions; classical caution around slow-onset, long-term ailments"
+    },
+    "Rahu": {
+      "emotionalPattern": "traditionally restless and ambitious, with emotions expressed through drive for the unconventional",
+      "learningStyle": "traditionally learns best through unconventional methods, self-teaching, and foreign or novel subjects",
+      "leadershipStyle": "traditionally an unconventional, ambitious leader who leads by disruption and reinvention",
+      "healthTendencies": "traditionally associated with the nervous system and unexplained ailments; classical caution around anxiety and sudden imbalances"
+    },
+    "Ketu": {
+      "emotionalPattern": "traditionally detached and introspective, with emotions turned inward toward reflection",
+      "learningStyle": "traditionally learns best through introspection, spiritual study, and independent, solitary focus",
+      "leadershipStyle": "traditionally a quiet, behind-the-scenes leader who leads by example rather than by directing others",
+      "healthTendencies": "traditionally associated with subtle/nervous ailments; classical caution around conditions with unclear or hidden causes"
+    }
+  },
+  "alignmentWeights": {
+    "baseScore": 25,
+    "lordMatchesDashaOrDominant": 30,
+    "ganaFavorsCategory": 20,
+    "numerologyMatchesLord": 15,
+    "transitClean": 10
+  },
+  "scoreClamp": { "min": 0, "max": 100 },
+  "confidenceWeights": {
+    "houseAgreementBonus": 5,
+    "numerologyAgreementBonus": 4,
+    "dashaResonanceBonus": 5,
+    "profileAlignmentPerPoint": 0.15,
+    "transitConflictEach": 4,
+    "maxTransitConflictPenalty": 8,
+    "transitCleanBonus": 3
+  }
+}

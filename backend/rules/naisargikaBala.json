@@ -1,0 +1,13 @@
+{
+  "_comment": "Naisargika (Sthira) Bala - fixed natural/inherent strength ranking among the seven classical grahas, consumed by shadbalaRuleEvaluator.js. Classical virupa values (BPHS), ranked Sun > Moon > Venus > Jupiter > Mercury > Mars > Saturn.",
+  "virupas": {
+    "Sun": 60,
+    "Moon": 51.43,
+    "Venus": 42.86,
+    "Jupiter": 34.29,
+    "Mercury": 25.71,
+    "Mars": 17.14,
+    "Saturn": 8.57
+  },
+  "note": "Rahu/Ketu are not part of the classical seven-graha Naisargika Bala system; they are treated as contributing 0 virupas to this component in the foundation Shadbala total."
+}

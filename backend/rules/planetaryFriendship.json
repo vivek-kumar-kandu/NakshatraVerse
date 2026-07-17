@@ -1,0 +1,12 @@
+{
+  "_comment": "Naisargika Maitri (natural/permanent planetary friendship) table, consumed by friendshipRuleEvaluator.js. Classical BPHS relationships among the seven grahas. Rahu/Ketu friendships are not part of the classical seven-graha table and are given per the commonly used modern convention (varies by tradition) so the evaluator can still classify them.",
+  "Sun": { "friends": ["Moon", "Mars", "Jupiter"], "neutral": ["Mercury"], "enemies": ["Venus", "Saturn"] },
+  "Moon": { "friends": ["Sun", "Mercury"], "neutral": ["Mars", "Jupiter", "Venus", "Saturn"], "enemies": [] },
+  "Mars": { "friends": ["Sun", "Moon", "Jupiter"], "neutral": ["Venus", "Saturn"], "enemies": ["Mercury"] },
+  "Mercury": { "friends": ["Sun", "Venus"], "neutral": ["Mars", "Jupiter", "Saturn"], "enemies": ["Moon"] },
+  "Jupiter": { "friends": ["Sun", "Moon", "Mars"], "neutral": ["Saturn"], "enemies": ["Mercury", "Venus"] },
+  "Venus": { "friends": ["Mercury", "Saturn"], "neutral": ["Mars", "Jupiter"], "enemies": ["Sun", "Moon"] },
+  "Saturn": { "friends": ["Mercury", "Venus"], "neutral": ["Jupiter"], "enemies": ["Sun", "Moon", "Mars"] },
+  "Rahu": { "friends": ["Venus", "Saturn", "Mercury"], "neutral": ["Jupiter"], "enemies": ["Sun", "Moon", "Mars"] },
+  "Ketu": { "friends": ["Mars", "Venus", "Saturn"], "neutral": ["Mercury", "Jupiter"], "enemies": ["Sun", "Moon"] }
+}

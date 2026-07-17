@@ -1,0 +1,103 @@
+{
+  "_comment": "V4.1 Phase 2 — Daily Panchang & Muhurat Finder. Pure reference data, no logic. Consumed only by services/astrology/panchangEngine.js and muhuratEngine.js.",
+
+  "tithiNames": [
+    "Shukla Pratipada", "Shukla Dwitiya", "Shukla Tritiya", "Shukla Chaturthi",
+    "Shukla Panchami", "Shukla Shashthi", "Shukla Saptami", "Shukla Ashtami",
+    "Shukla Navami", "Shukla Dashami", "Shukla Ekadashi", "Shukla Dwadashi",
+    "Shukla Trayodashi", "Shukla Chaturdashi", "Purnima",
+    "Krishna Pratipada", "Krishna Dwitiya", "Krishna Tritiya", "Krishna Chaturthi",
+    "Krishna Panchami", "Krishna Shashthi", "Krishna Saptami", "Krishna Ashtami",
+    "Krishna Navami", "Krishna Dashami", "Krishna Ekadashi", "Krishna Dwadashi",
+    "Krishna Trayodashi", "Krishna Chaturdashi", "Amavasya"
+  ],
+
+  "tithiQuality": {
+    "_comment": "0 = inauspicious/avoid for most new beginnings, 1 = neutral, 2 = auspicious. Indexed by tithi-of-paksha number 1-15 (applies to both Pakshas except where overridden below).",
+    "byNumber": { "1": 2, "2": 2, "3": 2, "4": 0, "5": 2, "6": 1, "7": 2, "8": 0, "9": 0, "10": 2, "11": 2, "12": 2, "13": 1, "14": 0, "15": 1 },
+    "amavasyaOverride": 0
+  },
+
+  "yogaNames": [
+    "Vishkambha", "Priti", "Ayushman", "Saubhagya", "Shobhana", "Atiganda",
+    "Sukarma", "Dhriti", "Shoola", "Ganda", "Vriddhi", "Dhruva",
+    "Vyaghata", "Harshana", "Vajra", "Siddhi", "Vyatipata", "Variyana",
+    "Parigha", "Shiva", "Siddha", "Sadhya", "Shubha", "Shukla",
+    "Brahma", "Indra", "Vaidhriti"
+  ],
+
+  "inauspiciousYogas": ["Vishkambha", "Atiganda", "Shoola", "Ganda", "Vyaghata", "Vajra", "Vyatipata", "Parigha", "Vaidhriti"],
+
+  "karanaNames": [
+    "Kimstughna", "Bava", "Balava", "Kaulava", "Taitila", "Garija", "Vanija", "Vishti",
+    "Shakuni", "Chatushpada", "Naga"
+  ],
+
+  "inauspiciousKaranas": ["Vishti", "Shakuni", "Chatushpada", "Naga"],
+
+  "nakshatraQuality": {
+    "_comment": "General-purpose auspiciousness weight per Nakshatra, 0-2 (used only as one input among several; Muhurat Finder additionally checks per-activity favorable lists below).",
+    "Ashwini": 2, "Bharani": 0, "Krittika": 1, "Rohini": 2, "Mrigashira": 2, "Ardra": 0,
+    "Punarvasu": 2, "Pushya": 2, "Ashlesha": 0, "Magha": 1, "Purva Phalguni": 1, "Uttara Phalguni": 2,
+    "Hasta": 2, "Chitra": 1, "Swati": 2, "Vishakha": 1, "Anuradha": 2, "Jyeshtha": 0,
+    "Mula": 0, "Purva Ashadha": 1, "Uttara Ashadha": 2, "Shravana": 2, "Dhanishta": 1,
+    "Shatabhisha": 1, "Purva Bhadrapada": 0, "Uttara Bhadrapada": 2, "Revati": 2
+  },
+
+  "weekdayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+
+  "rahuKalamSegment": [8, 2, 7, 5, 6, 4, 3],
+  "yamagandaSegment": [5, 4, 3, 2, 1, 7, 6],
+  "gulikaKalamSegment": [7, 6, 5, 4, 3, 2, 1],
+
+  "muhuratActivities": {
+    "marriage": {
+      "label": "Marriage",
+      "favorableNakshatras": ["Rohini", "Mrigashira", "Magha", "Uttara Phalguni", "Hasta", "Swati", "Anuradha", "Mula", "Uttara Ashadha", "Uttara Bhadrapada", "Revati"],
+      "avoidTithiNumbers": [4, 6, 8, 9, 12, 14, 15],
+      "avoidWeekdays": ["Tuesday", "Saturday"]
+    },
+    "housewarming": {
+      "label": "House Warming (Griha Pravesh)",
+      "favorableNakshatras": ["Rohini", "Mrigashira", "Uttara Phalguni", "Uttara Ashadha", "Uttara Bhadrapada", "Revati", "Chitra", "Anuradha"],
+      "avoidTithiNumbers": [4, 8, 9, 14, 15],
+      "avoidWeekdays": ["Tuesday"]
+    },
+    "businessOpening": {
+      "label": "Business Opening",
+      "favorableNakshatras": ["Ashwini", "Pushya", "Punarvasu", "Hasta", "Chitra", "Swati", "Anuradha", "Revati"],
+      "avoidTithiNumbers": [4, 8, 9, 14],
+      "avoidWeekdays": ["Saturday"]
+    },
+    "travel": {
+      "label": "Travel",
+      "favorableNakshatras": ["Ashwini", "Pushya", "Hasta", "Swati", "Punarvasu", "Revati", "Shravana"],
+      "avoidTithiNumbers": [6, 8, 9, 14],
+      "avoidWeekdays": []
+    },
+    "education": {
+      "label": "Education (Vidyarambha)",
+      "favorableNakshatras": ["Ashwini", "Pushya", "Hasta", "Chitra", "Swati", "Anuradha", "Shravana", "Revati"],
+      "avoidTithiNumbers": [4, 9, 14, 15],
+      "avoidWeekdays": []
+    },
+    "vehiclePurchase": {
+      "label": "Vehicle Purchase",
+      "favorableNakshatras": ["Ashwini", "Pushya", "Punarvasu", "Hasta", "Revati", "Rohini"],
+      "avoidTithiNumbers": [4, 8, 9, 14],
+      "avoidWeekdays": ["Saturday"]
+    },
+    "propertyPurchase": {
+      "label": "Property Purchase",
+      "favorableNakshatras": ["Rohini", "Uttara Phalguni", "Uttara Ashadha", "Uttara Bhadrapada", "Revati", "Hasta"],
+      "avoidTithiNumbers": [4, 8, 9, 14, 15],
+      "avoidWeekdays": ["Tuesday"]
+    },
+    "namingCeremony": {
+      "label": "Naming Ceremony (Namakarana)",
+      "favorableNakshatras": ["Ashwini", "Punarvasu", "Pushya", "Hasta", "Swati", "Anuradha", "Revati", "Rohini"],
+      "avoidTithiNumbers": [4, 6, 8, 9, 14],
+      "avoidWeekdays": []
+    }
+  }
+}
