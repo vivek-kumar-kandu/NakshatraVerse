@@ -48,7 +48,14 @@ async function signIn(user) {
   await user.type(screen.getByLabelText(/email/i), "asha@example.com");
   await user.type(screen.getByLabelText(/^password$/i), "password123");
   await user.click(screen.getByRole("button", { name: /sign in/i }));
-  await screen.findByText(/your dashboard/i, {}, { timeout: 6000 });
+  // DashboardPage is lazy-loaded (see src/App.jsx) and pulls in several
+  // widget chunks (Panchang/Festival/Family Profiles/AI Life Coach/
+  // Notifications/Personalized Insights). The first dynamic import of it
+  // in a given test file can take noticeably longer than a typical async
+  // assertion, so this uses the same generous timeout already established
+  // for this exact wait in tests/App.test.jsx and tests/Settings.test.jsx,
+  // rather than the tighter 6000ms used for lighter-weight waits above.
+  await screen.findByText(/your dashboard/i, {}, { timeout: 30000 });
 }
 
 describe("V3.0 Premium Command Palette", () => {

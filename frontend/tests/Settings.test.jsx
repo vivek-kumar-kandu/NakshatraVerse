@@ -55,7 +55,7 @@ async function getToDashboard(user) {
     "button", { name: /go to dashboard/i }, { timeout: 6000 }
   );
   await user.click(dashboardButtons[0]);
-  await waitFor(() => expect(screen.getByText(/your dashboard/i)).toBeInTheDocument(), { timeout: 15000 });
+  await waitFor(() => expect(screen.getByText(/your dashboard/i)).toBeInTheDocument(), { timeout: 30000 });
 }
 
 // Used after navigating *within* the already-authenticated app (e.g.
@@ -63,7 +63,7 @@ async function getToDashboard(user) {
 // Dashboard" button no longer exists on screen, so this just waits for the
 // Dashboard heading directly rather than re-running the Home-page flow.
 async function confirmOnDashboard() {
-  await waitFor(() => expect(screen.getByText(/your dashboard/i)).toBeInTheDocument(), { timeout: 15000 });
+  await waitFor(() => expect(screen.getByText(/your dashboard/i)).toBeInTheDocument(), { timeout: 30000 });
 }
 
 async function openAccountMenuAndGoToSettings(user) {

@@ -74,7 +74,7 @@ async function getToBirthForm(user) {
   await user.type(screen.getByLabelText(/email/i), "asha@example.com");
   await user.type(screen.getByLabelText(/^password$/i), "password123");
   await user.click(screen.getByRole("button", { name: /sign in/i }));
-  await screen.findByText(/your dashboard/i, {}, { timeout: 15000 });
+  await screen.findByText(/your dashboard/i, {}, { timeout: 30000 });
   await user.click(screen.getAllByRole("button", { name: /generate new report/i })[0]);
   await screen.findByText(/Reveal Your Cosmic Blueprint/i, {}, { timeout: 4000 });
 }

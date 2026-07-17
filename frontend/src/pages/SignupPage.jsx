@@ -125,7 +125,7 @@ function SignupPage({ onNavigate }) {
           <form onSubmit={handleSubmit} noValidate>
             <div style={{ marginBottom: 18, animation: "fadeIn 0.4s ease 0.2s both" }}>
               <label htmlFor="signup-name" style={{ display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 7, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500 }}>Full Name</label>
-              <input id="signup-name" type="text" autoComplete="name" value={form.name} disabled={busy}
+              <input id="signup-name" name="name" type="text" autoComplete="name" value={form.name} disabled={busy}
                 onChange={setField("name")} onBlur={setFieldTouched("name")}
                 aria-invalid={Boolean(fieldErrors.name)}
                 aria-describedby={fieldErrors.name ? "signup-name-error" : undefined}
@@ -137,7 +137,7 @@ function SignupPage({ onNavigate }) {
             </div>
             <div style={{ marginBottom: 18, animation: "fadeIn 0.4s ease 0.25s both" }}>
               <label htmlFor="signup-email" style={{ display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 7, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500 }}>Email</label>
-              <input id="signup-email" type="email" autoComplete="email" value={form.email} disabled={busy}
+              <input id="signup-email" name="email" type="email" autoComplete="email" value={form.email} disabled={busy}
                 onChange={setField("email")} onBlur={setFieldTouched("email")}
                 aria-invalid={Boolean(fieldErrors.email)}
                 aria-describedby={fieldErrors.email ? "signup-email-error" : undefined}

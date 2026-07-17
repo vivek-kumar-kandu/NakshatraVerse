@@ -47,11 +47,22 @@ function baseCookieOptions() {
   return {
     httpOnly: true,
     secure: config.COOKIE_SECURE,
-    // "lax" allows the cookie on top-level navigations while still
-    // blocking it from being sent on cross-site requests initiated by
-    // other sites (CSRF mitigation) — appropriate for a same-site or
-    // reverse-proxied SPA+API deployment.
-    sameSite: "lax",
+    // The frontend (Vercel) and backend (Render) live on different
+    // registrable domains, which makes every fetch() from the frontend a
+    // cross-site request. Browsers only attach "lax" cookies to top-level
+    // navigations, never to cross-site fetch/XHR calls — so with "lax"
+    // here the login response would set the cookie, but every subsequent
+    // request (GET /api/auth/me, POST /api/auth/refresh, any protected
+    // API) silently failed to send it back, producing exactly the
+    // "login succeeds, then 401 everywhere" symptom.
+    //
+    // "none" is required to allow the cookie on cross-site requests, and
+    // browsers mandate `secure: true` (HTTPS-only) whenever sameSite is
+    // "none". config.COOKIE_SECURE is already true in production (Render
+    // serves HTTPS) and false in local dev, where frontend/backend share
+    // the "localhost" site and plain HTTP is used — so tying sameSite to
+    // the same flag keeps both environments correct automatically.
+    sameSite: config.COOKIE_SECURE ? "none" : "lax",
     path: "/",
   };
 }

@@ -43,6 +43,31 @@ function GoogleSignInButton({ onCredential }) {
   const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
   const containerRef = useRef(null);
 
+  // Bugfix (July 2026): LoginPage/SignupPage pass an inline arrow function
+  // as `onCredential`, so a brand-new function reference is created on
+  // *every* render of the parent (e.g. every keystroke in the email/name/
+  // password fields, since those live in the same component's state).
+  // The main effect below used to list `onCredential` in its dependency
+  // array, so each keystroke re-ran the whole effect. `loadAndRender()`
+  // would find the GIS script tag already present and call
+  // `renderButton()` -> `ensureInitialized()`, but because the effect had
+  // re-run, `initialized` was a *fresh* `false` in the new closure — so it
+  // called `google.accounts.id.initialize()` again anyway, over and over,
+  // once per keystroke. Each re-initialization kicks off GIS's own
+  // background auth checks against Google, so on a page where the origin
+  // isn't authorized for the Client ID, every keystroke produced another
+  // wave of "origin not allowed" / 403 console spam — not one error, but
+  // dozens as the user typed.
+  //
+  // Fix: keep the latest `onCredential` in a ref that's updated every
+  // render (cheap, doesn't trigger the effect), and have the main effect
+  // depend only on `clientId`. Now `initialize()` truly runs once per
+  // mount, exactly as the code already intended.
+  const onCredentialRef = useRef(onCredential);
+  useEffect(() => {
+    onCredentialRef.current = onCredential;
+  });
+
   useEffect(() => {
     if (!clientId) return;
 
@@ -53,12 +78,26 @@ function GoogleSignInButton({ onCredential }) {
       return measured ? Math.min(MAX_BUTTON_WIDTH, Math.floor(measured)) : MAX_BUTTON_WIDTH;
     }
 
-    function renderButton() {
-      if (!window.google?.accounts?.id || !containerRef.current) return;
+    // Bugfix: initialize() must only ever be called once per page load —
+    // calling it again (e.g. from the resize handler below) triggers GIS's
+    // "initialize() is called multiple times" warning and can lead to
+    // inconsistent button state. renderButton() itself is safe to call
+    // repeatedly (that's how the width-on-resize behavior works), so we
+    // split the one-time init out from the repeatable render.
+    let initialized = false;
+
+    function ensureInitialized() {
+      if (initialized || !window.google?.accounts?.id) return;
       window.google.accounts.id.initialize({
         client_id: clientId,
-        callback: (response) => onCredential(response.credential),
+        callback: (response) => onCredentialRef.current(response.credential),
       });
+      initialized = true;
+    }
+
+    function renderButton() {
+      if (!window.google?.accounts?.id || !containerRef.current) return;
+      ensureInitialized();
       containerRef.current.innerHTML = "";
       window.google.accounts.id.renderButton(containerRef.current, {
         theme: "filled_black",
@@ -100,7 +139,7 @@ function GoogleSignInButton({ onCredential }) {
       window.removeEventListener("resize", handleResize);
       if (rafId) cancelAnimationFrame(rafId);
     };
-  }, [clientId, onCredential]);
+  }, [clientId]);
 
   if (!clientId) return null;
 

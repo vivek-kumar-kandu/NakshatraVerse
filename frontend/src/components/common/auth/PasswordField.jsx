@@ -26,7 +26,7 @@ const EyeIcon = ({ open }) => (
 // a presentation component — the value/onChange contract is unchanged, so
 // wiring it into the existing forms doesn't touch any auth logic.
 // ─────────────────────────────────────────────────────────────────────────
-function PasswordField({ id, label, value, onChange, onBlur, autoComplete, error, hint, disabled, inputStyle }) {
+function PasswordField({ id, label, value, onChange, onBlur, autoComplete, name, error, hint, disabled, inputStyle }) {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -40,6 +40,7 @@ function PasswordField({ id, label, value, onChange, onBlur, autoComplete, error
       <div style={{ position: "relative" }}>
         <input
           id={id}
+          name={name || autoComplete}
           type={visible ? "text" : "password"}
           autoComplete={autoComplete}
           value={value}

@@ -130,7 +130,7 @@ function LoginPage({ onNavigate }) {
           <form onSubmit={handleSubmit} noValidate>
             <div style={{ marginBottom: 18, animation: "fadeIn 0.4s ease 0.2s both" }}>
               <label htmlFor="login-email" style={{ display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 7, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500 }}>Email</label>
-              <input id="login-email" type="email" autoComplete="email" value={form.email} disabled={busy}
+              <input id="login-email" name="email" type="email" autoComplete="email" value={form.email} disabled={busy}
                 onChange={(ev) => setForm((p) => ({ ...p, email: ev.target.value }))}
                 onBlur={() => setTouched((t) => ({ ...t, email: true }))}
                 aria-invalid={Boolean(fieldErrors.email)}
