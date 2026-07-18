@@ -1,0 +1,42 @@
+{
+  "_comment": "Configuration-driven Yoga detection rules. Each rule's conditions are AND-combined; on a full match, detailTemplate is interpolated with {Planet_house} / {Planet_sign} facts and emitted verbatim as before. Text preserved exactly from the original hardcoded engine to guarantee backward compatibility.",
+  "rules": [
+    {
+      "id": "gajKesariYoga",
+      "name": "Gaj Kesari Yoga",
+      "detailTemplate": "Moon and Jupiter are positioned in mutual kendra houses, a placement traditionally associated with Gaj Kesari Yoga.",
+      "conditions": [
+        {
+          "operator": "mutualHouseDiffIn",
+          "planetA": "Moon",
+          "planetB": "Jupiter",
+          "allowedDiffs": [0, 3, 6, 9]
+        }
+      ]
+    },
+    {
+      "id": "budhadityaYoga",
+      "name": "Budhaditya Yoga",
+      "detailTemplate": "Sun and Mercury share house {Sun_house}, a combination traditionally associated with Budhaditya Yoga.",
+      "conditions": [
+        {
+          "operator": "sameHouse",
+          "planetA": "Sun",
+          "planetB": "Mercury"
+        }
+      ]
+    },
+    {
+      "id": "rajYogaIndication",
+      "name": "Raj Yoga indication",
+      "detailTemplate": "Jupiter in house {Jupiter_house} (a trikona house) is traditionally considered a favorable indicator sometimes associated with Raj Yoga-type influence.",
+      "conditions": [
+        {
+          "operator": "houseIn",
+          "planet": "Jupiter",
+          "houseGroup": "trikona"
+        }
+      ]
+    }
+  ]
+}

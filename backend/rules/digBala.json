@@ -1,0 +1,14 @@
+{
+  "_comment": "Directional strength (Dig Bala), consumed by digBalaRuleEvaluator.js. 'strongestHouse' is the house from which each planet is classically considered directionally strongest (Jupiter/Mercury in the 1st/East, Sun/Mars in the 10th/South, Saturn in the 7th/West, Moon/Venus in the 4th/North). Strength is at its maximum there and falls linearly to 0 at the opposite house (6 houses away) — a house-level approximation of the true degree-based classical formula, appropriate for this engine's house-granularity data and explicitly scoped as 'foundation only' per the Priority 3 requirements.",
+  "strongestHouse": {
+    "Sun": 10,
+    "Mars": 10,
+    "Moon": 4,
+    "Venus": 4,
+    "Jupiter": 1,
+    "Mercury": 1,
+    "Saturn": 7
+  },
+  "maxVirupas": 60,
+  "note": "Rahu/Ketu Dig Bala is tradition-dependent (some schools treat them like Saturn/Mars respectively) and is intentionally omitted in this foundation phase rather than asserting a disputed rule."
+}

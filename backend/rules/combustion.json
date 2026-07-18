@@ -1,0 +1,15 @@
+{
+  "_comment": "Combustion (Asta) rules, consumed by combustionRuleEvaluator.js. A planet within the listed angular orb (degrees) of the Sun's longitude is considered combust — its significations are said to be 'burnt' by proximity to the Sun. Orb values are the commonly cited classical Parashari figures. Mercury and Venus traditionally get a tighter orb while retrograde, hence the *Retrograde overrides below.",
+  "orbs": {
+    "Moon": 12,
+    "Mars": 17,
+    "Mercury": 14,
+    "MercuryRetrograde": 12,
+    "Jupiter": 11,
+    "Venus": 10,
+    "VenusRetrograde": 8,
+    "Saturn": 15
+  },
+  "excluded": ["Sun", "Rahu", "Ketu"],
+  "excludedReason": "The Sun cannot combust itself. Rahu/Ketu combustion is inconsistently treated across classical traditions, so it is intentionally left out of this foundation phase rather than asserting a disputed rule."
+}

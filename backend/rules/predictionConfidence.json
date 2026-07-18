@@ -1,0 +1,26 @@
+{
+  "_comment": "Configuration-driven Confidence scoring for the Prediction Engine (V2.0 Phase 7), consumed by predictionRuleEvaluator.js. This is a deterministic, transparent scoring model — not a statistical or ML confidence — built entirely from already-computed backend facts (Planet Strength's adjustedScore/functionalNature/combustion/retrograde, and counts of already-detected supporting yogas/doshas). Documented here as the same kind of foundation-phase deterministic approximation the rest of this backend already uses (see transitEngine.js / dashaRuleEvaluator.js headers) rather than real predictive statistics.",
+  "baseScore": 50,
+  "weights": {
+    "adjustedScorePerPoint": 3,
+    "supportingYogaEach": 8,
+    "maxYogaBonus": 24,
+    "supportingDoshaEach": 8,
+    "maxDoshaPenalty": 24,
+    "functionalBenefic": 6,
+    "functionalMalefic": -6,
+    "combust": -5,
+    "retrograde": -3
+  },
+  "scoreClamp": { "min": 5, "max": 95 },
+  "confidenceBands": [
+    { "min": 70, "label": "High" },
+    { "min": 40, "label": "Moderate" },
+    { "min": 0, "label": "Low" }
+  ],
+  "favorabilityBands": [
+    { "min": 65, "label": "favorable" },
+    { "min": 35, "label": "mixed" },
+    { "min": 0, "label": "challenging" }
+  ]
+}

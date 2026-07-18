@@ -1,0 +1,74 @@
+{
+  "_comment": "Configuration-driven Transit (Gochar) effect templates (Priority 3.2), keyed by house-counted-from-natal-Moon (1-12). Purely descriptive, hedged interpretive text consumed by transitRuleEvaluator.js \u2014 no calculation happens here. Saturn's houses 12/1/2 from Moon are additionally flagged as the classical Sade Sati window; see sadeSatiHouses below.",
+  "sadeSatiHouses": [
+    12,
+    1,
+    2
+  ],
+  "sadeSatiNote": "Saturn transiting the 12th, 1st, or 2nd house from the natal Moon is traditionally known as Sade Sati \u2014 a ~7.5 year period of intensified life lessons, restructuring, and discipline.",
+  "kantakaShaniHouses": [
+    4,
+    8
+  ],
+  "kantakaShaniNote": "Saturn transiting the 4th or 8th house from the natal Moon is traditionally known as Kantaka Shani, a period calling for added caution and steady effort.",
+  "ashtamaShaniHouse": 8,
+  "ashtamaShaniNote": "Saturn transiting the 8th house from the natal Moon is traditionally known as Ashtama Shani, associated with significant transformation and the need for resilience.",
+  "effects": {
+    "Saturn": {
+      "1": "Saturn's transit through the 1st house from the Moon traditionally asks for patience, discipline, and restructuring in matters of self, health, and overall vitality.",
+      "2": "Saturn's transit through the 2nd house from the Moon traditionally asks for patience, discipline, and restructuring in matters of finances, family, and speech.",
+      "3": "Saturn's transit through the 3rd house from the Moon traditionally asks for patience, discipline, and restructuring in matters of courage, siblings, and self-effort.",
+      "4": "Saturn's transit through the 4th house from the Moon traditionally asks for patience, discipline, and restructuring in matters of home, emotional foundation, mother, and property.",
+      "5": "Saturn's transit through the 5th house from the Moon traditionally asks for patience, discipline, and restructuring in matters of creativity, children, and intellect.",
+      "6": "Saturn's transit through the 6th house from the Moon traditionally asks for patience, discipline, and restructuring in matters of health challenges, obstacles, service, and daily routine.",
+      "7": "Saturn's transit through the 7th house from the Moon traditionally asks for patience, discipline, and restructuring in matters of partnerships, marriage, and close relationships.",
+      "8": "Saturn's transit through the 8th house from the Moon traditionally asks for patience, discipline, and restructuring in matters of transformation, longevity matters, and sudden change.",
+      "9": "Saturn's transit through the 9th house from the Moon traditionally asks for patience, discipline, and restructuring in matters of fortune, higher learning, and long journeys.",
+      "10": "Saturn's transit through the 10th house from the Moon traditionally asks for patience, discipline, and restructuring in matters of career, public standing, and responsibility.",
+      "11": "Saturn's transit through the 11th house from the Moon traditionally asks for patience, discipline, and restructuring in matters of income, gains, and social networks.",
+      "12": "Saturn's transit through the 12th house from the Moon traditionally asks for patience, discipline, and restructuring in matters of rest, expenses, foreign connections, and letting go."
+    },
+    "Jupiter": {
+      "1": "Jupiter's transit through the 1st house from the Moon traditionally brings growth, optimism, and expansion to matters of self, health, and overall vitality.",
+      "2": "Jupiter's transit through the 2nd house from the Moon traditionally brings growth, optimism, and expansion to matters of finances, family, and speech.",
+      "3": "Jupiter's transit through the 3rd house from the Moon traditionally brings growth, optimism, and expansion to matters of courage, siblings, and self-effort.",
+      "4": "Jupiter's transit through the 4th house from the Moon traditionally brings growth, optimism, and expansion to matters of home, emotional foundation, mother, and property.",
+      "5": "Jupiter's transit through the 5th house from the Moon traditionally brings growth, optimism, and expansion to matters of creativity, children, and intellect.",
+      "6": "Jupiter's transit through the 6th house from the Moon traditionally brings growth, optimism, and expansion to matters of health challenges, obstacles, service, and daily routine.",
+      "7": "Jupiter's transit through the 7th house from the Moon traditionally brings growth, optimism, and expansion to matters of partnerships, marriage, and close relationships.",
+      "8": "Jupiter's transit through the 8th house from the Moon traditionally brings growth, optimism, and expansion to matters of transformation, longevity matters, and sudden change.",
+      "9": "Jupiter's transit through the 9th house from the Moon traditionally brings growth, optimism, and expansion to matters of fortune, higher learning, and long journeys.",
+      "10": "Jupiter's transit through the 10th house from the Moon traditionally brings growth, optimism, and expansion to matters of career, public standing, and responsibility.",
+      "11": "Jupiter's transit through the 11th house from the Moon traditionally brings growth, optimism, and expansion to matters of income, gains, and social networks.",
+      "12": "Jupiter's transit through the 12th house from the Moon traditionally brings growth, optimism, and expansion to matters of rest, expenses, foreign connections, and letting go."
+    },
+    "Rahu": {
+      "1": "Rahu's transit through the 1st house from the Moon traditionally brings ambition, restlessness, and unconventional change to matters of self, health, and overall vitality.",
+      "2": "Rahu's transit through the 2nd house from the Moon traditionally brings ambition, restlessness, and unconventional change to matters of finances, family, and speech.",
+      "3": "Rahu's transit through the 3rd house from the Moon traditionally brings ambition, restlessness, and unconventional change to matters of courage, siblings, and self-effort.",
+      "4": "Rahu's transit through the 4th house from the Moon traditionally brings ambition, restlessness, and unconventional change to matters of home, emotional foundation, mother, and property.",
+      "5": "Rahu's transit through the 5th house from the Moon traditionally brings ambition, restlessness, and unconventional change to matters of creativity, children, and intellect.",
+      "6": "Rahu's transit through the 6th house from the Moon traditionally brings ambition, restlessness, and unconventional change to matters of health challenges, obstacles, service, and daily routine.",
+      "7": "Rahu's transit through the 7th house from the Moon traditionally brings ambition, restlessness, and unconventional change to matters of partnerships, marriage, and close relationships.",
+      "8": "Rahu's transit through the 8th house from the Moon traditionally brings ambition, restlessness, and unconventional change to matters of transformation, longevity matters, and sudden change.",
+      "9": "Rahu's transit through the 9th house from the Moon traditionally brings ambition, restlessness, and unconventional change to matters of fortune, higher learning, and long journeys.",
+      "10": "Rahu's transit through the 10th house from the Moon traditionally brings ambition, restlessness, and unconventional change to matters of career, public standing, and responsibility.",
+      "11": "Rahu's transit through the 11th house from the Moon traditionally brings ambition, restlessness, and unconventional change to matters of income, gains, and social networks.",
+      "12": "Rahu's transit through the 12th house from the Moon traditionally brings ambition, restlessness, and unconventional change to matters of rest, expenses, foreign connections, and letting go."
+    },
+    "Ketu": {
+      "1": "Ketu's transit through the 1st house from the Moon traditionally brings detachment, introspection, and release around matters of self, health, and overall vitality.",
+      "2": "Ketu's transit through the 2nd house from the Moon traditionally brings detachment, introspection, and release around matters of finances, family, and speech.",
+      "3": "Ketu's transit through the 3rd house from the Moon traditionally brings detachment, introspection, and release around matters of courage, siblings, and self-effort.",
+      "4": "Ketu's transit through the 4th house from the Moon traditionally brings detachment, introspection, and release around matters of home, emotional foundation, mother, and property.",
+      "5": "Ketu's transit through the 5th house from the Moon traditionally brings detachment, introspection, and release around matters of creativity, children, and intellect.",
+      "6": "Ketu's transit through the 6th house from the Moon traditionally brings detachment, introspection, and release around matters of health challenges, obstacles, service, and daily routine.",
+      "7": "Ketu's transit through the 7th house from the Moon traditionally brings detachment, introspection, and release around matters of partnerships, marriage, and close relationships.",
+      "8": "Ketu's transit through the 8th house from the Moon traditionally brings detachment, introspection, and release around matters of transformation, longevity matters, and sudden change.",
+      "9": "Ketu's transit through the 9th house from the Moon traditionally brings detachment, introspection, and release around matters of fortune, higher learning, and long journeys.",
+      "10": "Ketu's transit through the 10th house from the Moon traditionally brings detachment, introspection, and release around matters of career, public standing, and responsibility.",
+      "11": "Ketu's transit through the 11th house from the Moon traditionally brings detachment, introspection, and release around matters of income, gains, and social networks.",
+      "12": "Ketu's transit through the 12th house from the Moon traditionally brings detachment, introspection, and release around matters of rest, expenses, foreign connections, and letting go."
+    }
+  }
+}

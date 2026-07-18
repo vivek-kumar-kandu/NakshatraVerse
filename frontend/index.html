@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NakshatraVerse — a Vedic astrology birth chart and AI-powered life report generator." />
+    <meta name="theme-color" content="#06000f" />
+    <title>NakshatraVerse</title>
+    <!-- Priority 5.1: preconnect + a direct stylesheet link loads the
+         Cinzel/Inter fonts in parallel with the rest of the page instead
+         of waiting for global.css to be fetched and parsed before the
+         @import inside it is even discovered — a real, measurable
+         reduction in time-to-first-styled-paint on slower connections. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body style="margin:0;">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

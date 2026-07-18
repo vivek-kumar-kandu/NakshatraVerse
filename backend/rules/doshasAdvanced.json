@@ -1,0 +1,108 @@
+{
+  "_comment": "Priority 3.2 Advanced Dosha rules and lookup tables. Evaluated by advancedDoshaRuleEvaluator.js using the SAME Rule Engine as rules/doshas.json, extended (not replaced) with anyOf/houseDistanceFromIn/etc. Kept separate from doshas.json so Priority 2/3.1's original dosha rule set stays byte-for-byte untouched. House numbers are Lagna-relative except where explicitly 'from Moon'.",
+  "_priority6ScopeNote": "V2.0 Phase 6 requested Pitru Dosha, Guru Chandal Dosha, Kemadruma Dosha, Grahan Dosha, and Shrapit Dosha, which were ALREADY implemented here in Priority 3.2 (rules: pitruDosha, guruChandalYoga, grahanYogaSun, grahanYogaMoon, shrapitYoga, kemadrumaYoga) and are re-verified, unchanged, in Phase 6 — see the Verification Report. Nadi Dosha is intentionally NOT added as a rule: it is classically a horoscope-MATCHING (Kundli Milan) dosha, determined by comparing the Nadi of TWO people's Nakshatras — it has no valid single-birth-chart definition, and this application does not have a matchmaking/synastry feature. Adding a single-chart 'Nadi Dosha' rule would be astrologically incorrect, so it is out of scope per this phase's 'do not implement features outside scope' instruction and is left for a future dedicated Kundli-Matching phase.",
+  "rules": [
+    {
+      "id": "pitruDosha",
+      "name": "Pitru Dosha",
+      "detailTemplate": "Sun is afflicted by conjunction with a shadow planet, or Rahu/Ketu occupies the 9th house, a configuration traditionally associated with Pitru Dosha (ancestral karmic debt).",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            { "operator": "sameHouse", "planetA": "Sun", "planetB": "Rahu" },
+            { "operator": "sameHouse", "planetA": "Sun", "planetB": "Ketu" },
+            { "operator": "houseIn", "planet": "Rahu", "houses": [9] },
+            { "operator": "houseIn", "planet": "Ketu", "houses": [9] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guruChandalYoga",
+      "name": "Guru Chandal Yoga",
+      "detailTemplate": "Jupiter conjoins Rahu in house {Jupiter_house}, a configuration traditionally associated with Guru Chandal Yoga (wisdom clouded by restlessness or unconventional thinking).",
+      "conditions": [
+        { "operator": "sameHouse", "planetA": "Jupiter", "planetB": "Rahu" }
+      ]
+    },
+    {
+      "id": "grahanYogaSun",
+      "name": "Grahan Yoga (Surya Grahan)",
+      "detailTemplate": "Sun conjoins a shadow planet (Rahu/Ketu) in house {Sun_house}, a configuration traditionally associated with Grahan (eclipse) Yoga.",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            { "operator": "sameHouse", "planetA": "Sun", "planetB": "Rahu" },
+            { "operator": "sameHouse", "planetA": "Sun", "planetB": "Ketu" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grahanYogaMoon",
+      "name": "Grahan Yoga (Chandra Grahan)",
+      "detailTemplate": "Moon conjoins a shadow planet (Rahu/Ketu) in house {Moon_house}, a configuration traditionally associated with Grahan (eclipse) Yoga.",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            { "operator": "sameHouse", "planetA": "Moon", "planetB": "Rahu" },
+            { "operator": "sameHouse", "planetA": "Moon", "planetB": "Ketu" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrapitYoga",
+      "name": "Shrapit Yoga",
+      "detailTemplate": "Saturn conjoins Rahu in house {Saturn_house}, a configuration traditionally associated with Shrapit Yoga (a sense of being 'cursed' or delayed until karmic lessons are resolved).",
+      "conditions": [
+        { "operator": "sameHouse", "planetA": "Saturn", "planetB": "Rahu" }
+      ]
+    },
+    {
+      "id": "kemadrumaYoga",
+      "name": "Kemadruma Yoga",
+      "detailTemplate": "No planet (other than the Sun/Rahu/Ketu) occupies the houses immediately before or after the Moon (2nd/12th from Moon), a configuration traditionally associated with Kemadruma Yoga (a sense of isolation needing conscious effort to overcome).",
+      "conditions": [
+        {
+          "operator": "not",
+          "condition": {
+            "operator": "anyOf",
+            "conditions": [
+              { "operator": "houseDistanceFromIn", "from": "Moon", "planet": "Mercury", "distances": [2, 12] },
+              { "operator": "houseDistanceFromIn", "from": "Moon", "planet": "Venus", "distances": [2, 12] },
+              { "operator": "houseDistanceFromIn", "from": "Moon", "planet": "Mars", "distances": [2, 12] },
+              { "operator": "houseDistanceFromIn", "from": "Moon", "planet": "Jupiter", "distances": [2, 12] },
+              { "operator": "houseDistanceFromIn", "from": "Moon", "planet": "Saturn", "distances": [2, 12] }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "manglikSeverityByHouse": {
+    "1": "moderate",
+    "2": "mild",
+    "4": "moderate",
+    "7": "high",
+    "8": "high",
+    "12": "moderate"
+  },
+  "kaalSarpTypesByRahuHouse": {
+    "1": "Anant Kaal Sarp Dosha",
+    "2": "Kulik Kaal Sarp Dosha",
+    "3": "Vasuki Kaal Sarp Dosha",
+    "4": "Shankhpal Kaal Sarp Dosha",
+    "5": "Padma Kaal Sarp Dosha",
+    "6": "Mahapadma Kaal Sarp Dosha",
+    "7": "Takshak Kaal Sarp Dosha",
+    "8": "Karkotak Kaal Sarp Dosha",
+    "9": "Shankhchood Kaal Sarp Dosha",
+    "10": "Ghatak Kaal Sarp Dosha",
+    "11": "Vishdhar Kaal Sarp Dosha",
+    "12": "Sheshnag Kaal Sarp Dosha"
+  }
+}

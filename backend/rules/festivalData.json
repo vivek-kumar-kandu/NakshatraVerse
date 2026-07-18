@@ -1,0 +1,765 @@
+{
+  "_comment": "V4.5 Phase 1A — Festival Backend Infrastructure. Static reference data only: no dates are stored here (dates are computed at request time by festivalEngine.js from panchangEngine.js's Tithi output — see that file's header for the determination rules). Each entry's `recurrence` field tells festivalEngine.js how to locate the festival's actual date(s) in a given Gregorian year.",
+  "festivals": [
+    {
+      "key": "ekadashi",
+      "name": "Ekadashi",
+      "type": "Vrat",
+      "importance": "High",
+      "recurrence": "recurring-tithi",
+      "rule": {
+        "paksha": "both",
+        "tithiNumberInPaksha": 11
+      },
+      "description": "The eleventh lunar day (Tithi) of both the waxing and waning fortnights, observed roughly twice every lunar month as a day of fasting and devotion, most commonly dedicated to Lord Vishnu.",
+      "historicalBackground": "Ekadashi is referenced extensively across the Puranas, most notably the Padma Purana and Bhagavata Purana, where it is described as a day sanctified for spiritual discipline and self-purification, with each of the year's roughly 24 Ekadashis carrying its own traditional name and story.",
+      "religiousSignificance": "Ekadashi is traditionally regarded as a day when the mind can be turned away from material distractions toward devotion, prayer, and scripture. It is one of the most widely observed Vrats (vow-days) in the Vaishnava tradition.",
+      "recommendedActivities": [
+        "Chanting Vishnu Sahasranama or other Vishnu-focused prayers",
+        "Reading or listening to devotional scripture",
+        "Charitable giving (dana)",
+        "Quiet reflection and reduced worldly engagement"
+      ],
+      "rituals": [
+        "Waking before sunrise and bathing",
+        "Offering prayers at a Vishnu or Krishna temple/shrine",
+        "Staying awake in devotion on the Ekadashi night (Jagran) in some traditions",
+        "Breaking the fast the following day at the appropriate time (Dwadashi Parana)"
+      ],
+      "fastingInfo": {
+        "isFastObserved": true,
+        "fastType": "Full or partial fast (grains and beans traditionally avoided)",
+        "guidelines": [
+          "Many observe a full fast (nirjala or phalahar/fruits-only) from sunrise to the next day",
+          "Grains, beans, and certain vegetables are traditionally avoided",
+          "Fast is traditionally broken the next morning during Dwadashi"
+        ]
+      },
+      "region": [
+        "Pan-India",
+        "Nepal"
+      ]
+    },
+    {
+      "key": "purnima",
+      "name": "Purnima",
+      "type": "Vrat",
+      "importance": "Medium",
+      "recurrence": "recurring-tithi",
+      "rule": {
+        "paksha": "Shukla",
+        "tithiNumberInPaksha": 15
+      },
+      "description": "The full moon day, the fifteenth Tithi of the waxing fortnight, observed once every lunar month and regarded as spiritually significant across many Hindu traditions.",
+      "historicalBackground": "Purnima has been marked in the Vedic lunar calendar since antiquity as the culmination of the waxing lunar cycle, and several major festivals (Holi, Raksha Bandhan, Guru Purnima, Sharad Purnima) are themselves specific, named Purnimas.",
+      "religiousSignificance": "The full moon is traditionally associated with heightened spiritual energy, and Purnima is considered auspicious for worship, fasting, charity, and river/holy-water bathing.",
+      "recommendedActivities": [
+        "Worship (puja) at home or at a temple",
+        "Charitable giving (dana)",
+        "Fasting or a light, sattvic diet",
+        "Meditation and moon-gazing rituals in some traditions"
+      ],
+      "rituals": [
+        "Satyanarayana Puja is commonly performed on many Purnimas",
+        "Bathing in a sacred river or holy water at sunrise where possible",
+        "Lighting a lamp (diya) in the evening"
+      ],
+      "fastingInfo": {
+        "isFastObserved": true,
+        "fastType": "Optional partial fast",
+        "guidelines": [
+          "Many observe a light, grain-reduced diet rather than a full fast",
+          "Fasting is optional and varies by regional and family tradition"
+        ]
+      },
+      "region": [
+        "Pan-India"
+      ]
+    },
+    {
+      "key": "amavasya",
+      "name": "Amavasya",
+      "type": "Vrat",
+      "importance": "Medium",
+      "recurrence": "recurring-tithi",
+      "rule": {
+        "paksha": "Krishna",
+        "tithiNumberInPaksha": 15,
+        "isAmavasya": true
+      },
+      "description": "The new moon day, marking the end of the waning fortnight and the start of a new lunar month, observed once every lunar month.",
+      "historicalBackground": "Amavasya has traditionally been associated with ancestor worship (Pitru Puja/Shraddha) in Hindu practice, and several Amavasyas across the year carry their own specific regional names and observances.",
+      "religiousSignificance": "Amavasya is traditionally considered a day for honoring ancestors, performing Shraddha rites, and turning inward through quiet reflection, rather than beginning new ventures.",
+      "recommendedActivities": [
+        "Ancestor remembrance and Shraddha/Tarpan rites where observed by family tradition",
+        "Charitable giving, especially food donation",
+        "Quiet reflection and reduced worldly engagement",
+        "Visiting a temple or sacred river for holy bathing where possible"
+      ],
+      "rituals": [
+        "Tarpan (offering water) to ancestors in many family traditions",
+        "Lighting a lamp at dusk",
+        "Avoiding the start of major new ventures, per classical guidance"
+      ],
+      "fastingInfo": {
+        "isFastObserved": false,
+        "fastType": "Optional, tradition-dependent",
+        "guidelines": [
+          "Fasting on Amavasya is optional and varies widely by family and regional tradition"
+        ]
+      },
+      "region": [
+        "Pan-India"
+      ]
+    },
+    {
+      "key": "sankranti",
+      "name": "Makar Sankranti",
+      "type": "Sankranti",
+      "importance": "High",
+      "recurrence": "fixed-solar",
+      "fixedDate": {
+        "month": 1,
+        "day": 14
+      },
+      "description": "A solar (not lunar) festival marking the Sun's transition into the Capricorn (Makar) zodiac sign and the start of its northward journey (Uttarayana). Because it follows the solar calendar, it falls on a near-fixed Gregorian date each year (14th, occasionally 15th, of January).",
+      "historicalBackground": "Sankranti festivals mark each of the Sun's twelve zodiacal transitions through the year; Makar Sankranti, marking the transition into Capricorn, is the most widely celebrated and is known regionally as Pongal, Uttarayan, Bihu, and Lohri (the eve).",
+      "religiousSignificance": "Uttarayana, the period beginning at Makar Sankranti, is traditionally regarded as an auspicious half-year for spiritual undertakings, and the day itself is associated with gratitude, harvest, and renewal.",
+      "recommendedActivities": [
+        "Holy bathing at sunrise, especially in a river",
+        "Kite flying (regionally, especially in Gujarat and North India)",
+        "Sharing sesame-and-jaggery sweets (til-gud) as a gesture of goodwill",
+        "Charitable giving to the needy"
+      ],
+      "rituals": [
+        "Til-gud (sesame and jaggery) exchange with the words 'til-gud ghya, god god bola' in Maharashtra",
+        "Pongal cooking ritual in Tamil Nadu",
+        "Bihu bonfires (Magh Bihu) in Assam"
+      ],
+      "fastingInfo": {
+        "isFastObserved": false,
+        "fastType": "Not traditionally a fasting day",
+        "guidelines": [
+          "Sankranti is generally a feast/harvest day rather than a fasting observance"
+        ]
+      },
+      "region": [
+        "Pan-India, celebrated regionally as Pongal (Tamil Nadu), Uttarayan (Gujarat), Bihu (Assam), Lohri-adjacent (Punjab)"
+      ]
+    },
+    {
+      "key": "pradosh",
+      "name": "Pradosh Vrat",
+      "type": "Vrat",
+      "importance": "Medium",
+      "recurrence": "recurring-tithi",
+      "rule": {
+        "paksha": "both",
+        "tithiNumberInPaksha": 13
+      },
+      "description": "The thirteenth Tithi (Trayodashi) of both fortnights, observed as an evening (Pradosh Kaal) vow dedicated to Lord Shiva, roughly twice every lunar month.",
+      "historicalBackground": "Pradosh Vrat is described in the Shiva Purana as a day when devotion during the twilight hours (Pradosh Kaal, just before and after sunset) is considered especially powerful.",
+      "religiousSignificance": "The Pradosh period is traditionally believed to be when Lord Shiva performs his cosmic dance in a state of bliss, making prayer during this window especially auspicious.",
+      "recommendedActivities": [
+        "Evening worship of Lord Shiva during Pradosh Kaal (roughly 90 minutes before and after sunset)",
+        "Chanting the Shiva Panchakshari or Rudra mantras",
+        "Visiting a Shiva temple"
+      ],
+      "rituals": [
+        "Abhishekam (ritual bathing) of the Shiva Lingam where possible",
+        "Lighting a lamp with ghee at dusk",
+        "Fasting through the day, breaking it after the evening prayer"
+      ],
+      "fastingInfo": {
+        "isFastObserved": true,
+        "fastType": "Full-day fast, broken after evening worship",
+        "guidelines": [
+          "Many observe a full-day fast, taking only water or fruit",
+          "The fast is traditionally broken after Pradosh Kaal worship at dusk"
+        ]
+      },
+      "region": [
+        "Pan-India"
+      ]
+    },
+    {
+      "key": "chaturthi",
+      "name": "Chaturthi",
+      "type": "Vrat",
+      "importance": "Medium",
+      "recurrence": "recurring-tithi",
+      "rule": {
+        "paksha": "both",
+        "tithiNumberInPaksha": 4
+      },
+      "description": "The fourth Tithi of both fortnights, observed roughly twice every lunar month and traditionally dedicated to Lord Ganesha, most notably as Sankashti Chaturthi (Krishna Paksha) and Vinayaka Chaturthi (Shukla Paksha).",
+      "historicalBackground": "Chaturthi observances honoring Lord Ganesha, the remover of obstacles, are described across Puranic literature and remain among the most widely kept monthly Vrats in Hindu households.",
+      "religiousSignificance": "Chaturthi is traditionally observed to seek the removal of obstacles and the blessing of new beginnings, with Sankashti Chaturthi in particular regarded as especially powerful for resolving hardship.",
+      "recommendedActivities": [
+        "Worship of Lord Ganesha",
+        "Chanting the Ganesha mantra or Sankashtnashana Stotra",
+        "Charitable giving"
+      ],
+      "rituals": [
+        "Offering modak or laddoo to Lord Ganesha",
+        "Fasting through the day, viewing the moonrise before breaking the fast (Sankashti tradition)"
+      ],
+      "fastingInfo": {
+        "isFastObserved": true,
+        "fastType": "Full or partial day fast",
+        "guidelines": [
+          "Many observe a fast broken only after sighting the moon in the evening (Sankashti tradition)",
+          "Grain is traditionally avoided during the fast"
+        ]
+      },
+      "region": [
+        "Pan-India",
+        "especially Maharashtra"
+      ]
+    },
+    {
+      "key": "navratri",
+      "name": "Navratri",
+      "type": "Festival",
+      "importance": "High",
+      "recurrence": "tithi-in-window",
+      "rule": {
+        "paksha": "Shukla",
+        "tithiNumberInPaksha": 1
+      },
+      "searchWindow": {
+        "startMonth": 9,
+        "startDay": 10,
+        "endMonth": 10,
+        "endDay": 28
+      },
+      "durationDays": 9,
+      "description": "A nine-night festival (Sharad Navratri, the most widely celebrated of the year's four Navratris) honoring the nine forms of Goddess Durga, beginning on the first day of the Ashwin Shukla Paksha and culminating in Vijayadashami/Dussehra.",
+      "historicalBackground": "Navratri traditions are rooted in the Devi Mahatmya/Durga Saptashati, which recounts the Goddess's nine-day battle against the demon Mahishasura, and in the Ramayana tradition associated with the festival's culmination in Dussehra.",
+      "religiousSignificance": "Each of the nine nights is dedicated to a distinct form of the Goddess (the Navadurga), representing the gradual triumph of good over evil and the awakening of inner strength (Shakti).",
+      "recommendedActivities": [
+        "Daily worship of a different form of the Goddess",
+        "Garba and Dandiya Raas dance celebrations (regionally, especially Gujarat)",
+        "Kanya Pujan (honoring young girls as embodiments of the Goddess), commonly on the eighth or ninth day",
+        "Reading or reciting the Durga Saptashati / Devi Mahatmya"
+      ],
+      "rituals": [
+        "Ghatasthapana (kalash installation) on the first day",
+        "Daily Durga Aarti",
+        "Fasting through some or all of the nine days, by personal or family tradition"
+      ],
+      "fastingInfo": {
+        "isFastObserved": true,
+        "fastType": "Multi-day fast, full or partial, by personal tradition",
+        "guidelines": [
+          "Many fast for all nine days on a restricted, grain-free (phalahar) diet",
+          "Others observe only the first and last day, or no fast at all",
+          "The fast is broken after Kanya Pujan or on Vijayadashami"
+        ]
+      },
+      "region": [
+        "Pan-India",
+        "especially Gujarat, West Bengal (as Durga Puja), North India"
+      ]
+    },
+    {
+      "key": "maha_shivratri",
+      "name": "Maha Shivratri",
+      "type": "Festival",
+      "importance": "High",
+      "recurrence": "tithi-in-window",
+      "rule": {
+        "paksha": "Krishna",
+        "tithiNumberInPaksha": 14
+      },
+      "searchWindow": {
+        "startMonth": 2,
+        "startDay": 10,
+        "endMonth": 3,
+        "endDay": 10
+      },
+      "description": "The 'Great Night of Shiva', falling on the fourteenth Tithi of the waning fortnight of Phalguna (or Magha, by some regional reckonings), dedicated to Lord Shiva and observed with night-long vigil and worship.",
+      "historicalBackground": "Maha Shivratri is described across the Shiva Purana and Linga Purana as the night Lord Shiva performed his cosmic dance of creation, preservation, and destruction (Tandava), and in some traditions as the night of his marriage to Goddess Parvati.",
+      "religiousSignificance": "The night is traditionally regarded as one of the most spiritually potent of the year, associated with overcoming darkness and ignorance through devotion, meditation, and wakefulness.",
+      "recommendedActivities": [
+        "Night-long vigil (Jagran) with devotional singing",
+        "Abhishekam of the Shiva Lingam through the four Prahars (watches) of the night",
+        "Meditation and chanting of the Maha Mrityunjaya Mantra or 'Om Namah Shivaya'"
+      ],
+      "rituals": [
+        "Offering bel (bilva) leaves, milk, water, and honey to the Shiva Lingam",
+        "Fasting through the day and night, breaking it the following morning",
+        "Visiting a Shiva temple for the night's four Prahar poojas"
+      ],
+      "fastingInfo": {
+        "isFastObserved": true,
+        "fastType": "Full-day and night fast",
+        "guidelines": [
+          "Many observe a strict fast (including water, for some) through the day and night",
+          "The fast is traditionally broken the following morning after sunrise worship"
+        ]
+      },
+      "region": [
+        "Pan-India",
+        "Nepal"
+      ]
+    },
+    {
+      "key": "ram_navami",
+      "name": "Ram Navami",
+      "type": "Festival",
+      "importance": "High",
+      "recurrence": "tithi-in-window",
+      "rule": {
+        "paksha": "Shukla",
+        "tithiNumberInPaksha": 9
+      },
+      "searchWindow": {
+        "startMonth": 3,
+        "startDay": 10,
+        "endMonth": 4,
+        "endDay": 25
+      },
+      "description": "Celebrated on the ninth day of the Chaitra Shukla Paksha, marking the birth of Lord Rama, the seventh avatar of Vishnu and the central figure of the Ramayana.",
+      "historicalBackground": "Ram Navami falls on the ninth and final day of Chaitra Navratri and commemorates the birth of Lord Rama in Ayodhya, as recounted in the Valmiki Ramayana.",
+      "religiousSignificance": "The day is dedicated to reflecting on Lord Rama's life as an embodiment of dharma (righteous conduct), and is especially significant to the Vaishnava tradition.",
+      "recommendedActivities": [
+        "Reading or listening to the Ramayana or Ramcharitmanas",
+        "Attending temple processions and bhajans (devotional singing)",
+        "Charitable giving"
+      ],
+      "rituals": [
+        "Ram Katha recitations and Rama Navami processions in many towns",
+        "Cradle ceremonies (jhulan) symbolizing Rama's birth in some regional traditions",
+        "Fasting through the day, breaking it around midday, the traditional hour of Rama's birth"
+      ],
+      "fastingInfo": {
+        "isFastObserved": true,
+        "fastType": "Full or partial day fast",
+        "guidelines": [
+          "Many fast through the morning, breaking the fast around midday, the traditional hour of Rama's birth",
+          "Grain is traditionally avoided during the fast"
+        ]
+      },
+      "region": [
+        "Pan-India",
+        "especially North India"
+      ]
+    },
+    {
+      "key": "janmashtami",
+      "name": "Janmashtami",
+      "type": "Festival",
+      "importance": "High",
+      "recurrence": "tithi-in-window",
+      "rule": {
+        "paksha": "Krishna",
+        "tithiNumberInPaksha": 8
+      },
+      "searchWindow": {
+        "startMonth": 8,
+        "startDay": 5,
+        "endMonth": 9,
+        "endDay": 28
+      },
+      "description": "Celebrated on the eighth day of the Bhadrapada Krishna Paksha, marking the birth of Lord Krishna, the eighth avatar of Vishnu.",
+      "historicalBackground": "Janmashtami commemorates Krishna's birth at midnight in Mathura, as recounted in the Bhagavata Purana and Mahabharata traditions.",
+      "religiousSignificance": "The day is dedicated to devotion toward Lord Krishna as an embodiment of divine love, playfulness, and wisdom, culminating in midnight worship at the traditional hour of his birth.",
+      "recommendedActivities": [
+        "Midnight worship (Krishna Janma celebration)",
+        "Dahi Handi celebrations (regionally, especially Maharashtra)",
+        "Reading or reciting the Bhagavad Gita or Krishna Leela stories",
+        "Devotional singing (bhajan/kirtan)"
+      ],
+      "rituals": [
+        "Decorating a cradle (jhulan) for the infant Krishna",
+        "Fasting through the day, breaking it at midnight",
+        "Dahi Handi (pot-breaking) processions in some regions"
+      ],
+      "fastingInfo": {
+        "isFastObserved": true,
+        "fastType": "Full-day fast, broken at midnight",
+        "guidelines": [
+          "Many observe a strict fast through the day, breaking it at midnight after Krishna Janma worship",
+          "Grain is traditionally avoided during the fast"
+        ]
+      },
+      "region": [
+        "Pan-India",
+        "especially Mathura, Vrindavan, Maharashtra, Gujarat"
+      ]
+    },
+    {
+      "key": "hanuman_jayanti",
+      "name": "Hanuman Jayanti",
+      "type": "Festival",
+      "importance": "High",
+      "recurrence": "tithi-in-window",
+      "rule": {
+        "paksha": "Shukla",
+        "tithiNumberInPaksha": 15
+      },
+      "searchWindow": {
+        "startMonth": 3,
+        "startDay": 10,
+        "endMonth": 4,
+        "endDay": 25
+      },
+      "description": "Commemorates the birth of Lord Hanuman, traditionally observed on the Purnima (full moon) of Chaitra in most North Indian traditions (some regional traditions observe it on other dates).",
+      "historicalBackground": "Hanuman Jayanti celebrates the birth of Hanuman, the devoted companion of Lord Rama and central figure of the Ramayana, renowned for strength, devotion, and selfless service.",
+      "religiousSignificance": "The day honors Hanuman as an ideal of unwavering devotion (bhakti), humility, and courage, and is considered especially auspicious for seeking protection and strength.",
+      "recommendedActivities": [
+        "Reciting the Hanuman Chalisa",
+        "Visiting a Hanuman temple",
+        "Reading Hanuman-related passages from the Ramayana"
+      ],
+      "rituals": [
+        "Applying sindoor (vermilion) to the Hanuman idol",
+        "Offering til (sesame) oil and betel leaves",
+        "Organizing or attending Hanuman Chalisa recitation gatherings"
+      ],
+      "fastingInfo": {
+        "isFastObserved": false,
+        "fastType": "Optional, tradition-dependent",
+        "guidelines": [
+          "Fasting is optional; many observe a light or fruit-only diet through the day"
+        ]
+      },
+      "region": [
+        "Pan-India — exact date/Tithi varies by regional tradition"
+      ]
+    },
+    {
+      "key": "holi",
+      "name": "Holi",
+      "type": "Festival",
+      "importance": "High",
+      "recurrence": "tithi-in-window",
+      "rule": {
+        "paksha": "Shukla",
+        "tithiNumberInPaksha": 15
+      },
+      "searchWindow": {
+        "startMonth": 2,
+        "startDay": 15,
+        "endMonth": 3,
+        "endDay": 20
+      },
+      "description": "The festival of colors, celebrated on the Purnima (full moon) of Phalguna, marking the arrival of spring and the triumph of good over evil.",
+      "historicalBackground": "Holi's mythology centers on the story of Holika and Prahlad from the Bhagavata Purana (Holika Dahan, the bonfire the night before, commemorates Prahlad's rescue), alongside its association with the playful colors of Krishna and Radha in Braj-region tradition.",
+      "religiousSignificance": "Holi is traditionally understood as a celebration of the victory of devotion and good over arrogance and evil, and of the renewal and joy that spring brings.",
+      "recommendedActivities": [
+        "Holika Dahan (bonfire) on the eve of Holi",
+        "Playing with colors (gulal) the following morning",
+        "Community gatherings and reconciliation of old disputes"
+      ],
+      "rituals": [
+        "Lighting the Holika bonfire at dusk the night before",
+        "Circumambulating the bonfire while offering prayers",
+        "Applying color and sharing sweets the next day"
+      ],
+      "fastingInfo": {
+        "isFastObserved": false,
+        "fastType": "Not traditionally a fasting day",
+        "guidelines": [
+          "Holi is generally a celebratory, feast-oriented festival rather than a fasting observance"
+        ]
+      },
+      "region": [
+        "Pan-India",
+        "especially Mathura, Vrindavan, Braj region"
+      ]
+    },
+    {
+      "key": "diwali",
+      "name": "Diwali",
+      "type": "Festival",
+      "importance": "High",
+      "recurrence": "tithi-in-window",
+      "rule": {
+        "paksha": "Krishna",
+        "tithiNumberInPaksha": 15,
+        "isAmavasya": true
+      },
+      "searchWindow": {
+        "startMonth": 10,
+        "startDay": 12,
+        "endMonth": 11,
+        "endDay": 28
+      },
+      "description": "The festival of lights, celebrated on the Amavasya (new moon) of Kartik, marking the triumph of light over darkness and honoring Goddess Lakshmi.",
+      "historicalBackground": "Diwali's mythology centers on Lord Rama's return to Ayodhya after 14 years of exile and his victory over Ravana, as well as the worship of Goddess Lakshmi for prosperity in many household and business traditions.",
+      "religiousSignificance": "The lighting of lamps (diyas) symbolizes the dispelling of spiritual darkness and ignorance, and the day is widely regarded as one of the most auspicious of the year for new beginnings and prosperity.",
+      "recommendedActivities": [
+        "Lighting diyas and decorating the home with rangoli",
+        "Lakshmi Puja in the evening",
+        "Exchanging gifts and sweets with family and friends",
+        "Charitable giving"
+      ],
+      "rituals": [
+        "Lakshmi-Ganesh Puja at dusk",
+        "Cleaning and decorating the home in the days prior",
+        "Bursting firecrackers in some regions and communities, subject to local regulations"
+      ],
+      "fastingInfo": {
+        "isFastObserved": false,
+        "fastType": "Not traditionally a fasting day",
+        "guidelines": [
+          "Diwali is generally a feast and celebration day rather than a fasting observance",
+          "Some observe a fast through the day leading up to the evening Lakshmi Puja, by personal tradition"
+        ]
+      },
+      "region": [
+        "Pan-India",
+        "Nepal",
+        "widely observed in the global Hindu, Jain, and Sikh diaspora"
+      ]
+    },
+    {
+      "key": "raksha_bandhan",
+      "name": "Raksha Bandhan",
+      "type": "Festival",
+      "importance": "High",
+      "recurrence": "tithi-in-window",
+      "rule": {
+        "paksha": "Shukla",
+        "tithiNumberInPaksha": 15
+      },
+      "searchWindow": {
+        "startMonth": 7,
+        "startDay": 25,
+        "endMonth": 9,
+        "endDay": 10
+      },
+      "description": "Celebrated on the Purnima (full moon) of Shravana, honoring the bond between brothers and sisters through the tying of a protective thread (rakhi).",
+      "historicalBackground": "Raksha Bandhan's mythology includes several traditional stories, among them Draupadi tying a cloth strip on Krishna's wrist and Krishna's promise of protection in return, as recounted in Mahabharata-adjacent tradition.",
+      "religiousSignificance": "The rakhi thread is traditionally understood as a symbol of protection and mutual duty (raksha, meaning protection) between siblings.",
+      "recommendedActivities": [
+        "Sisters tying a rakhi thread on their brothers' wrists",
+        "Exchanging gifts and sweets",
+        "Family gatherings"
+      ],
+      "rituals": [
+        "Aarti performed by the sister before tying the rakhi",
+        "Brothers offering a gift and a promise of protection in return",
+        "Applying tilak (forehead mark) as part of the ceremony"
+      ],
+      "fastingInfo": {
+        "isFastObserved": false,
+        "fastType": "Not traditionally a fasting day",
+        "guidelines": [
+          "Raksha Bandhan is generally a celebratory family day rather than a fasting observance"
+        ]
+      },
+      "region": [
+        "Pan-India",
+        "especially North and West India"
+      ]
+    },
+    {
+      "key": "guru_purnima",
+      "name": "Guru Purnima",
+      "type": "Festival",
+      "importance": "Medium",
+      "recurrence": "tithi-in-window",
+      "rule": {
+        "paksha": "Shukla",
+        "tithiNumberInPaksha": 15
+      },
+      "searchWindow": {
+        "startMonth": 6,
+        "startDay": 25,
+        "endMonth": 8,
+        "endDay": 10
+      },
+      "description": "Celebrated on the Purnima (full moon) of Ashadha, dedicated to honoring one's spiritual and academic teachers (Gurus).",
+      "historicalBackground": "Guru Purnima is traditionally associated with the birth anniversary of the sage Ved Vyasa, compiler of the Vedas and author of the Mahabharata, and is also observed in Buddhist and Jain traditions.",
+      "religiousSignificance": "The day is dedicated to gratitude and reverence toward one's Guru, recognizing the role of a teacher in guiding a student from ignorance toward wisdom.",
+      "recommendedActivities": [
+        "Offering respects and gratitude to one's teachers, spiritual or academic",
+        "Reading or reflecting on the teachings of one's Guru",
+        "Meditation and study"
+      ],
+      "rituals": [
+        "Guru Puja, offering flowers, fruit, and respects to a living or departed teacher",
+        "Reciting the Guru Stotram"
+      ],
+      "fastingInfo": {
+        "isFastObserved": false,
+        "fastType": "Optional, tradition-dependent",
+        "guidelines": [
+          "Fasting is optional; some observe a light diet through the day"
+        ]
+      },
+      "region": [
+        "Pan-India",
+        "Nepal",
+        "also observed in Buddhist and Jain traditions"
+      ]
+    },
+    {
+      "key": "karva_chauth",
+      "name": "Karva Chauth",
+      "type": "Vrat",
+      "importance": "High",
+      "recurrence": "tithi-in-window",
+      "rule": {
+        "paksha": "Krishna",
+        "tithiNumberInPaksha": 4
+      },
+      "searchWindow": {
+        "startMonth": 10,
+        "startDay": 5,
+        "endMonth": 11,
+        "endDay": 15
+      },
+      "description": "Observed on the fourth day of the Kartik Krishna Paksha, primarily by married women, as a day-long fast for the wellbeing and longevity of their husbands.",
+      "historicalBackground": "Karva Chauth traditions and stories vary regionally but consistently center on devotion and the protective power of a wife's fast, observed most widely in North India.",
+      "religiousSignificance": "The fast, broken only after sighting the moon, is traditionally regarded as an act of devotion and prayer for a spouse's long life and wellbeing.",
+      "recommendedActivities": [
+        "Sargi (pre-dawn meal) with family before the fast begins",
+        "Evening gathering to listen to the Karva Chauth Katha (story)",
+        "Viewing the moon through a sieve before breaking the fast"
+      ],
+      "rituals": [
+        "Applying mehendi (henna) in preparation",
+        "Group Karva Chauth Puja with other women in the evening",
+        "Breaking the fast after sighting the moon, typically with the husband offering the first sip of water"
+      ],
+      "fastingInfo": {
+        "isFastObserved": true,
+        "fastType": "Nirjala (without water) full-day fast, traditionally",
+        "guidelines": [
+          "Traditionally a strict fast without food or water from sunrise until moonrise",
+          "Broken only after sighting the moon in the evening"
+        ]
+      },
+      "region": [
+        "North India",
+        "especially Punjab, Haryana, Uttar Pradesh, Rajasthan"
+      ]
+    },
+    {
+      "key": "basant_panchami",
+      "name": "Basant Panchami",
+      "type": "Festival",
+      "importance": "Medium",
+      "recurrence": "tithi-in-window",
+      "rule": {
+        "paksha": "Shukla",
+        "tithiNumberInPaksha": 5
+      },
+      "searchWindow": {
+        "startMonth": 1,
+        "startDay": 10,
+        "endMonth": 2,
+        "endDay": 10
+      },
+      "description": "Celebrated on the fifth day of the Magha Shukla Paksha, marking the arrival of spring and dedicated to Goddess Saraswati, the deity of knowledge, music, and the arts.",
+      "historicalBackground": "Basant (Vasant) Panchami has long marked the seasonal transition into spring in the Indian subcontinent, and is widely observed as Saraswati Puja in schools and educational institutions.",
+      "religiousSignificance": "The day is traditionally regarded as auspicious for beginning a child's education (Vidyarambham/Akshar Abhyasam) and for creative and academic pursuits.",
+      "recommendedActivities": [
+        "Saraswati Puja, especially in schools and educational institutions",
+        "Wearing yellow, the color traditionally associated with the festival",
+        "Beginning a child's formal education (Vidyarambham) on this day"
+      ],
+      "rituals": [
+        "Placing books, musical instruments, and writing tools before the Saraswati idol for blessing",
+        "Offering yellow flowers and sweets"
+      ],
+      "fastingInfo": {
+        "isFastObserved": false,
+        "fastType": "Not traditionally a fasting day",
+        "guidelines": [
+          "Basant Panchami is generally a celebratory day rather than a fasting observance"
+        ]
+      },
+      "region": [
+        "Pan-India",
+        "especially North and East India, Punjab (as a kite-flying festival)"
+      ]
+    },
+    {
+      "key": "dev_uthani_ekadashi",
+      "name": "Dev Uthani Ekadashi",
+      "type": "Vrat",
+      "importance": "High",
+      "recurrence": "tithi-in-window",
+      "rule": {
+        "paksha": "Shukla",
+        "tithiNumberInPaksha": 11
+      },
+      "searchWindow": {
+        "startMonth": 10,
+        "startDay": 25,
+        "endMonth": 11,
+        "endDay": 25
+      },
+      "description": "The eleventh day of the Kartik Shukla Paksha, also known as Prabodhini or Dev Diwali Ekadashi, marking the traditional 'awakening' of Lord Vishnu from his four-month cosmic sleep (Chaturmas).",
+      "historicalBackground": "Dev Uthani Ekadashi marks the end of Chaturmas (the four sacred months during which many auspicious ceremonies are traditionally paused), and the resumption of weddings and other major life-cycle ceremonies.",
+      "religiousSignificance": "The day is regarded as especially auspicious for beginning new ventures, as it marks Lord Vishnu's 'awakening' and the reopening of the wedding season in many communities.",
+      "recommendedActivities": [
+        "Tulsi Vivah ceremony (ritual marriage of the Tulsi plant to Lord Vishnu) in many households",
+        "Waking Lord Vishnu's idol with prayer and song",
+        "Beginning new ceremonies or ventures paused during Chaturmas"
+      ],
+      "rituals": [
+        "Tulsi Vivah, performed at home or in temples",
+        "Decorating the Tulsi plant with a canopy and lights",
+        "Fasting through the day, breaking it the following day"
+      ],
+      "fastingInfo": {
+        "isFastObserved": true,
+        "fastType": "Full or partial day fast",
+        "guidelines": [
+          "Observed similarly to other Ekadashi fasts — many take a full or fruit-only fast",
+          "Traditionally broken the next day (Dwadashi)"
+        ]
+      },
+      "region": [
+        "Pan-India",
+        "especially North and Central India"
+      ]
+    },
+    {
+      "key": "sharad_purnima",
+      "name": "Sharad Purnima",
+      "type": "Vrat",
+      "importance": "Medium",
+      "recurrence": "tithi-in-window",
+      "rule": {
+        "paksha": "Shukla",
+        "tithiNumberInPaksha": 15
+      },
+      "searchWindow": {
+        "startMonth": 9,
+        "startDay": 25,
+        "endMonth": 11,
+        "endDay": 10
+      },
+      "description": "The Purnima (full moon) of Ashwin, traditionally considered the brightest full moon of the year and associated with Lord Krishna's Raas Leela.",
+      "historicalBackground": "Sharad Purnima is traditionally associated with the Raas Leela of Krishna and the Gopis, and in Bengal is celebrated as Kojagari Lakshmi Puja, honoring Goddess Lakshmi.",
+      "religiousSignificance": "The moonlight on this night is traditionally believed to carry restorative properties, and many prepare kheer (rice pudding) and leave it under the moonlight overnight before consuming it.",
+      "recommendedActivities": [
+        "Preparing and offering kheer under the moonlight overnight",
+        "Lakshmi Puja (Kojagari Puja), especially in Bengal and East India",
+        "Night-long devotional singing in some regional traditions"
+      ],
+      "rituals": [
+        "Leaving a bowl of kheer under the full moon overnight before consuming it the next morning",
+        "Kojagari Lakshmi Puja through the night in Bengal"
+      ],
+      "fastingInfo": {
+        "isFastObserved": false,
+        "fastType": "Optional, tradition-dependent",
+        "guidelines": [
+          "Fasting is optional; many observe a light diet through the day before the evening/night rituals"
+        ]
+      },
+      "region": [
+        "Pan-India",
+        "especially West Bengal, Odisha, Braj region"
+      ]
+    }
+  ]
+}

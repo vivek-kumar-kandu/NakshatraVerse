@@ -1,0 +1,149 @@
+{
+  "_comment": "Priority 6 / V2.0 addition. Config-driven enrichment metadata for EVERY detected Yoga/Dosha, keyed by the rule's exact 'name' (as emitted by yogaRuleEvaluator.js / doshaRuleEvaluator.js / advancedYogaRuleEvaluator.js / advancedDoshaRuleEvaluator.js). Consumed by services/rules/insightEnrichmentEvaluator.js to attach influence/severity/remedies/explanationMeta to each detected item WITHOUT changing its existing {name, detail} fields — purely additive, so /api/chart, /api/generate-report, and the frontend's existing consumption of chart.yogas/chart.doshas remain unaffected. If a detected item's name has no exact entry here (e.g. a dynamically-suffixed name like a specific Kaal Sarp Dosha subtype), insightEnrichmentEvaluator.js falls back to a safe generic default rather than failing.",
+  "yogas": {
+    "Gaj Kesari Yoga": {
+      "influence": "positive",
+      "explanationMeta": "A classic Raja-Yoga-adjacent combination linking Moon and Jupiter in mutual kendras; traditionally read as supporting intelligence, reputation, and resilience."
+    },
+    "Budhaditya Yoga": {
+      "influence": "positive",
+      "explanationMeta": "Sun-Mercury conjunction; traditionally associated with sharp intellect and communication skill, though it can be tempered if Mercury is combust."
+    },
+    "Raj Yoga indication": {
+      "influence": "positive",
+      "explanationMeta": "A general trikona-strength indicator for Jupiter; a loose, foundational signal rather than a formally named classical Raja Yoga."
+    },
+    "Ruchaka Yoga (Panch Mahapurusha)": {
+      "influence": "positive",
+      "remedies": ["Channeling Mars's energy through disciplined physical activity or leadership responsibility is traditionally suggested to make the best use of this yoga."],
+      "explanationMeta": "One of the five Panch Mahapurusha Yogas; Mars strong in a kendra traditionally grants courage, leadership, and physical vitality."
+    },
+    "Bhadra Yoga (Panch Mahapurusha)": {
+      "influence": "positive",
+      "remedies": ["Study, writing, or communication-based pursuits are traditionally recommended to make the best use of this yoga."],
+      "explanationMeta": "One of the five Panch Mahapurusha Yogas; Mercury strong in a kendra traditionally grants intellect, wit, and business acumen."
+    },
+    "Hamsa Yoga (Panch Mahapurusha)": {
+      "influence": "positive",
+      "remedies": ["Devotional or teaching-oriented practice on Thursdays is traditionally suggested to support this yoga."],
+      "explanationMeta": "One of the five Panch Mahapurusha Yogas; Jupiter strong in a kendra traditionally grants wisdom, virtue, and respect."
+    },
+    "Malavya Yoga (Panch Mahapurusha)": {
+      "influence": "positive",
+      "remedies": ["Cultivating the arts, aesthetics, or relationship harmony is traditionally suggested to support this yoga."],
+      "explanationMeta": "One of the five Panch Mahapurusha Yogas; Venus strong in a kendra traditionally grants comfort, charm, and refinement."
+    },
+    "Shasha Yoga (Panch Mahapurusha)": {
+      "influence": "positive",
+      "remedies": ["Disciplined, service-oriented routine on Saturdays is traditionally suggested to support this yoga."],
+      "explanationMeta": "One of the five Panch Mahapurusha Yogas; Saturn strong in a kendra traditionally grants discipline, authority, and endurance."
+    },
+    "Neecha Bhanga Raja Yoga (Sun)": {
+      "influence": "positive",
+      "explanationMeta": "A debilitation-cancellation combination; traditionally read as turning an early-life weakness of the Sun into a later source of strength."
+    },
+    "Neecha Bhanga Raja Yoga (Moon)": {
+      "influence": "positive",
+      "explanationMeta": "A debilitation-cancellation combination; traditionally read as turning an early-life emotional weakness into later resilience."
+    },
+    "Neecha Bhanga Raja Yoga (Mars)": {
+      "influence": "positive",
+      "explanationMeta": "A debilitation-cancellation combination; traditionally read as converting Mars's low placement into eventual courage and drive."
+    },
+    "Neecha Bhanga Raja Yoga (Saturn)": {
+      "influence": "positive",
+      "explanationMeta": "A debilitation-cancellation combination; traditionally read as converting Saturn's low placement into eventual discipline and gain."
+    },
+    "Viparita Raja Yoga": {
+      "influence": "positive",
+      "explanationMeta": "An 'inverted' Raja Yoga where dusthana lords exchange dusthanas; traditionally read as unexpected gains arising after difficulty or reversal."
+    },
+    "Chandra Mangal Yoga": {
+      "influence": "mixed",
+      "explanationMeta": "Moon-Mars conjunction; traditionally associated with financial drive and enterprise, but can also indicate emotional volatility if afflicted."
+    },
+    "Lakshmi Yoga": {
+      "influence": "positive",
+      "explanationMeta": "Venus strong in a kendra/trikona; traditionally associated with prosperity, grace, and comfort."
+    },
+    "Saraswati Yoga": {
+      "influence": "positive",
+      "explanationMeta": "Jupiter, Venus, and Mercury all well placed; traditionally associated with learning, eloquence, and artistic or scholarly success."
+    },
+    "Adhi Yoga": {
+      "influence": "positive",
+      "explanationMeta": "Natural benefics placed 6th/7th/8th from the Moon; traditionally associated with sustained success, leadership, and standing."
+    },
+    "Sunapha Yoga": {
+      "influence": "positive",
+      "explanationMeta": "A planet other than the Sun in the 2nd from the Moon; traditionally associated with self-made resourcefulness and earned wealth."
+    },
+    "Anapha Yoga": {
+      "influence": "positive",
+      "explanationMeta": "A planet other than the Sun in the 12th from the Moon; traditionally associated with personal comfort, health, and quiet dignity."
+    },
+    "Durudhara Yoga": {
+      "influence": "positive",
+      "explanationMeta": "Planets on both sides of the Moon (2nd and 12th); traditionally associated with wealth, vehicles, and support from others."
+    },
+    "_parivartanaDefault": {
+      "influence": "mixed",
+      "explanationMeta": "Parivartana (mutual sign exchange) Yoga (basic support): the strength/nature of the two houses involved determines whether the exchange leans favorable (kendra/trikona lords) or more challenging (a dusthana house is involved); read together with each planet's own dignity and functional nature."
+    }
+  },
+  "doshas": {
+    "Mangal Dosha": {
+      "influence": "negative",
+      "severity": "moderate",
+      "remedies": ["Reciting the Hanuman Chalisa and worshipping Hanuman on Tuesdays is a traditional remedy associated with Mangal Dosha."],
+      "explanationMeta": "Mars placed in a Manglik-sensitive house; traditionally considered relevant mainly to marital compatibility and timing, and is commonly said to be cancelled or reduced under several classical exceptions."
+    },
+    "Kaal Sarp Dosha": {
+      "influence": "negative",
+      "severity": "high",
+      "remedies": ["Performing a Rahu-Ketu shanti puja or Nag Panchami rituals is a traditional remedy associated with Kaal Sarp Dosha."],
+      "explanationMeta": "All seven classical planets hemmed between Rahu and Ketu; traditionally associated with delays, struggle, and karmic themes that often ease with age and effort."
+    },
+    "Manglik Dosha (Detailed)": {
+      "influence": "negative",
+      "remedies": ["Reciting the Hanuman Chalisa and worshipping Hanuman on Tuesdays is a traditional remedy associated with Manglik Dosha."],
+      "explanationMeta": "A finer-grained severity classification of Mangal Dosha by house; severity is already carried on this item's own 'severity' field."
+    },
+    "Pitru Dosha": {
+      "influence": "negative",
+      "severity": "moderate",
+      "remedies": ["Performing Pitru Paksha rituals (Shraddha/Tarpan) for ancestors, and charity in their memory, is a traditional remedy associated with Pitru Dosha."],
+      "explanationMeta": "Sun afflicted by shadow planets, or Rahu/Ketu in the 9th house; traditionally linked to ancestral karmic debt and is addressed through ancestor-honoring rituals."
+    },
+    "Guru Chandal Yoga": {
+      "influence": "negative",
+      "severity": "mild",
+      "remedies": ["Worshipping Jupiter (Brihaspati) on Thursdays and avoiding hasty, unconventional decisions is a traditional remedy associated with Guru Chandal Yoga."],
+      "explanationMeta": "Jupiter conjunct Rahu; traditionally read as wisdom and tradition being clouded by restlessness, though it can also indicate unconventional insight."
+    },
+    "Grahan Yoga (Surya Grahan)": {
+      "influence": "negative",
+      "severity": "moderate",
+      "remedies": ["Worshipping Surya (Sun) and performing Rahu-shanti rituals is a traditional remedy associated with Grahan Yoga."],
+      "explanationMeta": "Sun conjunct Rahu/Ketu (an 'eclipse' configuration); traditionally associated with a clouded sense of self-confidence or authority."
+    },
+    "Grahan Yoga (Chandra Grahan)": {
+      "influence": "negative",
+      "severity": "moderate",
+      "remedies": ["Worshipping Chandra (Moon) and performing Rahu-Ketu shanti rituals is a traditional remedy associated with Grahan Yoga."],
+      "explanationMeta": "Moon conjunct Rahu/Ketu (an 'eclipse' configuration); traditionally associated with clouded emotions or an unsettled mind."
+    },
+    "Shrapit Yoga": {
+      "influence": "negative",
+      "severity": "high",
+      "remedies": ["Worshipping Shani (Saturn) on Saturdays and performing Rahu-Shani shanti rituals is a traditional remedy associated with Shrapit Yoga."],
+      "explanationMeta": "Saturn conjunct Rahu; traditionally read as a sense of being 'cursed' or delayed until specific karmic lessons are resolved."
+    },
+    "Kemadruma Yoga": {
+      "influence": "negative",
+      "severity": "moderate",
+      "remedies": ["Worshipping Chandra (Moon) on Mondays and cultivating supportive community/relationships is a traditional remedy associated with Kemadruma Yoga."],
+      "explanationMeta": "No planet flanking the Moon; traditionally associated with a sense of isolation, though classical texts note it is cancelled by several common exceptions."
+    }
+  }
+}

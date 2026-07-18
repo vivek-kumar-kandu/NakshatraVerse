@@ -1,0 +1,16 @@
+{
+  "_comment": "Configuration-driven remedy content for the Prediction Engine (V2.0 Phase 7), keyed by Vimshottari Dasha lord. Kept as its own file rather than extending backend/rules/remedies.json so that file's existing, already-tested shape/behavior (services/rules/remedyRuleEvaluator.js) is left completely untouched. `lordRemedyInfo` repeats the same gemstone/mantra/day/deity fields remedies.json already has for the 7 classical planets (values kept identical/consistent) and adds Rahu/Ketu, which the Vimshottari sequence includes as Mahadasha lords but which remedies.json's Lagna-lord remedies never need (no sign is ruled by a shadow planet).",
+  "lordRemedyInfo": {
+    "Sun": { "gemstone": "Ruby", "mantra": "Om Suryaya Namah", "day": "Sunday", "deity": "Surya" },
+    "Moon": { "gemstone": "Pearl", "mantra": "Om Chandraya Namah", "day": "Monday", "deity": "Chandra" },
+    "Mars": { "gemstone": "Red Coral", "mantra": "Om Angarakaya Namah", "day": "Tuesday", "deity": "Hanuman" },
+    "Mercury": { "gemstone": "Emerald", "mantra": "Om Budhaya Namah", "day": "Wednesday", "deity": "Vishnu" },
+    "Jupiter": { "gemstone": "Yellow Sapphire", "mantra": "Om Gurave Namah", "day": "Thursday", "deity": "Brihaspati" },
+    "Venus": { "gemstone": "Diamond / White Sapphire", "mantra": "Om Shukraya Namah", "day": "Friday", "deity": "Lakshmi" },
+    "Saturn": { "gemstone": "Blue Sapphire", "mantra": "Om Shanaischaraya Namah", "day": "Saturday", "deity": "Shani" },
+    "Rahu": { "gemstone": "Hessonite (Gomed)", "mantra": "Om Rahave Namah", "day": "Saturday", "deity": "Durga" },
+    "Ketu": { "gemstone": "Cat's Eye (Lehsunia)", "mantra": "Om Ketave Namah", "day": "Tuesday", "deity": "Ganesha" }
+  },
+  "dashaLordRemedyTemplate": "As the current Dasha lord is {lord}, wearing a {gemstone} (after professional consultation) and chanting \"{mantra}\" on {day}s is traditionally suggested to help strengthen its beneficial effects during this period.",
+  "categoryRemedyTemplate": "For {category} matters specifically, offerings or prayers to {deity} are traditionally suggested alongside the general Dasha-lord remedy above."
+}

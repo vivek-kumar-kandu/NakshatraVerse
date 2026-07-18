@@ -1,0 +1,6 @@
+{
+  "_comment": "Naisargika Shubha/Ashubha (natural benefic/malefic) classification, consumed by naturalDignityRuleEvaluator.js. Moon is intentionally NOT listed here — its natural nature is dynamic (waxing = benefic, waning = mildly malefic per Paksha) and is computed from the Sun-Moon angular distance inside the evaluator rather than statically configured.",
+  "benefics": ["Jupiter", "Venus", "Mercury"],
+  "malefics": ["Sun", "Mars", "Saturn", "Rahu", "Ketu"],
+  "note": "Mercury is classically neutral (takes on the nature of whatever it associates with) but is conventionally treated as benefic by default when unafflicted, as in this foundation phase."
+}

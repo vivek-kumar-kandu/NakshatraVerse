@@ -1,0 +1,102 @@
+{
+  "_comment": "V4.0 Phase 1 — Kundli Matching (Ashtakoota / Guna Milan) reference data. Consumed by services/astrology/kundliMatchingEngine.js via ruleLoader.js, following the exact same config-driven convention as houses.json / planetaryFriendship.json / nakshatraProfile.json. Gana/Yoni/Nadi per-nakshatra facts are intentionally NOT duplicated here — the engine reads them straight from the existing rules/nakshatraProfile.json (via nakshatraProfileEngine.js) so the two features can never drift apart. This file only adds the additional lookup tables that single-chart nakshatraProfile.json has no reason to carry: Varna, Vashya, Yoni compatibility, Gana compatibility, Graha Maitri compatibility, and Bhakoot distance rules.",
+
+  "varna": {
+    "_comment": "Classical Varna (spiritual temperament tier) by Moon-sign. 1 point (Varna Koota) if the groom's Varna rank is >= the bride's Varna rank, else 0.",
+    "bySign": {
+      "Cancer": "Brahmin", "Scorpio": "Brahmin", "Pisces": "Brahmin",
+      "Aries": "Kshatriya", "Leo": "Kshatriya", "Sagittarius": "Kshatriya",
+      "Taurus": "Vaishya", "Virgo": "Vaishya", "Capricorn": "Vaishya",
+      "Gemini": "Shudra", "Libra": "Shudra", "Aquarius": "Shudra"
+    },
+    "rank": { "Brahmin": 4, "Kshatriya": 3, "Vaishya": 2, "Shudra": 1 },
+    "maxPoints": 1
+  },
+
+  "vashya": {
+    "_comment": "Vashya (mutual control/attraction) group by Moon-sign. This engine works at whole-sign resolution (no divisional degree data — see planetPositionEngine.js), so signs that classically split across two Vashya groups by degree are assigned to their commonly-used simplified whole-sign group.",
+    "groupBySign": {
+      "Aries": "Chatushpada", "Taurus": "Chatushpada", "Sagittarius": "Chatushpada",
+      "Gemini": "Manav", "Virgo": "Manav", "Libra": "Manav", "Aquarius": "Manav",
+      "Cancer": "Jalachar", "Capricorn": "Jalachar", "Pisces": "Jalachar",
+      "Leo": "Vanchar",
+      "Scorpio": "Keeta"
+    },
+    "matrix": {
+      "Chatushpada": { "Chatushpada": 2, "Manav": 1, "Jalachar": 1, "Vanchar": 0, "Keeta": 0.5 },
+      "Manav": { "Chatushpada": 1, "Manav": 2, "Jalachar": 1, "Vanchar": 0.5, "Keeta": 1 },
+      "Jalachar": { "Chatushpada": 1, "Manav": 1, "Jalachar": 2, "Vanchar": 0, "Keeta": 1 },
+      "Vanchar": { "Chatushpada": 0, "Manav": 0.5, "Jalachar": 0, "Vanchar": 2, "Keeta": 0 },
+      "Keeta": { "Chatushpada": 0.5, "Manav": 1, "Jalachar": 1, "Vanchar": 0, "Keeta": 2 }
+    },
+    "maxPoints": 2
+  },
+
+  "tara": {
+    "_comment": "Tara (birth-star counting) Koota. Computed from the two people's Nakshatra index (not sign-based, no table needed) — see kundliMatchingEngine.js#calcTaraKoota. Counting from each person's Nakshatra to the other's (mod 9) gives a Tara number 1-9; numbers 3, 5, and 7 (Vipat, Pratyak, Vadha) are inauspicious. Each direction is worth 1.5 of the 3 total points.",
+    "inauspiciousTaraNumbers": [3, 5, 7],
+    "pointsPerDirection": 1.5,
+    "maxPoints": 3
+  },
+
+  "yoni": {
+    "_comment": "Yoni (intimate/animal-instinct) compatibility Koota — the animal per Nakshatra is read from rules/nakshatraProfile.json (14 classical Yonis). Simplified to 3 tiers (Same/Enemy/Neutral) rather than a full 14x14 friend-tier matrix, since this engine's whole-sign/whole-nakshatra resolution (see constants.js) does not track finer distinctions real Panchang software uses — the 7 classical Vairi (great-enemy) opposite pairs below are the one part of the Yoni table every tradition agrees on, so those are kept precise and everything else is treated as Neutral.",
+    "enemyPairs": [
+      ["Horse", "Buffalo"],
+      ["Elephant", "Lion"],
+      ["Goat", "Monkey"],
+      ["Serpent", "Mongoose"],
+      ["Dog", "Deer"],
+      ["Cat", "Rat"],
+      ["Cow", "Tiger"]
+    ],
+    "scores": { "same": 4, "enemy": 0, "neutral": 2 },
+    "maxPoints": 4
+  },
+
+  "gana": {
+    "_comment": "Gana (temperament: Deva/divine, Manushya/human, Rakshasa/demonic) Koota — Gana per Nakshatra is read from rules/nakshatraProfile.json. Classical asymmetric groom-row/bride-column scoring table.",
+    "matrix": {
+      "Deva": { "Deva": 6, "Manushya": 5, "Rakshasa": 1 },
+      "Manushya": { "Deva": 6, "Manushya": 6, "Rakshasa": 0 },
+      "Rakshasa": { "Deva": 0, "Manushya": 0, "Rakshasa": 6 }
+    },
+    "maxPoints": 6
+  },
+
+  "grahaMaitri": {
+    "_comment": "Graha Maitri (planetary friendship between the two Moon-sign lords) Koota. Reuses the existing Naisargika Maitri table (rules/planetaryFriendship.json) in both directions, then combines the pair of relations below. Same lord for both charts scores the maximum (a sign is always maximally friendly with itself).",
+    "sameLordPoints": 5,
+    "combinedScores": {
+      "friend+friend": 5,
+      "friend+neutral": 4,
+      "neutral+neutral": 3,
+      "neutral+enemy": 1,
+      "friend+enemy": 0.5,
+      "enemy+enemy": 0
+    },
+    "maxPoints": 5
+  },
+
+  "bhakoot": {
+    "_comment": "Bhakoot (overall Moon-sign house-distance) Koota. Counting the bride's Moon-sign forward from the groom's Moon-sign (groom's own sign = 1), distances of 2, 12 (Dwirdwadash), 5, 9 (Navapancham), or 6, 8 (Shadashtak) are classically inauspicious and score 0; every other distance scores the full 7.",
+    "doshaDistances": [2, 5, 6, 8, 9, 12],
+    "maxPoints": 7
+  },
+
+  "nadi": {
+    "_comment": "Nadi (life-pulse/genetic-lineage) Koota — the highest-weighted single Koota. Nadi per Nakshatra is read from rules/nakshatraProfile.json (Vata/Pitta/Kapha — the same tripartite classification classical texts call Aadi/Madhya/Antya Nadi). Same Nadi for both people is Nadi Dosha (0); different Nadi scores the full 8.",
+    "scores": { "same": 0, "different": 8 },
+    "maxPoints": 8
+  },
+
+  "totalMaxPoints": 36,
+
+  "compatibilityBands": [
+    { "min": 32, "label": "Excellent Match", "color": "#2e7d32" },
+    { "min": 25, "label": "Very Good Match", "color": "#5aa02e" },
+    { "min": 18, "label": "Good Match", "color": "#b8901a" },
+    { "min": 12, "label": "Average Match", "color": "#a15b00" },
+    { "min": 0, "label": "Not Recommended", "color": "#a13a3a" }
+  ]
+}

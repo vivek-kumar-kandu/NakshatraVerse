@@ -1,0 +1,786 @@
+{
+  "_comment": "Priority 3.2 Advanced Yoga rules. Evaluated by advancedYogaRuleEvaluator.js using the SAME Rule Engine (services/rules/ruleEngine.js) as rules/yogas.json, extended (not replaced) with new operators: signIn, inOwnSign, inExaltation, inDebilitation, houseDistanceFromIn, conjunctAll, dispositorInHouseGroup, houseLordInHouses, anyOf/allOf/not. Kept in a separate file from yogas.json so Priority 2/3.1's original yoga rule set stays byte-for-byte untouched; this file is additive only. House numbers are Lagna-relative, matching the existing convention (houseIn already checks house-from-Lagna in yogas.json). [Priority 6 / V2.0 addition: added Gajakesari Yoga, Budhaditya Yoga, and basic-support Parivartana Yoga (all 21 mutual-sign-exchange pairs among the 7 classical planets, via the new mutualSignExchange operator). All Priority 3.2 rules above are untouched.] [Correction: Gajakesari Yoga and Budhaditya Yoga were found to already exist in rules/yogas.json (Priority 2, ids gajKesariYoga/budhadityaYoga) and were therefore NOT duplicated here to avoid double-detection; only genuinely new Parivartana Yoga (basic support, all 21 mutual-sign-exchange pairs) was added in Priority 6.]",
+  "rules": [
+    {
+      "id": "ruchakaYoga",
+      "name": "Ruchaka Yoga (Panch Mahapurusha)",
+      "detailTemplate": "Mars is in its own or exalted sign while occupying a kendra house ({Mars_house}), a placement traditionally associated with Ruchaka Yoga, one of the five Panch Mahapurusha Yogas.",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            {
+              "operator": "inOwnSign",
+              "planet": "Mars"
+            },
+            {
+              "operator": "inExaltation",
+              "planet": "Mars"
+            }
+          ]
+        },
+        {
+          "operator": "houseIn",
+          "planet": "Mars",
+          "houseGroup": "kendra"
+        }
+      ]
+    },
+    {
+      "id": "bhadraYoga",
+      "name": "Bhadra Yoga (Panch Mahapurusha)",
+      "detailTemplate": "Mercury is in its own or exalted sign while occupying a kendra house ({Mercury_house}), a placement traditionally associated with Bhadra Yoga, one of the five Panch Mahapurusha Yogas.",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            {
+              "operator": "inOwnSign",
+              "planet": "Mercury"
+            },
+            {
+              "operator": "inExaltation",
+              "planet": "Mercury"
+            }
+          ]
+        },
+        {
+          "operator": "houseIn",
+          "planet": "Mercury",
+          "houseGroup": "kendra"
+        }
+      ]
+    },
+    {
+      "id": "hamsaYoga",
+      "name": "Hamsa Yoga (Panch Mahapurusha)",
+      "detailTemplate": "Jupiter is in its own or exalted sign while occupying a kendra house ({Jupiter_house}), a placement traditionally associated with Hamsa Yoga, one of the five Panch Mahapurusha Yogas.",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            {
+              "operator": "inOwnSign",
+              "planet": "Jupiter"
+            },
+            {
+              "operator": "inExaltation",
+              "planet": "Jupiter"
+            }
+          ]
+        },
+        {
+          "operator": "houseIn",
+          "planet": "Jupiter",
+          "houseGroup": "kendra"
+        }
+      ]
+    },
+    {
+      "id": "malavyaYoga",
+      "name": "Malavya Yoga (Panch Mahapurusha)",
+      "detailTemplate": "Venus is in its own or exalted sign while occupying a kendra house ({Venus_house}), a placement traditionally associated with Malavya Yoga, one of the five Panch Mahapurusha Yogas.",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            {
+              "operator": "inOwnSign",
+              "planet": "Venus"
+            },
+            {
+              "operator": "inExaltation",
+              "planet": "Venus"
+            }
+          ]
+        },
+        {
+          "operator": "houseIn",
+          "planet": "Venus",
+          "houseGroup": "kendra"
+        }
+      ]
+    },
+    {
+      "id": "shashaYoga",
+      "name": "Shasha Yoga (Panch Mahapurusha)",
+      "detailTemplate": "Saturn is in its own or exalted sign while occupying a kendra house ({Saturn_house}), a placement traditionally associated with Shasha Yoga, one of the five Panch Mahapurusha Yogas.",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            {
+              "operator": "inOwnSign",
+              "planet": "Saturn"
+            },
+            {
+              "operator": "inExaltation",
+              "planet": "Saturn"
+            }
+          ]
+        },
+        {
+          "operator": "houseIn",
+          "planet": "Saturn",
+          "houseGroup": "kendra"
+        }
+      ]
+    },
+    {
+      "id": "neechaBhangaRajaYogaSun",
+      "name": "Neecha Bhanga Raja Yoga (Sun)",
+      "detailTemplate": "Sun's debilitation in house {Sun_house} is traditionally considered cancelled (Neecha Bhanga) because its sign-dispositor is well placed in a kendra, a combination associated with Neecha Bhanga Raja Yoga.",
+      "conditions": [
+        {
+          "operator": "inDebilitation",
+          "planet": "Sun"
+        },
+        {
+          "operator": "dispositorInHouseGroup",
+          "planet": "Sun",
+          "houseGroup": "kendra"
+        }
+      ]
+    },
+    {
+      "id": "neechaBhangaRajaYogaMoon",
+      "name": "Neecha Bhanga Raja Yoga (Moon)",
+      "detailTemplate": "Moon's debilitation in house {Moon_house} is traditionally considered cancelled (Neecha Bhanga) because its sign-dispositor is well placed in a kendra, a combination associated with Neecha Bhanga Raja Yoga.",
+      "conditions": [
+        {
+          "operator": "inDebilitation",
+          "planet": "Moon"
+        },
+        {
+          "operator": "dispositorInHouseGroup",
+          "planet": "Moon",
+          "houseGroup": "kendra"
+        }
+      ]
+    },
+    {
+      "id": "neechaBhangaRajaYogaMars",
+      "name": "Neecha Bhanga Raja Yoga (Mars)",
+      "detailTemplate": "Mars's debilitation in house {Mars_house} is traditionally considered cancelled (Neecha Bhanga) because its sign-dispositor is well placed in a kendra, a combination associated with Neecha Bhanga Raja Yoga.",
+      "conditions": [
+        {
+          "operator": "inDebilitation",
+          "planet": "Mars"
+        },
+        {
+          "operator": "dispositorInHouseGroup",
+          "planet": "Mars",
+          "houseGroup": "kendra"
+        }
+      ]
+    },
+    {
+      "id": "neechaBhangaRajaYogaSaturn",
+      "name": "Neecha Bhanga Raja Yoga (Saturn)",
+      "detailTemplate": "Saturn's debilitation in house {Saturn_house} is traditionally considered cancelled (Neecha Bhanga) because its sign-dispositor is well placed in a kendra, a combination associated with Neecha Bhanga Raja Yoga.",
+      "conditions": [
+        {
+          "operator": "inDebilitation",
+          "planet": "Saturn"
+        },
+        {
+          "operator": "dispositorInHouseGroup",
+          "planet": "Saturn",
+          "houseGroup": "kendra"
+        }
+      ]
+    },
+    {
+      "id": "viparitaRajaYoga",
+      "name": "Viparita Raja Yoga",
+      "detailTemplate": "A dusthana house lord is placed in a different dusthana house, a configuration traditionally associated with Viparita Raja Yoga (unexpected reversal-of-fortune benefits).",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            {
+              "operator": "houseLordInHouses",
+              "house": 6,
+              "houses": [
+                8,
+                12
+              ]
+            },
+            {
+              "operator": "houseLordInHouses",
+              "house": 8,
+              "houses": [
+                6,
+                12
+              ]
+            },
+            {
+              "operator": "houseLordInHouses",
+              "house": 12,
+              "houses": [
+                6,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chandraMangalYoga",
+      "name": "Chandra Mangal Yoga",
+      "detailTemplate": "Moon and Mars conjoin in house {Moon_house}, a combination traditionally associated with Chandra Mangal Yoga (financial drive and enterprise).",
+      "conditions": [
+        {
+          "operator": "conjunctAll",
+          "planets": [
+            "Moon",
+            "Mars"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lakshmiYoga",
+      "name": "Lakshmi Yoga",
+      "detailTemplate": "Venus is in its own or exalted sign while placed in a kendra or trikona house ({Venus_house}), a placement traditionally associated with Lakshmi Yoga (prosperity and grace).",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            {
+              "operator": "inOwnSign",
+              "planet": "Venus"
+            },
+            {
+              "operator": "inExaltation",
+              "planet": "Venus"
+            }
+          ]
+        },
+        {
+          "operator": "houseIn",
+          "planet": "Venus",
+          "houseGroup": "kendraTrikona"
+        }
+      ]
+    },
+    {
+      "id": "saraswatiYoga",
+      "name": "Saraswati Yoga",
+      "detailTemplate": "Jupiter, Venus, and Mercury are all placed in kendra or trikona houses, a configuration traditionally associated with Saraswati Yoga (learning, eloquence, and the arts).",
+      "conditions": [
+        {
+          "operator": "houseIn",
+          "planet": "Jupiter",
+          "houseGroup": "kendraTrikona"
+        },
+        {
+          "operator": "houseIn",
+          "planet": "Venus",
+          "houseGroup": "kendraTrikona"
+        },
+        {
+          "operator": "houseIn",
+          "planet": "Mercury",
+          "houseGroup": "kendraTrikona"
+        }
+      ]
+    },
+    {
+      "id": "adhiYoga",
+      "name": "Adhi Yoga",
+      "detailTemplate": "A natural benefic (Mercury, Jupiter, or Venus) occupies the 6th, 7th, or 8th house counted from the Moon, a placement traditionally associated with Adhi Yoga (sustained success and standing).",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Mercury",
+              "distances": [
+                6,
+                7,
+                8
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Jupiter",
+              "distances": [
+                6,
+                7,
+                8
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Venus",
+              "distances": [
+                6,
+                7,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sunaphaYoga",
+      "name": "Sunapha Yoga",
+      "detailTemplate": "A planet other than the Sun occupies the 2nd house from the Moon, a placement traditionally associated with Sunapha Yoga (self-made resourcefulness).",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Mercury",
+              "distances": [
+                2
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Venus",
+              "distances": [
+                2
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Mars",
+              "distances": [
+                2
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Jupiter",
+              "distances": [
+                2
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Saturn",
+              "distances": [
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anaphaYoga",
+      "name": "Anapha Yoga",
+      "detailTemplate": "A planet other than the Sun occupies the 12th house from the Moon, a placement traditionally associated with Anapha Yoga (personal comfort and dignity).",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Mercury",
+              "distances": [
+                12
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Venus",
+              "distances": [
+                12
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Mars",
+              "distances": [
+                12
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Jupiter",
+              "distances": [
+                12
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Saturn",
+              "distances": [
+                12
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "durudharaYoga",
+      "name": "Durudhara Yoga",
+      "detailTemplate": "Planets occupy both the 2nd and 12th houses from the Moon, a placement traditionally associated with Durudhara Yoga (wealth and support from others).",
+      "conditions": [
+        {
+          "operator": "anyOf",
+          "conditions": [
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Mercury",
+              "distances": [
+                2
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Venus",
+              "distances": [
+                2
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Mars",
+              "distances": [
+                2
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Jupiter",
+              "distances": [
+                2
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Saturn",
+              "distances": [
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "operator": "anyOf",
+          "conditions": [
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Mercury",
+              "distances": [
+                12
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Venus",
+              "distances": [
+                12
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Mars",
+              "distances": [
+                12
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Jupiter",
+              "distances": [
+                12
+              ]
+            },
+            {
+              "operator": "houseDistanceFromIn",
+              "from": "Moon",
+              "planet": "Saturn",
+              "distances": [
+                12
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaSunMoon",
+      "name": "Parivartana Yoga (Sun-Moon)",
+      "detailTemplate": "Sun and Moon mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Sun",
+          "planetB": "Moon"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaSunMars",
+      "name": "Parivartana Yoga (Sun-Mars)",
+      "detailTemplate": "Sun and Mars mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Sun",
+          "planetB": "Mars"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaSunMercury",
+      "name": "Parivartana Yoga (Sun-Mercury)",
+      "detailTemplate": "Sun and Mercury mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Sun",
+          "planetB": "Mercury"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaSunJupiter",
+      "name": "Parivartana Yoga (Sun-Jupiter)",
+      "detailTemplate": "Sun and Jupiter mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Sun",
+          "planetB": "Jupiter"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaSunVenus",
+      "name": "Parivartana Yoga (Sun-Venus)",
+      "detailTemplate": "Sun and Venus mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Sun",
+          "planetB": "Venus"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaSunSaturn",
+      "name": "Parivartana Yoga (Sun-Saturn)",
+      "detailTemplate": "Sun and Saturn mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Sun",
+          "planetB": "Saturn"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaMoonMars",
+      "name": "Parivartana Yoga (Moon-Mars)",
+      "detailTemplate": "Moon and Mars mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Moon",
+          "planetB": "Mars"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaMoonMercury",
+      "name": "Parivartana Yoga (Moon-Mercury)",
+      "detailTemplate": "Moon and Mercury mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Moon",
+          "planetB": "Mercury"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaMoonJupiter",
+      "name": "Parivartana Yoga (Moon-Jupiter)",
+      "detailTemplate": "Moon and Jupiter mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Moon",
+          "planetB": "Jupiter"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaMoonVenus",
+      "name": "Parivartana Yoga (Moon-Venus)",
+      "detailTemplate": "Moon and Venus mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Moon",
+          "planetB": "Venus"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaMoonSaturn",
+      "name": "Parivartana Yoga (Moon-Saturn)",
+      "detailTemplate": "Moon and Saturn mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Moon",
+          "planetB": "Saturn"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaMarsMercury",
+      "name": "Parivartana Yoga (Mars-Mercury)",
+      "detailTemplate": "Mars and Mercury mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Mars",
+          "planetB": "Mercury"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaMarsJupiter",
+      "name": "Parivartana Yoga (Mars-Jupiter)",
+      "detailTemplate": "Mars and Jupiter mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Mars",
+          "planetB": "Jupiter"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaMarsVenus",
+      "name": "Parivartana Yoga (Mars-Venus)",
+      "detailTemplate": "Mars and Venus mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Mars",
+          "planetB": "Venus"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaMarsSaturn",
+      "name": "Parivartana Yoga (Mars-Saturn)",
+      "detailTemplate": "Mars and Saturn mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Mars",
+          "planetB": "Saturn"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaMercuryJupiter",
+      "name": "Parivartana Yoga (Mercury-Jupiter)",
+      "detailTemplate": "Mercury and Jupiter mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Mercury",
+          "planetB": "Jupiter"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaMercuryVenus",
+      "name": "Parivartana Yoga (Mercury-Venus)",
+      "detailTemplate": "Mercury and Venus mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Mercury",
+          "planetB": "Venus"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaMercurySaturn",
+      "name": "Parivartana Yoga (Mercury-Saturn)",
+      "detailTemplate": "Mercury and Saturn mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Mercury",
+          "planetB": "Saturn"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaJupiterVenus",
+      "name": "Parivartana Yoga (Jupiter-Venus)",
+      "detailTemplate": "Jupiter and Venus mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Jupiter",
+          "planetB": "Venus"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaJupiterSaturn",
+      "name": "Parivartana Yoga (Jupiter-Saturn)",
+      "detailTemplate": "Jupiter and Saturn mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Jupiter",
+          "planetB": "Saturn"
+        }
+      ]
+    },
+    {
+      "id": "parivartanaYogaVenusSaturn",
+      "name": "Parivartana Yoga (Venus-Saturn)",
+      "detailTemplate": "Venus and Saturn mutually occupy each other's sign (each is placed in a sign ruled by the other), a configuration traditionally associated with Parivartana Yoga (mutual sign exchange, basic/general support \u2014 linking the affairs of the houses each planet rules).",
+      "conditions": [
+        {
+          "operator": "mutualSignExchange",
+          "planetA": "Venus",
+          "planetB": "Saturn"
+        }
+      ]
+    }
+  ]
+}

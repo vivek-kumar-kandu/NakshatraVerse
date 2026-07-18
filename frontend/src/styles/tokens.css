@@ -1,0 +1,274 @@
+/* ───────────────────────────────────────────────────────────────────────
+   Design Tokens — NakshatraVerse V3.0 Phase 1 (Design System & Theme Engine)
+   ───────────────────────────────────────────────────────────────────────
+   Single source of truth for every reusable visual primitive: color,
+   typography, spacing, radius, shadow, motion, and glass-effect tokens.
+   Shared components (GlassCard, Badge, ConfirmDialog, Navbar, TabBar,
+   ReportCard, SearchFilterBar, Toast, Skeleton, EmptyState, buttons,
+   inputs) read these instead of hardcoded hex/rgba values, so every page
+   that already renders through them inherits the improved look for free.
+
+   THEME ENGINE
+   ────────────
+   Two themes ship today, selected by `data-theme` on <html>
+   (context/ThemeContext.jsx is the only thing that sets it):
+     • data-theme="dark"  → "Midnight Cosmic" (default) — the existing
+       deep-space purple/gold identity, refined.
+     • data-theme="light" → "Sacred Dawn" — a redesigned, distinct
+       light theme: clean white background, soft purple accents, white
+       glass cards, higher-contrast text.
+   See styles/themes.js for the display-name registry. Adding a future
+   theme means adding one more `[data-theme="..."] { --nv-*: ... }` block
+   here — no component ever needs to change, because components only ever
+   consume the `--nv-*` custom properties below, never raw colors.
+
+   Every token below is namespaced `--nv-*` to avoid collisions with any
+   third-party CSS. Theme-independent tokens (typography, spacing, radius,
+   motion, base shadow/blur *shape*) live in `:root`. Theme-dependent
+   tokens (colors, surface treatment, shadow *color*) live in the
+   `:root` (= dark defaults, unchanged from the original hardcoded
+   values) and `[data-theme="light"]` blocks.
+   ─────────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Typography ─────────────────────────────────────────────────────── */
+  --nv-font-display: "Cinzel", serif;
+  --nv-font-body: "Inter", sans-serif;
+
+  --nv-text-xs: 11px;
+  --nv-text-sm: 12.5px;
+  --nv-text-base: 14px;
+  --nv-text-md: 15.5px;
+  --nv-text-lg: 18px;
+  --nv-text-xl: 22px;
+  --nv-text-2xl: 28px;
+  --nv-text-3xl: 36px;
+
+  --nv-weight-regular: 400;
+  --nv-weight-medium: 500;
+  --nv-weight-semibold: 600;
+  --nv-weight-bold: 700;
+
+  --nv-leading-tight: 1.2;
+  --nv-leading-normal: 1.5;
+  --nv-leading-relaxed: 1.65;
+
+  /* ── Spacing (4px grid) ─────────────────────────────────────────────── */
+  --nv-space-1: 4px;
+  --nv-space-2: 8px;
+  --nv-space-3: 12px;
+  --nv-space-4: 16px;
+  --nv-space-5: 20px;
+  --nv-space-6: 24px;
+  --nv-space-7: 32px;
+  --nv-space-8: 40px;
+  --nv-space-9: 56px;
+
+  /* ── Border radius ──────────────────────────────────────────────────── */
+  --nv-radius-sm: 8px;
+  --nv-radius-md: 12px;
+  --nv-radius-lg: 16px;
+  --nv-radius-xl: 20px;
+  --nv-radius-pill: 999px;
+
+  /* ── Motion ──────────────────────────────────────────────────────────── */
+  --nv-duration-fast: 150ms;
+  --nv-duration-base: 220ms;
+  --nv-duration-slow: 320ms;
+  --nv-ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --nv-ease-linear: linear;
+
+  /* ── Glass effect shape (blur amount is theme-independent) ───────────── */
+  --nv-glass-blur: 20px;
+  --nv-glass-blur-sm: 14px;
+  /* Modal/drawer backdrop scrim blur — deliberately lighter than card glass
+     (it's dimming the page behind an overlay, not a glass surface itself).
+     Shared by every full-screen scrim (ConfirmDialog, ReportPreviewDrawer)
+     so the "veil" behind any overlay reads identically app-wide. */
+  --nv-scrim-blur: 4px;
+
+  /* ── Elevation (z-depth) shadow scale ─────────────────────────────────
+     A named 5-level hierarchy on top of the existing shadow tokens, so
+     every surface's depth is chosen by *role* rather than by eyeballing
+     a shadow value. Level 1 (page background) intentionally has no
+     token, the wash itself has no shadow. */
+  --nv-elevation-2: var(--nv-shadow-md);
+  --nv-elevation-3: var(--nv-shadow-lg);
+  --nv-elevation-4: var(--nv-shadow-xl);
+  --nv-elevation-5: var(--nv-shadow-xl), var(--nv-shadow-glow-purple);
+
+  /* ── Colors — "Midnight Cosmic" (dark, default) ───────────────────────
+     Byte-for-byte the app's original hardcoded values, so existing pages
+     are visually unchanged unless explicitly improved in Section 4. */
+  --nv-color-brand-purple: #7b2fff;
+  --nv-color-brand-purple-deep: #4a00a0;
+  --nv-color-brand-purple-light: #bf7fff;
+  --nv-color-brand-gold: #ffd700;
+
+  /* V3.0 Phase 1 polish pass: lifted ~6-7% from pure-black toward a rich
+     deep-space navy-purple (was #06000f/#0c0020/#080018) so the wash reads
+     as "cosmic night" rather than flat black, without losing the dark
+     identity. Surfaces get a matching lift plus a touch more opacity so
+     cards separate more clearly from the (now slightly lighter) page. */
+  --nv-bg-wash: linear-gradient(145deg, #0a0318 0%, #150532 35%, #100223 65%, #0a0318 100%);
+
+  --nv-surface: rgba(27, 7, 51, 0.64);
+  --nv-surface-strong: rgba(31, 9, 57, 0.9);
+  --nv-surface-subtle: rgba(25, 6, 47, 0.44);
+  --nv-surface-border: rgba(185, 130, 255, 0.22);
+  --nv-surface-border-hover: rgba(200, 142, 255, 0.46);
+  --nv-surface-inset-highlight: rgba(255, 255, 255, 0.07);
+
+  --nv-text-primary: #e8d5ff;
+  --nv-text-secondary: rgba(210, 175, 255, 0.76);
+  --nv-text-muted: rgba(210, 175, 255, 0.56);
+  --nv-text-faint: rgba(210, 175, 255, 0.4);
+  --nv-text-on-accent: #ffffff;
+
+  --nv-accent-wash: rgba(123, 47, 255, 0.15);
+  --nv-accent-wash-strong: rgba(123, 47, 255, 0.4);
+  --nv-accent-border: rgba(180, 120, 255, 0.3);
+  --nv-accent-gradient: linear-gradient(135deg, #7b2fff, #4a00a0);
+  /* Heading gold — dark stays byte-for-byte the original brand gold, only
+     light gets a richer metallic treatment (see light block below). */
+  --nv-gold-gradient: linear-gradient(135deg, #ffd700 0%, #ffb347 50%, #ffd700 100%);
+
+  --nv-danger: #ff9d9d;
+  --nv-danger-bg: rgba(120, 20, 20, 0.25);
+  --nv-danger-border: rgba(255, 100, 100, 0.35);
+  --nv-danger-gradient: linear-gradient(135deg, #a02020, #601010);
+
+  --nv-success: #c8ffc8;
+  --nv-success-bg: rgba(20, 60, 20, 0.88);
+  --nv-success-border: rgba(120, 255, 120, 0.35);
+
+  --nv-info: #e8d5ff;
+  --nv-info-bg: rgba(40, 10, 70, 0.88);
+  --nv-info-border: rgba(180, 120, 255, 0.35);
+
+  /* "Spotlight" card background — used for the single AI-Generated Life
+     Summary hero card. Dark value matches the original hardcoded design
+     byte-for-byte; light gets a warm cream tint (see light block below)
+     so the gold accent border/heading still reads as a distinct,
+     premium moment instead of just another plain white card. */
+  --nv-spotlight-bg: rgba(30, 5, 60, 0.7);
+
+  --nv-input-bg: rgba(18, 0, 38, 0.6);
+  --nv-input-border: rgba(180, 120, 255, 0.3);
+  --nv-input-placeholder: rgba(200, 160, 255, 0.35);
+  --nv-input-focus-border: rgba(191, 127, 255, 0.7);
+  --nv-input-focus-ring: rgba(123, 47, 255, 0.15);
+
+  --nv-overlay-scrim: rgba(5, 0, 15, 0.6);
+
+  /* ── Shadows (color tuned per-theme; dark = glow-heavy) ───────────────────
+     Each now layers a tight contact shadow with a soft diffuse glow (was a
+     single flat shadow) so depth reads as elegant/layered rather than a
+     uniform blur — same glow color/intensity vocabulary, just composed. */
+  --nv-shadow-sm: 0 2px 6px rgba(10, 0, 20, 0.4), 0 4px 14px rgba(123, 47, 255, 0.3);
+  --nv-shadow-md: 0 2px 10px rgba(10, 0, 20, 0.35), 0 6px 30px rgba(90, 10, 190, 0.2);
+  --nv-shadow-lg: 0 4px 14px rgba(10, 0, 20, 0.3), 0 14px 44px rgba(130, 55, 255, 0.3);
+  --nv-shadow-xl: 0 6px 18px rgba(0, 0, 0, 0.32), 0 18px 50px rgba(0, 0, 0, 0.3);
+  --nv-shadow-glow-purple: 0 0 20px rgba(123, 47, 255, 0.3);
+  --nv-shadow-glow-gold: 0 0 16px rgba(255, 215, 0, 0.35);
+
+  --nv-scrollbar-track: rgba(20, 0, 40, 0.4);
+  --nv-scrollbar-thumb: rgba(123, 47, 255, 0.4);
+}
+
+/* ── Colors — "Sacred Dawn" ───────────────────────────────────────────
+   Redesigned per V3.0 Phase 1 Section 3: a genuinely distinct light
+   theme rather than a dark-theme color inversion — clean white
+   background, soft purple accents, white glass cards, higher-contrast
+   text, softer shadows. Still unmistakably NakshatraVerse (same purple/
+   gold brand hues, same typography, same component shapes). */
+[data-theme="light"] {
+  /* V3.0 Phase 1 contrast/depth rebalance: the original pass sat too
+     close to pure white end-to-end (background, cards, and borders were
+     all within a few points of #fff), so cards had almost nothing to
+     separate them from the page and text/shadows read as faded rather
+     than premium. Same palette, same identity — every value below is a
+     deepened/strengthened version of the original, not a new design. */
+  /* V3.0 Phase 1 polish pass: the previous wash (#e9ddf7/#d7b9f4/#cba8f0)
+     read as flat, uniformly-lavender. Same purple identity, but the corner
+     stops swap to a warm ivory/champagne (rather than pale lavender) and
+     the mid stops deepen ~6-8%, so the wash has warmth and depth instead
+     of one flat lilac tone. */
+  --nv-bg-wash: linear-gradient(145deg, #ede2d4 0%, #cdaee2 40%, #bb9ad7 70%, #ede2d4 100%);
+
+  /* Reduce the shared glass blur specifically on light: heavy blur over
+     a pale background is what was producing the "washed out" haze —
+     dark theme (busy cosmic backdrop) keeps the full 20px, light gets a
+     crisper, less foggy glass. */
+  --nv-glass-blur: 12px;
+  --nv-glass-blur-sm: 8px;
+
+  --nv-surface: rgba(255, 251, 244, 0.9);
+  --nv-surface-strong: rgba(255, 253, 248, 0.99);
+  --nv-surface-subtle: rgba(255, 250, 241, 0.76);
+  --nv-surface-border: rgba(110, 55, 195, 0.2);
+  --nv-surface-border-hover: rgba(123, 47, 255, 0.48);
+  --nv-surface-inset-highlight: rgba(255, 255, 255, 0.85);
+
+  /* Deep purple-near-black for body text — meets AA contrast on white,
+     unlike a naive inversion of the dark theme's near-white text.
+     Secondary/muted/faint strengthened so supporting copy stays legible
+     instead of fading into the card. */
+  --nv-text-primary: #24103d;
+  --nv-text-secondary: rgba(36, 16, 61, 0.78);
+  --nv-text-muted: rgba(36, 16, 61, 0.58);
+  --nv-text-faint: rgba(36, 16, 61, 0.42);
+  --nv-text-on-accent: #ffffff;
+
+  --nv-accent-wash: rgba(123, 47, 255, 0.11);
+  --nv-accent-wash-strong: rgba(123, 47, 255, 0.85);
+  --nv-accent-border: rgba(123, 47, 255, 0.36);
+  --nv-accent-gradient: linear-gradient(135deg, #8a3ffc, #5b12c9);
+
+  --nv-danger: #b3261e;
+  --nv-danger-bg: rgba(255, 231, 231, 0.92);
+  --nv-danger-border: rgba(198, 40, 40, 0.4);
+  --nv-danger-gradient: linear-gradient(135deg, #d9463c, #a3241d);
+
+  --nv-success: #1f7a3d;
+  --nv-success-bg: rgba(224, 248, 231, 0.94);
+  --nv-success-border: rgba(30, 140, 70, 0.38);
+
+  --nv-info: #4a1a8a;
+  --nv-info-bg: rgba(238, 227, 255, 0.96);
+  --nv-info-border: rgba(140, 90, 220, 0.4);
+
+  --nv-spotlight-bg: rgba(255, 249, 230, 0.92);
+
+  --nv-input-bg: rgba(255, 255, 255, 0.94);
+  --nv-input-border: rgba(110, 55, 195, 0.38);
+  --nv-input-placeholder: rgba(36, 16, 61, 0.4);
+  --nv-input-focus-border: rgba(123, 47, 255, 0.68);
+  --nv-input-focus-ring: rgba(123, 47, 255, 0.2);
+
+  --nv-overlay-scrim: rgba(30, 12, 55, 0.4);
+
+  /* Deeper, more defined shadows for real depth — still soft/paper-like
+     rather than dark-theme neon, but with enough presence to establish
+     hierarchy instead of reading as flat. A faint accent glow is
+     restored (previously fully zeroed-out) for hover/active moments, at
+     low enough intensity to stay "premium daylight" rather than "dark
+     mode on a white page". */
+  /* Each shadow now layers a close, soft contact shadow with a wider,
+     gentler ambient one — reads as elegant/lifted rather than a single
+     flat blur, while staying at the same "premium daylight" intensity. */
+  --nv-shadow-sm: 0 1px 3px rgba(55, 20, 100, 0.1), 0 3px 11px rgba(55, 20, 100, 0.16);
+  --nv-shadow-md: 0 2px 8px rgba(55, 20, 100, 0.12), 0 10px 28px rgba(55, 20, 100, 0.17);
+  --nv-shadow-lg: 0 4px 14px rgba(55, 20, 100, 0.14), 0 18px 40px rgba(55, 20, 100, 0.2);
+  --nv-shadow-xl: 0 6px 18px rgba(45, 15, 85, 0.16), 0 22px 50px rgba(45, 15, 85, 0.22);
+  --nv-shadow-glow-purple: 0 0 18px rgba(123, 47, 255, 0.16);
+  --nv-shadow-glow-gold: 0 0 18px rgba(212, 175, 55, 0.3);
+
+  --nv-scrollbar-track: rgba(110, 55, 195, 0.12);
+  --nv-scrollbar-thumb: rgba(123, 47, 255, 0.42);
+
+  /* Richer, more metallic luxury-gold heading treatment (deeper amber/
+     bronze stops bracketing the brand gold) versus dark's flat brand
+     gold — reads as engraved gold leaf rather than a plain yellow tint. */
+  --nv-gold-gradient: linear-gradient(135deg, #a8790f 0%, #e6c15c 25%, #ffd700 50%, #e6c15c 75%, #a8790f 100%);
+}

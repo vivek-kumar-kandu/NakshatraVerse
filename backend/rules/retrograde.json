@@ -1,0 +1,7 @@
+{
+  "_comment": "Retrograde (Vakri) classification rules, consumed by retrogradeRuleEvaluator.js. Sun and Moon never go retrograde in Vedic astrology. Rahu/Ketu (lunar nodes) are conventionally always treated as retrograde since they move backward through the zodiac by nature. The remaining five grahas can be direct or retrograde. This engine has no real ephemeris (see services/astrology/planetPositionEngine.js — positions are seeded/deterministic, not astronomically computed), so retrograde status here is a deterministic approximation derived from a synthetic per-planet degree (services/astrology/planetaryDegreeEngine.js) rather than true planetary motion. This is documented as a foundation-phase approximation — see CHANGELOG recommendations for wiring in a real ephemeris.",
+  "neverRetrograde": ["Sun", "Moon"],
+  "alwaysRetrograde": ["Rahu", "Ketu"],
+  "eligibleForRetrograde": ["Mars", "Mercury", "Jupiter", "Venus", "Saturn"],
+  "retrogradeThreshold": 0.35
+}

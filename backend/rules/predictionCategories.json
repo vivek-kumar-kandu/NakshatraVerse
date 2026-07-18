@@ -1,0 +1,93 @@
+{
+  "_comment": "Configuration-driven Prediction Category data (V2.0 Phase 7 — Prediction Engine). Purely descriptive/reference data consumed by predictionRuleEvaluator.js — no calculation happens here, matching the Rule Engine's config-driven convention used throughout backend/rules/. `houses` and `significatorPlanets` are the classical Vedic significators (karakas) for each life area, used only to decide which already-detected yogas/doshas and which planet's already-computed strength profile are relevant to that category — never to derive new astrological facts. `templates` are hedged, non-absolute interpretive text (matching promptBuilder.js's own hedging rules), banded by the category's computed favorability so the right tone is picked without any per-user text ever being hardcoded here. A `general` entry (no houses/significators) is used by predictionTimelineEngine.js for its category-agnostic per-Antardasha timeline theme.",
+  "categories": [
+    {
+      "key": "career",
+      "label": "Career",
+      "houses": [10, 6, 1],
+      "significatorPlanets": ["Sun", "Saturn", "Mercury"],
+      "templates": {
+        "favorable": "With {dominantPlanet} prominent during the current {mahaLord} Mahadasha–{antarLord} Antardasha, this period traditionally favors career growth, recognition, and taking on greater professional responsibility.",
+        "mixed": "The current {mahaLord} Mahadasha–{antarLord} Antardasha brings a mixed influence on career matters — steady, consistent effort is more likely to be rewarded than any single dramatic change.",
+        "challenging": "The current {mahaLord} Mahadasha–{antarLord} Antardasha traditionally calls for extra patience and discipline in career matters, with obstacles best met through careful, sustained effort rather than haste."
+      }
+    },
+    {
+      "key": "finance",
+      "label": "Finance",
+      "houses": [2, 11, 9],
+      "significatorPlanets": ["Jupiter", "Venus", "Mercury"],
+      "templates": {
+        "favorable": "With {dominantPlanet} well-placed during the current {mahaLord} Mahadasha–{antarLord} Antardasha, this period traditionally supports steady financial growth and new sources of income (no guarantees implied).",
+        "mixed": "The current {mahaLord} Mahadasha–{antarLord} Antardasha suggests a mixed financial picture — careful budgeting and avoiding impulsive decisions is traditionally favored over speculation.",
+        "challenging": "The current {mahaLord} Mahadasha–{antarLord} Antardasha traditionally calls for financial caution, with a focus on conserving resources and avoiding major new financial commitments where possible."
+      }
+    },
+    {
+      "key": "marriage",
+      "label": "Marriage",
+      "houses": [7, 2, 11],
+      "significatorPlanets": ["Venus", "Jupiter", "Moon"],
+      "templates": {
+        "favorable": "With {dominantPlanet} supportive during the current {mahaLord} Mahadasha–{antarLord} Antardasha, this period traditionally favors harmony, commitment, and positive developments in partnerships (no specific timing implied).",
+        "mixed": "The current {mahaLord} Mahadasha–{antarLord} Antardasha brings a mixed influence on partnerships — open communication is traditionally favored to navigate any friction that surfaces.",
+        "challenging": "The current {mahaLord} Mahadasha–{antarLord} Antardasha traditionally calls for extra patience, compromise, and understanding in partnerships and close relationships."
+      }
+    },
+    {
+      "key": "education",
+      "label": "Education",
+      "houses": [4, 5, 9],
+      "significatorPlanets": ["Mercury", "Jupiter", "Moon"],
+      "templates": {
+        "favorable": "With {dominantPlanet} favorable during the current {mahaLord} Mahadasha–{antarLord} Antardasha, this period traditionally supports focus, learning, and academic or intellectual pursuits.",
+        "mixed": "The current {mahaLord} Mahadasha–{antarLord} Antardasha brings a mixed influence on learning and studies — consistent routine is traditionally favored over cramming or last-minute effort.",
+        "challenging": "The current {mahaLord} Mahadasha–{antarLord} Antardasha traditionally calls for extra discipline in studies, with distractions best managed through a steady, structured routine."
+      }
+    },
+    {
+      "key": "health",
+      "label": "Health",
+      "houses": [1, 6, 8],
+      "significatorPlanets": ["Sun", "Mars", "Saturn"],
+      "templates": {
+        "favorable": "With {dominantPlanet} supportive during the current {mahaLord} Mahadasha–{antarLord} Antardasha, this period traditionally favors vitality and steady well-being (general wellness themes only, not a diagnosis).",
+        "mixed": "The current {mahaLord} Mahadasha–{antarLord} Antardasha suggests a mixed influence on well-being — traditionally, maintaining a steady routine and moderate lifestyle is favored (not medical advice).",
+        "challenging": "The current {mahaLord} Mahadasha–{antarLord} Antardasha traditionally calls for extra attention to rest, stress management, and routine care (general wellness themes only, not a diagnosis)."
+      }
+    },
+    {
+      "key": "family",
+      "label": "Family",
+      "houses": [2, 4, 11],
+      "significatorPlanets": ["Moon", "Jupiter", "Venus"],
+      "templates": {
+        "favorable": "With {dominantPlanet} supportive during the current {mahaLord} Mahadasha–{antarLord} Antardasha, this period traditionally favors harmony and warmth within the family and home.",
+        "mixed": "The current {mahaLord} Mahadasha–{antarLord} Antardasha brings a mixed influence on family matters — patience and open communication are traditionally favored.",
+        "challenging": "The current {mahaLord} Mahadasha–{antarLord} Antardasha traditionally calls for extra patience and understanding in family and domestic matters."
+      }
+    },
+    {
+      "key": "spiritualGrowth",
+      "label": "Spiritual Growth",
+      "houses": [9, 12, 5],
+      "significatorPlanets": ["Jupiter", "Ketu", "Sun"],
+      "templates": {
+        "favorable": "With {dominantPlanet} prominent during the current {mahaLord} Mahadasha–{antarLord} Antardasha, this period traditionally favors introspection, spiritual practice, and inner growth.",
+        "mixed": "The current {mahaLord} Mahadasha–{antarLord} Antardasha brings a mixed influence on spiritual matters — a steady, unhurried practice is traditionally favored over seeking quick answers.",
+        "challenging": "The current {mahaLord} Mahadasha–{antarLord} Antardasha traditionally calls for grounding and patience in spiritual matters, with growth coming gradually rather than all at once."
+      }
+    },
+    {
+      "key": "general",
+      "label": "General",
+      "houses": [],
+      "significatorPlanets": [],
+      "templates": {
+        "favorable": "The {antarLord} Antardasha within the {mahaLord} Mahadasha is traditionally considered a supportive period, with {dominantPlanet}'s themes likely to be highlighted in a broadly favorable way.",
+        "mixed": "The {antarLord} Antardasha within the {mahaLord} Mahadasha traditionally brings a mixed influence, with {dominantPlanet}'s themes coming through alongside a need for balanced, steady effort.",
+        "challenging": "The {antarLord} Antardasha within the {mahaLord} Mahadasha traditionally calls for added patience, with {dominantPlanet}'s themes best approached carefully during this period."
+      }
+    }
+  ]
+}

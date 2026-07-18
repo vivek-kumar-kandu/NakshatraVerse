@@ -1,0 +1,12 @@
+{
+  "_comment": "Classical Vedic exaltation (uchcha) sign per planet. Rahu/Ketu exaltation varies by tradition; the commonly cited Parashari values are used here.",
+  "Sun": "Aries",
+  "Moon": "Taurus",
+  "Mars": "Capricorn",
+  "Mercury": "Virgo",
+  "Jupiter": "Cancer",
+  "Venus": "Pisces",
+  "Saturn": "Libra",
+  "Rahu": "Taurus",
+  "Ketu": "Scorpio"
+}

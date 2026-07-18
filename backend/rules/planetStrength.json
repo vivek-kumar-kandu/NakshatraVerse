@@ -1,0 +1,9 @@
+{
+  "_comment": "Strength labels/scores per planetary dignity state, consumed by planetStrengthRuleEvaluator.js. This feeds the internal (not yet API-exposed) planet strength computation — see services/astrology/planetStrengthEngine.js for why its output is computed but intentionally not merged into the API response.",
+  "states": {
+    "exalted": { "label": "Exalted", "score": 5 },
+    "ownSign": { "label": "Own Sign", "score": 3 },
+    "neutral": { "label": "Neutral", "score": 0 },
+    "debilitated": { "label": "Debilitated", "score": -5 }
+  }
+}

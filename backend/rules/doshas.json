@@ -1,0 +1,30 @@
+{
+  "_comment": "Configuration-driven Dosha detection rules. Text preserved exactly from the original hardcoded engine to guarantee backward compatibility.",
+  "rules": [
+    {
+      "id": "mangalDosha",
+      "name": "Mangal Dosha",
+      "detailTemplate": "Mars is placed in house {Mars_house}, a position traditionally associated with Mangal (Manglik) Dosha.",
+      "conditions": [
+        {
+          "operator": "houseIn",
+          "planet": "Mars",
+          "houseGroup": "manglikHouses"
+        }
+      ]
+    },
+    {
+      "id": "kaalSarpDosha",
+      "name": "Kaal Sarp Dosha",
+      "detailTemplate": "All major planets fall between the Rahu–Ketu axis, a configuration traditionally associated with Kaal Sarp Dosha.",
+      "conditions": [
+        {
+          "operator": "allBetweenAxis",
+          "axisStart": "Rahu",
+          "axisEnd": "Ketu",
+          "planets": ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
+        }
+      ]
+    }
+  ]
+}
