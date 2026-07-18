@@ -7,6 +7,17 @@
 // structured fields AND a backward-compatible `answer` string (short +
 // detailed, exactly what the V3.0 chat UI already expects), so nothing
 // downstream that only reads `answer` breaks.
+// Two-Mode Chat: `chart` is now optional.
+//   - General Astrology Mode (no chart, or a question that doesn't need
+//     one): answered by Gemini using general astrology knowledge via
+//     buildGeneralChatPrompt — no backend facts, no chart required.
+//   - Personal Astrology Mode (chart present AND the question needs it):
+//     unchanged from before — Gemini explains only backend-computed facts
+//     via buildChatPrompt.
+//   - Chart absent BUT the question clearly needs one (per
+//     personalIntentDetector.js): short-circuits before ever calling
+//     Gemini and returns a graceful, deterministic prompt to open/generate
+//     a report. This is intentionally NOT left to the model to decide.
 // Orchestrates a single chat turn: build the structured insights the
 // report endpoints already compute (defensively — never fatal), build the
 // chat prompt from backend-authoritative facts only, call Gemini, and
@@ -18,9 +29,16 @@
 // ─────────────────────────────────────────────────────────────────────────
 import logger from "../utils/logger.js";
 import { buildStructuredInsights } from "../astrology/structuredInsightsEngine.js";
-import { buildChatPrompt } from "./chatPromptBuilder.js";
+import { buildChatPrompt, buildGeneralChatPrompt } from "./chatPromptBuilder.js";
 import { callGemini } from "./geminiService.js";
 import { trimHistory } from "../../validators/assistant.validator.js";
+import { requiresPersonalChart } from "./personalIntentDetector.js";
+
+// Shown verbatim, with no Gemini call, whenever a question needs the
+// person's own chart but none was sent. Deterministic and instant rather
+// than relying on the model to always catch this itself.
+export const PERSONAL_CHART_REQUIRED_MESSAGE =
+  "Please generate or open your astrology report for personalized guidance.";
 
 // Strips code fences (defense in depth — the prompt already forbids them,
 // but a model can slip them in anyway) so the frontend's "no code blocks"
@@ -57,26 +75,50 @@ export async function answerChatQuestion({
   panchangContext,
   muhuratContext,
 }) {
-  let insights = null;
-  try {
-    insights = buildStructuredInsights(chart);
-  } catch (err) {
-    // Same defensive pattern as astrology.controller.js#getChart: a
-    // failure here must never break the chat turn — Gemini simply gets a
-    // slightly smaller (but still fully backend-authoritative) fact set.
-    logger.error("Assistant chat: buildStructuredInsights failed, continuing without it:", err);
+  const trimmedQuestion = question.trim();
+  const hasChart = !!chart && typeof chart === "object";
+
+  // Personal Astrology Mode was asked for, but there's no chart to answer
+  // it from — respond gracefully and instantly, no Gemini call needed.
+  if (!hasChart && requiresPersonalChart(trimmedQuestion)) {
+    return {
+      answer: PERSONAL_CHART_REQUIRED_MESSAGE,
+      shortAnswer: PERSONAL_CHART_REQUIRED_MESSAGE,
+      detailedExplanation: null,
+      evidence: [],
+      confidence: null,
+      suggestedNextQuestion: null,
+      mode: "personal-chart-required",
+    };
   }
 
-  const prompt = buildChatPrompt({
-    chart,
-    report: report || chart.report,
-    insights,
-    history: trimHistory(history),
-    question: question.trim(),
-    festivalContext,
-    panchangContext,
-    muhuratContext,
-  });
+  let prompt;
+  if (hasChart) {
+    let insights = null;
+    try {
+      insights = buildStructuredInsights(chart);
+    } catch (err) {
+      // Same defensive pattern as astrology.controller.js#getChart: a
+      // failure here must never break the chat turn — Gemini simply gets a
+      // slightly smaller (but still fully backend-authoritative) fact set.
+      logger.error("Assistant chat: buildStructuredInsights failed, continuing without it:", err);
+    }
+
+    prompt = buildChatPrompt({
+      chart,
+      report: report || chart.report,
+      insights,
+      history: trimHistory(history),
+      question: trimmedQuestion,
+      festivalContext,
+      panchangContext,
+      muhuratContext,
+    });
+  } else {
+    // General Astrology Mode: no chart at all, and the question doesn't
+    // need one — answer from general astrology knowledge only.
+    prompt = buildGeneralChatPrompt({ history: trimHistory(history), question: trimmedQuestion });
+  }
 
   const result = await callGemini(prompt);
 
@@ -115,7 +157,8 @@ export async function answerChatQuestion({
     evidence,
     confidence,
     suggestedNextQuestion,
+    mode: hasChart ? "personal" : "general",
   };
 }
 
-export default { answerChatQuestion };
+export default { answerChatQuestion, PERSONAL_CHART_REQUIRED_MESSAGE };

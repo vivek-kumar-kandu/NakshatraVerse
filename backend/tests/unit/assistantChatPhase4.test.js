@@ -21,6 +21,20 @@ describe("validateChatRequest (Phase 4 additions)", () => {
     expect(validateChatRequest({ chart: VALID_CHART, question: "Why is Saturn important?" })).toEqual([]);
   });
 
+  it("passes with no chart at all (General Astrology Mode)", () => {
+    expect(validateChatRequest({ question: "What is a Nakshatra?" })).toEqual([]);
+  });
+
+  it("flags a malformed chart object even though chart itself is optional", () => {
+    const errors = validateChatRequest({ chart: { userData: {} }, question: "test" });
+    expect(errors).toContain("chart.planetary is required.");
+  });
+
+  it("flags a non-object chart value", () => {
+    const errors = validateChatRequest({ chart: "not-an-object", question: "test" });
+    expect(errors).toContain("chart must be an object when provided.");
+  });
+
   it("passes when festivalContext/panchangContext/muhuratContext are provided as objects", () => {
     const errors = validateChatRequest({
       chart: VALID_CHART,
@@ -49,13 +63,9 @@ describe("validateChatRequest (Phase 4 additions)", () => {
     expect(errors).toContain("panchangContext must be an object when provided.");
   });
 
-  it("still flags all pre-existing V3.0 Phase 4 validation errors unchanged", () => {
-    expect(validateChatRequest({})).toEqual(
-      expect.arrayContaining([
-        "chart is required and must be the backend-generated chart object.",
-        "question is required and must be a non-empty string.",
-      ])
-    );
+  it("only flags question as required when body is entirely empty (chart is optional)", () => {
+    const errors = validateChatRequest({});
+    expect(errors).toEqual(["question is required and must be a non-empty string."]);
   });
 
   it("still validates history shape unchanged", () => {

@@ -610,6 +610,7 @@ function AppContent() {
           report={assistantContext?.report}
           initialQuestion={assistantContext?.initialQuestion}
           onBack={() => setStage(assistantContext?.returnStage || "results")}
+          onNavigate={handleNavigate}
         />
       </Suspense>
     );

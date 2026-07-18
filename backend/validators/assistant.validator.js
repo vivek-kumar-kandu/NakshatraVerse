@@ -6,6 +6,14 @@
 // Intelligence/Panchang/Muhurat data for the person can hand it to the
 // chat as extra backend-authoritative facts. None of these are required;
 // omitting them keeps the exact V3.0 Phase 4 behavior.
+// Two-Mode Chat: `chart` is now OPTIONAL at the validator level. The
+// assistant supports a General Astrology Mode (no chart needed — answered
+// from Gemini's general astrology knowledge) and a Personal Astrology Mode
+// (requires the backend-generated chart). Deciding *which* mode a given
+// question needs is assistantService's job (see personalIntentDetector.js)
+// — this validator only ever checks that, IF a chart was sent, it has the
+// shape the rest of the pipeline expects. A request with no chart at all is
+// valid; a request with a malformed chart object is not.
 // Validates a POST /api/assistant/chat body. Mirrors the style of
 // birthData.validator.js: pure functions, no framework coupling, so the
 // controller stays thin.
@@ -26,12 +34,17 @@ export function validateChatRequest(body) {
     }
   }
 
-  if (!chart || typeof chart !== "object") {
-    errors.push("chart is required and must be the backend-generated chart object.");
-  } else {
-    for (const field of REQUIRED_CHART_FIELDS) {
-      if (chart[field] === undefined || chart[field] === null) {
-        errors.push(`chart.${field} is required.`);
+  // `chart` is optional (General Astrology Mode has none) — but if it IS
+  // provided, it must be a well-formed backend-generated chart object, the
+  // same as before.
+  if (chart !== undefined && chart !== null) {
+    if (typeof chart !== "object") {
+      errors.push("chart must be an object when provided.");
+    } else {
+      for (const field of REQUIRED_CHART_FIELDS) {
+        if (chart[field] === undefined || chart[field] === null) {
+          errors.push(`chart.${field} is required.`);
+        }
       }
     }
   }

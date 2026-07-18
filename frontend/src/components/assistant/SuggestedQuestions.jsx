@@ -18,6 +18,18 @@ export const DEFAULT_SUGGESTIONS = [
   { id: "numerology", label: "Explain my numerology.", requires: null },
 ];
 
+// General Astrology Mode — shown instead of DEFAULT_SUGGESTIONS whenever
+// no chart/report is loaded (see AIAssistantPage's buildSuggestions).
+// Purely educational/conceptual questions that need no personal chart to
+// answer, so they're always available regardless of `requires`.
+export const GENERAL_SUGGESTIONS = [
+  { id: "what-is-nakshatra", label: "What is a Nakshatra?", requires: null },
+  { id: "what-is-dasha", label: "What is a Dasha period?", requires: null },
+  { id: "yogas-doshas", label: "What are yogas and doshas?", requires: null },
+  { id: "vedic-vs-western", label: "How is Vedic astrology different from Western astrology?", requires: null },
+  { id: "planet-strength", label: "How is planetary strength assessed?", requires: null },
+];
+
 function SuggestedQuestions({ suggestions = DEFAULT_SUGGESTIONS, onPick, disabled }) {
   if (!suggestions.length) return null;
   return (

@@ -101,4 +101,48 @@ describe("answerChatQuestion (Phase 4 — structured response)", () => {
     expect(promptArg).toContain("Purnima");
     expect(promptArg).toContain("Griha Pravesh");
   });
+
+  it("tags a chart-backed answer with mode: 'personal'", async () => {
+    callGemini.mockResolvedValue({ shortAnswer: "Short.", detailedExplanation: "Detail." });
+    const result = await answerChatQuestion({ chart: CHART, report: {}, history: [], question: "Explain my Nakshatra." });
+    expect(result.mode).toBe("personal");
+  });
+});
+
+describe("answerChatQuestion (Two-Mode Chat — General Astrology Mode)", () => {
+  beforeEach(() => {
+    callGemini.mockReset();
+  });
+
+  it("answers a general astrology question via Gemini even with no chart at all", async () => {
+    callGemini.mockResolvedValue({
+      shortAnswer: "A Nakshatra is one of 27 lunar mansions.",
+      detailedExplanation: "Vedic astrology divides the Moon's path into 27 Nakshatras...",
+    });
+    const result = await answerChatQuestion({ question: "What is a Nakshatra?", history: [] });
+    expect(callGemini).toHaveBeenCalledTimes(1);
+    expect(result.shortAnswer).toBe("A Nakshatra is one of 27 lunar mansions.");
+    expect(result.mode).toBe("general");
+  });
+
+  it("never calls Gemini and replies gracefully when a personal question has no chart", async () => {
+    const result = await answerChatQuestion({ question: "Explain my Nakshatra.", history: [] });
+    expect(callGemini).not.toHaveBeenCalled();
+    expect(result.answer).toBe("Please generate or open your astrology report for personalized guidance.");
+    expect(result.mode).toBe("personal-chart-required");
+  });
+
+  it("still calls Gemini for direct personal-fortune phrasing with no chart, replying gracefully instead", async () => {
+    const result = await answerChatQuestion({ question: "Will I get married soon?", history: [] });
+    expect(callGemini).not.toHaveBeenCalled();
+    expect(result.mode).toBe("personal-chart-required");
+  });
+
+  it("general mode prompt carries no chart facts section", async () => {
+    callGemini.mockResolvedValue({ shortAnswer: "ok", detailedExplanation: "ok" });
+    await answerChatQuestion({ question: "What is a Dasha period?", history: [] });
+    const promptArg = callGemini.mock.calls[0][0];
+    expect(promptArg).toContain("General Astrology Mode");
+    expect(promptArg).not.toContain("Backend-Calculated Astrological Facts");
+  });
 });
