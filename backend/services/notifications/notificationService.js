@@ -69,14 +69,10 @@ export async function createNotification(userId, input) {
 export async function createNotificationIfNew(userId, input) {
   const dedupeKey = input?.metadata?.dedupeKey || null;
   if (dedupeKey) {
-<<<<<<< HEAD
-    const existing = notificationRepository.findByUserAndDedupeKey(userId, dedupeKey);
-=======
     const existing = await notificationRepository.findByUserAndDedupeKey(
     userId,
     dedupeKey
 );
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     if (existing && !isExpired(existing)) {
       return { created: false, notification: toPublicNotification(existing) };
     }
@@ -85,17 +81,11 @@ export async function createNotificationIfNew(userId, input) {
   return { created: true, notification };
 }
 
-<<<<<<< HEAD
-export function getNotification(userId, id) {
-  const record = notificationRepository.findById(id);
-  assertOwnership(record, userId);
-=======
 export async function getNotification(userId, id) {
   const record = await notificationRepository.findById(id);
 
   assertOwnership(record, userId);
 
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return toPublicNotification(record);
 }
 
@@ -116,19 +106,12 @@ const DEFAULT_LIMIT = 20;
 // mirrors familyProfileService.listProfiles' shape, extended with
 // pagination since a notification feed can grow much larger than a
 // person's saved family profiles.
-<<<<<<< HEAD
-export function listNotifications(userId, {
-  search, category, priority, isRead, sort, page, limit, includeExpired,
-} = {}) {
-  let notifications = notificationRepository.findByUser(userId).map(toPublicNotification);
-=======
 export async function listNotifications(userId, {
   search, category, priority, isRead, sort, page, limit, includeExpired,
 } = {}) {
   let notifications = (
   await notificationRepository.findByUser(userId)
 ).map(toPublicNotification);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   if (!includeExpired) {
     notifications = notifications.filter((n) => !n.expired);
@@ -170,24 +153,15 @@ export async function listNotifications(userId, {
   };
 }
 
-<<<<<<< HEAD
-export function unreadCount(userId) {
-  return notificationRepository.findByUser(userId)
-=======
 export async function unreadCount(userId) {
   return (
     await notificationRepository.findByUser(userId)
   )
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     .map(toPublicNotification)
     .filter((n) => !n.isRead && !n.expired)
     .length;
 }
 
-<<<<<<< HEAD
-export function latestNotification(userId) {
-  const [latest] = notificationRepository.findByUser(userId).map(toPublicNotification).filter((n) => !n.expired);
-=======
 export async function latestNotification(userId) {
   const [latest] = (
     await notificationRepository.findByUser(userId)
@@ -195,16 +169,11 @@ export async function latestNotification(userId) {
     .map(toPublicNotification)
     .filter((n) => !n.expired);
 
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return latest || null;
 }
 
 export async function markRead(userId, id) {
-<<<<<<< HEAD
-  const existing = notificationRepository.findById(id);
-=======
   const existing =  await notificationRepository.findById(id);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   assertOwnership(existing, userId);
   const updated = await notificationRepository.update(id, { isRead: true });
   return toPublicNotification(updated);
@@ -216,17 +185,11 @@ export async function markAllRead(userId) {
 }
 
 export async function deleteNotification(userId, id) {
-<<<<<<< HEAD
-  const existing = notificationRepository.findById(id);
-  assertOwnership(existing, userId);
-  return notificationRepository.remove(id);
-=======
   const existing = await notificationRepository.findById(id);
 
   assertOwnership(existing, userId);
 
   return await notificationRepository.remove(id);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 export async function deleteAllRead(userId) {

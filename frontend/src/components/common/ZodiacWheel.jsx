@@ -1,8 +1,5 @@
 import { memo, useState, useCallback, useMemo, useId } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { ZODIAC_SIGNS, SIGN_NAMES, PLANET_COLORS } from "../../constants/astrology.js";
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -48,12 +45,7 @@ function wedgePath(cx, cy, r1, r2, a1, a2) {
   return `M ${p1.x.toFixed(2)} ${p1.y.toFixed(2)} A ${r2} ${r2} 0 0 1 ${p2.x.toFixed(2)} ${p2.y.toFixed(2)} L ${p3.x.toFixed(2)} ${p3.y.toFixed(2)} A ${r1} ${r1} 0 0 0 ${p4.x.toFixed(2)} ${p4.y.toFixed(2)} Z`;
 }
 
-<<<<<<< HEAD
-function ZodiacWheel({
-  lagna,
-=======
 function ZodiacWheel({ lagna,
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   planetary,
   // Phase 2 interactivity (all optional — safe no-ops if omitted)
   activePlanet = null,
@@ -67,10 +59,7 @@ function ZodiacWheel({ lagna,
   const outer = r + 20; // 120 — matches the existing outer ring circle radius
   const lagnaIdx = SIGN_NAMES.indexOf(lagna);
   const uid = useId();
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["results"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   // Local hover/focus state purely for the tooltip bubble — selection
   // state itself is owned by the parent (KundliTab) so the wheel, the
@@ -118,11 +107,7 @@ function ZodiacWheel({ lagna,
         height="100%"
         viewBox="0 0 260 260"
         role="img"
-<<<<<<< HEAD
-        aria-label={`Vedic birth chart wheel with Lagna (ascendant) in ${lagna || "an unknown sign"}`}
-=======
         aria-label={t("results:zodiacWheel.wheelAriaLabel", { sign: lagna || t("results:zodiacWheel.unknownSign") })}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         style={{ display:"block", width:"100%", maxWidth:260, height:"auto", margin:"0 auto", filter:"drop-shadow(0 0 24px rgba(150,80,255,0.35))", overflow:"visible" }}
       >
         <defs>
@@ -164,21 +149,12 @@ function ZodiacWheel({ lagna,
                 style={{ cursor: houseNum ? "pointer" : "default", transition: "fill var(--nv-duration-base) var(--nv-ease-standard), stroke var(--nv-duration-base) var(--nv-ease-standard)" }}
                 role={houseNum ? "button" : undefined}
                 tabIndex={houseNum ? 0 : undefined}
-<<<<<<< HEAD
-                aria-label={houseNum ? `House ${houseNum}, ${signName} — ${planetsHere.length ? planetsHere.map(p => p.name).join(", ") : "no planets"}` : undefined}
-                onMouseEnter={() => { onHouseHover?.(houseNum); showTooltip(sx, sy - 10, `House ${houseNum} · ${signName}`, planetsHere.length ? planetsHere.map(p => p.name.replace(/\s?[☀️🌙♂☿♃♀♄🌑🌕]/u,"")).join(", ") : "No planets here", "var(--nv-color-brand-gold, #ffd700)", "house"); }}
-                onMouseLeave={() => { onHouseHover?.(null); hideTooltip(); }}
-                onFocus={() => { onHouseHover?.(houseNum); showTooltip(sx, sy - 10, `House ${houseNum} · ${signName}`, planetsHere.length ? planetsHere.map(p => p.name.replace(/\s?[☀️🌙♂☿♃♀♄🌑🌕]/u,"")).join(", ") : "No planets here", "var(--nv-color-brand-gold, #ffd700)", "house"); }}
-                onBlur={() => { onHouseHover?.(null); hideTooltip(); }}
-                onTouchStart={() => { if (houseNum) touchPreview(sx, sy - 10, `House ${houseNum} · ${signName}`, planetsHere.length ? planetsHere.map(p => p.name.replace(/\s?[☀️🌙♂☿♃♀♄🌑🌕]/u,"")).join(", ") : "No planets here", "var(--nv-color-brand-gold, #ffd700)", "house"); }}
-=======
                 aria-label={houseNum ? t("results:zodiacWheel.houseAriaLabel", { number: houseNum, sign: signName, planets: planetsHere.length ? planetsHere.map(p => p.name).join(", ") : t("results:zodiacWheel.noPlanets") }) : undefined}
                 onMouseEnter={() => { onHouseHover?.(houseNum); showTooltip(sx, sy - 10, `${t("results:kundli.house", { number: houseNum })} · ${signName}`, planetsHere.length ? planetsHere.map(p => p.name.replace(/\s?[☀️🌙♂☿♃♀♄🌑🌕]/u,"")).join(", ") : t("results:zodiacWheel.noPlanetsHere"), "var(--nv-color-brand-gold, #ffd700)", "house"); }}
                 onMouseLeave={() => { onHouseHover?.(null); hideTooltip(); }}
                 onFocus={() => { onHouseHover?.(houseNum); showTooltip(sx, sy - 10, `${t("results:kundli.house", { number: houseNum })} · ${signName}`, planetsHere.length ? planetsHere.map(p => p.name.replace(/\s?[☀️🌙♂☿♃♀♄🌑🌕]/u,"")).join(", ") : t("results:zodiacWheel.noPlanetsHere"), "var(--nv-color-brand-gold, #ffd700)", "house"); }}
                 onBlur={() => { onHouseHover?.(null); hideTooltip(); }}
                 onTouchStart={() => { if (houseNum) touchPreview(sx, sy - 10, `${t("results:kundli.house", { number: houseNum })} · ${signName}`, planetsHere.length ? planetsHere.map(p => p.name.replace(/\s?[☀️🌙♂☿♃♀♄🌑🌕]/u,"")).join(", ") : t("results:zodiacWheel.noPlanetsHere"), "var(--nv-color-brand-gold, #ffd700)", "house"); }}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 onClick={() => houseNum && onHouseClick?.(houseNum)}
                 onKeyDown={(e) => { if (houseNum && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); onHouseClick?.(houseNum); } }}
               />
@@ -206,15 +182,6 @@ function ZodiacWheel({ lagna,
                     key={p.name}
                     role="button"
                     tabIndex={0}
-<<<<<<< HEAD
-                    aria-label={`${p.name.replace(/[☀️🌙♂☿♃♀♄🌑🌕\uFE0F]/gu,"").trim()}: House ${p.house}, ${p.sign}`}
-                    style={{ cursor: "pointer" }}
-                    onMouseEnter={() => { onPlanetHover?.(p.name); showTooltip(pos.x, pos.y - 10, p.name, `House ${p.house} · ${p.sign}`, color, "planet"); }}
-                    onMouseLeave={() => { onPlanetHover?.(null); hideTooltip(); }}
-                    onFocus={() => { onPlanetHover?.(p.name); showTooltip(pos.x, pos.y - 10, p.name, `House ${p.house} · ${p.sign}`, color, "planet"); }}
-                    onBlur={() => { onPlanetHover?.(null); hideTooltip(); }}
-                    onTouchStart={() => touchPreview(pos.x, pos.y - 10, p.name, `House ${p.house} · ${p.sign}`, color, "planet")}
-=======
                     aria-label={t("results:zodiacWheel.planetAriaLabel", { planet: p.name.replace(/[☀️🌙♂☿♃♀♄🌑🌕\uFE0F]/gu,"").trim(), house: p.house, sign: p.sign })}
                     style={{ cursor: "pointer" }}
                     onMouseEnter={() => { onPlanetHover?.(p.name); showTooltip(pos.x, pos.y - 10, p.name, `${t("results:kundli.house", { number: p.house })} · ${p.sign}`, color, "planet"); }}
@@ -222,7 +189,6 @@ function ZodiacWheel({ lagna,
                     onFocus={() => { onPlanetHover?.(p.name); showTooltip(pos.x, pos.y - 10, p.name, `${t("results:kundli.house", { number: p.house })} · ${p.sign}`, color, "planet"); }}
                     onBlur={() => { onPlanetHover?.(null); hideTooltip(); }}
                     onTouchStart={() => touchPreview(pos.x, pos.y - 10, p.name, `${t("results:kundli.house", { number: p.house })} · ${p.sign}`, color, "planet")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                     onClick={(e) => { e.stopPropagation(); onPlanetClick?.(p.name); }}
                     onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); e.stopPropagation(); onPlanetClick?.(p.name); } }}
                   >
@@ -249,11 +215,7 @@ function ZodiacWheel({ lagna,
 
         {/* Inner circle */}
         <circle cx={cx} cy={cy} r={inner} fill={`url(#cg-${uid})`} stroke="rgba(180,120,255,0.25)" strokeWidth={1} />
-<<<<<<< HEAD
-        <text x={cx} y={cy-10} textAnchor="middle" fontSize={10} fill="var(--nv-text-muted, rgba(200,160,255,0.5))" fontFamily="Inter,sans-serif">LAGNA</text>
-=======
         <text x={cx} y={cy-10} textAnchor="middle" fontSize={10} fill="var(--nv-text-muted, rgba(200,160,255,0.5))" fontFamily="Inter,sans-serif">{t("results:overview.fields.lagna")}</text>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         <text x={cx} y={cy+8} textAnchor="middle" fontSize={14} fill="var(--nv-color-brand-gold, #ffd700)" fontWeight="bold" fontFamily="Cinzel,serif">{lagna}</text>
         <text x={cx} y={cy+24} textAnchor="middle" fontSize={10} fill="rgba(180,120,255,0.6)" fontFamily="Inter,sans-serif">{ZODIAC_SIGNS[SIGN_NAMES.indexOf(lagna)]}</text>
       </svg>

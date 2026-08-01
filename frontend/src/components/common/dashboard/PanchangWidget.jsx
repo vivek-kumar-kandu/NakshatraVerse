@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo, useEffect, useState } from "react";
 import SummaryCard from "./SummaryCard.jsx";
 import InsightRow from "../InsightRow.jsx";
@@ -18,10 +15,7 @@ import * as panchangApi from "../../../utils/panchangApi.js";
 // need to touch its own data-loading logic to show it.
 // ─────────────────────────────────────────────────────────────────────────
 function PanchangWidget({ onViewFull }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["dashboard", "common"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [panchang, setPanchang] = useState(null);
   const [error, setError] = useState(false);
 
@@ -35,11 +29,7 @@ function PanchangWidget({ onViewFull }) {
   return (
     <SummaryCard
       icon="🕉️"
-<<<<<<< HEAD
-      title="Today's Panchang"
-=======
       title={t("dashboard:todaysPanchang", "Today's Panchang")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       action={onViewFull && (
         <button
           onClick={onViewFull}
@@ -49,20 +39,12 @@ function PanchangWidget({ onViewFull }) {
             color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif", flexShrink: 0,
           }}
         >
-<<<<<<< HEAD
-          View Full Panchang →
-=======
           {t("dashboard:viewFullPanchang", "View Full Panchang →")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </button>
       )}
     >
       {!panchang ? (
-<<<<<<< HEAD
-        <div style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>Loading…</div>
-=======
         <div style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>{t("common.loading", "Loading…")}</div>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       ) : (
         <>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 12 }}>

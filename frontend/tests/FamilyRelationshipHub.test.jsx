@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { describe, it, expect, vi, afterEach, beforeEach } from "vitest";
-=======
 import { describe, it, expect, vi, afterEach, beforeEach, beforeAll } from "vitest";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import FamilyProfilesPage from "../src/pages/FamilyProfilesPage.jsx";
@@ -10,8 +6,6 @@ import RelationshipHubPage from "../src/pages/RelationshipHubPage.jsx";
 import * as familyProfilesApi from "../src/utils/familyProfilesApi.js";
 import * as relationshipHubApi from "../src/utils/relationshipHubApi.js";
 import { readPreferences } from "../src/utils/settingsStorage.js";
-<<<<<<< HEAD
-=======
 // Phase 2 (Family i18n migration): unlike every other test file in this
 // suite, this one renders FamilyProfilesPage/RelationshipHubPage directly
 // rather than through App.jsx — and App.jsx (via ErrorBoundary.jsx) is
@@ -28,7 +22,6 @@ beforeAll(async () => {
     await new Promise((resolve) => i18n.on("initialized", resolve));
   }
 });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // V4.2 (Family Profiles & Relationship Hub) smoke tests. Mocks

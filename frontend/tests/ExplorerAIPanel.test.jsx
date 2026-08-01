@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { describe, it, expect, vi, beforeEach } from "vitest";
-=======
 import { describe, it, expect, vi, beforeEach, beforeAll } from "vitest";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
@@ -23,8 +19,6 @@ vi.mock("../src/utils/explorerAiApi.js", () => ({
 
 const { fetchExplorerExplanation } = await import("../src/utils/explorerAiApi.js");
 const { default: ExplorerAIPanel } = await import("../src/components/explorer/ExplorerAIPanel.jsx");
-<<<<<<< HEAD
-=======
 // Phase 2 (Explorer i18n migration): these panels/components are
 // rendered directly here rather than through App.jsx, and App.jsx (via
 // ErrorBoundary.jsx) is normally what triggers i18n/index.js's
@@ -40,7 +34,6 @@ beforeAll(async () => {
     await new Promise((resolve) => i18n.on("initialized", resolve));
   }
 });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 const SAMPLE_RESULT = {
   itemType: "planet",

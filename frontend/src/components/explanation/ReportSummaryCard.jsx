@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo, useCallback } from "react";
 import GlassCard from "../common/GlassCard.jsx";
 import TypingIndicator from "../assistant/TypingIndicator.jsx";
@@ -26,10 +23,7 @@ import { useExplanation } from "../../hooks/useExplanation.js";
 // summary.
 // ─────────────────────────────────────────────────────────────────────────
 function ReportSummaryCard({ chart, report, history }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["reports", "common"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const cacheKey = `report-summary:${chart?.userData?.name || "?"}:${chart?.userData?.dob || "?"}:${chart?.userData?.tob || "?"}`;
 
   const fetcher = useCallback(
@@ -52,32 +46,20 @@ function ReportSummaryCard({ chart, report, history }) {
         <span aria-hidden="true" style={{ fontSize: 18 }}>🧭</span>
         <h4 style={{ margin: 0, fontSize: 13, letterSpacing: 1.5, textTransform: "uppercase",
           color: "var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily: "Inter,sans-serif", fontWeight: 500 }}>
-<<<<<<< HEAD
-          AI REPORT SUMMARY
-=======
           {t("reports:aiReportSummary", "AI REPORT SUMMARY")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </h4>
       </div>
 
       {!summary && !loading && !error && (
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, flexWrap: "wrap" }}>
           <p style={{ margin: 0, fontSize: 13, lineHeight: 1.6, color: "var(--nv-text-secondary, rgba(230,220,255,0.75))", fontFamily: "Inter,sans-serif" }}>
-<<<<<<< HEAD
-            Get a concise, whole-report synthesis — the single most important theme right now, grounded in this chart's own backend-computed facts.
-=======
             {t("reports:reportSummaryDesc", "Get a concise, whole-report synthesis — the single most important theme right now, grounded in this chart's own backend-computed facts.")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
           <button
             type="button"
             onClick={request}
             className="pill-btn tap-scale"
-<<<<<<< HEAD
-            aria-label="Summarize with AI — this report"
-=======
             aria-label={t("reports:summarizeAiAria", "Summarize with AI — this report")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             style={{
               flexShrink: 0, padding: "10px 18px", borderRadius: 20, fontSize: 12.5, fontWeight: 600,
               cursor: "pointer", border: "1px solid var(--nv-accent-wash-strong, rgba(180,120,255,0.4))",
@@ -85,20 +67,12 @@ function ReportSummaryCard({ chart, report, history }) {
               fontFamily: "Inter,sans-serif",
             }}
           >
-<<<<<<< HEAD
-            ✨ Summarize with AI
-=======
             {t("reports:summarizeWithAi", "✨ Summarize with AI")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         </div>
       )}
 
-<<<<<<< HEAD
-      {loading && <TypingIndicator label="Generating your AI Report Summary" />}
-=======
       {loading && <TypingIndicator label={t("reports:generatingReportSummary", "Generating your AI Report Summary")} />}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
       {error && !loading && (
         <div role="alert" style={{ display: "grid", gap: 10 }}>
@@ -115,11 +89,7 @@ function ReportSummaryCard({ chart, report, history }) {
               color: "var(--nv-danger, #ffaaaa)", fontFamily: "Inter,sans-serif",
             }}
           >
-<<<<<<< HEAD
-            ↻ Try again
-=======
             {t("common:tryAgain", "↻ Try again")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         </div>
       )}

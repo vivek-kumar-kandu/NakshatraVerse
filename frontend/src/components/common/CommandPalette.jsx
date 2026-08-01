@@ -1,12 +1,4 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-<<<<<<< HEAD
-import GlassCard from "./GlassCard.jsx";
-import { useAuth } from "../../context/AuthContext.jsx";
-import { useTheme } from "../../context/ThemeContext.jsx";
-import { listReports, getReport } from "../../utils/reportsApi.js";
-import { zodiacSymbol } from "../../utils/reportDisplay.js";
-import { fuzzyFilter } from "../../utils/fuzzySearch.js";
-=======
 import { useTranslation } from "react-i18next";
 import GlassCard from "./GlassCard.jsx";
 import { useAuth } from "../../context/AuthContext.jsx";
@@ -16,7 +8,6 @@ import { listReports, getReport } from "../../utils/reportsApi.js";
 import { zodiacSymbol } from "../../utils/reportDisplay.js";
 import { fuzzyFilter } from "../../utils/fuzzySearch.js";
 import { formatDate as formatDateIntl } from "../../utils/localeFormat.js";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { PLANETS, PLANET_SIGNIFICANCE, HOUSE_MEANINGS } from "../../constants/astrology.js";
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -77,18 +68,6 @@ function writeRecentIds(ids) {
   }
 }
 
-<<<<<<< HEAD
-function formatDate(value) {
-  if (!value) return "";
-  try {
-    return new Date(value).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
-  } catch {
-    return "";
-  }
-}
-
-function CommandPalette({ onNavigate, onViewReport, onOpenAssistant, onOpenHoroscope, onOpenCalendar, onOpenLifeCoach, onOpenSettingsSection }) {
-=======
 function formatDate(value, lang) {
   if (!value) return "";
   return formatDateIntl(value, lang, { year: "numeric", month: "short", day: "numeric" });
@@ -115,7 +94,6 @@ const SECTION_LABEL_KEYS = {
 function CommandPalette({ onNavigate, onViewReport, onOpenAssistant, onOpenHoroscope, onOpenCalendar, onOpenLifeCoach, onOpenSettingsSection }) {
   const { t } = useTranslation(["navigation"]);
   const { language } = useLanguage();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const { isAuthenticated, loading: authLoading } = useAuth();
   const { setTheme } = useTheme();
 
@@ -229,38 +207,6 @@ function CommandPalette({ onNavigate, onViewReport, onOpenAssistant, onOpenHoros
   }, [close]);
 
   const navCommands = useMemo(() => ([
-<<<<<<< HEAD
-    { id: "nav-dashboard", section: "Navigate", icon: "📊", label: "Dashboard", keywords: "overview home", run: () => onNavigate("dashboard") },
-    { id: "nav-generate", section: "Navigate", icon: "🔮", label: "Generate Report", keywords: "new reading kundli birth chart", run: () => onNavigate("landing") },
-    { id: "nav-reports", section: "Navigate", icon: "📜", label: "Saved Reports", keywords: "archive history saved", run: () => onNavigate("reports") },
-    { id: "nav-profile", section: "Navigate", icon: "👤", label: "Profile", keywords: "account my", run: () => onNavigate("profile") },
-    { id: "nav-settings", section: "Navigate", icon: "⚙️", label: "Settings", keywords: "preferences appearance", run: () => onNavigate("settings") },
-    { id: "nav-horoscope", section: "Navigate", icon: "🌅", label: "Horoscope", keywords: "daily weekly monthly prediction", run: () => onOpenHoroscope() },
-    { id: "nav-calendar", section: "Navigate", icon: "🗓️", label: "Calendar", keywords: "dasha transit astrology", run: () => onOpenCalendar() },
-    { id: "nav-assistant", section: "Navigate", icon: "💬", label: "AI Assistant", keywords: "ask chat question gemini", run: () => onOpenAssistant() },
-    { id: "nav-life-coach", section: "Navigate", icon: "🧭", label: "AI Life Coach", keywords: "daily career relationship finance health wellness personal growth coach guidance", run: () => onOpenLifeCoach() },
-    { id: "nav-matching", section: "Navigate", icon: "💞", label: "Kundli Matching", keywords: "compatibility guna milan ashtakoota marriage manglik", run: () => onNavigate("matching") },
-    { id: "nav-panchang", section: "Navigate", icon: "🕉️", label: "Daily Panchang & Muhurat", keywords: "tithi nakshatra yoga karana rahu kaal muhurat auspicious timing", run: () => onNavigate("panchang") },
-    // V4.5 Phase 1B (Festival Frontend Integration): additive commands,
-    // same pattern as nav-matching/nav-panchang above.
-    { id: "nav-festivals", section: "Navigate", icon: "🎉", label: "Festival Calendar", keywords: "festivals vrat holidays hindu calendar", run: () => onNavigate("festivals") },
-    { id: "nav-today-festival", section: "Navigate", icon: "📍", label: "Today's Festival", keywords: "today festival vrat", run: () => onNavigate("festivals") },
-    { id: "nav-upcoming-festivals", section: "Navigate", icon: "🔜", label: "Upcoming Festivals", keywords: "upcoming festivals vrat next", run: () => onNavigate("festivals") },
-    { id: "nav-notifications", section: "Navigate", icon: "🔔", label: "Notification Center", keywords: "notifications alerts inbox bell", run: () => onNavigate("notifications") },
-    { id: "nav-unread-notifications", section: "Navigate", icon: "🔴", label: "Unread Notifications", keywords: "unread notifications new alerts", run: () => onNavigate("notifications") },
-    // V4.2 (Family Profiles & Relationship Hub): additive commands, same
-    // pattern as nav-matching/nav-panchang above.
-    { id: "nav-family-profiles", section: "Navigate", icon: "👨‍👩‍👧‍👦", label: "Family Profiles", keywords: "family profiles saved profiles father mother husband wife son daughter relatives", run: () => onNavigate("family-profiles") },
-    { id: "nav-relationship-hub", section: "Navigate", icon: "💞", label: "Relationship Hub", keywords: "compare profiles relationship hub kundli matching birth chart comparison", run: () => onNavigate("relationship-hub") },
-    { id: "nav-help", section: "Navigate", icon: "❓", label: "Help", keywords: "about support", run: () => onNavigate("dashboard") },
-  ]), [onNavigate, onOpenAssistant, onOpenHoroscope, onOpenCalendar, onOpenLifeCoach]);
-
-  const themeCommands = useMemo(() => ([
-    { id: "theme-light", section: "Theme", icon: "☀️", label: "Switch to Sacred Dawn", keywords: "light white theme", run: () => setTheme("light") },
-    { id: "theme-dark", section: "Theme", icon: "🌙", label: "Switch to Midnight Cosmic", keywords: "dark theme", run: () => setTheme("dark") },
-    { id: "theme-system", section: "Theme", icon: "🖥️", label: "Switch to System Theme", keywords: "auto os theme", run: () => setTheme("system") },
-  ]), [setTheme]);
-=======
     { id: "nav-dashboard", section: "Navigate", icon: "📊", label: t("navigation:commandPalette.nav.dashboard"), keywords: "overview home", run: () => onNavigate("dashboard") },
     { id: "nav-generate", section: "Navigate", icon: "🔮", label: t("navigation:commandPalette.nav.generateReport"), keywords: "new reading kundli birth chart", run: () => onNavigate("landing") },
     { id: "nav-reports", section: "Navigate", icon: "📜", label: t("navigation:commandPalette.nav.savedReports"), keywords: "archive history saved", run: () => onNavigate("reports") },
@@ -291,25 +237,16 @@ function CommandPalette({ onNavigate, onViewReport, onOpenAssistant, onOpenHoros
     { id: "theme-dark", section: "Theme", icon: "🌙", label: t("navigation:commandPalette.theme.dark"), keywords: "dark theme", run: () => setTheme("dark") },
     { id: "theme-system", section: "Theme", icon: "🖥️", label: t("navigation:commandPalette.theme.system"), keywords: "auto os theme", run: () => setTheme("system") },
   ]), [setTheme, t]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   const reportCommands = useMemo(() => recentReports.map((r) => ({
     id: `report-${r.id}`,
     section: "Recent Reports",
     icon: zodiacSymbol(r.lagna),
-<<<<<<< HEAD
-    label: r.title || r.name || "Untitled Report",
-    sublabel: [r.name, formatDate(r.createdAt)].filter(Boolean).join(" · "),
-    keywords: [r.title, r.name, r.lagna].filter(Boolean).join(" "),
-    run: () => onViewReport(r.id),
-  })), [recentReports, onViewReport]);
-=======
     label: r.title || r.name || t("navigation:commandPalette.untitledReport"),
     sublabel: [r.name, formatDate(r.createdAt, language)].filter(Boolean).join(" · "),
     keywords: [r.title, r.name, r.lagna].filter(Boolean).join(" "),
     run: () => onViewReport(r.id),
   })), [recentReports, onViewReport, t]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   // Settings — deep links into SettingsPage's existing sections
   // (Account/Appearance/Preferences/Privacy/About), same list SettingsPage
@@ -317,21 +254,12 @@ function CommandPalette({ onNavigate, onViewReport, onOpenAssistant, onOpenHoros
   // SECTIONS). No new settings/pages are introduced — this only saves a
   // click by opening straight to the right one.
   const settingsCommands = useMemo(() => ([
-<<<<<<< HEAD
-    { id: "settings-account", section: "Settings", icon: "👤", label: "Settings · Account", keywords: "profile email password name", run: () => onOpenSettingsSection("account") },
-    { id: "settings-appearance", section: "Settings", icon: "🎨", label: "Settings · Appearance", keywords: "theme dark light color", run: () => onOpenSettingsSection("appearance") },
-    { id: "settings-preferences", section: "Settings", icon: "⚙️", label: "Settings · Preferences", keywords: "dashboard view animation compact", run: () => onOpenSettingsSection("preferences") },
-    { id: "settings-privacy", section: "Settings", icon: "🔒", label: "Settings · Privacy", keywords: "export data storage reset delete", run: () => onOpenSettingsSection("privacy") },
-    { id: "settings-about", section: "Settings", icon: "ℹ️", label: "Settings · About", keywords: "version app info", run: () => onOpenSettingsSection("about") },
-  ]), [onOpenSettingsSection]);
-=======
     { id: "settings-account", section: "Settings", icon: "👤", label: t("navigation:commandPalette.settingsSections.account"), keywords: "profile email password name", run: () => onOpenSettingsSection("account") },
     { id: "settings-appearance", section: "Settings", icon: "🎨", label: t("navigation:commandPalette.settingsSections.appearance"), keywords: "theme dark light color", run: () => onOpenSettingsSection("appearance") },
     { id: "settings-preferences", section: "Settings", icon: "⚙️", label: t("navigation:commandPalette.settingsSections.preferences"), keywords: "dashboard view animation compact", run: () => onOpenSettingsSection("preferences") },
     { id: "settings-privacy", section: "Settings", icon: "🔒", label: t("navigation:commandPalette.settingsSections.privacy"), keywords: "export data storage reset delete", run: () => onOpenSettingsSection("privacy") },
     { id: "settings-about", section: "Settings", icon: "ℹ️", label: t("navigation:commandPalette.settingsSections.about"), keywords: "version app info", run: () => onOpenSettingsSection("about") },
   ]), [onOpenSettingsSection, t]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   // Planets & Houses — standard Vedic reference copy already defined in
   // constants/astrology.js (PLANET_SIGNIFICANCE/HOUSE_MEANINGS), the same
@@ -512,11 +440,7 @@ function CommandPalette({ onNavigate, onViewReport, onOpenAssistant, onOpenHoros
       <div
         role="dialog"
         aria-modal="true"
-<<<<<<< HEAD
-        aria-label="Command Palette"
-=======
         aria-label={t("navigation:commandPalette.ariaLabel")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         className="confirm-dialog-pop"
         style={{ width: "min(560px, 100%)" }}
         onKeyDown={handleKeyDown}
@@ -529,13 +453,8 @@ function CommandPalette({ onNavigate, onViewReport, onOpenAssistant, onOpenHoros
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-<<<<<<< HEAD
-              placeholder="Search pages, reports, yogas, doshas, remedies…"
-              aria-label="Command Palette search"
-=======
               placeholder={t("navigation:commandPalette.searchPlaceholder")}
               aria-label={t("navigation:commandPalette.searchAriaLabel")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               role="combobox"
               aria-expanded="true"
               aria-controls="command-palette-list"
@@ -558,11 +477,7 @@ function CommandPalette({ onNavigate, onViewReport, onOpenAssistant, onOpenHoros
           <div
             id="command-palette-list"
             role="listbox"
-<<<<<<< HEAD
-            aria-label="Commands"
-=======
             aria-label={t("navigation:commandPalette.commandsAriaLabel")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             ref={listRef}
             style={{ maxHeight: "min(60vh, 420px)", overflowY: "auto", padding: "8px" }}
           >
@@ -570,11 +485,7 @@ function CommandPalette({ onNavigate, onViewReport, onOpenAssistant, onOpenHoros
               <div style={{ padding: "34px 18px", textAlign: "center" }}>
                 <div aria-hidden="true" style={{ fontSize: 22, marginBottom: 8, opacity: 0.7 }}>✦</div>
                 <div style={{ fontSize: 13.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
-<<<<<<< HEAD
-                  No matching commands{trimmedQuery ? ` for "${trimmedQuery}"` : ""}.
-=======
                   {trimmedQuery ? t("navigation:commandPalette.noMatchesFor", { query: trimmedQuery }) : t("navigation:commandPalette.noMatches")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </div>
               </div>
             )}
@@ -585,13 +496,9 @@ function CommandPalette({ onNavigate, onViewReport, onOpenAssistant, onOpenHoros
                   padding: "8px 10px 4px", fontSize: 10.5, letterSpacing: 0.8, textTransform: "uppercase",
                   color: "var(--nv-text-faint, rgba(200,160,255,0.45))", fontWeight: 700,
                 }}>
-<<<<<<< HEAD
-                  {group.section === "Recent Reports" && reportsLoading ? "Recent Reports · loading…" : group.section}
-=======
                   {group.section === "Recent Reports"
                     ? (reportsLoading ? t("navigation:commandPalette.sections.recentReportsLoading") : t("navigation:commandPalette.sections.recentReports"))
                     : (SECTION_LABEL_KEYS[group.section] ? t(SECTION_LABEL_KEYS[group.section]) : group.section)}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </div>
                 {group.items.map((c) => {
                   runningIndex += 1;

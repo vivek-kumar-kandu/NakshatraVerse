@@ -1,8 +1,5 @@
 import { memo } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 import Badge from "../common/Badge.jsx";
 import { PLANET_COLORS } from "../../constants/astrology.js";
@@ -19,10 +16,7 @@ import { confidenceColor } from "./predictionDisplay.js";
 // presentation of it, not a new calculation.
 // ─────────────────────────────────────────────────────────────────────────
 function TimelineCard({ entry, isLast, highlighted = false }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["timeline", "results"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const color = confidenceColor(entry.confidence?.label);
   const planetColor = PLANET_COLORS[entry.dominantPlanet] || "#bf7fff";
   return (
@@ -47,29 +41,17 @@ function TimelineCard({ entry, isLast, highlighted = false }) {
       >
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 8, marginBottom: 8, flexWrap: "wrap" }}>
           <span style={{ fontSize: 12.5, fontWeight: 600, color: "#ffd700", fontFamily: "Inter,sans-serif" }}>
-<<<<<<< HEAD
-            {entry.timePeriod?.startDate ? `${entry.timePeriod.startDate} → ${entry.timePeriod.endDate}` : "Upcoming period"}
-          </span>
-          <Badge color={color}>{entry.confidence?.label} · {entry.confidence?.score}/100</Badge>
-=======
             {entry.timePeriod?.startDate ? t("timeline:eventCard.dateRangeArrow", { start: entry.timePeriod.startDate, end: entry.timePeriod.endDate }) : t("timeline:legacyCard.upcomingPeriod")}
           </span>
           <Badge color={color}>{entry.confidence?.label ? t(`results:confidence.${entry.confidence.label.toLowerCase()}`, entry.confidence.label) : ""} · {entry.confidence?.score}/100</Badge>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </div>
         <p style={{ margin: "0 0 10px", fontSize: 13, lineHeight: 1.6, color: "var(--nv-text-secondary, rgba(230,220,255,0.85))", fontFamily: "Inter,sans-serif" }}>
           {entry.prediction}
         </p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-<<<<<<< HEAD
-          {entry.activeMahadasha && <Badge color="#bf7fff">Mahadasha: {entry.activeMahadasha}</Badge>}
-          {entry.activeAntardasha && <Badge color="#bf7fff">Antardasha: {entry.activeAntardasha}</Badge>}
-          {entry.dominantPlanet && <Badge color={planetColor}>{entry.dominantPlanet}</Badge>}
-=======
           {entry.activeMahadasha && <Badge color="#bf7fff">{t("timeline:legacyCard.mahadashaBadge", { value: t(`results:planets.${entry.activeMahadasha.toLowerCase()}`, entry.activeMahadasha) })}</Badge>}
           {entry.activeAntardasha && <Badge color="#bf7fff">{t("timeline:legacyCard.antardashaBadge", { value: t(`results:planets.${entry.activeAntardasha.toLowerCase()}`, entry.activeAntardasha) })}</Badge>}
           {entry.dominantPlanet && <Badge color={planetColor}>{t(`results:planets.${entry.dominantPlanet.toLowerCase()}`, entry.dominantPlanet)}</Badge>}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </div>
       </GlassCard>
     </div>

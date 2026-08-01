@@ -1,8 +1,5 @@
 import { createContext, useCallback, useContext, useMemo, useRef, useState, memo } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // Toast (Phase 1 — Loading & Feedback)
@@ -28,12 +25,7 @@ import { useTranslation } from "react-i18next";
 
 const ToastContext = createContext(null);
 
-<<<<<<< HEAD
-const KIND_STYLES = {
-  success: { border: "rgba(120,255,120,0.35)", bg: "rgba(20,60,20,0.88)", color: "var(--nv-success, #c8ffc8)", icon: "✓" },
-=======
 const KIND_STYLES = {success: { border: "rgba(120,255,120,0.35)", bg: "rgba(20,60,20,0.88)", color: "var(--nv-success, #c8ffc8)", icon: "✓" },
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   error:   { border: "rgba(255,80,80,0.35)",   bg: "rgba(120,20,20,0.88)", color: "var(--nv-danger, #ffaaaa)", icon: "⚠" },
   info:    { border: "var(--nv-accent-border, rgba(180,120,255,0.35))", bg: "rgba(40,10,70,0.88)",  color: "var(--nv-text-primary, #e8d5ff)", icon: "✦" },
 };
@@ -41,10 +33,7 @@ const KIND_STYLES = {success: { border: "rgba(120,255,120,0.35)", bg: "rgba(20,6
 let idSeq = 0;
 
 function ToastViewport({ toasts, onDismiss }) {
-<<<<<<< HEAD
-=======
   const { t: translate } = useTranslation(["common"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   if (!toasts.length) return null;
   return (
     <div
@@ -95,11 +84,7 @@ function ToastViewport({ toasts, onDismiss }) {
             <span style={{ flex: 1, minWidth: 0 }}>{t.message}</span>
             <button
               onClick={() => onDismiss(t.id)}
-<<<<<<< HEAD
-              aria-label="Dismiss notification"
-=======
               aria-label={translate("common:toast.dismiss")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               className="toast-dismiss icon-btn"
               style={{
                 flexShrink: 0, background: "none", border: "none", color: "inherit",

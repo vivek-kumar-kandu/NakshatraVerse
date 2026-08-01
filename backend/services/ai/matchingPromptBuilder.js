@@ -7,20 +7,13 @@
 // house style: Gemini receives ONLY backend-calculated facts and must
 // never calculate, infer, or invent a score, Guna, or Dosha.
 // ─────────────────────────────────────────────────────────────────────────
-<<<<<<< HEAD
-=======
 import { getAiLanguageInstruction } from "../localization/aiLanguageInstruction.js";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 function kootaLine(koota) {
   return `- ${koota.name}: ${koota.score}/${koota.max} — ${koota.detail}`;
 }
 
-<<<<<<< HEAD
-export function buildMatchingPrompt({ personA, personB, chartA, chartB, matching }) {
-=======
 export function buildMatchingPrompt({ personA, personB, chartA, chartB, matching, language }) {
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const { ashtakoota, totalScore, maxScore, percentage, compatibility, manglik, doshaComparison, planetStrength, moonSignCompatibility, nakshatraCompatibility } = matching;
 
   const kootaList = Object.values(ashtakoota).map(kootaLine).join("\n");
@@ -77,11 +70,7 @@ Return this exact JSON structure, writing natural prose for each value based str
   "weaknesses": "3-4 sentences on which specific Kootas, Doshas, or Manglik factors are of concern, based strictly on the data above",
   "marriageAdvice": "3-4 sentences of general marriage-suitability guidance based strictly on the compatibility label and Manglik verdict given above (no dates, no guarantees)",
   "practicalGuidance": "3-4 sentences of practical, hedged guidance (e.g. remedies, discussion points, or when to consult a professional astrologer) based strictly on the Dosha/Manglik facts above"
-<<<<<<< HEAD
-}`;
-=======
 }${getAiLanguageInstruction(language)}`;
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 export default { buildMatchingPrompt };

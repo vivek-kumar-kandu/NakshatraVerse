@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo, useCallback } from "react";
 import TypingIndicator from "../assistant/TypingIndicator.jsx";
 import { fetchRemedyExplanation } from "../../utils/explanationApi.js";
@@ -14,10 +11,7 @@ import { useExplanation } from "../../hooks/useExplanation.js";
 // type isn't present on this chart, says so plainly instead of guessing.
 // ─────────────────────────────────────────────────────────────────────────
 function RemedyExplanationCard({ chart, report, remedyType }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["reports"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const cacheKey = `remedy:${chart?.userData?.name || "?"}:${chart?.userData?.dob || "?"}:${remedyType}`;
 
   const fetcher = useCallback(
@@ -49,11 +43,7 @@ function RemedyExplanationCard({ chart, report, remedyType }) {
             fontFamily: "Inter,sans-serif",
           }}
         >
-<<<<<<< HEAD
-          💡 Why this remedy?
-=======
           {t("whyThisRemedy", "💡 Why this remedy?")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </button>
       )}
 
@@ -67,11 +57,7 @@ function RemedyExplanationCard({ chart, report, remedyType }) {
 
       {data && !loading && !data.found && (
         <p style={{ margin: 0, fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily: "Inter,sans-serif" }}>
-<<<<<<< HEAD
-          This remedy isn't part of this chart's backend-derived remedies.
-=======
           {t("remedyNotFound", "This remedy isn't part of this chart's backend-derived remedies.")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </p>
       )}
 

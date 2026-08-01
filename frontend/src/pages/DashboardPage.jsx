@@ -1,23 +1,15 @@
 import { useEffect, useMemo, useState, useCallback } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import Badge from "../components/common/Badge.jsx";
 import InsightRow from "../components/common/InsightRow.jsx";
 import { useAuth } from "../context/AuthContext.jsx";
 import { useTheme } from "../context/ThemeContext.jsx";
-<<<<<<< HEAD
-import { getTheme } from "../styles/themes.js";
-import * as reportsApi from "../utils/reportsApi.js";
-=======
 import { useLanguage } from "../context/LanguageContext.jsx";
 import { getTheme } from "../styles/themes.js";
 import * as reportsApi from "../utils/reportsApi.js";
 import { formatDate as formatDateIntl } from "../utils/localeFormat.js";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { GOLD_GRADIENT, PURPLE_GRADIENT } from "../constants/astrology.js";
 import SkeletonList from "../components/common/Skeleton.jsx";
 import ReportCard from "../components/common/ReportCard.jsx";
@@ -77,19 +69,9 @@ function initials(name) {
   return value || "✦";
 }
 
-<<<<<<< HEAD
-function formatDate(value) {
-  if (!value) return "—";
-  try {
-    return new Date(value).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
-  } catch {
-    return "—";
-  }
-=======
 function formatDate(value, t, lang) {
   if (!value) return t ? t("dashboard:statistics.notAvailable") : "—";
   return formatDateIntl(value, lang, { year: "numeric", month: "short", day: "numeric" });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 // Current Theme indicator label: "system" isn't itself an entry in the
@@ -97,26 +79,16 @@ function formatDate(value, t, lang) {
 // "dark"/"light" — see that file's header), so it's handled here as
 // "System (Light)"/"System (Dark)" depending on what it currently
 // resolves to, while an explicit choice just shows that theme's name.
-<<<<<<< HEAD
-function themeLabel(mode, resolvedTheme) {
-  if (mode === "system") return `System (${getTheme(resolvedTheme).name})`;
-=======
 function themeLabel(mode, resolvedTheme, t) {
   if (mode === "system") return t("dashboard:statistics.systemThemeLabel", { themeName: getTheme(resolvedTheme).name });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return getTheme(mode).name;
 }
 
 function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestivalIntelligence }) {
-<<<<<<< HEAD
-  const { user } = useAuth();
-  const { theme, resolvedTheme } = useTheme();
-=======
   const { t } = useTranslation(["dashboard", "common"]);
   const { user } = useAuth();
   const { theme, resolvedTheme } = useTheme();
   const { language } = useLanguage();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [reports, setReports] = useState(null);
   const [error, setError] = useState(null);
   const [downloadingId, setDownloadingId] = useState(null);
@@ -150,15 +122,9 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
     setError(null);
     reportsApi.listReports()
       .then((r) => { if (!cancelled) setReports(r); })
-<<<<<<< HEAD
-      .catch((err) => { if (!cancelled) setError(err.message || "Could not load your saved reports."); });
-    return () => { cancelled = true; };
-  }, []);
-=======
       .catch((err) => { if (!cancelled) setError(err.message || t("dashboard:error.loadFailed")); });
     return () => { cancelled = true; };
   }, [t]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   useEffect(() => loadReports(), [loadReports]);
 
@@ -218,17 +184,10 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
               margin: 0, fontSize: "clamp(22px,4vw,30px)", background: GOLD_GRADIENT,
               WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif", fontWeight: 700,
             }}>
-<<<<<<< HEAD
-              Your Dashboard
-            </h1>
-            <p style={{ margin: "6px 0 0", fontSize: 13.5, color: "var(--nv-text-muted, rgba(200,160,255,0.65))" }}>
-              Welcome back, {user?.name?.split(" ")[0] || "traveler"} ✦
-=======
               {t("dashboard:header.title")}
             </h1>
             <p style={{ margin: "6px 0 0", fontSize: 13.5, color: "var(--nv-text-muted, rgba(200,160,255,0.65))" }}>
               {t("dashboard:header.welcomeBack", { name: user?.name?.split(" ")[0] || t("dashboard:header.welcomeBackFallbackName") })}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
           </div>
           <button
@@ -240,11 +199,7 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
               fontSize: 14, cursor: "pointer", fontFamily: "Cinzel,serif", boxShadow: "0 4px 20px rgba(123,47,255,0.35)",
             }}
           >
-<<<<<<< HEAD
-            ✦ Generate New Report
-=======
             {t("dashboard:header.generateNewReport")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         </header>
 
@@ -267,11 +222,7 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
                 color: "var(--nv-danger, #ff9d9d)", fontFamily: "Inter,sans-serif", flexShrink: 0,
               }}
             >
-<<<<<<< HEAD
-              ↻ Try again
-=======
               {t("dashboard:error.tryAgain")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </GlassCard>
         )}
@@ -315,11 +266,7 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
               <p style={{ margin: 0, fontSize: 13, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>{user?.email}</p>
             </div>
             <Badge color={user?.authProvider === "google" ? "#9dc9ff" : "#bf7fff"}>
-<<<<<<< HEAD
-              {user?.authProvider === "google" ? "Signed in with Google" : "Email & Password"}
-=======
               {user?.authProvider === "google" ? t("dashboard:userSummary.authProviderGoogle") : t("dashboard:userSummary.authProviderEmail")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </Badge>
             <button
               type="button"
@@ -331,28 +278,13 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
                 color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif", flexShrink: 0,
               }}
             >
-<<<<<<< HEAD
-              View Full Profile →
-=======
               {t("dashboard:userSummary.viewFullProfile")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </GlassCard>
         </section>
 
         {/* ── Statistics ──────────────────────────────────────────────── */}
         <section style={{ marginBottom: 34, animation: "fadeIn 0.6s ease 0.1s both" }}>
-<<<<<<< HEAD
-          <SectionHeader icon="📊">Statistics</SectionHeader>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 14 }}>
-            <StatCard icon="📜" label="Saved Reports" value={reports ? reports.length : "…"} accent="#bf7fff" />
-            <StatCard icon="🗓️" label="Member Since" value={formatDate(user?.createdAt)} accent="#9dc9ff" />
-            <StatCard icon="🕐" label="Latest Reading" value={recentReports[0] ? formatDate(recentReports[0].createdAt) : "—"} accent="#ffd700" />
-            <StatCard
-              icon={resolvedTheme === "light" ? "☀️" : "🌙"}
-              label="Current Theme"
-              value={themeLabel(theme, resolvedTheme)}
-=======
           <SectionHeader icon="📊">{t("dashboard:statistics.sectionTitle")}</SectionHeader>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 14 }}>
             <StatCard icon="📜" label={t("dashboard:statistics.savedReports")} value={reports ? reports.length : t("dashboard:statistics.loadingValue")} accent="#bf7fff" />
@@ -362,7 +294,6 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
               icon={resolvedTheme === "light" ? "☀️" : "🌙"}
               label={t("dashboard:statistics.currentTheme")}
               value={themeLabel(theme, resolvedTheme, t)}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               accent="#ff9ed8"
             />
           </div>
@@ -371,18 +302,6 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
         {/* ── Astrology Summary ───────────────────────────────────────── */}
         {astroSummary && (astroSummary.nakshatra || astroSummary.mahadasha) && (
           <section style={{ marginBottom: 34, animation: "fadeIn 0.6s ease 0.12s both" }}>
-<<<<<<< HEAD
-            <SectionHeader icon="🔮">Astrology Summary</SectionHeader>
-            <SummaryCard icon="✨" title="From Your Latest Reading">
-              {astroSummary.nakshatra && (
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 12 }}>
-                  <Badge color="#ffd700">{astroSummary.nakshatra}{astroSummary.pada ? ` · Pada ${astroSummary.pada}` : ""}</Badge>
-                  {astroSummary.lord && <Badge color="#bf7fff">Lord: {astroSummary.lord}</Badge>}
-                </div>
-              )}
-              {astroSummary.mahadasha && <InsightRow label="Current Mahadasha" value={astroSummary.mahadasha} color="#bf7fff" />}
-              {astroSummary.antardasha && <InsightRow label="Current Antardasha" value={astroSummary.antardasha} color="#9dc9ff" />}
-=======
             <SectionHeader icon="🔮">{t("dashboard:astrologySummary.sectionTitle")}</SectionHeader>
             <SummaryCard icon="✨" title={t("dashboard:astrologySummary.cardTitle")}>
               {astroSummary.nakshatra && (
@@ -393,7 +312,6 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
               )}
               {astroSummary.mahadasha && <InsightRow label={t("dashboard:astrologySummary.currentMahadasha")} value={astroSummary.mahadasha} color="#bf7fff" />}
               {astroSummary.antardasha && <InsightRow label={t("dashboard:astrologySummary.currentAntardasha")} value={astroSummary.antardasha} color="#9dc9ff" />}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </SummaryCard>
           </section>
         )}
@@ -448,16 +366,6 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
 
         {/* ── Quick Actions ──────────────────────────────────────────── */}
         <section style={{ marginBottom: 34, animation: "fadeIn 0.6s ease 0.15s both" }}>
-<<<<<<< HEAD
-          <SectionHeader icon="⚡">Quick Actions</SectionHeader>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(170px, 1fr))", gap: 14 }}>
-            <QuickActionCard icon="✦" label="Generate New Report" desc="Start a fresh Vedic reading" onClick={() => onNavigate("landing")} primary />
-            {lastOpenedReportId && (
-              <QuickActionCard icon="↩️" label="Continue Reading" desc="Reopen your last viewed report" onClick={() => onViewReport(lastOpenedReportId)} />
-            )}
-            <QuickActionCard icon="👤" label="My Profile" desc="View your profile details" onClick={() => onNavigate("profile")} />
-            <QuickActionCard icon="📚" label="Saved Reports" desc="Browse your full archive" onClick={() => onNavigate("reports")} />
-=======
           <SectionHeader icon="⚡">{t("dashboard:quickActions.sectionTitle")}</SectionHeader>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(170px, 1fr))", gap: 14 }}>
             <QuickActionCard icon="✦" label={t("dashboard:quickActions.generateNewReport.label")} desc={t("dashboard:quickActions.generateNewReport.desc")} onClick={() => onNavigate("landing")} primary />
@@ -466,7 +374,6 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
             )}
             <QuickActionCard icon="👤" label={t("dashboard:quickActions.myProfile.label")} desc={t("dashboard:quickActions.myProfile.desc")} onClick={() => onNavigate("profile")} />
             <QuickActionCard icon="📚" label={t("dashboard:quickActions.savedReports.label")} desc={t("dashboard:quickActions.savedReports.desc")} onClick={() => onNavigate("reports")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             {/* Small UX addition: surfaces the existing AI Astrology
                 Assistant (V3.0 Phase 4 — AIAssistantPage.jsx, reached via
                 the "assistant" stage) directly from Dashboard, the same
@@ -477,11 +384,7 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
                 AIAssistantPage already renders safely with no
                 chart/report in that case). No new page, no AI logic here —
                 just another QuickActionCard, same as every action above. */}
-<<<<<<< HEAD
-            <QuickActionCard icon="🔮" label="Ask AI" desc="Chat with your Astrology Assistant" onClick={() => onNavigate("assistant")} />
-=======
             <QuickActionCard icon="🔮" label={t("dashboard:quickActions.askAI.label")} desc={t("dashboard:quickActions.askAI.desc")} onClick={() => onNavigate("assistant")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             {/* V4.3 (AI Life Coach): same pattern as the "Ask AI" card
                 above — if a reading is already loaded (latestFullReport),
                 open it scoped to that; otherwise fall back to the plain
@@ -489,17 +392,6 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
                 with no chart, same contract as HoroscopePage/CalendarPage. */}
             <QuickActionCard
               icon="🧭"
-<<<<<<< HEAD
-              label="AI Life Coach"
-              desc="Daily, career, relationship, finance & wellness guidance"
-              onClick={() => (latestFullReport ? onOpenLifeCoach?.(latestFullReport) : onNavigate("ai-life-coach"))}
-            />
-            <QuickActionCard icon="💞" label="Kundli Matching" desc="Check Vedic compatibility for two people" onClick={() => onNavigate("matching")} />
-            <QuickActionCard icon="🕉️" label="Panchang & Muhurat" desc="Daily Panchang and auspicious timing finder" onClick={() => onNavigate("panchang")} />
-            <QuickActionCard icon="👨‍👩‍👧‍👦" label="Family Profiles" desc="Manage every birth chart in your circle" onClick={() => onNavigate("family-profiles")} />
-            <QuickActionCard icon="💞" label="Relationship Hub" desc="Compare any two saved profiles" onClick={() => onNavigate("relationship-hub")} />
-            <QuickActionCard icon="⚙️" label="Settings" desc="Manage your account" onClick={() => onNavigate("settings")} />
-=======
               label={t("dashboard:quickActions.aiLifeCoach.label")}
               desc={t("dashboard:quickActions.aiLifeCoach.desc")}
               onClick={() => (latestFullReport ? onOpenLifeCoach?.(latestFullReport) : onNavigate("ai-life-coach"))}
@@ -509,7 +401,6 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
             <QuickActionCard icon="👨‍👩‍👧‍👦" label={t("dashboard:quickActions.familyProfiles.label")} desc={t("dashboard:quickActions.familyProfiles.desc")} onClick={() => onNavigate("family-profiles")} />
             <QuickActionCard icon="💞" label={t("dashboard:quickActions.relationshipHub.label")} desc={t("dashboard:quickActions.relationshipHub.desc")} onClick={() => onNavigate("relationship-hub")} />
             <QuickActionCard icon="⚙️" label={t("dashboard:quickActions.settings.label")} desc={t("dashboard:quickActions.settings.desc")} onClick={() => onNavigate("settings")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </div>
         </section>
 
@@ -518,17 +409,10 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
         <section style={{ marginBottom: 6, animation: "fadeIn 0.6s ease 0.2s both" }}>
           <SectionHeader
             icon="🕑"
-<<<<<<< HEAD
-            actionLabel={recentReports.length ? "View All →" : undefined}
-            onAction={recentReports.length ? () => onNavigate("reports") : undefined}
-          >
-            Recent Reports
-=======
             actionLabel={recentReports.length ? t("dashboard:recentReports.viewAll") : undefined}
             onAction={recentReports.length ? () => onNavigate("reports") : undefined}
           >
             {t("dashboard:recentReports.sectionTitle")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </SectionHeader>
 
           {reports === null && !error && (
@@ -540,15 +424,9 @@ function DashboardPage({ onNavigate, onViewReport, onOpenLifeCoach, onOpenFestiv
           {reports?.length === 0 && (
             <EmptyState
               icon="🌙"
-<<<<<<< HEAD
-              title="No readings yet"
-              message="Generate your first Vedic reading to see it appear here."
-              actionLabel="✦ Generate New Report"
-=======
               title={t("dashboard:recentReports.emptyTitle")}
               message={t("dashboard:recentReports.emptyMessage")}
               actionLabel={t("dashboard:recentReports.emptyAction")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               onAction={() => onNavigate("landing")}
               compact
             />

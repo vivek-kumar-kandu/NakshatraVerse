@@ -1,8 +1,5 @@
 import { useEffect, useRef } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "./GlassCard.jsx";
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -27,10 +24,7 @@ import GlassCard from "./GlassCard.jsx";
 // in this app (e.g. ReportCard's action-button spinner) — no new CSS
 // dependency, no new keyframe.
 function ButtonSpinner() {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <span
       aria-hidden="true"
@@ -49,15 +43,11 @@ function ButtonSpinner() {
 // site (which doesn't pass this prop) renders identically. Settings page's
 // Clear Cache / Reset Preferences actions pass their own accurate labels
 // ("Clearing…" / "Resetting…") instead of the misleading default.
-<<<<<<< HEAD
-function ConfirmDialog({ open, title, message, confirmLabel = "Confirm", cancelLabel = "Cancel", danger = false, loading = false, loadingLabel = "Deleting…", onConfirm, onCancel }) {
-=======
 function ConfirmDialog({ open, title, message, confirmLabel, cancelLabel, danger = false, loading = false, loadingLabel, onConfirm, onCancel }) {
   const { t } = useTranslation(["common"]);
   const resolvedConfirmLabel = confirmLabel ?? t("common:confirmDialog.confirm");
   const resolvedCancelLabel = cancelLabel ?? t("common:confirmDialog.cancel");
   const resolvedLoadingLabel = loadingLabel ?? t("common:confirmDialog.deleting");
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const dialogRef = useRef(null);
   const previouslyFocused = useRef(null);
 
@@ -119,11 +109,7 @@ function ConfirmDialog({ open, title, message, confirmLabel, cancelLabel, danger
                 fontFamily: "var(--nv-font-body, Inter,sans-serif)", opacity: loading ? 0.5 : 1,
               }}
             >
-<<<<<<< HEAD
-              {cancelLabel}
-=======
               {resolvedCancelLabel}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
             {/* Disabled after the first click + spinner/"Deleting…" label
                 while the request is in flight — also the guard that
@@ -144,11 +130,7 @@ function ConfirmDialog({ open, title, message, confirmLabel, cancelLabel, danger
               }}
             >
               {loading && <ButtonSpinner />}
-<<<<<<< HEAD
-              {loading ? loadingLabel : confirmLabel}
-=======
               {loading ? resolvedLoadingLabel : resolvedConfirmLabel}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </div>
         </GlassCard>

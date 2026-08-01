@@ -1,8 +1,5 @@
 import { memo } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -28,31 +25,19 @@ function Item({ icon, label, value }) {
 }
 
 function LifeCoachLuckyElementsCard({ luckyElements }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["lifeCoach"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   if (!luckyElements) return null;
   const { luckyColor, luckyNumber, luckyDirection, favorableTimeWindow } = luckyElements;
   if (!luckyColor && luckyNumber == null && !luckyDirection && !favorableTimeWindow) return null;
 
   return (
     <GlassCard style={{ padding: "18px 20px" }}>
-<<<<<<< HEAD
-      <p style={{ margin: "0 0 12px", fontSize: 13, fontFamily: "Cinzel,serif", color: "#ffd700" }}>🍀 Lucky Elements Today</p>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: 16 }}>
-        <Item icon="🎨" label="Color" value={luckyColor} />
-        <Item icon="🔢" label="Number" value={luckyNumber} />
-        <Item icon="🧭" label="Direction" value={luckyDirection} />
-        <Item icon="⏰" label="Favorable Time" value={favorableTimeWindow} />
-=======
       <p style={{ margin: "0 0 12px", fontSize: 13, fontFamily: "Cinzel,serif", color: "#ffd700" }}>{t("lifeCoach:luckyElements.title")}</p>
       <div style={{ display: "flex", flexWrap: "wrap", gap: 16 }}>
         <Item icon="🎨" label={t("lifeCoach:luckyElements.color")} value={luckyColor} />
         <Item icon="🔢" label={t("lifeCoach:luckyElements.number")} value={luckyNumber} />
         <Item icon="🧭" label={t("lifeCoach:luckyElements.direction")} value={luckyDirection} />
         <Item icon="⏰" label={t("lifeCoach:luckyElements.favorableTime")} value={favorableTimeWindow} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </div>
     </GlassCard>
   );

@@ -12,17 +12,6 @@ export function isValidEmail(value) {
   return EMAIL_RE.test(String(value || "").trim());
 }
 
-<<<<<<< HEAD
-export function emailError(value) {
-  const v = String(value || "").trim();
-  if (!v) return "Email is required.";
-  if (!isValidEmail(v)) return "Enter a valid email address.";
-  return null;
-}
-
-export function requiredError(value, label = "This field") {
-  return String(value || "").trim() ? null : `${label} is required.`;
-=======
 export function emailError(value, t) {
   const v = String(value || "").trim();
   if (!v) return t ? t("auth:validation.emailRequired") : "Email is required.";
@@ -33,18 +22,13 @@ export function emailError(value, t) {
 export function requiredError(value, label = "This field", t) {
   if (String(value || "").trim()) return null;
   return t ? t("auth:validation.requiredField", { label }) : `${label} is required.`;
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 // Lightweight, dependency-free password strength estimate. Scores 0-4
 // based on length + character-class variety — intentionally simple (no
 // zxcvbn/library dependency) since this only drives a visual meter, not
 // any pass/fail gate enforced by the backend.
-<<<<<<< HEAD
-export function getPasswordStrength(password) {
-=======
 export function getPasswordStrength(password, t) {
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const pw = String(password || "");
   if (!pw) return { score: 0, label: "", color: "rgba(180,130,255,0.3)" };
 
@@ -56,10 +40,7 @@ export function getPasswordStrength(password, t) {
   if (/[^A-Za-z0-9]/.test(pw)) score++;
 
   const clamped = Math.min(score, 4);
-<<<<<<< HEAD
-=======
   const levelKeys = ["veryWeak", "weak", "fair", "good", "strong"];
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const levels = [
     { label: "Very weak", color: "#ff6b6b" },
     { label: "Weak", color: "#ff9d5c" },
@@ -67,17 +48,6 @@ export function getPasswordStrength(password, t) {
     { label: "Good", color: "#8ce99a" },
     { label: "Strong", color: "#51cf66" },
   ];
-<<<<<<< HEAD
-  return { score: clamped, ...levels[clamped] };
-}
-
-export function passwordRequirements(password) {
-  const pw = String(password || "");
-  return [
-    { met: pw.length >= 8, label: "At least 8 characters" },
-    { met: /\d/.test(pw), label: "At least one number" },
-    { met: /[A-Z]/.test(pw), label: "At least one uppercase letter" },
-=======
   const level = levels[clamped];
   const label = t ? t(`auth:validation.passwordStrength.${levelKeys[clamped]}`) : level.label;
   return { score: clamped, label, color: level.color };
@@ -89,6 +59,5 @@ export function passwordRequirements(password, t) {
     { met: pw.length >= 8, label: t ? t("auth:validation.passwordRequirements.minLength") : "At least 8 characters" },
     { met: /\d/.test(pw), label: t ? t("auth:validation.passwordRequirements.number") : "At least one number" },
     { met: /[A-Z]/.test(pw), label: t ? t("auth:validation.passwordRequirements.uppercase") : "At least one uppercase letter" },
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   ];
 }

@@ -1,35 +1,19 @@
-<<<<<<< HEAD
-import GlassCard from "../common/GlassCard.jsx";
-
-const INPUT_STYLE = {
-  width: "100%", padding: "12px 16px",
-=======
 import { useTranslation } from "react-i18next";
 import GlassCard from "../common/GlassCard.jsx";
 
 const INPUT_STYLE = {width: "100%", padding: "12px 16px",
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   background: "rgba(255,255,255,0.05)", border: "1px solid rgba(180,120,255,0.28)",
   borderRadius: 12, color: "var(--nv-text-primary, #e8d5ff)", fontSize: 14, outline: "none",
   fontFamily: "Inter,sans-serif",
   transition: "border-color var(--nv-duration-base) var(--nv-ease-standard), box-shadow var(--nv-duration-base) var(--nv-ease-standard)",
 };
 
-<<<<<<< HEAD
-const LABEL_STYLE = {
-  display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 6,
-=======
 const LABEL_STYLE = {display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 6,
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500,
 };
 
 const FIELDS = [
-<<<<<<< HEAD
-  { key: "name", label: "Full Name", type: "text", placeholder: "e.g. Arjun Sharma", icon: "✦" },
-=======
   {key: "name", label: "Full Name", type: "text", placeholder: "e.g. Arjun Sharma", icon: "✦" },
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   { key: "dob", label: "Date of Birth", type: "date", placeholder: "", icon: "◈" },
   { key: "tob", label: "Time of Birth", type: "time", placeholder: "", icon: "◉" },
   { key: "pob", label: "Place of Birth", type: "text", placeholder: "e.g. Mumbai, India", icon: "◎" },
@@ -42,10 +26,7 @@ const GENDERS = [
 ];
 
 function PersonInputCard({ title, accent = "#bf7fff", person, errors, onChange }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <GlassCard style={{ padding: "26px 24px", flex: "1 1 320px", minWidth: 280 }}>
       <h3 style={{ margin: "0 0 20px", fontSize: 17, color: accent, fontFamily: "Cinzel,serif", fontWeight: 600, textAlign: "center" }}>
@@ -53,11 +34,7 @@ function PersonInputCard({ title, accent = "#bf7fff", person, errors, onChange }
       </h3>
 
       <div style={{ marginBottom: 18 }}>
-<<<<<<< HEAD
-        <label style={LABEL_STYLE}><span aria-hidden="true">⚥</span> Gender</label>
-=======
         <label style={LABEL_STYLE}><span aria-hidden="true">⚥</span> {t("results.gender", "Gender")}</label>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
           {GENDERS.map((g) => (
             <button

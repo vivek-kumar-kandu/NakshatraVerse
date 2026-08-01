@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "./styles/global.css";
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-=======
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
@@ -30,6 +20,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Suspense fallback={null}>
       <App />
     </Suspense>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   </React.StrictMode>
 );

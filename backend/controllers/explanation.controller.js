@@ -22,33 +22,16 @@ import {
   getCrossLinks,
 } from "../services/ai/explanationEngine.js";
 
-<<<<<<< HEAD
-function handleGeminiError(res, err, label) {
-  logger.error(`${label} error:`, err);
-  const status = err.status && err.status >= 400 && err.status < 600 ? err.status : 502;
-  res.status(status).json({ error: err.message || `${label} is unavailable right now.` });
-=======
 function handleGeminiError(req, res, err, label) {
   logger.error(`${label} error:`, err);
   const status = err.status && err.status >= 400 && err.status < 600 ? err.status : 502;
   res.status(status).json({ error: err.message || req.t("errors.serviceUnavailable", { feature: label }) });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 export const postReportSummary = asyncHandler(async (req, res) => {
   const errors = validateReportSummaryRequest(req.body);
   if (errors.length) {
     logger.warn(`Validation failed for /api/explanation/report-summary: ${errors.join(", ")}`);
-<<<<<<< HEAD
-    return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
-  }
-  const { chart, report, history } = req.body;
-  try {
-    const result = await getReportSummary({ chart, report, history });
-    res.json(result);
-  } catch (err) {
-    handleGeminiError(res, err, "The AI Report Summary");
-=======
     return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
   }
   const { chart, report, history } = req.body;
@@ -57,7 +40,6 @@ export const postReportSummary = asyncHandler(async (req, res) => {
     res.json(result);
   } catch (err) {
     handleGeminiError(req, res, err, "The AI Report Summary");
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -65,16 +47,6 @@ export const postConfidenceExplanation = asyncHandler(async (req, res) => {
   const errors = validateConfidenceExplanationRequest(req.body);
   if (errors.length) {
     logger.warn(`Validation failed for /api/explanation/confidence: ${errors.join(", ")}`);
-<<<<<<< HEAD
-    return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
-  }
-  const { chart, report, category, history } = req.body;
-  try {
-    const result = await getConfidenceExplanation({ chart, report, category, history });
-    res.json(result);
-  } catch (err) {
-    handleGeminiError(res, err, "The Confidence Explanation");
-=======
     return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
   }
   const { chart, report, category, history } = req.body;
@@ -83,7 +55,6 @@ export const postConfidenceExplanation = asyncHandler(async (req, res) => {
     res.json(result);
   } catch (err) {
     handleGeminiError(req, res, err, "The Confidence Explanation");
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -91,16 +62,6 @@ export const postPredictionEvidence = asyncHandler(async (req, res) => {
   const errors = validatePredictionEvidenceRequest(req.body);
   if (errors.length) {
     logger.warn(`Validation failed for /api/explanation/prediction-evidence: ${errors.join(", ")}`);
-<<<<<<< HEAD
-    return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
-  }
-  const { chart, report, category, history } = req.body;
-  try {
-    const result = await getPredictionEvidence({ chart, report, category, history });
-    res.json(result);
-  } catch (err) {
-    handleGeminiError(res, err, "The Prediction Evidence");
-=======
     return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
   }
   const { chart, report, category, history } = req.body;
@@ -109,7 +70,6 @@ export const postPredictionEvidence = asyncHandler(async (req, res) => {
     res.json(result);
   } catch (err) {
     handleGeminiError(req, res, err, "The Prediction Evidence");
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -117,16 +77,6 @@ export const postRemedyExplanation = asyncHandler(async (req, res) => {
   const errors = validateRemedyExplanationRequest(req.body);
   if (errors.length) {
     logger.warn(`Validation failed for /api/explanation/remedy: ${errors.join(", ")}`);
-<<<<<<< HEAD
-    return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
-  }
-  const { chart, report, remedyType, history } = req.body;
-  try {
-    const result = await getRemedyExplanation({ chart, report, remedyType, history });
-    res.json(result);
-  } catch (err) {
-    handleGeminiError(res, err, "The Remedy Explanation");
-=======
     return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
   }
   const { chart, report, remedyType, history } = req.body;
@@ -135,7 +85,6 @@ export const postRemedyExplanation = asyncHandler(async (req, res) => {
     res.json(result);
   } catch (err) {
     handleGeminiError(req, res, err, "The Remedy Explanation");
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -143,11 +92,7 @@ export const postCrossLinks = asyncHandler(async (req, res) => {
   const errors = validateCrossLinkRequest(req.body);
   if (errors.length) {
     logger.warn(`Validation failed for /api/explanation/cross-links: ${errors.join(", ")}`);
-<<<<<<< HEAD
-    return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
-=======
     return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
   const { chart, itemType, itemId, itemLabel, planet, category } = req.body;
   try {
@@ -157,11 +102,7 @@ export const postCrossLinks = asyncHandler(async (req, res) => {
     // getCrossLinks never calls Gemini, so this branch only ever handles
     // an unexpected internal failure (e.g. a malformed chart object) —
     // still shaped consistently with every other explanation endpoint.
-<<<<<<< HEAD
-    handleGeminiError(res, err, "Explorer/Timeline cross-linking");
-=======
     handleGeminiError(req, res, err, "Explorer/Timeline cross-linking");
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 

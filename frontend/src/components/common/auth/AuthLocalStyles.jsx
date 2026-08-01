@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo } from "react";
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -19,10 +16,7 @@ import { memo } from "react";
 // inside this scoped block.
 // ─────────────────────────────────────────────────────────────────────────
 function AuthLocalStyles() {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <style>{`
       @keyframes authShake {

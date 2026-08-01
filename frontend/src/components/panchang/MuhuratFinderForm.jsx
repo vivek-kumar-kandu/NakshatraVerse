@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo } from "react";
 import GlassCard from "../common/GlassCard.jsx";
 import { activityMeta } from "./panchangUiConstants.js";
@@ -19,27 +16,16 @@ function todayStr() {
 }
 
 function MuhuratFinderForm({ activities, activity, setActivity, startDate, setStartDate, rangeDays, setRangeDays, onSearch, searching }) {
-<<<<<<< HEAD
-  return (
-    <GlassCard style={{ padding: "22px 24px" }}>
-      <h3 style={{ margin: "0 0 14px", fontSize: 13, letterSpacing: 1.5, textTransform: "uppercase", color: "var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily: "Inter,sans-serif" }}>
-        🔍 Find an Auspicious Muhurat
-=======
   const { t } = useTranslation(["dashboard"]);
   return (
     <GlassCard style={{ padding: "22px 24px" }}>
       <h3 style={{ margin: "0 0 14px", fontSize: 13, letterSpacing: 1.5, textTransform: "uppercase", color: "var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily: "Inter,sans-serif" }}>
         🔍 {t("dashboard:findAuspiciousMuhurat", "Find an Auspicious Muhurat")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </h3>
 
       <div style={{ marginBottom: 16 }}>
         <label style={{ display: "block", fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 8, fontFamily: "Inter,sans-serif" }}>
-<<<<<<< HEAD
-          Choose an activity
-=======
           {t("dashboard:chooseActivity", "Choose an activity")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </label>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: 8 }}>
           {(activities || []).map((key) => {
@@ -69,11 +55,7 @@ function MuhuratFinderForm({ activities, activity, setActivity, startDate, setSt
       <div style={{ display: "flex", flexWrap: "wrap", gap: 14, marginBottom: 18 }}>
         <div style={{ flex: "1 1 160px" }}>
           <label style={{ display: "block", fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 6, fontFamily: "Inter,sans-serif" }}>
-<<<<<<< HEAD
-            Search from
-=======
             {t("dashboard:searchFrom", "Search from")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </label>
           <input
             type="date"

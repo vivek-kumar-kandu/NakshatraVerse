@@ -19,10 +19,7 @@
 // ─────────────────────────────────────────────────────────────────────────
 import logger from "../services/utils/logger.js";
 import config from "../config/env.js";
-<<<<<<< HEAD
-=======
 import { translate, DEFAULT_LANGUAGE } from "../services/localization/localizationService.js";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 export function asyncHandler(fn) {
   return function wrapped(req, res, next) {
@@ -30,10 +27,6 @@ export function asyncHandler(fn) {
   };
 }
 
-<<<<<<< HEAD
-export function notFoundHandler(req, res) {
-  res.status(404).json({ error: `No route ${req.method} ${req.originalUrl}` });
-=======
 // Multilingual Foundation Phase: prefers req.t (set by middleware/language.js)
 // but falls back to a direct translate() call against the default language
 // if this handler is ever invoked without the full middleware chain (e.g.
@@ -47,7 +40,6 @@ function resolveT(req) {
 export function notFoundHandler(req, res) {
   const t = resolveT(req);
   res.status(404).json({ error: t("errors.notFound", { method: req.method, path: req.originalUrl }) });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 // Errors thrown by our own code (validation, Gemini service, etc.) already
@@ -57,25 +49,15 @@ export function notFoundHandler(req, res) {
 // treated as unexpected and gets a generic message in production.
 export function errorHandler(err, req, res, next) { // eslint-disable-line no-unused-vars
   logger.error(`Express error handler caught${req?.id ? ` [${req.id}]` : ""}:`, err);
-<<<<<<< HEAD
-
-  if (err.type === "entity.parse.failed") {
-    return res.status(400).json({ error: "Malformed JSON in request body." });
-=======
   const t = resolveT(req);
 
   if (err.type === "entity.parse.failed") {
     return res.status(400).json({ error: t("errors.malformedJson") });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   // Body too large (from the Priority 4 express.json size limit).
   if (err.type === "entity.too.large") {
-<<<<<<< HEAD
-    return res.status(413).json({ error: "Request body too large." });
-=======
     return res.status(413).json({ error: t("errors.bodyTooLarge") });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   const status = err.status || 500;
@@ -83,14 +65,6 @@ export function errorHandler(err, req, res, next) { // eslint-disable-line no-un
   // explicit status code already set (validation/Gemini errors always do).
   // A bare 500 with no status is the signature of an unhandled exception,
   // which is exactly the case where we don't want to echo err.message
-<<<<<<< HEAD
-  // verbatim in production.
-  const isCurated = Boolean(err.status);
-  const safeMessage =
-    isCurated || !config.IS_PRODUCTION
-      ? err.message || "Internal server error."
-      : "Internal server error. Please try again, and contact support if the problem persists.";
-=======
   // verbatim in production. err.message itself is left as-is (it's
   // constructed by the code that threw it, in whatever language that
   // call site already used — those call sites are localized incrementally
@@ -101,7 +75,6 @@ export function errorHandler(err, req, res, next) { // eslint-disable-line no-un
     isCurated || !config.IS_PRODUCTION
       ? err.message || t("errors.internalError")
       : t("errors.internalErrorProduction");
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   const body = { error: safeMessage };
   if (err.detail !== undefined) body.detail = err.detail;

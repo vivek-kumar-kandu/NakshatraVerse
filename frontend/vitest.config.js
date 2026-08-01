@@ -19,12 +19,6 @@ export default defineConfig({
     // not an actual app regression (the same login flow passed fine in
     // Auth.test.jsx in the same run). 4 is a reasonable ceiling that
     // still parallelizes on capable machines without starving slower ones.
-<<<<<<< HEAD
-    poolOptions: {
-      threads: { maxThreads: 4 },
-      forks: { maxForks: 4 },
-    },
-=======
     //
     // Vitest 4 removed the nested `poolOptions.threads.maxThreads` /
     // `poolOptions.forks.maxForks` shape this used to be written as (it
@@ -32,6 +26,5 @@ export default defineConfig({
     // ignores the cap) — `maxWorkers` is the current top-level equivalent
     // and works for both the "threads" and "forks" pools.
     maxWorkers: 4,
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   },
 });

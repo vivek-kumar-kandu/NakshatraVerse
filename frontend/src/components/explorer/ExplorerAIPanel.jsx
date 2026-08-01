@@ -1,8 +1,5 @@
 import { memo, useCallback, useEffect, useRef, useState } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 import TypingIndicator from "../assistant/TypingIndicator.jsx";
 import ChatMessage from "../assistant/ChatMessage.jsx";
@@ -45,10 +42,7 @@ import { fetchExplorerExplanation } from "../../utils/explorerAiApi.js";
 // zero new conversation/chat state machinery.
 // ─────────────────────────────────────────────────────────────────────────
 function ExplorerAIPanel({ cacheKey, itemType, itemId, itemLabel, chart, report, contextFacts }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["explorer"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const cacheRef = useRef(new Map());
   const [explanation, setExplanation] = useState(() => cacheRef.current.get(cacheKey) || null);
   const [loading, setLoading] = useState(false);
@@ -76,11 +70,7 @@ function ExplorerAIPanel({ cacheKey, itemType, itemId, itemLabel, chart, report,
       cacheRef.current.set(cacheKey, result);
       setExplanation(result);
     } catch (err) {
-<<<<<<< HEAD
-      setError(err.message || "The Explorer AI is unavailable right now.");
-=======
       setError(err.message || t("explorer:aiPanel.loadFailed"));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     } finally {
       setLoading(false);
     }
@@ -97,32 +87,20 @@ function ExplorerAIPanel({ cacheKey, itemType, itemId, itemLabel, chart, report,
         <span aria-hidden="true" style={{ fontSize: 18 }}>🤖</span>
         <h4 style={{ margin: 0, fontSize: 13, letterSpacing: 1.5, textTransform: "uppercase",
           color: "var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily: "Inter,sans-serif", fontWeight: 500 }}>
-<<<<<<< HEAD
-          AI EXPLANATION
-=======
           {t("explorer:aiPanel.heading")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </h4>
       </div>
 
       {!explanation && !loading && !error && (
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, flexWrap: "wrap" }}>
           <p style={{ margin: 0, fontSize: 13, lineHeight: 1.6, color: "var(--nv-text-secondary, rgba(230,220,255,0.75))", fontFamily: "Inter,sans-serif" }}>
-<<<<<<< HEAD
-            Get a Gemini-powered explanation of {itemLabel}, grounded entirely in this chart's own backend-computed facts.
-=======
             {t("explorer:aiPanel.prompt", { label: itemLabel })}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
           <button
             type="button"
             onClick={requestExplanation}
             className="pill-btn tap-scale"
-<<<<<<< HEAD
-            aria-label={`Explain ${itemLabel} with AI`}
-=======
             aria-label={t("explorer:aiPanel.explainAriaLabel", { label: itemLabel })}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             style={{
               flexShrink: 0, padding: "10px 18px", borderRadius: 20, fontSize: 12.5, fontWeight: 600,
               cursor: "pointer", border: "1px solid var(--nv-accent-wash-strong, rgba(180,120,255,0.4))",
@@ -130,20 +108,12 @@ function ExplorerAIPanel({ cacheKey, itemType, itemId, itemLabel, chart, report,
               fontFamily: "Inter,sans-serif",
             }}
           >
-<<<<<<< HEAD
-            ✨ Explain with AI
-=======
             {t("explorer:aiPanel.explainButton")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         </div>
       )}
 
-<<<<<<< HEAD
-      {loading && <TypingIndicator label={`Generating an AI explanation for ${itemLabel}`} />}
-=======
       {loading && <TypingIndicator label={t("explorer:aiPanel.generatingLabel", { label: itemLabel })} />}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
       {error && !loading && (
         <div role="alert" style={{ display: "grid", gap: 10 }}>
@@ -160,11 +130,7 @@ function ExplorerAIPanel({ cacheKey, itemType, itemId, itemLabel, chart, report,
               color: "var(--nv-danger, #ffaaaa)", fontFamily: "Inter,sans-serif",
             }}
           >
-<<<<<<< HEAD
-            ↻ Try again
-=======
             {t("explorer:aiPanel.tryAgain")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         </div>
       )}

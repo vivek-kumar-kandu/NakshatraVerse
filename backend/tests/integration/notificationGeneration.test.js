@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { describe, it, expect } from "vitest";
-=======
 import { describe, it, expect, beforeAll } from "vitest";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import request from "supertest";
 import fs from "node:fs";
 import os from "node:os";
@@ -24,11 +20,8 @@ process.env.JWT_SECRET = "test-secret-for-integration-tests";
 process.env.DATA_DIR = TEST_DATA_DIR;
 
 const { createApp } = await import("../../server.js");
-<<<<<<< HEAD
-=======
 const { connectTestMongo } = await import("../helpers/connectTestMongo.js");
 await connectTestMongo();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 const app = createApp();
 
 let userCounter = 0;
@@ -37,8 +30,6 @@ function makeUser() {
   return { name: "Notification Gen Test", email: `notifgentest${userCounter}@example.com`, password: "password123" };
 }
 
-<<<<<<< HEAD
-=======
 // userCounter resets to 0 every time this file runs, so notifgentestN@example.com
 // is only unique *within* a run, not across runs — and this connects to a
 // real, persistent Mongo cluster (there's no ephemeral test database).
@@ -49,7 +40,6 @@ beforeAll(async () => {
   await User.deleteMany({ email: { $regex: /^notifgentest\d+@example\.com$/ } });
 });
 
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 async function loginAgent() {
   const agent = request.agent(app);
   const res = await agent.post("/api/auth/register").send(makeUser());

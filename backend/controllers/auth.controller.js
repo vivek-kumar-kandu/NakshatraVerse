@@ -31,16 +31,6 @@ function issueSession(res, user) {
 
 export const register = asyncHandler(async (req, res) => {
   const fields = sanitizeAuthFields(req.body || {});
-<<<<<<< HEAD
-  const errors = validateRegisterFields(fields);
-  if (errors.length) {
-    return res.status(400).json({ error: `Invalid registration: ${errors.join(", ")}` });
-  }
-
-  const existing = userRepository.findByEmail(fields.email);
-  if (existing) {
-    return res.status(409).json({ error: "An account with that email already exists." });
-=======
   const errors = validateRegisterFields(fields, req.t);
   if (errors.length) {
     return res.status(400).json({ error: req.t("auth.invalidRegistration", { errors: errors.join(", ") }) });
@@ -49,7 +39,6 @@ export const register = asyncHandler(async (req, res) => {
   const existing =  await userRepository.findByEmail(fields.email);
   if (existing) {
     return res.status(409).json({ error: req.t("auth.emailAlreadyExists") });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   const passwordHash = await hashPassword(fields.password);
@@ -61,18 +50,6 @@ export const register = asyncHandler(async (req, res) => {
 
 export const login = asyncHandler(async (req, res) => {
   const fields = sanitizeAuthFields(req.body || {});
-<<<<<<< HEAD
-  const errors = validateLoginFields(fields);
-  if (errors.length) {
-    return res.status(400).json({ error: `Invalid login: ${errors.join(", ")}` });
-  }
-
-  const user = userRepository.findByEmail(fields.email);
-  // Deliberately identical error for "no such account" and "wrong
-  // password" so the response can never be used to enumerate registered
-  // emails.
-  const invalidMsg = "Invalid email or password.";
-=======
   const errors = validateLoginFields(fields, req.t);
   if (errors.length) {
     return res.status(400).json({ error: req.t("auth.invalidLogin", { errors: errors.join(", ") }) });
@@ -83,7 +60,6 @@ export const login = asyncHandler(async (req, res) => {
   // password" so the response can never be used to enumerate registered
   // emails.
   const invalidMsg = req.t("auth.invalidCredentials");
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   if (!user || !user.passwordHash) {
     return res.status(401).json({ error: invalidMsg });
   }
@@ -100,15 +76,11 @@ export const googleLogin = asyncHandler(async (req, res) => {
   const { idToken } = req.body || {};
   const profile = await verifyGoogleIdToken(idToken); // throws curated errors on failure
 
-<<<<<<< HEAD
-  let user = userRepository.findByGoogleId(profile.googleId) || userRepository.findByEmail(profile.email);
-=======
 let user = await userRepository.findByGoogleId(profile.googleId);
 
 if (!user) {
   user = await userRepository.findByEmail(profile.email);
 }
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   if (!user) {
     user = await userRepository.create({
       name: profile.name,
@@ -129,28 +101,13 @@ if (!user) {
 export const refresh = asyncHandler(async (req, res) => {
   const token = req.cookies?.[REFRESH_COOKIE];
   if (!token) {
-<<<<<<< HEAD
-    return res.status(401).json({ error: "No active session to refresh." });
-=======
     return res.status(401).json({ error: req.t("auth.noActiveSession") });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   let payload;
   try {
     payload = verifyToken(token);
   } catch (err) {
-<<<<<<< HEAD
-    return res.status(401).json({ error: "Session expired. Please sign in again." });
-  }
-  if (payload.type !== "refresh") {
-    return res.status(401).json({ error: "Invalid refresh token." });
-  }
-
-  const user = userRepository.findById(payload.sub);
-  if (!user) {
-    return res.status(401).json({ error: "Account no longer exists." });
-=======
     return res.status(401).json({ error: req.t("auth.sessionExpired") });
   }
   if (payload.type !== "refresh") {
@@ -160,7 +117,6 @@ export const refresh = asyncHandler(async (req, res) => {
   const user =  await userRepository.findById(payload.sub);
   if (!user) {
     return res.status(401).json({ error: req.t("auth.accountNoLongerExists") });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   issueSession(res, user);
@@ -181,13 +137,8 @@ export const logout = (req, res) => {
 };
 
 export const me = asyncHandler(async (req, res) => {
-<<<<<<< HEAD
-  const user = userRepository.findById(req.user.id);
-  if (!user) return res.status(401).json({ error: "Account no longer exists." });
-=======
   const user =  await userRepository.findById(req.user.id);
   if (!user) return res.status(401).json({ error: req.t("auth.accountNoLongerExists") });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   res.json({ user: userRepository.toPublicUser(user) });
 });
 

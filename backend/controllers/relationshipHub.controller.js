@@ -110,29 +110,17 @@ function buildComparison(profileARecord, profileBRecord) {
 export const compareProfiles = asyncHandler(async (req, res) => {
   const { profileIdA, profileIdB } = req.body || {};
   if (!profileIdA || !profileIdB) {
-<<<<<<< HEAD
-    return res.status(400).json({ error: "profileIdA and profileIdB are both required." });
-  }
-  if (profileIdA === profileIdB) {
-    return res.status(400).json({ error: "Choose two different profiles to compare." });
-=======
     return res.status(400).json({ error: req.t ? req.t("validation.profileIdsRequired") : "profileIdA and profileIdB are both required." });
   }
   if (profileIdA === profileIdB) {
     return res.status(400).json({ error: req.t("errors.chooseTwoDifferentProfiles") });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   // getProfileRecord enforces ownership (404s if either profile doesn't
   // belong to this user) — same guarantee reportService.js/
   // familyProfileService.js already give every other profile/report read.
-<<<<<<< HEAD
-  const profileARecord = familyProfileService.getProfileRecord(req.user.id, profileIdA);
-  const profileBRecord = familyProfileService.getProfileRecord(req.user.id, profileIdB);
-=======
   const profileARecord = await familyProfileService.getProfileRecord(req.user.id, profileIdA);
   const profileBRecord = await familyProfileService.getProfileRecord(req.user.id, profileIdB);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   try {
     const comparison = await withTiming("Relationship Hub comparison", async () =>
@@ -141,11 +129,7 @@ export const compareProfiles = asyncHandler(async (req, res) => {
     res.json(comparison);
   } catch (err) {
     logger.error("Relationship Hub comparison error:", err);
-<<<<<<< HEAD
-    res.status(500).json({ error: "Internal server error while comparing these two profiles." });
-=======
     res.status(500).json({ error: req.t("errors.comparisonError") });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 

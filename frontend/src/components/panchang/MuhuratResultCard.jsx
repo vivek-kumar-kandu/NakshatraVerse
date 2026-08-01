@@ -1,18 +1,11 @@
 import { memo } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 import Badge from "../common/Badge.jsx";
 import InsightRow from "../common/InsightRow.jsx";
 
-<<<<<<< HEAD
-const CONFIDENCE_COLOR = { High: "#7effb2", Medium: "#ffd700", Low: "#ff8f7e" };
-=======
 const CONFIDENCE_COLOR = {High: "#7effb2", Medium: "#ffd700", Low: "#ff8f7e" };
 const CONFIDENCE_KEY = {High: "high", Medium: "medium", Low: "low" };
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // MuhuratResultCard (V4.1 Phase 2)
@@ -22,29 +15,15 @@ const CONFIDENCE_KEY = {High: "high", Medium: "medium", Low: "low" };
 // Window, Auspicious Period, Caution Period, Confidence Level.
 // ─────────────────────────────────────────────────────────────────────────
 function MuhuratResultCard({ muhurat, onExplain, explaining }) {
-<<<<<<< HEAD
-  if (!muhurat) return null;
-  const confColor = CONFIDENCE_COLOR[muhurat.confidenceLevel] || "#bf7fff";
-=======
   const { t } = useTranslation(["festival"]);
   if (!muhurat) return null;
   const confColor = CONFIDENCE_COLOR[muhurat.confidenceLevel] || "#bf7fff";
   const confLabel = t(`festival:muhurat.confidence.${CONFIDENCE_KEY[muhurat.confidenceLevel] || "high"}`);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   return (
     <GlassCard style={{ padding: "22px 24px", animation: "fadeIn 0.35s ease both" }}>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 10, marginBottom: 14 }}>
         <h3 style={{ margin: 0, fontSize: 16, fontFamily: "Cinzel,serif", color: "var(--nv-text-primary, #f1e4ff)" }}>
-<<<<<<< HEAD
-          Best Muhurat for {muhurat.activityLabel}
-        </h3>
-        <Badge color={confColor}>{muhurat.confidenceLevel} Confidence</Badge>
-      </div>
-
-      <div style={{ padding: "14px 16px", borderRadius: 12, background: "rgba(255,215,0,0.08)", border: "1px solid rgba(255,215,0,0.2)", marginBottom: 16 }}>
-        <div style={{ fontSize: 11.5, color: "#ffd700", fontWeight: 700, marginBottom: 4 }}>📅 Best Date</div>
-=======
           {t("festival:muhurat.bestMuhuratFor", { activity: muhurat.activityLabel })}
         </h3>
         <Badge color={confColor}>{t("festival:muhurat.confidenceBadge", { level: confLabel })}</Badge>
@@ -52,26 +31,10 @@ function MuhuratResultCard({ muhurat, onExplain, explaining }) {
 
       <div style={{ padding: "14px 16px", borderRadius: 12, background: "rgba(255,215,0,0.08)", border: "1px solid rgba(255,215,0,0.2)", marginBottom: 16 }}>
         <div style={{ fontSize: 11.5, color: "#ffd700", fontWeight: 700, marginBottom: 4 }}>📅 {t("festival:muhurat.bestDate")}</div>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         <div style={{ fontSize: 18, fontWeight: 700, color: "var(--nv-text-primary, #f1e4ff)", fontFamily: "Cinzel,serif" }}>
           {muhurat.bestDate} ({muhurat.bestDateWeekday})
         </div>
         <div style={{ fontSize: 13, color: "var(--nv-text-secondary, rgba(200,160,255,0.8))", marginTop: 6 }}>
-<<<<<<< HEAD
-          Best Time Window: {muhurat.bestTimeWindow.start} – {muhurat.bestTimeWindow.end}
-        </div>
-      </div>
-
-      <InsightRow label="Tithi" value={muhurat.auspiciousPeriod.tithi} color="#ffd700" />
-      <InsightRow label="Nakshatra" value={muhurat.auspiciousPeriod.nakshatra} color="#9dc9ff" />
-      <InsightRow label="Auspicious Window" value={`${muhurat.auspiciousPeriod.window.start} – ${muhurat.auspiciousPeriod.window.end}`} color="#7effb2" />
-
-      <div style={{ marginTop: 14 }}>
-        <div style={{ fontSize: 12.5, color: "#ff8f7e", fontWeight: 600, marginBottom: 8 }}>⚠ Caution Period (avoid)</div>
-        <InsightRow label="Rahu Kaal" value={`${muhurat.cautionPeriod.rahuKaal.start} – ${muhurat.cautionPeriod.rahuKaal.end}`} color="#ff8f7e" />
-        <InsightRow label="Yamaganda" value={`${muhurat.cautionPeriod.yamaganda.start} – ${muhurat.cautionPeriod.yamaganda.end}`} color="#ff8f7e" />
-        <InsightRow label="Gulika Kaal" value={`${muhurat.cautionPeriod.gulikaKaal.start} – ${muhurat.cautionPeriod.gulikaKaal.end}`} color="#ff8f7e" />
-=======
           {t("festival:muhurat.bestTimeWindow")}: {muhurat.bestTimeWindow.start} – {muhurat.bestTimeWindow.end}
         </div>
       </div>
@@ -85,16 +48,11 @@ function MuhuratResultCard({ muhurat, onExplain, explaining }) {
         <InsightRow label={t("festival:muhurat.rahuKaal")} value={`${muhurat.cautionPeriod.rahuKaal.start} – ${muhurat.cautionPeriod.rahuKaal.end}`} color="#ff8f7e" />
         <InsightRow label={t("festival:muhurat.yamaganda")} value={`${muhurat.cautionPeriod.yamaganda.start} – ${muhurat.cautionPeriod.yamaganda.end}`} color="#ff8f7e" />
         <InsightRow label={t("festival:muhurat.gulikaKaal")} value={`${muhurat.cautionPeriod.gulikaKaal.start} – ${muhurat.cautionPeriod.gulikaKaal.end}`} color="#ff8f7e" />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </div>
 
       {muhurat.topAlternatives?.length > 0 && (
         <div style={{ marginTop: 14 }}>
-<<<<<<< HEAD
-          <div style={{ fontSize: 12.5, color: "#9dc9ff", fontWeight: 600, marginBottom: 8 }}>Other strong dates</div>
-=======
           <div style={{ fontSize: 12.5, color: "#9dc9ff", fontWeight: 600, marginBottom: 8 }}>{t("festival:muhurat.otherStrongDates")}</div>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
             {muhurat.topAlternatives.map((a) => (
               <Badge key={a.date} color="#9dc9ff">{a.date} · {a.score}/100</Badge>
@@ -114,11 +72,7 @@ function MuhuratResultCard({ muhurat, onExplain, explaining }) {
             background: "rgba(123,47,255,0.18)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif",
           }}
         >
-<<<<<<< HEAD
-          {explaining ? "Asking AI…" : "🔮 Explain Why This Muhurat"}
-=======
           {explaining ? t("festival:muhurat.askingAI") : t("festival:muhurat.explainWhy")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </button>
       )}
     </GlassCard>

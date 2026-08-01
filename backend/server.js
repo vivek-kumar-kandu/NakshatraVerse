@@ -31,13 +31,10 @@ import logger, { maskKey } from "./services/utils/logger.js";
 import requestLogger from "./middleware/requestLogger.js";
 import { securityHeaders } from "./middleware/security.js";
 import { notFoundHandler, errorHandler } from "./middleware/errorHandler.js";
-<<<<<<< HEAD
-=======
 // Multilingual Foundation Phase: additive, mirrors requestLogger's mounting
 // pattern exactly. Attaches req.language/req.t to every request; no route
 // is required to use them yet (see middleware/language.js header comment).
 import languageMiddleware from "./middleware/language.js";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import astrologyRoutes from "./routes/astrology.routes.js";
 import authRoutes from "./routes/auth.routes.js";
 import userRoutes from "./routes/user.routes.js";
@@ -76,10 +73,7 @@ import aiTimelineRoutes from "./routes/aiTimeline.routes.js";
 // aiTimelineRoutes/explorerAiRoutes above.
 import explanationRoutes from "./routes/explanation.routes.js";
 import personalizationRoutes from "./routes/personalization.routes.js";
-<<<<<<< HEAD
-=======
 import { connectMongo, disconnectMongo } from "./db/mongoConnection.js";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 export function createApp() {
   const app = express();
@@ -105,12 +99,9 @@ export function createApp() {
   app.use(securityHeaders);
   app.use(express.json({ limit: config.MAX_REQUEST_BODY_SIZE }));
   app.use(cookieParser());
-<<<<<<< HEAD
-=======
   // Must run before requestLogger/routes so req.language/req.t are
   // available everywhere downstream, including in request logging.
   app.use(languageMiddleware);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   app.use(requestLogger);
 
   app.use("/api", astrologyRoutes);
@@ -202,23 +193,14 @@ if (config.IS_PRODUCTION && !config.JWT_SECRET) {
 // only needs the `app` export to drive with supertest.
 const isMainModule = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isMainModule) {
-<<<<<<< HEAD
-=======
   await connectMongo();
 
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const server = app.listen(config.PORT, () => {
     logger.info(`NakshatraVerse backend running on http://localhost:${config.PORT}`);
   });
 
   // Graceful shutdown: stop accepting new connections and let in-flight
   // requests (e.g. a slow Gemini call) finish before the process exits,
-<<<<<<< HEAD
-  // instead of dropping them mid-response.
-  const shutdown = (signal) => {
-    logger.info(`${signal} received — shutting down gracefully...`);
-    server.close(() => {
-=======
   // instead of dropping them mid-response. Mongo is closed last, after
   // the HTTP server itself has finished draining in-flight requests, so
   // no in-flight request loses its DB connection out from under it.
@@ -226,7 +208,6 @@ if (isMainModule) {
     logger.info(`${signal} received — shutting down gracefully...`);
     server.close(async () => {
       await disconnectMongo();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       logger.info("Server closed. Goodbye.");
       process.exit(0);
     });

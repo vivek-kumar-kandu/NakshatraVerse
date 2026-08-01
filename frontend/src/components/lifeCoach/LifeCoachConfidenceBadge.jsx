@@ -1,8 +1,5 @@
 import { memo } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import Badge from "../common/Badge.jsx";
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -21,21 +18,14 @@ const LABEL_COLOR = {
 };
 
 function LifeCoachConfidenceBadge({ confidence, style = {} }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["lifeCoach"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   if (!confidence || confidence.label == null) return null;
   const color = LABEL_COLOR[confidence.label] || "#bf7fff";
   return (
     <Badge color={color} style={style}>
-<<<<<<< HEAD
-      Confidence: {confidence.label}{typeof confidence.score === "number" ? ` (${confidence.score}/100)` : ""}
-=======
       {typeof confidence.score === "number"
         ? t("lifeCoach:confidenceBadge.withScore", { label: confidence.label, score: confidence.score })
         : t("lifeCoach:confidenceBadge.withoutScore", { label: confidence.label })}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     </Badge>
   );
 }

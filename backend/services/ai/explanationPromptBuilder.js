@@ -56,11 +56,7 @@ export function buildExplanationQuestion({ kind, subject, focusInstruction, cont
  * Kept as a pure function so it is trivially unit-testable without a
  * network call.
  */
-<<<<<<< HEAD
-export function buildExplanationPrompt({ buildChatPrompt, chart, report, insights, history, kind, subject, focusInstruction, contextFacts }) {
-=======
 export function buildExplanationPrompt({ buildChatPrompt, chart, report, insights, history, kind, subject, focusInstruction, contextFacts, language }) {
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const question = buildExplanationQuestion({ kind, subject, focusInstruction, contextFacts });
   return buildChatPrompt({
     chart,
@@ -68,10 +64,7 @@ export function buildExplanationPrompt({ buildChatPrompt, chart, report, insight
     insights,
     history: Array.isArray(history) ? history.slice(-4) : [],
     question,
-<<<<<<< HEAD
-=======
     language,
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   });
 }
 

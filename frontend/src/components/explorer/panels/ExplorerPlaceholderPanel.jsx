@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo } from "react";
 import GlassCard from "../../common/GlassCard.jsx";
 import Badge from "../../common/Badge.jsx";
@@ -25,11 +22,7 @@ function ExplorerPlaceholderPanel({ icon, label, color, item }) {
         <h3 style={{ margin: 0, fontSize: 16, color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Cinzel,serif", fontWeight: 700 }}>
           {item?.label ?? label}
         </h3>
-<<<<<<< HEAD
-        <Badge color={color} style={{ marginLeft: "auto" }}>Explorer</Badge>
-=======
         <Badge color={color} style={{ marginLeft: "auto" }}>{t("navigation.explorer", "Explorer")}</Badge>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </div>
 
       {item?.sublabel && <InsightRow label="Details" value={item.sublabel} color={color} />}

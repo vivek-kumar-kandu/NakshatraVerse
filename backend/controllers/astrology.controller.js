@@ -34,11 +34,7 @@ export const getChart = asyncHandler(async (req, res) => {
   const errors = validateBirthFields({ name, dob, tob, pob });
   if (errors.length) {
     logger.warn(`Validation failed for /api/chart: ${errors.join(", ")}`);
-<<<<<<< HEAD
-    return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
-=======
     return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   try {
@@ -75,11 +71,7 @@ export const getChart = asyncHandler(async (req, res) => {
     res.json({ ...chart, ...predictionFields, ...explorerFields, ...aiTimelineFields });
   } catch (err) {
     logger.error("Chart calculation error:", err);
-<<<<<<< HEAD
-    res.status(500).json({ error: "Internal server error while calculating the chart." });
-=======
     res.status(500).json({ error: req.t("errors.internalErrorWhile", { action: "calculating the chart" }) });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -94,11 +86,7 @@ export const generateReport = asyncHandler(async (req, res) => {
   const errors = validateBirthFields(userData);
   if (errors.length) {
     logger.warn(`Validation failed for /api/generate-report: ${errors.join(", ")}`);
-<<<<<<< HEAD
-    return res.status(400).json({ error: `Invalid userData: ${errors.join(", ")}` });
-=======
     return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   try {
@@ -110,11 +98,7 @@ export const generateReport = asyncHandler(async (req, res) => {
     if (!config.GOOGLE_API_KEY) {
       logger.error("generate-report called but no API key is configured.");
       return res.status(500).json({
-<<<<<<< HEAD
-        error: "Server is missing an API key. Set GOOGLE_API_KEY in backend/.env (see backend/.env.example).",
-=======
         error: req.t ? req.t("errors.missingApiKey") : "Server is missing an API key. Set GOOGLE_API_KEY in backend/.env (see backend/.env.example).",
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       });
     }
 
@@ -124,11 +108,7 @@ export const generateReport = asyncHandler(async (req, res) => {
     // changes what fields Gemini must return, and never touches the
     // response shape sent back to the client.
     const insights = buildStructuredInsights(chart);
-<<<<<<< HEAD
-    const prompt = buildPrompt(chart, insights);
-=======
     const prompt = buildPrompt(chart, insights, req.language);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
     let report;
     try {
@@ -145,11 +125,7 @@ export const generateReport = asyncHandler(async (req, res) => {
     res.json(formatGenerateReportResponse(chart, report, insights));
   } catch (err) {
     logger.error("Unhandled server error in /api/generate-report:", err);
-<<<<<<< HEAD
-    res.status(500).json({ error: "Internal server error." });
-=======
     res.status(500).json({ error: req.t ? req.t("errors.internalError") : "Internal server error." });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 

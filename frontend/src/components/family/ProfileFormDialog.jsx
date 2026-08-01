@@ -1,8 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 import { RELATIONSHIPS } from "../../utils/familyProfileConstants.js";
 
@@ -22,43 +19,17 @@ import { RELATIONSHIPS } from "../../utils/familyProfileConstants.js";
 // FamilyProfilesPage.jsx). No astrology calculation happens here at all.
 // ─────────────────────────────────────────────────────────────────────────
 
-<<<<<<< HEAD
-const INPUT_STYLE = {
-  width: "100%", padding: "12px 16px",
-=======
 const INPUT_STYLE = {width: "100%", padding: "12px 16px",
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   background: "rgba(255,255,255,0.05)", border: "1px solid rgba(180,120,255,0.28)",
   borderRadius: 12, color: "var(--nv-text-primary, #e8d5ff)", fontSize: 14, outline: "none",
   fontFamily: "Inter,sans-serif",
 };
 
-<<<<<<< HEAD
-const LABEL_STYLE = {
-  display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 6,
-=======
 const LABEL_STYLE = {display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 6,
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500,
 };
 
 const FIELDS = [
-<<<<<<< HEAD
-  { key: "name", label: "Full Name", type: "text", placeholder: "e.g. Arjun Sharma", icon: "✦" },
-  { key: "dob", label: "Date of Birth", type: "date", placeholder: "", icon: "◈" },
-  { key: "tob", label: "Time of Birth", type: "time", placeholder: "", icon: "◉" },
-  { key: "pob", label: "Place of Birth", type: "text", placeholder: "e.g. Mumbai, India", icon: "◎" },
-];
-
-const GENDERS = [
-  { key: "male", label: "♂ Male" },
-  { key: "female", label: "♀ Female" },
-  { key: "other", label: "⚧ Other" },
-];
-
-const RELATIONSHIP_ICONS = {
-  father: "👨", mother: "👩", husband: "🤵", wife: "👰", son: "👦", daughter: "👧",
-=======
   {key: "name", labelKey: "fields.name", type: "text", placeholderKey: "fields.namePlaceholder", icon: "✦" },
   { key: "dob", labelKey: "fields.dob", type: "date", placeholderKey: null, icon: "◈" },
   { key: "tob", labelKey: "fields.tob", type: "time", placeholderKey: null, icon: "◉" },
@@ -72,17 +43,13 @@ const GENDERS = [
 ];
 
 const RELATIONSHIP_ICONS = {father: "👨", mother: "👩", husband: "🤵", wife: "👰", son: "👦", daughter: "👧",
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   brother: "🧑", sister: "👧", friend: "🤝", client: "💼", custom: "✦",
 };
 
 const EMPTY_PROFILE = { name: "", relationship: "", customRelationshipLabel: "", gender: "", dob: "", tob: "", pob: "" };
 
 function ProfileFormDialog({ open, initialProfile, onSave, onCancel, saving = false }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["family"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [profile, setProfile] = useState(EMPTY_PROFILE);
   const [errors, setErrors] = useState({});
   const dialogRef = useRef(null);
@@ -114,17 +81,6 @@ function ProfileFormDialog({ open, initialProfile, onSave, onCancel, saving = fa
 
   function validate() {
     const errs = {};
-<<<<<<< HEAD
-    if (!profile.name.trim()) errs.name = "Name is required";
-    if (!profile.relationship) errs.relationship = "Choose a relationship";
-    if (profile.relationship === "custom" && !profile.customRelationshipLabel.trim()) {
-      errs.customRelationshipLabel = "Enter a custom relationship label";
-    }
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(profile.dob)) errs.dob = "Date of birth is required";
-    if (!/^\d{2}:\d{2}$/.test(profile.tob)) errs.tob = "Time of birth is required";
-    if (!profile.pob.trim()) errs.pob = "Place of birth is required";
-    if (!profile.gender) errs.gender = "Choose a gender";
-=======
     if (!profile.name.trim()) errs.name = t("family:formDialog.errors.nameRequired");
     if (!profile.relationship) errs.relationship = t("family:formDialog.errors.relationshipRequired");
     if (profile.relationship === "custom" && !profile.customRelationshipLabel.trim()) {
@@ -134,7 +90,6 @@ function ProfileFormDialog({ open, initialProfile, onSave, onCancel, saving = fa
     if (!/^\d{2}:\d{2}$/.test(profile.tob)) errs.tob = t("family:formDialog.errors.tobRequired");
     if (!profile.pob.trim()) errs.pob = t("family:formDialog.errors.pobRequired");
     if (!profile.gender) errs.gender = t("family:formDialog.errors.genderRequired");
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     setErrors(errs);
     return Object.keys(errs).length === 0;
   }
@@ -166,20 +121,12 @@ function ProfileFormDialog({ open, initialProfile, onSave, onCancel, saving = fa
       >
         <GlassCard style={{ padding: "26px 26px 22px" }}>
           <h2 id="profile-dialog-title" style={{ margin: "0 0 18px", fontSize: 18, color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Cinzel,serif" }}>
-<<<<<<< HEAD
-            {initialProfile ? "Edit Family Profile" : "Add Family Profile"}
-=======
             {initialProfile ? t("family:formDialog.editTitle") : t("family:formDialog.addTitle")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </h2>
 
           <form onSubmit={handleSubmit}>
             <div style={{ marginBottom: 18 }}>
-<<<<<<< HEAD
-              <label style={LABEL_STYLE}>Relationship</label>
-=======
               <label style={LABEL_STYLE}>{t("family:formDialog.relationshipLabel")}</label>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                 {RELATIONSHIPS.map((r) => (
                   <button
@@ -196,11 +143,7 @@ function ProfileFormDialog({ open, initialProfile, onSave, onCancel, saving = fa
                       color: profile.relationship === r ? "#fff" : "var(--nv-text-secondary, rgba(210,175,255,0.76))",
                     }}
                   >
-<<<<<<< HEAD
-                    {RELATIONSHIP_ICONS[r]} {r === "custom" ? "Custom" : r.charAt(0).toUpperCase() + r.slice(1)}
-=======
                     {RELATIONSHIP_ICONS[r]} {t(`family:relationships.${r}`)}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   </button>
                 ))}
               </div>
@@ -209,17 +152,10 @@ function ProfileFormDialog({ open, initialProfile, onSave, onCancel, saving = fa
 
             {profile.relationship === "custom" && (
               <div style={{ marginBottom: 16 }}>
-<<<<<<< HEAD
-                <label style={LABEL_STYLE}>Custom Relationship Label</label>
-                <input
-                  type="text"
-                  placeholder="e.g. Mentor, Cousin, Business Partner"
-=======
                 <label style={LABEL_STYLE}>{t("family:formDialog.customRelationshipLabel")}</label>
                 <input
                   type="text"
                   placeholder={t("family:formDialog.customRelationshipPlaceholder")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   value={profile.customRelationshipLabel}
                   onChange={(e) => set("customRelationshipLabel", e.target.value)}
                   style={{ ...INPUT_STYLE, ...(errors.customRelationshipLabel ? { borderColor: "rgba(255,100,100,0.5)" } : {}) }}
@@ -229,11 +165,7 @@ function ProfileFormDialog({ open, initialProfile, onSave, onCancel, saving = fa
             )}
 
             <div style={{ marginBottom: 18 }}>
-<<<<<<< HEAD
-              <label style={LABEL_STYLE}><span aria-hidden="true">⚥</span> Gender</label>
-=======
               <label style={LABEL_STYLE}><span aria-hidden="true">⚥</span> {t("family:formDialog.genderLabel")}</label>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                 {GENDERS.map((g) => (
                   <button
@@ -250,11 +182,7 @@ function ProfileFormDialog({ open, initialProfile, onSave, onCancel, saving = fa
                       color: profile.gender === g.key ? "#fff" : "var(--nv-text-secondary, rgba(210,175,255,0.76))",
                     }}
                   >
-<<<<<<< HEAD
-                    {g.label}
-=======
                     {t(`family:formDialog.${g.labelKey}`)}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   </button>
                 ))}
               </div>
@@ -265,17 +193,10 @@ function ProfileFormDialog({ open, initialProfile, onSave, onCancel, saving = fa
               const hasError = Boolean(errors[f.key]);
               return (
                 <div key={f.key} style={{ marginBottom: 16 }}>
-<<<<<<< HEAD
-                  <label style={LABEL_STYLE}><span aria-hidden="true">{f.icon}</span> {f.label}</label>
-                  <input
-                    type={f.type}
-                    placeholder={f.placeholder}
-=======
                   <label style={LABEL_STYLE}><span aria-hidden="true">{f.icon}</span> {t(`family:formDialog.${f.labelKey}`)}</label>
                   <input
                     type={f.type}
                     placeholder={f.placeholderKey ? t(`family:formDialog.${f.placeholderKey}`) : ""}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                     value={profile[f.key]}
                     aria-invalid={hasError || undefined}
                     onChange={(e) => set(f.key, e.target.value)}
@@ -298,11 +219,7 @@ function ProfileFormDialog({ open, initialProfile, onSave, onCancel, saving = fa
                   fontFamily: "Inter,sans-serif", opacity: saving ? 0.5 : 1,
                 }}
               >
-<<<<<<< HEAD
-                Cancel
-=======
                 {t("family:formDialog.cancel")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </button>
               <button
                 type="submit"
@@ -316,11 +233,7 @@ function ProfileFormDialog({ open, initialProfile, onSave, onCancel, saving = fa
                   color: "#fff", fontFamily: "Inter,sans-serif", opacity: saving ? 0.85 : 1,
                 }}
               >
-<<<<<<< HEAD
-                {saving ? "Saving…" : (initialProfile ? "Save Changes" : "Add Profile")}
-=======
                 {saving ? t("family:formDialog.saving") : (initialProfile ? t("family:formDialog.saveChanges") : t("family:formDialog.addProfile"))}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </button>
             </div>
           </form>

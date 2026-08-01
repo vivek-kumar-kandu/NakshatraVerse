@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { useCallback, useEffect, useState } from "react";
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
@@ -25,17 +22,10 @@ import { useToast } from "../components/common/Toast.jsx";
 // (panchangEngine.js / muhuratEngine.js, called via utils/panchangApi.js);
 // this page only fetches, holds UI state, and renders.
 // ─────────────────────────────────────────────────────────────────────────
-<<<<<<< HEAD
-const TABS = [
-  { id: "daily", label: "Daily Panchang", icon: "🕉️" },
-  { id: "summary", label: "Today's Summary", icon: "✨" },
-  { id: "muhurat", label: "Muhurat Finder", icon: "🔍" },
-=======
 const getPanchangTabs = (t) => [
   { id: "daily", label: t("dashboard.dailyPanchang", "Daily Panchang"), icon: "🕉️" },
   { id: "summary", label: t("dashboard.todaysSummary", "Today's Summary"), icon: "✨" },
   { id: "muhurat", label: t("dashboard.muhuratFinder", "Muhurat Finder"), icon: "🔍" },
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 ];
 
 function todayStr() {
@@ -43,11 +33,8 @@ function todayStr() {
 }
 
 function PanchangPage({ onBack }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["dashboard", "common"]);
   const tabs = getPanchangTabs(t);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const toast = useToast();
   const [tab, setTab] = useState("summary");
 
@@ -131,11 +118,7 @@ function PanchangPage({ onBack }) {
             ← Back
           </button>
           <div>
-<<<<<<< HEAD
-            <h1 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 21, color: "var(--nv-text-primary, #f1e4ff)" }}>🕉️ Daily Panchang & Muhurat</h1>
-=======
             <h1 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 21, color: "var(--nv-text-primary, #f1e4ff)" }}>{t("dashboard.dailyPanchangMuhurat", "🕉️ Daily Panchang & Muhurat")}</h1>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             <p style={{ margin: "2px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
               Backend-calculated Vedic timing — Tithi, Nakshatra, auspicious windows, and Muhurat selection.
             </p>
@@ -144,11 +127,7 @@ function PanchangPage({ onBack }) {
 
         {/* Tab switcher */}
         <GlassCard style={{ padding: 6, display: "flex", gap: 4, flexWrap: "wrap" }}>
-<<<<<<< HEAD
-          {TABS.map((t) => {
-=======
           {tabs.map((t) => {
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             const active = t.id === tab;
             return (
               <button
@@ -171,11 +150,7 @@ function PanchangPage({ onBack }) {
         {/* Date picker (Daily Panchang / Today's Summary tabs only) */}
         {(tab === "daily" || tab === "summary") && (
           <GlassCard style={{ padding: "14px 18px", display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-<<<<<<< HEAD
-            <label style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", fontFamily: "Inter,sans-serif" }}>Date</label>
-=======
             <label style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", fontFamily: "Inter,sans-serif" }}>{t("common.date", "Date")}</label>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             <input
               type="date"
               value={date}
@@ -187,11 +162,7 @@ function PanchangPage({ onBack }) {
             />
             {date !== todayStr() && (
               <button onClick={() => setDate(todayStr())} className="pill-btn tap-scale" style={{ padding: "8px 14px", borderRadius: 16, fontSize: 12, border: "1px solid rgba(180,120,255,0.3)", background: "rgba(123,47,255,0.15)", color: "var(--nv-text-primary, #e8d5ff)", cursor: "pointer" }}>
-<<<<<<< HEAD
-                Today
-=======
                 {t("common.today", "Today")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </button>
             )}
           </GlassCard>

@@ -1,8 +1,5 @@
 import { memo } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -15,21 +12,14 @@ import GlassCard from "../common/GlassCard.jsx";
 // `spiritualPractice.significance` is Gemini's explanation of it.
 // ─────────────────────────────────────────────────────────────────────────
 function LifeCoachAffirmationCard({ affirmation, spiritualPractice }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["lifeCoach"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   if (!affirmation && !spiritualPractice?.activity) return null;
   return (
     <GlassCard style={{ padding: "18px 20px", display: "grid", gap: 14 }}>
       {affirmation && (
         <div>
           <p style={{ margin: "0 0 4px", fontSize: 11.5, letterSpacing: 0.5, textTransform: "uppercase", color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
-<<<<<<< HEAD
-            ✦ Daily Affirmation
-=======
             {t("lifeCoach:affirmation.dailyAffirmation")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
           <p style={{ margin: 0, fontSize: 14, lineHeight: 1.55, fontStyle: "italic", color: "#ffd700" }}>
             "{affirmation}"
@@ -39,11 +29,7 @@ function LifeCoachAffirmationCard({ affirmation, spiritualPractice }) {
       {spiritualPractice?.activity && (
         <div>
           <p style={{ margin: "0 0 4px", fontSize: 11.5, letterSpacing: 0.5, textTransform: "uppercase", color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
-<<<<<<< HEAD
-            🕉️ Today's Spiritual Practice
-=======
             {t("lifeCoach:affirmation.spiritualPractice")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
           <p style={{ margin: "0 0 4px", fontSize: 14.5, fontFamily: "Cinzel,serif", color: "var(--nv-text-primary, #f1e4ff)" }}>
             {spiritualPractice.activity}

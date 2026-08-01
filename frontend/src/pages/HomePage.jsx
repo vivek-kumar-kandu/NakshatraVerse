@@ -1,22 +1,14 @@
 import { useState, useEffect, memo } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import Navbar from "../components/common/Navbar.jsx";
 import Footer from "../components/common/Footer.jsx";
 import { useAuth } from "../context/AuthContext.jsx";
-<<<<<<< HEAD
-import { GOLD_GRADIENT } from "../constants/astrology.js";
-import * as reportsApi from "../utils/reportsApi.js";
-=======
 import { useLanguage } from "../context/LanguageContext.jsx";
 import { GOLD_GRADIENT } from "../constants/astrology.js";
 import * as reportsApi from "../utils/reportsApi.js";
 import { formatDate as formatDateIntl } from "../utils/localeFormat.js";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import StatCard from "../components/common/dashboard/StatCard.jsx";
 import ActivityCard from "../components/common/dashboard/ActivityCard.jsx";
 import QuickActionCard from "../components/common/dashboard/QuickActionCard.jsx";
@@ -41,42 +33,8 @@ import SectionHeader from "../components/common/dashboard/SectionHeader.jsx";
 // global.css — no new dependencies, no changes to global.css.
 // ─────────────────────────────────────────────────────────────────────────
 
-<<<<<<< HEAD
-const FEATURES = [
-  { icon: "🪐", label: "Birth Chart", desc: "Your full Vedic natal chart, calculated precisely." },
-  { icon: "🔭", label: "Planetary Analysis", desc: "See how each planet shapes your life themes." },
-  { icon: "🔢", label: "Numerology", desc: "Mulank & Bhagyank insights from your name and date of birth." },
-  { icon: "💼", label: "Career", desc: "Where your chart points professionally." },
-  { icon: "💕", label: "Love", desc: "Compatibility and relationship patterns." },
-  { icon: "🌿", label: "Health", desc: "Wellness tendencies drawn from your chart." },
-  { icon: "💰", label: "Wealth", desc: "Financial strengths and opportunities." },
-  { icon: "✨", label: "Yogas", desc: "Auspicious planetary combinations at play." },
-  { icon: "🧿", label: "Doshas", desc: "Potential imbalances, explained clearly." },
-  { icon: "🪬", label: "Personalized Remedies", desc: "Practical guidance tailored to your chart." },
-];
-
-const FLOW_STEPS = ["Birth Details", "Astrology Engine", "AI Explanation", "Personalized Report"];
-
-const WHY_US = [
-  { icon: "🕉️", label: "Authentic Vedic Astrology", desc: "Grounded in classical calculation methods." },
-  { icon: "🤖", label: "AI-Powered Insights", desc: "Complex charts, explained in plain language." },
-  { icon: "🔒", label: "Secure Experience", desc: "Your birth data stays private." },
-  { icon: "💾", label: "Save Reports", desc: "Revisit your readings anytime from your Dashboard." },
-  { icon: "📄", label: "PDF Export", desc: "Download a copy of any saved report." },
-  { icon: "📱", label: "Mobile Friendly", desc: "A polished experience on any device." },
-];
-
-const FAQS = [
-  { q: "Do I need an account to try NakshatraVerse?", a: "No — you can generate a birth chart and full report as a guest. Creating a free account simply lets you save reports and revisit them later from your Dashboard." },
-  { q: "Is my birth data kept private?", a: "Yes. Your details are used only to generate your chart and report, and are never shared or sold." },
-  { q: "What is Vedic astrology?", a: "Vedic (Jyotish) astrology is a classical Indian system that maps planetary positions at your birth moment to your natal chart, or Kundli." },
-  { q: "Can I download my report?", a: "Yes — any saved report can be exported as a PDF directly from your Dashboard." },
-  { q: "How accurate are the AI explanations?", a: "The underlying chart is computed with classical Vedic calculations; AI is used only to explain those results in clear, readable language." },
-];
-=======
 const FEATURE_ICONS = ["🪐", "🔭", "🔢", "💼", "💕", "🌿", "💰", "✨", "🧿", "🪬"];
 const WHY_US_ICONS = ["🕉️", "🤖", "🔒", "💾", "📄", "📱"];
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 function SectionEyebrow({ children }) {
   return (
@@ -122,21 +80,6 @@ function FaqItem({ item, open, onToggle }) {
   );
 }
 
-<<<<<<< HEAD
-function formatDate(value) {
-  if (!value) return "—";
-  try {
-    return new Date(value).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
-  } catch {
-    return "—";
-  }
-}
-
-function HomePage({ onNavigate, onLogout }) {
-  const { user, isAuthenticated } = useAuth();
-  const [openFaq, setOpenFaq] = useState(0);
-
-=======
 function formatDate(value, lang) {
   if (!value) return "—";
   return formatDateIntl(value, lang, { year: "numeric", month: "short", day: "numeric" });
@@ -155,7 +98,6 @@ function HomePage({ onNavigate, onLogout }) {
   const whyUs = WHY_US_ICONS.map((icon, i) => ({ icon, ...whyUsItems[i] }));
   const faqs = t("home:faq.items", { returnObjects: true });
 
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   // Quick Summary (Reports Generated / Last Generated Report) — the
   // logged-in Home overview's only data need. Reuses the exact same
   // `reportsApi.listReports()` call Dashboard already makes (existing,
@@ -197,40 +139,23 @@ function HomePage({ onNavigate, onLogout }) {
             <>
               <h1 className="nv-heading-glow" style={{ margin: "0 0 14px", fontSize: "clamp(32px,6vw,58px)", fontWeight: 700, letterSpacing: 1,
                 background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif" }}>
-<<<<<<< HEAD
-                Welcome Back{user?.name ? `, ${user.name.split(" ")[0]}` : ""}
-              </h1>
-              <p style={{ margin: "0 auto 30px", maxWidth: 560, fontSize: "clamp(15px,2.5vw,18px)", color: "var(--nv-text-secondary, rgba(200,160,255,0.75))" }}>
-                Your cosmic blueprint is waiting — pick up right where you left off.
-=======
                 {user?.name ? t("home:hero.welcomeBackNamed", { name: user.name.split(" ")[0] }) : t("home:hero.welcomeBack")}
               </h1>
               <p style={{ margin: "0 auto 30px", maxWidth: 560, fontSize: "clamp(15px,2.5vw,18px)", color: "var(--nv-text-secondary, rgba(200,160,255,0.75))" }}>
                 {t("home:hero.welcomeBackSubtitle")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </p>
 
               {/* ── Quick Summary ─────────────────────────────────────── */}
               <div style={{ maxWidth: 640, margin: "0 auto 30px", textAlign: "left" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 12, marginBottom: reports === null || lastReport ? 14 : 0 }}>
-<<<<<<< HEAD
-                  <StatCard icon="🗓️" label="Member Since" value={formatDate(user?.createdAt)} accent="#9dc9ff" />
-                  <StatCard icon="📜" label="Reports Generated" value={reports === null ? "…" : reports.length} accent="#bf7fff" />
-=======
                   <StatCard icon="🗓️" label={t("home:quickSummary.memberSince")} value={formatDate(user?.createdAt, language)} accent="#9dc9ff" />
                   <StatCard icon="📜" label={t("home:quickSummary.reportsGenerated")} value={reports === null ? "…" : reports.length} accent="#bf7fff" />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </div>
                 {lastReport && (
                   <ActivityCard
                     icon="🌙"
-<<<<<<< HEAD
-                    title={lastReport.title || "Your latest reading"}
-                    subtitle={`Last Generated Report · ${formatDate(lastReport.createdAt)}`}
-=======
                     title={lastReport.title || t("home:quickSummary.latestReading")}
                     subtitle={t("home:quickSummary.lastGeneratedReport", { date: formatDate(lastReport.createdAt, language) })}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                     onClick={() => onNavigate("reports")}
                   />
                 )}
@@ -238,19 +163,11 @@ function HomePage({ onNavigate, onLogout }) {
 
               {/* ── Quick Actions ─────────────────────────────────────── */}
               <div style={{ maxWidth: 640, margin: "0 auto 34px", textAlign: "left" }}>
-<<<<<<< HEAD
-                <SectionHeader style={{ justifyContent: "center", textAlign: "center" }}>Quick Actions</SectionHeader>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 12 }}>
-                  <QuickActionCard icon="✦" label="Generate New Report" onClick={() => onNavigate("landing")} primary />
-                  <QuickActionCard icon="📚" label="Saved Reports" onClick={() => onNavigate("reports")} />
-                  <QuickActionCard icon="👤" label="My Profile" onClick={() => onNavigate("profile")} />
-=======
                 <SectionHeader style={{ justifyContent: "center", textAlign: "center" }}>{t("home:quickActions.heading")}</SectionHeader>
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 12 }}>
                   <QuickActionCard icon="✦" label={t("home:quickActions.generateNew")} onClick={() => onNavigate("landing")} primary />
                   <QuickActionCard icon="📚" label={t("home:quickActions.savedReports")} onClick={() => onNavigate("reports")} />
                   <QuickActionCard icon="👤" label={t("home:quickActions.myProfile")} onClick={() => onNavigate("profile")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </div>
               </div>
 
@@ -264,26 +181,12 @@ function HomePage({ onNavigate, onLogout }) {
                   boxShadow: "0 4px 28px rgba(123,47,255,0.4)",
                 }}
               >
-<<<<<<< HEAD
-                ✦ Continue to Dashboard ✦
-=======
                 {t("home:hero.continueToDashboard")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </button>
             </>
           ) : (
             <>
               <div style={{ fontSize: 13, letterSpacing: 3, textTransform: "uppercase", color: "var(--nv-text-muted, rgba(200,160,255,0.55))", marginBottom: 14, fontWeight: 600 }}>
-<<<<<<< HEAD
-                AI-Powered Vedic Astrology
-              </div>
-              <h1 className="nv-heading-glow" style={{ margin: "0 0 14px", fontSize: "clamp(32px,6.5vw,58px)", fontWeight: 700, letterSpacing: 1,
-                background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif" }}>
-                Discover Your Cosmic Blueprint
-              </h1>
-              <p style={{ margin: "0 auto 34px", maxWidth: 560, fontSize: "clamp(15px,2.5vw,18px)", color: "var(--nv-text-secondary, rgba(200,160,255,0.75))" }}>
-                Ancient Vedic wisdom, explained by AI — a complete birth chart and personalized life report in minutes.
-=======
                 {t("home:hero.eyebrow")}
               </div>
               <h1 className="nv-heading-glow" style={{ margin: "0 0 14px", fontSize: "clamp(32px,6.5vw,58px)", fontWeight: 700, letterSpacing: 1,
@@ -292,7 +195,6 @@ function HomePage({ onNavigate, onLogout }) {
               </h1>
               <p style={{ margin: "0 auto 34px", maxWidth: 560, fontSize: "clamp(15px,2.5vw,18px)", color: "var(--nv-text-secondary, rgba(200,160,255,0.75))" }}>
                 {t("home:hero.guestSubtitle")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 14, justifyContent: "center" }}>
                 <button
@@ -305,11 +207,7 @@ function HomePage({ onNavigate, onLogout }) {
                     boxShadow: "0 4px 28px rgba(123,47,255,0.4)",
                   }}
                 >
-<<<<<<< HEAD
-                  ✦ Get Started ✦
-=======
                   {t("home:hero.getStarted")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </button>
                 <button
                   onClick={() => onNavigate("login")}
@@ -319,11 +217,7 @@ function HomePage({ onNavigate, onLogout }) {
                     fontSize: 16, cursor: "pointer", fontFamily: "Cinzel,serif", letterSpacing: 1,
                   }}
                 >
-<<<<<<< HEAD
-                  Sign In
-=======
                   {t("home:hero.signIn")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </button>
               </div>
             </>
@@ -332,36 +226,19 @@ function HomePage({ onNavigate, onLogout }) {
 
         {/* ── About ────────────────────────────────────────────────── */}
         <section id="about" style={{ padding: "50px 20px", maxWidth: 780, margin: "0 auto", textAlign: "center" }}>
-<<<<<<< HEAD
-          <SectionEyebrow>About</SectionEyebrow>
-          <SectionTitle>About NakshatraVerse</SectionTitle>
-          <p style={{ margin: 0, fontSize: 15, lineHeight: 1.8, color: "var(--nv-text-secondary, rgba(200,160,255,0.75))" }}>
-            NakshatraVerse blends classical Vedic astrology with modern AI. We calculate your birth chart using
-            precise planetary mathematics, then use AI purely to translate that chart into a clear, readable
-            report covering career, love, health, wealth, and more — so cosmic wisdom stays accurate and easy
-            to understand.
-=======
           <SectionEyebrow>{t("home:about.eyebrow")}</SectionEyebrow>
           <SectionTitle>{t("home:about.title")}</SectionTitle>
           <p style={{ margin: 0, fontSize: 15, lineHeight: 1.8, color: "var(--nv-text-secondary, rgba(200,160,255,0.75))" }}>
             {t("home:about.body")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         </section>
 
         {/* ── Features ─────────────────────────────────────────────── */}
         <section id="features" style={{ padding: "50px 20px", maxWidth: 1100, margin: "0 auto" }}>
-<<<<<<< HEAD
-          <SectionEyebrow>What You Get</SectionEyebrow>
-          <SectionTitle>Features</SectionTitle>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 16, marginTop: 30 }}>
-            {FEATURES.map(f => (
-=======
           <SectionEyebrow>{t("home:features.eyebrow")}</SectionEyebrow>
           <SectionTitle>{t("home:features.title")}</SectionTitle>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 16, marginTop: 30 }}>
             {features.map(f => (
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <GlassCard key={f.label} style={{ padding: 20 }}>
                 <div aria-hidden="true" style={{ fontSize: 26, marginBottom: 10 }}>{f.icon}</div>
                 <h3 style={{ margin: "0 0 6px", fontSize: 15, color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Cinzel,serif" }}>{f.label}</h3>
@@ -373,17 +250,10 @@ function HomePage({ onNavigate, onLogout }) {
 
         {/* ── How It Works ─────────────────────────────────────────── */}
         <section id="how-it-works" style={{ padding: "50px 20px", maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
-<<<<<<< HEAD
-          <SectionEyebrow>How It Works</SectionEyebrow>
-          <SectionTitle>From Birth Details to Insight</SectionTitle>
-          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "center", gap: 10, marginTop: 24 }}>
-            {FLOW_STEPS.map((step, i) => (
-=======
           <SectionEyebrow>{t("home:howItWorks.eyebrow")}</SectionEyebrow>
           <SectionTitle>{t("home:howItWorks.title")}</SectionTitle>
           <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "center", gap: 10, marginTop: 24 }}>
             {flowSteps.map((step, i) => (
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <div key={step} style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <div style={{
                   padding: "16px 20px", borderRadius: 14, minWidth: 130,
@@ -392,11 +262,7 @@ function HomePage({ onNavigate, onLogout }) {
                 }}>
                   {step}
                 </div>
-<<<<<<< HEAD
-                {i < FLOW_STEPS.length - 1 && (
-=======
                 {i < flowSteps.length - 1 && (
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   <span aria-hidden="true" style={{ color: "#ffd700", fontSize: 20 }}>→</span>
                 )}
               </div>
@@ -406,17 +272,10 @@ function HomePage({ onNavigate, onLogout }) {
 
         {/* ── Why Choose Us ────────────────────────────────────────── */}
         <section id="why-us" style={{ padding: "50px 20px", maxWidth: 1100, margin: "0 auto" }}>
-<<<<<<< HEAD
-          <SectionEyebrow>Why NakshatraVerse</SectionEyebrow>
-          <SectionTitle>Why Choose Us</SectionTitle>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16, marginTop: 30 }}>
-            {WHY_US.map(f => (
-=======
           <SectionEyebrow>{t("home:whyUs.eyebrow")}</SectionEyebrow>
           <SectionTitle>{t("home:whyUs.title")}</SectionTitle>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16, marginTop: 30 }}>
             {whyUs.map(f => (
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <GlassCard key={f.label} style={{ padding: 20, display: "flex", gap: 14, alignItems: "flex-start" }}>
                 <span aria-hidden="true" style={{ fontSize: 24, flexShrink: 0 }}>{f.icon}</span>
                 <div>
@@ -430,17 +289,10 @@ function HomePage({ onNavigate, onLogout }) {
 
         {/* ── FAQ ──────────────────────────────────────────────────── */}
         <section id="faq" style={{ padding: "50px 20px", maxWidth: 780, margin: "0 auto" }}>
-<<<<<<< HEAD
-          <SectionEyebrow>Questions</SectionEyebrow>
-          <SectionTitle>Frequently Asked Questions</SectionTitle>
-          <div style={{ display: "grid", gap: 12, marginTop: 24 }}>
-            {FAQS.map((item, i) => (
-=======
           <SectionEyebrow>{t("home:faq.eyebrow")}</SectionEyebrow>
           <SectionTitle>{t("home:faq.title")}</SectionTitle>
           <div style={{ display: "grid", gap: 12, marginTop: 24 }}>
             {faqs.map((item, i) => (
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <FaqItem key={item.q} item={item} open={openFaq === i} onToggle={() => setOpenFaq(o => (o === i ? -1 : i))} />
             ))}
           </div>
@@ -451,19 +303,10 @@ function HomePage({ onNavigate, onLogout }) {
           <GlassCard style={{ maxWidth: 700, margin: "0 auto", padding: "clamp(32px,6vw,48px)", textAlign: "center" }}>
             <h2 style={{ margin: "0 0 12px", fontSize: "clamp(22px,4vw,30px)", fontFamily: "Cinzel,serif",
               background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-<<<<<<< HEAD
-              {isAuthenticated ? "Ready to explore more?" : "Your Cosmic Blueprint Awaits"}
-            </h2>
-            <p style={{ margin: "0 0 24px", fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))" }}>
-              {isAuthenticated
-                ? "Head to your Dashboard to view saved reports or start a new reading."
-                : "Create your free account and generate your first personalized Vedic astrology report today."}
-=======
               {isAuthenticated ? t("home:cta.titleAuth") : t("home:cta.titleGuest")}
             </h2>
             <p style={{ margin: "0 0 24px", fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))" }}>
               {isAuthenticated ? t("home:cta.bodyAuth") : t("home:cta.bodyGuest")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
             <button
               onClick={() => onNavigate(isAuthenticated ? "dashboard" : "signup")}
@@ -474,11 +317,7 @@ function HomePage({ onNavigate, onLogout }) {
                 boxShadow: "0 4px 28px rgba(123,47,255,0.4)",
               }}
             >
-<<<<<<< HEAD
-              {isAuthenticated ? "✦ Go to Dashboard ✦" : "✦ Get Started ✦"}
-=======
               {isAuthenticated ? t("home:cta.ctaAuth") : t("home:cta.ctaGuest")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </GlassCard>
         </section>

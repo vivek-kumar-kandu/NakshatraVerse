@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-import { describe, it, expect, vi } from "vitest";
-=======
 import { describe, it, expect, vi, beforeAll } from "vitest";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { render, screen, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import InteractiveKundliChart from "../src/components/common/InteractiveKundliChart.jsx";
 import { ExplorerProvider, useExplorer } from "../src/context/ExplorerContext.jsx";
 import ExplorerTab from "../src/components/explorer/ExplorerTab.jsx";
-<<<<<<< HEAD
-=======
 // Phase 2 (Explorer i18n migration): this file renders ExplorerTab
 // directly rather than through App.jsx, and App.jsx (via
 // ErrorBoundary.jsx) is normally what triggers i18n/index.js's
@@ -25,7 +19,6 @@ beforeAll(async () => {
     await new Promise((resolve) => i18n.on("initialized", resolve));
   }
 });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // V5.1 — Interactive Kundli / Explorer Integration

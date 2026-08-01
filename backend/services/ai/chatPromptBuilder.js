@@ -10,11 +10,8 @@
 // facts Gemini is allowed to draw on is identical to the report prompt.
 // ─────────────────────────────────────────────────────────────────────────
 
-<<<<<<< HEAD
-=======
 import { getAiLanguageInstruction } from "../localization/aiLanguageInstruction.js";
 
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 // Reuses the exact same fact-rendering shape as promptBuilder.js so the
 // assistant can never "see" a different picture of the chart than the
 // report itself did.
@@ -152,12 +149,6 @@ function renderOptionalContext({ festivalContext, panchangContext, muhuratContex
   return sections.length ? `\n\n${sections.join("\n\n")}` : "";
 }
 
-<<<<<<< HEAD
-export function buildChatPrompt({ chart, report, insights, history, question, festivalContext, panchangContext, muhuratContext }) {
-  const factsSection = renderFacts({ ...chart, report }, insights);
-  const optionalContextSection = renderOptionalContext({ festivalContext, panchangContext, muhuratContext });
-  const historySection = renderHistory(history);
-=======
 export function buildChatPrompt({ chart, report, insights, history, question, festivalContext, panchangContext, muhuratContext, language }) {
   const factsSection = renderFacts({ ...chart, report }, insights);
   const optionalContextSection = renderOptionalContext({ festivalContext, panchangContext, muhuratContext });
@@ -166,7 +157,6 @@ export function buildChatPrompt({ chart, report, insights, history, question, fe
   // prompt's text is byte-for-byte unchanged until a non-English language
   // is actually requested. See services/localization/aiLanguageInstruction.js.
   const languageInstruction = getAiLanguageInstruction(language);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   return `You are the NakshatraVerse AI Astrology Assistant — a friendly, knowledgeable guide who explains a person's ALREADY-GENERATED Vedic astrology report. A backend calculation engine has already computed every astrological fact and prediction below; a report-writing step has already turned some of them into narrative prose (also below). Your ONLY job in this chat is to explain, clarify, and answer questions about this existing, already-finalized material in warm, conversational language.
 
@@ -198,11 +188,7 @@ ${historySection}
 
 The user's new question: "${question}"
 
-<<<<<<< HEAD
-Respond now as JSON in the exact shape described above.`;
-=======
 Respond now as JSON in the exact shape described above.${languageInstruction}`;
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -218,14 +204,9 @@ Respond now as JSON in the exact shape described above.${languageInstruction}`;
 // Same JSON response contract as buildChatPrompt so assistantService can
 // normalize both the same way.
 // ─────────────────────────────────────────────────────────────────────────
-<<<<<<< HEAD
-export function buildGeneralChatPrompt({ history, question }) {
-  const historySection = renderHistory(history);
-=======
 export function buildGeneralChatPrompt({ history, question, language }) {
   const historySection = renderHistory(history);
   const languageInstruction = getAiLanguageInstruction(language);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   return `You are the NakshatraVerse AI Astrology Assistant, currently in General Astrology Mode: no specific person's chart or report is loaded in this conversation. Answer general, educational, or conceptual questions about Vedic (and, where relevant, Western) astrology using your own broad astrology knowledge — what a Nakshatra or Dasha is, how yogas/doshas work in general, how planetary strength is traditionally assessed, differences between astrology systems, and similar topics.
 
@@ -248,11 +229,7 @@ ${historySection}
 
 The user's new question: "${question}"
 
-<<<<<<< HEAD
-Respond now as JSON in the exact shape described above.`;
-=======
 Respond now as JSON in the exact shape described above.${languageInstruction}`;
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 export default { buildChatPrompt, buildGeneralChatPrompt };

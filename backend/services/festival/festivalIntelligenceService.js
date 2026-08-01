@@ -35,13 +35,8 @@ import * as familyProfileService from "../family/familyProfileService.js";
 // ── Festival Intelligence (spiritual meaning, mythological story, etc) ──
 // One Gemini call, grounded strictly in the already-computed festival
 // object the caller passes in (never re-fetched/recalculated here).
-<<<<<<< HEAD
-export async function generateFestivalIntelligence(festival) {
-  const prompt = buildFestivalIntelligencePrompt(festival);
-=======
 export async function generateFestivalIntelligence(festival, language) {
   const prompt = buildFestivalIntelligencePrompt(festival, language);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const intelligence = await callGemini(prompt);
   if (!intelligence || typeof intelligence !== "object") {
     const err = new Error("The AI did not return usable festival intelligence.");
@@ -56,11 +51,7 @@ export async function generateFestivalIntelligence(festival, language) {
 // lifeCoachService.js/notificationGenerationService.js already call — and
 // computePanchang(festival.date) — the exact same function every Panchang
 // endpoint already calls. Never computes new astrology.
-<<<<<<< HEAD
-export async function generatePersonalizedFestivalGuidance({ festival, chart, report }) {
-=======
 export async function generatePersonalizedFestivalGuidance({ festival, chart, report, language }) {
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   let insights = null;
   try {
     insights = buildStructuredInsights(chart);
@@ -75,11 +66,7 @@ export async function generatePersonalizedFestivalGuidance({ festival, chart, re
     logger.error("Festival Intelligence: computePanchang failed, continuing without it:", err);
   }
 
-<<<<<<< HEAD
-  const prompt = buildPersonalizedFestivalPrompt({ festival, insights, panchang });
-=======
   const prompt = buildPersonalizedFestivalPrompt({ festival, insights, panchang, language });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const guidance = await callGemini(prompt);
   if (!guidance || typeof guidance !== "object") {
     const err = new Error("The AI did not return usable personalized guidance.");
@@ -219,17 +206,10 @@ export function buildFestivalTimeline(festival) {
 // does. Deterministic (no Gemini call) — suggestions are derived purely
 // from each profile's relationship label plus the festival's own
 // type/importance, never a new astrology fact.
-<<<<<<< HEAD
-export function getFamilyFestivalSuggestions(userId, festival) {
-  let profiles = [];
-  try {
-    profiles = familyProfileService.listProfiles(userId, { includeArchived: false }) || [];
-=======
 export async function getFamilyFestivalSuggestions(userId, festival) {
   let profiles = [];
   try {
     profiles = (await familyProfileService.listProfiles(userId, { includeArchived: false })) || [];
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   } catch (err) {
     logger.error("Festival Intelligence: listProfiles failed:", err);
     profiles = [];

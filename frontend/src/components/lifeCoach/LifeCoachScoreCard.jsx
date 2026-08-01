@@ -1,8 +1,5 @@
 import { memo } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 import ScoreRing from "../common/ScoreRing.jsx";
 
@@ -14,25 +11,15 @@ import ScoreRing from "../common/ScoreRing.jsx";
 // read of the AI-Life-Coach guidance object the backend already computed.
 // ─────────────────────────────────────────────────────────────────────────
 function LifeCoachScoreCard({ dailyEnergyScore, todaysFocus, motivationMessage }) {
-<<<<<<< HEAD
-  return (
-    <GlassCard style={{ padding: "22px 24px", display: "flex", gap: 20, alignItems: "center", flexWrap: "wrap" }}>
-      <ScoreRing value={dailyEnergyScore} max={100} label="Daily Energy" color="#ffd700" />
-=======
   const { t } = useTranslation(["lifeCoach"]);
   return (
     <GlassCard style={{ padding: "22px 24px", display: "flex", gap: 20, alignItems: "center", flexWrap: "wrap" }}>
       <ScoreRing value={dailyEnergyScore} max={100} label={t("lifeCoach:scoreCard.dailyEnergyLabel")} color="#ffd700" />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       <div style={{ flex: 1, minWidth: 200, display: "grid", gap: 10 }}>
         {todaysFocus && (
           <div>
             <p style={{ margin: "0 0 3px", fontSize: 11.5, letterSpacing: 0.5, textTransform: "uppercase", color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
-<<<<<<< HEAD
-              Today's Focus
-=======
               {t("lifeCoach:scoreCard.todaysFocus")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
             <p style={{ margin: 0, fontSize: 14.5, lineHeight: 1.5, color: "var(--nv-text-primary, #f1e4ff)", fontFamily: "Cinzel,serif" }}>
               {todaysFocus}

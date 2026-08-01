@@ -296,11 +296,7 @@ async function generateMuhuratNotifications(userId, results) {
 async function generateFamilyNotifications(userId, results) {
   let profiles;
   try {
-<<<<<<< HEAD
-    profiles = familyProfileService.listProfiles(userId, { includeArchived: false });
-=======
     profiles = await familyProfileService.listProfiles(userId, { includeArchived: false });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   } catch (err) {
     logger.error("Notification generation: listProfiles failed:", err);
     results.errors += 1;
@@ -369,11 +365,7 @@ async function generateFamilyNotifications(userId, results) {
 // (see its own header); it has no eclipse or retrograde-detection logic,
 // and this phase must not invent a new astrology calculation to add one.
 async function generateChartBasedNotifications(userId, results) {
-<<<<<<< HEAD
-  const [latestSummary] = reportRepository.findByUser(userId);
-=======
   const [latestSummary] = await reportRepository.findByUser(userId);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   if (!latestSummary) return;
 
   const chart = latestSummary.chart;
@@ -528,11 +520,7 @@ async function generateChartBasedNotifications(userId, results) {
 // Wrapped defensively: if Gemini is unreachable, this generator simply
 // produces nothing rather than failing the whole batch.
 async function generateAiLifeCoachNotifications(userId, results) {
-<<<<<<< HEAD
-  const [latestSummary] = reportRepository.findByUser(userId);
-=======
   const [latestSummary] = await reportRepository.findByUser(userId);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   if (!latestSummary) return;
 
   const date = todayStr();

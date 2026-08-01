@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo } from "react";
 import GlassCard from "../common/GlassCard.jsx";
 import Badge from "../common/Badge.jsx";
@@ -21,11 +18,7 @@ function DashaCard({ dasha, onExplain }) {
   return (
     <GlassCard style={{ padding: 20, animation: "fadeIn 0.3s ease both" }}>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 8, marginBottom: 8, flexWrap: "wrap" }}>
-<<<<<<< HEAD
-        <h3 style={{ margin: 0, fontSize: 15, color: "#ffd700", fontFamily: "Cinzel,serif" }}>🪐 Vimshottari Dasha</h3>
-=======
         <h3 style={{ margin: 0, fontSize: 15, color: "#ffd700", fontFamily: "Cinzel,serif" }}>{t("results.vimshottariDasha", "🪐 Vimshottari Dasha")}</h3>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         {currentMahadasha?.lord && <Badge color="#bf7fff">Current: {currentMahadasha.lord}</Badge>}
       </div>
 

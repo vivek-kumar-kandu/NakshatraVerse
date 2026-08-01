@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { useCallback, useEffect, useRef, useState } from "react";
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import ChatMessage from "../components/assistant/ChatMessage.jsx";
@@ -59,10 +56,7 @@ function buildSuggestions(chart, report) {
 }
 
 function AIAssistantPage({ userData, chart, report, onBack, onNavigate, initialQuestion, festivalContext, panchangContext, muhuratContext }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["assistant", "common"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [messages, setMessages] = useState([]); // { id, role, content, timestamp, failed?, shortAnswer?, detailedExplanation?, evidence?, confidence?, suggestedNextQuestion? }
   const [pending, setPending] = useState(false);
   const [pendingQuestion, setPendingQuestion] = useState(null); // kept for retry
@@ -228,17 +222,6 @@ function AIAssistantPage({ userData, chart, report, onBack, onNavigate, initialQ
             </button>
             <div>
               <h1 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 20, color: "var(--nv-text-primary, #f1e4ff)" }}>
-<<<<<<< HEAD
-                AI Astrology Assistant
-              </h1>
-              {hasChart && userData?.name ? (
-                <p style={{ margin: "2px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
-                  Ask about {userData.name}'s reading
-                </p>
-              ) : (
-                <p style={{ margin: "2px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
-                  General Astrology Mode — ask me anything about astrology
-=======
                 {t("assistant.pageTitle", "AI Astrology Assistant")}
               </h1>
               {hasChart && userData?.name ? (
@@ -248,7 +231,6 @@ function AIAssistantPage({ userData, chart, report, onBack, onNavigate, initialQ
               ) : (
                 <p style={{ margin: "2px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
                   {t("assistant.generalAstrologyMode", "General Astrology Mode — ask me anything about astrology")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </p>
               )}
             </div>
@@ -263,11 +245,7 @@ function AIAssistantPage({ userData, chart, report, onBack, onNavigate, initialQ
                 cursor: "pointer", fontSize: 12,
               }}
             >
-<<<<<<< HEAD
-              🗑 Clear conversation
-=======
               🗑 {t("assistant.clearConversation", "Clear conversation")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           )}
         </div>

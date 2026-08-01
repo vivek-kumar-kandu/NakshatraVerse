@@ -1,8 +1,5 @@
 import { memo, useMemo } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../../common/GlassCard.jsx";
 import Badge from "../../common/Badge.jsx";
 import EmptyState from "../../common/EmptyState.jsx";
@@ -34,10 +31,7 @@ function severityColor(severity) {
 }
 
 function DoshaExplorerPanel({ item, report, chart }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["explorer"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const name = item?.label;
   const dosha = useMemo(
     () => (report?.chart?.doshas || []).find((d) => d.name === name),
@@ -58,31 +52,18 @@ function DoshaExplorerPanel({ item, report, chart }) {
 
   if (!dosha) {
     return (
-<<<<<<< HEAD
-      <ExplorerDetailShell icon="⚠️" label="Dosha" color="#ff9ed8" item={item}>
-        <EmptyState icon="⚠️" title="Dosha not found" message="This dosha isn't part of the currently detected set for this chart." />
-=======
       <ExplorerDetailShell icon="⚠️" label={t("explorer:typeSingular.dosha")} color="#ff9ed8" item={item}>
         <EmptyState icon="⚠️" title={t("explorer:dosha.notFoundTitle")} message={t("explorer:dosha.notFoundMessage")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </ExplorerDetailShell>
     );
   }
 
   return (
-<<<<<<< HEAD
-    <ExplorerDetailShell icon="⚠️" label="Dosha" color="#ff9ed8" item={item}>
-      <GlassCard style={{ padding: 24 }}>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 12 }}>
-          <Badge color="#ff9ed8">Matching rule: {dosha.name}</Badge>
-          {dosha.severity && <Badge color={severityColor(dosha.severity)}>Severity: {dosha.severity}</Badge>}
-=======
     <ExplorerDetailShell icon="⚠️" label={t("explorer:typeSingular.dosha")} color="#ff9ed8" item={item}>
       <GlassCard style={{ padding: 24 }}>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 12 }}>
           <Badge color="#ff9ed8">{t("explorer:dosha.matchingRuleBadge", { name: dosha.name })}</Badge>
           {dosha.severity && <Badge color={severityColor(dosha.severity)}>{t("explorer:dosha.severityBadge", { severity: dosha.severity })}</Badge>}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           {dosha.influence && <Badge color={dosha.influence === "negative" ? "#ff7b7b" : "#7effb2"}>{dosha.influence}</Badge>}
         </div>
         <p style={{ margin: "0 0 12px", fontSize: 13.5, lineHeight: 1.6, color: "var(--nv-text-secondary, rgba(230,220,255,0.85))", fontFamily: "Inter,sans-serif" }}>
@@ -96,17 +77,6 @@ function DoshaExplorerPanel({ item, report, chart }) {
 
         <h4 style={{ margin: "18px 0 8px", fontSize: 13, letterSpacing: 1.5, textTransform: "uppercase",
           color: "var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily: "Inter,sans-serif", fontWeight: 500 }}>
-<<<<<<< HEAD
-          AFFECTED HOUSES
-        </h4>
-        {affectedHouses.length > 0 ? (
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-            {affectedHouses.map((h) => <Badge key={h} color="#9dc9ff">House {h}</Badge>)}
-          </div>
-        ) : (
-          <p style={{ margin: 0, fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.45))", fontFamily: "Inter,sans-serif" }}>
-            No category prediction currently traces this dosha to specific houses.
-=======
           {t("explorer:dosha.affectedHousesHeading")}
         </h4>
         {affectedHouses.length > 0 ? (
@@ -116,44 +86,27 @@ function DoshaExplorerPanel({ item, report, chart }) {
         ) : (
           <p style={{ margin: 0, fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.45))", fontFamily: "Inter,sans-serif" }}>
             {t("explorer:dosha.noAffectedHouses")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         )}
       </GlassCard>
 
-<<<<<<< HEAD
-      <ExpandableSection icon="🪬" title="Remedies" color="#ffb347" count={remedies.length}>
-=======
       <ExpandableSection icon="🪬" title={t("explorer:dosha.remedies")} color="#ffb347" count={remedies.length}>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         {remedies.length > 0 ? (
           <div style={{ display: "grid", gap: 10, gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))" }}>
             {remedies.map((r, idx) => <RemedyCard key={`${r.type}-${idx}`} type={r.type} detail={r.detail} idx={idx} />)}
           </div>
         ) : (
-<<<<<<< HEAD
-          <EmptyState compact icon="🪬" title="No remedies available" message="No remedy is currently associated with this dosha." />
-        )}
-      </ExpandableSection>
-
-      <ExpandableSection icon="🔮" title="Linked Predictions" color="#ffd700" count={citingPredictions.length}>
-=======
           <EmptyState compact icon="🪬" title={t("explorer:common.noRemediesTitle")} message={t("explorer:dosha.noRemediesMessage")} />
         )}
       </ExpandableSection>
 
       <ExpandableSection icon="🔮" title={t("explorer:dosha.linkedPredictions")} color="#ffd700" count={citingPredictions.length}>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         {citingPredictions.length > 0 ? (
           <div style={{ display: "grid", gap: 10, gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))" }}>
             {citingPredictions.map((p, idx) => <PredictionCard key={p.category} prediction={p} idx={idx} />)}
           </div>
         ) : (
-<<<<<<< HEAD
-          <EmptyState compact icon="🔮" title="No linked predictions" message="No category prediction currently cites this dosha as a supporting factor." />
-=======
           <EmptyState compact icon="🔮" title={t("explorer:common.noLinkedPredictionsTitle")} message={t("explorer:dosha.noLinkedPredictionsMessage")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         )}
       </ExpandableSection>
 

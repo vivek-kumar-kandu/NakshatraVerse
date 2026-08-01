@@ -1,8 +1,5 @@
 import { useState, memo } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { GOLD_GRADIENT } from "../../constants/astrology.js";
 import { scrollBehavior } from "../../utils/motionPreference.js";
 
@@ -47,43 +44,26 @@ const linkStyle = {
 };
 
 function Navbar({ isAuthenticated, userName, onNavigate, onLogout }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["navigation", "common"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const close = () => setMobileOpen(false);
 
   const guestLinks = (
     <>
-<<<<<<< HEAD
-      <button className="navbar-link" style={linkStyle} onClick={() => { goHome(onNavigate); close(); }}>Home</button>
-      <button className="navbar-link" style={linkStyle} onClick={() => { scrollToId("features"); close(); }}>Features</button>
-      <button className="navbar-link" style={linkStyle} onClick={() => { scrollToId("about"); close(); }}>About</button>
-      <button className="navbar-link" style={linkStyle} onClick={() => { scrollToId("faq"); close(); }}>FAQ</button>
-=======
       <button className="navbar-link" style={linkStyle} onClick={() => { goHome(onNavigate); close(); }}>{t("navigation:guest.home")}</button>
       <button className="navbar-link" style={linkStyle} onClick={() => { scrollToId("features"); close(); }}>{t("navigation:guest.features")}</button>
       <button className="navbar-link" style={linkStyle} onClick={() => { scrollToId("about"); close(); }}>{t("navigation:guest.about")}</button>
       <button className="navbar-link" style={linkStyle} onClick={() => { scrollToId("faq"); close(); }}>{t("navigation:guest.faq")}</button>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     </>
   );
 
   const authLinks = (
     <>
-<<<<<<< HEAD
-      <button className="navbar-link" style={linkStyle} onClick={() => { goHome(onNavigate); close(); }}>Home</button>
-      <button className="navbar-link" style={linkStyle} onClick={() => { onNavigate("dashboard"); close(); }}>Dashboard</button>
-      <button className="navbar-link" style={linkStyle} onClick={() => { onNavigate("dashboard"); close(); }}>Reports</button>
-      <button className="navbar-link" style={linkStyle} onClick={() => { onNavigate("dashboard"); close(); }}>Profile</button>
-=======
       <button className="navbar-link" style={linkStyle} onClick={() => { goHome(onNavigate); close(); }}>{t("navigation:auth.home")}</button>
       <button className="navbar-link" style={linkStyle} onClick={() => { onNavigate("dashboard"); close(); }}>{t("navigation:auth.dashboard")}</button>
       <button className="navbar-link" style={linkStyle} onClick={() => { onNavigate("dashboard"); close(); }}>{t("navigation:auth.reports")}</button>
       <button className="navbar-link" style={linkStyle} onClick={() => { onNavigate("dashboard"); close(); }}>{t("navigation:auth.profile")}</button>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     </>
   );
 
@@ -94,11 +74,7 @@ function Navbar({ isAuthenticated, userName, onNavigate, onLogout }) {
         className="navbar-cta"
         style={{ ...linkStyle, border: "1px solid var(--nv-accent-border, rgba(180,120,255,0.35))", borderRadius: "var(--nv-radius-pill, 30px)", padding: "9px 18px", color: "var(--nv-text-secondary, rgba(220,190,255,0.9))" }}
       >
-<<<<<<< HEAD
-        Sign In
-=======
         {t("common:buttons.signIn")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </button>
       <button
         onClick={() => { onNavigate("signup"); close(); }}
@@ -110,11 +86,7 @@ function Navbar({ isAuthenticated, userName, onNavigate, onLogout }) {
           boxShadow: "var(--nv-shadow-sm, 0 4px 18px rgba(123,47,255,0.4))",
         }}
       >
-<<<<<<< HEAD
-        Get Started
-=======
         {t("common:buttons.getStarted")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </button>
     </>
   );
@@ -129,11 +101,7 @@ function Navbar({ isAuthenticated, userName, onNavigate, onLogout }) {
         fontWeight: 600, fontSize: 14, cursor: "pointer", fontFamily: "var(--nv-font-body, Inter,sans-serif)",
       }}
     >
-<<<<<<< HEAD
-      🚪 Logout
-=======
       🚪 {t("common:buttons.logout")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     </button>
   );
 
@@ -149,11 +117,7 @@ function Navbar({ isAuthenticated, userName, onNavigate, onLogout }) {
       }}>
         <button
           onClick={() => goHome(onNavigate)}
-<<<<<<< HEAD
-          aria-label="NakshatraVerse — home"
-=======
           aria-label={t("navigation:navbar.brandAriaLabel")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           style={{ display: "flex", alignItems: "center", gap: 8, background: "none", border: "none", cursor: "pointer", padding: 0 }}
         >
           <span aria-hidden="true" style={{ fontSize: 24 }}>🪐</span>
@@ -161,20 +125,12 @@ function Navbar({ isAuthenticated, userName, onNavigate, onLogout }) {
             fontSize: 18, fontWeight: 700, fontFamily: "Cinzel,serif",
             background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
           }}>
-<<<<<<< HEAD
-            NakshatraVerse
-=======
             {t("common:app.name")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </span>
         </button>
 
         {/* Desktop nav */}
-<<<<<<< HEAD
-        <nav aria-label="Primary" style={{ display: "flex", alignItems: "center", gap: 20 }} className="navbar-desktop">
-=======
         <nav aria-label={t("navigation:navbar.primaryAriaLabel")} style={{ display: "flex", alignItems: "center", gap: 20 }} className="navbar-desktop">
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           {isAuthenticated ? authLinks : guestLinks}
           <span style={{ width: 1, height: 20, background: "rgba(180,120,255,0.2)" }} aria-hidden="true" />
           {isAuthenticated ? (
@@ -190,11 +146,7 @@ function Navbar({ isAuthenticated, userName, onNavigate, onLogout }) {
         {/* Mobile hamburger */}
         <button
           className="navbar-mobile-toggle navbar-hamburger"
-<<<<<<< HEAD
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
-=======
           aria-label={mobileOpen ? t("navigation:navbar.closeMenu") : t("navigation:navbar.openMenu")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen(o => !o)}
           style={{

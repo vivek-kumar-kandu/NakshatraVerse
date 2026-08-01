@@ -1,20 +1,13 @@
 import { useEffect, useState } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import Badge from "../components/common/Badge.jsx";
 import ProfilePhotoManager from "../components/common/ProfilePhotoManager.jsx";
 import { useAuth } from "../context/AuthContext.jsx";
-<<<<<<< HEAD
-import * as reportsApi from "../utils/reportsApi.js";
-=======
 import { useLanguage } from "../context/LanguageContext.jsx";
 import * as reportsApi from "../utils/reportsApi.js";
 import { formatDate as formatDateIntl } from "../utils/localeFormat.js";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { GOLD_GRADIENT } from "../constants/astrology.js";
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -44,21 +37,11 @@ import { GOLD_GRADIENT } from "../constants/astrology.js";
 // is touched by this page.
 // ─────────────────────────────────────────────────────────────────────────
 
-<<<<<<< HEAD
-function formatDate(value) {
-  if (!value) return "—";
-  try {
-    return new Date(value).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
-  } catch {
-    return "—";
-  }
-=======
 function formatDate(value, t, lang) {
   const fallback = t ? t("profile:page.notAvailable") : "—";
   if (!value) return fallback;
   const result = formatDateIntl(value, lang, { year: "numeric", month: "short", day: "numeric" });
   return result === "—" ? fallback : result;
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 function InfoRow({ label, value }) {
@@ -107,11 +90,8 @@ function StatCell({ icon, label, value }) {
 }
 
 function ProfilePage({ onNavigate }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["profile"]);
   const { language } = useLanguage();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const { user, updateUser } = useAuth();
   const isGoogleAccount = user?.authProvider === "google";
   // Profile Activity Summary — a small, read-only view of the person's own
@@ -148,21 +128,13 @@ function ProfilePage({ onNavigate }) {
               display: "inline-flex", alignItems: "center", gap: 6,
             }}
           >
-<<<<<<< HEAD
-            ← Back to Dashboard
-=======
             {t("profile:page.backToDashboard")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
           <h1 style={{
             margin: 0, fontSize: 26, fontFamily: "Cinzel,serif", fontWeight: 700,
             background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
           }}>
-<<<<<<< HEAD
-            My Profile
-=======
             {t("profile:page.title")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </h1>
         </div>
 
@@ -171,15 +143,6 @@ function ProfilePage({ onNavigate }) {
             <ProfilePhotoManager user={user} onUpdate={updateUser} size={92} />
             <div style={{ minWidth: 0 }}>
               <div style={{ fontSize: 18, fontWeight: 700, fontFamily: "Cinzel,serif", color: "var(--nv-text-primary, #e8d5ff)", marginBottom: 4 }}>
-<<<<<<< HEAD
-                {user?.name || "—"}
-              </div>
-              <div style={{ fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.5))", marginBottom: 8 }}>
-                Click your photo to edit — upload, replace, or remove it.
-              </div>
-              <Badge color={isGoogleAccount ? "#9dc9ff" : "#bf7fff"}>
-                {isGoogleAccount ? "Signed in with Google" : "Email & Password"}
-=======
                 {user?.name || t("profile:page.notAvailable")}
               </div>
               <div style={{ fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.5))", marginBottom: 8 }}>
@@ -187,24 +150,15 @@ function ProfilePage({ onNavigate }) {
               </div>
               <Badge color={isGoogleAccount ? "#9dc9ff" : "#bf7fff"}>
                 {isGoogleAccount ? t("profile:page.authProviderGoogle") : t("profile:page.authProviderEmail")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </Badge>
             </div>
           </div>
 
-<<<<<<< HEAD
-          <SectionHeading>Account Information</SectionHeading>
-          <InfoRow label="Full Name" value={user?.name || "—"} />
-          <InfoRow label="Email" value={user?.email || "—"} />
-          <InfoRow label="Member Since" value={formatDate(user?.createdAt)} />
-          <InfoRow label="Account Type" value={isGoogleAccount ? "Google" : "Email & Password"} />
-=======
           <SectionHeading>{t("profile:page.accountInformation")}</SectionHeading>
           <InfoRow label={t("profile:page.fullName")} value={user?.name || t("profile:page.notAvailable")} />
           <InfoRow label={t("profile:page.email")} value={user?.email || t("profile:page.notAvailable")} />
           <InfoRow label={t("profile:page.memberSince")} value={formatDate(user?.createdAt, t, language)} />
           <InfoRow label={t("profile:page.accountType")} value={isGoogleAccount ? t("profile:page.accountTypeGoogle") : t("profile:page.authProviderEmail")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 22 }}>
             {!isGoogleAccount && (
@@ -218,11 +172,7 @@ function ProfilePage({ onNavigate }) {
                   color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif",
                 }}
               >
-<<<<<<< HEAD
-                Change Password
-=======
                 {t("profile:page.changePassword")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </button>
             )}
             <button
@@ -235,30 +185,18 @@ function ProfilePage({ onNavigate }) {
                 color: "var(--nv-text-secondary, rgba(200,160,255,0.85))", fontFamily: "Inter,sans-serif",
               }}
             >
-<<<<<<< HEAD
-              Edit Profile in Settings →
-=======
               {t("profile:page.editProfileInSettings")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </div>
         </GlassCard>
 
         {/* ── Profile Activity Summary ─────────────────────────────────── */}
         <div>
-<<<<<<< HEAD
-          <SectionHeading>Profile Activity Summary</SectionHeading>
-          <GlassCard style={{ padding: 22 }}>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))", gap: 10 }}>
-              <StatCell icon="📜" label="Total Reports" value={reports ? reports.length : "…"} />
-              <StatCell icon="🕐" label="Last Generated" value={lastReport ? formatDate(lastReport.createdAt) : "—"} />
-=======
           <SectionHeading>{t("profile:page.activitySummary")}</SectionHeading>
           <GlassCard style={{ padding: 22 }}>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))", gap: 10 }}>
               <StatCell icon="📜" label={t("profile:page.totalReports")} value={reports ? reports.length : t("profile:page.loadingValue")} />
               <StatCell icon="🕐" label={t("profile:page.lastGenerated")} value={lastReport ? formatDate(lastReport.createdAt, t, language) : t("profile:page.notAvailable")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </div>
             {reports?.length > 0 && (
               <button
@@ -271,11 +209,7 @@ function ProfilePage({ onNavigate }) {
                   color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif",
                 }}
               >
-<<<<<<< HEAD
-                View Saved Reports →
-=======
                 {t("profile:page.viewSavedReports")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </button>
             )}
           </GlassCard>

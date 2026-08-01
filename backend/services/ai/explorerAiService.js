@@ -95,11 +95,7 @@ function buildExplorerQuestion({ itemType, itemLabel, contextFacts }) {
   return `The person selected "${itemLabel}" (Explorer category: ${itemType}) in the Interactive Kundli Explorer and wants it explained. ${focus}${factsBlock}`;
 }
 
-<<<<<<< HEAD
-export async function explainExplorerItem({ chart, report, itemType, itemId, itemLabel, contextFacts, history }) {
-=======
 export async function explainExplorerItem({ chart, report, itemType, itemId, itemLabel, contextFacts, history, language }) {
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   let insights = null;
   try {
     insights = buildStructuredInsights(chart);
@@ -124,10 +120,7 @@ export async function explainExplorerItem({ chart, report, itemType, itemId, ite
     insights,
     history: Array.isArray(history) ? history.slice(-4) : [],
     question,
-<<<<<<< HEAD
-=======
     language,
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   });
 
   const result = await callGemini(prompt);

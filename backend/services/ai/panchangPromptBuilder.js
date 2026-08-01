@@ -6,10 +6,7 @@
 // calculate, invent, or alter any Tithi, Nakshatra, Yoga, Karana, timing,
 // or score.
 // ─────────────────────────────────────────────────────────────────────────
-<<<<<<< HEAD
-=======
 import { getAiLanguageInstruction } from "../localization/aiLanguageInstruction.js";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 function buildDailyExplainPrompt(panchang) {
   return `You are a Vedic astrology explainer specializing in Daily Panchang. You are given ALREADY-CALCULATED Panchang facts produced by a backend calculation engine for a single day. Your ONLY job is to explain the meaning and practical/spiritual significance of these facts in warm, readable prose. You must NEVER calculate, invent, guess, or alter any Tithi, Nakshatra, Yoga, Karana, timing, or score not explicitly listed below.
@@ -72,14 +69,9 @@ Return this exact JSON structure, writing natural prose for each value based str
 }`;
 }
 
-<<<<<<< HEAD
-export function buildPanchangExplainPrompt({ kind, data }) {
-  return kind === "muhurat" ? buildMuhuratExplainPrompt(data) : buildDailyExplainPrompt(data);
-=======
 export function buildPanchangExplainPrompt({ kind, data, language }) {
   const prompt = kind === "muhurat" ? buildMuhuratExplainPrompt(data) : buildDailyExplainPrompt(data);
   return `${prompt}${getAiLanguageInstruction(language)}`;
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 export default { buildPanchangExplainPrompt };

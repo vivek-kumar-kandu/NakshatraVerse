@@ -1,7 +1,5 @@
 import { Component } from "react";
 import { GOLD_GRADIENT } from "../../constants/astrology.js";
-<<<<<<< HEAD
-=======
 // Multilingual Foundation Phase: this is a class component (React error
 // boundaries have no hook equivalent), so it reads the shared i18next
 // instance directly rather than useTranslation(). Every call below passes
@@ -11,7 +9,6 @@ import { GOLD_GRADIENT } from "../../constants/astrology.js";
 // correct, readable text instead of a raw "common:errorBoundary.title"
 // key.
 import i18n from "../../i18n/index.js";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // ErrorBoundary (Phase 5 — Performance & Production Optimization)
@@ -72,20 +69,12 @@ class ErrorBoundary extends Component {
           margin: "0 0 10px", fontSize: "clamp(20px,4vw,28px)", fontFamily: "Cinzel,serif",
           background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
         }}>
-<<<<<<< HEAD
-          Something went off course
-        </h1>
-        <p style={{ margin: "0 0 24px", maxWidth: 420, fontSize: 14, lineHeight: 1.6, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))" }}>
-          NakshatraVerse hit an unexpected error. Reloading usually fixes it — your saved reports
-          aren't affected.
-=======
           {i18n.t("common:errorBoundary.title", { defaultValue: "Something went off course" })}
         </h1>
         <p style={{ margin: "0 0 24px", maxWidth: 420, fontSize: 14, lineHeight: 1.6, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))" }}>
           {i18n.t("common:errorBoundary.message", {
             defaultValue: "NakshatraVerse hit an unexpected error. Reloading usually fixes it — your saved reports aren't affected.",
           })}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </p>
         <button
           type="button"
@@ -98,11 +87,7 @@ class ErrorBoundary extends Component {
             boxShadow: "0 4px 28px rgba(123,47,255,0.38)",
           }}
         >
-<<<<<<< HEAD
-          ✦ Reload NakshatraVerse ✦
-=======
           {i18n.t("common:errorBoundary.reload", { defaultValue: "✦ Reload NakshatraVerse ✦" })}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </button>
       </div>
     );

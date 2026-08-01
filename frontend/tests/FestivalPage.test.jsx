@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-import { describe, it, expect, vi, afterEach } from "vitest";
-=======
 import { describe, it, expect, vi, afterEach, beforeAll } from "vitest";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import FestivalPage from "../src/pages/FestivalPage.jsx";
 import * as festivalApi from "../src/utils/festivalApi.js";
-<<<<<<< HEAD
-=======
 // Phase 2 (Festival i18n migration): this file renders FestivalPage
 // directly rather than through App.jsx, and App.jsx (via
 // ErrorBoundary.jsx) is normally what triggers i18n/index.js's
@@ -23,7 +17,6 @@ beforeAll(async () => {
     await new Promise((resolve) => i18n.on("initialized", resolve));
   }
 });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // V4.5 Phase 1B (Festival Frontend Integration) — FestivalPage smoke

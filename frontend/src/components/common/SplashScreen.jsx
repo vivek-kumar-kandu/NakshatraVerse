@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { useEffect, useMemo, useState, memo } from "react";
 import CosmicBg from "./CosmicBg.jsx";
 import { GOLD_GRADIENT } from "../../constants/astrology.js";
@@ -36,10 +33,7 @@ const PARTICLES = Array.from({ length: 14 }, (_, i) => ({
 }));
 
 function SplashScreen({ onComplete, duration = 2600 }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [fadingOut, setFadingOut] = useState(false);
 
   const particles = useMemo(() => PARTICLES, []);
@@ -55,11 +49,7 @@ function SplashScreen({ onComplete, duration = 2600 }) {
   return (
     <div
       role="status"
-<<<<<<< HEAD
-      aria-label="Loading NakshatraVerse"
-=======
       aria-label={t("common.loadingApp", "Loading NakshatraVerse")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       style={{
         position: "fixed", inset: 0, zIndex: 3000,
         display: "flex", alignItems: "center", justifyContent: "center",
@@ -125,11 +115,7 @@ function SplashScreen({ onComplete, duration = 2600 }) {
           margin: 0, fontSize: "clamp(13px, 3vw, 16px)", color: "var(--nv-text-secondary, rgba(200,160,255,0.75))",
           letterSpacing: 2, fontStyle: "italic", fontFamily: "Inter,sans-serif",
         }}>
-<<<<<<< HEAD
-          Discover Your Cosmic Blueprint
-=======
           {t("home:hero.subtitle", "Discover Your Cosmic Blueprint")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </p>
       </div>
     </div>

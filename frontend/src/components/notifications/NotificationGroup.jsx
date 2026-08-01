@@ -1,17 +1,11 @@
 import { useState } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 import Badge from "../common/Badge.jsx";
 import NotificationCard from "./NotificationCard.jsx";
 import { CATEGORY_META } from "../../utils/notificationConstants.js";
 import { formatRelativeTime } from "../../utils/relativeTime.js";
-<<<<<<< HEAD
-=======
 import { useLanguage } from "../../context/LanguageContext.jsx";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // NotificationGroup (V4.4 Phase 2 — Intelligent Notification Generation)
@@ -28,11 +22,8 @@ import { useLanguage } from "../../context/LanguageContext.jsx";
 // ─────────────────────────────────────────────────────────────────────────
 
 function NotificationGroup({ group, onMarkRead, onDelete, onOpen }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["notifications", "common"]);
   const { language } = useLanguage();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [expanded, setExpanded] = useState(false);
   const { groupLabel, notifications } = group;
   const unreadInGroup = notifications.filter((n) => !n.isRead).length;
@@ -58,20 +49,12 @@ function NotificationGroup({ group, onMarkRead, onDelete, onOpen }) {
               {groupLabel}
             </span>
             <span style={{ fontSize: 11.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
-<<<<<<< HEAD
-              {notifications.length} update{notifications.length === 1 ? "" : "s"} · {formatRelativeTime(mostRecent?.createdAt)}
-=======
               {t(notifications.length === 1 ? "notifications:group.updateSingle" : "notifications:group.updatePlural", { count: notifications.length })} · {formatRelativeTime(mostRecent?.createdAt, t, language)}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </span>
           </span>
         </span>
         <span style={{ display: "flex", alignItems: "center", gap: 8, flexShrink: 0 }}>
-<<<<<<< HEAD
-          {unreadInGroup > 0 && <Badge color="#ffd700">{unreadInGroup} unread</Badge>}
-=======
           {unreadInGroup > 0 && <Badge color="#ffd700">{t("notifications:group.unreadBadge", { count: unreadInGroup })}</Badge>}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           <span aria-hidden="true" style={{ fontSize: 13, opacity: 0.7 }}>{expanded ? "▲" : "▼"}</span>
         </span>
       </button>

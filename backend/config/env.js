@@ -130,8 +130,6 @@ const GOOGLE_CLIENT_ID = (process.env.GOOGLE_CLIENT_ID || "").trim();
 // this, so swapping in a real database later never touches controllers.
 const DATA_DIR = process.env.DATA_DIR || path.join(process.cwd(), "data");
 
-<<<<<<< HEAD
-=======
 const MONGODB_URI = (process.env.MONGODB_URI || "").trim();
 // ── Mongo connection retry (mirrors GEMINI_MAX_RETRIES/GEMINI_RETRY_BASE_MS's
 // existing shape) — a transient Atlas hiccup during startup shouldn't take
@@ -139,7 +137,6 @@ const MONGODB_URI = (process.env.MONGODB_URI || "").trim();
 const MONGODB_MAX_RETRIES = Number(process.env.MONGODB_MAX_RETRIES) || 3;
 const MONGODB_RETRY_BASE_MS = Number(process.env.MONGODB_RETRY_BASE_MS) || 1000;
 
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 // Cookies are only marked `Secure` (HTTPS-only) by default in production,
 // since local HTTP dev would otherwise silently drop them.
 const COOKIE_SECURE = process.env.COOKIE_SECURE !== undefined
@@ -283,12 +280,9 @@ export const config = {
   REFRESH_COOKIE_MAX_AGE_MS,
   GOOGLE_CLIENT_ID,
   DATA_DIR,
-<<<<<<< HEAD
-=======
   MONGODB_URI,
   MONGODB_MAX_RETRIES,
   MONGODB_RETRY_BASE_MS,
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   COOKIE_SECURE,
   BCRYPT_SALT_ROUNDS,
   RATE_LIMIT_MAX_AUTH,

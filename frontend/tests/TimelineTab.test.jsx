@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-import { describe, it, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
-import { TimelineTab } from "../src/pages/ResultsTabs.jsx";
-=======
 import { describe, it, expect, beforeAll } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { TimelineTab } from "../src/pages/ResultsTabs.jsx";
@@ -20,7 +15,6 @@ beforeAll(async () => {
     await new Promise((resolve) => i18n.on("initialized", resolve));
   }
 });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // V5.1 — Prediction Timeline Integration

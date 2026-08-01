@@ -1,16 +1,10 @@
 import { memo } from "react";
-<<<<<<< HEAD
-import GlassCard from "./GlassCard.jsx";
-import Badge from "./Badge.jsx";
-import { zodiacSymbol } from "../../utils/reportDisplay.js";
-=======
 import { useTranslation } from "react-i18next";
 import GlassCard from "./GlassCard.jsx";
 import Badge from "./Badge.jsx";
 import { zodiacSymbol } from "../../utils/reportDisplay.js";
 import { useLanguage } from "../../context/LanguageContext.jsx";
 import { formatDate as formatDateIntl } from "../../utils/localeFormat.js";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // ReportCard (Phase 4 — Dashboard & Report Management)
@@ -32,19 +26,9 @@ import { formatDate as formatDateIntl } from "../../utils/localeFormat.js";
 // and reusable, exactly like `GlassCard`/`Badge` already are.
 // ─────────────────────────────────────────────────────────────────────────
 
-<<<<<<< HEAD
-function formatDate(value) {
-  if (!value) return "—";
-  try {
-    return new Date(value).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
-  } catch {
-    return "—";
-  }
-=======
 function formatDate(value, t, lang) {
   if (!value) return t ? t("reports:card.notAvailable") : "—";
   return formatDateIntl(value, lang, { year: "numeric", month: "short", day: "numeric" });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 const iconBtnStyle = (variant) => ({
@@ -57,10 +41,7 @@ const iconBtnStyle = (variant) => ({
 });
 
 function MiniSpinner() {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <span
       aria-hidden="true"
@@ -124,11 +105,8 @@ function ReportCard({
   // the "recent" variant, which never offers delete.
   exiting = false,
 }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["reports"]);
   const { language } = useLanguage();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const r = report;
   const metaLine = [r.name, r.dob, r.lagna].filter(Boolean).join(" · ");
   // `data-flip-id` lets DashboardPage's FLIP position measurement find
@@ -154,24 +132,14 @@ function ReportCard({
               {r.title}
             </h3>
             <p style={{ margin: "2px 0 0", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
-<<<<<<< HEAD
-              saved {formatDate(r.createdAt)}
-=======
               {t("reports:card.savedOn", { date: formatDate(r.createdAt, t, language) })}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
           </div>
         </div>
         <div style={{ display: "flex", gap: 8 }}>
-<<<<<<< HEAD
-          <ActionButton label="View" icon="👁" onClick={() => onView(r.id)} />
-          {onDownload && (
-            <ActionButton label="PDF" icon="⭳" busy={downloading} onClick={() => onDownload(r.id, r.title)} />
-=======
           <ActionButton label={t("reports:card.view")} icon="👁" onClick={() => onView(r.id)} />
           {onDownload && (
             <ActionButton label={t("reports:card.download")} icon="⭳" busy={downloading} onClick={() => onDownload(r.id, r.title)} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           )}
         </div>
       </GlassCard>
@@ -198,26 +166,15 @@ function ReportCard({
               {r.title}
             </h3>
             <p style={{ margin: 0, fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.55))", overflow: "hidden", textOverflow: "ellipsis" }}>
-<<<<<<< HEAD
-              {metaLine} · saved {formatDate(r.createdAt)}
-=======
               {metaLine} · {t("reports:card.savedOn", { date: formatDate(r.createdAt, t, language) })}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
           </div>
         </div>
         <div style={{ display: "flex", gap: 8, flexShrink: 0, flexWrap: "wrap" }}>
-<<<<<<< HEAD
-          {onPreview && <ActionButton label="Preview" icon="◎" onClick={() => onPreview(r)} />}
-          <ActionButton label="View" icon="👁" onClick={() => onView(r.id)} />
-          <ActionButton label="PDF" icon="⭳" busy={downloading} onClick={() => onDownload(r.id, r.title)} />
-          <ActionButton variant="danger" label="Delete" busyLabel="Deleting…" icon="✕" busy={deleting} onClick={() => onDelete(r.id, r.title)} />
-=======
           {onPreview && <ActionButton label={t("reports:card.preview")} icon="◎" onClick={() => onPreview(r)} />}
           <ActionButton label={t("reports:card.view")} icon="👁" onClick={() => onView(r.id)} />
           <ActionButton label={t("reports:card.download")} icon="⭳" busy={downloading} onClick={() => onDownload(r.id, r.title)} />
           <ActionButton variant="danger" label={t("reports:card.delete")} busyLabel={t("reports:card.deleting")} icon="✕" busy={deleting} onClick={() => onDelete(r.id, r.title)} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </div>
       </GlassCard>
     );
@@ -240,37 +197,22 @@ function ReportCard({
             {r.title}
           </h3>
           <p style={{ margin: "3px 0 0", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
-<<<<<<< HEAD
-            saved {formatDate(r.createdAt)}
-=======
             {t("reports:card.savedOn", { date: formatDate(r.createdAt, t, language) })}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         </div>
       </div>
 
       <div style={{ padding: "16px 20px", display: "flex", flexWrap: "wrap", gap: 8, flex: 1 }}>
         {r.name && <Badge color="#9dc9ff">{r.name}</Badge>}
-<<<<<<< HEAD
-        {r.dob && <Badge color="#bf7fff">{formatDate(r.dob)}</Badge>}
-=======
         {r.dob && <Badge color="#bf7fff">{formatDate(r.dob, t, language)}</Badge>}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         {r.lagna && <Badge color="#ffd700">{zodiacSymbol(r.lagna)} {r.lagna}</Badge>}
       </div>
 
       <div style={{ padding: "14px 20px 18px", display: "flex", gap: 8, flexWrap: "wrap", borderTop: "1px solid var(--nv-accent-wash, rgba(180,120,255,0.1))" }}>
-<<<<<<< HEAD
-        {onPreview && <ActionButton label="Preview" icon="◎" onClick={() => onPreview(r)} />}
-        <ActionButton label="View" icon="👁" onClick={() => onView(r.id)} />
-        <ActionButton label="PDF" icon="⭳" busy={downloading} onClick={() => onDownload(r.id, r.title)} />
-        <ActionButton variant="danger" label="Delete" busyLabel="Deleting…" icon="✕" busy={deleting} onClick={() => onDelete(r.id, r.title)} />
-=======
         {onPreview && <ActionButton label={t("reports:card.preview")} icon="◎" onClick={() => onPreview(r)} />}
         <ActionButton label={t("reports:card.view")} icon="👁" onClick={() => onView(r.id)} />
         <ActionButton label={t("reports:card.download")} icon="⭳" busy={downloading} onClick={() => onDownload(r.id, r.title)} />
         <ActionButton variant="danger" label={t("reports:card.delete")} busyLabel={t("reports:card.deleting")} icon="✕" busy={deleting} onClick={() => onDelete(r.id, r.title)} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </div>
     </GlassCard>
   );

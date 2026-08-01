@@ -1,8 +1,5 @@
 import { memo, useMemo } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../../common/GlassCard.jsx";
 import Badge from "../../common/Badge.jsx";
 import InsightRow from "../../common/InsightRow.jsx";
@@ -26,10 +23,7 @@ import { plainPlanetName, predictionsForPlanet } from "../../../utils/explorerDa
 // unioned across every occupant).
 // ─────────────────────────────────────────────────────────────────────────
 function SignExplorerPanel({ item, userData, planetary, report, chart }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["explorer"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const signName = item?.id;
   const glyph = ZODIAC_SIGNS[SIGN_NAMES.indexOf(signName)];
   const lord = SIGN_LORD[signName];
@@ -52,31 +46,13 @@ function SignExplorerPanel({ item, userData, planetary, report, chart }) {
 
   if (!signName) {
     return (
-<<<<<<< HEAD
-      <ExplorerDetailShell icon="♈" label="Sign" color="#ffb347" item={item}>
-        <EmptyState icon="♈" title="Sign data not available" message="Select a zodiac sign from the panel to explore it here." />
-=======
       <ExplorerDetailShell icon="♈" label={t("explorer:typeSingular.sign")} color="#ffb347" item={item}>
         <EmptyState icon="♈" title={t("explorer:sign.notAvailableTitle")} message={t("explorer:sign.notAvailableMessage")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </ExplorerDetailShell>
     );
   }
 
   return (
-<<<<<<< HEAD
-    <ExplorerDetailShell icon="♈" label="Sign" color="#ffb347" item={item}>
-      <GlassCard style={{ padding: 24 }}>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 14 }}>
-          {glyph && <Badge color="#ffb347">{glyph} {signName}</Badge>}
-          {lord && <Badge color="#bf7fff">Lord: {lord}</Badge>}
-          {isLagna && <Badge color="#ffd700">This chart's Lagna</Badge>}
-        </div>
-        <InsightRow label="Ruling Planet" value={lord || "—"} color="#bf7fff" />
-        <h4 style={{ margin: "16px 0 8px", fontSize: 13, letterSpacing: 1.5, textTransform: "uppercase",
-          color: "var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily: "Inter,sans-serif", fontWeight: 500 }}>
-          PLANETS CURRENTLY IN THIS SIGN
-=======
     <ExplorerDetailShell icon="♈" label={t("explorer:typeSingular.sign")} color="#ffb347" item={item}>
       <GlassCard style={{ padding: 24 }}>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 14 }}>
@@ -88,7 +64,6 @@ function SignExplorerPanel({ item, userData, planetary, report, chart }) {
         <h4 style={{ margin: "16px 0 8px", fontSize: 13, letterSpacing: 1.5, textTransform: "uppercase",
           color: "var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily: "Inter,sans-serif", fontWeight: 500 }}>
           {t("explorer:sign.occupantsHeading")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </h4>
         {occupants.length > 0 ? (
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
@@ -98,30 +73,18 @@ function SignExplorerPanel({ item, userData, planetary, report, chart }) {
           </div>
         ) : (
           <p style={{ margin: 0, fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.45))", fontFamily: "Inter,sans-serif" }}>
-<<<<<<< HEAD
-            No planets currently occupy this sign in this chart.
-=======
             {t("explorer:sign.noOccupants")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         )}
       </GlassCard>
 
-<<<<<<< HEAD
-      <ExpandableSection icon="🔮" title="Related Predictions" color="#ffd700" count={relatedPredictions.length}>
-=======
       <ExpandableSection icon="🔮" title={t("explorer:common.relatedPredictions")} color="#ffd700" count={relatedPredictions.length}>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         {relatedPredictions.length > 0 ? (
           <div style={{ display: "grid", gap: 10, gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))" }}>
             {relatedPredictions.map((p, idx) => <PredictionCard key={p.category} prediction={p} idx={idx} />)}
           </div>
         ) : (
-<<<<<<< HEAD
-          <EmptyState compact icon="🔮" title="No linked predictions" message="No category prediction currently traces back to a planet occupying this sign." />
-=======
           <EmptyState compact icon="🔮" title={t("explorer:common.noLinkedPredictionsTitle")} message={t("explorer:sign.noLinkedPredictionsMessage")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         )}
       </ExpandableSection>
 

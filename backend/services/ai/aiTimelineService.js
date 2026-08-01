@@ -84,11 +84,7 @@ function buildTimelineQuestion({ event, sectionLabel }) {
   return `The person selected a "${event?.category || "life-area"}" prediction from the AI Timeline (${sectionLabel} section) and wants it explained. ${focus}${factsBlock}`;
 }
 
-<<<<<<< HEAD
-export async function explainTimelineEvent({ chart, report, event, history }) {
-=======
 export async function explainTimelineEvent({ chart, report, event, history, language }) {
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   let insights = null;
   try {
     insights = buildStructuredInsights(chart);
@@ -112,10 +108,7 @@ export async function explainTimelineEvent({ chart, report, event, history, lang
     insights,
     history: Array.isArray(history) ? history.slice(-4) : [],
     question,
-<<<<<<< HEAD
-=======
     language,
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   });
 
   const result = await callGemini(prompt);

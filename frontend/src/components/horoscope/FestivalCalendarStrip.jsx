@@ -1,18 +1,11 @@
 import { memo, useEffect, useState } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 import Badge from "../common/Badge.jsx";
 import * as festivalApi from "../../utils/festivalApi.js";
 
-<<<<<<< HEAD
-const IMPORTANCE_COLOR = { High: "#ffd700", Medium: "#bf7fff", Low: "#9dc9ff" };
-=======
 const IMPORTANCE_COLOR = {High: "#ffd700", Medium: "#bf7fff", Low: "#9dc9ff" };
 const IMPORTANCE_KEY = {High: "high", Medium: "medium", Low: "low" };
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // FestivalCalendarStrip (V4.5 Phase 1B — Calendar Integration)
@@ -28,10 +21,7 @@ function todayStr() {
 }
 
 function FestivalCalendarStrip({ onOpenFestivals }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["festival"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const now = new Date();
   const [monthFestivals, setMonthFestivals] = useState(null);
   const [today, setToday] = useState(null);
@@ -60,11 +50,7 @@ function FestivalCalendarStrip({ onOpenFestivals }) {
     <section>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 8, marginBottom: 12 }}>
         <h2 style={{ margin: 0, fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))", fontFamily: "Inter,sans-serif", textTransform: "uppercase", letterSpacing: 1 }}>
-<<<<<<< HEAD
-          🎉 This Month's Festivals
-=======
           {t("festival:calendarStrip.heading")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </h2>
         {onOpenFestivals && (
           <button
@@ -72,11 +58,7 @@ function FestivalCalendarStrip({ onOpenFestivals }) {
             className="pill-btn tap-scale"
             style={{ padding: "6px 14px", borderRadius: 16, fontSize: 11.5, border: "1px solid rgba(180,120,255,0.35)", background: "rgba(123,47,255,0.15)", color: "var(--nv-text-primary, #e8d5ff)", cursor: "pointer" }}
           >
-<<<<<<< HEAD
-            View Festival Calendar →
-=======
             {t("festival:calendarStrip.viewCalendarLink")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         )}
       </div>
@@ -84,25 +66,15 @@ function FestivalCalendarStrip({ onOpenFestivals }) {
       <GlassCard style={{ padding: "18px 20px" }}>
         {today && (
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10, alignItems: "center", marginBottom: 16, paddingBottom: 16, borderBottom: "1px solid var(--nv-accent-wash, rgba(180,120,255,0.1))" }}>
-<<<<<<< HEAD
-            <span style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>Today:</span>
-            {today.length ? today.map((f) => <Badge key={f.key} color={IMPORTANCE_COLOR[f.importance] || "#bf7fff"}>{f.name}</Badge>) : (
-              <span style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.5))" }}>No festival today</span>
-=======
             <span style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>{t("festival:calendarStrip.todayLabel")}</span>
             {today.length ? today.map((f) => <Badge key={f.key} color={IMPORTANCE_COLOR[f.importance] || "#bf7fff"}>{f.name}</Badge>) : (
               <span style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.5))" }}>{t("festival:widget.noFestivalToday")}</span>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             )}
           </div>
         )}
 
         {!monthFestivals ? (
-<<<<<<< HEAD
-          <div style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>Loading festival overview…</div>
-=======
           <div style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>{t("festival:calendarStrip.loadingOverview")}</div>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         ) : (
           <>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(7, 1fr)", gap: 6 }}>
@@ -137,12 +109,8 @@ function FestivalCalendarStrip({ onOpenFestivals }) {
             <div style={{ display: "flex", gap: 16, marginTop: 14, flexWrap: "wrap" }}>
               {Object.entries(IMPORTANCE_COLOR).map(([k, color]) => (
                 <div key={k} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
-<<<<<<< HEAD
-                  <span aria-hidden="true" style={{ width: 8, height: 8, borderRadius: "50%", background: color }} />{k} Importance
-=======
                   <span aria-hidden="true" style={{ width: 8, height: 8, borderRadius: "50%", background: color }} />
                   {t(`festival:muhurat.confidence.${IMPORTANCE_KEY[k]}`)} {t("festival:calendarStrip.importanceSuffix")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </div>
               ))}
             </div>

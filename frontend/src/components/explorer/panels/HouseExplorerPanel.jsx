@@ -1,8 +1,5 @@
 import { memo, useMemo } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../../common/GlassCard.jsx";
 import Badge from "../../common/Badge.jsx";
 import InsightRow from "../../common/InsightRow.jsx";
@@ -31,10 +28,7 @@ import { plainPlanetName, predictionsForHouse, remediesFromPredictions } from ".
 //     `supportingHouses` via the shared `predictionsForHouse` helper.
 // ─────────────────────────────────────────────────────────────────────────
 function HouseExplorerPanel({ item, userData, planetary, report, chart }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["explorer"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const houseNum = Number(item?.id?.replace("house-", ""));
 
   const occupants = useMemo(
@@ -49,30 +43,13 @@ function HouseExplorerPanel({ item, userData, planetary, report, chart }) {
 
   if (!Number.isFinite(houseNum)) {
     return (
-<<<<<<< HEAD
-      <ExplorerDetailShell icon="🏠" label="House" color="#9dc9ff" item={item}>
-        <EmptyState icon="🏠" title="House data not available" message="Select a house from the panel to explore it here." />
-=======
       <ExplorerDetailShell icon="🏠" label={t("explorer:typeSingular.house")} color="#9dc9ff" item={item}>
         <EmptyState icon="🏠" title={t("explorer:house.notAvailableTitle")} message={t("explorer:house.notAvailableMessage")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </ExplorerDetailShell>
     );
   }
 
   return (
-<<<<<<< HEAD
-    <ExplorerDetailShell icon="🏠" label="House" color="#9dc9ff" item={item}>
-      <GlassCard style={{ padding: 24 }}>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 14 }}>
-          {sign && <Badge color="#ffb347">Sign: {sign}</Badge>}
-          {lord && <Badge color="#bf7fff">Lord: {lord}</Badge>}
-        </div>
-        <InsightRow label="Meaning" value={HOUSE_MEANINGS[houseNum] || "—"} />
-        <h4 style={{ margin: "16px 0 8px", fontSize: 13, letterSpacing: 1.5, textTransform: "uppercase",
-          color: "var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily: "Inter,sans-serif", fontWeight: 500 }}>
-          OCCUPANTS
-=======
     <ExplorerDetailShell icon="🏠" label={t("explorer:typeSingular.house")} color="#9dc9ff" item={item}>
       <GlassCard style={{ padding: 24 }}>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 14 }}>
@@ -83,7 +60,6 @@ function HouseExplorerPanel({ item, userData, planetary, report, chart }) {
         <h4 style={{ margin: "16px 0 8px", fontSize: 13, letterSpacing: 1.5, textTransform: "uppercase",
           color: "var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily: "Inter,sans-serif", fontWeight: 500 }}>
           {t("explorer:house.occupantsHeading")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </h4>
         {occupants.length > 0 ? (
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
@@ -98,48 +74,28 @@ function HouseExplorerPanel({ item, userData, planetary, report, chart }) {
           </div>
         ) : (
           <p style={{ margin: 0, fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.45))", fontFamily: "Inter,sans-serif" }}>
-<<<<<<< HEAD
-            No planets currently occupy this house.
-=======
             {t("explorer:house.noOccupants")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         )}
       </GlassCard>
 
-<<<<<<< HEAD
-      <ExpandableSection icon="🔮" title="Related Predictions" color="#ffd700" count={relatedPredictions.length}>
-=======
       <ExpandableSection icon="🔮" title={t("explorer:common.relatedPredictions")} color="#ffd700" count={relatedPredictions.length}>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         {relatedPredictions.length > 0 ? (
           <div style={{ display: "grid", gap: 10, gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))" }}>
             {relatedPredictions.map((p, idx) => <PredictionCard key={p.category} prediction={p} idx={idx} />)}
           </div>
         ) : (
-<<<<<<< HEAD
-          <EmptyState compact icon="🔮" title="No linked predictions" message={`No category prediction currently names House ${houseNum} as a supporting house.`} />
-        )}
-      </ExpandableSection>
-
-      <ExpandableSection icon="🪬" title="Related Remedies" color="#ffb347" count={relatedRemedies.length}>
-=======
           <EmptyState compact icon="🔮" title={t("explorer:common.noLinkedPredictionsTitle")} message={t("explorer:house.noLinkedPredictionsMessage", { house: houseNum })} />
         )}
       </ExpandableSection>
 
       <ExpandableSection icon="🪬" title={t("explorer:common.relatedRemedies")} color="#ffb347" count={relatedRemedies.length}>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         {relatedRemedies.length > 0 ? (
           <div style={{ display: "grid", gap: 10, gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))" }}>
             {relatedRemedies.map((r, idx) => <RemedyCard key={`${r.type}-${idx}`} type={r.type} detail={r.detail} idx={idx} />)}
           </div>
         ) : (
-<<<<<<< HEAD
-          <EmptyState compact icon="🪬" title="No linked remedies" message={`No remedy is currently associated with House ${houseNum} through this chart's predictions.`} />
-=======
           <EmptyState compact icon="🪬" title={t("explorer:common.noLinkedRemediesTitle")} message={t("explorer:house.noLinkedRemediesMessage", { house: houseNum })} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         )}
       </ExpandableSection>
 
@@ -150,11 +106,7 @@ function HouseExplorerPanel({ item, userData, planetary, report, chart }) {
         cacheKey={`house-${houseNum}`}
         itemType="house"
         itemId={item?.id}
-<<<<<<< HEAD
-        itemLabel={item?.label ?? `House ${houseNum}`}
-=======
         itemLabel={item?.label ?? t("explorer:house.itemLabel", { num: houseNum })}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         chart={chart}
         report={report}
         contextFacts={{

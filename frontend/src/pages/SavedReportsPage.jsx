@@ -1,8 +1,5 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, useCallback } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import { useToast } from "../components/common/Toast.jsx";
@@ -39,10 +36,7 @@ import { readPreferences } from "../utils/settingsStorage.js";
 // ─────────────────────────────────────────────────────────────────────────
 
 function SavedReportsPage({ onNavigate, onViewReport }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["reports", "common"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [reports, setReports] = useState(null);
   const [error, setError] = useState(null);
   const [deletingId, setDeletingId] = useState(null);
@@ -81,15 +75,9 @@ function SavedReportsPage({ onNavigate, onViewReport }) {
     setError(null);
     reportsApi.listReports()
       .then((r) => { if (!cancelled) setReports(r); })
-<<<<<<< HEAD
-      .catch((err) => { if (!cancelled) setError(err.message || "Could not load your saved reports."); });
-    return () => { cancelled = true; };
-  }, []);
-=======
       .catch((err) => { if (!cancelled) setError(err.message || t("reports:list.loadFailed")); });
     return () => { cancelled = true; };
   }, [t]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   useEffect(() => loadReports(), [loadReports]);
 
@@ -105,22 +93,14 @@ function SavedReportsPage({ onNavigate, onViewReport }) {
     try {
       await reportsApi.deleteReport(target.id);
       setDeleteTarget(null);
-<<<<<<< HEAD
-      setTimeout(() => toast.success(`"${target.title || "Report"}" deleted.`), 0);
-=======
       setTimeout(() => toast.success(t("reports:list.deleteToastSuccess", { title: target.title || t("reports:list.deleteToastFallbackTitle") })), 0);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       setExitingId(target.id);
       setTimeout(() => {
         setReports((prev) => prev.filter((r) => r.id !== target.id));
         setExitingId(null);
       }, EXIT_ANIMATION_MS);
     } catch (err) {
-<<<<<<< HEAD
-      toast.error(err.message || "Could not delete that report.");
-=======
       toast.error(err.message || t("reports:list.deleteFailed"));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     } finally {
       setDeletingId(null);
       isDeletingRef.current = false;
@@ -131,15 +111,9 @@ function SavedReportsPage({ onNavigate, onViewReport }) {
     setDownloadingId(id);
     try {
       await reportsApi.exportSavedReportPdf(id, `${name || "report"}.pdf`);
-<<<<<<< HEAD
-      toast.success("PDF downloaded.");
-    } catch (err) {
-      toast.error(err.message || "Could not generate the PDF.");
-=======
       toast.success(t("reports:list.downloadToastSuccess"));
     } catch (err) {
       toast.error(err.message || t("reports:list.downloadFailed"));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     } finally {
       setDownloadingId(null);
     }
@@ -200,22 +174,14 @@ function SavedReportsPage({ onNavigate, onViewReport }) {
               display: "inline-flex", alignItems: "center", gap: 6,
             }}
           >
-<<<<<<< HEAD
-            ← Back to Dashboard
-=======
             {t("reports:list.backToDashboard")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 14 }}>
             <h1 style={{
               margin: 0, fontSize: "clamp(22px,4vw,30px)", background: GOLD_GRADIENT,
               WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif", fontWeight: 700,
             }}>
-<<<<<<< HEAD
-              Saved Reports {reports ? `(${reports.length})` : ""}
-=======
               {reports ? t("reports:list.titleWithCount", { count: reports.length }) : t("reports:list.title")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </h1>
             <button
               onClick={() => onNavigate?.("landing")}
@@ -226,11 +192,7 @@ function SavedReportsPage({ onNavigate, onViewReport }) {
                 fontSize: 14, cursor: "pointer", fontFamily: "Cinzel,serif", boxShadow: "0 4px 20px rgba(123,47,255,0.35)",
               }}
             >
-<<<<<<< HEAD
-              ✦ Generate New Report
-=======
               {t("reports:list.generateNewReport")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </div>
         </header>
@@ -254,11 +216,7 @@ function SavedReportsPage({ onNavigate, onViewReport }) {
                 color: "var(--nv-danger, #ff9d9d)", fontFamily: "Inter,sans-serif", flexShrink: 0,
               }}
             >
-<<<<<<< HEAD
-              ↻ Try again
-=======
               {t("reports:list.tryAgain")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </GlassCard>
         )}
@@ -268,15 +226,9 @@ function SavedReportsPage({ onNavigate, onViewReport }) {
         {reports?.length === 0 && (
           <EmptyState
             icon="🗂️"
-<<<<<<< HEAD
-            title="No saved reports yet"
-            message="Generate a reading and tap Save Report to build your archive here."
-            actionLabel="✦ Generate New Report"
-=======
             title={t("reports:list.emptyTitle")}
             message={t("reports:list.emptyMessage")}
             actionLabel={t("reports:list.emptyAction")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             onAction={() => onNavigate?.("landing")}
           />
         )}
@@ -297,15 +249,9 @@ function SavedReportsPage({ onNavigate, onViewReport }) {
             {visibleReports.length === 0 ? (
               <EmptyState
                 icon="🔍"
-<<<<<<< HEAD
-                title="No matches found"
-                message={`No saved reports match "${searchQuery}". Try a different title, name, or lagna.`}
-                actionLabel="Clear search"
-=======
                 title={t("reports:list.noMatchesTitle")}
                 message={t("reports:list.noMatchesMessage", { query: searchQuery })}
                 actionLabel={t("reports:list.clearSearch")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 onAction={() => setSearchQuery("")}
                 compact
               />
@@ -340,17 +286,10 @@ function SavedReportsPage({ onNavigate, onViewReport }) {
 
       <ConfirmDialog
         open={!!deleteTarget}
-<<<<<<< HEAD
-        title="Delete this report?"
-        message={`"${deleteTarget?.title || "This report"}" will be permanently removed. This can't be undone.`}
-        confirmLabel="Delete"
-        cancelLabel="Cancel"
-=======
         title={t("reports:list.deleteDialog.title")}
         message={t("reports:list.deleteDialog.message", { title: deleteTarget?.title || t("reports:list.deleteDialog.fallbackTitle") })}
         confirmLabel={t("reports:list.deleteDialog.confirmLabel")}
         cancelLabel={t("reports:list.deleteDialog.cancelLabel")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         danger
         loading={!!deleteTarget && deletingId === deleteTarget.id}
         onConfirm={handleConfirmDelete}

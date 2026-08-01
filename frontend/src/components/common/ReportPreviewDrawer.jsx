@@ -1,14 +1,9 @@
 import { useEffect, useRef } from "react";
-<<<<<<< HEAD
-import Badge from "./Badge.jsx";
-import { zodiacSymbol } from "../../utils/reportDisplay.js";
-=======
 import { useTranslation } from "react-i18next";
 import Badge from "./Badge.jsx";
 import { zodiacSymbol } from "../../utils/reportDisplay.js";
 import { useLanguage } from "../../context/LanguageContext.jsx";
 import { formatDate as formatDateIntl } from "../../utils/localeFormat.js";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // ReportPreviewDrawer (Phase 4 — Dashboard & Report Management)
@@ -23,18 +18,6 @@ import { formatDate as formatDateIntl } from "../../utils/localeFormat.js";
 // about to open when you have several saved.
 // ─────────────────────────────────────────────────────────────────────────
 
-<<<<<<< HEAD
-function formatDate(value) {
-  if (!value) return "—";
-  try {
-    return new Date(value).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
-  } catch {
-    return "—";
-  }
-}
-
-function ReportPreviewDrawer({ report, onClose, onView, onDownload, downloading }) {
-=======
 function formatDate(value, t, lang) {
   if (!value) return t ? t("reports:card.notAvailable") : "—";
   return formatDateIntl(value, lang, { year: "numeric", month: "short", day: "numeric" });
@@ -43,7 +26,6 @@ function formatDate(value, t, lang) {
 function ReportPreviewDrawer({ report, onClose, onView, onDownload, downloading }) {
   const { t } = useTranslation(["reports"]);
   const { language } = useLanguage();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const panelRef = useRef(null);
 
   useEffect(() => {
@@ -71,21 +53,12 @@ function ReportPreviewDrawer({ report, onClose, onView, onDownload, downloading 
         tabIndex={-1}
         role="dialog"
         aria-modal="true"
-<<<<<<< HEAD
-        aria-label={`Preview of ${r.title}`}
-        className="report-preview-drawer"
-        style={{
-          position: "absolute", top: 0, right: 0, bottom: 0, width: "min(360px, 100%)",
-          background: "rgba(14,0,32,0.96)", borderLeft: "1px solid rgba(180,120,255,0.25)",
-          boxShadow: "-16px 0 50px rgba(0,0,0,0.45)",
-=======
         aria-label={t("reports:previewDrawer.ariaLabel", { title: r.title })}
         className="report-preview-drawer"
         style={{
           position: "absolute", top: 0, insetInlineEnd: 0, bottom: 0, width: "min(360px, 100%)",
           background: "rgba(14,0,32,0.96)", borderInlineStart: "1px solid rgba(180,120,255,0.25)",
           boxShadow: "var(--nv-drawer-shadow, -16px 0 50px rgba(0,0,0,0.45))",
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           // V1.0 RC polish: paddingTop now adds the device's safe-area
           // inset (notches / dynamic islands on mobile) on top of the
           // original 28px, instead of the header row sitting flush under
@@ -113,11 +86,7 @@ function ReportPreviewDrawer({ report, onClose, onView, onDownload, downloading 
           </div>
           <button
             onClick={onClose}
-<<<<<<< HEAD
-            aria-label="Close preview"
-=======
             aria-label={t("reports:previewDrawer.closePreview")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             className="tap-scale icon-btn"
             style={{
               background: "rgba(255,255,255,0.06)", border: "1px solid rgba(180,120,255,0.25)",
@@ -132,43 +101,25 @@ function ReportPreviewDrawer({ report, onClose, onView, onDownload, downloading 
 
         <div>
           <h2 style={{ margin: "0 0 6px", fontSize: 19, color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Cinzel,serif" }}>{r.title}</h2>
-<<<<<<< HEAD
-          <p style={{ margin: 0, fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>saved {formatDate(r.createdAt)}</p>
-=======
           <p style={{ margin: 0, fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>{t("reports:previewDrawer.savedOn", { date: formatDate(r.createdAt, t, language) })}</p>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </div>
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
           {r.name && <Badge color="#9dc9ff">👤 {r.name}</Badge>}
-<<<<<<< HEAD
-          {r.dob && <Badge color="#bf7fff">🎂 {formatDate(r.dob)}</Badge>}
-          {r.lagna && <Badge color="#ffd700">{zodiacSymbol(r.lagna)} {r.lagna} Lagna</Badge>}
-=======
           {r.dob && <Badge color="#bf7fff">🎂 {formatDate(r.dob, t, language)}</Badge>}
           {r.lagna && <Badge color="#ffd700">{zodiacSymbol(r.lagna)} {t("reports:card.lagnaSuffix", { lagna: r.lagna })}</Badge>}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           {!r.name && !r.dob && !r.lagna && (
             <p style={{
               margin: 0, display: "flex", alignItems: "center", gap: 8,
               fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.5))",
             }}>
-<<<<<<< HEAD
-              <span aria-hidden="true">✦</span> No additional details saved for this report.
-=======
               <span aria-hidden="true">✦</span> {t("reports:previewDrawer.noDetails")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
           )}
         </div>
 
         <p style={{ margin: 0, fontSize: 12.5, lineHeight: 1.6, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
-<<<<<<< HEAD
-          This is a quick preview of your saved reading's details. Open the full report to read every
-          section — Love, Career, Wealth, Health, Doshas &amp; Yogas, Remedies, and your Life Summary.
-=======
           {t("reports:previewDrawer.description")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </p>
 
         <div style={{ marginTop: "auto", display: "flex", flexDirection: "column", gap: 10 }}>
@@ -181,11 +132,7 @@ function ReportPreviewDrawer({ report, onClose, onView, onDownload, downloading 
               fontSize: 13.5, cursor: "pointer", fontFamily: "Cinzel,serif",
             }}
           >
-<<<<<<< HEAD
-            ✦ View Full Report
-=======
             {t("reports:previewDrawer.viewFullReport")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
           <button
             onClick={() => onDownload(r.id, r.title)}
@@ -197,11 +144,7 @@ function ReportPreviewDrawer({ report, onClose, onView, onDownload, downloading 
               color: "var(--nv-text-primary, #e8d5ff)", fontSize: 13, fontFamily: "Inter,sans-serif",
             }}
           >
-<<<<<<< HEAD
-            {downloading ? "Preparing PDF…" : "⭳ Download PDF"}
-=======
             {downloading ? t("reports:previewDrawer.preparingPdf") : t("reports:previewDrawer.downloadPdf")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         </div>
       </aside>

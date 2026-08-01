@@ -1,8 +1,5 @@
 import { memo } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 import ScoreRing from "../common/ScoreRing.jsx";
 import Badge from "../common/Badge.jsx";
@@ -27,10 +24,7 @@ function LifeCoachOutlookCard({
   bestDay, cautionDay,
   focusFields, // [{ label, value }]
 }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["lifeCoach"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const hasAnyContent = energyScore != null || theme || opportunities?.length || challenges?.length || focusFields?.some((f) => f.value);
   if (!hasAnyContent) return null;
 
@@ -51,25 +45,15 @@ function LifeCoachOutlookCard({
           )}
           {(bestDay || cautionDay) && (
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-<<<<<<< HEAD
-              {bestDay && <Badge color="#7effb2">Best Day: {bestDay.weekday} ({bestDay.date})</Badge>}
-              {cautionDay && <Badge color="#ff8fa3">Caution Day: {cautionDay.weekday} ({cautionDay.date})</Badge>}
-=======
               {bestDay && <Badge color="#7effb2">{t("lifeCoach:outlook.bestDay", { weekday: bestDay.weekday, date: bestDay.date })}</Badge>}
               {cautionDay && <Badge color="#ff8fa3">{t("lifeCoach:outlook.cautionDay", { weekday: cautionDay.weekday, date: cautionDay.date })}</Badge>}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </div>
           )}
         </div>
       </GlassCard>
 
-<<<<<<< HEAD
-      <LifeCoachListCard icon="🌟" title="Opportunities" color="#7effb2" items={opportunities} />
-      <LifeCoachListCard icon="⚠️" title="Challenges" color="#ffb454" items={challenges} />
-=======
       <LifeCoachListCard icon="🌟" title={t("lifeCoach:outlook.opportunities")} color="#7effb2" items={opportunities} />
       <LifeCoachListCard icon="⚠️" title={t("lifeCoach:outlook.challenges")} color="#ffb454" items={challenges} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
       {focusFields?.some((f) => f.value) && (
         <GlassCard style={{ padding: "18px 20px", display: "grid", gap: 14 }}>

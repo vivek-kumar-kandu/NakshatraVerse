@@ -1,8 +1,5 @@
 import { useState } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import GoogleSignInButton, { isGoogleAuthAvailable } from "../components/common/GoogleSignInButton.jsx";
@@ -15,12 +12,7 @@ import { useAuth } from "../context/AuthContext.jsx";
 import { GOLD_GRADIENT } from "../constants/astrology.js";
 import { emailError as getEmailError, requiredError } from "../utils/authValidation.js";
 
-<<<<<<< HEAD
-const INPUT_STYLE = {
-  width: "100%", padding: "14px 18px",
-=======
 const INPUT_STYLE = {width: "100%", padding: "14px 18px",
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   background: "rgba(255,255,255,0.05)", border: "1px solid rgba(180,120,255,0.28)",
   borderRadius: 12, color: "var(--nv-text-primary, #e8d5ff)", fontSize: 15, outline: "none",
   fontFamily: "Inter,sans-serif", transition: "border-color var(--nv-duration-base) var(--nv-ease-standard), box-shadow var(--nv-duration-base) var(--nv-ease-standard)",
@@ -39,10 +31,7 @@ const INPUT_STYLE = {width: "100%", padding: "14px 18px",
 const googleAvailable = isGoogleAuthAvailable();
 
 function SignupPage({ onNavigate }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["auth"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const { register, loginWithGoogle } = useAuth();
   const [form, setForm] = useState({ name: "", email: "", password: "", confirmPassword: "" });
   const [touched, setTouched] = useState({ name: false, email: false, password: false, confirmPassword: false });
@@ -52,16 +41,6 @@ function SignupPage({ onNavigate }) {
 
   const busy = submitting || googleBusy;
 
-<<<<<<< HEAD
-  const passwordTooShort = form.password && form.password.length < 8 ? "Password must be at least 8 characters." : null;
-  const confirmMismatch = form.confirmPassword && form.confirmPassword !== form.password ? "Passwords don't match." : null;
-
-  const fieldErrors = {
-    name: touched.name ? requiredError(form.name, "Full name") : null,
-    email: touched.email ? getEmailError(form.email) : null,
-    password: touched.password ? (requiredError(form.password, "Password") || passwordTooShort) : null,
-    confirmPassword: touched.confirmPassword ? (requiredError(form.confirmPassword, "Password confirmation") || confirmMismatch) : null,
-=======
   const passwordTooShort = form.password && form.password.length < 8 ? t("auth:validation.passwordTooShort") : null;
   const confirmMismatch = form.confirmPassword && form.confirmPassword !== form.password ? t("auth:validation.passwordMismatch") : null;
 
@@ -70,7 +49,6 @@ function SignupPage({ onNavigate }) {
     email: touched.email ? getEmailError(form.email, t) : null,
     password: touched.password ? (requiredError(form.password, t("auth:login.passwordLabel"), t) || passwordTooShort) : null,
     confirmPassword: touched.confirmPassword ? (requiredError(form.confirmPassword, t("auth:validation.fieldLabels.passwordConfirmation"), t) || confirmMismatch) : null,
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   };
 
   const setField = (key) => (ev) => setForm((p) => ({ ...p, [key]: ev.target.value }));
@@ -82,19 +60,11 @@ function SignupPage({ onNavigate }) {
     setTouched({ name: true, email: true, password: true, confirmPassword: true });
 
     if (
-<<<<<<< HEAD
-      requiredError(form.name, "Full name") ||
-      getEmailError(form.email) ||
-      requiredError(form.password, "Password") ||
-      passwordTooShort ||
-      requiredError(form.confirmPassword, "Password confirmation") ||
-=======
       requiredError(form.name, t("auth:validation.fieldLabels.fullName"), t) ||
       getEmailError(form.email, t) ||
       requiredError(form.password, t("auth:login.passwordLabel"), t) ||
       passwordTooShort ||
       requiredError(form.confirmPassword, t("auth:validation.fieldLabels.passwordConfirmation"), t) ||
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       confirmMismatch
     ) {
       return;
@@ -107,11 +77,7 @@ function SignupPage({ onNavigate }) {
       // Report" redirect instead of always dropping onto the Dashboard.
       onNavigate("post-auth");
     } catch (err) {
-<<<<<<< HEAD
-      setError(err.message || "Sign up failed.");
-=======
       setError(err.message || t("auth:signup.signUpFailed"));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     } finally {
       setSubmitting(false);
     }
@@ -124,11 +90,7 @@ function SignupPage({ onNavigate }) {
       await loginWithGoogle(idToken);
       onNavigate("post-auth");
     } catch (err) {
-<<<<<<< HEAD
-      setError(err.message || "Google sign-in failed.");
-=======
       setError(err.message || t("auth:signup.googleSignInFailed"));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     } finally {
       setGoogleBusy(false);
     }
@@ -146,15 +108,9 @@ function SignupPage({ onNavigate }) {
           <h1 style={{ margin: "0 0 6px", fontSize: "clamp(26px,5vw,40px)", fontWeight: 700,
             letterSpacing: 2, background: GOLD_GRADIENT, WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif" }}>
-<<<<<<< HEAD
-            Create Your Account
-          </h1>
-          <p style={{ margin: 0, fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))" }}>Save readings and revisit them anytime</p>
-=======
             {t("auth:signup.title")}
           </h1>
           <p style={{ margin: 0, fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))" }}>{t("auth:signup.subtitle")}</p>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </div>
 
         <GlassCard style={{ width: "100%", maxWidth: 420, padding: "36px 32px", animation: "fadeIn 0.5s ease 0.1s both" }}>
@@ -169,11 +125,7 @@ function SignupPage({ onNavigate }) {
 
           <form onSubmit={handleSubmit} noValidate>
             <div style={{ marginBottom: 18, animation: "fadeIn 0.4s ease 0.2s both" }}>
-<<<<<<< HEAD
-              <label htmlFor="signup-name" style={{ display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 7, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500 }}>Full Name</label>
-=======
               <label htmlFor="signup-name" style={{ display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 7, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500 }}>{t("auth:signup.fullNameLabel")}</label>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <input id="signup-name" name="name" type="text" autoComplete="name" value={form.name} disabled={busy}
                 onChange={setField("name")} onBlur={setFieldTouched("name")}
                 aria-invalid={Boolean(fieldErrors.name)}
@@ -185,11 +137,7 @@ function SignupPage({ onNavigate }) {
               )}
             </div>
             <div style={{ marginBottom: 18, animation: "fadeIn 0.4s ease 0.25s both" }}>
-<<<<<<< HEAD
-              <label htmlFor="signup-email" style={{ display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 7, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500 }}>Email</label>
-=======
               <label htmlFor="signup-email" style={{ display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 7, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500 }}>{t("auth:signup.emailLabel")}</label>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <input id="signup-email" name="email" type="email" autoComplete="email" value={form.email} disabled={busy}
                 onChange={setField("email")} onBlur={setFieldTouched("email")}
                 aria-invalid={Boolean(fieldErrors.email)}
@@ -203,22 +151,14 @@ function SignupPage({ onNavigate }) {
             <div style={{ marginBottom: 18, animation: "fadeIn 0.4s ease 0.3s both" }}>
               <PasswordField
                 id="signup-password"
-<<<<<<< HEAD
-                label="Password"
-=======
                 label={t("auth:signup.passwordLabel")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 autoComplete="new-password"
                 value={form.password}
                 disabled={busy}
                 onChange={setField("password")}
                 onBlur={setFieldTouched("password")}
                 error={fieldErrors.password}
-<<<<<<< HEAD
-                hint={fieldErrors.password ? null : "At least 8 characters, including a number."}
-=======
                 hint={fieldErrors.password ? null : t("auth:signup.passwordHint")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 inputStyle={INPUT_STYLE}
               />
               <PasswordStrengthMeter password={form.password} />
@@ -226,11 +166,7 @@ function SignupPage({ onNavigate }) {
             <div style={{ marginBottom: 8, animation: "fadeIn 0.4s ease 0.35s both" }}>
               <PasswordField
                 id="signup-confirm-password"
-<<<<<<< HEAD
-                label="Confirm Password"
-=======
                 label={t("auth:signup.confirmPasswordLabel")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 autoComplete="new-password"
                 value={form.confirmPassword}
                 disabled={busy}
@@ -262,30 +198,17 @@ function SignupPage({ onNavigate }) {
               animation: "fadeIn 0.4s ease 0.4s both",
             }}>
               {submitting && <Spinner size={16} />}
-<<<<<<< HEAD
-              {submitting ? "Creating account…" : "✦ Create Account ✦"}
-            </button>
-            <p style={{ margin: "10px 0 0", textAlign: "center", fontSize: 11, color: "rgba(180,130,255,0.4)" }}>
-              You'll stay signed in on this device for 30 days after creating your account.
-=======
               {submitting ? t("auth:signup.creatingAccount") : t("auth:signup.createAccount")}
             </button>
             <p style={{ margin: "10px 0 0", textAlign: "center", fontSize: 11, color: "rgba(180,130,255,0.4)" }}>
               {t("auth:signup.sessionNote")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
           </form>
 
           <p style={{ textAlign: "center", margin: "20px 0 0", fontSize: 13, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
-<<<<<<< HEAD
-            Already have an account?{" "}
-            <button onClick={() => onNavigate("login")} className="auth-link-btn" style={{ background: "none", border: "none", color: "#bf7fff", cursor: "pointer", fontSize: 13, textDecoration: "underline", padding: 0 }}>
-              Sign in
-=======
             {t("auth:signup.alreadyHaveAccount")}{" "}
             <button onClick={() => onNavigate("login")} className="auth-link-btn" style={{ background: "none", border: "none", color: "#bf7fff", cursor: "pointer", fontSize: 13, textDecoration: "underline", padding: 0 }}>
               {t("auth:signup.signIn")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </p>
           <p style={{ textAlign: "center", margin: "10px 0 0" }}>
@@ -293,11 +216,7 @@ function SignupPage({ onNavigate }) {
                 is this codebase's internal name for the old birth-details
                 form, not the marketing Home page. "home" is correct here. */}
             <button onClick={() => onNavigate("home")} className="auth-link-btn" style={{ background: "none", border: "none", color: "rgba(180,130,255,0.5)", cursor: "pointer", fontSize: 12, padding: 0 }}>
-<<<<<<< HEAD
-              ← Back to home
-=======
               {t("auth:signup.backToHome")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </p>
         </GlassCard>

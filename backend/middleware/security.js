@@ -58,11 +58,7 @@ function createRateLimiter({ windowMs, max, name }) {
     if (entry.count > max) {
       logger.warn(`Rate limit exceeded for ${ip} on ${name} (${entry.count}/${max} in ${windowMs}ms window).`);
       res.setHeader("Retry-After", Math.ceil((entry.windowStart + windowMs - now) / 1000));
-<<<<<<< HEAD
-      return res.status(429).json({ error: "Too many requests. Please slow down and try again shortly." });
-=======
       return res.status(429).json({ error: req.t ? req.t("errors.tooManyRequests") : "Too many requests. Please slow down and try again shortly." });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     }
     next();
   };

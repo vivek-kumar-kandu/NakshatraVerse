@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import EmptyState from "../components/common/EmptyState.jsx";
@@ -35,10 +32,7 @@ import * as festivalIntelligenceApi from "../utils/festivalIntelligenceApi.js";
 function FestivalIntelligencePage({
   onBack, festivalKey, date, year, chart, report, isAuthenticated, onOpenFamilyProfiles, onOpenReading,
 }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["festival"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [festival, setFestival] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -58,11 +52,7 @@ function FestivalIntelligencePage({
             : result.occurrences?.[0];
           setFestival(occurrence || null);
         })
-<<<<<<< HEAD
-        .catch((err) => setError(err.message || "Could not load this festival."))
-=======
         .catch((err) => setError(err.message || t("festival:intelligencePage.loadFailed")))
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         .finally(() => setLoading(false));
       return;
     }
@@ -77,11 +67,7 @@ function FestivalIntelligencePage({
         const sorted = [...(upcoming || [])].sort((a, b) => a.date.localeCompare(b.date));
         setFestival(todaysFestivals?.[0] || sorted[0] || null);
       })
-<<<<<<< HEAD
-      .catch((err) => setError(err.message || "Could not load an upcoming festival."))
-=======
       .catch((err) => setError(err.message || t("festival:intelligencePage.loadUpcomingFailed")))
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       .finally(() => setLoading(false));
   }, [festivalKey, date, year]);
 
@@ -105,21 +91,12 @@ function FestivalIntelligencePage({
               color: "var(--nv-text-primary, #e8d5ff)", padding: "10px 16px", borderRadius: 20, cursor: "pointer", fontSize: 13,
             }}
           >
-<<<<<<< HEAD
-            ← Back
-          </button>
-          <div>
-            <h1 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 21, color: "var(--nv-text-primary, #f1e4ff)" }}>🔮 Festival Intelligence</h1>
-            <p style={{ margin: "2px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
-              Deeper meaning, personalized guidance, preparation, and family suggestions for one festival.
-=======
             {t("festival:intelligencePage.back")}
           </button>
           <div>
             <h1 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 21, color: "var(--nv-text-primary, #f1e4ff)" }}>{t("festival:intelligencePage.title")}</h1>
             <p style={{ margin: "2px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
               {t("festival:intelligencePage.subtitle")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
           </div>
         </div>
@@ -129,28 +106,17 @@ function FestivalIntelligencePage({
         ) : error ? (
           <GlassCard style={{ padding: 20, color: "#ff8f7e", fontSize: 13 }}>{error}</GlassCard>
         ) : !festival ? (
-<<<<<<< HEAD
-          <EmptyState icon="🎉" title="No festival selected" message="Open a festival from the Festival Calendar, Dashboard, or Calendar page to see its full intelligence." />
-=======
           <EmptyState icon="🎉" title={t("festival:intelligencePage.noFestivalTitle")} message={t("festival:intelligencePage.noFestivalMessage")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         ) : (
           <>
             <FestivalDetailCard festival={festival} />
 
             <section>
               <h2 style={{ margin: "0 0 12px", fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))", textTransform: "uppercase", letterSpacing: 1 }}>
-<<<<<<< HEAD
-                Ritual Flow
-              </h2>
-              {timeline ? (
-                <Timeline items={timeline} emptyLabel="Timeline unavailable for this festival." />
-=======
                 {t("festival:intelligencePage.ritualFlow")}
               </h2>
               {timeline ? (
                 <Timeline items={timeline} emptyLabel={t("festival:intelligencePage.timelineUnavailable")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               ) : (
                 <SkeletonList rows={2} />
               )}
@@ -158,44 +124,28 @@ function FestivalIntelligencePage({
 
             <section>
               <h2 style={{ margin: "0 0 12px", fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))", textTransform: "uppercase", letterSpacing: 1 }}>
-<<<<<<< HEAD
-                Festival Intelligence
-=======
                 {t("festival:intelligencePage.festivalIntelligence")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </h2>
               <FestivalIntelligencePanel festival={festival} />
             </section>
 
             <section>
               <h2 style={{ margin: "0 0 12px", fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))", textTransform: "uppercase", letterSpacing: 1 }}>
-<<<<<<< HEAD
-                Personalized Guidance
-=======
                 {t("festival:intelligencePage.personalizedGuidance")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </h2>
               <PersonalizedFestivalGuidance festival={festival} chart={chart} report={report} onOpenReading={onOpenReading} />
             </section>
 
             <section>
               <h2 style={{ margin: "0 0 12px", fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))", textTransform: "uppercase", letterSpacing: 1 }}>
-<<<<<<< HEAD
-                Festival Preparation
-=======
                 {t("festival:intelligencePage.festivalPreparation")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </h2>
               <FestivalPreparationChecklist festival={festival} />
             </section>
 
             <section>
               <h2 style={{ margin: "0 0 12px", fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))", textTransform: "uppercase", letterSpacing: 1 }}>
-<<<<<<< HEAD
-                Family
-=======
                 {t("festival:intelligencePage.family")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </h2>
               <FestivalFamilySuggestions festival={festival} isAuthenticated={isAuthenticated} onOpenFamilyProfiles={onOpenFamilyProfiles} />
             </section>

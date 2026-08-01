@@ -11,8 +11,6 @@
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MAX_FIELD_LENGTH = 254; // generous; RFC 5321 email length ceiling
 
-<<<<<<< HEAD
-=======
 // Plain-English fallback so any caller that doesn't pass `t` (e.g. an
 // existing unit test constructed before Phase 3.6's localization, or a
 // script invoking these validators directly outside a request) keeps
@@ -26,7 +24,6 @@ const DEFAULT_MESSAGES = {
   "validation.passwordRequired": "password is required",
 };
 
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 function cleanString(value) {
   if (typeof value !== "string") return value;
   // eslint-disable-next-line no-control-regex
@@ -46,21 +43,6 @@ export function sanitizeAuthFields({ name, email, password } = {}) {
   };
 }
 
-<<<<<<< HEAD
-export function validateRegisterFields({ name, email, password } = {}) {
-  const errors = [];
-  if (!name || !String(name).trim()) errors.push("name is required");
-  if (!email || !EMAIL_RE.test(email)) errors.push("a valid email is required");
-  if (!password || String(password).length < 8) errors.push("password must be at least 8 characters");
-  if (password && String(password).length > 0 && !/[0-9]/.test(password)) errors.push("password must contain at least one number");
-  return errors;
-}
-
-export function validateLoginFields({ email, password } = {}) {
-  const errors = [];
-  if (!email || !EMAIL_RE.test(email)) errors.push("a valid email is required");
-  if (!password) errors.push("password is required");
-=======
 export function validateRegisterFields({ name, email, password } = {}, t) {
   const tr = t || ((key) => DEFAULT_MESSAGES[key]);
   const errors = [];
@@ -76,7 +58,6 @@ export function validateLoginFields({ email, password } = {}, t) {
   const errors = [];
   if (!email || !EMAIL_RE.test(email)) errors.push(tr("validation.validEmailRequired"));
   if (!password) errors.push(tr("validation.passwordRequired"));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return errors;
 }
 

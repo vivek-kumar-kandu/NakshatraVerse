@@ -12,11 +12,8 @@
 // computed into a daily-coach voice.
 // ─────────────────────────────────────────────────────────────────────────
 
-<<<<<<< HEAD
-=======
 import { getAiLanguageInstruction } from "../localization/aiLanguageInstruction.js";
 
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 function renderPredictions(predictions) {
   if (!predictions?.length) return "Not available.";
   return predictions
@@ -44,11 +41,7 @@ function renderLuckyElements(lucky) {
   return `Lucky Color: ${lucky.luckyColor}; Lucky Number: ${lucky.luckyNumber ?? "Not available"}; Lucky Direction: ${lucky.luckyDirection}; Favorable Time Window: ${lucky.favorableTimeWindow ?? "Not available"} (all backend-computed — do not alter).`;
 }
 
-<<<<<<< HEAD
-export function buildLifeCoachPrompt({ chart, report, insights, panchang, date, weekly, monthly, luckyElements, spiritualPracticeActivity }) {
-=======
 export function buildLifeCoachPrompt({ chart, report, insights, panchang, date, weekly, monthly, luckyElements, spiritualPracticeActivity, language }) {
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const { userData, planetary, lagna, moonSign, sunSign, nakshatra } = chart;
   const dasha = insights?.dasha;
   const transits = insights?.transits;
@@ -197,11 +190,7 @@ Return this exact JSON structure:
     "activity": "must exactly match the Backend-Selected Spiritual Practice Activity given above",
     "significance": "1-2 sentences on why this practice is meaningful today, grounded in the facts above"
   }
-<<<<<<< HEAD
-}`;
-=======
 }${getAiLanguageInstruction(language)}`;
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 export default { buildLifeCoachPrompt };

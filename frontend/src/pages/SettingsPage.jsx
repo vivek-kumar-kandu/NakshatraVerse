@@ -1,9 +1,6 @@
 import { useCallback, useMemo, useState } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "../context/LanguageContext.jsx";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import Badge from "../components/common/Badge.jsx";
@@ -14,10 +11,7 @@ import { useTheme } from "../context/ThemeContext.jsx";
 import { getTheme } from "../styles/themes.js";
 import { useToast } from "../components/common/Toast.jsx";
 import * as reportsApi from "../utils/reportsApi.js";
-<<<<<<< HEAD
-=======
 import { formatDate as formatDateIntl } from "../utils/localeFormat.js";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import {
   readPreferences,
   writePreferences,
@@ -57,19 +51,9 @@ import { GOLD_GRADIENT, PURPLE_GRADIENT, TABS } from "../constants/astrology.js"
 // AccountMenu.jsx), or ProfilePhotoManager code is modified by this file.
 // ─────────────────────────────────────────────────────────────────────────
 
-<<<<<<< HEAD
-function formatDate(value) {
-  if (!value) return "—";
-  try {
-    return new Date(value).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
-  } catch {
-    return "—";
-  }
-=======
 function formatDate(value, lang) {
   if (!value) return "—";
   return formatDateIntl(value, lang, { year: "numeric", month: "short", day: "numeric" });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 // Kept as plain constants (rather than importing package.json) so this
@@ -80,19 +64,11 @@ const RELEASE_LABEL = "V2.0";
 const BUILD_LABEL = `${APP_VERSION}-${import.meta.env.MODE}`;
 
 const SECTIONS = [
-<<<<<<< HEAD
-  { key: "account", icon: "👤", label: "Account" },
-  { key: "appearance", icon: "🎨", label: "Appearance" },
-  { key: "preferences", icon: "⚙️", label: "Preferences" },
-  { key: "privacy", icon: "🔒", label: "Privacy" },
-  { key: "about", icon: "ℹ️", label: "About" },
-=======
   { key: "account", icon: "👤", labelKey: "settings:sections.account" },
   { key: "appearance", icon: "🎨", labelKey: "settings:sections.appearance" },
   { key: "preferences", icon: "⚙️", labelKey: "settings:sections.preferences" },
   { key: "privacy", icon: "🔒", labelKey: "settings:sections.privacy" },
   { key: "about", icon: "ℹ️", labelKey: "settings:sections.about" },
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 ];
 
 // ── V3.0 Final Enhancement: User Preferences & Personalization ───────────
@@ -102,18 +78,6 @@ const SECTIONS = [
 // reusing an existing constant outright (TABS, from constants/astrology.js
 // — the same list ResultsPage's TabBar already renders).
 const HOROSCOPE_VIEW_OPTIONS = [
-<<<<<<< HEAD
-  { value: "daily", label: "Daily", icon: "🌅" },
-  { value: "weekly", label: "Weekly", icon: "🌓" },
-  { value: "monthly", label: "Monthly", icon: "🌕" },
-];
-const CALENDAR_VIEW_OPTIONS = [
-  { value: "full", label: "All Sections", icon: "📋" },
-  { value: "timeline", label: "Timeline", icon: "🕓" },
-];
-const AI_RESPONSE_LENGTH_OPTIONS = [
-  { value: "concise", label: "Concise" },
-=======
   {value: "daily", label: "Daily", icon: "🌅" },
   { value: "weekly", label: "Weekly", icon: "🌓" },
   {value: "monthly", label: "Monthly", icon: "🌕" },
@@ -124,7 +88,6 @@ const CALENDAR_VIEW_OPTIONS = [
 ];
 const AI_RESPONSE_LENGTH_OPTIONS = [
   {value: "concise", label: "Concise" },
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   { value: "balanced", label: "Balanced" },
   { value: "detailed", label: "Detailed" },
 ];
@@ -245,11 +208,8 @@ function PreferenceRow({ title, desc, children }) {
 }
 
 function SettingsPage({ onNavigate, initialSection }) {
-<<<<<<< HEAD
-=======
   const { t } = useTranslation(["settings", "common", "profile"]);
   const { language, setLanguage, supportedLanguages } = useLanguage();
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const { user, updateUser } = useAuth();
   const { theme, resolvedTheme, setTheme } = useTheme();
   const toast = useToast();
@@ -302,17 +262,6 @@ function SettingsPage({ onNavigate, initialSection }) {
     // design-system theme registry) instead of a hardcoded "Light"/"Dark"
     // — the underlying `mode` value ("light"/"dark"/"system") and
     // ThemeContext behavior are unchanged.
-<<<<<<< HEAD
-    const labels = { light: getTheme("light").name, dark: getTheme("dark").name, system: "System" };
-    toast.success(`Theme set to ${labels[mode] || mode}.`);
-  }, [setTheme, toast]);
-
-  const handleDashboardViewChange = useCallback((value) => {
-    if (updatePreference({ dashboardView: value })) {
-      toast.success(`Default dashboard view set to ${value === "grid" ? "Grid" : "List"}. Applies next time you open the Dashboard.`);
-    }
-  }, [updatePreference, toast]);
-=======
     const labels = { light: getTheme("light").name, dark: getTheme("dark").name, system: t("settings:appearance.theme.system") };
     toast.success(t("settings:toast.themeSet", { theme: labels[mode] || mode }));
   }, [setTheme, toast, t]);
@@ -322,22 +271,14 @@ function SettingsPage({ onNavigate, initialSection }) {
       toast.success(t("settings:toast.dashboardViewSet", { view: value === "grid" ? t("settings:preferences.grid") : t("settings:preferences.list") }));
     }
   }, [updatePreference, toast, t]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   const handleAnimationLevelChange = useCallback((value) => {
     if (updatePreference({ animationLevel: value })) {
       applyAnimationLevel(value);
-<<<<<<< HEAD
-      const labels = { full: "Full", reduced: "Reduced", none: "None" };
-      toast.success(`Animation level set to ${labels[value] || value}.`);
-    }
-  }, [updatePreference, toast]);
-=======
       const labels = { full: t("settings:preferences.animationOptions.full"), reduced: t("settings:preferences.animationOptions.reduced"), none: t("settings:preferences.animationOptions.none") };
       toast.success(t("settings:toast.animationLevelSet", { level: labels[value] || value }));
     }
   }, [updatePreference, toast, t]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   const handleCompactModeChange = useCallback((checked) => {
     updatePreference({ compactMode: checked });
@@ -400,15 +341,6 @@ function SettingsPage({ onNavigate, initialSection }) {
       const list = reports ?? await reportsApi.listReports();
       setReports(list);
       exportAccountData({ user, reports: list, theme, preferences });
-<<<<<<< HEAD
-      toast.success("Your account data export has started downloading.");
-    } catch (err) {
-      toast.error(err.message || "Could not export your account data right now.");
-    } finally {
-      setExporting(false);
-    }
-  }, [reports, user, theme, preferences, toast]);
-=======
       toast.success(t("settings:messages.exportStarted"));
     } catch (err) {
       toast.error(err.message || t("settings:messages.exportFailed"));
@@ -416,7 +348,6 @@ function SettingsPage({ onNavigate, initialSection }) {
       setExporting(false);
     }
   }, [reports, user, theme, preferences, toast, t]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   const openConfirm = useCallback((action) => setConfirmAction(action), []);
   const closeConfirm = useCallback(() => { if (!confirmBusy) setConfirmAction(null); }, [confirmBusy]);
@@ -426,42 +357,12 @@ function SettingsPage({ onNavigate, initialSection }) {
     try {
       if (confirmAction === "clear-cache") {
         const cleared = clearLocalCachedData();
-<<<<<<< HEAD
-        toast.success(cleared.length ? "Local cached data cleared." : "There was no local cached data to clear.");
-=======
         toast.success(cleared.length ? t("settings:messages.cacheCleared") : t("settings:messages.noCacheToClear"));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       } else if (confirmAction === "reset-prefs") {
         const defaults = resetPreferences();
         setPreferences(defaults);
         applyAnimationLevel(defaults.animationLevel);
         setTheme("system");
-<<<<<<< HEAD
-        toast.success("Preferences and theme have been reset to their defaults.");
-      }
-      setConfirmAction(null);
-    } catch (err) {
-      toast.error(err.message || "That action could not be completed.");
-    } finally {
-      setConfirmBusy(false);
-    }
-  }, [confirmAction, toast, setTheme]);
-
-  const confirmCopy = useMemo(() => ({
-    "clear-cache": {
-      title: "Clear local cached data?",
-      message: "Clears cached, session-only app state on this device (e.g. the one-time welcome splash). Your account, profile photo, saved reports, and preferences are not affected.",
-      confirmLabel: "Clear Cache",
-      loadingLabel: "Clearing…",
-    },
-    "reset-prefs": {
-      title: "Reset application preferences?",
-      message: "Resets Appearance and Preferences (theme, dashboard view, animation level, compact mode, and all personalization defaults below) back to their defaults on this device. Your account, profile photo, and saved reports are not affected.",
-      confirmLabel: "Reset",
-      loadingLabel: "Resetting…",
-    },
-  }), []);
-=======
         toast.success(t("settings:messages.prefsReset"));
       }
       setConfirmAction(null);
@@ -486,7 +387,6 @@ function SettingsPage({ onNavigate, initialSection }) {
       loadingLabel: t("settings:confirmDialogs.resetPrefs.loadingLabel"),
     },
   }), [t]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   const compact = preferences.compactMode;
   const cardPadding = compact ? 18 : 26;
@@ -515,22 +415,14 @@ function SettingsPage({ onNavigate, initialSection }) {
               margin: 0, fontSize: 26, fontFamily: "Cinzel,serif", fontWeight: 700,
               background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
             }}>
-<<<<<<< HEAD
-              Settings
-=======
               {t("settings:pageTitle")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </h1>
           </div>
         </div>
 
         <div className="settings-shell" style={{ display: "grid", gridTemplateColumns: "220px 1fr", gap: 20, alignItems: "start" }}>
           {/* ── Section nav ─────────────────────────────────────────── */}
-<<<<<<< HEAD
-          <nav aria-label="Settings sections" className="settings-nav-scroll">
-=======
           <nav aria-label={t("settings:sections.navAriaLabel")} className="settings-nav-scroll">
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             <div role="tablist" aria-orientation="vertical" style={{ display: "flex", flexDirection: "column", gap: 6 }}>
               {SECTIONS.map((s) => {
                 const active = s.key === activeSection;
@@ -554,11 +446,7 @@ function SettingsPage({ onNavigate, initialSection }) {
                       transition: "background var(--nv-duration-base) var(--nv-ease-standard), color var(--nv-duration-base) var(--nv-ease-standard), border-color var(--nv-duration-base) var(--nv-ease-standard)",
                     }}
                   >
-<<<<<<< HEAD
-                    <span aria-hidden="true">{s.icon}</span> {s.label}
-=======
                     <span aria-hidden="true">{s.icon}</span> {t(s.labelKey)}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   </button>
                 );
               })}
@@ -575,28 +463,12 @@ function SettingsPage({ onNavigate, initialSection }) {
           >
             {activeSection === "account" && (
               <div>
-<<<<<<< HEAD
-                <SectionHeading>Account</SectionHeading>
-=======
                 <SectionHeading>{t("settings:sections.account")}</SectionHeading>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 <GlassCard style={{ padding: cardPadding }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 18, marginBottom: rowGap + 6, flexWrap: "wrap" }}>
                     <ProfilePhotoManager user={user} onUpdate={updateUser} size={compact ? 68 : 88} />
                     <div style={{ minWidth: 0 }}>
                       <div style={{ fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.5))", marginBottom: 2 }}>
-<<<<<<< HEAD
-                        Click your photo to edit — upload, replace, or remove it.
-                      </div>
-                      <Badge color={user?.authProvider === "google" ? "#9dc9ff" : "#bf7fff"}>
-                        {user?.authProvider === "google" ? "Signed in with Google" : "Email & Password"}
-                      </Badge>
-                    </div>
-                  </div>
-                  <InfoRow label="Full Name" value={user?.name || "—"} />
-                  <InfoRow label="Email Address" value={user?.email || "—"} />
-                  <InfoRow label="Member Since" value={formatDate(user?.createdAt)} />
-=======
                         {t("profile:page.photoHint")}
                       </div>
                       <Badge color={user?.authProvider === "google" ? "#9dc9ff" : "#bf7fff"}>
@@ -607,23 +479,12 @@ function SettingsPage({ onNavigate, initialSection }) {
                   <InfoRow label={t("profile:page.fullName")} value={user?.name || "—"} />
                   <InfoRow label={t("profile:page.email")} value={user?.email || "—"} />
                   <InfoRow label={t("profile:page.memberSince")} value={formatDate(user?.createdAt, language)} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </GlassCard>
               </div>
             )}
 
             {activeSection === "appearance" && (
               <div>
-<<<<<<< HEAD
-                <SectionHeading>Appearance</SectionHeading>
-                <GlassCard style={{ padding: cardPadding }}>
-                  <PreferenceRow
-                    title="Theme"
-                    desc={`Currently using ${resolvedTheme === "dark" ? getTheme("dark").name : getTheme("light").name}${theme === "system" ? " (following your system setting)" : ""}.`}
-                  >
-                    <SegmentedControl
-                      ariaLabel="Theme"
-=======
                 <SectionHeading>{t("settings:sections.appearance")}</SectionHeading>
                 <GlassCard style={{ padding: cardPadding }}>
                   <PreferenceRow
@@ -635,26 +496,16 @@ function SettingsPage({ onNavigate, initialSection }) {
                   >
                     <SegmentedControl
                       ariaLabel={t("settings:appearance.theme.title")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                       value={theme}
                       onChange={handleThemeChange}
                       options={[
                         { value: "light", label: getTheme("light").name, icon: getTheme("light").icon },
                         { value: "dark", label: getTheme("dark").name, icon: getTheme("dark").icon },
-<<<<<<< HEAD
-                        { value: "system", label: "System", icon: "🖥️" },
-=======
                         { value: "system", label: t("settings:appearance.theme.system"), icon: "🖥️" },
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                       ]}
                     />
                   </PreferenceRow>
                   <p style={{ margin: "14px 0 0", fontSize: 11.5, color: "var(--nv-text-muted, rgba(200,160,255,0.45))", lineHeight: 1.5 }}>
-<<<<<<< HEAD
-                    Your choice is saved to this device and applied every time you open NakshatraVerse.
-                  </p>
-                </GlassCard>
-=======
                     {t("settings:appearance.persistNote")}
                   </p>
                 </GlassCard>
@@ -701,48 +552,11 @@ function SettingsPage({ onNavigate, initialSection }) {
                     </p>
                   )}
                 </GlassCard>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </div>
             )}
 
             {activeSection === "preferences" && (
               <div>
-<<<<<<< HEAD
-                <SectionHeading>Preferences</SectionHeading>
-                <GlassCard style={{ padding: cardPadding }}>
-                  <PreferenceRow title="Default Dashboard View" desc="Grid or list layout for Saved Reports on your Dashboard.">
-                    <SegmentedControl
-                      ariaLabel="Default Dashboard View"
-                      value={preferences.dashboardView}
-                      onChange={handleDashboardViewChange}
-                      options={[
-                        { value: "grid", label: "Grid", icon: "▦" },
-                        { value: "list", label: "List", icon: "☰" },
-                      ]}
-                    />
-                  </PreferenceRow>
-                  <PreferenceRow title="Animation Level" desc="Reduce or disable motion effects throughout the app.">
-                    <SegmentedControl
-                      ariaLabel="Animation Level"
-                      value={preferences.animationLevel}
-                      onChange={handleAnimationLevelChange}
-                      options={[
-                        { value: "full", label: "Full" },
-                        { value: "reduced", label: "Reduced" },
-                        { value: "none", label: "None" },
-                      ]}
-                    />
-                  </PreferenceRow>
-                  <PreferenceRow title="Compact Mode" desc="Tighter spacing on this Settings page.">
-                    <ToggleSwitch checked={preferences.compactMode} onChange={handleCompactModeChange} label="Compact Mode" />
-                  </PreferenceRow>
-                  <PreferenceRow title="Remember Last Opened Section" desc="Reopen Settings on the section you were last viewing.">
-                    <ToggleSwitch checked={preferences.rememberLastSection} onChange={handleRememberSectionChange} label="Remember Last Opened Section" />
-                  </PreferenceRow>
-                  <PreferenceRow title="Default Report Tab" desc="Which report tab opens first when you view a reading.">
-                    <SegmentedControl
-                      ariaLabel="Default Report Tab"
-=======
                 <SectionHeading>{t("settings:sections.preferences")}</SectionHeading>
                 <GlassCard style={{ padding: cardPadding }}>
                   <PreferenceRow title={t("settings:preferences.dashboardView.title")} desc={t("settings:preferences.dashboardView.desc")}>
@@ -777,46 +591,11 @@ function SettingsPage({ onNavigate, initialSection }) {
                   <PreferenceRow title={t("settings:preferences.reportTab.title")} desc={t("settings:preferences.reportTab.desc")}>
                     <SegmentedControl
                       ariaLabel={t("settings:preferences.reportTab.title")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                       value={preferences.reportTab}
                       onChange={handleReportTabChange}
                       options={TABS.map((t) => ({ value: t.id, label: t.label, icon: t.icon }))}
                     />
                   </PreferenceRow>
-<<<<<<< HEAD
-                  <PreferenceRow title="Default Horoscope View" desc="Which period the Horoscope Dashboard opens on.">
-                    <SegmentedControl
-                      ariaLabel="Default Horoscope View"
-                      value={preferences.horoscopeView}
-                      onChange={handleHoroscopeViewChange}
-                      options={HOROSCOPE_VIEW_OPTIONS}
-                    />
-                  </PreferenceRow>
-                  <PreferenceRow title="Default Calendar View" desc="Whether the Astrology Calendar opens showing every section, or just the merged Timeline.">
-                    <SegmentedControl
-                      ariaLabel="Default Calendar View"
-                      value={preferences.calendarView}
-                      onChange={handleCalendarViewChange}
-                      options={CALENDAR_VIEW_OPTIONS}
-                    />
-                  </PreferenceRow>
-                  <PreferenceRow title="AI Response Length" desc="How detailed the AI Assistant's answers are.">
-                    <SegmentedControl
-                      ariaLabel="AI Response Length"
-                      value={preferences.aiResponseLength}
-                      onChange={handleAiResponseLengthChange}
-                      options={AI_RESPONSE_LENGTH_OPTIONS}
-                    />
-                  </PreferenceRow>
-                  <PreferenceRow title="Remember Last Opened Report" desc="Let the Dashboard offer to reopen the last report you viewed.">
-                    <ToggleSwitch checked={preferences.rememberLastReport} onChange={handleRememberLastReportChange} label="Remember Last Opened Report" />
-                  </PreferenceRow>
-                  <PreferenceRow title="Show Welcome Animation" desc="Show the one-time splash animation each time you open NakshatraVerse.">
-                    <ToggleSwitch checked={preferences.showWelcomeAnimation} onChange={handleShowWelcomeAnimationChange} label="Show Welcome Animation" />
-                  </PreferenceRow>
-                  <PreferenceRow title="Command Palette Shortcut Hint" desc="Show a one-time tip about the ⌘K / Ctrl+K Command Palette shortcut after signing in.">
-                    <ToggleSwitch checked={preferences.commandPaletteHint} onChange={handleCommandPaletteHintChange} label="Command Palette Shortcut Hint" />
-=======
                   <PreferenceRow title={t("settings:preferences.horoscopeView.title")} desc={t("settings:preferences.horoscopeView.desc")}>
                     <SegmentedControl
                       ariaLabel={t("settings:preferences.horoscopeView.title")}
@@ -849,7 +628,6 @@ function SettingsPage({ onNavigate, initialSection }) {
                   </PreferenceRow>
                   <PreferenceRow title={t("settings:preferences.commandPaletteHint.title")} desc={t("settings:preferences.commandPaletteHint.desc")}>
                     <ToggleSwitch checked={preferences.commandPaletteHint} onChange={handleCommandPaletteHintChange} label={t("settings:preferences.commandPaletteHint.title")} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   </PreferenceRow>
                 </GlassCard>
               </div>
@@ -857,15 +635,9 @@ function SettingsPage({ onNavigate, initialSection }) {
 
             {activeSection === "privacy" && (
               <div>
-<<<<<<< HEAD
-                <SectionHeading>Privacy</SectionHeading>
-                <GlassCard style={{ padding: cardPadding, display: "grid", gap: 14 }}>
-                  <PreferenceRow title="Export Account Data" desc="Download a JSON file of your profile, saved reports, and settings on this device.">
-=======
                 <SectionHeading>{t("settings:sections.privacy")}</SectionHeading>
                 <GlassCard style={{ padding: cardPadding, display: "grid", gap: 14 }}>
                   <PreferenceRow title={t("settings:privacy.exportData.title")} desc={t("settings:privacy.exportData.desc")}>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                     <button
                       type="button"
                       onClick={handleExport}
@@ -880,17 +652,10 @@ function SettingsPage({ onNavigate, initialSection }) {
                       }}
                     >
                       {exporting && <Spinner />}
-<<<<<<< HEAD
-                      {exporting ? "Preparing…" : "Export Data"}
-                    </button>
-                  </PreferenceRow>
-                  <PreferenceRow title="Clear Local Cached Data" desc="Clears transient, session-only app state stored on this device.">
-=======
                       {exporting ? t("settings:privacy.exportData.preparing") : t("settings:privacy.exportData.button")}
                     </button>
                   </PreferenceRow>
                   <PreferenceRow title={t("settings:privacy.clearCache.title")} desc={t("settings:privacy.clearCache.desc")}>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                     <button
                       type="button"
                       onClick={() => openConfirm("clear-cache")}
@@ -901,17 +666,10 @@ function SettingsPage({ onNavigate, initialSection }) {
                         color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif",
                       }}
                     >
-<<<<<<< HEAD
-                      Clear Cache
-                    </button>
-                  </PreferenceRow>
-                  <PreferenceRow title="Reset Application Preferences" desc="Resets Appearance and Preferences back to defaults on this device.">
-=======
                       {t("settings:privacy.clearCache.button")}
                     </button>
                   </PreferenceRow>
                   <PreferenceRow title={t("settings:privacy.resetPrefs.title")} desc={t("settings:privacy.resetPrefs.desc")}>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                     <button
                       type="button"
                       onClick={() => openConfirm("reset-prefs")}
@@ -922,11 +680,7 @@ function SettingsPage({ onNavigate, initialSection }) {
                         color: "var(--nv-danger, #ff9d9d)", fontFamily: "Inter,sans-serif",
                       }}
                     >
-<<<<<<< HEAD
-                      Reset Preferences
-=======
                       {t("settings:privacy.resetPrefs.button")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                     </button>
                   </PreferenceRow>
                 </GlassCard>
@@ -935,11 +689,7 @@ function SettingsPage({ onNavigate, initialSection }) {
 
             {activeSection === "about" && (
               <div>
-<<<<<<< HEAD
-                <SectionHeading>About</SectionHeading>
-=======
                 <SectionHeading>{t("settings:sections.about")}</SectionHeading>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 <GlassCard style={{ padding: cardPadding }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 14 }}>
                     <span aria-hidden="true" style={{ fontSize: 22 }}>🪐</span>
@@ -950,20 +700,6 @@ function SettingsPage({ onNavigate, initialSection }) {
                       NakshatraVerse
                     </span>
                   </div>
-<<<<<<< HEAD
-                  <InfoRow label="Current Release" value={RELEASE_LABEL} />
-                  <InfoRow label="Application Version" value={APP_VERSION} />
-                  <InfoRow label="Build" value={BUILD_LABEL} />
-                  <InfoRow label="Developer" value="NakshatraVerse Team" />
-                  <p style={{ margin: "14px 0 0", fontSize: 11.5, color: "var(--nv-text-muted, rgba(200,160,255,0.5))", lineHeight: 1.5 }}>
-                    Authentic Vedic astrology, explained by AI — your cosmic blueprint, made clear.
-                  </p>
-                  <p style={{ margin: "16px 0 0", fontSize: 11, color: "rgba(180,130,255,0.4)" }}>
-                    © {new Date().getFullYear()} NakshatraVerse. All rights reserved.
-                  </p>
-                  <h3 style={{ margin: "20px 0 8px", fontSize: 11.5, letterSpacing: 1, textTransform: "uppercase", color: "var(--nv-text-muted, rgba(200,160,255,0.5))" }}>
-                    Open Source Libraries
-=======
                   <InfoRow label={t("settings:about.currentRelease", "Current Release")} value={RELEASE_LABEL} />
                   <InfoRow label={t("settings:about.applicationVersion", "Application Version")} value={APP_VERSION} />
                   <InfoRow label={t("settings:about.build", "Build")} value={BUILD_LABEL} />
@@ -976,16 +712,11 @@ function SettingsPage({ onNavigate, initialSection }) {
                   </p>
                   <h3 style={{ margin: "20px 0 8px", fontSize: 11.5, letterSpacing: 1, textTransform: "uppercase", color: "var(--nv-text-muted, rgba(200,160,255,0.5))" }}>
                     {t("settings:about.openSourceLibraries", "Open Source Libraries")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   </h3>
                   <InfoRow label="React" value="MIT" />
                   <InfoRow label="React DOM" value="MIT" />
                   <p style={{ margin: "10px 0 0", fontSize: 11, color: "rgba(180,130,255,0.4)", lineHeight: 1.5 }}>
-<<<<<<< HEAD
-                    This build does not yet bundle a full third-party license audit.
-=======
                     {t("settings:about.licenseNotice", "This build does not yet bundle a full third-party license audit.")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   </p>
                 </GlassCard>
               </div>
@@ -998,15 +729,9 @@ function SettingsPage({ onNavigate, initialSection }) {
         open={!!confirmAction}
         title={confirmAction ? confirmCopy[confirmAction].title : ""}
         message={confirmAction ? confirmCopy[confirmAction].message : ""}
-<<<<<<< HEAD
-        confirmLabel={confirmAction ? confirmCopy[confirmAction].confirmLabel : "Confirm"}
-        loadingLabel={confirmAction ? confirmCopy[confirmAction].loadingLabel : "Working…"}
-        cancelLabel="Cancel"
-=======
         confirmLabel={confirmAction ? confirmCopy[confirmAction].confirmLabel : t("common:confirmDialog.confirm")}
         loadingLabel={confirmAction ? confirmCopy[confirmAction].loadingLabel : undefined}
         cancelLabel={t("common:confirmDialog.cancel")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         danger
         loading={confirmBusy}
         onConfirm={runConfirmedAction}

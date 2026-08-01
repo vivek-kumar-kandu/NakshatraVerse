@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-import { describe, it, expect } from "vitest";
-import { render } from "@testing-library/react";
-import ZodiacWheel from "../src/components/common/ZodiacWheel.jsx";
-
-describe("ZodiacWheel (Priority 5.1 responsive fix)", () => {
-=======
 import { describe, it, expect, beforeAll } from "vitest";
 import { render } from "@testing-library/react";
 import ZodiacWheel from "../src/components/common/ZodiacWheel.jsx";
@@ -20,7 +13,6 @@ describe("ZodiacWheel (Priority 5.1 responsive fix)", () => {
     await i18n.loadNamespaces("results");
   });
 
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   it("does not use fixed pixel width/height attributes (regression guard against the mobile overflow bug)", () => {
     const { container } = render(<ZodiacWheel lagna="Taurus" planetary={{}} />);
     const svg = container.querySelector("svg");

@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-import { describe, it, expect } from "vitest";
-=======
 import { describe, it, expect, beforeAll } from "vitest";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import ExplorerTab from "../src/components/explorer/ExplorerTab.jsx";
 import { useExplorer, ExplorerProvider } from "../src/context/ExplorerContext.jsx";
-<<<<<<< HEAD
-=======
 // Phase 2 (Explorer i18n migration): these panels/components are
 // rendered directly here rather than through App.jsx, and App.jsx (via
 // ErrorBoundary.jsx) is normally what triggers i18n/index.js's
@@ -24,7 +18,6 @@ beforeAll(async () => {
     await new Promise((resolve) => i18n.on("initialized", resolve));
   }
 });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // V5.0 Phase 5A — Explorer Infrastructure

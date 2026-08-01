@@ -1,8 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-<<<<<<< HEAD
-=======
 import { useTranslation } from "react-i18next";
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import EmptyState from "../components/common/EmptyState.jsx";
@@ -35,21 +32,10 @@ import { readPreferences, writePreferences } from "../utils/settingsStorage.js";
 // freshly-submitted form.
 // ─────────────────────────────────────────────────────────────────────────
 
-<<<<<<< HEAD
-const SORTS = [
-  { value: "recent", label: "Recently Updated" },
-  { value: "name", label: "Name (A–Z)" },
-  { value: "relationship", label: "Relationship" },
-  { value: "dob", label: "Date of Birth" },
-];
-
-function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHub }) {
-=======
 const SORTS = ["recent", "name", "relationship", "dob"];
 
 function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHub }) {
   const { t } = useTranslation(["family", "common"]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const toast = useToast();
   const [profiles, setProfiles] = useState(null);
   const [recent, setRecent] = useState([]);
@@ -73,11 +59,7 @@ function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHu
       search, relationship: relationshipFilter, sort, includeArchived: showArchived,
     })
       .then(setProfiles)
-<<<<<<< HEAD
-      .catch((err) => setError(err.message || "Could not load your family profiles."));
-=======
       .catch((err) => setError(err.message || t("family:profilesPage.loadFailed")));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     familyProfilesApi.getRecentlyOpened(5).then(setRecent).catch(() => setRecent([]));
   }, [search, relationshipFilter, sort, showArchived]);
 
@@ -91,26 +73,15 @@ function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHu
     try {
       if (editingProfile) {
         await familyProfilesApi.updateProfile(editingProfile.id, form);
-<<<<<<< HEAD
-        toast?.success?.(`${form.name}'s profile updated.`);
-      } else {
-        await familyProfilesApi.createProfile(form);
-        toast?.success?.(`${form.name} added to Family Profiles.`);
-=======
         toast?.success?.(t("family:profilesPage.toasts.updated", { name: form.name }));
       } else {
         await familyProfilesApi.createProfile(form);
         toast?.success?.(t("family:profilesPage.toasts.added", { name: form.name }));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       }
       setDialogOpen(false);
       load();
     } catch (err) {
-<<<<<<< HEAD
-      toast?.error?.(err.message || "Could not save this profile.");
-=======
       toast?.error?.(err.message || t("family:profilesPage.toasts.saveFailed"));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     } finally {
       setSaving(false);
     }
@@ -119,51 +90,30 @@ function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHu
   const handleDuplicate = async (p) => {
     try {
       await familyProfilesApi.duplicateProfile(p.id);
-<<<<<<< HEAD
-      toast?.success?.(`Duplicated ${p.name}.`);
-      load();
-    } catch (err) {
-      toast?.error?.(err.message || "Could not duplicate this profile.");
-=======
       toast?.success?.(t("family:profilesPage.toasts.duplicated", { name: p.name }));
       load();
     } catch (err) {
       toast?.error?.(err.message || t("family:profilesPage.toasts.duplicateFailed"));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     }
   };
 
   const handleArchive = async (p) => {
     try {
       await familyProfilesApi.archiveProfile(p.id);
-<<<<<<< HEAD
-      toast?.info?.(`${p.name} archived.`);
-      load();
-    } catch (err) {
-      toast?.error?.(err.message || "Could not archive this profile.");
-=======
       toast?.info?.(t("family:profilesPage.toasts.archived", { name: p.name }));
       load();
     } catch (err) {
       toast?.error?.(err.message || t("family:profilesPage.toasts.archiveFailed"));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     }
   };
 
   const handleRestore = async (p) => {
     try {
       await familyProfilesApi.restoreProfile(p.id);
-<<<<<<< HEAD
-      toast?.success?.(`${p.name} restored.`);
-      load();
-    } catch (err) {
-      toast?.error?.(err.message || "Could not restore this profile.");
-=======
       toast?.success?.(t("family:profilesPage.toasts.restored", { name: p.name }));
       load();
     } catch (err) {
       toast?.error?.(err.message || t("family:profilesPage.toasts.restoreFailed"));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     }
   };
 
@@ -172,19 +122,11 @@ function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHu
     setDeleting(true);
     try {
       await familyProfilesApi.deleteProfile(confirmDelete.id);
-<<<<<<< HEAD
-      toast?.info?.(`${confirmDelete.name} deleted.`);
-      setConfirmDelete(null);
-      load();
-    } catch (err) {
-      toast?.error?.(err.message || "Could not delete this profile.");
-=======
       toast?.info?.(t("family:profilesPage.toasts.deleted", { name: confirmDelete.name }));
       setConfirmDelete(null);
       load();
     } catch (err) {
       toast?.error?.(err.message || t("family:profilesPage.toasts.deleteFailed"));
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     } finally {
       setDeleting(false);
     }
@@ -216,15 +158,9 @@ function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHu
   }, [onOpenRelationshipHub]);
 
   const emptyMessage = useMemo(() => {
-<<<<<<< HEAD
-    if (search || relationshipFilter !== "all") return "No profiles match your search/filter.";
-    return "Add your first family profile to start building your relationship hub.";
-  }, [search, relationshipFilter]);
-=======
     if (search || relationshipFilter !== "all") return t("family:profilesPage.emptyMessageFiltered");
     return t("family:profilesPage.emptyMessageDefault");
   }, [search, relationshipFilter, t]);
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   return (
     <div style={{ minHeight: "100vh", position: "relative", fontFamily: "Inter,sans-serif" }}>
@@ -237,15 +173,6 @@ function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHu
               onClick={() => onNavigate("dashboard")}
               style={{ background: "none", border: "none", cursor: "pointer", padding: 0, marginBottom: 8, color: "var(--nv-text-secondary, rgba(200,160,255,0.75))", fontSize: 12.5, fontFamily: "Inter,sans-serif" }}
             >
-<<<<<<< HEAD
-              ← Back to Dashboard
-            </button>
-            <h1 style={{ margin: 0, fontSize: "clamp(22px,4vw,30px)", background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif", fontWeight: 700 }}>
-              Family Profiles
-            </h1>
-            <p style={{ margin: "6px 0 0", fontSize: 13.5, color: "var(--nv-text-muted, rgba(200,160,255,0.65))" }}>
-              Manage every birth chart in your circle, in one place.
-=======
               {t("family:profilesPage.backToDashboard")}
             </button>
             <h1 style={{ margin: 0, fontSize: "clamp(22px,4vw,30px)", background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif", fontWeight: 700 }}>
@@ -253,7 +180,6 @@ function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHu
             </h1>
             <p style={{ margin: "6px 0 0", fontSize: 13.5, color: "var(--nv-text-muted, rgba(200,160,255,0.65))" }}>
               {t("family:profilesPage.subtitle")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
           </div>
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
@@ -262,22 +188,14 @@ function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHu
               className="pill-btn tap-scale"
               style={{ padding: "12px 20px", borderRadius: 24, border: "1px solid rgba(180,120,255,0.4)", background: "rgba(123,47,255,0.18)", color: "var(--nv-text-primary, #e8d5ff)", fontWeight: 600, fontSize: 13.5, cursor: "pointer", fontFamily: "Cinzel,serif" }}
             >
-<<<<<<< HEAD
-              💞 Relationship Hub
-=======
               {t("family:profilesPage.relationshipHub")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
             <button
               onClick={handleAdd}
               className="submit-btn"
               style={{ padding: "13px 24px", borderRadius: 30, border: "1px solid rgba(180,120,255,0.45)", background: "var(--nv-accent-gradient, linear-gradient(135deg, #7b2fff, #4a00a0))", color: "#fff", fontWeight: 600, fontSize: 14, cursor: "pointer", fontFamily: "Cinzel,serif", boxShadow: "0 4px 20px rgba(123,47,255,0.35)" }}
             >
-<<<<<<< HEAD
-              + Add Profile
-=======
               {t("family:profilesPage.addProfile")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </div>
         </header>
@@ -290,11 +208,7 @@ function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHu
 
         {recent.length > 0 && !showArchived && (
           <section style={{ marginBottom: 30 }}>
-<<<<<<< HEAD
-            <h2 style={{ margin: "0 0 12px", fontSize: 14, letterSpacing: 1.5, textTransform: "uppercase", color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>🕑 Recently Opened</h2>
-=======
             <h2 style={{ margin: "0 0 12px", fontSize: 14, letterSpacing: 1.5, textTransform: "uppercase", color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>{t("family:profilesPage.recentlyOpened")}</h2>
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             <div className="tab-scroll-region" style={{ display: "flex", gap: 14, overflowX: "auto", paddingBottom: 6 }}>
               {recent.map((p) => (
                 <div key={p.id} style={{ minWidth: 260, flex: "0 0 auto" }}>
@@ -310,48 +224,23 @@ function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHu
             type="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-<<<<<<< HEAD
-            placeholder="Search by name, relationship, or place…"
-            aria-label="Search family profiles"
-=======
             placeholder={t("family:profilesPage.searchPlaceholder")}
             aria-label={t("family:profilesPage.searchAriaLabel")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             style={{ flex: "1 1 220px", minWidth: 180, padding: "10px 16px", borderRadius: 20, fontSize: 13, border: "1px solid rgba(180,120,255,0.3)", background: "rgba(18,0,38,0.6)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif" }}
           />
           <select
             value={relationshipFilter}
             onChange={(e) => setRelationshipFilter(e.target.value)}
-<<<<<<< HEAD
-            aria-label="Filter by relationship"
-            className="select-input"
-            style={{ padding: "10px 14px", borderRadius: 20, fontSize: 12.5, cursor: "pointer", border: "1px solid rgba(180,120,255,0.3)", background: "rgba(18,0,38,0.6)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif" }}
-          >
-            <option value="all">All Relationships</option>
-            {RELATIONSHIPS.map((r) => <option key={r} value={r}>{r.charAt(0).toUpperCase() + r.slice(1)}</option>)}
-=======
             aria-label={t("family:profilesPage.filterAriaLabel")}
             className="select-input"
             style={{ padding: "10px 14px", borderRadius: 20, fontSize: 12.5, cursor: "pointer", border: "1px solid rgba(180,120,255,0.3)", background: "rgba(18,0,38,0.6)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif" }}
           >
             <option value="all">{t("family:profilesPage.allRelationships")}</option>
             {RELATIONSHIPS.map((r) => <option key={r} value={r}>{t(`family:relationships.${r}`)}</option>)}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </select>
           <select
             value={sort}
             onChange={(e) => setSort(e.target.value)}
-<<<<<<< HEAD
-            aria-label="Sort family profiles"
-            className="select-input"
-            style={{ padding: "10px 14px", borderRadius: 20, fontSize: 12.5, cursor: "pointer", border: "1px solid rgba(180,120,255,0.3)", background: "rgba(18,0,38,0.6)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif" }}
-          >
-            {SORTS.map((s) => <option key={s.value} value={s.value}>{s.label}</option>)}
-          </select>
-          <label style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
-            <input type="checkbox" checked={showArchived} onChange={(e) => setShowArchived(e.target.checked)} />
-            Show Archived
-=======
             aria-label={t("family:profilesPage.sortAriaLabel")}
             className="select-input"
             style={{ padding: "10px 14px", borderRadius: 20, fontSize: 12.5, cursor: "pointer", border: "1px solid rgba(180,120,255,0.3)", background: "rgba(18,0,38,0.6)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif" }}
@@ -361,18 +250,13 @@ function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHu
           <label style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
             <input type="checkbox" checked={showArchived} onChange={(e) => setShowArchived(e.target.checked)} />
             {t("family:profilesPage.showArchived")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </label>
         </section>
 
         {profiles === null && !error && <SkeletonList rows={4} variant="card" />}
 
         {profiles?.length === 0 && (
-<<<<<<< HEAD
-          <EmptyState icon="👨‍👩‍👧‍👦" title="No profiles yet" message={emptyMessage} actionLabel={search || relationshipFilter !== "all" ? undefined : "+ Add Profile"} onAction={search || relationshipFilter !== "all" ? undefined : handleAdd} />
-=======
           <EmptyState icon="👨‍👩‍👧‍👦" title={t("family:profilesPage.emptyTitle")} message={emptyMessage} actionLabel={search || relationshipFilter !== "all" ? undefined : t("family:profilesPage.addProfile")} onAction={search || relationshipFilter !== "all" ? undefined : handleAdd} />
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         )}
 
         {profiles?.length > 0 && (
@@ -404,15 +288,9 @@ function FamilyProfilesPage({ onNavigate, onGenerateReport, onOpenRelationshipHu
 
       <ConfirmDialog
         open={Boolean(confirmDelete)}
-<<<<<<< HEAD
-        title="Delete this profile?"
-        message={`"${confirmDelete?.name}" and any relationship comparisons involving them will no longer be accessible. This can't be undone.`}
-        confirmLabel="Delete"
-=======
         title={t("family:profilesPage.deleteDialog.title")}
         message={t("family:profilesPage.deleteDialog.message", { name: confirmDelete?.name })}
         confirmLabel={t("family:profilesPage.deleteDialog.confirmLabel")}
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         danger
         loading={deleting}
         onConfirm={handleDeleteConfirmed}

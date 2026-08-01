@@ -13,11 +13,7 @@ export const postChatMessage = asyncHandler(async (req, res) => {
   const errors = validateChatRequest(req.body);
   if (errors.length) {
     logger.warn(`Validation failed for /api/assistant/chat: ${errors.join(", ")}`);
-<<<<<<< HEAD
-    return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
-=======
     return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   const { chart, report, history, question, festivalContext, panchangContext, muhuratContext } = req.body;
@@ -34,23 +30,16 @@ export const postChatMessage = asyncHandler(async (req, res) => {
       festivalContext,
       panchangContext,
       muhuratContext,
-<<<<<<< HEAD
-=======
       // Multilingual Foundation Phase: resolved by middleware/language.js.
       // A no-op for English (today's only populated language) — see
       // services/localization/aiLanguageInstruction.js.
       language: req.language,
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     });
     res.json(result);
   } catch (err) {
     logger.error("Assistant chat error:", err);
     const status = err.status && err.status >= 400 && err.status < 600 ? err.status : 502;
-<<<<<<< HEAD
-    res.status(status).json({ error: err.message || "The AI assistant is unavailable right now." });
-=======
     res.status(status).json({ error: err.message || req.t("errors.serviceUnavailable", { feature: "The AI assistant" }) });
->>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
