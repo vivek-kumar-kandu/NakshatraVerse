@@ -589,4 +589,4 @@ See the [`LICENSE`](./LICENSE) file for full terms.
 | **Education** | B.Tech – Computer Science & Information Technology, Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad |
 | **GitHub** | [github.com/vivek-kumar-kandu](https://github.com/vivek-kumar-kandu) |
 | **LinkedIn** | [linkedin.com/in/vivek-kumar-kandu](https://www.linkedin.com/in/vivek-kumar-kandu/) |
-| **Email** | vk6073859@gmail.com |
+| **Email** | vivekk11951@gmail.com |
