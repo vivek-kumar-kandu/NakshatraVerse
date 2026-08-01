@@ -571,10 +571,22 @@ Current state: **production-ready** (V2.0 complete), pending a final local `npm 
 
 ## 16. License
 
-No license file was included in the provided documentation. Add a `LICENSE` file (e.g. MIT, Apache-2.0) to clarify usage rights before publishing this project publicly.
+This project is licensed under the **MIT License**.
+
+Copyright © 2026 **Vivek Kumar Kandu**
+
+See the [`LICENSE`](./LICENSE) file for full terms.
 
 ---
 
 ## 17. Author
 
-Author/maintainer information was not included in the provided documentation. Add your name, organization, or contact details here.
+**Vivek Kumar Kandu** is a Computer Science & Information Technology undergraduate at Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad. His interests include Artificial Intelligence, Full-Stack Development, Machine Learning, Cloud Computing, and Vedic Astrology technology. He enjoys building AI-powered applications that solve real-world problems, with projects including NakshatraVerse and Sarthee AI.
+
+| | |
+|---|---|
+| **Name** | Vivek Kumar Kandu |
+| **Education** | B.Tech – Computer Science & Information Technology, Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad |
+| **GitHub** | [github.com/vivek-kumar-kandu](https://github.com/vivek-kumar-kandu) |
+| **LinkedIn** | [linkedin.com/in/vivek-kumar-kandu](https://www.linkedin.com/in/vivek-kumar-kandu/) |
+| **Email** | vk6073859@gmail.com |
