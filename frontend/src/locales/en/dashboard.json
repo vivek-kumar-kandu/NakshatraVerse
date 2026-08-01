@@ -1,0 +1,111 @@
+{
+  "header": {
+    "title": "Your Dashboard",
+    "welcomeBack": "Welcome back, {{name}} ✦",
+    "welcomeBackFallbackName": "traveler",
+    "generateNewReport": "✦ Generate New Report"
+  },
+  "error": {
+    "loadFailed": "Could not load your saved reports.",
+    "tryAgain": "↻ Try again"
+  },
+  "userSummary": {
+    "authProviderGoogle": "Signed in with Google",
+    "authProviderEmail": "Email & Password",
+    "viewFullProfile": "View Full Profile →"
+  },
+  "statistics": {
+    "sectionTitle": "Statistics",
+    "savedReports": "Saved Reports",
+    "memberSince": "Member Since",
+    "latestReading": "Latest Reading",
+    "currentTheme": "Current Theme",
+    "systemThemeLabel": "System ({{themeName}})",
+    "notAvailable": "—",
+    "loadingValue": "…"
+  },
+  "astrologySummary": {
+    "sectionTitle": "Astrology Summary",
+    "cardTitle": "From Your Latest Reading",
+    "padaBadge": " · Pada {{pada}}",
+    "lordBadge": "Lord: {{lord}}",
+    "currentMahadasha": "Current Mahadasha",
+    "currentAntardasha": "Current Antardasha"
+  },
+  "quickActions": {
+    "sectionTitle": "Quick Actions",
+    "generateNewReport": {
+      "label": "Generate New Report",
+      "desc": "Start a fresh Vedic reading"
+    },
+    "continueReading": {
+      "label": "Continue Reading",
+      "desc": "Reopen your last viewed report"
+    },
+    "myProfile": {
+      "label": "My Profile",
+      "desc": "View your profile details"
+    },
+    "savedReports": {
+      "label": "Saved Reports",
+      "desc": "Browse your full archive"
+    },
+    "askAI": {
+      "label": "Ask AI",
+      "desc": "Chat with your Astrology Assistant"
+    },
+    "aiLifeCoach": {
+      "label": "AI Life Coach",
+      "desc": "Daily, career, relationship, finance & wellness guidance"
+    },
+    "kundliMatching": {
+      "label": "Kundli Matching",
+      "desc": "Check Vedic compatibility for two people"
+    },
+    "panchangMuhurat": {
+      "label": "Panchang & Muhurat",
+      "desc": "Daily Panchang and auspicious timing finder"
+    },
+    "familyProfiles": {
+      "label": "Family Profiles",
+      "desc": "Manage every birth chart in your circle"
+    },
+    "relationshipHub": {
+      "label": "Relationship Hub",
+      "desc": "Compare any two saved profiles"
+    },
+    "settings": {
+      "label": "Settings",
+      "desc": "Manage your account"
+    }
+  },
+  "recentReports": {
+    "sectionTitle": "Recent Reports",
+    "viewAll": "View All →",
+    "emptyTitle": "No readings yet",
+    "emptyMessage": "Generate your first Vedic reading to see it appear here.",
+    "emptyAction": "✦ Generate New Report"
+  },
+  "aiLifeCoach": "AI Life Coach",
+  "todaysFocus": "Today's Focus:",
+  "personalizedInsights": "Personalized insights",
+  "yourPersonalizedGuidance": "✦ Your personalized guidance",
+  "insightPeriod": "Insight period",
+  "whatsChanged": "What’s changed:",
+  "noUpcomingEvents": "No upcoming events",
+  "loadingPanchang": "Loading Panchang overview…",
+  "bestTimeToday": "✨ Best Time Today",
+  "recommendedActivities": "✓ Recommended Activities",
+  "thingsToAvoid": "⚠ Things to Avoid",
+  "noReadingYet": "No reading available yet",
+  "astrologyCalendar": "📅 Astrology Calendar",
+  "dashaUnavailable": "Dasha unavailable",
+  "noUpcomingChanges": "No upcoming changes",
+  "noTransitData": "No transit data",
+  "auspicious": "✓ Auspicious",
+  "caution": "⚠ Caution",
+  "horoscopeDashboard": "🔮 Horoscope Dashboard",
+  "noWeeklyFocus": "No weekly focus available",
+  "noMonthlySegments": "No monthly segments this month",
+  "dailyPanchangMuhurat": "🕉️ Daily Panchang & Muhurat"
+}

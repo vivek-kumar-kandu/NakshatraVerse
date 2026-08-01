@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "past": "অতীত",
+    "present": "বৰ্তমান",
+    "nearFuture": "নিকট ভৱিষ্যত",
+    "nextMonth": "পৰৱৰ্তী মাহ",
+    "next3Months": "পৰৱৰ্তী 3 মাহ",
+    "next6Months": "পৰৱৰ্তী 6 মাহ",
+    "nextYear": "পৰৱৰ্তী বছৰ"
+  },
+  "horizons": {
+    "oneYear": "পৰৱৰ্তী 1 বছৰ",
+    "fiveYear": "পৰৱৰ্তী 5 বছৰ",
+    "tenYear": "পৰৱৰ্তী 10 বছৰ"
+  },
+  "filterCategories": {
+    "career": "কেৰিয়াৰ",
+    "finance": "বিত্ত",
+    "love": "প্ৰেম",
+    "marriage": "বিবাহ",
+    "health": "স্বাস্থ্য",
+    "education": "শিক্ষা",
+    "family": "পৰিয়াল",
+    "spiritual": "আধ্যাত্মিক"
+  },
+  "tab": {
+    "buildingTimeline": "আপোনাৰ AI টাইমলাইন সাজি থকা হৈছে…",
+    "notAvailableTitle": "টাইমলাইন এতিয়ালৈকে উপলব্ধ নহয়",
+    "notAvailableMessage": "আপোনাৰ চাৰ্ট গণনা কৰাৰ পিছত আপোনাৰ মহাদশা/অন্তৰ্দশা টাইমলাইন ইয়াত দেখা যাব।",
+    "currentDashaHeading": "বৰ্তমান দশা",
+    "mahadashaBadge": "মহাদশা: {{value}}",
+    "antardashaBadge": "অন্তৰ্দশা: {{value}}",
+    "dominantBadge": "প্ৰধান: {{planet}}",
+    "notAvailableValue": "—",
+    "filterByLifeAreaHeading": "জীৱন ক্ষেত্ৰৰ ভিত্তিত ফিল্টাৰ কৰক",
+    "noEventsTitle": "এই ফিল্টাৰৰ বাবে কোনো ঘটনা নাই",
+    "noEventsMessage": "বাছি লোৱা জীৱন ক্ষেত্ৰৰ সৈতে এতিয়ালৈকে কোনো AI টাইমলাইন ঘটনা মিলা নাই। এটা বেলেগ ফিল্টাৰ চেষ্টা কৰক বা সকলো বাছক।",
+    "sectionEventsAriaLabel": "{{label}} টাইমলাইন ঘটনাসমূহ"
+  },
+  "filters": {
+    "ariaLabel": "জীৱন ক্ষেত্ৰৰ ভিত্তিত AI টাইমলাইন ঘটনাসমূহ ফিল্টাৰ কৰক",
+    "all": "সকলো"
+  },
+  "eventCard": {
+    "generalCategoryFallback": "সাধাৰণ",
+    "upcomingPeriod": "আগন্তুক সময়ছোৱা",
+    "dateRangeArrow": "{{start}} → {{end}}",
+    "entryAriaLabel": "{{start}} ৰ বাবে AI টাইমলাইন প্ৰৱিষ্টি। AI ৰ দ্বাৰা ব্যাখ্যা কৰিবলৈ বাছক।",
+    "entryAriaLabelWithEnd": "{{start}} ৰ পৰা {{end}} লৈ AI টাইমলাইন প্ৰৱিষ্টি। AI ৰ দ্বাৰা ব্যাখ্যা কৰিবলৈ বাছক।",
+    "mahadashaBadge": "মহাদশা: {{value}}",
+    "antardashaBadge": "অন্তৰ্দশা: {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI ব্যাখ্যা",
+    "eventLabelFallback": "জীৱন-ক্ষেত্ৰ",
+    "prompt": "এই {{category}} ভৱিষ্যদ্বাণীৰ এটা Gemini-চালিত ব্যাখ্যা পাওক, যিটো সম্পূৰ্ণৰূপে এই চাৰ্টৰ নিজৰ বেকএণ্ড-গণনা কৰা তথ্যৰ ওপৰত ভিত্তি কৰি।",
+    "explainAriaLabel": "এই {{category}} ভৱিষ্যদ্বাণীক AI ৰ দ্বাৰা ব্যাখ্যা কৰক",
+    "explainButton": "✨ AI ৰ দ্বাৰা ব্যাখ্যা কৰক",
+    "generatingLabel": "এই {{category}} ভৱিষ্যদ্বাণীৰ বাবে AI ব্যাখ্যা সৃষ্টি কৰা হৈছে",
+    "loadFailed": "AI টাইমলাইন ব্যাখ্যা বৰ্তমান উপলব্ধ নহয়।",
+    "tryAgain": "↻ পুনৰ চেষ্টা কৰক"
+  },
+  "common": {
+    "nothingToShow": "এতিয়ালৈকে দেখুৱাবলৈ একো নাই।"
+  },
+  "legacyCard": {
+    "upcomingPeriod": "আগন্তুক সময়ছোৱা",
+    "mahadashaBadge": "মহাদশা: {{value}}",
+    "antardashaBadge": "অন্তৰ্দশা: {{value}}"
+  }
+}

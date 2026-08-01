@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "past": "অতীত",
+    "present": "বর্তমান",
+    "nearFuture": "নিকট ভবিষ্যৎ",
+    "nextMonth": "পরবর্তী মাস",
+    "next3Months": "পরবর্তী ৩ মাস",
+    "next6Months": "পরবর্তী ৬ মাস",
+    "nextYear": "পরবর্তী বছর"
+  },
+  "horizons": {
+    "oneYear": "পরবর্তী ১ বছর",
+    "fiveYear": "পরবর্তী ৫ বছর",
+    "tenYear": "পরবর্তী ১০ বছর"
+  },
+  "filterCategories": {
+    "career": "কর্মজীবন",
+    "finance": "অর্থ",
+    "love": "প্রেম",
+    "marriage": "বিবাহ",
+    "health": "স্বাস্থ্য",
+    "education": "শিক্ষা",
+    "family": "পরিবার",
+    "spiritual": "আধ্যাত্মিক"
+  },
+  "tab": {
+    "buildingTimeline": "আপনার AI টাইমলাইন তৈরি করা হচ্ছে…",
+    "notAvailableTitle": "টাইমলাইন এখনও উপলব্ধ নয়",
+    "notAvailableMessage": "আপনার চার্ট গণনা করা হলে আপনার মহাদশা/অন্তর্দশা টাইমলাইন এখানে দেখাবে।",
+    "currentDashaHeading": "বর্তমান দশা",
+    "mahadashaBadge": "মহাদশা: {{value}}",
+    "antardashaBadge": "অন্তর্দশা: {{value}}",
+    "dominantBadge": "প্রধান: {{planet}}",
+    "notAvailableValue": "—",
+    "filterByLifeAreaHeading": "জীবনক্ষেত্র অনুসারে ফিল্টার করুন",
+    "noEventsTitle": "এই ফিল্টারের জন্য কোনো ঘটনা নেই",
+    "noEventsMessage": "নির্বাচিত জীবনক্ষেত্রের সাথে এখনও কোনো AI টাইমলাইন ঘটনা মেলে না। একটি ভিন্ন ফিল্টার চেষ্টা করুন বা সব নির্বাচন করুন।",
+    "sectionEventsAriaLabel": "{{label}} টাইমলাইন ঘটনা"
+  },
+  "filters": {
+    "ariaLabel": "জীবনক্ষেত্র অনুসারে AI টাইমলাইন ঘটনা ফিল্টার করুন",
+    "all": "সব"
+  },
+  "eventCard": {
+    "generalCategoryFallback": "সাধারণ",
+    "upcomingPeriod": "আসন্ন সময়কাল",
+    "dateRangeArrow": "{{start}} → {{end}}",
+    "entryAriaLabel": "{{start}} এর জন্য AI টাইমলাইন এন্ট্রি। AI দিয়ে ব্যাখ্যা করতে নির্বাচন করুন।",
+    "entryAriaLabelWithEnd": "{{start}} থেকে {{end}} এর জন্য AI টাইমলাইন এন্ট্রি। AI দিয়ে ব্যাখ্যা করতে নির্বাচন করুন।",
+    "mahadashaBadge": "মহাদশা: {{value}}",
+    "antardashaBadge": "অন্তর্দশা: {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI ব্যাখ্যা",
+    "eventLabelFallback": "জীবনক্ষেত্র",
+    "prompt": "এই {{category}} ভবিষ্যদ্বাণীর একটি Gemini-চালিত ব্যাখ্যা পান, যা সম্পূর্ণরূপে এই চার্টের নিজস্ব ব্যাকএন্ড-গণনাকৃত তথ্যের উপর ভিত্তি করে।",
+    "explainAriaLabel": "এই {{category}} ভবিষ্যদ্বাণী AI দিয়ে ব্যাখ্যা করুন",
+    "explainButton": "✨ AI দিয়ে ব্যাখ্যা করুন",
+    "generatingLabel": "এই {{category}} ভবিষ্যদ্বাণীর জন্য AI ব্যাখ্যা তৈরি করা হচ্ছে",
+    "loadFailed": "AI টাইমলাইন ব্যাখ্যা বর্তমানে উপলব্ধ নয়।",
+    "tryAgain": "↻ আবার চেষ্টা করুন"
+  },
+  "common": {
+    "nothingToShow": "এখনও দেখানোর মতো কিছু নেই।"
+  },
+  "legacyCard": {
+    "upcomingPeriod": "আসন্ন সময়কাল",
+    "mahadashaBadge": "মহাদশা: {{value}}",
+    "antardashaBadge": "অন্তর্দশা: {{value}}"
+  }
+}

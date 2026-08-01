@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "daily": "ਰੋਜ਼ਾਨਾ",
+    "weekly": "ਹਫਤਾਵਾਰੀ",
+    "monthly": "ਮਹੀਨਾਵਾਰ",
+    "career": "ਕਰੀਅਰ",
+    "relationship": "ਰਿਸ਼ਤੇ",
+    "finance": "ਵਿੱਤ",
+    "health": "ਸਿਹਤ",
+    "growth": "ਵਿਕਾਸ"
+  },
+  "page": {
+    "back": "← ਪਿੱਛੇ",
+    "title": "🧭 AI ਲਾਈਫ ਕੋਚ",
+    "dailyCompanion": "{{name}} ਦਾ ਰੋਜ਼ਾਨਾ ਸਾਥੀ",
+    "updated": "{{time}} ਨੂੰ ਅੱਪਡੇਟ ਕੀਤਾ",
+    "refreshing": "ਤਾਜ਼ਾ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…",
+    "refreshGuidance": "↻ ਮਾਰਗਦਰਸ਼ਨ ਤਾਜ਼ਾ ਕਰੋ",
+    "tryAgain": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+    "loadingAriaLabel": "ਤੁਹਾਡਾ AI ਲਾਈਫ ਕੋਚ ਮਾਰਗਦਰਸ਼ਨ ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ",
+    "loadFailed": "ਤੁਹਾਡਾ AI ਲਾਈਫ ਕੋਚ ਮਾਰਗਦਰਸ਼ਨ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ।",
+    "refreshFailed": "ਤੁਹਾਡਾ AI ਲਾਈਫ ਕੋਚ ਮਾਰਗਦਰਸ਼ਨ ਤਾਜ਼ਾ ਨਹੀਂ ਹੋ ਸਕਿਆ।",
+    "noReadingTitle": "ਹਾਲੇ ਤੱਕ ਕੋਈ ਰੀਡਿੰਗ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+    "noReadingMessage": "ਆਪਣਾ ਵਿਅਕਤੀਗਤ AI ਲਾਈਫ ਕੋਚ ਵੇਖਣ ਲਈ ਪਹਿਲਾਂ ਇੱਕ ਰਿਪੋਰਟ ਬਣਾਓ ਜਾਂ ਖੋਲ੍ਹੋ।",
+    "backAction": "← ਪਿੱਛੇ"
+  },
+  "daily": {
+    "opportunities": "ਮੌਕੇ",
+    "challenges": "ਚੁਣੌਤੀਆਂ",
+    "recommendedActions": "ਸਿਫ਼ਾਰਸ਼ੀ ਕਾਰਵਾਈਆਂ",
+    "thingsToAvoid": "ਬਚਣ ਵਾਲੀਆਂ ਗੱਲਾਂ",
+    "spiritualGuidance": "🕉️ ਅਧਿਆਤਮਿਕ ਮਾਰਗਦਰਸ਼ਨ"
+  },
+  "outlook": {
+    "weeklyThemeTitle": "ਇਸ ਹਫ਼ਤੇ ਦਾ ਵਿਸ਼ਾ",
+    "weeklyEnergyLabel": "ਹਫਤਾਵਾਰੀ ਊਰਜਾ",
+    "monthlyThemeTitle": "ਇਸ ਮਹੀਨੇ ਦਾ ਵਿਸ਼ਾ",
+    "monthlyEnergyLabel": "ਮਹੀਨਾਵਾਰ ਊਰਜਾ",
+    "weeklyUnavailableTitle": "ਹਫਤਾਵਾਰੀ ਦ੍ਰਿਸ਼ਟੀਕੋਣ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+    "weeklyUnavailableMessage": "ਅਸੀਂ ਇਸ ਵੇਲੇ ਇਸ ਹਫ਼ਤੇ ਦਾ ਦ੍ਰਿਸ਼ਟੀਕੋਣ ਨਹੀਂ ਬਣਾ ਸਕੇ — ਕਿਰਪਾ ਕਰਕੇ ਤਾਜ਼ਾ ਕਰੋ।",
+    "monthlyUnavailableTitle": "ਮਹੀਨਾਵਾਰ ਦ੍ਰਿਸ਼ਟੀਕੋਣ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+    "monthlyUnavailableMessage": "ਅਸੀਂ ਇਸ ਵੇਲੇ ਇਸ ਮਹੀਨੇ ਦਾ ਦ੍ਰਿਸ਼ਟੀਕੋਣ ਨਹੀਂ ਬਣਾ ਸਕੇ — ਕਿਰਪਾ ਕਰਕੇ ਤਾਜ਼ਾ ਕਰੋ।",
+    "weeklyFocus": "ਹਫਤਾਵਾਰੀ ਫੋਕਸ",
+    "personalGrowthGoal": "ਵਿਅਕਤੀਗਤ ਵਿਕਾਸ ਟੀਚਾ",
+    "careerFocus": "ਕਰੀਅਰ ਫੋਕਸ",
+    "relationshipFocus": "ਰਿਸ਼ਤਾ ਫੋਕਸ",
+    "opportunities": "ਮੌਕੇ",
+    "challenges": "ਚੁਣੌਤੀਆਂ",
+    "bestDay": "ਸਭ ਤੋਂ ਵਧੀਆ ਦਿਨ: {{weekday}} ({{date}})",
+    "cautionDay": "ਸਾਵਧਾਨੀ ਦਾ ਦਿਨ: {{weekday}} ({{date}})"
+  },
+  "career": {
+    "cardTitle": "ਕਰੀਅਰ ਕੋਚ",
+    "progress": "ਕਰੀਅਰ ਤਰੱਕੀ",
+    "skillDevelopmentAdvice": "ਹੁਨਰ ਵਿਕਾਸ ਸਲਾਹ",
+    "promotionGuidance": "ਤਰੱਕੀ ਮਾਰਗਦਰਸ਼ਨ",
+    "businessSuggestions": "ਵਪਾਰਕ ਸੁਝਾਅ",
+    "bestTimeForDecisions": "ਮਹੱਤਵਪੂਰਨ ਫੈਸਲਿਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਸਮਾਂ"
+  },
+  "relationship": {
+    "cardTitle": "ਰਿਸ਼ਤਾ ਕੋਚ",
+    "guidance": "ਰਿਸ਼ਤਾ ਮਾਰਗਦਰਸ਼ਨ",
+    "marriageAdvice": "ਵਿਆਹ ਸਲਾਹ",
+    "familyHarmonyTips": "ਪਰਿਵਾਰਕ ਸਦਭਾਵਨਾ ਸੁਝਾਅ",
+    "communicationSuggestions": "ਸੰਚਾਰ ਸੁਝਾਅ",
+    "emotionalWellbeing": "ਭਾਵਨਾਤਮਕ ਤੰਦਰੁਸਤੀ"
+  },
+  "finance": {
+    "cardTitle": "ਵਿੱਤ ਕੋਚ",
+    "outlook": "ਵਿੱਤੀ ਦ੍ਰਿਸ਼ਟੀਕੋਣ",
+    "spendingSuggestions": "ਖਰਚ ਸੁਝਾਅ",
+    "savingAdvice": "ਬੱਚਤ ਸਲਾਹ",
+    "investmentAwareness": "ਨਿਵੇਸ਼ ਜਾਗਰੂਕਤਾ",
+    "businessOpportunities": "ਵਪਾਰਕ ਮੌਕੇ"
+  },
+  "health": {
+    "cardTitle": "ਸਿਹਤ ਅਤੇ ਤੰਦਰੁਸਤੀ",
+    "energyTrends": "ਊਰਜਾ ਰੁਝਾਨ",
+    "stressAwareness": "ਤਣਾਅ ਜਾਗਰੂਕਤਾ",
+    "meditationSuggestions": "ਧਿਆਨ ਸੁਝਾਅ",
+    "yogaRecommendations": "ਯੋਗ ਸਿਫ਼ਾਰਸ਼ਾਂ",
+    "spiritualPractices": "ਅਧਿਆਤਮਿਕ ਅਭਿਆਸ",
+    "lifestyleSuggestions": "ਜੀਵਨਸ਼ੈਲੀ ਸੁਝਾਅ"
+  },
+  "growth": {
+    "dailyGoals": "ਰੋਜ਼ਾਨਾ ਟੀਚੇ",
+    "weeklyGoals": "ਹਫਤਾਵਾਰੀ ਟੀਚੇ",
+    "monthlyFocus": "🌕 ਮਹੀਨਾਵਾਰ ਫੋਕਸ",
+    "habitSuggestions": "ਆਦਤ ਸੁਝਾਅ",
+    "learningRecommendations": "ਸਿੱਖਣ ਦੀਆਂ ਸਿਫ਼ਾਰਸ਼ਾਂ"
+  },
+  "scoreCard": {
+    "dailyEnergyLabel": "ਰੋਜ਼ਾਨਾ ਊਰਜਾ",
+    "todaysFocus": "ਅੱਜ ਦਾ ਫੋਕਸ"
+  },
+  "confidenceBadge": {
+    "withScore": "ਭਰੋਸਾ: {{label}} ({{score}}/100)",
+    "withoutScore": "ਭਰੋਸਾ: {{label}}"
+  },
+  "whyNote": {
+    "prefix": "ਕਿਉਂ? "
+  },
+  "luckyElements": {
+    "title": "🍀 ਅੱਜ ਦੇ ਖੁਸ਼ਕਿਸਮਤ ਤੱਤ",
+    "color": "ਰੰਗ",
+    "number": "ਅੰਕ",
+    "direction": "ਦਿਸ਼ਾ",
+    "favorableTime": "ਅਨੁਕੂਲ ਸਮਾਂ"
+  },
+  "affirmation": {
+    "dailyAffirmation": "✦ ਰੋਜ਼ਾਨਾ ਪੁਸ਼ਟੀਕਰਨ",
+    "spiritualPractice": "🕉️ ਅੱਜ ਦਾ ਅਧਿਆਤਮਿਕ ਅਭਿਆਸ"
+  }
+}

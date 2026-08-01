@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "முகப்பு",
+    "features": "அம்சங்கள்",
+    "about": "எங்களைப் பற்றி",
+    "faq": "அடிக்கடி கேட்கப்படும் கேள்விகள்"
+  },
+  "navbar": {
+    "brandAriaLabel": "நக்ஷத்ரவர்ஸ் — முகப்பு",
+    "primaryAriaLabel": "முதன்மை",
+    "openMenu": "மெனுவைத் திறக்கவும்",
+    "closeMenu": "மெனுவை மூடவும்"
+  },
+  "auth": {
+    "home": "முகப்பு",
+    "dashboard": "டாஷ்போர்டு",
+    "reports": "அறிக்கைகள்",
+    "profile": "சுயவிவரம்"
+  },
+  "accountMenu": {
+    "myProfile": "எனது சுயவிவரம்",
+    "dashboard": "டாஷ்போர்டு",
+    "savedReports": "சேமிக்கப்பட்ட அறிக்கைகள்",
+    "settings": "அமைப்புகள்",
+    "helpAbout": "உதவி மற்றும் தகவல்",
+    "memberSince": "{{date}} முதல் உறுப்பினர்",
+    "menuLabel": "கணக்கு",
+    "triggerLabel": "{{name}} க்கான கணக்கு மெனு"
+  },
+  "actionDock": {
+    "askAi": "AI-யிடம் கேளுங்கள்",
+    "horoscope": "ராசிபலன்",
+    "calendar": "நாட்காட்டி",
+    "lifeCoach": "வாழ்க்கை பயிற்சியாளர்",
+    "kundliMatching": "ஜாதக பொருத்தம்",
+    "panchang": "பஞ்சாங்கம்",
+    "festivalCalendar": "திருவிழா நாட்காட்டி",
+    "notifications": "அறிவிப்புகள்",
+    "saveReport": "அறிக்கையைச் சேமிக்கவும்",
+    "saving": "சேமிக்கப்படுகிறது…",
+    "downloadPdf": "PDF பதிவிறக்கவும்",
+    "preparing": "தயார் செய்யப்படுகிறது…",
+    "printPdf": "PDF அச்சிடவும்",
+    "opening": "திறக்கப்படுகிறது…",
+    "reportActions": "அறிக்கை செயல்கள்",
+    "openReportActions": "அறிக்கை செயல்களைத் திறக்கவும்",
+    "close": "மூடு",
+    "somethingWentWrong": "ஏதோ தவறு நடந்துவிட்டது."
+  },
+  "commandPalette": {
+    "ariaLabel": "கட்டளை பலகை",
+    "searchAriaLabel": "கட்டளை பலகை தேடல்",
+    "commandsAriaLabel": "கட்டளைகள்",
+    "sections": {
+      "navigate": "வழிசெலுத்தவும்",
+      "theme": "தீம்",
+      "settings": "அமைப்புகள்",
+      "recent": "சமீபத்திய",
+      "recentReports": "சமீபத்திய அறிக்கைகள்",
+      "recentReportsLoading": "சமீபத்திய அறிக்கைகள் · ஏற்றப்படுகிறது…"
+    },
+    "nav": {
+      "dashboard": "டாஷ்போர்டு",
+      "generateReport": "அறிக்கையை உருவாக்கவும்",
+      "savedReports": "சேமிக்கப்பட்ட அறிக்கைகள்",
+      "profile": "சுயவிவரம்",
+      "settings": "அமைப்புகள்",
+      "horoscope": "ராசிபலன்",
+      "calendar": "நாட்காட்டி",
+      "aiAssistant": "AI உதவியாளர்",
+      "aiLifeCoach": "AI வாழ்க்கை பயிற்சியாளர்",
+      "kundliMatching": "ஜாதக பொருத்தம்",
+      "dailyPanchang": "தினசரி பஞ்சாங்கம் மற்றும் முகூர்த்தம்",
+      "festivalCalendar": "திருவிழா நாட்காட்டி",
+      "todaysFestival": "இன்றைய திருவிழா",
+      "upcomingFestivals": "வரவிருக்கும் திருவிழாக்கள்",
+      "notificationCenter": "அறிவிப்பு மையம்",
+      "unreadNotifications": "படிக்காத அறிவிப்புகள்",
+      "familyProfiles": "குடும்ப சுயவிவரங்கள்",
+      "relationshipHub": "உறவுகள் மையம்",
+      "help": "உதவி"
+    },
+    "theme": {
+      "light": "சேக்ரட் டான் க்கு மாறவும்",
+      "dark": "மிட்நைட் காஸ்மிக் க்கு மாறவும்",
+      "system": "சிஸ்டம் தீமிற்கு மாறவும்"
+    },
+    "settingsSections": {
+      "account": "அமைப்புகள் · கணக்கு",
+      "appearance": "அமைப்புகள் · தோற்றம்",
+      "preferences": "அமைப்புகள் · விருப்பங்கள்",
+      "privacy": "அமைப்புகள் · தனியுரிமை",
+      "about": "அமைப்புகள் · தகவல்"
+    },
+    "untitledReport": "தலைப்பில்லா அறிக்கை",
+    "noMatches": "பொருந்தும் கட்டளை இல்லை.",
+    "noMatchesFor": "\"{{query}}\" க்கு பொருந்தும் கட்டளை இல்லை.",
+    "searchPlaceholder": "பக்கங்கள், அறிக்கைகள், யோகங்கள், தோஷங்கள், பரிகாரங்களைத் தேடவும்…"
+  }
+}

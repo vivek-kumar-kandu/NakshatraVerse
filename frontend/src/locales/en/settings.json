@@ -1,0 +1,138 @@
+{
+  "pageTitle": "Settings",
+  "sections": {
+    "navAriaLabel": "Settings sections",
+    "account": "Account",
+    "appearance": "Appearance",
+    "preferences": "Preferences",
+    "privacy": "Privacy",
+    "about": "About"
+  },
+  "language": {
+    "title": "Language",
+    "desc": "Choose the language NakshatraVerse's interface is shown in.",
+    "note": "Your choice is saved to this device and applied every time you open NakshatraVerse.",
+    "comingSoon": "More languages are on the way — interface text will appear in {{language}} once translation is complete. For now it stays in English."
+  },
+  "appearance": {
+    "persistNote": "Your choice is saved to this device and applied every time you open NakshatraVerse.",
+    "theme": {
+      "title": "Theme",
+      "descCurrentlyUsing": "Currently using {{themeName}}{{systemSuffix}}.",
+      "systemSuffix": " (following your system setting)",
+      "system": "System"
+    }
+  },
+  "periods": {
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "monthly": "Monthly"
+  },
+  "preferences": {
+    "dashboardView": {
+      "title": "Default Dashboard View",
+      "desc": "Grid or list layout for Saved Reports on your Dashboard."
+    },
+    "grid": "Grid",
+    "list": "List",
+    "animationLevel": {
+      "title": "Animation Level",
+      "desc": "Reduce or disable motion effects throughout the app."
+    },
+    "animationOptions": {
+      "full": "Full",
+      "reduced": "Reduced",
+      "none": "None"
+    },
+    "compactMode": {
+      "title": "Compact Mode",
+      "desc": "Tighter spacing on this Settings page."
+    },
+    "rememberLastSection": {
+      "title": "Remember Last Opened Section",
+      "desc": "Reopen Settings on the section you were last viewing."
+    },
+    "reportTab": {
+      "title": "Default Report Tab",
+      "desc": "Which report tab opens first when you view a reading."
+    },
+    "horoscopeView": {
+      "title": "Default Horoscope View",
+      "desc": "Which period the Horoscope Dashboard opens on."
+    },
+    "calendarView": {
+      "title": "Default Calendar View",
+      "desc": "Whether the Astrology Calendar opens showing every section, or just the merged Timeline."
+    },
+    "calendarOptions": {
+      "allSections": "All Sections",
+      "timeline": "Timeline"
+    },
+    "aiResponseLength": {
+      "title": "AI Response Length",
+      "desc": "How detailed the AI Assistant's answers are."
+    },
+    "aiResponseOptions": {
+      "concise": "Concise",
+      "balanced": "Balanced",
+      "detailed": "Detailed"
+    },
+    "rememberLastReport": {
+      "title": "Remember Last Opened Report",
+      "desc": "Let the Dashboard offer to reopen the last report you viewed."
+    },
+    "showWelcomeAnimation": {
+      "title": "Show Welcome Animation",
+      "desc": "Show the one-time splash animation each time you open NakshatraVerse."
+    },
+    "commandPaletteHint": {
+      "title": "Command Palette Shortcut Hint",
+      "desc": "Show a one-time tip about the ⌘K / Ctrl+K Command Palette shortcut after signing in."
+    }
+  },
+  "privacy": {
+    "exportData": {
+      "title": "Export Account Data",
+      "desc": "Download a JSON file of your profile, saved reports, and settings on this device.",
+      "button": "Export Data",
+      "preparing": "Preparing…"
+    },
+    "clearCache": {
+      "title": "Clear Local Cached Data",
+      "desc": "Clears transient, session-only app state stored on this device.",
+      "button": "Clear Cache"
+    },
+    "resetPrefs": {
+      "title": "Reset Application Preferences",
+      "desc": "Resets Appearance and Preferences back to defaults on this device.",
+      "button": "Reset Preferences"
+    }
+  },
+  "toast": {
+    "themeSet": "Theme set to {{theme}}.",
+    "dashboardViewSet": "Default dashboard view set to {{view}}. Applies next time you open the Dashboard.",
+    "animationLevelSet": "Animation level set to {{level}}."
+  },
+  "confirmDialogs": {
+    "clearCache": {
+      "title": "Clear local cached data?",
+      "message": "Clears cached, session-only app state on this device (e.g. the one-time welcome splash). Your account, profile photo, saved reports, and preferences are not affected.",
+      "confirmLabel": "Clear Cache",
+      "loadingLabel": "Clearing…"
+    },
+    "resetPrefs": {
+      "title": "Reset application preferences?",
+      "message": "Resets Appearance and Preferences (theme, dashboard view, animation level, compact mode, and all personalization defaults below) back to their defaults on this device. Your account, profile photo, and saved reports are not affected.",
+      "confirmLabel": "Reset",
+      "loadingLabel": "Resetting…"
+    },
+    "genericError": "That action could not be completed."
+  },
+  "messages": {
+    "exportStarted": "Your account data export has started downloading.",
+    "exportFailed": "Could not export your account data right now.",
+    "cacheCleared": "Local cached data cleared.",
+    "noCacheToClear": "There was no local cached data to clear.",
+    "prefsReset": "Preferences and theme have been reset to their defaults."
+  }
+}

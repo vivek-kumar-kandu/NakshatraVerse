@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "past": "ಗತಕಾಲ",
+    "present": "ವರ್ತಮಾನ",
+    "nearFuture": "ಸಮೀಪದ ಭವಿಷ್ಯ",
+    "nextMonth": "ಮುಂದಿನ ತಿಂಗಳು",
+    "next3Months": "ಮುಂದಿನ 3 ತಿಂಗಳುಗಳು",
+    "next6Months": "ಮುಂದಿನ 6 ತಿಂಗಳುಗಳು",
+    "nextYear": "ಮುಂದಿನ ವರ್ಷ"
+  },
+  "horizons": {
+    "oneYear": "ಮುಂದಿನ 1 ವರ್ಷ",
+    "fiveYear": "ಮುಂದಿನ 5 ವರ್ಷಗಳು",
+    "tenYear": "ಮುಂದಿನ 10 ವರ್ಷಗಳು"
+  },
+  "filterCategories": {
+    "career": "ವೃತ್ತಿ",
+    "finance": "ಹಣಕಾಸು",
+    "love": "ಪ್ರೀತಿ",
+    "marriage": "ವಿವಾಹ",
+    "health": "ಆರೋಗ್ಯ",
+    "education": "ಶಿಕ್ಷಣ",
+    "family": "ಕುಟುಂಬ",
+    "spiritual": "ಆಧ್ಯಾತ್ಮಿಕ"
+  },
+  "tab": {
+    "buildingTimeline": "ನಿಮ್ಮ AI ಟೈಮ್‌ಲೈನ್ ಅನ್ನು ನಿರ್ಮಿಸಲಾಗುತ್ತಿದೆ…",
+    "notAvailableTitle": "ಟೈಮ್‌ಲೈನ್ ಇನ್ನೂ ಲಭ್ಯವಿಲ್ಲ",
+    "notAvailableMessage": "ನಿಮ್ಮ ಚಾರ್ಟ್ ಲೆಕ್ಕಹಾಕಿದ ನಂತರ ನಿಮ್ಮ ಮಹಾದಶೆ/ಅಂತರ್ದಶೆ ಟೈಮ್‌ಲೈನ್ ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ.",
+    "currentDashaHeading": "ಪ್ರಸ್ತುತ ದಶೆ",
+    "mahadashaBadge": "ಮಹಾದಶೆ: {{value}}",
+    "antardashaBadge": "ಅಂತರ್ದಶೆ: {{value}}",
+    "dominantBadge": "ಪ್ರಮುಖ: {{planet}}",
+    "notAvailableValue": "—",
+    "filterByLifeAreaHeading": "ಜೀವನ ಕ್ಷೇತ್ರದ ಆಧಾರದ ಮೇಲೆ ಫಿಲ್ಟರ್ ಮಾಡಿ",
+    "noEventsTitle": "ಈ ಫಿಲ್ಟರ್‌ಗೆ ಯಾವುದೇ ಘಟನೆಗಳಿಲ್ಲ",
+    "noEventsMessage": "ಆಯ್ಕೆ ಮಾಡಿದ ಜೀವನ ಕ್ಷೇತ್ರಕ್ಕೆ ಇನ್ನೂ ಯಾವುದೇ AI ಟೈಮ್‌ಲೈನ್ ಘಟನೆ ಹೊಂದುವುದಿಲ್ಲ. ಬೇರೆ ಫಿಲ್ಟರ್ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆಮಾಡಿ.",
+    "sectionEventsAriaLabel": "{{label}} ಟೈಮ್‌ಲೈನ್ ಘಟನೆಗಳು"
+  },
+  "filters": {
+    "ariaLabel": "ಜೀವನ ಕ್ಷೇತ್ರದ ಆಧಾರದ ಮೇಲೆ AI ಟೈಮ್‌ಲೈನ್ ಘಟನೆಗಳನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಿ",
+    "all": "ಎಲ್ಲಾ"
+  },
+  "eventCard": {
+    "generalCategoryFallback": "ಸಾಮಾನ್ಯ",
+    "upcomingPeriod": "ಮುಂಬರುವ ಅವಧಿ",
+    "dateRangeArrow": "{{start}} → {{end}}",
+    "entryAriaLabel": "{{start}} ಗಾಗಿ AI ಟೈಮ್‌ಲೈನ್ ಎಂಟ್ರಿ. AI ಮೂಲಕ ವಿವರಿಸಲು ಆಯ್ಕೆಮಾಡಿ.",
+    "entryAriaLabelWithEnd": "{{start}} ಇಂದ {{end}} ವರೆಗಿನ AI ಟೈಮ್‌ಲೈನ್ ಎಂಟ್ರಿ. AI ಮೂಲಕ ವಿವರಿಸಲು ಆಯ್ಕೆಮಾಡಿ.",
+    "mahadashaBadge": "ಮಹಾದಶೆ: {{value}}",
+    "antardashaBadge": "ಅಂತರ್ದಶೆ: {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI ವಿವರಣೆ",
+    "eventLabelFallback": "ಜೀವನ-ಕ್ಷೇತ್ರ",
+    "prompt": "ಈ {{category}} ಭವಿಷ್ಯವಾಣಿಯ Gemini-ಚಾಲಿತ ವಿವರಣೆಯನ್ನು ಪಡೆಯಿರಿ, ಇದು ಸಂಪೂರ್ಣವಾಗಿ ಈ ಚಾರ್ಟ್‌ನ ಸ್ವಂತ ಬ್ಯಾಕೆಂಡ್-ಲೆಕ್ಕ ಹಾಕಿದ ಸತ್ಯಗಳನ್ನು ಆಧರಿಸಿದೆ.",
+    "explainAriaLabel": "ಈ {{category}} ಭವಿಷ್ಯವಾಣಿಯನ್ನು AI ಮೂಲಕ ವಿವರಿಸಿ",
+    "explainButton": "✨ AI ಮೂಲಕ ವಿವರಿಸಿ",
+    "generatingLabel": "ಈ {{category}} ಭವಿಷ್ಯವಾಣಿಗಾಗಿ AI ವಿವರಣೆಯನ್ನು ರಚಿಸಲಾಗುತ್ತಿದೆ",
+    "loadFailed": "AI ಟೈಮ್‌ಲೈನ್ ವಿವರಣೆ ಪ್ರಸ್ತುತ ಲಭ್ಯವಿಲ್ಲ.",
+    "tryAgain": "↻ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+  },
+  "common": {
+    "nothingToShow": "ಇನ್ನೂ ತೋರಿಸಲು ಏನೂ ಇಲ್ಲ."
+  },
+  "legacyCard": {
+    "upcomingPeriod": "ಮುಂಬರುವ ಅವಧಿ",
+    "mahadashaBadge": "ಮಹಾದಶೆ: {{value}}",
+    "antardashaBadge": "ಅಂತರ್ದಶೆ: {{value}}"
+  }
+}

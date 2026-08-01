@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← டாஷ்போர்டுக்குத் திரும்பு",
+    "title": "சேமிக்கப்பட்ட அறிக்கைகள்",
+    "titleWithCount": "சேமிக்கப்பட்ட அறிக்கைகள் ({{count}})",
+    "generateNewReport": "✦ புதிய அறிக்கையை உருவாக்கவும்",
+    "loadFailed": "உங்கள் சேமிக்கப்பட்ட அறிக்கைகளை ஏற்ற முடியவில்லை.",
+    "tryAgain": "↻ மீண்டும் முயற்சிக்கவும்",
+    "deleteToastSuccess": "\"{{title}}\" நீக்கப்பட்டது.",
+    "deleteToastFallbackTitle": "அறிக்கை",
+    "deleteFailed": "அந்த அறிக்கையை நீக்க முடியவில்லை.",
+    "downloadToastSuccess": "PDF பதிவிறக்கப்பட்டது.",
+    "downloadFailed": "PDF உருவாக்க முடியவில்லை.",
+    "emptyTitle": "இதுவரை சேமிக்கப்பட்ட அறிக்கை இல்லை",
+    "emptyMessage": "இங்கே உங்கள் தொகுப்பை உருவாக்க ஒரு படிப்பை உருவாக்கி, அறிக்கையைச் சேமி என்பதைத் தட்டவும்.",
+    "emptyAction": "✦ புதிய அறிக்கையை உருவாக்கவும்",
+    "noMatchesTitle": "பொருத்தம் எதுவும் கிடைக்கவில்லை",
+    "noMatchesMessage": "சேமிக்கப்பட்ட எந்த அறிக்கையும் \"{{query}}\" உடன் பொருந்தவில்லை. வேறு தலைப்பு, பெயர் அல்லது லக்னத்தை முயற்சிக்கவும்.",
+    "clearSearch": "தேடலை அழிக்கவும்",
+    "deleteDialog": {
+      "title": "இந்த அறிக்கையை நீக்கவா?",
+      "message": "\"{{title}}\" நிரந்தரமாக அகற்றப்படும். இதை மீட்டெடுக்க முடியாது.",
+      "fallbackTitle": "இந்த அறிக்கை",
+      "confirmLabel": "நீக்கு",
+      "cancelLabel": "ரத்து செய்யவும்"
+    }
+  },
+  "detail": {
+    "loadFailed": "அந்த அறிக்கையை ஏற்ற முடியவில்லை.",
+    "backToSavedReports": "← சேமிக்கப்பட்ட அறிக்கைகளுக்குத் திரும்பு",
+    "loading": "உங்கள் சேமிக்கப்பட்ட படிப்பு ஏற்றப்படுகிறது…",
+    "openHoroscope": "🔮 ராசிபலன்",
+    "openCalendar": "📅 நாட்காட்டி",
+    "openLifeCoach": "🧭 வாழ்க்கை பயிற்சியாளர்",
+    "askAI": "✨ AI-யிடம் கேளுங்கள்"
+  },
+  "card": {
+    "savedOn": "{{date}} அன்று சேமிக்கப்பட்டது",
+    "view": "காண்க",
+    "preview": "முன்னோட்டம்",
+    "download": "PDF",
+    "delete": "நீக்கு",
+    "deleting": "நீக்கப்படுகிறது…",
+    "lagnaSuffix": "{{lagna}} லக்னம்",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "அறிக்கை தளவமைப்பு",
+    "gridView": "கட்ட காட்சி",
+    "listView": "பட்டியல் காட்சி",
+    "searchPlaceholder": "தலைப்பு, பெயர் அல்லது லக்னத்தால் தேடவும்…",
+    "searchAriaLabel": "சேமிக்கப்பட்ட அறிக்கைகளைத் தேடவும்",
+    "sortAriaLabel": "சேமிக்கப்பட்ட அறிக்கைகளை வரிசைப்படுத்தவும்",
+    "resultCountSingle": "{{count}} அறிக்கை",
+    "resultCountPlural": "{{count}} அறிக்கைகள்",
+    "resultCountFiltered": "{{total}} இல் {{count}}"
+  },
+  "sort": {
+    "newest": "புதியது முதலில்",
+    "oldest": "பழையது முதலில்",
+    "title-asc": "தலைப்பு (A–Z)",
+    "title-desc": "தலைப்பு (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} இன் முன்னோட்டம்",
+    "closePreview": "முன்னோட்டத்தை மூடு",
+    "savedOn": "{{date}} அன்று சேமிக்கப்பட்டது",
+    "noDetails": "இந்த அறிக்கைக்கு கூடுதல் விவரங்கள் எதுவும் சேமிக்கப்படவில்லை.",
+    "description": "இது உங்கள் சேமிக்கப்பட்ட படிப்பின் விவரங்களின் விரைவு முன்னோட்டம். ஒவ்வொரு பிரிவையும் படிக்க முழு அறிக்கையையும் திறக்கவும் — காதல், தொழில், செல்வம், ஆரோக்கியம், தோஷங்கள் மற்றும் யோகங்கள், பரிகாரங்கள், மற்றும் உங்கள் வாழ்க்கை சுருக்கம்.",
+    "viewFullReport": "✦ முழு அறிக்கையைக் காண்க",
+    "preparingPdf": "PDF தயார் செய்யப்படுகிறது…",
+    "downloadPdf": "⭳ PDF பதிவிறக்கவும்"
+  },
+  "summarizeAiAria": "AI உடன் இந்த அறிக்கையை சுருக்கவும்",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy is not part of this chart's backend-derived remedies."
+}

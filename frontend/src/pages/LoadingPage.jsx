@@ -1,6 +1,12 @@
 import { useState, useEffect, useRef, memo } from "react";
+<<<<<<< HEAD
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import { LOADING_MSGS, ZODIAC_SIGNS, GOLD_GRADIENT } from "../constants/astrology.js";
+=======
+import { useTranslation } from "react-i18next";
+import CosmicBg from "../components/common/CosmicBg.jsx";
+import { ZODIAC_SIGNS, GOLD_GRADIENT } from "../constants/astrology.js";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // Priority 5.1 performance note: the orbiting ring of zodiac glyphs is
@@ -14,6 +20,10 @@ import { LOADING_MSGS, ZODIAC_SIGNS, GOLD_GRADIENT } from "../constants/astrolog
 // animation itself is untouched (still 100% CSS-driven, GPU-composited).
 // ─────────────────────────────────────────────────────────────────────────
 const OrbitRing = memo(function OrbitRing() {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <div aria-hidden="true" style={{ position:"relative", width:"clamp(160px, 45vw, 200px)", height:"clamp(160px, 45vw, 200px)" }}>
       <div style={{
@@ -57,12 +67,21 @@ const OrbitRing = memo(function OrbitRing() {
 // fixed timer, so this screen and the actual AI report always finish
 // together no matter how long a retry/fallback takes.
 function LoadingPage({ userData, onComplete, ready }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["common"]);
+  const loadingMsgs = t("common:loadingPage.steps", { returnObjects: true });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [msgIdx, setMsgIdx] = useState(0);
   const [progress, setProgress] = useState(0);
   const readyRef = useRef(false);
   useEffect(() => { readyRef.current = ready; }, [ready]);
   useEffect(() => {
+<<<<<<< HEAD
     const t1 = setInterval(() => setMsgIdx(i => (i+1) % LOADING_MSGS.length), 2200);
+=======
+    const t1 = setInterval(() => setMsgIdx(i => (i+1) % loadingMsgs.length), 2200);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     // While still waiting on the real request, creep up to 90% and hold —
     // never claim "almost done" before the work is actually done. Once the
     // real call has settled, ramp quickly to 100% and hand off.
@@ -70,7 +89,11 @@ function LoadingPage({ userData, onComplete, ready }) {
       readyRef.current ? Math.min(p + 5, 100) : Math.min(p + 0.6, 90)
     )), 120);
     return () => { clearInterval(t1); clearInterval(t2); };
+<<<<<<< HEAD
   }, []);
+=======
+  }, [loadingMsgs.length]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   useEffect(() => { if (progress >= 100) onComplete(); }, [progress, onComplete]);
 
   return (
@@ -82,13 +105,21 @@ function LoadingPage({ userData, onComplete, ready }) {
         <div>
           <h2 style={{ margin:"0 0 10px", fontSize:26, background:GOLD_GRADIENT,
             WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", fontFamily:"Cinzel,serif" }}>
+<<<<<<< HEAD
             NakshatraVerse
+=======
+            {t("common:app.name")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </h2>
           {/* aria-live: screen reader users hear each rotating status
               message as it changes, instead of silence for the whole
               request duration. */}
           <p aria-live="polite" style={{ margin:0, fontSize:15, color:"var(--nv-text-secondary, rgba(200,160,255,0.8))", animation:"fadeInOut 2.2s infinite" }}>
+<<<<<<< HEAD
             {LOADING_MSGS[msgIdx]}
+=======
+            {loadingMsgs[msgIdx]}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         </div>
         <div style={{ width:300, maxWidth:"85vw" }}>
@@ -97,23 +128,39 @@ function LoadingPage({ userData, onComplete, ready }) {
             aria-valuenow={Math.round(progress)}
             aria-valuemin={0}
             aria-valuemax={100}
+<<<<<<< HEAD
             aria-label="Report generation progress"
+=======
+            aria-label={t("common:loadingPage.progressAriaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             style={{ background:"rgba(180,120,255,0.08)", borderRadius:8, height:5, overflow:"hidden", border:"1px solid rgba(180,120,255,0.18)" }}
           >
             <div style={{ height:"100%", width:`${progress}%`, background:"linear-gradient(90deg,#7b2fff,#ffd700)", borderRadius:8, transition:"width 0.1s" }} />
           </div>
+<<<<<<< HEAD
           <p style={{ margin:"9px 0 0", fontSize:12, color:"var(--nv-text-muted, rgba(200,160,255,0.45))", fontFamily:"Inter,sans-serif" }}>{Math.round(progress)}% complete</p>
+=======
+          <p style={{ margin:"9px 0 0", fontSize:12, color:"var(--nv-text-muted, rgba(200,160,255,0.45))", fontFamily:"Inter,sans-serif" }}>{t("common:loadingPage.percentComplete", { percent: Math.round(progress) })}</p>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           {/* Phase 1 (Loading & Feedback): discrete animated progress
               steps, complementing the continuous bar above. Each dot lights
               up as `progress` crosses its threshold, and the just-completed
               step gets a small "pop" — purely decorative, driven entirely
               by the same `progress` state the bar already uses, so it
               always stays in sync with real request completion. */}
+<<<<<<< HEAD
           <div role="list" aria-label="Report generation steps" style={{ display:"flex", justifyContent:"space-between", marginTop:14, gap:4 }}>
             {LOADING_MSGS.map((step, i) => {
               const threshold = ((i + 1) / LOADING_MSGS.length) * 100;
               const done = progress >= threshold - 0.5;
               const current = !done && progress >= threshold - (100 / LOADING_MSGS.length);
+=======
+          <div role="list" aria-label={t("common:loadingPage.stepsAriaLabel")} style={{ display:"flex", justifyContent:"space-between", marginTop:14, gap:4 }}>
+            {loadingMsgs.map((step, i) => {
+              const threshold = ((i + 1) / loadingMsgs.length) * 100;
+              const done = progress >= threshold - 0.5;
+              const current = !done && progress >= threshold - (100 / loadingMsgs.length);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               return (
                 <div key={step} role="listitem" style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:5, flex:1, minWidth:0 }}>
                   <div
@@ -140,8 +187,13 @@ function LoadingPage({ userData, onComplete, ready }) {
         </div>
         <p style={{ margin:0, fontSize:14, color:"var(--nv-text-muted, rgba(200,160,255,0.6))", fontStyle:"italic", fontFamily:"Inter,sans-serif" }}>
           {userData
+<<<<<<< HEAD
             ? <>Preparing cosmic chart for <strong style={{ color:"#bf7fff" }}>{userData.name}</strong>…</>
             : <>Just a moment…</>}
+=======
+            ? t("common:loadingPage.preparingFor", { name: userData.name })
+            : t("common:loadingPage.justAMoment")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </p>
       </div>
     </div>

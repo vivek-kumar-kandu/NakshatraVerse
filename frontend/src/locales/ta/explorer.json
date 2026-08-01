@@ -1,0 +1,169 @@
+{
+  "types": {
+    "planet": "கிரகம்",
+    "house": "பாவம்",
+    "sign": "ராசி",
+    "yoga": "யோகம்",
+    "dosha": "தோஷம்",
+    "nakshatra": "நட்சத்திரம்",
+    "ascendant": "லக்னம்",
+    "aspect": "பார்வை"
+  },
+  "typeSingular": {
+    "planet": "கிரகம்",
+    "house": "பாவம்",
+    "sign": "ராசி",
+    "yoga": "யோகம்",
+    "dosha": "தோஷம்",
+    "nakshatra": "நட்சத்திரம்",
+    "ascendant": "லக்னம்",
+    "aspect": "பார்வை"
+  },
+  "header": {
+    "title": "ஜாதக ஆய்வாளர்",
+    "breadcrumb": "{{type}} · {{item}}",
+    "notAvailable": "—",
+    "selectPrompt": "ஆராய ஒரு உருப்படியைத் தேர்ந்தெடுக்கவும்"
+  },
+  "mainPanel": {
+    "loadingPanel": "விவர பலகம் ஏற்றப்படுகிறது…",
+    "emptyTitle": "இதுவரை எதுவும் தேர்ந்தெடுக்கப்படவில்லை",
+    "emptyMessage": "இங்கே ஆராய பலகத்திலிருந்து ஒரு கிரகம், பாவம், ராசி, யோகம், தோஷம், நட்சத்திரம், லக்னம் அல்லது பார்வையைத் தேர்ந்தெடுக்கவும்.",
+    "regionAriaLabel": "ஆய்வாளர் விவர பலகம்"
+  },
+  "sidePanel": {
+    "treeAriaLabel": "ஆய்வாளர் தேர்வு வகைகள்",
+    "categoryAriaLabel": "{{label}} ({{count}})",
+    "housePrefix": "பாவம் {{num}}",
+    "lordBadge": "அதிபதி: {{lord}}",
+    "aspectCountSingle": "{{count}} பார்வை",
+    "aspectCountPlural": "{{count}} பார்வைகள்",
+    "netInfluence": "நிகர {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI விளக்கம்",
+    "prompt": "{{label}} இன் Gemini-இயக்கப்பட்ட விளக்கத்தைப் பெறுங்கள், இது முழுவதுமாக இந்த ஜாதகத்தின் சொந்த பின்தள-கணக்கிடப்பட்ட உண்மைகளை அடிப்படையாகக் கொண்டது.",
+    "explainAriaLabel": "{{label}} ஐ AI மூலம் விளக்கவும்",
+    "explainButton": "✨ AI மூலம் விளக்கவும்",
+    "generatingLabel": "{{label}} க்கான AI விளக்கம் உருவாக்கப்படுகிறது",
+    "loadFailed": "ஆய்வாளர் AI தற்போது கிடைக்கவில்லை.",
+    "tryAgain": "↻ மீண்டும் முயற்சிக்கவும்"
+  },
+  "common": {
+    "relatedPredictions": "தொடர்புடைய கணிப்புகள்",
+    "relatedRemedies": "தொடர்புடைய பரிகாரங்கள்",
+    "noLinkedPredictionsTitle": "இணைக்கப்பட்ட கணிப்பு இல்லை",
+    "noLinkedRemediesTitle": "இணைக்கப்பட்ட பரிகாரம் இல்லை",
+    "noRemediesTitle": "பரிகாரங்கள் எதுவும் கிடைக்கவில்லை"
+  },
+  "planet": {
+    "notAvailableTitle": "கிரக தரவு கிடைக்கவில்லை",
+    "notAvailableMessage": "இந்த ஜாதகத்தில் இந்த கிரகத்திற்கான கணக்கிடப்பட்ட நிலை தரவு இதுவரை இல்லை.",
+    "positionDignityHeading": "நிலை மற்றும் கண்ணியம்",
+    "houseLabel": "பாவம்",
+    "signLabel": "ராசி",
+    "retrogradeBadge": "வக்ரம்",
+    "combustBadge": "அஸ்தமனம்",
+    "functionallyNature": "செயல்பாட்டு ரீதியாக {{nature}}",
+    "friendshipSignSuffix": "{{relation}} ராசி",
+    "adjustedStrengthScore": "சரிசெய்யப்பட்ட வலிமை மதிப்பெண்",
+    "foundationShadbala": "அடிப்படை ஷட்பலம்",
+    "notAvailableValue": "—",
+    "strengthUnavailable": "இந்த ஜாதகத்திற்கு விரிவான வலிமை மதிப்பீடு கிடைக்கவில்லை.",
+    "noLinkedPredictionsMessage": "தற்போது எந்த வகை கணிப்பும் {{planet}} ஐ அதன் முதன்மை அல்லது துணை கிரகமாகக் குறிப்பிடவில்லை.",
+    "noLinkedRemediesMessage": "இந்த ஜாதகத்தின் கணிப்புகள் மூலம் தற்போது {{planet}} உடன் எந்த பரிகாரமும் இணைக்கப்படவில்லை."
+  },
+  "house": {
+    "notAvailableTitle": "பாவ தரவு கிடைக்கவில்லை",
+    "notAvailableMessage": "இங்கே ஆராய பலகத்திலிருந்து ஒரு பாவத்தைத் தேர்ந்தெடுக்கவும்.",
+    "signBadge": "ராசி: {{sign}}",
+    "lordBadge": "அதிபதி: {{lord}}",
+    "meaning": "அர்த்தம்",
+    "notAvailableValue": "—",
+    "occupantsHeading": "நிலைபெற்ற கிரகங்கள்",
+    "noOccupants": "தற்போது இந்த பாவத்தில் எந்த கிரகமும் நிலைபெறவில்லை.",
+    "noLinkedPredictionsMessage": "தற்போது எந்த வகை கணிப்பும் பாவம் {{house}} ஐ துணை பாவமாகக் குறிப்பிடவில்லை.",
+    "noLinkedRemediesMessage": "இந்த ஜாதகத்தின் கணிப்புகள் மூலம் தற்போது பாவம் {{house}} உடன் எந்த பரிகாரமும் இணைக்கப்படவில்லை.",
+    "itemLabel": "பாவம் {{num}}"
+  },
+  "sign": {
+    "notAvailableTitle": "ராசி தரவு கிடைக்கவில்லை",
+    "notAvailableMessage": "இங்கே ஆராய பலகத்திலிருந்து ஒரு ராசியைத் தேர்ந்தெடுக்கவும்.",
+    "lordBadge": "அதிபதி: {{lord}}",
+    "lagnaBadge": "இந்த ஜாதகத்தின் லக்னம்",
+    "rulingPlanet": "ஆளும் கிரகம்",
+    "notAvailableValue": "—",
+    "occupantsHeading": "இந்த ராசியில் தற்போதைய கிரகங்கள்",
+    "noOccupants": "இந்த ஜாதகத்தில் தற்போது இந்த ராசியில் எந்த கிரகமும் இல்லை.",
+    "noLinkedPredictionsMessage": "தற்போது எந்த வகை கணிப்பும் இந்த ராசியில் நிலைபெற்ற எந்த கிரகத்துடனும் தொடர்புடையது இல்லை."
+  },
+  "yoga": {
+    "notFoundTitle": "யோகம் கிடைக்கவில்லை",
+    "notFoundMessage": "இந்த யோகம் இந்த ஜாதகத்திற்கான தற்போது அடையாளம் காணப்பட்ட தொகுப்பின் பகுதியல்ல.",
+    "ruleMatchedBadge": "விதி பொருந்தியது: {{name}}",
+    "contributingPlanetsHeading": "பங்களிக்கும் கிரகங்கள்",
+    "noContributingPlanets": "தற்போது எந்த வகை கணிப்பும் இந்த யோகத்தின் சிறப்பை குறிப்பிட்ட கிரகங்களுக்கு அளிக்கவில்லை.",
+    "confidenceEffectsTitle": "நம்பிக்கை மற்றும் விளைவுகள் (இணைக்கப்பட்ட கணிப்புகளிலிருந்து)",
+    "noLinkedPredictionsMessage": "தற்போது எந்த வகை கணிப்பும் இந்த யோகத்தை துணை காரணியாக மேற்கோள் காட்டவில்லை."
+  },
+  "dosha": {
+    "notFoundTitle": "தோஷம் கிடைக்கவில்லை",
+    "notFoundMessage": "இந்த தோஷம் இந்த ஜாதகத்திற்கான தற்போது அடையாளம் காணப்பட்ட தொகுப்பின் பகுதியல்ல.",
+    "matchingRuleBadge": "பொருந்தும் விதி: {{name}}",
+    "severityBadge": "தீவிரம்: {{severity}}",
+    "affectedHousesHeading": "பாதிக்கப்பட்ட பாவங்கள்",
+    "houseBadge": "பாவம் {{num}}",
+    "noAffectedHouses": "தற்போது எந்த வகை கணிப்பும் இந்த தோஷத்தை குறிப்பிட்ட பாவங்களுடன் இணைக்கவில்லை.",
+    "remedies": "பரிகாரங்கள்",
+    "noRemediesMessage": "தற்போது இந்த தோஷத்துடன் எந்த பரிகாரமும் இணைக்கப்படவில்லை.",
+    "linkedPredictions": "இணைக்கப்பட்ட கணிப்புகள்",
+    "noLinkedPredictionsMessage": "தற்போது எந்த வகை கணிப்பும் இந்த தோஷத்தை துணை காரணியாக மேற்கோள் காட்டவில்லை."
+  },
+  "nakshatra": {
+    "notAvailableTitle": "நட்சத்திர சுயவிவரம் கிடைக்கவில்லை",
+    "notAvailableMessage": "இந்த ஜாதகத்தில் கணக்கிடப்பட்ட நட்சத்திர சுயவிவரம் இதுவரை இல்லை.",
+    "itemLabel": "நட்சத்திரம்",
+    "padaBadge": "பாதம் {{pada}}",
+    "lordBadge": "அதிபதி: {{lord}}",
+    "ganaBadge": "{{gana}} கணம்",
+    "deity": "தேவதை",
+    "symbol": "சின்னம்",
+    "nadi": "நாடி",
+    "yoni": "யோனி",
+    "notAvailableValue": "—",
+    "personalityHeading": "ஆளுமை",
+    "careerTendencies": "தொழில் போக்குகள்",
+    "relationshipTendencies": "உறவு போக்குகள்",
+    "spiritualTendencies": "ஆன்மீக போக்குகள்"
+  },
+  "ascendant": {
+    "notAvailableTitle": "லக்னம் கிடைக்கவில்லை",
+    "notAvailableMessage": "இந்த ஜாதகத்தில் கணக்கிடப்பட்ட லக்னம் இதுவரை இல்லை.",
+    "itemLabel": "லக்னம்",
+    "lordBadge": "அதிபதி: {{lord}}",
+    "risingSign": "லக்னம் (உதய ராசி)",
+    "lagnaLord": "லக்ன அதிபதி",
+    "notAvailableValue": "—",
+    "characteristicsHeading": "குணாதிசயங்கள் (லக்ன அதிபதியின் வலிமையின் அடிப்படையில்)",
+    "functionallyNature": "செயல்பாட்டு ரீதியாக {{nature}}",
+    "predictionsLinkedTitle": "லக்ன அதிபதியுடன் இணைக்கப்பட்ட கணிப்புகள்",
+    "lagnaLordFallback": "லக்ன அதிபதி",
+    "noLinkedPredictionsMessage": "தற்போது எந்த வகை கணிப்பும் {{lord}} ஐ அதன் முதன்மை அல்லது துணை கிரகமாகக் குறிப்பிடவில்லை."
+  },
+  "aspect": {
+    "notAvailableTitle": "பார்வை தரவு கிடைக்கவில்லை",
+    "notAvailableMessage": "இங்கே ஆராய பலகத்திலிருந்து ஒரு பார்வையைத் தேர்ந்தெடுக்கவும்.",
+    "sourcesHeading": "பார்வை மூலம் → இலக்கு",
+    "beneficAspects": "சுப பார்வைகள்",
+    "maleficAspects": "பாப பார்வைகள்",
+    "netInfluenceStrength": "நிகர தாக்கம் (வலிமை)",
+    "housesAspected": "பார்வை பெற்ற பாவங்கள்",
+    "houseLabel": "பாவம் {{num}}",
+    "itemLabel": "{{target}} மீதான பார்வைகள்",
+    "interpretPureBenefic": "முற்றிலும் சுப பார்வைகள் — ஒரு துணை தாக்கம்.",
+    "interpretPureMalefic": "முற்றிலும் பாப பார்வைகள் — ஒரு சவாலான தாக்கம்.",
+    "interpretMixedNetBenefic": "கலப்பு பார்வைகள், ஒட்டுமொத்தமாக நிகர சுப தாக்கம்.",
+    "interpretMixedNetMalefic": "கலப்பு பார்வைகள், ஒட்டுமொத்தமாக நிகர பாப தாக்கம்.",
+    "interpretMixedNeutral": "கலப்பு பார்வைகள், அதன் நிகர தாக்கம் சமநிலையானது மற்றும் நடுநிலையானது."
+  }
+}

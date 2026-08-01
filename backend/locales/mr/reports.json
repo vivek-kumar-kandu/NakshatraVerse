@@ -1,0 +1,6 @@
+{
+  "notFound": "अहवाल आढळला नाही.",
+  "fieldsRequired": "अहवाल जतन करण्यासाठी userData, chart, आणि report सर्व आवश्यक आहेत.",
+  "pdfFieldsRequired": "PDF तयार करण्यासाठी userData, chart, आणि report सर्व आवश्यक आहेत.",
+  "matchingPdfFieldsRequired": "PDF तयार करण्यासाठी सर्व घटक आवश्यक आहेत."
+}

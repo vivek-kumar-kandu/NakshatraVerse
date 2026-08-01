@@ -21,14 +21,22 @@ import { asyncHandler } from "../middleware/errorHandler.js";
 export const getDailyPanchang = asyncHandler(async (req, res) => {
   const { errors, date, lat, lon } = validateDateQuery(req.query || {});
   if (errors.length) {
+<<<<<<< HEAD
     return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
+=======
+    return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
   try {
     const panchang = await withTiming("Panchang calculation", async () => computePanchang(date, lat, lon));
     res.json({ panchang });
   } catch (err) {
     logger.error("Panchang calculation error:", err);
+<<<<<<< HEAD
     res.status(500).json({ error: "Internal server error while calculating Panchang." });
+=======
+    res.status(500).json({ error: req.t("errors.internalErrorWhile", { action: "calculating Panchang" }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -39,7 +47,11 @@ export const getDailyPanchang = asyncHandler(async (req, res) => {
 export const getMonthPanchang = asyncHandler(async (req, res) => {
   const { errors, year, month } = validateMonthQuery(req.query || {});
   if (errors.length) {
+<<<<<<< HEAD
     return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
+=======
+    return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
   const lat = req.query?.lat !== undefined ? Number(req.query.lat) : undefined;
   const lon = req.query?.lon !== undefined ? Number(req.query.lon) : undefined;
@@ -68,7 +80,11 @@ export const getMonthPanchang = asyncHandler(async (req, res) => {
     res.json({ year, month, days });
   } catch (err) {
     logger.error("Panchang month overview error:", err);
+<<<<<<< HEAD
     res.status(500).json({ error: "Internal server error while building the Panchang month overview." });
+=======
+    res.status(500).json({ error: req.t("errors.internalErrorWhile", { action: "building the Panchang month overview" }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -83,14 +99,22 @@ export const getMuhuratActivities = asyncHandler(async (req, res) => {
 export const postFindMuhurat = asyncHandler(async (req, res) => {
   const { errors, activity, startDate, rangeDays } = validateMuhuratRequest(req.body || {});
   if (errors.length) {
+<<<<<<< HEAD
     return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
+=======
+    return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
   try {
     const muhurat = await withTiming("Muhurat search", async () => findMuhurat({ activity, startDate, rangeDays }));
     res.json({ muhurat });
   } catch (err) {
     logger.error("Muhurat search error:", err);
+<<<<<<< HEAD
     res.status(500).json({ error: "Internal server error while finding a Muhurat." });
+=======
+    res.status(500).json({ error: req.t("errors.internalErrorWhile", { action: "finding a Muhurat" }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -101,17 +125,29 @@ export const postFindMuhurat = asyncHandler(async (req, res) => {
 export const explainPanchang = asyncHandler(async (req, res) => {
   const { errors, kind, data } = validateExplainRequest(req.body || {});
   if (errors.length) {
+<<<<<<< HEAD
     return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
+=======
+    return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   if (!config.GOOGLE_API_KEY) {
     logger.error("panchang/explain called but no API key is configured.");
     return res.status(500).json({
+<<<<<<< HEAD
       error: "Server is missing an API key. Set GOOGLE_API_KEY in backend/.env (see backend/.env.example).",
     });
   }
 
   const prompt = buildPanchangExplainPrompt({ kind, data });
+=======
+      error: req.t ? req.t("errors.missingApiKey") : "Server is missing an API key. Set GOOGLE_API_KEY in backend/.env (see backend/.env.example).",
+    });
+  }
+
+  const prompt = buildPanchangExplainPrompt({ kind, data, language: req.language });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   try {
     const explanation = await withTiming("Gemini AI request (panchang)", () => callGemini(prompt));

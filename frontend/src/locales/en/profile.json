@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← Back to Dashboard",
+    "title": "My Profile",
+    "photoHint": "Click your photo to edit — upload, replace, or remove it.",
+    "authProviderGoogle": "Signed in with Google",
+    "authProviderEmail": "Email & Password",
+    "accountInformation": "Account Information",
+    "fullName": "Full Name",
+    "email": "Email",
+    "memberSince": "Member Since",
+    "accountType": "Account Type",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "Change Password",
+    "editProfileInSettings": "Edit Profile in Settings →",
+    "activitySummary": "Profile Activity Summary",
+    "totalReports": "Total Reports",
+    "loadingValue": "…",
+    "lastGenerated": "Last Generated",
+    "viewSavedReports": "View Saved Reports →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "Please choose a JPG, PNG, or WEBP image.",
+    "fileTooLarge": "That image is too large. Please choose a file under 8MB.",
+    "processFailed": "Could not process that image.",
+    "photoUpdated": "Profile photo updated.",
+    "saveFailed": "Could not save your photo.",
+    "photoRemoved": "Profile photo removed.",
+    "removeFailed": "Could not remove your photo.",
+    "changePhotoAriaLabel": "Change profile photo",
+    "uploadPhotoAriaLabel": "Upload profile photo",
+    "menuAriaLabel": "Profile photo options",
+    "replacePhoto": "Replace Photo",
+    "uploadPhoto": "Upload Photo",
+    "removePhoto": "Remove Photo",
+    "previewDialogAriaLabel": "Preview new profile photo",
+    "previewYourNewPhoto": "Preview your new photo",
+    "cancel": "Cancel",
+    "save": "Save"
+  }
+}

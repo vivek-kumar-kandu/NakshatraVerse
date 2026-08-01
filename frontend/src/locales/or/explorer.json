@@ -1,0 +1,169 @@
+{
+  "types": {
+    "planet": "ଗ୍ରହ",
+    "house": "ଭାବ",
+    "sign": "ରାଶି",
+    "yoga": "ଯୋଗ",
+    "dosha": "ଦୋଷ",
+    "nakshatra": "ନକ୍ଷତ୍ର",
+    "ascendant": "ଲଗ୍ନ",
+    "aspect": "ଦୃଷ୍ଟି"
+  },
+  "typeSingular": {
+    "planet": "ଗ୍ରହ",
+    "house": "ଭାବ",
+    "sign": "ରାଶି",
+    "yoga": "ଯୋଗ",
+    "dosha": "ଦୋଷ",
+    "nakshatra": "ନକ୍ଷତ୍ର",
+    "ascendant": "ଲଗ୍ନ",
+    "aspect": "ଦୃଷ୍ଟି"
+  },
+  "header": {
+    "title": "କୁଣ୍ଡଳୀ ଏକ୍ସପ୍ଲୋରର୍",
+    "breadcrumb": "{{type}} · {{item}}",
+    "notAvailable": "—",
+    "selectPrompt": "ଅନ୍ୱେଷଣ କରିବାକୁ ଏକ ଆଇଟମ୍ ବାଛନ୍ତୁ"
+  },
+  "mainPanel": {
+    "loadingPanel": "ବିବରଣୀ ପ୍ୟାନେଲ୍ ଲୋଡ୍ ହେଉଛି…",
+    "emptyTitle": "ଏପର୍ଯ୍ୟନ୍ତ କିଛି ଚୟନ ହୋଇନାହିଁ",
+    "emptyMessage": "ଏଠାରେ ଅନ୍ୱେଷଣ କରିବାକୁ ପ୍ୟାନେଲ୍‌ରୁ ଗ୍ରହ, ଭାବ, ରାଶି, ଯୋଗ, ଦୋଷ, ନକ୍ଷତ୍ର, ଲଗ୍ନ, କିମ୍ବା ଦୃଷ୍ଟି ବାଛନ୍ତୁ।",
+    "regionAriaLabel": "ଏକ୍ସପ୍ଲୋରର୍ ବିବରଣୀ ପ୍ୟାନେଲ୍"
+  },
+  "sidePanel": {
+    "treeAriaLabel": "ଏକ୍ସପ୍ଲୋରର୍ ଚୟନ ବର୍ଗ",
+    "categoryAriaLabel": "{{label}} ({{count}})",
+    "housePrefix": "ଭାବ {{num}}",
+    "lordBadge": "ସ୍ୱାମୀ: {{lord}}",
+    "aspectCountSingle": "{{count}} ଦୃଷ୍ଟି",
+    "aspectCountPlural": "{{count}} ଦୃଷ୍ଟିଗୁଡ଼ିକ",
+    "netInfluence": "ନିଟ୍ {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI ବ୍ୟାଖ୍ୟା",
+    "prompt": "{{label}} ର ଏକ Gemini-ପରିଚାଳିତ ବ୍ୟାଖ୍ୟା ପାଆନ୍ତୁ, ଯାହା ସମ୍ପୂର୍ଣ୍ଣ ଭାବରେ ଏହି ଚାର୍ଟର ନିଜସ୍ୱ ବ୍ୟାକଏଣ୍ଡ-ଗଣିତ ତଥ୍ୟ ଉପରେ ଆଧାରିତ।",
+    "explainAriaLabel": "{{label}} କୁ AI ଦ୍ୱାରା ବ୍ୟାଖ୍ୟା କରନ୍ତୁ",
+    "explainButton": "✨ AI ଦ୍ୱାରା ବ୍ୟାଖ୍ୟା କରନ୍ତୁ",
+    "generatingLabel": "{{label}} ପାଇଁ AI ବ୍ୟାଖ୍ୟା ତିଆରି କରାଯାଉଛି",
+    "loadFailed": "ଏକ୍ସପ୍ଲୋରର୍ AI ବର୍ତ୍ତମାନ ଉପଲବ୍ଧ ନାହିଁ।",
+    "tryAgain": "↻ ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ"
+  },
+  "common": {
+    "relatedPredictions": "ସମ୍ବନ୍ଧିତ ଭବିଷ୍ୟବାଣୀ",
+    "relatedRemedies": "ସମ୍ବନ୍ଧିତ ଉପାୟ",
+    "noLinkedPredictionsTitle": "କୌଣସି ଲିଙ୍କ୍ ହୋଇଥିବା ଭବିଷ୍ୟବାଣୀ ନାହିଁ",
+    "noLinkedRemediesTitle": "କୌଣସି ଲିଙ୍କ୍ ହୋଇଥିବା ଉପାୟ ନାହିଁ",
+    "noRemediesTitle": "କୌଣସି ଉପାୟ ଉପଲବ୍ଧ ନାହିଁ"
+  },
+  "planet": {
+    "notAvailableTitle": "ଗ୍ରହ ତଥ୍ୟ ଉପଲବ୍ଧ ନାହିଁ",
+    "notAvailableMessage": "ଏହି ଚାର୍ଟରେ ଏପର୍ଯ୍ୟନ୍ତ ଏହି ଗ୍ରହ ପାଇଁ ଗଣିତ ସ୍ଥିତି ତଥ୍ୟ ନାହିଁ।",
+    "positionDignityHeading": "ସ୍ଥିତି ଏବଂ ମର୍ଯ୍ୟାଦା",
+    "houseLabel": "ଭାବ",
+    "signLabel": "ରାଶି",
+    "retrogradeBadge": "ବକ୍ରୀ",
+    "combustBadge": "ଅସ୍ତ",
+    "functionallyNature": "କାର୍ଯ୍ୟକାରୀ ଭାବରେ {{nature}}",
+    "friendshipSignSuffix": "{{relation}} ରାଶି",
+    "adjustedStrengthScore": "ସାମଞ୍ଜସ୍ୟପୂର୍ଣ୍ଣ ଶକ୍ତି ସ୍କୋର",
+    "foundationShadbala": "ମୂଳ ଷଡ଼ବଳ",
+    "notAvailableValue": "—",
+    "strengthUnavailable": "ଏହି ଚାର୍ଟ ପାଇଁ ବିସ୍ତୃତ ଶକ୍ତି ସ୍କୋରିଂ ଉପଲବ୍ଧ ନାହିଁ।",
+    "noLinkedPredictionsMessage": "ବର୍ତ୍ତମାନ କୌଣସି ବର୍ଗ ଭବିଷ୍ୟବାଣୀ {{planet}} କୁ ଏହାର ମୁଖ୍ୟ କିମ୍ବା ସହାୟକ ଗ୍ରହ ଭାବରେ ଉଲ୍ଲେଖ କରେ ନାହିଁ।",
+    "noLinkedRemediesMessage": "ଏହି ଚାର୍ଟର ଭବିଷ୍ୟବାଣୀ ମାଧ୍ୟମରେ ବର୍ତ୍ତମାନ {{planet}} ସହିତ କୌଣସି ଉପାୟ ଲିଙ୍କ୍ ହୋଇନାହିଁ।"
+  },
+  "house": {
+    "notAvailableTitle": "ଭାବ ତଥ୍ୟ ଉପଲବ୍ଧ ନାହିଁ",
+    "notAvailableMessage": "ଏଠାରେ ଅନ୍ୱେଷଣ କରିବାକୁ ପ୍ୟାନେଲ୍‌ରୁ ଏକ ଭାବ ବାଛନ୍ତୁ।",
+    "signBadge": "ରାଶି: {{sign}}",
+    "lordBadge": "ସ୍ୱାମୀ: {{lord}}",
+    "meaning": "ଅର୍ଥ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "ସ୍ଥିତ ଗ୍ରହଗୁଡ଼ିକ",
+    "noOccupants": "ବର୍ତ୍ତମାନ ଏହି ଭାବରେ କୌଣସି ଗ୍ରହ ସ୍ଥିତ ନାହିଁ।",
+    "noLinkedPredictionsMessage": "ବର୍ତ୍ତମାନ କୌଣସି ବର୍ଗ ଭବିଷ୍ୟବାଣୀ ଭାବ {{house}} କୁ ସହାୟକ ଭାବ ଭାବରେ ଉଲ୍ଲେଖ କରେ ନାହିଁ।",
+    "noLinkedRemediesMessage": "ଏହି ଚାର୍ଟର ଭବିଷ୍ୟବାଣୀ ମାଧ୍ୟମରେ ବର୍ତ୍ତମାନ ଭାବ {{house}} ସହିତ କୌଣସି ଉପାୟ ଲିଙ୍କ୍ ହୋଇନାହିଁ।",
+    "itemLabel": "ଭାବ {{num}}"
+  },
+  "sign": {
+    "notAvailableTitle": "ରାଶି ତଥ୍ୟ ଉପଲବ୍ଧ ନାହିଁ",
+    "notAvailableMessage": "ଏଠାରେ ଅନ୍ୱେଷଣ କରିବାକୁ ପ୍ୟାନେଲ୍‌ରୁ ଏକ ରାଶି ବାଛନ୍ତୁ।",
+    "lordBadge": "ସ୍ୱାମୀ: {{lord}}",
+    "lagnaBadge": "ଏହି ଚାର୍ଟର ଲଗ୍ନ",
+    "rulingPlanet": "ଶାସକ ଗ୍ରହ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "ଏହି ରାଶିରେ ବର୍ତ୍ତମାନର ଗ୍ରହଗୁଡ଼ିକ",
+    "noOccupants": "ଏହି ଚାର୍ଟରେ ବର୍ତ୍ତମାନ ଏହି ରାଶିରେ କୌଣସି ଗ୍ରହ ସ୍ଥିତ ନାହିଁ।",
+    "noLinkedPredictionsMessage": "ବର୍ତ୍ତମାନ କୌଣସି ବର୍ଗ ଭବିଷ୍ୟବାଣୀ ଏହି ରାଶିରେ ସ୍ଥିତ କୌଣସି ଗ୍ରହ ସହିତ ସମ୍ବନ୍ଧିତ ନାହିଁ।"
+  },
+  "yoga": {
+    "notFoundTitle": "ଯୋଗ ମିଳିଲା ନାହିଁ",
+    "notFoundMessage": "ଏହି ଯୋଗ ଏହି ଚାର୍ଟ ପାଇଁ ବର୍ତ୍ତମାନ ଚିହ୍ନଟ ହୋଇଥିବା ସେଟ୍‌ର ଅଂଶ ନୁହେଁ।",
+    "ruleMatchedBadge": "ନିୟମ ମେଳ ଖାଇଲା: {{name}}",
+    "contributingPlanetsHeading": "ଅବଦାନ ଦେଉଥିବା ଗ୍ରହଗୁଡ଼ିକ",
+    "noContributingPlanets": "ବର୍ତ୍ତମାନ କୌଣସି ବର୍ଗ ଭବିଷ୍ୟବାଣୀ ଏହି ଯୋଗର ଶ୍ରେୟ ନିର୍ଦ୍ଦିଷ୍ଟ ଗ୍ରହଗୁଡ଼ିକୁ ଦିଏ ନାହିଁ।",
+    "confidenceEffectsTitle": "ବିଶ୍ୱାସ ଏବଂ ପ୍ରଭାବ (ଲିଙ୍କ୍ ହୋଇଥିବା ଭବିଷ୍ୟବାଣୀରୁ)",
+    "noLinkedPredictionsMessage": "ବର୍ତ୍ତମାନ କୌଣସି ବର୍ଗ ଭବିଷ୍ୟବାଣୀ ଏହି ଯୋଗକୁ ସହାୟକ କାରକ ଭାବରେ ଉଦ୍ଧୃତ କରେ ନାହିଁ।"
+  },
+  "dosha": {
+    "notFoundTitle": "ଦୋଷ ମିଳିଲା ନାହିଁ",
+    "notFoundMessage": "ଏହି ଦୋଷ ଏହି ଚାର୍ଟ ପାଇଁ ବର୍ତ୍ତମାନ ଚିହ୍ନଟ ହୋଇଥିବା ସେଟ୍‌ର ଅଂଶ ନୁହେଁ।",
+    "matchingRuleBadge": "ମେଳ ଖାଉଥିବା ନିୟମ: {{name}}",
+    "severityBadge": "ତୀବ୍ରତା: {{severity}}",
+    "affectedHousesHeading": "ପ୍ରଭାବିତ ଭାବଗୁଡ଼ିକ",
+    "houseBadge": "ଭାବ {{num}}",
+    "noAffectedHouses": "ବର୍ତ୍ତମାନ କୌଣସି ବର୍ଗ ଭବିଷ୍ୟବାଣୀ ଏହି ଦୋଷକୁ ନିର୍ଦ୍ଦିଷ୍ଟ ଭାବଗୁଡ଼ିକ ସହିତ ଯୋଡେ ନାହିଁ।",
+    "remedies": "ଉପାୟ",
+    "noRemediesMessage": "ବର୍ତ୍ତମାନ ଏହି ଦୋଷ ସହିତ କୌଣସି ଉପାୟ ଲିଙ୍କ୍ ହୋଇନାହିଁ।",
+    "linkedPredictions": "ଲିଙ୍କ୍ ହୋଇଥିବା ଭବିଷ୍ୟବାଣୀ",
+    "noLinkedPredictionsMessage": "ବର୍ତ୍ତମାନ କୌଣସି ବର୍ଗ ଭବିଷ୍ୟବାଣୀ ଏହି ଦୋଷକୁ ସହାୟକ କାରକ ଭାବରେ ଉଦ୍ଧୃତ କରେ ନାହିଁ।"
+  },
+  "nakshatra": {
+    "notAvailableTitle": "ନକ୍ଷତ୍ର ପ୍ରୋଫାଇଲ୍ ଉପଲବ୍ଧ ନାହିଁ",
+    "notAvailableMessage": "ଏହି ଚାର୍ଟରେ ଏପର୍ଯ୍ୟନ୍ତ ଗଣିତ ନକ୍ଷତ୍ର ପ୍ରୋଫାଇଲ୍ ନାହିଁ।",
+    "itemLabel": "ନକ୍ଷତ୍ର",
+    "padaBadge": "ପାଦ {{pada}}",
+    "lordBadge": "ସ୍ୱାମୀ: {{lord}}",
+    "ganaBadge": "{{gana}} ଗଣ",
+    "deity": "ଦେବତା",
+    "symbol": "ପ୍ରତୀକ",
+    "nadi": "ନାଡ଼ୀ",
+    "yoni": "ଯୋନି",
+    "notAvailableValue": "—",
+    "personalityHeading": "ବ୍ୟକ୍ତିତ୍ୱ",
+    "careerTendencies": "କ୍ୟାରିୟର ପ୍ରବୃତ୍ତି",
+    "relationshipTendencies": "ସମ୍ପର୍କ ପ୍ରବୃତ୍ତି",
+    "spiritualTendencies": "ଆଧ୍ୟାତ୍ମିକ ପ୍ରବୃତ୍ତି"
+  },
+  "ascendant": {
+    "notAvailableTitle": "ଲଗ୍ନ ଉପଲବ୍ଧ ନାହିଁ",
+    "notAvailableMessage": "ଏହି ଚାର୍ଟରେ ଏପର୍ଯ୍ୟନ୍ତ ଗଣିତ ଲଗ୍ନ ନାହିଁ।",
+    "itemLabel": "ଲଗ୍ନ",
+    "lordBadge": "ସ୍ୱାମୀ: {{lord}}",
+    "risingSign": "ଲଗ୍ନ (ଉଦୟ ରାଶି)",
+    "lagnaLord": "ଲଗ୍ନ ସ୍ୱାମୀ",
+    "notAvailableValue": "—",
+    "characteristicsHeading": "ବିଶେଷତାଗୁଡ଼ିକ (ଲଗ୍ନ ସ୍ୱାମୀଙ୍କ ଶକ୍ତି ଅନୁସାରେ)",
+    "functionallyNature": "କାର୍ଯ୍ୟକାରୀ ଭାବରେ {{nature}}",
+    "predictionsLinkedTitle": "ଲଗ୍ନ ସ୍ୱାମୀ ସହିତ ଲିଙ୍କ୍ ହୋଇଥିବା ଭବିଷ୍ୟବାଣୀ",
+    "lagnaLordFallback": "ଲଗ୍ନ ସ୍ୱାମୀ",
+    "noLinkedPredictionsMessage": "ବର୍ତ୍ତମାନ କୌଣସି ବର୍ଗ ଭବିଷ୍ୟବାଣୀ {{lord}} କୁ ଏହାର ମୁଖ୍ୟ କିମ୍ବା ସହାୟକ ଗ୍ରହ ଭାବରେ ଉଲ୍ଲେଖ କରେ ନାହିଁ।"
+  },
+  "aspect": {
+    "notAvailableTitle": "ଦୃଷ୍ଟି ତଥ୍ୟ ଉପଲବ୍ଧ ନାହିଁ",
+    "notAvailableMessage": "ଏଠାରେ ଅନ୍ୱେଷଣ କରିବାକୁ ପ୍ୟାନେଲ୍‌ରୁ ଏକ ଦୃଷ୍ଟି ବାଛନ୍ତୁ।",
+    "sourcesHeading": "ଦୃଷ୍ଟି ଉତ୍ସ → ଲକ୍ଷ୍ୟ",
+    "beneficAspects": "ଶୁଭ ଦୃଷ୍ଟିଗୁଡ଼ିକ",
+    "maleficAspects": "ଅଶୁଭ ଦୃଷ୍ଟିଗୁଡ଼ିକ",
+    "netInfluenceStrength": "ନିଟ୍ ପ୍ରଭାବ (ଶକ୍ତି)",
+    "housesAspected": "ଦୃଷ୍ଟି ପାଇଥିବା ଭାବଗୁଡ଼ିକ",
+    "houseLabel": "ଭାବ {{num}}",
+    "itemLabel": "{{target}} ଉପରେ ଦୃଷ୍ଟିଗୁଡ଼ିକ",
+    "interpretPureBenefic": "ସମ୍ପୂର୍ଣ୍ଣ ଭାବରେ ଶୁଭ ଦୃଷ୍ଟିଗୁଡ଼ିକ — ଏକ ସହାୟକ ପ୍ରଭାବ।",
+    "interpretPureMalefic": "ସମ୍ପୂର୍ଣ୍ଣ ଭାବରେ ଅଶୁଭ ଦୃଷ୍ଟିଗୁଡ଼ିକ — ଏକ ଆହ୍ୱାନପୂର୍ଣ୍ଣ ପ୍ରଭାବ।",
+    "interpretMixedNetBenefic": "ମିଶ୍ରିତ ଦୃଷ୍ଟିଗୁଡ଼ିକ, ସାମଗ୍ରିକ ଭାବରେ ନିଟ୍ ଶୁଭ ପ୍ରଭାବ।",
+    "interpretMixedNetMalefic": "ମିଶ୍ରିତ ଦୃଷ୍ଟିଗୁଡ଼ିକ, ସାମଗ୍ରିକ ଭାବରେ ନିଟ୍ ଅଶୁଭ ପ୍ରଭାବ।",
+    "interpretMixedNeutral": "ମିଶ୍ରିତ ଦୃଷ୍ଟିଗୁଡ଼ିକ ଯାହାର ନିଟ୍ ପ୍ରଭାବ ସନ୍ତୁଳିତ ଏବଂ ନିରପେକ୍ଷ ଅଟେ।"
+  }
+}

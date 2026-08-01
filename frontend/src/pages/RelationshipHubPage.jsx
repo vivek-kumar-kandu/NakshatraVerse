@@ -1,4 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import Badge from "../components/common/Badge.jsx";
@@ -29,6 +33,7 @@ import { readPreferences, writePreferences } from "../utils/settingsStorage.js";
 // ─────────────────────────────────────────────────────────────────────────
 
 const TABS = [
+<<<<<<< HEAD
   { id: "kundli", label: "Kundli Matching", icon: "💞" },
   { id: "chart", label: "Birth Chart", icon: "🗺️" },
   { id: "strength", label: "Planet Strength", icon: "💪" },
@@ -38,6 +43,17 @@ const TABS = [
 ];
 
 function ProfilePicker({ label, profiles, value, onChange, exclude }) {
+=======
+  {id: "kundli", labelKey: "kundli", icon: "💞" },
+  { id: "chart", labelKey: "chart", icon: "🗺️" },
+  { id: "strength", labelKey: "strength", icon: "💪" },
+  { id: "dosha", labelKey: "dosha", icon: "⚠️" },
+  { id: "nakshatra", labelKey: "nakshatra", icon: "⭐" },
+  { id: "prediction", labelKey: "prediction", icon: "🔮" },
+];
+
+function ProfilePicker({ label, profiles, value, onChange, exclude, t }) {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <div style={{ flex: "1 1 220px", minWidth: 200 }}>
       <label style={{ display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 6, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500 }}>
@@ -50,7 +66,11 @@ function ProfilePicker({ label, profiles, value, onChange, exclude }) {
         className="select-input"
         style={{ width: "100%", padding: "12px 14px", borderRadius: 12, fontSize: 14, cursor: "pointer", border: "1px solid rgba(180,120,255,0.3)", background: "rgba(18,0,38,0.6)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif" }}
       >
+<<<<<<< HEAD
         <option value="">Choose a profile…</option>
+=======
+        <option value="">{t("family:relationshipHub.chooseProfile")}</option>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         {profiles.filter((p) => p.id !== exclude).map((p) => (
           <option key={p.id} value={p.id}>{p.name} ({p.relationshipLabel})</option>
         ))}
@@ -79,6 +99,10 @@ function PredictionColumn({ title, predictions }) {
 }
 
 function RelationshipHubPage({ onBack, initialProfileIdA }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["family"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [profiles, setProfiles] = useState([]);
   const [loadingProfiles, setLoadingProfiles] = useState(true);
   // Falls back to the last-active profile (persisted client-side, see
@@ -121,7 +145,11 @@ function RelationshipHubPage({ onBack, initialProfileIdA }) {
       setTab("kundli");
       try { writePreferences({ activeProfileId: profileIdA }); } catch { /* storage unavailable — non-fatal */ }
     } catch (err) {
+<<<<<<< HEAD
       setCompareError(err.message || "Could not compare these two profiles.");
+=======
+      setCompareError(err.message || t("family:relationshipHub.compareFailed"));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     } finally {
       setComparing(false);
     }
@@ -140,6 +168,7 @@ function RelationshipHubPage({ onBack, initialProfileIdA }) {
             onClick={onBack}
             style={{ background: "none", border: "none", cursor: "pointer", padding: 0, marginBottom: 8, color: "var(--nv-text-secondary, rgba(200,160,255,0.75))", fontSize: 12.5, fontFamily: "Inter,sans-serif" }}
           >
+<<<<<<< HEAD
             ← Back
           </button>
           <h1 style={{ margin: 0, fontSize: "clamp(22px,4vw,30px)", background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif", fontWeight: 700 }}>
@@ -147,11 +176,21 @@ function RelationshipHubPage({ onBack, initialProfileIdA }) {
           </h1>
           <p style={{ margin: "6px 0 0", fontSize: 13.5, color: "var(--nv-text-muted, rgba(200,160,255,0.65))" }}>
             Compare any two saved profiles — Kundli Matching, charts, strengths, doshas, Nakshatra, and predictions.
+=======
+            {t("family:relationshipHub.back")}
+          </button>
+          <h1 style={{ margin: 0, fontSize: "clamp(22px,4vw,30px)", background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif", fontWeight: 700 }}>
+            {t("family:relationshipHub.title")}
+          </h1>
+          <p style={{ margin: "6px 0 0", fontSize: 13.5, color: "var(--nv-text-muted, rgba(200,160,255,0.65))" }}>
+            {t("family:relationshipHub.subtitle")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         </header>
 
         <GlassCard style={{ padding: "22px 24px", marginBottom: 24 }}>
           {loadingProfiles ? (
+<<<<<<< HEAD
             <p style={{ fontSize: 13, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>Loading your profiles…</p>
           ) : profiles.length < 2 ? (
             <EmptyState icon="👨‍👩‍👧‍👦" title="Add at least two profiles" message="You need two saved Family Profiles to use the Relationship Hub." compact />
@@ -160,6 +199,16 @@ function RelationshipHubPage({ onBack, initialProfileIdA }) {
               <div style={{ display: "flex", flexWrap: "wrap", gap: 16, marginBottom: 16 }}>
                 <ProfilePicker label="Profile A" profiles={profiles} value={profileIdA} onChange={setProfileIdA} exclude={profileIdB} />
                 <ProfilePicker label="Profile B" profiles={profiles} value={profileIdB} onChange={setProfileIdB} exclude={profileIdA} />
+=======
+            <p style={{ fontSize: 13, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>{t("family:relationshipHub.loadingProfiles")}</p>
+          ) : profiles.length < 2 ? (
+            <EmptyState icon="👨‍👩‍👧‍👦" title={t("family:relationshipHub.needTwoTitle")} message={t("family:relationshipHub.needTwoMessage")} compact />
+          ) : (
+            <>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 16, marginBottom: 16 }}>
+                <ProfilePicker label={t("family:relationshipHub.profileALabel")} profiles={profiles} value={profileIdA} onChange={setProfileIdA} exclude={profileIdB} t={t} />
+                <ProfilePicker label={t("family:relationshipHub.profileBLabel")} profiles={profiles} value={profileIdB} onChange={setProfileIdB} exclude={profileIdA} t={t} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </div>
               {compareError && <p role="alert" style={{ margin: "0 0 12px", fontSize: 13, color: "var(--nv-danger, #ff8888)" }}>{compareError}</p>}
               <button
@@ -174,7 +223,11 @@ function RelationshipHubPage({ onBack, initialProfileIdA }) {
                   fontFamily: "Cinzel,serif", opacity: !canCompare || comparing ? 0.6 : 1,
                 }}
               >
+<<<<<<< HEAD
                 {comparing ? "Comparing…" : "✦ Compare"}
+=======
+                {comparing ? t("family:relationshipHub.comparing") : t("family:relationshipHub.compare")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </button>
             </>
           )}
@@ -183,22 +236,40 @@ function RelationshipHubPage({ onBack, initialProfileIdA }) {
         {result && (
           <>
             <div role="tablist" style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 20 }}>
+<<<<<<< HEAD
               {TABS.map((t) => (
                 <button
                   key={t.id}
                   role="tab"
                   aria-selected={tab === t.id}
                   onClick={() => setTab(t.id)}
+=======
+              {TABS.map((tItem) => (
+                <button
+                  key={tItem.id}
+                  role="tab"
+                  aria-selected={tab === tItem.id}
+                  onClick={() => setTab(tItem.id)}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   className="pill-btn tap-scale"
                   style={{
                     padding: "9px 16px", borderRadius: 20, fontSize: 12.5, fontWeight: 600, cursor: "pointer",
                     fontFamily: "Inter,sans-serif",
+<<<<<<< HEAD
                     background: tab === t.id ? "var(--nv-accent-gradient, linear-gradient(135deg, #7b2fff, #4a00a0))" : "rgba(255,255,255,0.05)",
                     border: tab === t.id ? "1px solid rgba(191,127,255,0.6)" : "1px solid rgba(180,120,255,0.28)",
                     color: tab === t.id ? "#fff" : "var(--nv-text-secondary, rgba(210,175,255,0.76))",
                   }}
                 >
                   {t.icon} {t.label}
+=======
+                    background: tab === tItem.id ? "var(--nv-accent-gradient, linear-gradient(135deg, #7b2fff, #4a00a0))" : "rgba(255,255,255,0.05)",
+                    border: tab === tItem.id ? "1px solid rgba(191,127,255,0.6)" : "1px solid rgba(180,120,255,0.28)",
+                    color: tab === tItem.id ? "#fff" : "var(--nv-text-secondary, rgba(210,175,255,0.76))",
+                  }}
+                >
+                  {tItem.icon} {t(`family:relationshipHub.tabs.${tItem.labelKey}`)}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </button>
               ))}
             </div>
@@ -219,12 +290,21 @@ function RelationshipHubPage({ onBack, initialProfileIdA }) {
                 </div>
                 <div style={{ display: "flex", gap: 24, flexWrap: "wrap", width: "100%", justifyContent: "center" }}>
                   <InsightRow
+<<<<<<< HEAD
                     label={`${nameA}'s Manglik Status`}
                     value={result.kundliMatching.manglik.personA?.isManglik ? `Manglik (${result.kundliMatching.manglik.personA?.severity || "—"})` : "Not Manglik"}
                   />
                   <InsightRow
                     label={`${nameB}'s Manglik Status`}
                     value={result.kundliMatching.manglik.personB?.isManglik ? `Manglik (${result.kundliMatching.manglik.personB?.severity || "—"})` : "Not Manglik"}
+=======
+                    label={t("family:relationshipHub.manglikStatusLabel", { name: nameA })}
+                    value={result.kundliMatching.manglik.personA?.isManglik ? t("family:relationshipHub.manglikPositive", { severity: result.kundliMatching.manglik.personA?.severity || t("family:relationshipHub.notAvailable") }) : t("family:relationshipHub.manglikNegative")}
+                  />
+                  <InsightRow
+                    label={t("family:relationshipHub.manglikStatusLabel", { name: nameB })}
+                    value={result.kundliMatching.manglik.personB?.isManglik ? t("family:relationshipHub.manglikPositive", { severity: result.kundliMatching.manglik.personB?.severity || t("family:relationshipHub.notAvailable") }) : t("family:relationshipHub.manglikNegative")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   />
                 </div>
               </GlassCard>
@@ -235,12 +315,21 @@ function RelationshipHubPage({ onBack, initialProfileIdA }) {
                 {[{ label: nameA, chart: result.birthChartComparison.chartA }, { label: nameB, chart: result.birthChartComparison.chartB }].map(({ label, chart }) => (
                   <GlassCard key={label} style={{ padding: "20px 22px", flex: "1 1 320px", minWidth: 280 }}>
                     <h3 style={{ margin: "0 0 14px", fontSize: 16, color: "#bf7fff", fontFamily: "Cinzel,serif" }}>{label}</h3>
+<<<<<<< HEAD
                     <InsightRow label="Lagna" value={chart.lagna} />
                     <InsightRow label="Moon Sign" value={chart.moonSign} />
                     <InsightRow label="Sun Sign" value={chart.sunSign} />
                     <InsightRow label="Nakshatra" value={chart.nakshatra?.name} />
                     <InsightRow label="Yogas" value={(chart.yogas || []).length} />
                     <InsightRow label="Doshas" value={(chart.doshas || []).length} />
+=======
+                    <InsightRow label={t("family:relationshipHub.chart.lagna")} value={chart.lagna} />
+                    <InsightRow label={t("family:relationshipHub.chart.moonSign")} value={chart.moonSign} />
+                    <InsightRow label={t("family:relationshipHub.chart.sunSign")} value={chart.sunSign} />
+                    <InsightRow label={t("family:relationshipHub.chart.nakshatra")} value={chart.nakshatra?.name} />
+                    <InsightRow label={t("family:relationshipHub.chart.yogas")} value={(chart.yogas || []).length} />
+                    <InsightRow label={t("family:relationshipHub.chart.doshas")} value={(chart.doshas || []).length} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   </GlassCard>
                 ))}
               </div>
@@ -251,15 +340,24 @@ function RelationshipHubPage({ onBack, initialProfileIdA }) {
                 {[{ label: nameA, summary: result.planetStrengthComparison.personA }, { label: nameB, summary: result.planetStrengthComparison.personB }].map(({ label, summary }) => (
                   <GlassCard key={label} style={{ padding: "20px 22px", flex: "1 1 320px", minWidth: 280 }}>
                     <h3 style={{ margin: "0 0 14px", fontSize: 16, color: "#bf7fff", fontFamily: "Cinzel,serif" }}>{label}</h3>
+<<<<<<< HEAD
                     <InsightRow label="Strongest Planet" value={summary?.strongest ? `${summary.strongest.planet} (${summary.strongest.dignity || "—"})` : "—"} color="#7effb2" />
                     <InsightRow label="Weakest Planet" value={summary?.weakest ? `${summary.weakest.planet} (${summary.weakest.dignity || "—"})` : "—"} color="#ff9d9d" />
+=======
+                    <InsightRow label={t("family:relationshipHub.strength.strongestPlanet")} value={summary?.strongest ? `${summary.strongest.planet} (${summary.strongest.dignity || t("family:relationshipHub.notAvailable")})` : t("family:relationshipHub.notAvailable")} color="#7effb2" />
+                    <InsightRow label={t("family:relationshipHub.strength.weakestPlanet")} value={summary?.weakest ? `${summary.weakest.planet} (${summary.weakest.dignity || t("family:relationshipHub.notAvailable")})` : t("family:relationshipHub.notAvailable")} color="#ff9d9d" />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   </GlassCard>
                 ))}
               </div>
             )}
 
             {tab === "dosha" && (
+<<<<<<< HEAD
               <ExpandableSection icon="⚠️" title="Dosha Comparison" color="#ff9d9d">
+=======
+              <ExpandableSection icon="⚠️" title={t("family:relationshipHub.doshaComparisonTitle")} color="#ff9d9d">
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 <pre style={{ whiteSpace: "pre-wrap", fontSize: 12.5, color: "var(--nv-text-secondary, rgba(210,175,255,0.76))", fontFamily: "Inter,sans-serif", margin: 0 }}>
                   {JSON.stringify(result.doshaComparison, null, 2)}
                 </pre>
@@ -272,6 +370,7 @@ function RelationshipHubPage({ onBack, initialProfileIdA }) {
                   <GlassCard key={label} style={{ padding: "20px 22px", flex: "1 1 320px", minWidth: 280 }}>
                     <h3 style={{ margin: "0 0 14px", fontSize: 16, color: "#bf7fff", fontFamily: "Cinzel,serif" }}>{label}</h3>
                     <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 12 }}>
+<<<<<<< HEAD
                       <Badge color="#ffd700">{profile?.nakshatra}{profile?.pada ? ` · Pada ${profile.pada}` : ""}</Badge>
                       {profile?.lord && <Badge color="#bf7fff">Lord: {profile.lord}</Badge>}
                     </div>
@@ -282,6 +381,18 @@ function RelationshipHubPage({ onBack, initialProfileIdA }) {
                 ))}
                 <GlassCard style={{ padding: "20px 22px", flex: "1 1 100%" }}>
                   <InsightRow label="Same Nakshatra?" value={result.nakshatraComparison.sameNakshatra ? "Yes" : "No"} />
+=======
+                      <Badge color="#ffd700">{profile?.nakshatra}{profile?.pada ? t("family:relationshipHub.nakshatraFields.padaBadge", { pada: profile.pada }) : ""}</Badge>
+                      {profile?.lord && <Badge color="#bf7fff">{t("family:relationshipHub.nakshatraFields.lordBadge", { lord: profile.lord })}</Badge>}
+                    </div>
+                    <InsightRow label={t("family:relationshipHub.nakshatraFields.nature")} value={profile?.nature} />
+                    <InsightRow label={t("family:relationshipHub.nakshatraFields.gana")} value={profile?.gana} />
+                    <InsightRow label={t("family:relationshipHub.nakshatraFields.nadi")} value={profile?.nadi} />
+                  </GlassCard>
+                ))}
+                <GlassCard style={{ padding: "20px 22px", flex: "1 1 100%" }}>
+                  <InsightRow label={t("family:relationshipHub.nakshatraFields.sameNakshatra")} value={result.nakshatraComparison.sameNakshatra ? t("family:relationshipHub.nakshatraFields.yes") : t("family:relationshipHub.nakshatraFields.no")} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </GlassCard>
               </div>
             )}

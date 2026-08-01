@@ -1,4 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import SkeletonList from "../components/common/Skeleton.jsx";
@@ -35,6 +39,7 @@ const selectStyle = {
   color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif", appearance: "none",
 };
 
+<<<<<<< HEAD
 const SORTS = [
   { value: "newest", label: "Newest First" },
   { value: "oldest", label: "Oldest First" },
@@ -42,6 +47,12 @@ const SORTS = [
 ];
 
 function NotificationCenterPage({ onBack, onNavigate }) {
+=======
+const SORTS = ["newest", "oldest", "priority"];
+
+function NotificationCenterPage({ onBack, onNavigate }) {
+  const { t } = useTranslation(["notifications", "common"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const toast = useToast();
 
   const [query, setQuery] = useState("");
@@ -68,7 +79,11 @@ function NotificationCenterPage({ onBack, onNavigate }) {
         setGroups(res.groups || res.notifications.map((n) => ({ notification: n })));
         setPagination(res.pagination);
       })
+<<<<<<< HEAD
       .catch((err) => setError(err.message || "Could not load notifications."));
+=======
+      .catch((err) => setError(err.message || t("notifications:center.loadFailedGeneric")));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }, [query, category, priority, readStatus, sort, page]);
 
   useEffect(() => { load(); }, [load]);
@@ -102,15 +117,24 @@ function NotificationCenterPage({ onBack, onNavigate }) {
     notificationsApi.markRead(id)
       .then(() => notifyNotificationsChanged())
       .catch((err) => {
+<<<<<<< HEAD
         toast?.error?.(err.message || "Could not mark notification as read.");
+=======
+        toast?.error?.(err.message || t("notifications:center.toasts.markReadFailed"));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         load();
       });
   }, [toast, load, patchGroups]);
 
   const handleMarkAllRead = useCallback(() => {
     notificationsApi.markAllRead()
+<<<<<<< HEAD
       .then(() => { toast?.success?.("All notifications marked as read."); load(); notifyNotificationsChanged(); })
       .catch((err) => toast?.error?.(err.message || "Could not mark all as read."));
+=======
+      .then(() => { toast?.success?.(t("notifications:center.toasts.markAllReadSuccess")); load(); notifyNotificationsChanged(); })
+      .catch((err) => toast?.error?.(err.message || t("notifications:center.toasts.markAllReadFailed")));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }, [toast, load]);
 
   const handleDelete = useCallback((id) => {
@@ -119,7 +143,11 @@ function NotificationCenterPage({ onBack, onNavigate }) {
     notificationsApi.deleteNotification(id)
       .then(() => { load(); notifyNotificationsChanged(); })
       .catch((err) => {
+<<<<<<< HEAD
         toast?.error?.(err.message || "Could not delete notification.");
+=======
+        toast?.error?.(err.message || t("notifications:center.toasts.deleteFailed"));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         load();
       });
   }, [toast, load, patchGroups]);
@@ -127,8 +155,13 @@ function NotificationCenterPage({ onBack, onNavigate }) {
   const handleClearRead = useCallback(() => {
     setClearing(true);
     notificationsApi.deleteAllRead()
+<<<<<<< HEAD
       .then(() => { toast?.success?.("Read notifications cleared."); setConfirmClearRead(false); load(); notifyNotificationsChanged(); })
       .catch((err) => toast?.error?.(err.message || "Could not clear read notifications."))
+=======
+      .then(() => { toast?.success?.(t("notifications:center.toasts.clearReadSuccess")); setConfirmClearRead(false); load(); notifyNotificationsChanged(); })
+      .catch((err) => toast?.error?.(err.message || t("notifications:center.toasts.clearReadFailed")))
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       .finally(() => setClearing(false));
   }, [toast, load]);
 
@@ -146,12 +179,21 @@ function NotificationCenterPage({ onBack, onNavigate }) {
               color: "var(--nv-text-primary, #e8d5ff)", padding: "10px 16px", borderRadius: 20, cursor: "pointer", fontSize: 13,
             }}
           >
+<<<<<<< HEAD
             ← Back
           </button>
           <div>
             <h1 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 21, color: "var(--nv-text-primary, #f1e4ff)" }}>🔔 Notification Center</h1>
             <p style={{ margin: "2px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
               {pagination.total} notification{pagination.total === 1 ? "" : "s"} total
+=======
+            {t("notifications:center.back")}
+          </button>
+          <div>
+            <h1 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 21, color: "var(--nv-text-primary, #f1e4ff)" }}>{t("notifications:center.title")}</h1>
+            <p style={{ margin: "2px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
+              {t(pagination.total === 1 ? "notifications:center.totalSingle" : "notifications:center.totalPlural", { count: pagination.total })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
           </div>
         </div>
@@ -169,8 +211,13 @@ function NotificationCenterPage({ onBack, onNavigate }) {
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
+<<<<<<< HEAD
               placeholder="Search notifications…"
               aria-label="Search notifications"
+=======
+              placeholder={t("notifications:center.searchPlaceholder")}
+              aria-label={t("notifications:center.searchAriaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               style={{
                 width: "100%", padding: "10px 14px 10px 36px", borderRadius: 20, fontSize: 13,
                 border: "1px solid var(--nv-accent-border, rgba(180,120,255,0.3))", background: "var(--nv-surface, rgba(18,0,38,0.6))",
@@ -179,6 +226,7 @@ function NotificationCenterPage({ onBack, onNavigate }) {
             />
           </div>
 
+<<<<<<< HEAD
           <select value={category} onChange={(e) => setCategory(e.target.value)} aria-label="Filter by category" style={selectStyle}>
             <option value="all">All Categories</option>
             {CATEGORIES.map((c) => <option key={c} value={c}>{CATEGORY_META[c]?.icon} {CATEGORY_META[c]?.label || c}</option>)}
@@ -197,6 +245,26 @@ function NotificationCenterPage({ onBack, onNavigate }) {
 
           <select value={sort} onChange={(e) => setSort(e.target.value)} aria-label="Sort notifications" style={selectStyle}>
             {SORTS.map((s) => <option key={s.value} value={s.value}>{s.label}</option>)}
+=======
+          <select value={category} onChange={(e) => setCategory(e.target.value)} aria-label={t("notifications:center.filterCategoryAriaLabel")} style={selectStyle}>
+            <option value="all">{t("notifications:center.allCategories")}</option>
+            {CATEGORIES.map((c) => <option key={c} value={c}>{CATEGORY_META[c]?.icon} {t(`notifications:categories.${c}`, CATEGORY_META[c]?.label || c)}</option>)}
+          </select>
+
+          <select value={priority} onChange={(e) => setPriority(e.target.value)} aria-label={t("notifications:center.filterPriorityAriaLabel")} style={selectStyle}>
+            <option value="all">{t("notifications:center.allPriorities")}</option>
+            {PRIORITIES.map((p) => <option key={p} value={p}>{t(`notifications:priorities.${p}`, PRIORITY_META[p]?.label || p)}</option>)}
+          </select>
+
+          <select value={readStatus} onChange={(e) => setReadStatus(e.target.value)} aria-label={t("notifications:center.filterReadStatusAriaLabel")} style={selectStyle}>
+            <option value="all">{t("notifications:center.all")}</option>
+            <option value="false">{t("notifications:center.unread")}</option>
+            <option value="true">{t("notifications:center.read")}</option>
+          </select>
+
+          <select value={sort} onChange={(e) => setSort(e.target.value)} aria-label={t("notifications:center.sortAriaLabel")} style={selectStyle}>
+            {SORTS.map((sv) => <option key={sv} value={sv}>{t(`notifications:sort.${sv}`)}</option>)}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </select>
         </GlassCard>
 
@@ -207,26 +275,42 @@ function NotificationCenterPage({ onBack, onNavigate }) {
             className="pill-btn tap-scale"
             style={{ padding: "9px 16px", borderRadius: 18, fontSize: 12.5, fontWeight: 600, cursor: "pointer", border: "1px solid rgba(180,120,255,0.3)", background: "rgba(123,47,255,0.15)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif" }}
           >
+<<<<<<< HEAD
             ✓ Mark All Read
+=======
+            {t("notifications:center.markAllRead")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
           <button
             onClick={() => setConfirmClearRead(true)}
             className="pill-btn tap-scale"
             style={{ padding: "9px 16px", borderRadius: 18, fontSize: 12.5, fontWeight: 600, cursor: "pointer", border: "1px solid rgba(255,80,80,0.3)", background: "rgba(120,20,20,0.18)", color: "var(--nv-danger, #ffaaaa)", fontFamily: "Inter,sans-serif" }}
           >
+<<<<<<< HEAD
             🗑️ Clear Read
+=======
+            {t("notifications:center.clearRead")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         </div>
 
         {/* List */}
         {error && (
+<<<<<<< HEAD
           <EmptyState icon="⚠️" title="Could not load notifications" message={error} actionLabel="Retry" onAction={load} />
+=======
+          <EmptyState icon="⚠️" title={t("notifications:center.loadFailedTitle")} message={error} actionLabel={t("notifications:center.retry")} onAction={load} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         )}
 
         {!error && notifications === null && <SkeletonList rows={4} variant="row" />}
 
         {!error && notifications?.length === 0 && (
+<<<<<<< HEAD
           <EmptyState icon="🔔" title="No notifications" message="You're all caught up — nothing here matches your current filters." />
+=======
+          <EmptyState icon="🔔" title={t("notifications:center.emptyTitle")} message={t("notifications:center.emptyMessage")} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         )}
 
         {!error && notifications?.length > 0 && (
@@ -274,10 +358,17 @@ function NotificationCenterPage({ onBack, onNavigate }) {
               className="pill-btn tap-scale"
               style={{ padding: "8px 14px", borderRadius: 16, fontSize: 12.5, cursor: pagination.page <= 1 ? "default" : "pointer", opacity: pagination.page <= 1 ? 0.4 : 1, border: "1px solid rgba(180,120,255,0.3)", background: "rgba(123,47,255,0.1)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif" }}
             >
+<<<<<<< HEAD
               ← Prev
             </button>
             <span style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
               Page {pagination.page} of {pagination.totalPages}
+=======
+              {t("notifications:center.prevPage")}
+            </button>
+            <span style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
+              {t("notifications:center.pageOf", { page: pagination.page, totalPages: pagination.totalPages })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </span>
             <button
               onClick={() => setPage((p) => Math.min(pagination.totalPages, p + 1))}
@@ -285,7 +376,11 @@ function NotificationCenterPage({ onBack, onNavigate }) {
               className="pill-btn tap-scale"
               style={{ padding: "8px 14px", borderRadius: 16, fontSize: 12.5, cursor: pagination.page >= pagination.totalPages ? "default" : "pointer", opacity: pagination.page >= pagination.totalPages ? 0.4 : 1, border: "1px solid rgba(180,120,255,0.3)", background: "rgba(123,47,255,0.1)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif" }}
             >
+<<<<<<< HEAD
               Next →
+=======
+              {t("notifications:center.nextPage")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </div>
         )}
@@ -293,10 +388,17 @@ function NotificationCenterPage({ onBack, onNavigate }) {
 
       <ConfirmDialog
         open={confirmClearRead}
+<<<<<<< HEAD
         title="Clear read notifications?"
         message="This deletes every read notification. This can't be undone."
         confirmLabel="Clear Read"
         loadingLabel="Clearing…"
+=======
+        title={t("notifications:center.clearDialog.title")}
+        message={t("notifications:center.clearDialog.message")}
+        confirmLabel={t("notifications:center.clearDialog.confirmLabel")}
+        loadingLabel={t("notifications:center.clearDialog.loadingLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         danger
         loading={clearing}
         onConfirm={handleClearRead}

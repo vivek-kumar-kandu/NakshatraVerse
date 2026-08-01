@@ -1,0 +1,169 @@
+{
+  "types": {
+    "planet": "ग्रह",
+    "house": "भाव",
+    "sign": "राशी",
+    "yoga": "योग",
+    "dosha": "दोष",
+    "nakshatra": "नक्षत्रे",
+    "ascendant": "लग्न",
+    "aspect": "दृष्टी"
+  },
+  "typeSingular": {
+    "planet": "ग्रह",
+    "house": "भाव",
+    "sign": "राशी",
+    "yoga": "योग",
+    "dosha": "दोष",
+    "nakshatra": "नक्षत्र",
+    "ascendant": "लग्न",
+    "aspect": "दृष्टी"
+  },
+  "header": {
+    "title": "कुंडली एक्सप्लोरर",
+    "breadcrumb": "{{type}} · {{item}}",
+    "notAvailable": "—",
+    "selectPrompt": "एक्सप्लोर करण्यासाठी एखादी वस्तू निवडा"
+  },
+  "mainPanel": {
+    "loadingPanel": "तपशील पॅनेल लोड होत आहे…",
+    "emptyTitle": "अजून काहीही निवडलेले नाही",
+    "emptyMessage": "येथे एक्सप्लोर करण्यासाठी पॅनेलमधून ग्रह, भाव, राशी, योग, दोष, नक्षत्र, लग्न, किंवा दृष्टी निवडा.",
+    "regionAriaLabel": "एक्सप्लोरर तपशील पॅनेल"
+  },
+  "sidePanel": {
+    "treeAriaLabel": "एक्सप्लोरर निवड श्रेण्या",
+    "categoryAriaLabel": "{{label}} ({{count}})",
+    "housePrefix": "भाव {{num}}",
+    "lordBadge": "स्वामी: {{lord}}",
+    "aspectCountSingle": "{{count}} दृष्टी",
+    "aspectCountPlural": "{{count}} दृष्टी",
+    "netInfluence": "निव्वळ {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI स्पष्टीकरण",
+    "prompt": "{{label}} चे Gemini-चालित स्पष्टीकरण मिळवा, जे पूर्णपणे या चार्टच्या स्वतःच्या बॅकएंड-गणना केलेल्या तथ्यांवर आधारित आहे.",
+    "explainAriaLabel": "{{label}} AI ने स्पष्ट करा",
+    "explainButton": "✨ AI ने स्पष्ट करा",
+    "generatingLabel": "{{label}} साठी AI स्पष्टीकरण तयार करत आहे",
+    "loadFailed": "एक्सप्लोरर AI सध्या उपलब्ध नाही.",
+    "tryAgain": "↻ पुन्हा प्रयत्न करा"
+  },
+  "common": {
+    "relatedPredictions": "संबंधित भविष्यवाण्या",
+    "relatedRemedies": "संबंधित उपाय",
+    "noLinkedPredictionsTitle": "कोणतीही जोडलेली भविष्यवाणी नाही",
+    "noLinkedRemediesTitle": "कोणताही जोडलेला उपाय नाही",
+    "noRemediesTitle": "कोणतेही उपाय उपलब्ध नाहीत"
+  },
+  "planet": {
+    "notAvailableTitle": "ग्रह डेटा उपलब्ध नाही",
+    "notAvailableMessage": "या चार्टमध्ये अजून या ग्रहासाठी गणना केलेली स्थिती डेटा नाही.",
+    "positionDignityHeading": "स्थिती आणि प्रतिष्ठा",
+    "houseLabel": "भाव",
+    "signLabel": "राशी",
+    "retrogradeBadge": "वक्री",
+    "combustBadge": "अस्त",
+    "functionallyNature": "कार्यात्मकदृष्ट्या {{nature}}",
+    "friendshipSignSuffix": "{{relation}} राशी",
+    "adjustedStrengthScore": "समायोजित शक्ती गुण",
+    "foundationShadbala": "मूळ षड्बल",
+    "notAvailableValue": "—",
+    "strengthUnavailable": "या चार्टसाठी सविस्तर शक्ती गुणांकन उपलब्ध नाही.",
+    "noLinkedPredictionsMessage": "सध्या कोणतीही श्रेणी भविष्यवाणी {{planet}} ला त्याचा प्रमुख किंवा सहाय्यक ग्रह म्हणून नमूद करत नाही.",
+    "noLinkedRemediesMessage": "या चार्टच्या भविष्यवाण्यांद्वारे सध्या {{planet}} शी कोणताही उपाय जोडलेला नाही."
+  },
+  "house": {
+    "notAvailableTitle": "भाव डेटा उपलब्ध नाही",
+    "notAvailableMessage": "येथे एक्सप्लोर करण्यासाठी पॅनेलमधून एक भाव निवडा.",
+    "signBadge": "राशी: {{sign}}",
+    "lordBadge": "स्वामी: {{lord}}",
+    "meaning": "अर्थ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "स्थित ग्रह",
+    "noOccupants": "सध्या या भावात कोणताही ग्रह स्थित नाही.",
+    "noLinkedPredictionsMessage": "सध्या कोणतीही श्रेणी भविष्यवाणी भाव {{house}} ला सहाय्यक भाव म्हणून नमूद करत नाही.",
+    "noLinkedRemediesMessage": "या चार्टच्या भविष्यवाण्यांद्वारे सध्या भाव {{house}} शी कोणताही उपाय जोडलेला नाही.",
+    "itemLabel": "भाव {{num}}"
+  },
+  "sign": {
+    "notAvailableTitle": "राशी डेटा उपलब्ध नाही",
+    "notAvailableMessage": "येथे एक्सप्लोर करण्यासाठी पॅनेलमधून एक राशी निवडा.",
+    "lordBadge": "स्वामी: {{lord}}",
+    "lagnaBadge": "या चार्टचे लग्न",
+    "rulingPlanet": "शासक ग्रह",
+    "notAvailableValue": "—",
+    "occupantsHeading": "या राशीतील सध्याचे ग्रह",
+    "noOccupants": "या चार्टमध्ये सध्या या राशीत कोणताही ग्रह स्थित नाही.",
+    "noLinkedPredictionsMessage": "सध्या कोणतीही श्रेणी भविष्यवाणी या राशीत स्थित असलेल्या ग्रहाशी संबंधित नाही."
+  },
+  "yoga": {
+    "notFoundTitle": "योग सापडला नाही",
+    "notFoundMessage": "हा योग या चार्टसाठी सध्या ओळखल्या गेलेल्या संचाचा भाग नाही.",
+    "ruleMatchedBadge": "नियम जुळला: {{name}}",
+    "contributingPlanetsHeading": "योगदान देणारे ग्रह",
+    "noContributingPlanets": "सध्या कोणतीही श्रेणी भविष्यवाणी या योगाचे श्रेय विशिष्ट ग्रहांना देत नाही.",
+    "confidenceEffectsTitle": "विश्वास आणि परिणाम (जोडलेल्या भविष्यवाण्यांमधून)",
+    "noLinkedPredictionsMessage": "सध्या कोणतीही श्रेणी भविष्यवाणी हा योग सहाय्यक घटक म्हणून उद्धृत करत नाही."
+  },
+  "dosha": {
+    "notFoundTitle": "दोष सापडला नाही",
+    "notFoundMessage": "हा दोष या चार्टसाठी सध्या ओळखल्या गेलेल्या संचाचा भाग नाही.",
+    "matchingRuleBadge": "जुळणारा नियम: {{name}}",
+    "severityBadge": "तीव्रता: {{severity}}",
+    "affectedHousesHeading": "प्रभावित भाव",
+    "houseBadge": "भाव {{num}}",
+    "noAffectedHouses": "सध्या कोणतीही श्रेणी भविष्यवाणी हा दोष विशिष्ट भावांशी जोडत नाही.",
+    "remedies": "उपाय",
+    "noRemediesMessage": "सध्या या दोषाशी कोणताही उपाय जोडलेला नाही.",
+    "linkedPredictions": "जोडलेल्या भविष्यवाण्या",
+    "noLinkedPredictionsMessage": "सध्या कोणतीही श्रेणी भविष्यवाणी हा दोष सहाय्यक घटक म्हणून उद्धृत करत नाही."
+  },
+  "nakshatra": {
+    "notAvailableTitle": "नक्षत्र प्रोफाइल उपलब्ध नाही",
+    "notAvailableMessage": "या चार्टमध्ये अजून गणना केलेली नक्षत्र प्रोफाइल नाही.",
+    "itemLabel": "नक्षत्र",
+    "padaBadge": "पद {{pada}}",
+    "lordBadge": "स्वामी: {{lord}}",
+    "ganaBadge": "{{gana}} गण",
+    "deity": "देवता",
+    "symbol": "प्रतीक",
+    "nadi": "नाडी",
+    "yoni": "योनी",
+    "notAvailableValue": "—",
+    "personalityHeading": "व्यक्तिमत्त्व",
+    "careerTendencies": "करिअर प्रवृत्ती",
+    "relationshipTendencies": "नाते प्रवृत्ती",
+    "spiritualTendencies": "आध्यात्मिक प्रवृत्ती"
+  },
+  "ascendant": {
+    "notAvailableTitle": "लग्न उपलब्ध नाही",
+    "notAvailableMessage": "या चार्टमध्ये अजून गणना केलेले लग्न नाही.",
+    "itemLabel": "लग्न",
+    "lordBadge": "स्वामी: {{lord}}",
+    "risingSign": "लग्न (उदय राशी)",
+    "lagnaLord": "लग्न स्वामी",
+    "notAvailableValue": "—",
+    "characteristicsHeading": "वैशिष्ट्ये (लग्न स्वामीच्या शक्तीनुसार)",
+    "functionallyNature": "कार्यात्मकदृष्ट्या {{nature}}",
+    "predictionsLinkedTitle": "लग्न स्वामीशी जोडलेल्या भविष्यवाण्या",
+    "lagnaLordFallback": "लग्न स्वामी",
+    "noLinkedPredictionsMessage": "सध्या कोणतीही श्रेणी भविष्यवाणी {{lord}} ला त्याचा प्रमुख किंवा सहाय्यक ग्रह म्हणून नमूद करत नाही."
+  },
+  "aspect": {
+    "notAvailableTitle": "दृष्टी डेटा उपलब्ध नाही",
+    "notAvailableMessage": "येथे एक्सप्लोर करण्यासाठी पॅनेलमधून एक दृष्टी निवडा.",
+    "sourcesHeading": "दृष्टी स्रोत → लक्ष्य",
+    "beneficAspects": "शुभ दृष्टी",
+    "maleficAspects": "अशुभ दृष्टी",
+    "netInfluenceStrength": "निव्वळ प्रभाव (शक्ती)",
+    "housesAspected": "दृष्टी प्राप्त भाव",
+    "houseLabel": "भाव {{num}}",
+    "itemLabel": "{{target}} वरील दृष्टी",
+    "interpretPureBenefic": "पूर्णपणे शुभ दृष्टी — एक सहाय्यक प्रभाव.",
+    "interpretPureMalefic": "पूर्णपणे अशुभ दृष्टी — एक आव्हानात्मक प्रभाव.",
+    "interpretMixedNetBenefic": "मिश्र दृष्टी, एकूणात निव्वळ शुभ प्रभाव.",
+    "interpretMixedNetMalefic": "मिश्र दृष्टी, एकूणात निव्वळ अशुभ प्रभाव.",
+    "interpretMixedNeutral": "मिश्र दृष्टी ज्यांचा निव्वळ प्रभाव संतुलित आणि तटस्थ आहे."
+  }
+}

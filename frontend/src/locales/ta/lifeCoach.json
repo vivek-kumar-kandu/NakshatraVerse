@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "daily": "தினசரி",
+    "weekly": "வாராந்திர",
+    "monthly": "மாதாந்திர",
+    "career": "தொழில்",
+    "relationship": "உறவுகள்",
+    "finance": "நிதி",
+    "health": "ஆரோக்கியம்",
+    "growth": "வளர்ச்சி"
+  },
+  "page": {
+    "back": "← பின்செல்",
+    "title": "🧭 AI வாழ்க்கை பயிற்சியாளர்",
+    "dailyCompanion": "{{name}} இன் தினசரி துணை",
+    "updated": "{{time}} அன்று புதுப்பிக்கப்பட்டது",
+    "refreshing": "புதுப்பிக்கப்படுகிறது…",
+    "refreshGuidance": "↻ வழிகாட்டுதலைப் புதுப்பிக்கவும்",
+    "tryAgain": "மீண்டும் முயற்சிக்கவும்",
+    "loadingAriaLabel": "உங்கள் AI வாழ்க்கை பயிற்சியாளர் வழிகாட்டுதல் ஏற்றப்படுகிறது",
+    "loadFailed": "உங்கள் AI வாழ்க்கை பயிற்சியாளர் வழிகாட்டுதலை ஏற்ற முடியவில்லை.",
+    "refreshFailed": "உங்கள் AI வாழ்க்கை பயிற்சியாளர் வழிகாட்டுதலைப் புதுப்பிக்க முடியவில்லை.",
+    "noReadingTitle": "இதுவரை படிப்பு எதுவும் கிடைக்கவில்லை",
+    "noReadingMessage": "உங்கள் தனிப்பட்ட AI வாழ்க்கை பயிற்சியாளரைப் பார்க்க முதலில் ஒரு அறிக்கையை உருவாக்கவும் அல்லது திறக்கவும்.",
+    "backAction": "← பின்செல்"
+  },
+  "daily": {
+    "opportunities": "வாய்ப்புகள்",
+    "challenges": "சவால்கள்",
+    "recommendedActions": "பரிந்துரைக்கப்பட்ட செயல்கள்",
+    "thingsToAvoid": "தவிர்க்க வேண்டியவை",
+    "spiritualGuidance": "🕉️ ஆன்மீக வழிகாட்டுதல்"
+  },
+  "outlook": {
+    "weeklyThemeTitle": "இந்த வார தீம்",
+    "weeklyEnergyLabel": "வாராந்திர ஆற்றல்",
+    "monthlyThemeTitle": "இந்த மாத தீம்",
+    "monthlyEnergyLabel": "மாதாந்திர ஆற்றல்",
+    "weeklyUnavailableTitle": "வாராந்திர கண்ணோட்டம் கிடைக்கவில்லை",
+    "weeklyUnavailableMessage": "இந்த வார கண்ணோட்டத்தை நாங்கள் தற்போது உருவாக்க முடியவில்லை — தயவுசெய்து புதுப்பிக்கவும்.",
+    "monthlyUnavailableTitle": "மாதாந்திர கண்ணோட்டம் கிடைக்கவில்லை",
+    "monthlyUnavailableMessage": "இந்த மாத கண்ணோட்டத்தை நாங்கள் தற்போது உருவாக்க முடியவில்லை — தயவுசெய்து புதுப்பிக்கவும்.",
+    "weeklyFocus": "வாராந்திர கவனம்",
+    "personalGrowthGoal": "தனிப்பட்ட வளர்ச்சி இலக்கு",
+    "careerFocus": "தொழில் கவனம்",
+    "relationshipFocus": "உறவு கவனம்",
+    "opportunities": "வாய்ப்புகள்",
+    "challenges": "சவால்கள்",
+    "bestDay": "சிறந்த நாள்: {{weekday}} ({{date}})",
+    "cautionDay": "எச்சரிக்கை நாள்: {{weekday}} ({{date}})"
+  },
+  "career": {
+    "cardTitle": "தொழில் பயிற்சியாளர்",
+    "progress": "தொழில் முன்னேற்றம்",
+    "skillDevelopmentAdvice": "திறன் மேம்பாட்டு ஆலோசனை",
+    "promotionGuidance": "பதவி உயர்வு வழிகாட்டுதல்",
+    "businessSuggestions": "வணிக பரிந்துரைகள்",
+    "bestTimeForDecisions": "முக்கிய முடிவுகளுக்கான சிறந்த நேரம்"
+  },
+  "relationship": {
+    "cardTitle": "உறவு பயிற்சியாளர்",
+    "guidance": "உறவு வழிகாட்டுதல்",
+    "marriageAdvice": "திருமண ஆலோசனை",
+    "familyHarmonyTips": "குடும்ப நல்லிணக்க குறிப்புகள்",
+    "communicationSuggestions": "தொடர்பு பரிந்துரைகள்",
+    "emotionalWellbeing": "உணர்ச்சி நல்வாழ்வு"
+  },
+  "finance": {
+    "cardTitle": "நிதி பயிற்சியாளர்",
+    "outlook": "நிதி கண்ணோட்டம்",
+    "spendingSuggestions": "செலவு பரிந்துரைகள்",
+    "savingAdvice": "சேமிப்பு ஆலோசனை",
+    "investmentAwareness": "முதலீட்டு விழிப்புணர்வு",
+    "businessOpportunities": "வணிக வாய்ப்புகள்"
+  },
+  "health": {
+    "cardTitle": "ஆரோக்கியம் மற்றும் நலம்",
+    "energyTrends": "ஆற்றல் போக்குகள்",
+    "stressAwareness": "மன அழுத்த விழிப்புணர்வு",
+    "meditationSuggestions": "தியான பரிந்துரைகள்",
+    "yogaRecommendations": "யோகா பரிந்துரைகள்",
+    "spiritualPractices": "ஆன்மீக பயிற்சிகள்",
+    "lifestyleSuggestions": "வாழ்க்கை முறை பரிந்துரைகள்"
+  },
+  "growth": {
+    "dailyGoals": "தினசரி இலக்குகள்",
+    "weeklyGoals": "வாராந்திர இலக்குகள்",
+    "monthlyFocus": "🌕 மாதாந்திர கவனம்",
+    "habitSuggestions": "பழக்க பரிந்துரைகள்",
+    "learningRecommendations": "கற்றல் பரிந்துரைகள்"
+  },
+  "scoreCard": {
+    "dailyEnergyLabel": "தினசரி ஆற்றல்",
+    "todaysFocus": "இன்றைய கவனம்"
+  },
+  "confidenceBadge": {
+    "withScore": "நம்பிக்கை: {{label}} ({{score}}/100)",
+    "withoutScore": "நம்பிக்கை: {{label}}"
+  },
+  "whyNote": {
+    "prefix": "ஏன்? "
+  },
+  "luckyElements": {
+    "title": "🍀 இன்றைய அதிர்ஷ்ட கூறுகள்",
+    "color": "நிறம்",
+    "number": "எண்",
+    "direction": "திசை",
+    "favorableTime": "சாதகமான நேரம்"
+  },
+  "affirmation": {
+    "dailyAffirmation": "✦ தினசரி உறுதிமொழி",
+    "spiritualPractice": "🕉️ இன்றைய ஆன்மீக பயிற்சி"
+  }
+}

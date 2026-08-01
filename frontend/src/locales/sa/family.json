@@ -1,0 +1,162 @@
+{
+  "relationships": {
+    "father": "पिता",
+    "mother": "माता",
+    "husband": "पतिः",
+    "wife": "पत्नी",
+    "son": "पुत्रः",
+    "daughter": "पुत्री",
+    "brother": "भ्राता",
+    "sister": "भगिनी",
+    "friend": "मित्रम्",
+    "client": "ग्राहकः",
+    "custom": "स्वेच्छया"
+  },
+  "sort": {
+    "recent": "सद्यः अद्यतनम्",
+    "name": "नाम (A–Z)",
+    "relationship": "सम्बन्धः",
+    "dob": "जन्मदिनाङ्कः"
+  },
+  "profilesPage": {
+    "backToDashboard": "← फलकं प्रति गच्छतु",
+    "title": "कुटुम्बपरिचयाः",
+    "subtitle": "भवतः कुटुम्बस्य प्रत्येकां जन्मकुण्डलीं एकत्र व्यवस्थापयतु।",
+    "relationshipHub": "💞 सम्बन्धकेन्द्रम्",
+    "addProfile": "+ परिचयं योजयतु",
+    "loadFailed": "भवतः कुटुम्बपरिचयाः लोड्यितुं न शक्ताः।",
+    "recentlyOpened": "🕑 सद्यः उद्घाटितम्",
+    "searchPlaceholder": "नाम्ना, सम्बन्धेन, स्थानेन वा अन्विष्यतु…",
+    "searchAriaLabel": "कुटुम्बपरिचयान् अन्विष्यतु",
+    "filterAriaLabel": "सम्बन्धानुसारं शोधयतु",
+    "sortAriaLabel": "कुटुम्बपरिचयान् क्रमबद्धं करोतु",
+    "allRelationships": "सर्वे सम्बन्धाः",
+    "showArchived": "सङ्ग्रहितं दर्शयतु",
+    "emptyTitle": "अद्यापि कोऽपि परिचयः नास्ति",
+    "emptyMessageFiltered": "कोऽपि परिचयः भवतः अन्वेषण/शोधनेन सह न मेलति।",
+    "emptyMessageDefault": "भवतः सम्बन्धकेन्द्रं निर्मातुं आरभितुं भवतः प्रथमं कुटुम्बपरिचयं योजयतु।",
+    "toasts": {
+      "updated": "{{name}} इत्यस्य परिचयः अद्यतनितः।",
+      "added": "{{name}} कुटुम्बपरिचयेषु योजितः।",
+      "saveFailed": "अयं परिचयः सुरक्षितुं न शक्तः।",
+      "duplicated": "{{name}} इत्यस्य प्रतिलिपिः निर्मिता।",
+      "duplicateFailed": "अयं परिचयः प्रतिलिपयितुं न शक्तः।",
+      "archived": "{{name}} सङ्ग्रहितः।",
+      "archiveFailed": "अयं परिचयः सङ्ग्रहीतुं न शक्तः।",
+      "restored": "{{name}} पुनःस्थापितः।",
+      "restoreFailed": "अयं परिचयः पुनःस्थापयितुं न शक्तः।",
+      "deleted": "{{name}} अपाकृतः।",
+      "deleteFailed": "अयं परिचयः अपाकर्तुं न शक्तः।"
+    },
+    "deleteDialog": {
+      "title": "अयं परिचयः अपाकरणीयः?",
+      "message": "\"{{name}}\" तथा तत्सम्बद्धा काऽपि सम्बन्धतुलना पुनः न प्राप्ता भविष्यति। एतत् पुनः स्थापयितुं न शक्यते।",
+      "confirmLabel": "अपाकरोतु"
+    }
+  },
+  "profileCard": {
+    "openedOn": "{{date}} दिनाङ्के उद्घाटितः",
+    "addedOn": "{{date}} दिनाङ्के योजितः",
+    "archived": "सङ्ग्रहितः",
+    "open": "✦ उद्घाटयतु",
+    "compare": "💞 तुलनां करोतु",
+    "edit": "✎ सम्पादयतु",
+    "duplicate": "⧉ प्रतिलिपयतु",
+    "archiveAction": "🗄 सङ्ग्रहं करोतु",
+    "restore": "↺ पुनःस्थापयतु",
+    "delete": "✕ अपाकरोतु",
+    "notAvailable": "—"
+  },
+  "formDialog": {
+    "editTitle": "कुटुम्बपरिचयं सम्पादयतु",
+    "addTitle": "कुटुम्बपरिचयं योजयतु",
+    "relationshipLabel": "सम्बन्धः",
+    "customRelationshipLabel": "स्वेच्छासम्बन्धचिह्नम्",
+    "customRelationshipPlaceholder": "यथा मार्गदर्शकः, भ्रातृव्यः, वाणिज्यसहभागी",
+    "custom": "स्वेच्छया",
+    "genderLabel": "लिङ्गम्",
+    "genderMale": "♂ पुरुषः",
+    "genderFemale": "♀ स्त्री",
+    "genderOther": "⚧ अन्यत्",
+    "fields": {
+      "name": "पूर्णं नाम",
+      "namePlaceholder": "यथा अर्जुनशर्मा",
+      "dob": "जन्मदिनाङ्कः",
+      "tob": "जन्मसमयः",
+      "pob": "जन्मस्थानम्",
+      "pobPlaceholder": "यथा मुम्बई, भारतम्"
+    },
+    "errors": {
+      "nameRequired": "नाम आवश्यकम्",
+      "relationshipRequired": "एकं सम्बन्धं चिनुतु",
+      "customRelationshipRequired": "स्वेच्छासम्बन्धचिह्नं लिखतु",
+      "dobRequired": "जन्मदिनाङ्कः आवश्यकः",
+      "tobRequired": "जन्मसमयः आवश्यकः",
+      "pobRequired": "जन्मस्थानम् आवश्यकम्",
+      "genderRequired": "एकं लिङ्गं चिनुतु"
+    },
+    "cancel": "रद्दं करोतु",
+    "saving": "सुरक्षितं क्रियते…",
+    "saveChanges": "परिवर्तनानि सुरक्षितानि कुरुत",
+    "addProfile": "परिचयं योजयतु"
+  },
+  "widget": {
+    "title": "👨‍👩‍👧‍👦 कुटुम्बपरिचयाः",
+    "countSingle": "{{count}} परिचयः",
+    "countPlural": "{{count}} परिचयाः",
+    "loadFailed": "कुटुम्बपरिचयाः लोड्यितुं न शक्ताः।",
+    "emptyMessage": "अद्यापि कोऽपि परिचयः नास्ति — चित्रतुलनां आरब्धुं कुटुम्बं, मित्राणि, ग्राहकान् वा योजयतु।",
+    "addProfile": "+ परिचयं योजयतु",
+    "relationshipHub": "💞 सम्बन्धकेन्द्रम्",
+    "viewAll": "सर्वान् परिचयान् पश्यतु →"
+  },
+  "relationshipHub": {
+    "back": "← पृष्ठतः",
+    "title": "सम्बन्धकेन्द्रम्",
+    "subtitle": "कयोरपि द्वयोः सुरक्षितपरिचययोः तुलनां करोतु — कुण्डलीमेलनम्, चित्रम्, शक्तिः, दोषाः, नक्षत्रम्, भविष्यवाण्यश्च।",
+    "loadingProfiles": "भवतः परिचयाः लोड्यन्ते…",
+    "needTwoTitle": "न्यूनातिन्यूनं द्वौ परिचयौ योजयतु",
+    "needTwoMessage": "सम्बन्धकेन्द्रं प्रयोक्तुं भवतः द्वौ सुरक्षितकुटुम्बपरिचयौ आवश्यकौ।",
+    "profileALabel": "परिचयः A",
+    "profileBLabel": "परिचयः B",
+    "chooseProfile": "एकं परिचयं चिनुतु…",
+    "compareFailed": "एतयोः द्वयोः परिचययोः तुलना कर्तुं न शक्ता।",
+    "comparing": "तुलना क्रियते…",
+    "compare": "✦ तुलनां करोतु",
+    "tabs": {
+      "kundli": "कुण्डलीमेलनम्",
+      "chart": "जन्मचित्रम्",
+      "strength": "ग्रहशक्तिः",
+      "dosha": "दोषाः",
+      "nakshatra": "नक्षत्रम्",
+      "prediction": "भविष्यवाण्यः"
+    },
+    "manglikStatusLabel": "{{name}} इत्यस्य मांगलिकस्थितिः",
+    "manglikPositive": "मांगलिकः ({{severity}})",
+    "manglikNegative": "न मांगलिकः",
+    "notAvailable": "—",
+    "chart": {
+      "lagna": "लग्नम्",
+      "moonSign": "चन्द्रराशिः",
+      "sunSign": "सूर्यराशिः",
+      "nakshatra": "नक्षत्रम्",
+      "yogas": "योगाः",
+      "doshas": "दोषाः"
+    },
+    "strength": {
+      "strongestPlanet": "सर्वाधिकबलवान् ग्रहः",
+      "weakestPlanet": "सर्वाधिकदुर्बलः ग्रहः"
+    },
+    "doshaComparisonTitle": "दोषतुलना",
+    "nakshatraFields": {
+      "padaBadge": " · पदम् {{pada}}",
+      "lordBadge": "स्वामी: {{lord}}",
+      "nature": "स्वभावः",
+      "gana": "गणः",
+      "nadi": "नाडी",
+      "sameNakshatra": "समानं नक्षत्रम्?",
+      "yes": "आम्",
+      "no": "न"
+    }
+  }
+}

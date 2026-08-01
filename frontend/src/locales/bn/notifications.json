@@ -1,0 +1,87 @@
+{
+  "categories": {
+    "system": "সিস্টেম",
+    "reminder": "অনুস্মারক",
+    "ai": "AI",
+    "panchang": "পঞ্চাঙ্গ",
+    "muhurat": "মুহূর্ত",
+    "prediction": "ভবিষ্যদ্বাণী",
+    "transit": "গোচর",
+    "family": "পরিবার",
+    "festival": "উৎসব",
+    "general": "সাধারণ"
+  },
+  "priorities": {
+    "critical": "অত্যন্ত গুরুত্বপূর্ণ",
+    "high": "উচ্চ",
+    "medium": "মাঝারি",
+    "low": "নিম্ন"
+  },
+  "sort": {
+    "newest": "সবচেয়ে নতুন প্রথমে",
+    "oldest": "সবচেয়ে পুরনো প্রথমে",
+    "priority": "অগ্রাধিকার"
+  },
+  "center": {
+    "back": "← পিছনে",
+    "title": "🔔 বিজ্ঞপ্তি কেন্দ্র",
+    "totalSingle": "মোট {{count}} বিজ্ঞপ্তি",
+    "totalPlural": "মোট {{count}} বিজ্ঞপ্তি",
+    "searchPlaceholder": "বিজ্ঞপ্তি অনুসন্ধান করুন…",
+    "searchAriaLabel": "বিজ্ঞপ্তি অনুসন্ধান করুন",
+    "filterCategoryAriaLabel": "বিভাগ অনুসারে ফিল্টার করুন",
+    "allCategories": "সব বিভাগ",
+    "filterPriorityAriaLabel": "অগ্রাধিকার অনুসারে ফিল্টার করুন",
+    "allPriorities": "সব অগ্রাধিকার",
+    "filterReadStatusAriaLabel": "পঠন অবস্থা অনুসারে ফিল্টার করুন",
+    "all": "সব",
+    "unread": "অপঠিত",
+    "read": "পঠিত",
+    "sortAriaLabel": "বিজ্ঞপ্তি সাজান",
+    "markAllRead": "✓ সব পঠিত হিসেবে চিহ্নিত করুন",
+    "clearRead": "🗑️ পঠিত পরিষ্কার করুন",
+    "loadFailedTitle": "বিজ্ঞপ্তি লোড করা যায়নি",
+    "retry": "আবার চেষ্টা করুন",
+    "emptyTitle": "কোনো বিজ্ঞপ্তি নেই",
+    "emptyMessage": "আপনি সম্পূর্ণ আপ টু ডেট — আপনার বর্তমান ফিল্টারের সাথে এখানে কিছুই মেলে না।",
+    "prevPage": "← পূর্ববর্তী",
+    "nextPage": "পরবর্তী →",
+    "pageOf": "পৃষ্ঠা {{page}} এর {{totalPages}}",
+    "toasts": {
+      "markReadFailed": "বিজ্ঞপ্তি পঠিত হিসেবে চিহ্নিত করা যায়নি।",
+      "markAllReadSuccess": "সব বিজ্ঞপ্তি পঠিত হিসেবে চিহ্নিত করা হয়েছে।",
+      "markAllReadFailed": "সব পঠিত হিসেবে চিহ্নিত করা যায়নি।",
+      "deleteFailed": "বিজ্ঞপ্তি মুছে ফেলা যায়নি।",
+      "clearReadSuccess": "পঠিত বিজ্ঞপ্তি পরিষ্কার করা হয়েছে।",
+      "clearReadFailed": "পঠিত বিজ্ঞপ্তি পরিষ্কার করা যায়নি।"
+    },
+    "clearDialog": {
+      "title": "পঠিত বিজ্ঞপ্তি পরিষ্কার করবেন?",
+      "message": "এটি প্রতিটি পঠিত বিজ্ঞপ্তি মুছে ফেলবে। এটি পূর্বাবস্থায় ফেরানো যাবে না।",
+      "confirmLabel": "পঠিত পরিষ্কার করুন",
+      "loadingLabel": "পরিষ্কার করা হচ্ছে…"
+    },
+    "loadFailedGeneric": "বিজ্ঞপ্তি লোড করা যায়নি।"
+  },
+  "card": {
+    "open": "খুলুন →",
+    "openTitle": "খুলুন",
+    "openAriaLabel": "সংশ্লিষ্ট মডিউল খুলুন",
+    "markReadTitle": "পঠিত হিসেবে চিহ্নিত করুন",
+    "markReadLabel": "✓ পঠিত",
+    "deleteTitle": "বিজ্ঞপ্তি মুছে ফেলুন",
+    "deleteAriaLabel": "বিজ্ঞপ্তি মুছে ফেলুন"
+  },
+  "group": {
+    "updateSingle": "{{count}} আপডেট",
+    "updatePlural": "{{count}} আপডেট",
+    "unreadBadge": "{{count}} অপঠিত"
+  },
+  "widget": {
+    "title": "🔔 বিজ্ঞপ্তি",
+    "unreadCount": "{{count}} অপঠিত",
+    "loadFailed": "বিজ্ঞপ্তি লোড করা যায়নি।",
+    "emptyMessage": "এখনও কোনো বিজ্ঞপ্তি নেই — আপনি সম্পূর্ণ আপ টু ডেট।",
+    "openCenter": "বিজ্ঞপ্তি কেন্দ্র খুলুন →"
+  }
+}

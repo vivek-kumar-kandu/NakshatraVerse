@@ -1,0 +1,162 @@
+{
+  "relationships": {
+    "father": "પિતા",
+    "mother": "માતા",
+    "husband": "પતિ",
+    "wife": "પત્ની",
+    "son": "પુત્ર",
+    "daughter": "પુત્રી",
+    "brother": "ભાઈ",
+    "sister": "બહેન",
+    "friend": "મિત્ર",
+    "client": "ક્લાયન્ટ",
+    "custom": "કસ્ટમ"
+  },
+  "sort": {
+    "recent": "તાજેતરમાં અપડેટ થયેલ",
+    "name": "નામ (A–Z)",
+    "relationship": "સંબંધ",
+    "dob": "જન્મ તારીખ"
+  },
+  "profilesPage": {
+    "backToDashboard": "← ડેશબોર્ડ પર પાછા જાઓ",
+    "title": "કુટુંબ પ્રોફાઇલ",
+    "subtitle": "તમારા વર્તુળની દરેક જન્મકુંડળી એક જ જગ્યાએ સંચાલિત કરો.",
+    "relationshipHub": "💞 રિલેશનશિપ હબ",
+    "addProfile": "+ પ્રોફાઇલ ઉમેરો",
+    "loadFailed": "તમારી કુટુંબ પ્રોફાઇલ લોડ થઈ શકી નહીં.",
+    "recentlyOpened": "🕑 તાજેતરમાં ખોલેલ",
+    "searchPlaceholder": "નામ, સંબંધ, અથવા સ્થળ દ્વારા શોધો…",
+    "searchAriaLabel": "કુટુંબ પ્રોફાઇલ શોધો",
+    "filterAriaLabel": "સંબંધ પ્રમાણે ફિલ્ટર કરો",
+    "sortAriaLabel": "કુટુંબ પ્રોફાઇલ ક્રમમાં ગોઠવો",
+    "allRelationships": "બધા સંબંધો",
+    "showArchived": "આર્કાઇવ થયેલ બતાવો",
+    "emptyTitle": "હજુ સુધી કોઈ પ્રોફાઇલ નથી",
+    "emptyMessageFiltered": "કોઈ પ્રોફાઇલ તમારી શોધ/ફિલ્ટર સાથે મેળ ખાતી નથી.",
+    "emptyMessageDefault": "તમારો રિલેશનશિપ હબ બનાવવાનું શરૂ કરવા માટે તમારી પ્રથમ કુટુંબ પ્રોફાઇલ ઉમેરો.",
+    "toasts": {
+      "updated": "{{name}} ની પ્રોફાઇલ અપડેટ થઈ.",
+      "added": "{{name}} ને કુટુંબ પ્રોફાઇલમાં ઉમેર્યું.",
+      "saveFailed": "આ પ્રોફાઇલ સાચવી શકાઈ નહીં.",
+      "duplicated": "{{name}} ની નકલ બનાવી.",
+      "duplicateFailed": "આ પ્રોફાઇલ ડુપ્લિકેટ કરી શકાઈ નહીં.",
+      "archived": "{{name}} આર્કાઇવ કરી.",
+      "archiveFailed": "આ પ્રોફાઇલ આર્કાઇવ કરી શકાઈ નહીં.",
+      "restored": "{{name}} પુનઃસ્થાપિત કરી.",
+      "restoreFailed": "આ પ્રોફાઇલ પુનઃસ્થાપિત કરી શકાઈ નહીં.",
+      "deleted": "{{name}} કાઢી નાખી.",
+      "deleteFailed": "આ પ્રોફાઇલ કાઢી શકાઈ નહીં."
+    },
+    "deleteDialog": {
+      "title": "આ પ્રોફાઇલ કાઢી નાખવી છે?",
+      "message": "\"{{name}}\" અને તેમને લગતી કોઈપણ સંબંધ સરખામણી હવે સુલભ રહેશે નહીં. આ પાછું લઈ શકાશે નહીં.",
+      "confirmLabel": "કાઢી નાખો"
+    }
+  },
+  "profileCard": {
+    "openedOn": "{{date}} ના રોજ ખોલ્યું",
+    "addedOn": "{{date}} ના રોજ ઉમેર્યું",
+    "archived": "આર્કાઇવ થયેલ",
+    "open": "✦ ખોલો",
+    "compare": "💞 સરખામણી કરો",
+    "edit": "✎ સંપાદિત કરો",
+    "duplicate": "⧉ ડુપ્લિકેટ કરો",
+    "archiveAction": "🗄 આર્કાઇવ કરો",
+    "restore": "↺ પુનઃસ્થાપિત કરો",
+    "delete": "✕ કાઢી નાખો",
+    "notAvailable": "—"
+  },
+  "formDialog": {
+    "editTitle": "કુટુંબ પ્રોફાઇલ સંપાદિત કરો",
+    "addTitle": "કુટુંબ પ્રોફાઇલ ઉમેરો",
+    "relationshipLabel": "સંબંધ",
+    "customRelationshipLabel": "કસ્ટમ સંબંધ લેબલ",
+    "customRelationshipPlaceholder": "દા.ત. મેન્ટર, પિતરાઈ, બિઝનેસ પાર્ટનર",
+    "custom": "કસ્ટમ",
+    "genderLabel": "લિંગ",
+    "genderMale": "♂ પુરુષ",
+    "genderFemale": "♀ સ્ત્રી",
+    "genderOther": "⚧ અન્ય",
+    "fields": {
+      "name": "પૂરું નામ",
+      "namePlaceholder": "દા.ત. અર્જુન શર્મા",
+      "dob": "જન્મ તારીખ",
+      "tob": "જન્મ સમય",
+      "pob": "જન્મ સ્થળ",
+      "pobPlaceholder": "દા.ત. મુંબઈ, ભારત"
+    },
+    "errors": {
+      "nameRequired": "નામ જરૂરી છે",
+      "relationshipRequired": "એક સંબંધ પસંદ કરો",
+      "customRelationshipRequired": "કસ્ટમ સંબંધ લેબલ દાખલ કરો",
+      "dobRequired": "જન્મ તારીખ જરૂરી છે",
+      "tobRequired": "જન્મ સમય જરૂરી છે",
+      "pobRequired": "જન્મ સ્થળ જરૂરી છે",
+      "genderRequired": "એક લિંગ પસંદ કરો"
+    },
+    "cancel": "રદ કરો",
+    "saving": "સાચવી રહ્યા છીએ…",
+    "saveChanges": "ફેરફારો સાચવો",
+    "addProfile": "પ્રોફાઇલ ઉમેરો"
+  },
+  "widget": {
+    "title": "👨‍👩‍👧‍👦 કુટુંબ પ્રોફાઇલ",
+    "countSingle": "{{count}} પ્રોફાઇલ",
+    "countPlural": "{{count}} પ્રોફાઇલ",
+    "loadFailed": "કુટુંબ પ્રોફાઇલ લોડ થઈ શકી નહીં.",
+    "emptyMessage": "હજુ સુધી કોઈ પ્રોફાઇલ નથી — ચાર્ટની સરખામણી શરૂ કરવા માટે કુટુંબ, મિત્રો, અથવા ક્લાયન્ટ ઉમેરો.",
+    "addProfile": "+ પ્રોફાઇલ ઉમેરો",
+    "relationshipHub": "💞 રિલેશનશિપ હબ",
+    "viewAll": "બધી પ્રોફાઇલ જુઓ →"
+  },
+  "relationshipHub": {
+    "back": "← પાછા",
+    "title": "રિલેશનશિપ હબ",
+    "subtitle": "કોઈપણ બે સાચવેલી પ્રોફાઇલની સરખામણી કરો — કુંડળી મેળાપ, ચાર્ટ, શક્તિ, દોષ, નક્ષત્ર, અને ભવિષ્યવાણીઓ.",
+    "loadingProfiles": "તમારી પ્રોફાઇલ લોડ થઈ રહી છે…",
+    "needTwoTitle": "ઓછામાં ઓછી બે પ્રોફાઇલ ઉમેરો",
+    "needTwoMessage": "રિલેશનશિપ હબનો ઉપયોગ કરવા માટે તમારે બે સાચવેલી કુટુંબ પ્રોફાઇલની જરૂર છે.",
+    "profileALabel": "પ્રોફાઇલ A",
+    "profileBLabel": "પ્રોફાઇલ B",
+    "chooseProfile": "એક પ્રોફાઇલ પસંદ કરો…",
+    "compareFailed": "આ બે પ્રોફાઇલની સરખામણી કરી શકાઈ નહીં.",
+    "comparing": "સરખામણી કરી રહ્યા છીએ…",
+    "compare": "✦ સરખામણી કરો",
+    "tabs": {
+      "kundli": "કુંડળી મેળાપ",
+      "chart": "જન્મ ચાર્ટ",
+      "strength": "ગ્રહ શક્તિ",
+      "dosha": "દોષ",
+      "nakshatra": "નક્ષત્ર",
+      "prediction": "ભવિષ્યવાણીઓ"
+    },
+    "manglikStatusLabel": "{{name}} ની માંગલિક સ્થિતિ",
+    "manglikPositive": "માંગલિક ({{severity}})",
+    "manglikNegative": "માંગલિક નથી",
+    "notAvailable": "—",
+    "chart": {
+      "lagna": "લગ્ન",
+      "moonSign": "ચંદ્ર રાશિ",
+      "sunSign": "સૂર્ય રાશિ",
+      "nakshatra": "નક્ષત્ર",
+      "yogas": "યોગ",
+      "doshas": "દોષ"
+    },
+    "strength": {
+      "strongestPlanet": "સૌથી મજબૂત ગ્રહ",
+      "weakestPlanet": "સૌથી નબળો ગ્રહ"
+    },
+    "doshaComparisonTitle": "દોષ સરખામણી",
+    "nakshatraFields": {
+      "padaBadge": " · પદ {{pada}}",
+      "lordBadge": "સ્વામી: {{lord}}",
+      "nature": "સ્વભાવ",
+      "gana": "ગણ",
+      "nadi": "નાડી",
+      "sameNakshatra": "એ જ નક્ષત્ર?",
+      "yes": "હા",
+      "no": "ના"
+    }
+  }
+}

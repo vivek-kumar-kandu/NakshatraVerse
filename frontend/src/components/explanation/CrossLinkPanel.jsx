@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo, useCallback, useState } from "react";
 import TypingIndicator from "../assistant/TypingIndicator.jsx";
 import { fetchCrossLinks } from "../../utils/explanationApi.js";
@@ -23,6 +27,10 @@ import { useExplanation } from "../../hooks/useExplanation.js";
 // owns navigation/routing itself.
 // ─────────────────────────────────────────────────────────────────────────
 function CrossLinkPanel({ chart, itemType, itemId, itemLabel, planet, category, onSelectTimelineEvent }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["explorer"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [open, setOpen] = useState(false);
   const cacheKey = `cross-link:${chart?.userData?.name || "?"}:${itemType || "?"}:${itemId || itemLabel || "?"}:${planet || ""}:${category || ""}`;
 
@@ -60,7 +68,11 @@ function CrossLinkPanel({ chart, itemType, itemId, itemLabel, planet, category, 
         }}
       >
         <span style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 600 }}>
+<<<<<<< HEAD
           <span aria-hidden="true">🔗</span> Related Timeline Events
+=======
+          <span aria-hidden="true">🔗</span> {t("explorer:relatedTimelineEvents", "Related Timeline Events")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </span>
         <span aria-hidden="true" style={{ fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", transform: open ? "rotate(180deg)" : "none", transition: "transform 0.2s ease" }}>
           ▾
@@ -69,7 +81,11 @@ function CrossLinkPanel({ chart, itemType, itemId, itemLabel, planet, category, 
 
       {open && (
         <div style={{ padding: "0 16px 16px", display: "grid", gap: 10 }}>
+<<<<<<< HEAD
           {loading && <TypingIndicator label="Finding related Timeline events" />}
+=======
+          {loading && <TypingIndicator label={t("explorer:findingRelatedTimelineEvents", "Finding related Timeline events")} />}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           {error && !loading && (
             <p role="alert" style={{ margin: 0, fontSize: 12, color: "var(--nv-danger, #ffaaaa)", fontFamily: "Inter,sans-serif" }}>
               {error}
@@ -77,7 +93,11 @@ function CrossLinkPanel({ chart, itemType, itemId, itemLabel, planet, category, 
           )}
           {data && !loading && !hasLinks && (
             <p style={{ margin: 0, fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily: "Inter,sans-serif" }}>
+<<<<<<< HEAD
               No related Timeline events found for this item yet.
+=======
+              {t("explorer:noRelatedEventsFound", "No related Timeline events found for this item yet.")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
           )}
           {data && !loading && hasLinks && (data.relatedTimelineEvents || []).map((event) => (

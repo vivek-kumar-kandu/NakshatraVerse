@@ -1,0 +1,6 @@
+{
+  "notFound": "Report not found.",
+  "fieldsRequired": "userData, chart, and report are all required to save a report.",
+  "pdfFieldsRequired": "userData, chart, and report are all required to generate a PDF.",
+  "matchingPdfFieldsRequired": "personA, personB, chartA, chartB, and matching are all required to generate a PDF."
+}

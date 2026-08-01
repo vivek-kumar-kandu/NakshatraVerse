@@ -1,0 +1,111 @@
+{
+  "header": {
+    "title": "మీ డాష్‌బోర్డ్",
+    "welcomeBack": "తిరిగి రావడం స్వాగతం, {{name}} ✦",
+    "welcomeBackFallbackName": "యాత్రికుడు",
+    "generateNewReport": "✦ కొత్త నివేదికను రూపొందించండి"
+  },
+  "error": {
+    "loadFailed": "మీ సేవ్ చేసిన నివేదికలను లోడ్ చేయలేకపోయింది.",
+    "tryAgain": "↻ మళ్లీ ప్రయత్నించండి"
+  },
+  "userSummary": {
+    "authProviderGoogle": "Google తో సైన్ ఇన్ చేయబడింది",
+    "authProviderEmail": "ఇమెయిల్ & పాస్‌వర్డ్",
+    "viewFullProfile": "పూర్తి ప్రొఫైల్‌ను చూడండి →"
+  },
+  "statistics": {
+    "sectionTitle": "గణాంకాలు",
+    "savedReports": "సేవ్ చేసిన నివేదికలు",
+    "memberSince": "సభ్యత్వం ప్రారంభం",
+    "latestReading": "తాజా రీడింగ్",
+    "currentTheme": "ప్రస్తుత థీమ్",
+    "systemThemeLabel": "సిస్టమ్ ({{themeName}})",
+    "notAvailable": "—",
+    "loadingValue": "…"
+  },
+  "astrologySummary": {
+    "sectionTitle": "జ్యోతిష్య సారాంశం",
+    "cardTitle": "మీ తాజా రీడింగ్ నుండి",
+    "padaBadge": " · పాదం {{pada}}",
+    "lordBadge": "అధిపతి: {{lord}}",
+    "currentMahadasha": "ప్రస్తుత మహాదశ",
+    "currentAntardasha": "ప్రస్తుత అంతర్దశ"
+  },
+  "quickActions": {
+    "sectionTitle": "త్వరిత చర్యలు",
+    "generateNewReport": {
+      "label": "కొత్త నివేదికను రూపొందించండి",
+      "desc": "కొత్త వేద రీడింగ్‌ను ప్రారంభించండి"
+    },
+    "continueReading": {
+      "label": "రీడింగ్‌ను కొనసాగించండి",
+      "desc": "మీరు చివరిగా చూసిన నివేదికను మళ్లీ తెరవండి"
+    },
+    "myProfile": {
+      "label": "నా ప్రొఫైల్",
+      "desc": "మీ ప్రొఫైల్ వివరాలను చూడండి"
+    },
+    "savedReports": {
+      "label": "సేవ్ చేసిన నివేదికలు",
+      "desc": "మీ మొత్తం సేకరణను బ్రౌజ్ చేయండి"
+    },
+    "askAI": {
+      "label": "AI ని అడగండి",
+      "desc": "మీ జ్యోతిష్య సహాయకుడితో చాట్ చేయండి"
+    },
+    "aiLifeCoach": {
+      "label": "AI లైఫ్ కోచ్",
+      "desc": "రోజువారీ, కెరీర్, సంబంధాలు, ఆర్థిక & ఆరోగ్య మార్గదర్శకత్వం"
+    },
+    "kundliMatching": {
+      "label": "కుండలి మ్యాచింగ్",
+      "desc": "ఇద్దరు వ్యక్తుల వేద అనుకూలతను తనిఖీ చేయండి"
+    },
+    "panchangMuhurat": {
+      "label": "పంచాంగం & ముహూర్తం",
+      "desc": "రోజువారీ పంచాంగం & శుభ ముహూర్త శోధకం"
+    },
+    "familyProfiles": {
+      "label": "కుటుంబ ప్రొఫైల్‌లు",
+      "desc": "మీ కుటుంబంలోని ప్రతి జాతకాన్ని నిర్వహించండి"
+    },
+    "relationshipHub": {
+      "label": "రిలేషన్‌షిప్ హబ్",
+      "desc": "ఏవైనా రెండు సేవ్ చేసిన ప్రొఫైల్‌లను పోల్చండి"
+    },
+    "settings": {
+      "label": "సెట్టింగ్‌లు",
+      "desc": "మీ ఖాతాను నిర్వహించండి"
+    }
+  },
+  "recentReports": {
+    "sectionTitle": "ఇటీవలి నివేదికలు",
+    "viewAll": "అన్నింటినీ చూడండి →",
+    "emptyTitle": "ఇంకా రీడింగ్‌లు లేవు",
+    "emptyMessage": "ఇక్కడ చూపించడానికి మీ మొదటి వేద రీడింగ్‌ను రూపొందించండి.",
+    "emptyAction": "✦ కొత్త నివేదికను రూపొందించండి"
+  },
+  "aiLifeCoach": "AI లైఫ్ కోచ్",
+  "todaysFocus": "ఈ రోజు దృష్టి:",
+  "personalizedInsights": "వ్యక్తిగతీకరించిన అంతర్‌దృష్టులు",
+  "yourPersonalizedGuidance": "✦ మీ వ్యక్తిగతీకరించిన మార్గదర్శకత్వం",
+  "insightPeriod": "అంతర్‌దృష్టి సమయం",
+  "whatsChanged": "ఏమి మారింది:",
+  "noUpcomingEvents": "రాబోయే ఈవెంట్‌లు లేవు",
+  "loadingPanchang": "పంచాంగం అవలోకనం లోడ్ అవుతోంది…",
+  "bestTimeToday": "✨ ఈ రోజు ఉత్తమ సమయం",
+  "recommendedActivities": "✓ సిఫార్సు చేసిన కార్యకలాపాలు",
+  "thingsToAvoid": "⚠ నివారించవలసిన విషయాలు",
+  "noReadingYet": "ఇంకా ఎలాంటి రీడింగ్ అందుబాటులో లేదు",
+  "astrologyCalendar": "📅 జ్యోతిష్య క్యాలెండర్",
+  "dashaUnavailable": "దశ అందుబాటులో లేదు",
+  "noUpcomingChanges": "రాబోయే మార్పులు లేవు",
+  "noTransitData": "గోచార డేటా లేదు",
+  "auspicious": "✓ శుభప్రదం",
+  "caution": "⚠ జాగ్రత్త",
+  "horoscopeDashboard": "🔮 రాశిఫలాల డాష్‌బోర్డ్",
+  "noWeeklyFocus": "వారాంతపు దృష్టి అందుబాటులో లేదు",
+  "noMonthlySegments": "ఈ నెలలో ఎలాంటి నెలవారీ విభాగాలు లేవు",
+  "dailyPanchangMuhurat": "🕉️ దినచర్య పంచాంగం & ముహూర్తం"
+}

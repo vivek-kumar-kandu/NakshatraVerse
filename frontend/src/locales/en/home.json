@@ -1,0 +1,151 @@
+{
+  "hero": {
+    "eyebrow": "AI-Powered Vedic Astrology",
+    "guestTitle": "Discover Your Cosmic Blueprint",
+    "guestSubtitle": "Ancient Vedic wisdom, explained by AI — a complete birth chart and personalized life report in minutes.",
+    "getStarted": "✦ Get Started ✦",
+    "signIn": "Sign In",
+    "welcomeBack": "Welcome Back",
+    "welcomeBackNamed": "Welcome Back, {{name}}",
+    "welcomeBackSubtitle": "Your cosmic blueprint is waiting — pick up right where you left off.",
+    "continueToDashboard": "✦ Continue to Dashboard ✦"
+  },
+  "quickSummary": {
+    "memberSince": "Member Since",
+    "reportsGenerated": "Reports Generated",
+    "latestReading": "Your latest reading",
+    "lastGeneratedReport": "Last Generated Report · {{date}}"
+  },
+  "quickActions": {
+    "heading": "Quick Actions",
+    "generateNew": "Generate New Report",
+    "savedReports": "Saved Reports",
+    "myProfile": "My Profile"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "About NakshatraVerse",
+    "body": "NakshatraVerse blends classical Vedic astrology with modern AI. We calculate your birth chart using precise planetary mathematics, then use AI purely to translate that chart into a clear, readable report covering career, love, health, wealth, and more — so cosmic wisdom stays accurate and easy to understand."
+  },
+  "features": {
+    "eyebrow": "What You Get",
+    "title": "Features",
+    "items": [
+      {
+        "label": "Birth Chart",
+        "desc": "Your full Vedic natal chart, calculated precisely."
+      },
+      {
+        "label": "Planetary Analysis",
+        "desc": "See how each planet shapes your life themes."
+      },
+      {
+        "label": "Numerology",
+        "desc": "Mulank & Bhagyank insights from your name and date of birth."
+      },
+      {
+        "label": "Career",
+        "desc": "Where your chart points professionally."
+      },
+      {
+        "label": "Love",
+        "desc": "Compatibility and relationship patterns."
+      },
+      {
+        "label": "Health",
+        "desc": "Wellness tendencies drawn from your chart."
+      },
+      {
+        "label": "Wealth",
+        "desc": "Financial strengths and opportunities."
+      },
+      {
+        "label": "Yogas",
+        "desc": "Auspicious planetary combinations at play."
+      },
+      {
+        "label": "Doshas",
+        "desc": "Potential imbalances, explained clearly."
+      },
+      {
+        "label": "Personalized Remedies",
+        "desc": "Practical guidance tailored to your chart."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "How It Works",
+    "title": "From Birth Details to Insight",
+    "steps": [
+      "Birth Details",
+      "Astrology Engine",
+      "AI Explanation",
+      "Personalized Report"
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Why NakshatraVerse",
+    "title": "Why Choose Us",
+    "items": [
+      {
+        "label": "Authentic Vedic Astrology",
+        "desc": "Grounded in classical calculation methods."
+      },
+      {
+        "label": "AI-Powered Insights",
+        "desc": "Complex charts, explained in plain language."
+      },
+      {
+        "label": "Secure Experience",
+        "desc": "Your birth data stays private."
+      },
+      {
+        "label": "Save Reports",
+        "desc": "Revisit your readings anytime from your Dashboard."
+      },
+      {
+        "label": "PDF Export",
+        "desc": "Download a copy of any saved report."
+      },
+      {
+        "label": "Mobile Friendly",
+        "desc": "A polished experience on any device."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Do I need an account to try NakshatraVerse?",
+        "a": "No — you can generate a birth chart and full report as a guest. Creating a free account simply lets you save reports and revisit them later from your Dashboard."
+      },
+      {
+        "q": "Is my birth data kept private?",
+        "a": "Yes. Your details are used only to generate your chart and report, and are never shared or sold."
+      },
+      {
+        "q": "What is Vedic astrology?",
+        "a": "Vedic (Jyotish) astrology is a classical Indian system that maps planetary positions at your birth moment to your natal chart, or Kundli."
+      },
+      {
+        "q": "Can I download my report?",
+        "a": "Yes — any saved report can be exported as a PDF directly from your Dashboard."
+      },
+      {
+        "q": "How accurate are the AI explanations?",
+        "a": "The underlying chart is computed with classical Vedic calculations; AI is used only to explain those results in clear, readable language."
+      }
+    ]
+  },
+  "cta": {
+    "titleAuth": "Ready to explore more?",
+    "titleGuest": "Your Cosmic Blueprint Awaits",
+    "bodyAuth": "Head to your Dashboard to view saved reports or start a new reading.",
+    "bodyGuest": "Create your free account and generate your first personalized Vedic astrology report today.",
+    "ctaAuth": "✦ Go to Dashboard ✦",
+    "ctaGuest": "✦ Get Started ✦"
+  },
+  "generateMyKundli": "✦ Generate My Kundli ✦"
+}

@@ -1,0 +1,165 @@
+{
+  "typeFilters": {
+    "All": "అన్నీ",
+    "Festival": "పండుగ",
+    "Vrat": "వ్రతం"
+  },
+  "page": {
+    "back": "← వెనుకకు",
+    "title": "🎉 పండుగ క్యాలెండర్",
+    "subtitle": "బ్యాకెండ్ ద్వారా లెక్కించబడిన హిందూ పండుగలు మరియు వ్రతాలు — తేదీలు, ఆచారాలు మరియు ప్రాముఖ్యత.",
+    "tabs": {
+      "today": "ఈరోజు",
+      "upcoming": "రాబోయే",
+      "browse": "అన్నింటినీ బ్రౌజ్ చేయండి"
+    },
+    "todayLoadFailed": "నేటి పండుగను లోడ్ చేయలేకపోయింది.",
+    "upcomingLoadFailed": "రాబోయే పండుగలను లోడ్ చేయలేకపోయింది.",
+    "yearLoadFailed": "పండుగ క్యాలెండర్‌ను లోడ్ చేయలేకపోయింది.",
+    "openFestivalFailed": "ఆ పండుగను తెరవలేకపోయింది.",
+    "todaysFestivalsHeading": "నేటి పండుగ{{plural}}",
+    "noFestivalTodayTitle": "ఈరోజు పండుగ లేదు",
+    "noFestivalTodayMessage": "నేటి తేదీన జరుపుకునే పండుగ లేదా వ్రతం లేదు.",
+    "nextUp": "తర్వాత ఏమిటి",
+    "daysRemainingToday": "ఈరోజు",
+    "daysRemainingSingle": "{{count}} రోజులో",
+    "daysRemainingPlural": "{{count}} రోజుల్లో",
+    "noUpcomingTitle": "రాబోయే పండుగలు కనుగొనబడలేదు",
+    "noUpcomingMessage": "రాబోయే 60 రోజుల్లో ఏమీ కనుగొనబడలేదు.",
+    "searchPlaceholder": "పండుగలను శోధించండి…",
+    "searchAriaLabel": "పండుగలను శోధించండి",
+    "typeFilterAriaLabel": "రకం ఆధారంగా ఫిల్టర్ చేయండి",
+    "yearAriaLabel": "సంవత్సరాన్ని ఎంచుకోండి",
+    "noMatchTitle": "పండుగలు ఏవీ సరిపోలలేదు",
+    "noMatchMessage": "వేరే శోధన పదం లేదా రకం ఫిల్టర్‌ను ప్రయత్నించండి.",
+    "explainFailed": "AI వివరణ ప్రస్తుతం అందుబాటులో లేదు."
+  },
+  "detailCard": {
+    "importanceSuffix": "{{importance}} ప్రాముఖ్యత",
+    "notSpecified": "పేర్కొనబడలేదు.",
+    "explainButton": "✨ {{status}}",
+    "askingGemini": "Gemini ని అడుగుతోంది…",
+    "explainThisFestival": "ఈ పండుగను వివరించండి",
+    "historicalBackground": "చారిత్రక నేపథ్యం",
+    "significance": "ప్రాముఖ్యత",
+    "rituals": "ఆచారాలు",
+    "recommendedActivities": "సిఫార్సు చేయబడిన కార్యకలాపాలు",
+    "fastingInformation": "ఉపవాస సమాచారం",
+    "fastingObserved": "ఉపవాసం పాటించబడుతుంది",
+    "noFastingObserved": "సాంప్రదాయకంగా ఉపవాసం పాటించబడదు"
+  },
+  "familySuggestions": {
+    "title": "👨‍👩‍👧‍👦 కుటుంబ పండుగ సూచనలు",
+    "signInPrompt": "మీ ప్రియమైనవారి కోసం భాగస్వామ్య వేడుక సూచనలు మరియు రిమైండర్‌లను పొందడానికి సైన్ ఇన్ చేసి కుటుంబ ప్రొఫైల్‌ను జోడించండి.",
+    "loadFailed": "ప్రస్తుతం కుటుంబ పండుగ సూచనలను లోడ్ చేయలేకపోయింది.",
+    "remindersTitle": "కుటుంబ పండుగ రిమైండర్‌లు",
+    "noProfiles": "ఇంకా కుటుంబ ప్రొఫైల్‌లు సేవ్ చేయబడలేదు.",
+    "addOne": "ఒకటి జోడించండి →",
+    "sharedCelebrationTitle": "భాగస్వామ్య వేడుక సూచనలు",
+    "suggestedActivitiesTitle": "సూచించిన కుటుంబ కార్యకలాపాలు"
+  },
+  "intelligencePanel": {
+    "title": "🔮 పండుగ ఇంటెలిజెన్స్",
+    "subtitle": "ఆధ్యాత్మిక అర్థం, పౌరాణిక కథ మరియు పూజా అవలోకనం — పైన ఉన్న ప్రాథమికాంశాలకు మించి.",
+    "loadFailed": "ప్రస్తుతం పండుగ ఇంటెలిజెన్స్‌ను లోడ్ చేయలేకపోయింది.",
+    "revealButton": "✨ {{status}}",
+    "askingGemini": "Gemini ని అడుగుతోంది…",
+    "revealDeeper": "లోతైన ఇంటెలిజెన్స్‌ను వెల్లడించండి",
+    "spiritualMeaning": "ఆధ్యాత్మిక అర్థం",
+    "mythologicalStory": "పౌరాణిక కథ",
+    "modernPracticalMeaning": "ఆధునిక ఆచరణాత్మక అర్థం",
+    "culturalSignificance": "శాస్త్రీయ / సాంస్కృతిక ప్రాముఖ్యత",
+    "pujaOverview": "పూజా అవలోకనం",
+    "thingsToAvoid": "నివారించవలసినవి",
+    "aiAssistedBadge": "AI-సహాయంతో — సంప్రదాయాలు ప్రాంతం/కుటుంబం ఆధారంగా మారవచ్చు"
+  },
+  "preparationChecklist": {
+    "nothingSpecified": "ఏదీ పేర్కొనబడలేదు.",
+    "loadFailed": "ప్రస్తుతం తయారీ చెక్‌లిస్ట్‌ను లోడ్ చేయలేకపోయింది.",
+    "sections": {
+      "preparationChecklist": "తయారీ చెక్‌లిస్ట్",
+      "shoppingChecklist": "షాపింగ్ చెక్‌లిస్ట్",
+      "pujaMaterials": "పూజా సామగ్రి",
+      "fastingPreparation": "ఉపవాస తయారీ",
+      "morningRoutine": "ఉదయం దినచర్య",
+      "eveningRitual": "సాయంత్రం ఆచారం",
+      "postFestivalReflection": "పండుగ అనంతర ఆలోచన"
+    }
+  },
+  "personalizedGuidance": {
+    "title": "🌟 వ్యక్తిగతీకరించిన పండుగ మార్గదర్శకత్వం",
+    "noChartMessage": "ఈ పండుగ మీకు ప్రత్యేకంగా ఎందుకు అర్థవంతంగా ఉందో తెలుసుకోవడానికి — కెరీర్, ఆర్థిక, సంబంధాలు, ఆరోగ్యం, ఆధ్యాత్మిక మరియు వ్యక్తిగత వృద్ధిపై దృష్టి సారించి, మీ స్వంత చార్ట్ ఆధారంగా — మీ సేవ్ చేసిన రీడింగ్‌లలో ఒకదాని నుండి ఈ పండుగను తెరవండి.",
+    "openSavedReading": "సేవ్ చేసిన రీడింగ్‌ను తెరవండి →",
+    "subtitle": "మీ స్వంత దశ, గోచారం మరియు అంచనాల ఆధారంగా.",
+    "loadFailed": "ప్రస్తుతం వ్యక్తిగతీకరించిన మార్గదర్శకత్వాన్ని లోడ్ చేయలేకపోయింది.",
+    "askButton": "✨ {{status}}",
+    "whyMeaningful": "ఇది నాకు ఎందుకు అర్థవంతంగా ఉంది?",
+    "focusFields": {
+      "careerFocus": "కెరీర్",
+      "financeFocus": "ఆర్థిక",
+      "relationshipFocus": "సంబంధాలు",
+      "healthFocus": "ఆరోగ్యం",
+      "spiritualFocus": "ఆధ్యాత్మిక",
+      "personalGrowthFocus": "వ్యక్తిగత వృద్ధి"
+    }
+  },
+  "intelligencePage": {
+    "back": "← వెనుకకు",
+    "title": "🔮 పండుగ ఇంటెలిజెన్స్",
+    "subtitle": "ఒక పండుగ కోసం లోతైన అర్థం, వ్యక్తిగతీకరించిన మార్గదర్శకత్వం, తయారీ మరియు కుటుంబ సూచనలు.",
+    "loadFailed": "ఈ పండుగను లోడ్ చేయలేకపోయింది.",
+    "loadUpcomingFailed": "రాబోయే పండుగలను లోడ్ చేయలేకపోయింది.",
+    "noFestivalTitle": "పండుగ ఎంపిక చేయబడలేదు",
+    "noFestivalMessage": "దాని పూర్తి ఇంటెలిజెన్స్‌ను చూడటానికి పండుగ క్యాలెండర్, డాష్‌బోర్డ్ లేదా క్యాలెండర్ పేజీ నుండి ఒక పండుగను తెరవండి.",
+    "ritualFlow": "ఆచార క్రమం",
+    "timelineUnavailable": "ఈ పండుగ కోసం టైమ్‌లైన్ అందుబాటులో లేదు.",
+    "festivalIntelligence": "పండుగ ఇంటెలిజెన్స్",
+    "personalizedGuidance": "వ్యక్తిగతీకరించిన మార్గదర్శకత్వం",
+    "festivalPreparation": "పండుగ తయారీ",
+    "family": "కుటుంబం"
+  },
+  "widget": {
+    "title": "నేటి పండుగ",
+    "openCalendar": "పండుగ క్యాలెండర్‌ను తెరవండి →",
+    "loading": "లోడ్ అవుతోంది…",
+    "noFestivalToday": "ఈరోజు పండుగ లేదు.",
+    "nextFestival": "తదుపరి పండుగ",
+    "daysRemainingLabel": "మిగిలిన రోజులు",
+    "daysRemainingSingle": "{{count}} రోజు",
+    "daysRemainingPlural": "{{count}} రోజులు",
+    "importance": "ప్రాముఖ్యత",
+    "preparationProgress": "తయారీ పురోగతి",
+    "preparationItemsReady": "{{count}} చెక్‌లిస్ట్ అంశాలు సిద్ధంగా ఉన్నాయి",
+    "upcomingRitual": "రాబోయే ఆచారం",
+    "personalizedTip": "వ్యక్తిగతీకరించిన చిట్కా",
+    "viewIntelligence": "🔮 పండుగ ఇంటెలిజెన్స్‌ను చూడండి"
+  },
+  "muhurat": {
+    "bestMuhuratFor": "{{activity}} కోసం ఉత్తమ ముహూర్తం",
+    "confidence": {
+      "high": "అధిక",
+      "medium": "మధ్యస్థ",
+      "low": "తక్కువ"
+    },
+    "confidenceBadge": "{{level}} విశ్వాసం",
+    "bestDate": "ఉత్తమ తేదీ",
+    "bestTimeWindow": "ఉత్తమ సమయ విండో",
+    "tithi": "తిథి",
+    "auspiciousWindow": "శుభ సమయం",
+    "cautionPeriod": "జాగ్రత్త సమయం (నివారించండి)",
+    "rahuKaal": "రాహు కాలం",
+    "yamaganda": "యమగండం",
+    "gulikaKaal": "గుళిక కాలం",
+    "otherStrongDates": "ఇతర మంచి తేదీలు",
+    "askingAI": "AI ని అడుగుతోంది…",
+    "explainWhy": "🔮 ఈ ముహూర్తం ఎందుకో వివరించండి",
+    "nakshatra": "నక్షత్రం"
+  },
+  "calendarStrip": {
+    "heading": "🎉 ఈ నెల పండుగలు",
+    "viewCalendarLink": "పండుగల క్యాలెండర్ చూడండి →",
+    "todayLabel": "ఈరోజు:",
+    "loadingOverview": "పండుగ అవలోకనం లోడ్ అవుతోంది…",
+    "importanceSuffix": "ప్రాముఖ్యత"
+  }
+}

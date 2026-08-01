@@ -1,0 +1,16 @@
+{
+  "notFound": "କୌଣସି ରୁଟ୍ ନାହିଁ {{method}} {{path}}",
+  "malformedJson": "ଅନୁରୋଧ ବଡିରେ ବିକୃତ JSON।",
+  "bodyTooLarge": "ଅନୁରୋଧ ବଡି ଅତ୍ୟଧିକ ବଡ଼।",
+  "internalError": "ଆଭ୍ୟନ୍ତରୀଣ ସର୍ଭର୍ ତ୍ରୁଟି।",
+  "internalErrorProduction": "ଆଭ୍ୟନ୍ତରୀଣ ସର୍ଭର୍ ତ୍ରୁଟି। ଦୟାକରି ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ।",
+  "invalidRequest": "ଅସିଦ୍ଧ ଅନୁରୋଧ: {{errors}}",
+  "serviceUnavailable": "{{feature}} ବର୍ତ୍ତମାନ ଉପଲବ୍ଧ ନାହିଁ।",
+  "invalidProfile": "ଅସିଦ୍ଧ ପ୍ରୋଫାଇଲ୍: {{errors}}",
+  "chooseTwoDifferentProfiles": "ତୁଳନା କରିବାକୁ ଦୁଇଟି ଭିନ୍ନ ପ୍ରୋଫାଇଲ୍ ବାଛନ୍ତୁ।",
+  "comparisonError": "ଏହି ଦୁଇଟି ପ୍ରୋଫାଇଲ୍ ତୁଳନା କରିବା ସମୟରେ ଆଭ୍ୟନ୍ତରୀଣ ସର୍ଭର୍ ତ୍ରୁଟି।",
+  "internalErrorWhile": "{{action}} କରିବା ସମୟରେ ଆଭ୍ୟନ୍ତରୀଣ ସର୍ଭର୍ ତ୍ରୁଟି।",
+  "occurrenceNotFound": "{{year}} ମସିହା ପାଇଁ \"{{key}}\" ର କୌଣସି ଘଟଣା ମିଳିଲା ନାହିଁ।",
+  "missingApiKey": "ସର୍ଭର୍ରେ API କି ନାହିଁ। backend/.env ରେ GOOGLE_API_KEY ସେଟ୍ କରନ୍ତୁ।",
+  "tooManyRequests": "ଅତ୍ୟଧିକ ଅନୁରୋଧ। ଦୟାକରି ଧୀରେ ଚେଷ୍ଟା କରନ୍ତୁ।"
+}

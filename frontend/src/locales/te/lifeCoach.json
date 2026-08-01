@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "daily": "రోజువారీ",
+    "weekly": "వారానికోసారి",
+    "monthly": "నెలవారీ",
+    "career": "కెరీర్",
+    "relationship": "సంబంధాలు",
+    "finance": "ఆర్థిక",
+    "health": "ఆరోగ్యం",
+    "growth": "వృద్ధి"
+  },
+  "page": {
+    "back": "← వెనుకకు",
+    "title": "🧭 AI లైఫ్ కోచ్",
+    "dailyCompanion": "{{name}} యొక్క రోజువారీ సహచరుడు",
+    "updated": "{{time}} న నవీకరించబడింది",
+    "refreshing": "రిఫ్రెష్ చేస్తోంది…",
+    "refreshGuidance": "↻ మార్గదర్శకత్వాన్ని రిఫ్రెష్ చేయండి",
+    "tryAgain": "మళ్లీ ప్రయత్నించండి",
+    "loadingAriaLabel": "మీ AI లైఫ్ కోచ్ మార్గదర్శకత్వం లోడ్ అవుతోంది",
+    "loadFailed": "మీ AI లైఫ్ కోచ్ మార్గదర్శకత్వాన్ని లోడ్ చేయలేకపోయింది.",
+    "refreshFailed": "మీ AI లైఫ్ కోచ్ మార్గదర్శకత్వాన్ని రిఫ్రెష్ చేయలేకపోయింది.",
+    "noReadingTitle": "ఇంకా రీడింగ్ అందుబాటులో లేదు",
+    "noReadingMessage": "మీ వ్యక్తిగత AI లైఫ్ కోచ్‌ను చూడటానికి ముందుగా ఒక నివేదికను రూపొందించండి లేదా తెరవండి.",
+    "backAction": "← వెనుకకు"
+  },
+  "daily": {
+    "opportunities": "అవకాశాలు",
+    "challenges": "సవాళ్లు",
+    "recommendedActions": "సిఫార్సు చేయబడిన చర్యలు",
+    "thingsToAvoid": "నివారించవలసినవి",
+    "spiritualGuidance": "🕉️ ఆధ్యాత్మిక మార్గదర్శకత్వం"
+  },
+  "outlook": {
+    "weeklyThemeTitle": "ఈ వారం థీమ్",
+    "weeklyEnergyLabel": "వారపు శక్తి",
+    "monthlyThemeTitle": "ఈ నెల థీమ్",
+    "monthlyEnergyLabel": "నెలవారీ శక్తి",
+    "weeklyUnavailableTitle": "వారపు దృక్పథం అందుబాటులో లేదు",
+    "weeklyUnavailableMessage": "మేము ప్రస్తుతం ఈ వారం దృక్పథాన్ని రూపొందించలేకపోయాము — దయచేసి రిఫ్రెష్ చేయండి.",
+    "monthlyUnavailableTitle": "నెలవారీ దృక్పథం అందుబాటులో లేదు",
+    "monthlyUnavailableMessage": "మేము ప్రస్తుతం ఈ నెల దృక్పథాన్ని రూపొందించలేకపోయాము — దయచేసి రిఫ్రెష్ చేయండి.",
+    "weeklyFocus": "వారపు దృష్టి",
+    "personalGrowthGoal": "వ్యక్తిగత వృద్ధి లక్ష్యం",
+    "careerFocus": "కెరీర్ దృష్టి",
+    "relationshipFocus": "సంబంధ దృష్టి",
+    "opportunities": "అవకాశాలు",
+    "challenges": "సవాళ్లు",
+    "bestDay": "ఉత్తమ రోజు: {{weekday}} ({{date}})",
+    "cautionDay": "జాగ్రత్త రోజు: {{weekday}} ({{date}})"
+  },
+  "career": {
+    "cardTitle": "కెరీర్ కోచ్",
+    "progress": "కెరీర్ పురోగతి",
+    "skillDevelopmentAdvice": "నైపుణ్య అభివృద్ధి సలహా",
+    "promotionGuidance": "పదోన్నతి మార్గదర్శకత్వం",
+    "businessSuggestions": "వ్యాపార సూచనలు",
+    "bestTimeForDecisions": "ముఖ్యమైన నిర్ణయాల కోసం ఉత్తమ సమయం"
+  },
+  "relationship": {
+    "cardTitle": "సంబంధ కోచ్",
+    "guidance": "సంబంధ మార్గదర్శకత్వం",
+    "marriageAdvice": "వివాహ సలహా",
+    "familyHarmonyTips": "కుటుంబ సామరస్య చిట్కాలు",
+    "communicationSuggestions": "సంభాషణ సూచనలు",
+    "emotionalWellbeing": "భావోద్వేగ శ్రేయస్సు"
+  },
+  "finance": {
+    "cardTitle": "ఆర్థిక కోచ్",
+    "outlook": "ఆర్థిక దృక్పథం",
+    "spendingSuggestions": "ఖర్చు సూచనలు",
+    "savingAdvice": "పొదుపు సలహా",
+    "investmentAwareness": "పెట్టుబడి అవగాహన",
+    "businessOpportunities": "వ్యాపార అవకాశాలు"
+  },
+  "health": {
+    "cardTitle": "ఆరోగ్యం & శ్రేయస్సు",
+    "energyTrends": "శక్తి ధోరణులు",
+    "stressAwareness": "ఒత్తిడి అవగాహన",
+    "meditationSuggestions": "ధ్యాన సూచనలు",
+    "yogaRecommendations": "యోగా సిఫార్సులు",
+    "spiritualPractices": "ఆధ్యాత్మిక అభ్యాసాలు",
+    "lifestyleSuggestions": "జీవనశైలి సూచనలు"
+  },
+  "growth": {
+    "dailyGoals": "రోజువారీ లక్ష్యాలు",
+    "weeklyGoals": "వారపు లక్ష్యాలు",
+    "monthlyFocus": "🌕 నెలవారీ దృష్టి",
+    "habitSuggestions": "అలవాటు సూచనలు",
+    "learningRecommendations": "అభ్యాస సిఫార్సులు"
+  },
+  "scoreCard": {
+    "dailyEnergyLabel": "రోజువారీ శక్తి",
+    "todaysFocus": "నేటి దృష్టి"
+  },
+  "confidenceBadge": {
+    "withScore": "విశ్వాసం: {{label}} ({{score}}/100)",
+    "withoutScore": "విశ్వాసం: {{label}}"
+  },
+  "whyNote": {
+    "prefix": "ఎందుకు? "
+  },
+  "luckyElements": {
+    "title": "🍀 నేటి అదృష్ట అంశాలు",
+    "color": "రంగు",
+    "number": "సంఖ్య",
+    "direction": "దిశ",
+    "favorableTime": "అనుకూల సమయం"
+  },
+  "affirmation": {
+    "dailyAffirmation": "✦ రోజువారీ ధృవీకరణ",
+    "spiritualPractice": "🕉️ నేటి ఆధ్యాత్మిక అభ్యాసం"
+  }
+}

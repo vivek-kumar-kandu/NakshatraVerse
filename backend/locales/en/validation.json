@@ -1,0 +1,9 @@
+{
+  "nameRequired": "name is required",
+  "validEmailRequired": "a valid email is required",
+  "passwordMinLength": "password must be at least 8 characters",
+  "passwordNeedsNumber": "password must contain at least one number",
+  "passwordRequired": "password is required",
+  "festivalKeyRequired": "`festivalKey` query parameter is required.",
+  "profileIdsRequired": "profileIdA and profileIdB are both required."
+}

@@ -1,4 +1,8 @@
 import { useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import GoogleSignInButton, { isGoogleAuthAvailable } from "../components/common/GoogleSignInButton.jsx";
@@ -10,8 +14,12 @@ import { useAuth } from "../context/AuthContext.jsx";
 import { GOLD_GRADIENT } from "../constants/astrology.js";
 import { emailError as getEmailError, requiredError } from "../utils/authValidation.js";
 
+<<<<<<< HEAD
 const INPUT_STYLE = {
   width: "100%", padding: "14px 18px",
+=======
+const INPUT_STYLE = {width: "100%", padding: "14px 18px",
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   background: "rgba(255,255,255,0.05)", border: "1px solid rgba(180,120,255,0.28)",
   borderRadius: 12, color: "var(--nv-text-primary, #e8d5ff)", fontSize: 15, outline: "none",
   fontFamily: "Inter,sans-serif", transition: "border-color var(--nv-duration-base) var(--nv-ease-standard), box-shadow var(--nv-duration-base) var(--nv-ease-standard)",
@@ -34,6 +42,10 @@ const REMEMBER_ME_KEY = "nv_remember_me";
 const googleAvailable = isGoogleAuthAvailable();
 
 function LoginPage({ onNavigate }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["auth"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const { login, loginWithGoogle } = useAuth();
   const [form, setForm] = useState({ email: "", password: "" });
   const [touched, setTouched] = useState({ email: false, password: false });
@@ -50,7 +62,11 @@ function LoginPage({ onNavigate }) {
 
   const fieldErrors = {
     email: touched.email ? getEmailError(form.email) : null,
+<<<<<<< HEAD
     password: touched.password ? requiredError(form.password, "Password") : null,
+=======
+    password: touched.password ? requiredError(form.password, t("auth:login.passwordLabel"), t) : null,
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   };
   const busy = submitting || googleBusy;
 
@@ -69,7 +85,11 @@ function LoginPage({ onNavigate }) {
     ev.preventDefault();
     setError(null);
     setTouched({ email: true, password: true });
+<<<<<<< HEAD
     if (getEmailError(form.email) || requiredError(form.password, "Password")) {
+=======
+    if (getEmailError(form.email, t) || requiredError(form.password, t("auth:login.passwordLabel"), t)) {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       return;
     }
     setSubmitting(true);
@@ -81,7 +101,11 @@ function LoginPage({ onNavigate }) {
       // meant to go (see App.jsx's postLoginTarget).
       onNavigate("post-auth");
     } catch (err) {
+<<<<<<< HEAD
       setError(err.message || "Sign in failed.");
+=======
+      setError(err.message || t("auth:login.signInFailed"));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     } finally {
       setSubmitting(false);
     }
@@ -94,7 +118,11 @@ function LoginPage({ onNavigate }) {
       await loginWithGoogle(idToken);
       onNavigate("post-auth");
     } catch (err) {
+<<<<<<< HEAD
       setError(err.message || "Google sign-in failed.");
+=======
+      setError(err.message || t("auth:login.googleSignInFailed"));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     } finally {
       setGoogleBusy(false);
     }
@@ -112,9 +140,15 @@ function LoginPage({ onNavigate }) {
           <h1 style={{ margin: "0 0 6px", fontSize: "clamp(26px,5vw,40px)", fontWeight: 700,
             letterSpacing: 2, background: GOLD_GRADIENT, WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif" }}>
+<<<<<<< HEAD
             Welcome Back
           </h1>
           <p style={{ margin: 0, fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))" }}>Sign in to view your saved readings</p>
+=======
+            {t("auth:login.title")}
+          </h1>
+          <p style={{ margin: 0, fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))" }}>{t("auth:login.subtitle")}</p>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </div>
 
         <GlassCard style={{ width: "100%", maxWidth: 420, padding: "36px 32px", animation: "fadeIn 0.5s ease 0.1s both" }}>
@@ -129,7 +163,11 @@ function LoginPage({ onNavigate }) {
 
           <form onSubmit={handleSubmit} noValidate>
             <div style={{ marginBottom: 18, animation: "fadeIn 0.4s ease 0.2s both" }}>
+<<<<<<< HEAD
               <label htmlFor="login-email" style={{ display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 7, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500 }}>Email</label>
+=======
+              <label htmlFor="login-email" style={{ display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 7, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500 }}>{t("auth:login.emailLabel")}</label>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <input id="login-email" name="email" type="email" autoComplete="email" value={form.email} disabled={busy}
                 onChange={(ev) => setForm((p) => ({ ...p, email: ev.target.value }))}
                 onBlur={() => setTouched((t) => ({ ...t, email: true }))}
@@ -144,7 +182,11 @@ function LoginPage({ onNavigate }) {
             <div style={{ marginBottom: 8, animation: "fadeIn 0.4s ease 0.25s both" }}>
               <PasswordField
                 id="login-password"
+<<<<<<< HEAD
                 label="Password"
+=======
+                label={t("auth:login.passwordLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 autoComplete="current-password"
                 value={form.password}
                 disabled={busy}
@@ -158,11 +200,19 @@ function LoginPage({ onNavigate }) {
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 14, animation: "fadeIn 0.4s ease 0.3s both" }}>
               <label style={{ display: "flex", alignItems: "center", gap: 7, fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.65))", cursor: "pointer" }}>
                 <input type="checkbox" className="auth-checkbox" checked={rememberMe} onChange={handleRememberChange} disabled={busy} />
+<<<<<<< HEAD
                 Keep me signed in
               </label>
               <button type="button" onClick={() => onNavigate("forgot-password")} className="auth-link-btn"
                 style={{ background: "none", border: "none", color: "#bf7fff", cursor: "pointer", fontSize: 12, padding: 0 }}>
                 Forgot password?
+=======
+                {t("auth:login.keepSignedIn")}
+              </label>
+              <button type="button" onClick={() => onNavigate("forgot-password")} className="auth-link-btn"
+                style={{ background: "none", border: "none", color: "#bf7fff", cursor: "pointer", fontSize: 12, padding: 0 }}>
+                {t("auth:login.forgotPassword")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </button>
             </div>
 
@@ -187,17 +237,30 @@ function LoginPage({ onNavigate }) {
               animation: "fadeIn 0.4s ease 0.35s both",
             }}>
               {submitting && <Spinner size={16} />}
+<<<<<<< HEAD
               {submitting ? "Signing in…" : "✦ Sign In ✦"}
             </button>
             <p style={{ margin: "10px 0 0", textAlign: "center", fontSize: 11, color: "rgba(180,130,255,0.4)" }}>
               {rememberMe ? "You'll stay signed in on this device for 30 days." : "You'll be signed out when you close your browser session."}
+=======
+              {submitting ? t("auth:login.signingIn") : t("auth:login.signIn")}
+            </button>
+            <p style={{ margin: "10px 0 0", textAlign: "center", fontSize: 11, color: "rgba(180,130,255,0.4)" }}>
+              {rememberMe ? t("auth:login.sessionNoteRemembered") : t("auth:login.sessionNoteNotRemembered")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
           </form>
 
           <p style={{ textAlign: "center", margin: "20px 0 0", fontSize: 13, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
+<<<<<<< HEAD
             New here?{" "}
             <button onClick={() => onNavigate("signup")} className="auth-link-btn" style={{ background: "none", border: "none", color: "#bf7fff", cursor: "pointer", fontSize: 13, textDecoration: "underline", padding: 0 }}>
               Create an account
+=======
+            {t("auth:login.newHere")}{" "}
+            <button onClick={() => onNavigate("signup")} className="auth-link-btn" style={{ background: "none", border: "none", color: "#bf7fff", cursor: "pointer", fontSize: 13, textDecoration: "underline", padding: 0 }}>
+              {t("auth:login.createAnAccount")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </p>
           <p style={{ textAlign: "center", margin: "10px 0 0" }}>
@@ -208,7 +271,11 @@ function LoginPage({ onNavigate }) {
                 dropped a visitor onto the birth form instead of Home.
                 "home" is the correct stage for the marketing HomePage. */}
             <button onClick={() => onNavigate("home")} className="auth-link-btn" style={{ background: "none", border: "none", color: "rgba(180,130,255,0.5)", cursor: "pointer", fontSize: 12, padding: 0 }}>
+<<<<<<< HEAD
               ← Back to home
+=======
+              {t("auth:login.backToHome")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </p>
         </GlassCard>

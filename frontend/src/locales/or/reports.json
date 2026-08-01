@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← ଡ୍ୟାସବୋର୍ଡକୁ ଫେରନ୍ତୁ",
+    "title": "ସଞ୍ଚିତ ରିପୋର୍ଟଗୁଡ଼ିକ",
+    "titleWithCount": "ସଞ୍ଚିତ ରିପୋର୍ଟଗୁଡ଼ିକ ({{count}})",
+    "generateNewReport": "✦ ନୂତନ ରିପୋର୍ଟ ତିଆରି କରନ୍ତୁ",
+    "loadFailed": "ଆପଣଙ୍କର ସଞ୍ଚିତ ରିପୋର୍ଟଗୁଡ଼ିକ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "tryAgain": "↻ ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ",
+    "deleteToastSuccess": "\"{{title}}\" ବିଲୋପ ହୋଇଛି।",
+    "deleteToastFallbackTitle": "ରିପୋର୍ଟ",
+    "deleteFailed": "ସେହି ରିପୋର୍ଟ ବିଲୋପ ହୋଇପାରିଲା ନାହିଁ।",
+    "downloadToastSuccess": "PDF ଡାଉନଲୋଡ୍ ହୋଇଛି।",
+    "downloadFailed": "PDF ତିଆରି ହୋଇପାରିଲା ନାହିଁ।",
+    "emptyTitle": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ସଞ୍ଚିତ ରିପୋର୍ଟ ନାହିଁ",
+    "emptyMessage": "ଏଠାରେ ଆପଣଙ୍କର ସଂଗ୍ରହ ତିଆରି କରିବାକୁ ଏକ ରିଡିଂ ତିଆରି କରନ୍ତୁ ଏବଂ ରିପୋର୍ଟ ସଞ୍ଚୟ କରନ୍ତୁ ଉପରେ ଟ୍ୟାପ୍ କରନ୍ତୁ।",
+    "emptyAction": "✦ ନୂତନ ରିପୋର୍ଟ ତିଆରି କରନ୍ତୁ",
+    "noMatchesTitle": "କୌଣସି ମେଳ ମିଳିଲା ନାହିଁ",
+    "noMatchesMessage": "କୌଣସି ସଞ୍ଚିତ ରିପୋର୍ଟ \"{{query}}\" ସହିତ ମେଳ ଖାଏ ନାହିଁ। ଏକ ଭିନ୍ନ ଶୀର୍ଷକ, ନାମ, କିମ୍ବା ଲଗ୍ନ ଚେଷ୍ଟା କରନ୍ତୁ।",
+    "clearSearch": "ସନ୍ଧାନ ସଫା କରନ୍ତୁ",
+    "deleteDialog": {
+      "title": "ଏହି ରିପୋର୍ଟ ବିଲୋପ କରିବେ କି?",
+      "message": "\"{{title}}\" ସ୍ଥାୟୀ ଭାବରେ ହଟାଇ ଦିଆଯିବ। ଏହା ପୂର୍ବାବସ୍ଥାକୁ ଫେରାଇ ହେବ ନାହିଁ।",
+      "fallbackTitle": "ଏହି ରିପୋର୍ଟ",
+      "confirmLabel": "ବିଲୋପ କରନ୍ତୁ",
+      "cancelLabel": "ବାତିଲ୍ କରନ୍ତୁ"
+    }
+  },
+  "detail": {
+    "loadFailed": "ସେହି ରିପୋର୍ଟ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "backToSavedReports": "← ସଞ୍ଚିତ ରିପୋର୍ଟଗୁଡ଼ିକୁ ଫେରନ୍ତୁ",
+    "loading": "ଆପଣଙ୍କର ସଞ୍ଚିତ ରିଡିଂ ଲୋଡ୍ ହେଉଛି…",
+    "openHoroscope": "🔮 ରାଶିଫଳ",
+    "openCalendar": "📅 କ୍ୟାଲେଣ୍ଡର",
+    "openLifeCoach": "🧭 ଲାଇଫ୍ କୋଚ୍",
+    "askAI": "✨ AI କୁ ପଚାରନ୍ତୁ"
+  },
+  "card": {
+    "savedOn": "{{date}} ରେ ସଞ୍ଚିତ",
+    "view": "ଦେଖନ୍ତୁ",
+    "preview": "ପୂର୍ବାବଲୋକନ",
+    "download": "PDF",
+    "delete": "ବିଲୋପ କରନ୍ତୁ",
+    "deleting": "ବିଲୋପ କରାଯାଉଛି…",
+    "lagnaSuffix": "{{lagna}} ଲଗ୍ନ",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "ରିପୋର୍ଟ ବିନ୍ୟାସ",
+    "gridView": "ଗ୍ରିଡ୍ ଦୃଶ୍ୟ",
+    "listView": "ତାଲିକା ଦୃଶ୍ୟ",
+    "searchPlaceholder": "ଶୀର୍ଷକ, ନାମ, କିମ୍ବା ଲଗ୍ନ ଦ୍ୱାରା ସନ୍ଧାନ କରନ୍ତୁ…",
+    "searchAriaLabel": "ସଞ୍ଚିତ ରିପୋର୍ଟଗୁଡ଼ିକ ସନ୍ଧାନ କରନ୍ତୁ",
+    "sortAriaLabel": "ସଞ୍ଚିତ ରିପୋର୍ଟଗୁଡ଼ିକ ସଜାନ୍ତୁ",
+    "resultCountSingle": "{{count}} ରିପୋର୍ଟ",
+    "resultCountPlural": "{{count}} ରିପୋର୍ଟଗୁଡ଼ିକ",
+    "resultCountFiltered": "{{total}} ମଧ୍ୟରୁ {{count}}"
+  },
+  "sort": {
+    "newest": "ସର୍ବନୂତନ ପ୍ରଥମେ",
+    "oldest": "ସର୍ବପୁରାତନ ପ୍ରଥମେ",
+    "title-asc": "ଶୀର୍ଷକ (A–Z)",
+    "title-desc": "ଶୀର୍ଷକ (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} ର ପୂର୍ବାବଲୋକନ",
+    "closePreview": "ପୂର୍ବାବଲୋକନ ବନ୍ଦ କରନ୍ତୁ",
+    "savedOn": "{{date}} ରେ ସଞ୍ଚିତ",
+    "noDetails": "ଏହି ରିପୋର୍ଟ ପାଇଁ କୌଣସି ଅତିରିକ୍ତ ବିବରଣୀ ସଞ୍ଚିତ ନାହିଁ।",
+    "description": "ଏହା ଆପଣଙ୍କର ସଞ୍ଚିତ ରିଡିଂର ବିବରଣୀର ଏକ ଦ୍ରୁତ ପୂର୍ବାବଲୋକନ ଅଟେ। ପ୍ରତ୍ୟେକ ବିଭାଗ ପଢ଼ିବାକୁ ସମ୍ପୂର୍ଣ୍ଣ ରିପୋର୍ଟ ଖୋଲନ୍ତୁ — ପ୍ରେମ, କ୍ୟାରିୟର, ଧନ, ସ୍ୱାସ୍ଥ୍ୟ, ଦୋଷ ଏବଂ ଯୋଗ, ଉପାୟ, ଏବଂ ଆପଣଙ୍କର ଜୀବନ ସାରାଂଶ।",
+    "viewFullReport": "✦ ସମ୍ପୂର୍ଣ୍ଣ ରିପୋର୍ଟ ଦେଖନ୍ତୁ",
+    "preparingPdf": "PDF ପ୍ରସ୍ତୁତ କରାଯାଉଛି…",
+    "downloadPdf": "⭳ PDF ଡାଉନଲୋଡ୍ କରନ୍ତୁ"
+  },
+  "summarizeAiAria": "AI ସହିତ ଏହି ରିପୋର୍ଟର ସଂକ୍ଷେପ କରନ୍ତୁ",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy is not part of this chart's backend-derived remedies."
+}

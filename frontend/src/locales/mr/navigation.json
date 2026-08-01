@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "मुख्यपृष्ठ",
+    "features": "वैशिष्ट्ये",
+    "about": "आमच्याबद्दल",
+    "faq": "सामान्य प्रश्न"
+  },
+  "navbar": {
+    "brandAriaLabel": "नक्षत्रवर्स — मुख्यपृष्ठ",
+    "primaryAriaLabel": "मुख्य",
+    "openMenu": "मेनू उघडा",
+    "closeMenu": "मेनू बंद करा"
+  },
+  "auth": {
+    "home": "मुख्यपृष्ठ",
+    "dashboard": "डॅशबोर्ड",
+    "reports": "अहवाल",
+    "profile": "प्रोफाइल"
+  },
+  "accountMenu": {
+    "myProfile": "माझी प्रोफाइल",
+    "dashboard": "डॅशबोर्ड",
+    "savedReports": "जतन केलेले अहवाल",
+    "settings": "सेटिंग्ज",
+    "helpAbout": "मदत आणि माहिती",
+    "memberSince": "{{date}} पासून सदस्य",
+    "menuLabel": "खाते",
+    "triggerLabel": "{{name}} साठी खाते मेनू"
+  },
+  "actionDock": {
+    "askAi": "AI ला विचारा",
+    "horoscope": "राशिभविष्य",
+    "calendar": "कॅलेंडर",
+    "lifeCoach": "लाइफ कोच",
+    "kundliMatching": "कुंडली जुळवणी",
+    "panchang": "पंचांग",
+    "festivalCalendar": "सण कॅलेंडर",
+    "notifications": "सूचना",
+    "saveReport": "अहवाल जतन करा",
+    "saving": "जतन करत आहे…",
+    "downloadPdf": "PDF डाउनलोड करा",
+    "preparing": "तयार करत आहे…",
+    "printPdf": "PDF प्रिंट करा",
+    "opening": "उघडत आहे…",
+    "reportActions": "अहवाल क्रिया",
+    "openReportActions": "अहवाल क्रिया उघडा",
+    "close": "बंद करा",
+    "somethingWentWrong": "काहीतरी चूक झाली."
+  },
+  "commandPalette": {
+    "ariaLabel": "कमांड पॅलेट",
+    "searchAriaLabel": "कमांड पॅलेट शोध",
+    "commandsAriaLabel": "कमांड्स",
+    "sections": {
+      "navigate": "नेव्हिगेट करा",
+      "theme": "थीम",
+      "settings": "सेटिंग्ज",
+      "recent": "अलीकडील",
+      "recentReports": "अलीकडील अहवाल",
+      "recentReportsLoading": "अलीकडील अहवाल · लोड होत आहे…"
+    },
+    "nav": {
+      "dashboard": "डॅशबोर्ड",
+      "generateReport": "अहवाल तयार करा",
+      "savedReports": "जतन केलेले अहवाल",
+      "profile": "प्रोफाइल",
+      "settings": "सेटिंग्ज",
+      "horoscope": "राशिभविष्य",
+      "calendar": "कॅलेंडर",
+      "aiAssistant": "AI सहाय्यक",
+      "aiLifeCoach": "AI लाइफ कोच",
+      "kundliMatching": "कुंडली जुळवणी",
+      "dailyPanchang": "दैनिक पंचांग आणि मुहूर्त",
+      "festivalCalendar": "सण कॅलेंडर",
+      "todaysFestival": "आजचा सण",
+      "upcomingFestivals": "आगामी सण",
+      "notificationCenter": "सूचना केंद्र",
+      "unreadNotifications": "न वाचलेल्या सूचना",
+      "familyProfiles": "कुटुंब प्रोफाइल",
+      "relationshipHub": "रिलेशनशिप हब",
+      "help": "मदत"
+    },
+    "theme": {
+      "light": "सेक्रेड डॉनवर स्विच करा",
+      "dark": "मिडनाइट कॉस्मिकवर स्विच करा",
+      "system": "सिस्टम थीमवर स्विच करा"
+    },
+    "settingsSections": {
+      "account": "सेटिंग्ज · खाते",
+      "appearance": "सेटिंग्ज · दिसणे",
+      "preferences": "सेटिंग्ज · प्राधान्ये",
+      "privacy": "सेटिंग्ज · गोपनीयता",
+      "about": "सेटिंग्ज · माहिती"
+    },
+    "untitledReport": "शीर्षकहीन अहवाल",
+    "noMatches": "जुळणारी कोणतीही कमांड नाही.",
+    "noMatchesFor": "\"{{query}}\" साठी जुळणारी कोणतीही कमांड नाही.",
+    "searchPlaceholder": "पाने, अहवाल, योग, दोष, उपाय शोधा…"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "notFound": "ਕੋਈ ਰਸਤਾ ਨਹੀਂ {{method}} {{path}}",
+  "malformedJson": "ਬੇਨਤੀ ਬੋਡੀ ਵਿੱਚ ਗਲਤ JSON।",
+  "bodyTooLarge": "ਬੇਨਤੀ ਬੋਡੀ ਬਹੁਤ ਵੱਡੀ ਹੈ।",
+  "internalError": "ਅੰਦਰੂਨੀ ਸਰਵਰ ਗਲਤੀ।",
+  "internalErrorProduction": "ਅੰਦਰੂਨੀ ਸਰਵਰ ਗਲਤੀ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "invalidRequest": "ਅਪ੍ਰਮਾਣਿਤ ਬੇਨਤੀ: {{errors}}",
+  "serviceUnavailable": "{{feature}} ਹੁਣੇ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।",
+  "invalidProfile": "ਅਪ੍ਰਮਾਣਿਤ ਪ੍ਰੋਫਾਈਲ: {{errors}}",
+  "chooseTwoDifferentProfiles": "ਤੁਲਨਾ ਕਰਨ ਲਈ ਦੋ ਵੱਖ-ਵੱਖ ਪ੍ਰੋਫਾਈਲਾਂ ਦੀ ਚੋਣ ਕਰੋ।",
+  "comparisonError": "ਇਨ੍ਹਾਂ ਦੋ ਪ੍ਰੋਫਾਈਲਾਂ ਦੀ ਤੁਲਨਾ ਕਰਦੇ ਸਮੇਂ ਅੰਦਰੂਨੀ ਸਰਵਰ ਗਲਤੀ।",
+  "internalErrorWhile": "{{action}} ਕਰਦੇ ਸਮੇਂ ਅੰਦਰੂਨੀ ਸਰਵਰ ਗਲਤੀ।",
+  "occurrenceNotFound": "ਸਾਲ {{year}} ਲਈ \"{{key}}\" ਦੀ ਕੋਈ ਘਟਨਾ ਨਹੀਂ ਮਿਲੀ।",
+  "missingApiKey": "ਸਰਵਰ ਵਿੱਚ API ਕੁੰਜੀ ਗਾਇਬ ਹੈ। backend/.env ਵਿੱਚ GOOGLE_API_KEY ਸੈੱਟ ਕਰੋ।",
+  "tooManyRequests": "ਬਹੁਤ ਸਾਰੀਆਂ ਬੇਨਤੀਆਂ। ਕਿਰਪਾ ਕਰਕੇ ਹੌਲੀ ਹੋਵੋ ਅਤੇ ਜਲਦੀ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+}

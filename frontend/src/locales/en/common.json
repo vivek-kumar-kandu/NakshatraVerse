@@ -1,0 +1,73 @@
+{
+  "app": {
+    "name": "NakshatraVerse",
+    "tagline": "Authentic Vedic astrology, explained by AI — your cosmic blueprint, made clear."
+  },
+  "footer": {
+    "product": "Product",
+    "company": "Company",
+    "connect": "Connect",
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "whyUs": "Why Choose Us",
+    "about": "About",
+    "faq": "FAQ",
+    "copyright": "© {{year}} NakshatraVerse. All rights reserved.",
+    "poweredBy": "Powered by Vedic Astrology & Gemini AI · Your data stays private"
+  },
+  "errorBoundary": {
+    "title": "Something went off course",
+    "message": "NakshatraVerse hit an unexpected error. Reloading usually fixes it — your saved reports aren't affected.",
+    "reload": "✦ Reload NakshatraVerse ✦"
+  },
+  "toast": {
+    "dismiss": "Dismiss notification"
+  },
+  "confirmDialog": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "deleting": "Deleting…"
+  },
+  "buttons": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "getStarted": "Get Started",
+    "logout": "Logout",
+    "close": "Close"
+  },
+  "language": {
+    "label": "Language"
+  },
+  "loadingPage": {
+    "steps": [
+      "Reading the Stars...",
+      "Calculating Planetary Positions...",
+      "Mapping Your Birth Chart...",
+      "Consulting Ancient Vedic Texts...",
+      "Preparing Your Personalized Report..."
+    ],
+    "progressAriaLabel": "Report generation progress",
+    "percentComplete": "{{percent}}% complete",
+    "stepsAriaLabel": "Report generation steps",
+    "preparingFor": "Preparing cosmic chart for {{name}}…",
+    "justAMoment": "Just a moment…"
+  },
+  "relativeTime": {
+    "justNow": "Just now",
+    "minutesAgo_one": "{{count}} minute ago",
+    "minutesAgo_other": "{{count}} minutes ago",
+    "hoursAgo_one": "{{count}} hour ago",
+    "hoursAgo_other": "{{count}} hours ago",
+    "yesterday": "Yesterday",
+    "daysAgo_one": "{{count}} day ago",
+    "daysAgo_other": "{{count}} days ago",
+    "weeksAgo_one": "{{count}} week ago",
+    "weeksAgo_other": "{{count}} weeks ago"
+  },
+  "copied": "Copied!",
+  "copy": "Copy",
+  "regenerate": "Regenerate",
+  "today": "Today",
+  "loadingApp": "Loading NakshatraVerse",
+  "date": "Date"
+}

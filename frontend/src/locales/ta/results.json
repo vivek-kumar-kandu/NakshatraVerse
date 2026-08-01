@@ -1,0 +1,225 @@
+{
+  "overview": {
+    "birthDetails": "பிறப்பு விவரங்கள்",
+    "fields": {
+      "dob": "பிறந்த தேதி",
+      "tob": "பிறந்த நேரம்",
+      "pob": "பிறந்த இடம்",
+      "lagna": "லக்னம்",
+      "mulank": "மூலாங்கம்",
+      "bhagyank": "பாக்யாங்கம்"
+    },
+    "aiLifeSummary": "AI வாழ்க்கை சுருக்கம்",
+    "aiSummaryPlaceholder": "உங்கள் காஸ்மிக் கதை நெசவு செய்யப்படுகிறது…"
+  },
+  "kundli": {
+    "birthChart": "ஜாதக விளக்கப்படம்",
+    "tapHint": "ஆராய ஒரு கிரகத்தையோ பாவத்தையோ தட்டவும்",
+    "planetaryPositions": "கிரகங்கள் நிலைகள்",
+    "closePlanetDetail": "கிரக விவரத்தை மூடு",
+    "close": "மூடு ✕",
+    "house": "பாவம் {{number}}",
+    "zodiacSign": "ராசி",
+    "defaultSignificance": "இந்த ஜாதகத்தில் ஒரு முக்கிய தாக்கம்.",
+    "houseOverview": "பாவம் கண்ணோட்டம்"
+  },
+  "aiInsight": "AI நுண்ணறிவு",
+  "sections": {
+    "loveLife": {
+      "title": "உறவுகள்",
+      "placeholder": "வெள்ளி மற்றும் சந்திரன் நிலைகள் படிக்கப்படுகின்றன…"
+    },
+    "marriage": {
+      "title": "திருமணம்",
+      "placeholder": "குரு மற்றும் ஏழாம் பாவம் ஆலோசிக்கப்படுகிறது…"
+    },
+    "career": {
+      "title": "தொழில்",
+      "placeholder": "சனி, சூரியன் மற்றும் பத்தாம் பாவம் பகுப்பாய்வு செய்யப்படுகிறது…",
+      "keyPlanetaryInfluences": "முக்கிய கிரகங்கள் தாக்கங்கள்"
+    },
+    "wealth": {
+      "title": "நிதி & செல்வம்",
+      "placeholder": "குரு மற்றும் இரண்டாம் பாவம் ஆலோசிக்கப்படுகிறது…",
+      "wealthIndicators": "செல்வம் குறிகாட்டிகள்"
+    },
+    "health": {
+      "title": "ஆரோக்கியம்",
+      "placeholder": "சூரியன், செவ்வாய் மற்றும் ஆறாம் பாவம் பகுப்பாய்வு செய்யப்படுகிறது…",
+      "healthPlanets": "ஆரோக்கியம் கிரகங்கள்"
+    },
+    "doshas": {
+      "title": "தோஷங்கள்",
+      "placeholder": "மங்கள தோஷம், கால சர்ப்ப தோஷம் சரிபார்க்கப்படுகிறது…"
+    },
+    "yogas": {
+      "title": "யோகங்கள்",
+      "placeholder": "ராஜ யோகம், கஜ கேசரி யோகம் அடையாளம் காணப்படுகிறது…"
+    },
+    "remedies": {
+      "title": "பரிகாரங்கள் மற்றும் பரிந்துரைகள்",
+      "placeholder": "தனிப்பயன் வேத பரிகாரங்கள் தயாரிக்கப்படுகின்றன…"
+    }
+  },
+  "doshasYogas": {
+    "detectedYogas": "கண்டறியப்பட்ட யோகங்கள்",
+    "detectedDoshas": "கண்டறியப்பட்ட தோஷங்கள்",
+    "noYogasTitle": "யோகம் எதுவும் கண்டறியப்படவில்லை",
+    "noYogasMessage": "கணக்கிடப்பட்ட ஜாதகத்தின் அடிப்படையில் முக்கிய யோகம் எதுவும் கிடைக்கவில்லை.",
+    "noDoshasTitle": "தோஷம் எதுவும் கண்டறியப்படவில்லை",
+    "noDoshasMessage": "கணக்கிடப்பட்ட ஜாதகத்தின் அடிப்படையில் முக்கிய தோஷம் எதுவும் கிடைக்கவில்லை."
+  },
+  "remedies": {
+    "suggestedRemedies": "பரிந்துரைக்கப்பட்ட பரிகாரங்கள்",
+    "noRemediesTitle": "குறிப்பிட்ட பரிகாரம் இல்லை",
+    "noRemediesMessage": "தற்போது கணக்கிடப்பட்ட ஜாதகத்தின் அடிப்படையில் பாரம்பரிய பரிகாரம் எதுவும் பரிந்துரைக்கப்படவில்லை.",
+    "types": {
+      "General (Lagna Lord)": "सामान्य (लग्नेश)",
+      "Fasting": "व्रत व उपवास",
+      "Charity": "दान व सेवा",
+      "Mangal Dosha Remedy": "मंगल दोष निवारण"
+    }
+  },
+  "summary": {
+    "heading": "AI-உருவாக்கிய வாழ்க்கை சுருக்கம்",
+    "placeholder": "உங்கள் முழுமையான காஸ்மிக் கதை நெசவு செய்யப்படுகிறது…"
+  },
+  "page": {
+    "reportSectionsAriaLabel": "அறிக்கை பிரிவுகள்",
+    "footerTagline": "நக்ஷத்ரவர்ஸ் · பண்டைய ஞானமும் Gemini AI-யும் · வழிகாட்டல் நோக்கத்திற்காக மட்டும்"
+  },
+  "predictions": {
+    "notAvailableTitle": "கணிப்புகள் இன்னும் கிடைக்கவில்லை",
+    "notAvailableMessage": "உங்கள் ஜாதகம் கணக்கிடப்பட்டதும் பேக்எண்ட் கணக்கிடப்பட்ட கணிப்புகள் இங்கே தோன்றும்.",
+    "categoryPredictions": "வகை கணிப்புகள்",
+    "transitForecast": "கோச்சரம் முன்னறிவிப்பு"
+  },
+  "numerologyCard": {
+    "heading": "எண் கணிதம்",
+    "mulankLabel": "மூலாங்கம்",
+    "bhagyankLabel": "பாக்யாங்கம்",
+    "lifePath": "வாழ்க்கைப் பாதை {{number}}",
+    "defaultDescription": "ஒரு தனித்துவமான ஆத்ம எண்"
+  },
+  "nakshatraCard": {
+    "heading": "நட்சத்திர சுயவிவரம்",
+    "pada": "பாதம் {{number}}",
+    "lord": "அதிபதி: {{value}}",
+    "gana": "கணம்: {{value}}",
+    "nadi": "நாடி: {{value}}",
+    "yoni": "யோனி: {{value}}",
+    "symbol": "சின்னம்",
+    "deity": "தேவதை",
+    "nature": "இயல்பு",
+    "career": "தொழில்",
+    "relationships": "உறவுகள்",
+    "spiritual": "ஆன்மீகம்"
+  },
+  "zodiacWheel": {
+    "wheelAriaLabel": "வேத ஜாதக சக்கரம், லக்னம் {{sign}}-இல்",
+    "unknownSign": "தெரியாத ராசி",
+    "noPlanetsHere": "இங்கே கிரகங்கள் இல்லை",
+    "noPlanets": "கிரகங்கள் இல்லை",
+    "houseAriaLabel": "பாவம் {{number}}, {{sign}} — {{planets}}",
+    "planetAriaLabel": "{{planet}}: பாவம் {{house}}, {{sign}}"
+  },
+  "chartControls": "சார்ட் பார்வை கட்டுப்பாடுகள்",
+  "zoomInAria": "பெரிதாக்கு",
+  "zoomIn": "➕ பெரிதாக்கு",
+  "zoomOutAria": "சிறிதாக்கு",
+  "zoomOut": "➖ சிறிதாக்கு",
+  "resetViewAria": "பார்வையை மீட்டமை",
+  "resetView": "🎯 பார்வையை மீட்டமை",
+  "chartAria": "ஊடாடும் ஜாதகக் கட்டம்.",
+  "vimshottariDasha": "🪐 விம்சோத்தரி தசா",
+  "gender": "பாலினம்",
+  "noneDetected": "எதுவும் கண்டறியப்படவில்லை.",
+  "ashtakootaGunaMilan": "அஷ்டகூடம் (குண மிலன்)",
+  "manglikAnalysis": "மாங்கல்ய பகுப்பாய்வு & பொருத்தம்",
+  "majorDoshaComparison": "முக்கிய தோஷ ஒப்பீடு",
+  "strongWeakComparison": "பலமான & பலவீனமான கிரக ஒப்பீடு",
+  "strongest": "மிகவும் பலமானது:",
+  "weakest": "மிகவும் பலவீனமானது:",
+  "moonSignNakshatraCompat": "சந்திர ராசி & நட்சத்திர பொருத்தம்",
+  "moonSignLabel": "சந்திர ராசி:",
+  "nakshatraLabel": "நட்சத்திரம்:",
+  "aiCompatInsights": "AI பொருத்தம் பற்றிய நுண்ணறிவுகள்",
+  "personA": "நபர் A",
+  "personB": "நபர் B",
+  "tabs": {
+    "overview": "अवलोकन",
+    "kundli": "जन्म कुंडली",
+    "love": "प्रेम व विवाह",
+    "career": "करियर",
+    "wealth": "धन व वित्त",
+    "health": "स्वास्थ्य",
+    "doshas": "दोष व योग",
+    "remedies": "उपाय",
+    "predictions": "भविष्यवाणी",
+    "timeline": "टाइमलाइन",
+    "summary": "जीवन सारांश",
+    "explorer": "एक्सप्लोरर"
+  },
+  "categories": {
+    "career": "करियर",
+    "finance": "वित्त",
+    "wealth": "धन व वित्त",
+    "relationships": "रिश्ते",
+    "health": "स्वास्थ्य",
+    "education": "शिक्षा",
+    "family": "परिवार",
+    "spiritual": "आध्यात्मिक"
+  },
+  "confidence": {
+    "high": "उच्च",
+    "moderate": "मध्यम",
+    "medium": "मध्यम",
+    "low": "निम्न"
+  },
+  "predictionFields": {
+    "mahadasha": "महादशा",
+    "antardasha": "अंतर्दशा",
+    "dominantPlanet": "प्रमुख ग्रह",
+    "timePeriod": "समयावधि"
+  },
+  "planets": {
+    "sun": "सूर्य",
+    "moon": "चंद्रमा",
+    "mars": "मंगल",
+    "mercury": "बुध",
+    "jupiter": "बृहस्पति",
+    "venus": "शुक्र",
+    "saturn": "शनि",
+    "rahu": "राहु",
+    "ketu": "केतु"
+  },
+  "ganas": {
+    "deva": "देव",
+    "manushya": "मनुष्य",
+    "rakshasa": "राक्षस"
+  },
+  "nadis": {
+    "adi": "आदि",
+    "madhya": "मध्य",
+    "antya": "अंत्य",
+    "pitta": "पित्त",
+    "vata": "वात",
+    "kapha": "कफ"
+  },
+  "yonis": {
+    "horse": "अश्व",
+    "elephant": "गज",
+    "sheep": "मेष",
+    "serpent": "सर्प",
+    "dog": "श्वान",
+    "cat": "मार्जार",
+    "rat": "मूषक",
+    "cow": "गौ",
+    "buffalo": "महिष",
+    "tiger": "व्याघ्र",
+    "hare": "शशक",
+    "monkey": "वानर",
+    "mongoose": "नकुल",
+    "lion": "सिंह"
+  }
+}

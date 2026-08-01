@@ -1,0 +1,16 @@
+{
+  "notFound": "કોઈ માર્ગ નથી {{method}} {{path}}",
+  "malformedJson": "વિનંતી બોડીમાં વિકૃત JSON.",
+  "bodyTooLarge": "વિનંતી બોડી ખૂબ મોટી છે.",
+  "internalError": "આંતરિક સર્વર ભૂલ.",
+  "internalErrorProduction": "આંતરિક સર્વર ભૂલ. કૃપા કરીને ફરી પ્રયાસ કરો.",
+  "invalidRequest": "અમાન્ય વિનંતી: {{errors}}",
+  "serviceUnavailable": "{{feature}} અત્યારે ઉપલબ્ધ નથી.",
+  "invalidProfile": "અમાન્ય પ્રોફાઇલ: {{errors}}",
+  "chooseTwoDifferentProfiles": "સરખામણી કરવા માટે બે અલગ પ્રોફાઇલ પસંદ કરો.",
+  "comparisonError": "આ બે પ્રોફાઇલ્સની સરખામણી કરતી વખતે આંતરિક સર્વર ભૂલ.",
+  "internalErrorWhile": "{{action}} કરતી વખતે આંતરિક સર્વર ભૂલ.",
+  "occurrenceNotFound": "વર્ષ {{year}} માટે \"{{key}}\" નો કોઈ બનાવ મળ્યો નથી.",
+  "missingApiKey": "સર્વરમાં API કી ખૂટે છે. backend/.env માં GOOGLE_API_KEY સેટ કરો.",
+  "tooManyRequests": "ઘણી બધી વિનંતીઓ. કૃપા કરીને ધીમા પડો અને થોડી વારમાં ફરી પ્રયાસ કરો."
+}

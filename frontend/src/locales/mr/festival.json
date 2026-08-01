@@ -1,0 +1,165 @@
+{
+  "typeFilters": {
+    "All": "सर्व",
+    "Festival": "सण",
+    "Vrat": "व्रत"
+  },
+  "page": {
+    "back": "← मागे",
+    "title": "🎉 सण कॅलेंडर",
+    "subtitle": "बॅकएंडने गणना केलेले हिंदू सण व व्रत — तारखा, विधी, आणि महत्त्व.",
+    "tabs": {
+      "today": "आज",
+      "upcoming": "आगामी",
+      "browse": "सर्व ब्राउझ करा"
+    },
+    "todayLoadFailed": "आजचा सण लोड होऊ शकला नाही.",
+    "upcomingLoadFailed": "आगामी सण लोड होऊ शकले नाहीत.",
+    "yearLoadFailed": "सण कॅलेंडर लोड होऊ शकले नाही.",
+    "openFestivalFailed": "तो सण उघडता आला नाही.",
+    "todaysFestivalsHeading": "आजचा सण{{plural}}",
+    "noFestivalTodayTitle": "आज कोणताही सण नाही",
+    "noFestivalTodayMessage": "आजच्या तारखेला कोणताही पाळला जाणारा सण किंवा व्रत नाही.",
+    "nextUp": "पुढे काय",
+    "daysRemainingToday": "आज",
+    "daysRemainingSingle": "{{count}} दिवसात",
+    "daysRemainingPlural": "{{count}} दिवसांत",
+    "noUpcomingTitle": "कोणतेही आगामी सण सापडले नाहीत",
+    "noUpcomingMessage": "पुढील 60 दिवसांत काहीही सापडले नाही.",
+    "searchPlaceholder": "सण शोधा…",
+    "searchAriaLabel": "सण शोधा",
+    "typeFilterAriaLabel": "प्रकारानुसार फिल्टर करा",
+    "yearAriaLabel": "वर्ष निवडा",
+    "noMatchTitle": "कोणताही सण जुळत नाही",
+    "noMatchMessage": "वेगळा शोध शब्द किंवा प्रकार फिल्टर वापरून पहा.",
+    "explainFailed": "AI स्पष्टीकरण सध्या उपलब्ध नाही."
+  },
+  "detailCard": {
+    "importanceSuffix": "{{importance}} महत्त्व",
+    "notSpecified": "निर्दिष्ट नाही.",
+    "explainButton": "✨ {{status}}",
+    "askingGemini": "Gemini ला विचारत आहे…",
+    "explainThisFestival": "हा सण स्पष्ट करा",
+    "historicalBackground": "ऐतिहासिक पार्श्वभूमी",
+    "significance": "महत्त्व",
+    "rituals": "विधी",
+    "recommendedActivities": "शिफारस केलेले उपक्रम",
+    "fastingInformation": "उपवास माहिती",
+    "fastingObserved": "उपवास पाळला जातो",
+    "noFastingObserved": "पारंपरिकपणे कोणताही उपवास पाळला जात नाही"
+  },
+  "familySuggestions": {
+    "title": "👨‍👩‍👧‍👦 कुटुंब सण सूचना",
+    "signInPrompt": "तुमच्या प्रियजनांसाठी सामायिक उत्सव सूचना आणि स्मरणपत्रे मिळवण्यासाठी साइन इन करा आणि कुटुंब प्रोफाइल जोडा.",
+    "loadFailed": "सध्या कुटुंब सण सूचना लोड होऊ शकल्या नाहीत.",
+    "remindersTitle": "कुटुंब सण स्मरणपत्रे",
+    "noProfiles": "अजून कोणतीही कुटुंब प्रोफाइल जतन केलेली नाही.",
+    "addOne": "एक जोडा →",
+    "sharedCelebrationTitle": "सामायिक उत्सव सूचना",
+    "suggestedActivitiesTitle": "सुचवलेले कौटुंबिक उपक्रम"
+  },
+  "intelligencePanel": {
+    "title": "🔮 सण बुद्धिमत्ता",
+    "subtitle": "आध्यात्मिक अर्थ, पौराणिक कथा, आणि पूजा विहंगावलोकन — वरील मूलभूत गोष्टींपलीकडे.",
+    "loadFailed": "सध्या सण बुद्धिमत्ता लोड होऊ शकली नाही.",
+    "revealButton": "✨ {{status}}",
+    "askingGemini": "Gemini ला विचारत आहे…",
+    "revealDeeper": "सखोल बुद्धिमत्ता उघड करा",
+    "spiritualMeaning": "आध्यात्मिक अर्थ",
+    "mythologicalStory": "पौराणिक कथा",
+    "modernPracticalMeaning": "आधुनिक व्यावहारिक अर्थ",
+    "culturalSignificance": "वैज्ञानिक / सांस्कृतिक महत्त्व",
+    "pujaOverview": "पूजा विहंगावलोकन",
+    "thingsToAvoid": "टाळण्यासारख्या गोष्टी",
+    "aiAssistedBadge": "AI-सहाय्यित — परंपरा प्रदेश/कुटुंबानुसार बदलू शकतात"
+  },
+  "preparationChecklist": {
+    "nothingSpecified": "काहीही निर्दिष्ट नाही.",
+    "loadFailed": "सध्या तयारी चेकलिस्ट लोड होऊ शकली नाही.",
+    "sections": {
+      "preparationChecklist": "तयारी चेकलिस्ट",
+      "shoppingChecklist": "खरेदी चेकलिस्ट",
+      "pujaMaterials": "पूजा साहित्य",
+      "fastingPreparation": "उपवासाची तयारी",
+      "morningRoutine": "सकाळची दिनचर्या",
+      "eveningRitual": "संध्याकाळचा विधी",
+      "postFestivalReflection": "सणानंतरचे चिंतन"
+    }
+  },
+  "personalizedGuidance": {
+    "title": "🌟 वैयक्तिक सण मार्गदर्शन",
+    "noChartMessage": "हा सण तुमच्यासाठी विशेष अर्थपूर्ण का आहे हे पाहण्यासाठी — करिअर, अर्थ, नाती, आरोग्य, आध्यात्मिक, आणि वैयक्तिक विकासावर केंद्रित, तुमच्या स्वतःच्या चार्टवर आधारित — तुमच्या एका जतन केलेल्या रीडिंगमधून हा सण उघडा.",
+    "openSavedReading": "जतन केलेले रीडिंग उघडा →",
+    "subtitle": "तुमच्या स्वतःच्या दशा, गोचर, आणि भविष्यवाण्यांवर आधारित.",
+    "loadFailed": "सध्या वैयक्तिक मार्गदर्शन लोड होऊ शकले नाही.",
+    "askButton": "✨ {{status}}",
+    "whyMeaningful": "हे माझ्यासाठी अर्थपूर्ण का आहे?",
+    "focusFields": {
+      "careerFocus": "करिअर",
+      "financeFocus": "अर्थ",
+      "relationshipFocus": "नाती",
+      "healthFocus": "आरोग्य",
+      "spiritualFocus": "आध्यात्मिक",
+      "personalGrowthFocus": "वैयक्तिक विकास"
+    }
+  },
+  "intelligencePage": {
+    "back": "← मागे",
+    "title": "🔮 सण बुद्धिमत्ता",
+    "subtitle": "एका सणासाठी सखोल अर्थ, वैयक्तिक मार्गदर्शन, तयारी, आणि कुटुंब सूचना.",
+    "loadFailed": "हा सण लोड होऊ शकला नाही.",
+    "loadUpcomingFailed": "कोणताही आगामी सण लोड होऊ शकला नाही.",
+    "noFestivalTitle": "कोणताही सण निवडलेला नाही",
+    "noFestivalMessage": "त्याची संपूर्ण बुद्धिमत्ता पाहण्यासाठी सण कॅलेंडर, डॅशबोर्ड, किंवा कॅलेंडर पानावरून एक सण उघडा.",
+    "ritualFlow": "विधी क्रम",
+    "timelineUnavailable": "या सणासाठी टाइमलाइन उपलब्ध नाही.",
+    "festivalIntelligence": "सण बुद्धिमत्ता",
+    "personalizedGuidance": "वैयक्तिक मार्गदर्शन",
+    "festivalPreparation": "सणाची तयारी",
+    "family": "कुटुंब"
+  },
+  "widget": {
+    "title": "आजचा सण",
+    "openCalendar": "सण कॅलेंडर उघडा →",
+    "loading": "लोड होत आहे…",
+    "noFestivalToday": "आज कोणताही सण नाही.",
+    "nextFestival": "पुढचा सण",
+    "daysRemainingLabel": "उरलेले दिवस",
+    "daysRemainingSingle": "{{count}} दिवस",
+    "daysRemainingPlural": "{{count}} दिवस",
+    "importance": "महत्त्व",
+    "preparationProgress": "तयारी प्रगती",
+    "preparationItemsReady": "{{count}} चेकलिस्ट आयटम तयार",
+    "upcomingRitual": "आगामी विधी",
+    "personalizedTip": "वैयक्तिक टीप",
+    "viewIntelligence": "🔮 सण बुद्धिमत्ता पहा"
+  },
+  "muhurat": {
+    "bestMuhuratFor": "{{activity}} साठी सर्वोत्तम मुहूर्त",
+    "confidence": {
+      "high": "उच्च",
+      "medium": "मध्यम",
+      "low": "कमी"
+    },
+    "confidenceBadge": "{{level}} विश्वास",
+    "bestDate": "सर्वोत्तम तारीख",
+    "bestTimeWindow": "सर्वोत्तम वेळ कालावधी",
+    "tithi": "तिथी",
+    "auspiciousWindow": "शुभ कालावधी",
+    "cautionPeriod": "सावधानता कालावधी (टाळा)",
+    "rahuKaal": "राहू काळ",
+    "yamaganda": "यमगंड",
+    "gulikaKaal": "गुलिक काळ",
+    "otherStrongDates": "इतर चांगल्या तारखा",
+    "askingAI": "AI ला विचारले जात आहे…",
+    "explainWhy": "🔮 हा मुहूर्त का ते स्पष्ट करा",
+    "nakshatra": "नक्षत्र"
+  },
+  "calendarStrip": {
+    "heading": "🎉 या महिन्यातील सण",
+    "viewCalendarLink": "सण दिनदर्शिका पहा →",
+    "todayLabel": "आज:",
+    "loadingOverview": "सण आढावा लोड होत आहे…",
+    "importanceSuffix": "महत्त्व"
+  }
+}

@@ -9,6 +9,10 @@
 // Phase 7 prediction/transit-forecast lines in the structured insights
 // section below — the mandatory output JSON schema is untouched.
 // ─────────────────────────────────────────────────────────────────────────
+<<<<<<< HEAD
+=======
+import { getAiLanguageInstruction } from "../localization/aiLanguageInstruction.js";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // Priority 3.2 — "AI Report Intelligence". `insights` is OPTIONAL and
 // additive: any existing caller invoking buildPrompt(chart) with a single
@@ -76,7 +80,11 @@ ${predictionList}
 `;
 }
 
+<<<<<<< HEAD
 export function buildPrompt(chart, insights = null) {
+=======
+export function buildPrompt(chart, insights = null, language = "en") {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const { userData, planetary, numerology, lagna, moonSign, sunSign, nakshatra, yogas, doshas, remedies } = chart;
 
   // Single authoritative list: base-engine yogas/doshas PLUS advanced-engine
@@ -157,7 +165,11 @@ Return this exact JSON structure, writing natural prose for each value based str
   "yogas": "2-3 sentences explaining ONLY the backend-detected yogas listed above, or clearly stating none were detected",
   "remedies": "3-4 sentences explaining ONLY the backend-derived remedies listed above, or clearly stating none are suggested",
   "lifeSummary": "5-6 sentences comprehensive life summary integrating all the facts above, personalized to ${userData.name}, using hedging language throughout"
+<<<<<<< HEAD
 }`;
+=======
+}${getAiLanguageInstruction(language)}`;
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 export default { buildPrompt };

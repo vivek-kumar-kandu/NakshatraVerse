@@ -1,0 +1,6 @@
+{
+  "notFound": "वृत्तान्तः न लब्धः।",
+  "fieldsRequired": "वृत्तान्तं रक्षितुं userData, chart, report च आवश्यकाः।",
+  "pdfFieldsRequired": "PDF निर्मातुं userData, chart, report च आवश्यकाः।",
+  "matchingPdfFieldsRequired": "PDF निर्मातुं सर्वे भावाः आवश्यकाः।"
+}

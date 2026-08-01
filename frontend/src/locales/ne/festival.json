@@ -1,0 +1,165 @@
+{
+  "typeFilters": {
+    "All": "सबै",
+    "Festival": "चाड",
+    "Vrat": "व्रत"
+  },
+  "page": {
+    "back": "← पछाडि",
+    "title": "🎉 चाड पात्रो",
+    "subtitle": "ब्याकइन्डद्वारा गणना गरिएका हिन्दू चाडहरू र व्रतहरू — मितिहरू, रीतिरिवाजहरू, र महत्व।",
+    "tabs": {
+      "today": "आज",
+      "upcoming": "आगामी",
+      "browse": "सबै ब्राउज गर्नुहोस्"
+    },
+    "todayLoadFailed": "आजको चाड लोड हुन सकेन।",
+    "upcomingLoadFailed": "आगामी चाडहरू लोड हुन सकेनन्।",
+    "yearLoadFailed": "चाड पात्रो लोड हुन सकेन।",
+    "openFestivalFailed": "त्यो चाड खोल्न सकिएन।",
+    "todaysFestivalsHeading": "आजको चाड{{plural}}",
+    "noFestivalTodayTitle": "आज कुनै चाड छैन",
+    "noFestivalTodayMessage": "आजको मितिमा मनाइने कुनै चाड वा व्रत छैन।",
+    "nextUp": "अर्को के छ",
+    "daysRemainingToday": "आज",
+    "daysRemainingSingle": "{{count}} दिनमा",
+    "daysRemainingPlural": "{{count}} दिनमा",
+    "noUpcomingTitle": "कुनै आगामी चाड फेला परेन",
+    "noUpcomingMessage": "अर्को 60 दिनमा केही फेला परेन।",
+    "searchPlaceholder": "चाडहरू खोज्नुहोस्…",
+    "searchAriaLabel": "चाडहरू खोज्नुहोस्",
+    "typeFilterAriaLabel": "प्रकार अनुसार फिल्टर गर्नुहोस्",
+    "yearAriaLabel": "वर्ष छान्नुहोस्",
+    "noMatchTitle": "कुनै चाड मेल खाँदैन",
+    "noMatchMessage": "फरक खोज शब्द वा प्रकार फिल्टर प्रयास गर्नुहोस्।",
+    "explainFailed": "AI व्याख्या हाल उपलब्ध छैन।"
+  },
+  "detailCard": {
+    "importanceSuffix": "{{importance}} महत्व",
+    "notSpecified": "निर्दिष्ट छैन।",
+    "explainButton": "✨ {{status}}",
+    "askingGemini": "Gemini लाई सोधिँदैछ…",
+    "explainThisFestival": "यो चाड व्याख्या गर्नुहोस्",
+    "historicalBackground": "ऐतिहासिक पृष्ठभूमि",
+    "significance": "महत्व",
+    "rituals": "रीतिरिवाजहरू",
+    "recommendedActivities": "सिफारिस गरिएका गतिविधिहरू",
+    "fastingInformation": "व्रत जानकारी",
+    "fastingObserved": "व्रत बसिन्छ",
+    "noFastingObserved": "परम्परागत रूपमा कुनै व्रत बसिँदैन"
+  },
+  "familySuggestions": {
+    "title": "👨‍👩‍👧‍👦 पारिवारिक चाड सुझावहरू",
+    "signInPrompt": "तपाईंका प्रियजनहरूका लागि साझा उत्सव सुझाव र रिमाइन्डरहरू पाउन साइन इन गर्नुहोस् र पारिवारिक प्रोफाइल थप्नुहोस्।",
+    "loadFailed": "हाल पारिवारिक चाड सुझावहरू लोड हुन सकेनन्।",
+    "remindersTitle": "पारिवारिक चाड रिमाइन्डरहरू",
+    "noProfiles": "अहिलेसम्म कुनै पारिवारिक प्रोफाइल सुरक्षित छैन।",
+    "addOne": "एउटा थप्नुहोस् →",
+    "sharedCelebrationTitle": "साझा उत्सव सुझावहरू",
+    "suggestedActivitiesTitle": "सुझाइएका पारिवारिक गतिविधिहरू"
+  },
+  "intelligencePanel": {
+    "title": "🔮 चाड बुद्धिमत्ता",
+    "subtitle": "आध्यात्मिक अर्थ, पौराणिक कथा, र पूजा विवरण — माथिका आधारभूत कुराहरूभन्दा बाहिर।",
+    "loadFailed": "हाल चाड बुद्धिमत्ता लोड हुन सकेन।",
+    "revealButton": "✨ {{status}}",
+    "askingGemini": "Gemini लाई सोधिँदैछ…",
+    "revealDeeper": "गहिरो बुद्धिमत्ता प्रकट गर्नुहोस्",
+    "spiritualMeaning": "आध्यात्मिक अर्थ",
+    "mythologicalStory": "पौराणिक कथा",
+    "modernPracticalMeaning": "आधुनिक व्यावहारिक अर्थ",
+    "culturalSignificance": "वैज्ञानिक / सांस्कृतिक महत्व",
+    "pujaOverview": "पूजा विवरण",
+    "thingsToAvoid": "बच्नुपर्ने कुराहरू",
+    "aiAssistedBadge": "AI-सहायता प्राप्त — परम्पराहरू क्षेत्र/परिवार अनुसार फरक हुन सक्छन्"
+  },
+  "preparationChecklist": {
+    "nothingSpecified": "केही निर्दिष्ट छैन।",
+    "loadFailed": "हाल तयारी चेकलिस्ट लोड हुन सकेन।",
+    "sections": {
+      "preparationChecklist": "तयारी चेकलिस्ट",
+      "shoppingChecklist": "किनमेल चेकलिस्ट",
+      "pujaMaterials": "पूजा सामग्री",
+      "fastingPreparation": "व्रतको तयारी",
+      "morningRoutine": "बिहानको दिनचर्या",
+      "eveningRitual": "साँझको अनुष्ठान",
+      "postFestivalReflection": "चाडपछिको चिन्तन"
+    }
+  },
+  "personalizedGuidance": {
+    "title": "🌟 व्यक्तिगत चाड मार्गदर्शन",
+    "noChartMessage": "यो चाड तपाईंको लागि विशेष रूपमा किन अर्थपूर्ण छ भनी जान्न — करियर, वित्त, सम्बन्ध, स्वास्थ्य, आध्यात्मिक, र व्यक्तिगत विकासमा केन्द्रित, तपाईंको आफ्नै चार्टमा आधारित — आफ्नो कुनै सुरक्षित रिडिङबाट यो चाड खोल्नुहोस्।",
+    "openSavedReading": "एउटा सुरक्षित रिडिङ खोल्नुहोस् →",
+    "subtitle": "तपाईंको आफ्नै दशा, गोचर, र भविष्यवाणीहरूमा आधारित।",
+    "loadFailed": "हाल व्यक्तिगत मार्गदर्शन लोड हुन सकेन।",
+    "askButton": "✨ {{status}}",
+    "whyMeaningful": "यो मेरो लागि किन अर्थपूर्ण छ?",
+    "focusFields": {
+      "careerFocus": "करियर",
+      "financeFocus": "वित्त",
+      "relationshipFocus": "सम्बन्ध",
+      "healthFocus": "स्वास्थ्य",
+      "spiritualFocus": "आध्यात्मिक",
+      "personalGrowthFocus": "व्यक्तिगत विकास"
+    }
+  },
+  "intelligencePage": {
+    "back": "← पछाडि",
+    "title": "🔮 चाड बुद्धिमत्ता",
+    "subtitle": "एउटा चाडको लागि गहिरो अर्थ, व्यक्तिगत मार्गदर्शन, तयारी, र पारिवारिक सुझावहरू।",
+    "loadFailed": "यो चाड लोड हुन सकेन।",
+    "loadUpcomingFailed": "कुनै आगामी चाड लोड हुन सकेन।",
+    "noFestivalTitle": "कुनै चाड चयन गरिएको छैन",
+    "noFestivalMessage": "यसको पूर्ण बुद्धिमत्ता हेर्न चाड पात्रो, ड्यासबोर्ड, वा पात्रो पृष्ठबाट एउटा चाड खोल्नुहोस्।",
+    "ritualFlow": "अनुष्ठान क्रम",
+    "timelineUnavailable": "यस चाडको लागि टाइमलाइन उपलब्ध छैन।",
+    "festivalIntelligence": "चाड बुद्धिमत्ता",
+    "personalizedGuidance": "व्यक्तिगत मार्गदर्शन",
+    "festivalPreparation": "चाडको तयारी",
+    "family": "परिवार"
+  },
+  "widget": {
+    "title": "आजको चाड",
+    "openCalendar": "चाड पात्रो खोल्नुहोस् →",
+    "loading": "लोड हुँदैछ…",
+    "noFestivalToday": "आज कुनै चाड छैन।",
+    "nextFestival": "अर्को चाड",
+    "daysRemainingLabel": "बाँकी दिनहरू",
+    "daysRemainingSingle": "{{count}} दिन",
+    "daysRemainingPlural": "{{count}} दिन",
+    "importance": "महत्व",
+    "preparationProgress": "तयारी प्रगति",
+    "preparationItemsReady": "{{count}} चेकलिस्ट वस्तुहरू तयार",
+    "upcomingRitual": "आगामी अनुष्ठान",
+    "personalizedTip": "व्यक्तिगत सुझाव",
+    "viewIntelligence": "🔮 चाड बुद्धिमत्ता हेर्नुहोस्"
+  },
+  "muhurat": {
+    "bestMuhuratFor": "{{activity}} को लागि उत्तम मुहूर्त",
+    "confidence": {
+      "high": "उच्च",
+      "medium": "मध्यम",
+      "low": "कम"
+    },
+    "confidenceBadge": "{{level}} विश्वास",
+    "bestDate": "उत्तम मिति",
+    "bestTimeWindow": "उत्तम समय",
+    "tithi": "तिथि",
+    "auspiciousWindow": "शुभ समय",
+    "cautionPeriod": "सावधानी समय (बच्नुहोस्)",
+    "rahuKaal": "राहु काल",
+    "yamaganda": "यमगण्ड",
+    "gulikaKaal": "गुलिक काल",
+    "otherStrongDates": "अन्य राम्रो मितिहरू",
+    "askingAI": "AI लाई सोधिँदैछ…",
+    "explainWhy": "🔮 यो मुहूर्त किन हो व्याख्या गर्नुहोस्",
+    "nakshatra": "नक्षत्र"
+  },
+  "calendarStrip": {
+    "heading": "🎉 यस महिनाका चाडपर्वहरू",
+    "viewCalendarLink": "चाड पात्रो हेर्नुहोस् →",
+    "todayLabel": "आज:",
+    "loadingOverview": "चाड अवलोकन लोड हुँदैछ…",
+    "importanceSuffix": "महत्त्व"
+  }
+}

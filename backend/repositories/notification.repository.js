@@ -5,6 +5,7 @@
 // collection (notifications.json), ownership enforcement left to the
 // service layer above this file.
 // ─────────────────────────────────────────────────────────────────────────
+<<<<<<< HEAD
 import path from "node:path";
 import config from "../config/env.js";
 import JsonFileStore from "../db/jsonFileStore.js";
@@ -32,6 +33,39 @@ export async function update(id, patch) {
 
 export async function remove(id) {
   return store.remove(id);
+=======
+import Notification from "../models/Notification.model.js";
+
+export async function create(record) {
+  return await Notification.create({
+    isRead: false,
+    ...record,
+  });
+}
+
+export async function findById(id) {
+  return await Notification.findById(id);
+}
+
+export async function findByUser(userId) {
+  return await Notification.find({ userId })
+    .sort({ createdAt: -1 });
+}
+
+export async function update(id, patch) {
+  return await Notification.findByIdAndUpdate(
+    id,
+    patch,
+    {
+      new: true,
+      runValidators: true,
+    }
+  );
+}
+
+export async function remove(id) {
+  return await Notification.findByIdAndDelete(id);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -42,6 +76,7 @@ export async function remove(id) {
 // backend event never produces two notifications. Nothing above this line
 // is changed.
 // ─────────────────────────────────────────────────────────────────────────
+<<<<<<< HEAD
 export function findByUserAndDedupeKey(userId, dedupeKey) {
   if (!dedupeKey) return null;
   return store
@@ -49,11 +84,22 @@ export function findByUserAndDedupeKey(userId, dedupeKey) {
     .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))[0] || null;
 }
 
+=======
+export async function findByUserAndDedupeKey(userId, dedupeKey) {
+  if (!dedupeKey) return null;
+
+  return await Notification.findOne({
+    userId,
+    "metadata.dedupeKey": dedupeKey,
+  }).sort({ createdAt: -1 });
+}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 // Bulk helpers — used by "Mark All Read" / "Delete All Read". Sequential
 // awaits are fine here: JsonFileStore already serializes every write via
 // its internal promise chain (see db/jsonFileStore.js), and notification
 // volume per user is small.
 export async function markAllReadForUser(userId) {
+<<<<<<< HEAD
   const unread = store.filter((n) => n.userId === userId && !n.isRead);
   for (const record of unread) {
     // eslint-disable-next-line no-await-in-loop
@@ -69,6 +115,28 @@ export async function removeAllReadForUser(userId) {
     await store.remove(record.id);
   }
   return read.length;
+=======
+  const result = await Notification.updateMany(
+    {
+      userId,
+      isRead: false,
+    },
+    {
+      $set: { isRead: true },
+    }
+  );
+
+  return result.modifiedCount;
+}
+
+export async function removeAllReadForUser(userId) {
+  const result = await Notification.deleteMany({
+    userId,
+    isRead: true,
+  });
+
+  return result.deletedCount;
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -82,6 +150,7 @@ export async function removeAllReadForUser(userId) {
 // or recently-expired notification is never silently deleted — "Do NOT
 // delete historical records unless required" from the Phase 2 spec.
 // ─────────────────────────────────────────────────────────────────────────
+<<<<<<< HEAD
 export async function removeStaleExpiredForUser(userId, { staleAfterMs = 30 * 24 * 60 * 60 * 1000 } = {}) {
   const now = Date.now();
   const stale = store.filter((n) => (
@@ -95,6 +164,21 @@ export async function removeStaleExpiredForUser(userId, { staleAfterMs = 30 * 24
     await store.remove(record.id);
   }
   return stale.length;
+=======
+export async function removeStaleExpiredForUser(
+  userId,
+  { staleAfterMs = 30 * 24 * 60 * 60 * 1000 } = {}
+) {
+  const cutoff = new Date(Date.now() - staleAfterMs);
+
+  const result = await Notification.deleteMany({
+    userId,
+    isRead: true,
+    expiresAt: { $lte: cutoff },
+  });
+
+  return result.deletedCount;
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 export default {

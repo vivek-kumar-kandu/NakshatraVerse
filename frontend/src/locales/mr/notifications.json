@@ -1,0 +1,87 @@
+{
+  "categories": {
+    "system": "सिस्टम",
+    "reminder": "स्मरणपत्र",
+    "ai": "AI",
+    "panchang": "पंचांग",
+    "muhurat": "मुहूर्त",
+    "prediction": "भविष्यवाणी",
+    "transit": "गोचर",
+    "family": "कुटुंब",
+    "festival": "सण",
+    "general": "सामान्य"
+  },
+  "priorities": {
+    "critical": "अत्यंत महत्त्वाचे",
+    "high": "उच्च",
+    "medium": "मध्यम",
+    "low": "कमी"
+  },
+  "sort": {
+    "newest": "सर्वात नवीन आधी",
+    "oldest": "सर्वात जुने आधी",
+    "priority": "प्राधान्य"
+  },
+  "center": {
+    "back": "← मागे",
+    "title": "🔔 सूचना केंद्र",
+    "totalSingle": "एकूण {{count}} सूचना",
+    "totalPlural": "एकूण {{count}} सूचना",
+    "searchPlaceholder": "सूचना शोधा…",
+    "searchAriaLabel": "सूचना शोधा",
+    "filterCategoryAriaLabel": "श्रेणीनुसार फिल्टर करा",
+    "allCategories": "सर्व श्रेण्या",
+    "filterPriorityAriaLabel": "प्राधान्यानुसार फिल्टर करा",
+    "allPriorities": "सर्व प्राधान्ये",
+    "filterReadStatusAriaLabel": "वाचन स्थितीनुसार फिल्टर करा",
+    "all": "सर्व",
+    "unread": "न वाचलेले",
+    "read": "वाचलेले",
+    "sortAriaLabel": "सूचना क्रमवारी लावा",
+    "markAllRead": "✓ सर्व वाचलेले म्हणून चिन्हांकित करा",
+    "clearRead": "🗑️ वाचलेले साफ करा",
+    "loadFailedTitle": "सूचना लोड होऊ शकल्या नाहीत",
+    "retry": "पुन्हा प्रयत्न करा",
+    "emptyTitle": "कोणतीही सूचना नाही",
+    "emptyMessage": "तुम्ही पूर्णपणे अद्ययावत आहात — तुमच्या सध्याच्या फिल्टरशी येथे काहीही जुळत नाही.",
+    "prevPage": "← मागील",
+    "nextPage": "पुढील →",
+    "pageOf": "पान {{page}} पैकी {{totalPages}}",
+    "toasts": {
+      "markReadFailed": "सूचना वाचलेली म्हणून चिन्हांकित करता आली नाही.",
+      "markAllReadSuccess": "सर्व सूचना वाचलेल्या म्हणून चिन्हांकित केल्या.",
+      "markAllReadFailed": "सर्व वाचलेले म्हणून चिन्हांकित करता आले नाहीत.",
+      "deleteFailed": "सूचना हटवता आली नाही.",
+      "clearReadSuccess": "वाचलेल्या सूचना साफ केल्या.",
+      "clearReadFailed": "वाचलेल्या सूचना साफ करता आल्या नाहीत."
+    },
+    "clearDialog": {
+      "title": "वाचलेल्या सूचना साफ करायच्या?",
+      "message": "हे प्रत्येक वाचलेली सूचना हटवेल. हे पूर्ववत करता येणार नाही.",
+      "confirmLabel": "वाचलेले साफ करा",
+      "loadingLabel": "साफ करत आहे…"
+    },
+    "loadFailedGeneric": "सूचना लोड होऊ शकल्या नाहीत."
+  },
+  "card": {
+    "open": "उघडा →",
+    "openTitle": "उघडा",
+    "openAriaLabel": "संबंधित मॉड्यूल उघडा",
+    "markReadTitle": "वाचलेले म्हणून चिन्हांकित करा",
+    "markReadLabel": "✓ वाचले",
+    "deleteTitle": "सूचना हटवा",
+    "deleteAriaLabel": "सूचना हटवा"
+  },
+  "group": {
+    "updateSingle": "{{count}} अद्ययावत",
+    "updatePlural": "{{count}} अद्ययावत",
+    "unreadBadge": "{{count}} न वाचलेले"
+  },
+  "widget": {
+    "title": "🔔 सूचना",
+    "unreadCount": "{{count}} न वाचलेले",
+    "loadFailed": "सूचना लोड होऊ शकल्या नाहीत.",
+    "emptyMessage": "अजून कोणतीही सूचना नाही — तुम्ही पूर्णपणे अद्ययावत आहात.",
+    "openCenter": "सूचना केंद्र उघडा →"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← डॅशबोर्डवर परत जा",
+    "title": "जतन केलेले अहवाल",
+    "titleWithCount": "जतन केलेले अहवाल ({{count}})",
+    "generateNewReport": "✦ नवीन अहवाल तयार करा",
+    "loadFailed": "तुमचे जतन केलेले अहवाल लोड होऊ शकले नाहीत.",
+    "tryAgain": "↻ पुन्हा प्रयत्न करा",
+    "deleteToastSuccess": "\"{{title}}\" हटवले.",
+    "deleteToastFallbackTitle": "अहवाल",
+    "deleteFailed": "तो अहवाल हटवता आला नाही.",
+    "downloadToastSuccess": "PDF डाउनलोड झाले.",
+    "downloadFailed": "PDF तयार करता आले नाही.",
+    "emptyTitle": "अजून जतन केलेला अहवाल नाही",
+    "emptyMessage": "येथे तुमचा संग्रह तयार करण्यासाठी रीडिंग तयार करा आणि अहवाल जतन करा वर टॅप करा.",
+    "emptyAction": "✦ नवीन अहवाल तयार करा",
+    "noMatchesTitle": "कोणतीही जुळणी सापडली नाही",
+    "noMatchesMessage": "कोणताही जतन केलेला अहवाल \"{{query}}\" शी जुळत नाही. वेगळे शीर्षक, नाव, किंवा लग्न वापरून पहा.",
+    "clearSearch": "शोध साफ करा",
+    "deleteDialog": {
+      "title": "हा अहवाल हटवायचा?",
+      "message": "\"{{title}}\" कायमचा काढला जाईल. हे पूर्ववत करता येणार नाही.",
+      "fallbackTitle": "हा अहवाल",
+      "confirmLabel": "हटवा",
+      "cancelLabel": "रद्द करा"
+    }
+  },
+  "detail": {
+    "loadFailed": "तो अहवाल लोड होऊ शकला नाही.",
+    "backToSavedReports": "← जतन केलेल्या अहवालांवर परत जा",
+    "loading": "तुमचे जतन केलेले रीडिंग लोड होत आहे…",
+    "openHoroscope": "🔮 राशिभविष्य",
+    "openCalendar": "📅 कॅलेंडर",
+    "openLifeCoach": "🧭 लाइफ कोच",
+    "askAI": "✨ AI ला विचारा"
+  },
+  "card": {
+    "savedOn": "{{date}} रोजी जतन केले",
+    "view": "पहा",
+    "preview": "पूर्वावलोकन",
+    "download": "PDF",
+    "delete": "हटवा",
+    "deleting": "हटवत आहे…",
+    "lagnaSuffix": "{{lagna}} लग्न",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "अहवाल मांडणी",
+    "gridView": "ग्रिड दृश्य",
+    "listView": "सूची दृश्य",
+    "searchPlaceholder": "शीर्षक, नाव, किंवा लग्नाने शोधा…",
+    "searchAriaLabel": "जतन केलेले अहवाल शोधा",
+    "sortAriaLabel": "जतन केलेले अहवाल क्रमवारी लावा",
+    "resultCountSingle": "{{count}} अहवाल",
+    "resultCountPlural": "{{count}} अहवाल",
+    "resultCountFiltered": "{{total}} पैकी {{count}}"
+  },
+  "sort": {
+    "newest": "सर्वात नवीन आधी",
+    "oldest": "सर्वात जुने आधी",
+    "title-asc": "शीर्षक (A–Z)",
+    "title-desc": "शीर्षक (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} चे पूर्वावलोकन",
+    "closePreview": "पूर्वावलोकन बंद करा",
+    "savedOn": "{{date}} रोजी जतन केले",
+    "noDetails": "या अहवालासाठी कोणतेही अतिरिक्त तपशील जतन केलेले नाहीत.",
+    "description": "हे तुमच्या जतन केलेल्या रीडिंगच्या तपशीलांचे एक जलद पूर्वावलोकन आहे. प्रत्येक विभाग वाचण्यासाठी संपूर्ण अहवाल उघडा — प्रेम, करिअर, संपत्ती, आरोग्य, दोष व योग, उपाय, आणि तुमचा जीवन सारांश.",
+    "viewFullReport": "✦ संपूर्ण अहवाल पहा",
+    "preparingPdf": "PDF तयार करत आहे…",
+    "downloadPdf": "⭳ PDF डाउनलोड करा"
+  },
+  "summarizeAiAria": "AI सह या अहवालाचा सारांश घ्या",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy is not part of this chart's backend-derived remedies."
+}

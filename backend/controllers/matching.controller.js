@@ -35,7 +35,11 @@ export const computeMatch = asyncHandler(async (req, res) => {
   const { errors, personA, personB } = validateMatchingRequest(req.body || {});
   if (errors.length) {
     logger.warn(`Validation failed for /api/matching/compute: ${errors.join(", ")}`);
+<<<<<<< HEAD
     return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
+=======
+    return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   try {
@@ -45,7 +49,11 @@ export const computeMatch = asyncHandler(async (req, res) => {
     res.json({ personA, personB, chartA, chartB, matching });
   } catch (err) {
     logger.error("Kundli matching calculation error:", err);
+<<<<<<< HEAD
     res.status(500).json({ error: "Internal server error while calculating Kundli Matching." });
+=======
+    res.status(500).json({ error: req.t("errors.internalErrorWhile", { action: "calculating Kundli Matching" }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -53,7 +61,11 @@ export const generateMatchingReport = asyncHandler(async (req, res) => {
   const { errors, personA, personB } = validateMatchingRequest(req.body || {});
   if (errors.length) {
     logger.warn(`Validation failed for /api/matching/generate-report: ${errors.join(", ")}`);
+<<<<<<< HEAD
     return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
+=======
+    return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   try {
@@ -64,11 +76,19 @@ export const generateMatchingReport = asyncHandler(async (req, res) => {
     if (!config.GOOGLE_API_KEY) {
       logger.error("matching/generate-report called but no API key is configured.");
       return res.status(500).json({
+<<<<<<< HEAD
         error: "Server is missing an API key. Set GOOGLE_API_KEY in backend/.env (see backend/.env.example).",
       });
     }
 
     const prompt = buildMatchingPrompt({ personA, personB, chartA, chartB, matching });
+=======
+        error: req.t ? req.t("errors.missingApiKey") : "Server is missing an API key. Set GOOGLE_API_KEY in backend/.env (see backend/.env.example).",
+      });
+    }
+
+    const prompt = buildMatchingPrompt({ personA, personB, chartA, chartB, matching, language: req.language });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
     let explanation;
     try {
@@ -85,7 +105,11 @@ export const generateMatchingReport = asyncHandler(async (req, res) => {
     res.json({ personA, personB, chartA, chartB, matching, explanation });
   } catch (err) {
     logger.error("Unhandled server error in /api/matching/generate-report:", err);
+<<<<<<< HEAD
     res.status(500).json({ error: "Internal server error." });
+=======
+    res.status(500).json({ error: req.t ? req.t("errors.internalError") : "Internal server error." });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -101,7 +125,11 @@ function buildPdfFilename(nameA, nameB) {
 export const exportMatchingPdf = asyncHandler(async (req, res) => {
   const { personA, chartA, personB, chartB, matching, explanation } = req.body || {};
   if (!personA || !personB || !chartA || !chartB || !matching) {
+<<<<<<< HEAD
     return res.status(400).json({ error: "personA, personB, chartA, chartB, and matching are all required to generate a PDF." });
+=======
+    return res.status(400).json({ error: req.t ? req.t("reports.matchingPdfFieldsRequired") : "personA, personB, chartA, chartB, and matching are all required to generate a PDF." });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
   const buffer = await buildMatchingPdfBuffer({ personA, personB, chartA, chartB, matching, explanation });
   res.setHeader("Content-Type", "application/pdf");

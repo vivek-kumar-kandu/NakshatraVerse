@@ -1,0 +1,87 @@
+{
+  "categories": {
+    "system": "ସିଷ୍ଟମ୍",
+    "reminder": "ସ୍ମାରକ",
+    "ai": "AI",
+    "panchang": "ପଞ୍ଚାଙ୍ଗ",
+    "muhurat": "ମୁହୂର୍ତ",
+    "prediction": "ଭବିଷ୍ୟବାଣୀ",
+    "transit": "ଗୋଚର",
+    "family": "ପରିବାର",
+    "festival": "ପର୍ବ",
+    "general": "ସାଧାରଣ"
+  },
+  "priorities": {
+    "critical": "ଅତ୍ୟନ୍ତ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ",
+    "high": "ଉଚ୍ଚ",
+    "medium": "ମଧ୍ୟମ",
+    "low": "ନିମ୍ନ"
+  },
+  "sort": {
+    "newest": "ସର୍ବନୂତନ ପ୍ରଥମେ",
+    "oldest": "ସର୍ବପୁରାତନ ପ୍ରଥମେ",
+    "priority": "ପ୍ରାଥମିକତା"
+  },
+  "center": {
+    "back": "← ପଛକୁ",
+    "title": "🔔 ବିଜ୍ଞପ୍ତି କେନ୍ଦ୍ର",
+    "totalSingle": "ମୋଟ {{count}} ବିଜ୍ଞପ୍ତି",
+    "totalPlural": "ମୋଟ {{count}} ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ",
+    "searchPlaceholder": "ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ସନ୍ଧାନ କରନ୍ତୁ…",
+    "searchAriaLabel": "ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ସନ୍ଧାନ କରନ୍ତୁ",
+    "filterCategoryAriaLabel": "ବର୍ଗ ଆଧାରରେ ଫିଲ୍ଟର କରନ୍ତୁ",
+    "allCategories": "ସମସ୍ତ ବର୍ଗ",
+    "filterPriorityAriaLabel": "ପ୍ରାଥମିକତା ଆଧାରରେ ଫିଲ୍ଟର କରନ୍ତୁ",
+    "allPriorities": "ସମସ୍ତ ପ୍ରାଥମିକତା",
+    "filterReadStatusAriaLabel": "ପଠନ ସ୍ଥିତି ଆଧାରରେ ଫିଲ୍ଟର କରନ୍ତୁ",
+    "all": "ସମସ୍ତ",
+    "unread": "ଅପଠିତ",
+    "read": "ପଠିତ",
+    "sortAriaLabel": "ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ସଜାନ୍ତୁ",
+    "markAllRead": "✓ ସମସ୍ତଙ୍କୁ ପଠିତ ଭାବରେ ଚିହ୍ନଟ କରନ୍ତୁ",
+    "clearRead": "🗑️ ପଠିତ ସଫା କରନ୍ତୁ",
+    "loadFailedTitle": "ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ",
+    "retry": "ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ",
+    "emptyTitle": "କୌଣସି ବିଜ୍ଞପ୍ତି ନାହିଁ",
+    "emptyMessage": "ଆପଣ ସମ୍ପୂର୍ଣ୍ଣ ଅଦ୍ୟତନ ଅଛନ୍ତି — ଆପଣଙ୍କର ବର୍ତ୍ତମାନ ଫିଲ୍ଟର ସହିତ ଏଠାରେ କିଛି ମେଳ ଖାଏ ନାହିଁ।",
+    "prevPage": "← ପୂର୍ବବର୍ତ୍ତୀ",
+    "nextPage": "ପରବର୍ତ୍ତୀ →",
+    "pageOf": "ପୃଷ୍ଠା {{page}} ର {{totalPages}}",
+    "toasts": {
+      "markReadFailed": "ବିଜ୍ଞପ୍ତିକୁ ପଠିତ ଭାବରେ ଚିହ୍ନଟ କରାଯାଇପାରିଲା ନାହିଁ।",
+      "markAllReadSuccess": "ସମସ୍ତ ବିଜ୍ଞପ୍ତି ପଠିତ ଭାବରେ ଚିହ୍ନଟ ହୋଇଛି।",
+      "markAllReadFailed": "ସମସ୍ତଙ୍କୁ ପଠିତ ଭାବରେ ଚିହ୍ନଟ କରାଯାଇପାରିଲା ନାହିଁ।",
+      "deleteFailed": "ବିଜ୍ଞପ୍ତି ବିଲୋପ ହୋଇପାରିଲା ନାହିଁ।",
+      "clearReadSuccess": "ପଠିତ ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ସଫା ହୋଇଛି।",
+      "clearReadFailed": "ପଠିତ ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ସଫା ହୋଇପାରିଲା ନାହିଁ।"
+    },
+    "clearDialog": {
+      "title": "ପଠିତ ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ସଫା କରିବେ କି?",
+      "message": "ଏହା ପ୍ରତ୍ୟେକ ପଠିତ ବିଜ୍ଞପ୍ତିକୁ ବିଲୋପ କରିବ। ଏହା ପୂର୍ବାବସ୍ଥାକୁ ଫେରାଇ ହେବ ନାହିଁ।",
+      "confirmLabel": "ପଠିତ ସଫା କରନ୍ତୁ",
+      "loadingLabel": "ସଫା କରାଯାଉଛି…"
+    },
+    "loadFailedGeneric": "ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।"
+  },
+  "card": {
+    "open": "ଖୋଲନ୍ତୁ →",
+    "openTitle": "ଖୋଲନ୍ତୁ",
+    "openAriaLabel": "ସମ୍ବନ୍ଧିତ ମଡ୍ୟୁଲ୍ ଖୋଲନ୍ତୁ",
+    "markReadTitle": "ପଠିତ ଭାବରେ ଚିହ୍ନଟ କରନ୍ତୁ",
+    "markReadLabel": "✓ ପଠିତ",
+    "deleteTitle": "ବିଜ୍ଞପ୍ତି ବିଲୋପ କରନ୍ତୁ",
+    "deleteAriaLabel": "ବିଜ୍ଞପ୍ତି ବିଲୋପ କରନ୍ତୁ"
+  },
+  "group": {
+    "updateSingle": "{{count}} ଅଦ୍ୟତନ",
+    "updatePlural": "{{count}} ଅଦ୍ୟତନଗୁଡ଼ିକ",
+    "unreadBadge": "{{count}} ଅପଠିତ"
+  },
+  "widget": {
+    "title": "🔔 ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ",
+    "unreadCount": "{{count}} ଅପଠିତ",
+    "loadFailed": "ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "emptyMessage": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ବିଜ୍ଞପ୍ତି ନାହିଁ — ଆପଣ ସମ୍ପୂର୍ଣ୍ଣ ଅଦ୍ୟତନ ଅଛନ୍ତି।",
+    "openCenter": "ବିଜ୍ଞପ୍ତି କେନ୍ଦ୍ର ଖୋଲନ୍ତୁ →"
+  }
+}

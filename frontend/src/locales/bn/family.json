@@ -1,0 +1,162 @@
+{
+  "relationships": {
+    "father": "বাবা",
+    "mother": "মা",
+    "husband": "স্বামী",
+    "wife": "স্ত্রী",
+    "son": "ছেলে",
+    "daughter": "মেয়ে",
+    "brother": "ভাই",
+    "sister": "বোন",
+    "friend": "বন্ধু",
+    "client": "ক্লায়েন্ট",
+    "custom": "কাস্টম"
+  },
+  "sort": {
+    "recent": "সম্প্রতি আপডেট হয়েছে",
+    "name": "নাম (A–Z)",
+    "relationship": "সম্পর্ক",
+    "dob": "জন্ম তারিখ"
+  },
+  "profilesPage": {
+    "backToDashboard": "← ড্যাশবোর্ডে ফিরে যান",
+    "title": "পারিবারিক প্রোফাইল",
+    "subtitle": "আপনার বৃত্তের প্রতিটি জন্মকুণ্ডলী এক জায়গায় পরিচালনা করুন।",
+    "relationshipHub": "💞 রিলেশনশিপ হাব",
+    "addProfile": "+ প্রোফাইল যোগ করুন",
+    "loadFailed": "আপনার পারিবারিক প্রোফাইলগুলি লোড করা যায়নি।",
+    "recentlyOpened": "🕑 সম্প্রতি খোলা হয়েছে",
+    "searchPlaceholder": "নাম, সম্পর্ক, বা স্থান দিয়ে অনুসন্ধান করুন…",
+    "searchAriaLabel": "পারিবারিক প্রোফাইল অনুসন্ধান করুন",
+    "filterAriaLabel": "সম্পর্ক অনুসারে ফিল্টার করুন",
+    "sortAriaLabel": "পারিবারিক প্রোফাইল সাজান",
+    "allRelationships": "সব সম্পর্ক",
+    "showArchived": "সংরক্ষণাগারভুক্ত দেখান",
+    "emptyTitle": "এখনও কোনো প্রোফাইল নেই",
+    "emptyMessageFiltered": "কোনো প্রোফাইল আপনার অনুসন্ধান/ফিল্টারের সাথে মেলে না।",
+    "emptyMessageDefault": "আপনার রিলেশনশিপ হাব তৈরি করা শুরু করতে আপনার প্রথম পারিবারিক প্রোফাইল যোগ করুন।",
+    "toasts": {
+      "updated": "{{name}} এর প্রোফাইল আপডেট হয়েছে।",
+      "added": "{{name}} কে পারিবারিক প্রোফাইলে যোগ করা হয়েছে।",
+      "saveFailed": "এই প্রোফাইলটি সংরক্ষণ করা যায়নি।",
+      "duplicated": "{{name}} এর একটি অনুলিপি তৈরি করা হয়েছে।",
+      "duplicateFailed": "এই প্রোফাইলটি ডুপ্লিকেট করা যায়নি।",
+      "archived": "{{name}} সংরক্ষণাগারভুক্ত করা হয়েছে।",
+      "archiveFailed": "এই প্রোফাইলটি সংরক্ষণাগারভুক্ত করা যায়নি।",
+      "restored": "{{name}} পুনরুদ্ধার করা হয়েছে।",
+      "restoreFailed": "এই প্রোফাইলটি পুনরুদ্ধার করা যায়নি।",
+      "deleted": "{{name}} মুছে ফেলা হয়েছে।",
+      "deleteFailed": "এই প্রোফাইলটি মুছে ফেলা যায়নি।"
+    },
+    "deleteDialog": {
+      "title": "এই প্রোফাইলটি মুছে ফেলবেন?",
+      "message": "\"{{name}}\" এবং তার সাথে সম্পর্কিত যেকোনো সম্পর্ক তুলনা আর অ্যাক্সেসযোগ্য থাকবে না। এটি পূর্বাবস্থায় ফেরানো যাবে না।",
+      "confirmLabel": "মুছে ফেলুন"
+    }
+  },
+  "profileCard": {
+    "openedOn": "{{date}} তারিখে খোলা হয়েছে",
+    "addedOn": "{{date}} তারিখে যোগ করা হয়েছে",
+    "archived": "সংরক্ষণাগারভুক্ত",
+    "open": "✦ খুলুন",
+    "compare": "💞 তুলনা করুন",
+    "edit": "✎ সম্পাদনা করুন",
+    "duplicate": "⧉ ডুপ্লিকেট করুন",
+    "archiveAction": "🗄 সংরক্ষণাগারভুক্ত করুন",
+    "restore": "↺ পুনরুদ্ধার করুন",
+    "delete": "✕ মুছে ফেলুন",
+    "notAvailable": "—"
+  },
+  "formDialog": {
+    "editTitle": "পারিবারিক প্রোফাইল সম্পাদনা করুন",
+    "addTitle": "পারিবারিক প্রোফাইল যোগ করুন",
+    "relationshipLabel": "সম্পর্ক",
+    "customRelationshipLabel": "কাস্টম সম্পর্ক লেবেল",
+    "customRelationshipPlaceholder": "যেমন মেন্টর, কাজিন, ব্যবসায়িক অংশীদার",
+    "custom": "কাস্টম",
+    "genderLabel": "লিঙ্গ",
+    "genderMale": "♂ পুরুষ",
+    "genderFemale": "♀ নারী",
+    "genderOther": "⚧ অন্যান্য",
+    "fields": {
+      "name": "পুরো নাম",
+      "namePlaceholder": "যেমন অর্জুন শর্মা",
+      "dob": "জন্ম তারিখ",
+      "tob": "জন্ম সময়",
+      "pob": "জন্মস্থান",
+      "pobPlaceholder": "যেমন মুম্বাই, ভারত"
+    },
+    "errors": {
+      "nameRequired": "নাম আবশ্যক",
+      "relationshipRequired": "একটি সম্পর্ক নির্বাচন করুন",
+      "customRelationshipRequired": "একটি কাস্টম সম্পর্ক লেবেল লিখুন",
+      "dobRequired": "জন্ম তারিখ আবশ্যক",
+      "tobRequired": "জন্ম সময় আবশ্যক",
+      "pobRequired": "জন্মস্থান আবশ্যক",
+      "genderRequired": "একটি লিঙ্গ নির্বাচন করুন"
+    },
+    "cancel": "বাতিল করুন",
+    "saving": "সংরক্ষণ করা হচ্ছে…",
+    "saveChanges": "পরিবর্তনগুলি সংরক্ষণ করুন",
+    "addProfile": "প্রোফাইল যোগ করুন"
+  },
+  "widget": {
+    "title": "👨‍👩‍👧‍👦 পারিবারিক প্রোফাইল",
+    "countSingle": "{{count}} প্রোফাইল",
+    "countPlural": "{{count}} প্রোফাইল",
+    "loadFailed": "পারিবারিক প্রোফাইলগুলি লোড করা যায়নি।",
+    "emptyMessage": "এখনও কোনো প্রোফাইল নেই — চার্ট তুলনা শুরু করতে পরিবার, বন্ধু, বা ক্লায়েন্ট যোগ করুন।",
+    "addProfile": "+ প্রোফাইল যোগ করুন",
+    "relationshipHub": "💞 রিলেশনশিপ হাব",
+    "viewAll": "সব প্রোফাইল দেখুন →"
+  },
+  "relationshipHub": {
+    "back": "← পিছনে",
+    "title": "রিলেশনশিপ হাব",
+    "subtitle": "যেকোনো দুটি সংরক্ষিত প্রোফাইল তুলনা করুন — কুণ্ডলী মিলান, চার্ট, শক্তি, দোষ, নক্ষত্র, এবং ভবিষ্যদ্বাণী।",
+    "loadingProfiles": "আপনার প্রোফাইলগুলি লোড হচ্ছে…",
+    "needTwoTitle": "অন্তত দুটি প্রোফাইল যোগ করুন",
+    "needTwoMessage": "রিলেশনশিপ হাব ব্যবহার করতে আপনার দুটি সংরক্ষিত পারিবারিক প্রোফাইল প্রয়োজন।",
+    "profileALabel": "প্রোফাইল A",
+    "profileBLabel": "প্রোফাইল B",
+    "chooseProfile": "একটি প্রোফাইল নির্বাচন করুন…",
+    "compareFailed": "এই দুটি প্রোফাইল তুলনা করা যায়নি।",
+    "comparing": "তুলনা করা হচ্ছে…",
+    "compare": "✦ তুলনা করুন",
+    "tabs": {
+      "kundli": "কুণ্ডলী মিলান",
+      "chart": "জন্ম চার্ট",
+      "strength": "গ্রহ শক্তি",
+      "dosha": "দোষ",
+      "nakshatra": "নক্ষত্র",
+      "prediction": "ভবিষ্যদ্বাণী"
+    },
+    "manglikStatusLabel": "{{name}} এর মাঙ্গলিক অবস্থা",
+    "manglikPositive": "মাঙ্গলিক ({{severity}})",
+    "manglikNegative": "মাঙ্গলিক নয়",
+    "notAvailable": "—",
+    "chart": {
+      "lagna": "লগ্ন",
+      "moonSign": "চন্দ্র রাশি",
+      "sunSign": "সূর্য রাশি",
+      "nakshatra": "নক্ষত্র",
+      "yogas": "যোগ",
+      "doshas": "দোষ"
+    },
+    "strength": {
+      "strongestPlanet": "সবচেয়ে শক্তিশালী গ্রহ",
+      "weakestPlanet": "সবচেয়ে দুর্বল গ্রহ"
+    },
+    "doshaComparisonTitle": "দোষ তুলনা",
+    "nakshatraFields": {
+      "padaBadge": " · পদ {{pada}}",
+      "lordBadge": "অধিপতি: {{lord}}",
+      "nature": "স্বভাব",
+      "gana": "গণ",
+      "nadi": "নাড়ি",
+      "sameNakshatra": "একই নক্ষত্র?",
+      "yes": "হ্যাঁ",
+      "no": "না"
+    }
+  }
+}

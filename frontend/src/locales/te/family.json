@@ -1,0 +1,162 @@
+{
+  "relationships": {
+    "father": "తండ్రి",
+    "mother": "తల్లి",
+    "husband": "భర్త",
+    "wife": "భార్య",
+    "son": "కుమారుడు",
+    "daughter": "కుమార్తె",
+    "brother": "సోదరుడు",
+    "sister": "సోదరి",
+    "friend": "స్నేహితుడు",
+    "client": "క్లయింట్",
+    "custom": "అనుకూలం"
+  },
+  "sort": {
+    "recent": "ఇటీవల నవీకరించబడింది",
+    "name": "పేరు (A–Z)",
+    "relationship": "సంబంధం",
+    "dob": "పుట్టిన తేదీ"
+  },
+  "profilesPage": {
+    "backToDashboard": "← డాష్‌బోర్డ్‌కు తిరిగి వెళ్లండి",
+    "title": "కుటుంబ ప్రొఫైల్‌లు",
+    "subtitle": "మీ కుటుంబంలోని ప్రతి జాతకాన్ని ఒకే చోట నిర్వహించండి.",
+    "relationshipHub": "💞 రిలేషన్‌షిప్ హబ్",
+    "addProfile": "+ ప్రొఫైల్‌ను జోడించండి",
+    "loadFailed": "మీ కుటుంబ ప్రొఫైల్‌లను లోడ్ చేయలేకపోయింది.",
+    "recentlyOpened": "🕑 ఇటీవల తెరవబడింది",
+    "searchPlaceholder": "పేరు, సంబంధం లేదా స్థలం ద్వారా శోధించండి…",
+    "searchAriaLabel": "కుటుంబ ప్రొఫైల్‌లను శోధించండి",
+    "filterAriaLabel": "సంబంధం ఆధారంగా ఫిల్టర్ చేయండి",
+    "sortAriaLabel": "కుటుంబ ప్రొఫైల్‌లను క్రమబద్ధీకరించండి",
+    "allRelationships": "అన్ని సంబంధాలు",
+    "showArchived": "ఆర్కైవ్ చేసినవి చూపించు",
+    "emptyTitle": "ఇంకా ప్రొఫైల్‌లు లేవు",
+    "emptyMessageFiltered": "ఏ ప్రొఫైల్ మీ శోధన/ఫిల్టర్‌తో సరిపోలలేదు.",
+    "emptyMessageDefault": "మీ రిలేషన్‌షిప్ హబ్‌ను నిర్మించడం ప్రారంభించడానికి మీ మొదటి కుటుంబ ప్రొఫైల్‌ను జోడించండి.",
+    "toasts": {
+      "updated": "{{name}} యొక్క ప్రొఫైల్ నవీకరించబడింది.",
+      "added": "{{name}} కుటుంబ ప్రొఫైల్‌లకు జోడించబడింది.",
+      "saveFailed": "ఈ ప్రొఫైల్‌ను సేవ్ చేయలేకపోయింది.",
+      "duplicated": "{{name}} యొక్క నకలు సృష్టించబడింది.",
+      "duplicateFailed": "ఈ ప్రొఫైల్‌ను నకిలీ చేయలేకపోయింది.",
+      "archived": "{{name}} ఆర్కైవ్ చేయబడింది.",
+      "archiveFailed": "ఈ ప్రొఫైల్‌ను ఆర్కైవ్ చేయలేకపోయింది.",
+      "restored": "{{name}} పునరుద్ధరించబడింది.",
+      "restoreFailed": "ఈ ప్రొఫైల్‌ను పునరుద్ధరించలేకపోయింది.",
+      "deleted": "{{name}} తొలగించబడింది.",
+      "deleteFailed": "ఈ ప్రొఫైల్‌ను తొలగించలేకపోయింది."
+    },
+    "deleteDialog": {
+      "title": "ఈ ప్రొఫైల్‌ను తొలగించాలా?",
+      "message": "\"{{name}}\" మరియు దానితో అనుబంధించబడిన ఏదైనా సంబంధ పోలిక ఇకపై అందుబాటులో ఉండదు. దీన్ని తిరిగి పొందలేరు.",
+      "confirmLabel": "తొలగించండి"
+    }
+  },
+  "profileCard": {
+    "openedOn": "{{date}} న తెరవబడింది",
+    "addedOn": "{{date}} న జోడించబడింది",
+    "archived": "ఆర్కైవ్ చేయబడింది",
+    "open": "✦ తెరవండి",
+    "compare": "💞 పోల్చండి",
+    "edit": "✎ సవరించండి",
+    "duplicate": "⧉ నకిలీ చేయండి",
+    "archiveAction": "🗄 ఆర్కైవ్ చేయండి",
+    "restore": "↺ పునరుద్ధరించండి",
+    "delete": "✕ తొలగించండి",
+    "notAvailable": "—"
+  },
+  "formDialog": {
+    "editTitle": "కుటుంబ ప్రొఫైల్‌ను సవరించండి",
+    "addTitle": "కుటుంబ ప్రొఫైల్‌ను జోడించండి",
+    "relationshipLabel": "సంబంధం",
+    "customRelationshipLabel": "అనుకూల సంబంధ లేబుల్",
+    "customRelationshipPlaceholder": "ఉదా. మెంటార్, బంధువు, వ్యాపార భాగస్వామి",
+    "custom": "అనుకూలం",
+    "genderLabel": "లింగం",
+    "genderMale": "♂ పురుషుడు",
+    "genderFemale": "♀ స్త్రీ",
+    "genderOther": "⚧ ఇతరం",
+    "fields": {
+      "name": "పూర్తి పేరు",
+      "namePlaceholder": "ఉదా. అర్జున్ శర్మ",
+      "dob": "పుట్టిన తేదీ",
+      "tob": "పుట్టిన సమయం",
+      "pob": "పుట్టిన స్థలం",
+      "pobPlaceholder": "ఉదా. ముంబై, భారతదేశం"
+    },
+    "errors": {
+      "nameRequired": "పేరు అవసరం",
+      "relationshipRequired": "ఒక సంబంధాన్ని ఎంచుకోండి",
+      "customRelationshipRequired": "అనుకూల సంబంధ లేబుల్‌ను నమోదు చేయండి",
+      "dobRequired": "పుట్టిన తేదీ అవసరం",
+      "tobRequired": "పుట్టిన సమయం అవసరం",
+      "pobRequired": "పుట్టిన స్థలం అవసరం",
+      "genderRequired": "ఒక లింగాన్ని ఎంచుకోండి"
+    },
+    "cancel": "రద్దు చేయండి",
+    "saving": "సేవ్ చేస్తోంది…",
+    "saveChanges": "మార్పులను సేవ్ చేయండి",
+    "addProfile": "ప్రొఫైల్‌ను జోడించండి"
+  },
+  "widget": {
+    "title": "👨‍👩‍👧‍👦 కుటుంబ ప్రొఫైల్‌లు",
+    "countSingle": "{{count}} ప్రొఫైల్",
+    "countPlural": "{{count}} ప్రొఫైల్‌లు",
+    "loadFailed": "కుటుంబ ప్రొఫైల్‌లను లోడ్ చేయలేకపోయింది.",
+    "emptyMessage": "ఇంకా ప్రొఫైల్‌లు లేవు — చార్ట్ పోలికను ప్రారంభించడానికి కుటుంబం, స్నేహితులు లేదా క్లయింట్‌లను జోడించండి.",
+    "addProfile": "+ ప్రొఫైల్‌ను జోడించండి",
+    "relationshipHub": "💞 రిలేషన్‌షిప్ హబ్",
+    "viewAll": "అన్ని ప్రొఫైల్‌లను చూడండి →"
+  },
+  "relationshipHub": {
+    "back": "← వెనుకకు",
+    "title": "రిలేషన్‌షిప్ హబ్",
+    "subtitle": "ఏవైనా రెండు సేవ్ చేసిన ప్రొఫైల్‌లను పోల్చండి — కుండలి మ్యాచింగ్, చార్ట్‌లు, బలం, దోషాలు, నక్షత్రం మరియు అంచనాలు.",
+    "loadingProfiles": "మీ ప్రొఫైల్‌లు లోడ్ అవుతున్నాయి…",
+    "needTwoTitle": "కనీసం రెండు ప్రొఫైల్‌లను జోడించండి",
+    "needTwoMessage": "రిలేషన్‌షిప్ హబ్‌ను ఉపయోగించడానికి మీకు రెండు సేవ్ చేసిన కుటుంబ ప్రొఫైల్‌లు అవసరం.",
+    "profileALabel": "ప్రొఫైల్ A",
+    "profileBLabel": "ప్రొఫైల్ B",
+    "chooseProfile": "ఒక ప్రొఫైల్‌ను ఎంచుకోండి…",
+    "compareFailed": "ఈ రెండు ప్రొఫైల్‌లను పోల్చలేకపోయింది.",
+    "comparing": "పోలుస్తోంది…",
+    "compare": "✦ పోల్చండి",
+    "tabs": {
+      "kundli": "కుండలి మ్యాచింగ్",
+      "chart": "జన్మ చార్ట్",
+      "strength": "గ్రహ బలం",
+      "dosha": "దోషాలు",
+      "nakshatra": "నక్షత్రం",
+      "prediction": "అంచనాలు"
+    },
+    "manglikStatusLabel": "{{name}} యొక్క మాంగలిక స్థితి",
+    "manglikPositive": "మాంగలికం ({{severity}})",
+    "manglikNegative": "మాంగలికం కాదు",
+    "notAvailable": "—",
+    "chart": {
+      "lagna": "లగ్నం",
+      "moonSign": "చంద్ర రాశి",
+      "sunSign": "సూర్య రాశి",
+      "nakshatra": "నక్షత్రం",
+      "yogas": "యోగాలు",
+      "doshas": "దోషాలు"
+    },
+    "strength": {
+      "strongestPlanet": "బలమైన గ్రహం",
+      "weakestPlanet": "బలహీనమైన గ్రహం"
+    },
+    "doshaComparisonTitle": "దోష పోలిక",
+    "nakshatraFields": {
+      "padaBadge": " · పాదం {{pada}}",
+      "lordBadge": "అధిపతి: {{lord}}",
+      "nature": "స్వభావం",
+      "gana": "గణం",
+      "nadi": "నాడి",
+      "sameNakshatra": "అదే నక్షత్రమా?",
+      "yes": "అవును",
+      "no": "కాదు"
+    }
+  }
+}

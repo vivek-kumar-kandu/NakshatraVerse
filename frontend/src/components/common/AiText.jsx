@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo, useEffect, useId, useMemo, useRef, useState } from "react";
 import { SkeletonBlock } from "./Skeleton.jsx";
 import { splitSentences } from "../../utils/aiText.js";

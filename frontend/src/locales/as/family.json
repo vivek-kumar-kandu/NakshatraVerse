@@ -1,0 +1,162 @@
+{
+  "relationships": {
+    "father": "পিতৃ",
+    "mother": "মাতৃ",
+    "husband": "স্বামী",
+    "wife": "পত্নী",
+    "son": "পুত্ৰ",
+    "daughter": "জীয়েক",
+    "brother": "ভাই",
+    "sister": "ভনী",
+    "friend": "বন্ধু",
+    "client": "গ্ৰাহক",
+    "custom": "নিজৰ ইচ্ছামতে"
+  },
+  "sort": {
+    "recent": "শেহতীয়াকৈ আপডেট কৰা",
+    "name": "নাম (A–Z)",
+    "relationship": "সম্পৰ্ক",
+    "dob": "জন্ম তাৰিখ"
+  },
+  "profilesPage": {
+    "backToDashboard": "← ডেশ্ব’ৰ্ডলৈ উভতি যাওক",
+    "title": "পাৰিয়াল প্ৰ’ফাইলসমূহ",
+    "subtitle": "আপোনাৰ পৰিয়ালৰ প্ৰতিটো জন্মকুণ্ডলী এঠাইতে পৰিচালনা কৰক।",
+    "relationshipHub": "💞 সম্পৰ্ক কেন্দ্ৰ",
+    "addProfile": "+ প্ৰ’ফাইল যোগ কৰক",
+    "loadFailed": "আপোনাৰ পাৰিয়াল প্ৰ’ফাইলসমূহ লোড হ’ব পৰা নাই।",
+    "recentlyOpened": "🕑 শেহতীয়াকৈ খোলা",
+    "searchPlaceholder": "নাম, সম্পৰ্ক, বা স্থানৰ দ্বাৰা সন্ধান কৰক…",
+    "searchAriaLabel": "পাৰিয়াল প্ৰ’ফাইলসমূহ সন্ধান কৰক",
+    "filterAriaLabel": "সম্পৰ্কৰ ভিত্তিত ফিল্টাৰ কৰক",
+    "sortAriaLabel": "পাৰিয়াল প্ৰ’ফাইলসমূহ সজাওক",
+    "allRelationships": "সকলো সম্পৰ্ক",
+    "showArchived": "আৰ্কাইভ কৰা দেখুৱাওক",
+    "emptyTitle": "এতিয়ালৈকে কোনো প্ৰ’ফাইল নাই",
+    "emptyMessageFiltered": "কোনো প্ৰ’ফাইল আপোনাৰ সন্ধান/ফিল্টাৰৰ সৈতে মিলা নাই।",
+    "emptyMessageDefault": "আপোনাৰ সম্পৰ্ক কেন্দ্ৰ সাজিবলৈ আৰম্ভ কৰিবলৈ আপোনাৰ প্ৰথম পাৰিয়াল প্ৰ’ফাইল যোগ কৰক।",
+    "toasts": {
+      "updated": "{{name}} ৰ প্ৰ’ফাইল আপডেট কৰা হ’ল।",
+      "added": "{{name}} ক পাৰিয়াল প্ৰ’ফাইলসমূহত যোগ কৰা হ’ল।",
+      "saveFailed": "এই প্ৰ’ফাইলটো সংৰক্ষণ কৰিব পৰা নগ’ল।",
+      "duplicated": "{{name}} ৰ প্ৰতিলিপি সৃষ্টি কৰা হ’ল।",
+      "duplicateFailed": "এই প্ৰ’ফাইলটো প্ৰতিলিপি কৰিব পৰা নগ’ল।",
+      "archived": "{{name}} আৰ্কাইভ কৰা হ’ল।",
+      "archiveFailed": "এই প্ৰ’ফাইলটো আৰ্কাইভ কৰিব পৰা নগ’ল।",
+      "restored": "{{name}} পুনৰুদ্ধাৰ কৰা হ’ল।",
+      "restoreFailed": "এই প্ৰ’ফাইলটো পুনৰুদ্ধাৰ কৰিব পৰা নগ’ল।",
+      "deleted": "{{name}} মচা হ’ল।",
+      "deleteFailed": "এই প্ৰ’ফাইলটো মচিব পৰা নগ’ল।"
+    },
+    "deleteDialog": {
+      "title": "এই প্ৰ’ফাইলটো মচিব নেকি?",
+      "message": "\"{{name}}\" আৰু ইয়াৰ সৈতে জড়িত যিকোনো সম্পৰ্ক তুলনা আৰু প্ৰৱেশযোগ্য নহ’ব। ইয়াক পূৰ্বাৱস্থালৈ অনাব নোৱাৰি।",
+      "confirmLabel": "মচি পেলাওক"
+    }
+  },
+  "profileCard": {
+    "openedOn": "{{date}} ত খোলা হ’ল",
+    "addedOn": "{{date}} ত যোগ কৰা হ’ল",
+    "archived": "আৰ্কাইভ কৰা হৈছে",
+    "open": "✦ খোলক",
+    "compare": "💞 তুলনা কৰক",
+    "edit": "✎ সম্পাদনা কৰক",
+    "duplicate": "⧉ প্ৰতিলিপি কৰক",
+    "archiveAction": "🗄 আৰ্কাইভ কৰক",
+    "restore": "↺ পুনৰুদ্ধাৰ কৰক",
+    "delete": "✕ মচি পেলাওক",
+    "notAvailable": "—"
+  },
+  "formDialog": {
+    "editTitle": "পাৰিয়াল প্ৰ’ফাইল সম্পাদনা কৰক",
+    "addTitle": "পাৰিয়াল প্ৰ’ফাইল যোগ কৰক",
+    "relationshipLabel": "সম্পৰ্ক",
+    "customRelationshipLabel": "নিজৰ ইচ্ছামতে সম্পৰ্ক লেবেল",
+    "customRelationshipPlaceholder": "যেনে মেণ্টৰ, চুবুৰীয়া আত্মীয়, ব্যৱসায়িক অংশীদাৰ",
+    "custom": "নিজৰ ইচ্ছামতে",
+    "genderLabel": "লিংগ",
+    "genderMale": "♂ পুৰুষ",
+    "genderFemale": "♀ মহিলা",
+    "genderOther": "⚧ অন্য",
+    "fields": {
+      "name": "সম্পূৰ্ণ নাম",
+      "namePlaceholder": "যেনে অৰ্জুন শৰ্মা",
+      "dob": "জন্ম তাৰিখ",
+      "tob": "জন্ম সময়",
+      "pob": "জন্মস্থান",
+      "pobPlaceholder": "যেনে মুম্বাই, ভাৰত"
+    },
+    "errors": {
+      "nameRequired": "নাম প্ৰয়োজন",
+      "relationshipRequired": "এটা সম্পৰ্ক বাছক",
+      "customRelationshipRequired": "এটা নিজৰ ইচ্ছামতে সম্পৰ্ক লেবেল দিয়ক",
+      "dobRequired": "জন্ম তাৰিখ প্ৰয়োজন",
+      "tobRequired": "জন্ম সময় প্ৰয়োজন",
+      "pobRequired": "জন্মস্থান প্ৰয়োজন",
+      "genderRequired": "এটা লিংগ বাছক"
+    },
+    "cancel": "বাতিল কৰক",
+    "saving": "সংৰক্ষণ কৰা হৈছে…",
+    "saveChanges": "পৰিৱৰ্তনসমূহ সংৰক্ষণ কৰক",
+    "addProfile": "প্ৰ’ফাইল যোগ কৰক"
+  },
+  "widget": {
+    "title": "👨‍👩‍👧‍👦 পাৰিয়াল প্ৰ’ফাইলসমূহ",
+    "countSingle": "{{count}} প্ৰ’ফাইল",
+    "countPlural": "{{count}} প্ৰ’ফাইলসমূহ",
+    "loadFailed": "পাৰিয়াল প্ৰ’ফাইলসমূহ লোড হ’ব পৰা নাই।",
+    "emptyMessage": "এতিয়ালৈকে কোনো প্ৰ’ফাইল নাই — চাৰ্ট তুলনা আৰম্ভ কৰিবলৈ পৰিয়াল, বন্ধু, বা গ্ৰাহক যোগ কৰক।",
+    "addProfile": "+ প্ৰ’ফাইল যোগ কৰক",
+    "relationshipHub": "💞 সম্পৰ্ক কেন্দ্ৰ",
+    "viewAll": "সকলো প্ৰ’ফাইল চাওক →"
+  },
+  "relationshipHub": {
+    "back": "← উভতি যাওক",
+    "title": "সম্পৰ্ক কেন্দ্ৰ",
+    "subtitle": "যিকোনো দুটা সংৰক্ষিত প্ৰ’ফাইল তুলনা কৰক — কুণ্ডলী মিলন, চাৰ্ট, শক্তি, দোষ, নক্ষত্ৰ, আৰু ভৱিষ্যদ্বাণীসমূহ।",
+    "loadingProfiles": "আপোনাৰ প্ৰ’ফাইলসমূহ লোড হৈ আছে…",
+    "needTwoTitle": "কমেও দুটা প্ৰ’ফাইল যোগ কৰক",
+    "needTwoMessage": "সম্পৰ্ক কেন্দ্ৰ ব্যৱহাৰ কৰিবলৈ আপোনাৰ দুটা সংৰক্ষিত পাৰিয়াল প্ৰ’ফাইলৰ প্ৰয়োজন।",
+    "profileALabel": "প্ৰ’ফাইল A",
+    "profileBLabel": "প্ৰ’ফাইল B",
+    "chooseProfile": "এটা প্ৰ’ফাইল বাছক…",
+    "compareFailed": "এই দুটা প্ৰ’ফাইলৰ তুলনা কৰিব পৰা নগ’ল।",
+    "comparing": "তুলনা কৰা হৈছে…",
+    "compare": "✦ তুলনা কৰক",
+    "tabs": {
+      "kundli": "কুণ্ডলী মিলন",
+      "chart": "জন্ম চাৰ্ট",
+      "strength": "গ্ৰহ শক্তি",
+      "dosha": "দোষ",
+      "nakshatra": "নক্ষত্ৰ",
+      "prediction": "ভৱিষ্যদ্বাণীসমূহ"
+    },
+    "manglikStatusLabel": "{{name}} ৰ মাংগলিক স্থিতি",
+    "manglikPositive": "মাংগলিক ({{severity}})",
+    "manglikNegative": "মাংগলিক নহয়",
+    "notAvailable": "—",
+    "chart": {
+      "lagna": "লগ্ন",
+      "moonSign": "চন্দ্ৰ ৰাশি",
+      "sunSign": "সূৰ্য ৰাশি",
+      "nakshatra": "নক্ষত্ৰ",
+      "yogas": "যোগ",
+      "doshas": "দোষ"
+    },
+    "strength": {
+      "strongestPlanet": "আটাইতকৈ শক্তিশালী গ্ৰহ",
+      "weakestPlanet": "আটাইতকৈ দুৰ্বল গ্ৰহ"
+    },
+    "doshaComparisonTitle": "দোষ তুলনা",
+    "nakshatraFields": {
+      "padaBadge": " · পাদ {{pada}}",
+      "lordBadge": "স্বামী: {{lord}}",
+      "nature": "স্বভাৱ",
+      "gana": "গণ",
+      "nadi": "নাড়ী",
+      "sameNakshatra": "একে নক্ষত্ৰ নেকি?",
+      "yes": "হয়",
+      "no": "নহয়"
+    }
+  }
+}

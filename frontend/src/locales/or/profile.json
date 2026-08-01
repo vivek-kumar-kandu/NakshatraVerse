@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← ଡ୍ୟାସବୋର୍ଡକୁ ଫେରନ୍ତୁ",
+    "title": "ମୋର ପ୍ରୋଫାଇଲ୍",
+    "photoHint": "ସମ୍ପାଦନା କରିବାକୁ ଆପଣଙ୍କର ଫଟୋ ଉପରେ କ୍ଲିକ୍ କରନ୍ତୁ — ଅପଲୋଡ୍ କରନ୍ତୁ, ପରିବର୍ତ୍ତନ କରନ୍ତୁ, କିମ୍ବା ହଟାନ୍ତୁ।",
+    "authProviderGoogle": "Google ସହିତ ସାଇନ୍ ଇନ୍ କରାଯାଇଛି",
+    "authProviderEmail": "ଇମେଲ୍ ଏବଂ ପାସୱାର୍ଡ",
+    "accountInformation": "ଖାତା ସୂଚନା",
+    "fullName": "ପୂର୍ଣ୍ଣ ନାମ",
+    "email": "ଇମେଲ୍",
+    "memberSince": "ସଦସ୍ୟତାର ଆରମ୍ଭ",
+    "accountType": "ଖାତା ପ୍ରକାର",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "ପାସୱାର୍ଡ ପରିବର୍ତ୍ତନ କରନ୍ତୁ",
+    "editProfileInSettings": "ସେଟିଂସରେ ପ୍ରୋଫାଇଲ୍ ସମ୍ପାଦନା କରନ୍ତୁ →",
+    "activitySummary": "ପ୍ରୋଫାଇଲ୍ କାର୍ଯ୍ୟକଳାପ ସାରାଂଶ",
+    "totalReports": "ମୋଟ ରିପୋର୍ଟଗୁଡ଼ିକ",
+    "loadingValue": "…",
+    "lastGenerated": "ଶେଷ ଥର ତିଆରି ହୋଇଥିଲା",
+    "viewSavedReports": "ସଞ୍ଚିତ ରିପୋର୍ଟଗୁଡ଼ିକ ଦେଖନ୍ତୁ →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "ଦୟାକରି JPG, PNG, କିମ୍ବା WEBP ପ୍ରତିଛବି ବାଛନ୍ତୁ।",
+    "fileTooLarge": "ସେହି ପ୍ରତିଛବି ବହୁତ ବଡ ଅଟେ। ଦୟାକରି 8MB ରୁ କମ୍ ଆକାରର ଫାଇଲ୍ ବାଛନ୍ତୁ।",
+    "processFailed": "ସେହି ପ୍ରତିଛବି ପ୍ରକ୍ରିୟାକରଣ ହୋଇପାରିଲା ନାହିଁ।",
+    "photoUpdated": "ପ୍ରୋଫାଇଲ୍ ଫଟୋ ଅଦ୍ୟତନ ହୋଇଛି।",
+    "saveFailed": "ଆପଣଙ୍କର ଫଟୋ ସଞ୍ଚୟ ହୋଇପାରିଲା ନାହିଁ।",
+    "photoRemoved": "ପ୍ରୋଫାଇଲ୍ ଫଟୋ ହଟାଯାଇଛି।",
+    "removeFailed": "ଆପଣଙ୍କର ଫଟୋ ହଟାଇ ହୋଇପାରିଲା ନାହିଁ।",
+    "changePhotoAriaLabel": "ପ୍ରୋଫାଇଲ୍ ଫଟୋ ପରିବର୍ତ୍ତନ କରନ୍ତୁ",
+    "uploadPhotoAriaLabel": "ପ୍ରୋଫାଇଲ୍ ଫଟୋ ଅପଲୋଡ୍ କରନ୍ତୁ",
+    "menuAriaLabel": "ପ୍ରୋଫାଇଲ୍ ଫଟୋ ବିକଳ୍ପ",
+    "replacePhoto": "ଫଟୋ ବଦଳାନ୍ତୁ",
+    "uploadPhoto": "ଫଟୋ ଅପଲୋଡ୍ କରନ୍ତୁ",
+    "removePhoto": "ଫଟୋ ହଟାନ୍ତୁ",
+    "previewDialogAriaLabel": "ନୂତନ ପ୍ରୋଫାଇଲ୍ ଫଟୋର ପୂର୍ବାବଲୋକନ",
+    "previewYourNewPhoto": "ଆପଣଙ୍କର ନୂତନ ଫଟୋ ପୂର୍ବାବଲୋକନ କରନ୍ତୁ",
+    "cancel": "ବାତିଲ୍ କରନ୍ତୁ",
+    "save": "ସଞ୍ଚୟ କରନ୍ତୁ"
+  }
+}

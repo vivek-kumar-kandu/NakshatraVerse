@@ -1,4 +1,8 @@
 import { memo, useEffect, useRef } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { TABS } from "../../constants/astrology.js";
 import { scrollBehavior } from "../../utils/motionPreference.js";
 
@@ -19,6 +23,10 @@ import { scrollBehavior } from "../../utils/motionPreference.js";
 // active button into view so a tap near either edge of the strip never
 // leaves the just-selected tab half hidden.
 function TabBar({ active, onChange }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["results"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const scrollRef = useRef(null);
   const btnRefs = useRef({});
 
@@ -34,6 +42,7 @@ function TabBar({ active, onChange }) {
   return (
     <div ref={scrollRef} className="tab-scroll-region" style={{ overflowX:"auto", WebkitOverflowScrolling:"touch",
       scrollbarWidth:"none", msOverflowStyle:"none" }}>
+<<<<<<< HEAD
       <div role="tablist" aria-label="Report sections" style={{ display:"flex", gap:4, padding:"4px 2px", minWidth:"max-content" }}>
         {TABS.map(t => {
           const isActive = t.id === active;
@@ -45,6 +54,19 @@ function TabBar({ active, onChange }) {
               role="tab"
               aria-selected={isActive}
               onClick={() => onChange(t.id)}
+=======
+      <div role="tablist" aria-label={t("results:page.reportSectionsAriaLabel")} style={{ display:"flex", gap:4, padding:"4px 2px", minWidth:"max-content" }}>
+        {TABS.map(tab => {
+          const isActive = tab.id === active;
+          return (
+            <button
+              key={tab.id}
+              ref={(el) => { btnRefs.current[tab.id] = el; }}
+              className="tab-btn"
+              role="tab"
+              aria-selected={isActive}
+              onClick={() => onChange(tab.id)}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               style={{
                 padding:"9px 16px", border:"none", borderRadius:"var(--nv-radius-pill, 30px)", cursor:"pointer",
                 fontFamily:"var(--nv-font-body, Inter,sans-serif)", fontSize:13, fontWeight:isActive ? 600 : 400,
@@ -56,7 +78,11 @@ function TabBar({ active, onChange }) {
                 display:"flex", alignItems:"center", gap:6,
               }}
             >
+<<<<<<< HEAD
               <span aria-hidden="true" style={{ display: "inline-block", transition: "transform var(--nv-duration-base) var(--nv-ease-standard)", transform: isActive ? "scale(1.1)" : "scale(1)" }}>{t.icon}</span> {t.label}
+=======
+              <span aria-hidden="true" style={{ display: "inline-block", transition: "transform var(--nv-duration-base) var(--nv-ease-standard)", transform: isActive ? "scale(1.1)" : "scale(1)" }}>{tab.icon}</span> {t(`results:tabs.${tab.id}`, tab.label)}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           );
         })}

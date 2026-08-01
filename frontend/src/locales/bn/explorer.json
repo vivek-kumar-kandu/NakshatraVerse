@@ -1,0 +1,169 @@
+{
+  "types": {
+    "planet": "গ্রহ",
+    "house": "ভাব",
+    "sign": "রাশি",
+    "yoga": "যোগ",
+    "dosha": "দোষ",
+    "nakshatra": "নক্ষত্র",
+    "ascendant": "লগ্ন",
+    "aspect": "দৃষ্টি"
+  },
+  "typeSingular": {
+    "planet": "গ্রহ",
+    "house": "ভাব",
+    "sign": "রাশি",
+    "yoga": "যোগ",
+    "dosha": "দোষ",
+    "nakshatra": "নক্ষত্র",
+    "ascendant": "লগ্ন",
+    "aspect": "দৃষ্টি"
+  },
+  "header": {
+    "title": "কুণ্ডলী এক্সপ্লোরার",
+    "breadcrumb": "{{type}} · {{item}}",
+    "notAvailable": "—",
+    "selectPrompt": "এক্সপ্লোর করতে একটি আইটেম নির্বাচন করুন"
+  },
+  "mainPanel": {
+    "loadingPanel": "বিবরণ প্যানেল লোড হচ্ছে…",
+    "emptyTitle": "এখনও কিছু নির্বাচিত নয়",
+    "emptyMessage": "এখানে এক্সপ্লোর করতে প্যানেল থেকে একটি গ্রহ, ভাব, রাশি, যোগ, দোষ, নক্ষত্র, লগ্ন, বা দৃষ্টি নির্বাচন করুন।",
+    "regionAriaLabel": "এক্সপ্লোরার বিবরণ প্যানেল"
+  },
+  "sidePanel": {
+    "treeAriaLabel": "এক্সপ্লোরার নির্বাচন বিভাগ",
+    "categoryAriaLabel": "{{label}} ({{count}})",
+    "housePrefix": "ভাব {{num}}",
+    "lordBadge": "অধিপতি: {{lord}}",
+    "aspectCountSingle": "{{count}} দৃষ্টি",
+    "aspectCountPlural": "{{count}} দৃষ্টি",
+    "netInfluence": "নিট {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI ব্যাখ্যা",
+    "prompt": "{{label}} এর একটি Gemini-চালিত ব্যাখ্যা পান, যা সম্পূর্ণরূপে এই চার্টের নিজস্ব ব্যাকএন্ড-গণনাকৃত তথ্যের উপর ভিত্তি করে।",
+    "explainAriaLabel": "{{label}} কে AI দিয়ে ব্যাখ্যা করুন",
+    "explainButton": "✨ AI দিয়ে ব্যাখ্যা করুন",
+    "generatingLabel": "{{label}} এর জন্য AI ব্যাখ্যা তৈরি করা হচ্ছে",
+    "loadFailed": "এক্সপ্লোরার AI বর্তমানে উপলব্ধ নয়।",
+    "tryAgain": "↻ আবার চেষ্টা করুন"
+  },
+  "common": {
+    "relatedPredictions": "সম্পর্কিত ভবিষ্যদ্বাণী",
+    "relatedRemedies": "সম্পর্কিত প্রতিকার",
+    "noLinkedPredictionsTitle": "কোনো সংযুক্ত ভবিষ্যদ্বাণী নেই",
+    "noLinkedRemediesTitle": "কোনো সংযুক্ত প্রতিকার নেই",
+    "noRemediesTitle": "কোনো প্রতিকার উপলব্ধ নেই"
+  },
+  "planet": {
+    "notAvailableTitle": "গ্রহের তথ্য উপলব্ধ নেই",
+    "notAvailableMessage": "এই চার্টে এখনও এই গ্রহের জন্য গণনাকৃত অবস্থানের তথ্য নেই।",
+    "positionDignityHeading": "অবস্থান ও মর্যাদা",
+    "houseLabel": "ভাব",
+    "signLabel": "রাশি",
+    "retrogradeBadge": "বক্রী",
+    "combustBadge": "অস্ত",
+    "functionallyNature": "কার্যকরীভাবে {{nature}}",
+    "friendshipSignSuffix": "{{relation}} রাশি",
+    "adjustedStrengthScore": "সমন্বিত শক্তি স্কোর",
+    "foundationShadbala": "মূল ষড়বল",
+    "notAvailableValue": "—",
+    "strengthUnavailable": "এই চার্টের জন্য বিস্তারিত শক্তি স্কোরিং উপলব্ধ নয়।",
+    "noLinkedPredictionsMessage": "বর্তমানে কোনো শ্রেণির ভবিষ্যদ্বাণী {{planet}} কে তার প্রধান বা সহায়ক গ্রহ হিসেবে উল্লেখ করে না।",
+    "noLinkedRemediesMessage": "এই চার্টের ভবিষ্যদ্বাণীর মাধ্যমে বর্তমানে {{planet}} এর সাথে কোনো প্রতিকার সংযুক্ত নেই।"
+  },
+  "house": {
+    "notAvailableTitle": "ভাবের তথ্য উপলব্ধ নেই",
+    "notAvailableMessage": "এখানে এক্সপ্লোর করতে প্যানেল থেকে একটি ভাব নির্বাচন করুন।",
+    "signBadge": "রাশি: {{sign}}",
+    "lordBadge": "অধিপতি: {{lord}}",
+    "meaning": "অর্থ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "অবস্থিত গ্রহসমূহ",
+    "noOccupants": "বর্তমানে এই ভাবে কোনো গ্রহ অবস্থিত নেই।",
+    "noLinkedPredictionsMessage": "বর্তমানে কোনো শ্রেণির ভবিষ্যদ্বাণী ভাব {{house}} কে সহায়ক ভাব হিসেবে উল্লেখ করে না।",
+    "noLinkedRemediesMessage": "এই চার্টের ভবিষ্যদ্বাণীর মাধ্যমে বর্তমানে ভাব {{house}} এর সাথে কোনো প্রতিকার সংযুক্ত নেই।",
+    "itemLabel": "ভাব {{num}}"
+  },
+  "sign": {
+    "notAvailableTitle": "রাশির তথ্য উপলব্ধ নেই",
+    "notAvailableMessage": "এখানে এক্সপ্লোর করতে প্যানেল থেকে একটি রাশি নির্বাচন করুন।",
+    "lordBadge": "অধিপতি: {{lord}}",
+    "lagnaBadge": "এই চার্টের লগ্ন",
+    "rulingPlanet": "শাসক গ্রহ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "এই রাশিতে বর্তমান গ্রহসমূহ",
+    "noOccupants": "এই চার্টে বর্তমানে এই রাশিতে কোনো গ্রহ অবস্থিত নেই।",
+    "noLinkedPredictionsMessage": "বর্তমানে কোনো শ্রেণির ভবিষ্যদ্বাণী এই রাশিতে অবস্থিত কোনো গ্রহের সাথে সম্পর্কিত নয়।"
+  },
+  "yoga": {
+    "notFoundTitle": "যোগ পাওয়া যায়নি",
+    "notFoundMessage": "এই যোগ এই চার্টের জন্য বর্তমানে শনাক্তকৃত সেটের অংশ নয়।",
+    "ruleMatchedBadge": "নিয়ম মিলেছে: {{name}}",
+    "contributingPlanetsHeading": "অবদানকারী গ্রহসমূহ",
+    "noContributingPlanets": "বর্তমানে কোনো শ্রেণির ভবিষ্যদ্বাণী এই যোগের কৃতিত্ব নির্দিষ্ট গ্রহগুলিকে দেয় না।",
+    "confidenceEffectsTitle": "আস্থা ও প্রভাব (সংযুক্ত ভবিষ্যদ্বাণী থেকে)",
+    "noLinkedPredictionsMessage": "বর্তমানে কোনো শ্রেণির ভবিষ্যদ্বাণী এই যোগকে সহায়ক কারণ হিসেবে উল্লেখ করে না।"
+  },
+  "dosha": {
+    "notFoundTitle": "দোষ পাওয়া যায়নি",
+    "notFoundMessage": "এই দোষ এই চার্টের জন্য বর্তমানে শনাক্তকৃত সেটের অংশ নয়।",
+    "matchingRuleBadge": "মিলে যাওয়া নিয়ম: {{name}}",
+    "severityBadge": "তীব্রতা: {{severity}}",
+    "affectedHousesHeading": "প্রভাবিত ভাবসমূহ",
+    "houseBadge": "ভাব {{num}}",
+    "noAffectedHouses": "বর্তমানে কোনো শ্রেণির ভবিষ্যদ্বাণী এই দোষকে নির্দিষ্ট ভাবের সাথে যুক্ত করে না।",
+    "remedies": "প্রতিকার",
+    "noRemediesMessage": "বর্তমানে এই দোষের সাথে কোনো প্রতিকার সংযুক্ত নেই।",
+    "linkedPredictions": "সংযুক্ত ভবিষ্যদ্বাণী",
+    "noLinkedPredictionsMessage": "বর্তমানে কোনো শ্রেণির ভবিষ্যদ্বাণী এই দোষকে সহায়ক কারণ হিসেবে উল্লেখ করে না।"
+  },
+  "nakshatra": {
+    "notAvailableTitle": "নক্ষত্র প্রোফাইল উপলব্ধ নয়",
+    "notAvailableMessage": "এই চার্টে এখনও গণনাকৃত নক্ষত্র প্রোফাইল নেই।",
+    "itemLabel": "নক্ষত্র",
+    "padaBadge": "পদ {{pada}}",
+    "lordBadge": "অধিপতি: {{lord}}",
+    "ganaBadge": "{{gana}} গণ",
+    "deity": "দেবতা",
+    "symbol": "প্রতীক",
+    "nadi": "নাড়ি",
+    "yoni": "যোনি",
+    "notAvailableValue": "—",
+    "personalityHeading": "ব্যক্তিত্ব",
+    "careerTendencies": "কর্মজীবনের প্রবণতা",
+    "relationshipTendencies": "সম্পর্কের প্রবণতা",
+    "spiritualTendencies": "আধ্যাত্মিক প্রবণতা"
+  },
+  "ascendant": {
+    "notAvailableTitle": "লগ্ন উপলব্ধ নয়",
+    "notAvailableMessage": "এই চার্টে এখনও গণনাকৃত লগ্ন নেই।",
+    "itemLabel": "লগ্ন",
+    "lordBadge": "অধিপতি: {{lord}}",
+    "risingSign": "লগ্ন (উদয় রাশি)",
+    "lagnaLord": "লগ্নাধিপতি",
+    "notAvailableValue": "—",
+    "characteristicsHeading": "বৈশিষ্ট্য (লগ্নাধিপতির শক্তি অনুসারে)",
+    "functionallyNature": "কার্যকরীভাবে {{nature}}",
+    "predictionsLinkedTitle": "লগ্নাধিপতির সাথে সংযুক্ত ভবিষ্যদ্বাণী",
+    "lagnaLordFallback": "লগ্নাধিপতি",
+    "noLinkedPredictionsMessage": "বর্তমানে কোনো শ্রেণির ভবিষ্যদ্বাণী {{lord}} কে তার প্রধান বা সহায়ক গ্রহ হিসেবে উল্লেখ করে না।"
+  },
+  "aspect": {
+    "notAvailableTitle": "দৃষ্টির তথ্য উপলব্ধ নেই",
+    "notAvailableMessage": "এখানে এক্সপ্লোর করতে প্যানেল থেকে একটি দৃষ্টি নির্বাচন করুন।",
+    "sourcesHeading": "দৃষ্টি উৎস → লক্ষ্য",
+    "beneficAspects": "শুভ দৃষ্টি",
+    "maleficAspects": "অশুভ দৃষ্টি",
+    "netInfluenceStrength": "নিট প্রভাব (শক্তি)",
+    "housesAspected": "দৃষ্টিপ্রাপ্ত ভাবসমূহ",
+    "houseLabel": "ভাব {{num}}",
+    "itemLabel": "{{target}} এর উপর দৃষ্টি",
+    "interpretPureBenefic": "সম্পূর্ণ শুভ দৃষ্টি — একটি সহায়ক প্রভাব।",
+    "interpretPureMalefic": "সম্পূর্ণ অশুভ দৃষ্টি — একটি চ্যালেঞ্জিং প্রভাব।",
+    "interpretMixedNetBenefic": "মিশ্র দৃষ্টি, সামগ্রিকভাবে নিট শুভ প্রভাব।",
+    "interpretMixedNetMalefic": "মিশ্র দৃষ্টি, সামগ্রিকভাবে নিট অশুভ প্রভাব।",
+    "interpretMixedNeutral": "মিশ্র দৃষ্টি যার নিট প্রভাব সুষম ও নিরপেক্ষ।"
+  }
+}

@@ -1,4 +1,8 @@
 import { memo, useMemo } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../../common/GlassCard.jsx";
 import Badge from "../../common/Badge.jsx";
 import EmptyState from "../../common/EmptyState.jsx";
@@ -24,6 +28,10 @@ import { predictionsCiting } from "../../../utils/explorerData.js";
 // yoga record itself.
 // ─────────────────────────────────────────────────────────────────────────
 function YogaExplorerPanel({ item, report, chart }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["explorer"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const name = item?.label;
   const yoga = useMemo(
     () => (report?.chart?.yogas || []).find((y) => y.name === name),
@@ -42,17 +50,29 @@ function YogaExplorerPanel({ item, report, chart }) {
 
   if (!yoga) {
     return (
+<<<<<<< HEAD
       <ExplorerDetailShell icon="⭐" label="Yoga" color="#c9ff7e" item={item}>
         <EmptyState icon="⭐" title="Yoga not found" message="This yoga isn't part of the currently detected set for this chart." />
+=======
+      <ExplorerDetailShell icon="⭐" label={t("explorer:typeSingular.yoga")} color="#c9ff7e" item={item}>
+        <EmptyState icon="⭐" title={t("explorer:yoga.notFoundTitle")} message={t("explorer:yoga.notFoundMessage")} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </ExplorerDetailShell>
     );
   }
 
   return (
+<<<<<<< HEAD
     <ExplorerDetailShell icon="⭐" label="Yoga" color="#c9ff7e" item={item}>
       <GlassCard style={{ padding: 24 }}>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 12 }}>
           <Badge color="#c9ff7e">Rule matched: {yoga.name}</Badge>
+=======
+    <ExplorerDetailShell icon="⭐" label={t("explorer:typeSingular.yoga")} color="#c9ff7e" item={item}>
+      <GlassCard style={{ padding: 24 }}>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 12 }}>
+          <Badge color="#c9ff7e">{t("explorer:yoga.ruleMatchedBadge", { name: yoga.name })}</Badge>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           {yoga.influence && <Badge color={yoga.influence === "negative" ? "#ff7b7b" : "#7effb2"}>{yoga.influence}</Badge>}
         </div>
         <p style={{ margin: "0 0 12px", fontSize: 13.5, lineHeight: 1.6, color: "var(--nv-text-secondary, rgba(230,220,255,0.85))", fontFamily: "Inter,sans-serif" }}>
@@ -66,7 +86,11 @@ function YogaExplorerPanel({ item, report, chart }) {
 
         <h4 style={{ margin: "18px 0 8px", fontSize: 13, letterSpacing: 1.5, textTransform: "uppercase",
           color: "var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily: "Inter,sans-serif", fontWeight: 500 }}>
+<<<<<<< HEAD
           CONTRIBUTING PLANETS
+=======
+          {t("explorer:yoga.contributingPlanetsHeading")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </h4>
         {contributingPlanets.length > 0 ? (
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
@@ -77,19 +101,32 @@ function YogaExplorerPanel({ item, report, chart }) {
           </div>
         ) : (
           <p style={{ margin: 0, fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.45))", fontFamily: "Inter,sans-serif" }}>
+<<<<<<< HEAD
             No category prediction currently attributes this yoga to specific planets.
+=======
+            {t("explorer:yoga.noContributingPlanets")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         )}
       </GlassCard>
 
+<<<<<<< HEAD
       <ExpandableSection icon="🔮" title="Confidence & Effects (from linked predictions)" color="#ffd700" count={citingPredictions.length}>
+=======
+      <ExpandableSection icon="🔮" title={t("explorer:yoga.confidenceEffectsTitle")} color="#ffd700" count={citingPredictions.length}>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         {citingPredictions.length > 0 ? (
           <div style={{ display: "grid", gap: 10, gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))" }}>
             {citingPredictions.map((p, idx) => <PredictionCard key={p.category} prediction={p} idx={idx} />)}
           </div>
         ) : (
+<<<<<<< HEAD
           <EmptyState compact icon="🔮" title="No linked predictions"
             message="No category prediction currently cites this yoga as a supporting factor." />
+=======
+          <EmptyState compact icon="🔮" title={t("explorer:common.noLinkedPredictionsTitle")}
+            message={t("explorer:yoga.noLinkedPredictionsMessage")} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         )}
       </ExpandableSection>
 

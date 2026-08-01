@@ -64,9 +64,17 @@ export async function createProfile(userId, profile) {
   return toPublicProfile(saved);
 }
 
+<<<<<<< HEAD
 export function getProfile(userId, id) {
   const record = familyProfileRepository.findById(id);
   assertOwnership(record, userId);
+=======
+export async function getProfile(userId, id) {
+  const record = await familyProfileRepository.findById(id);
+
+  assertOwnership(record, userId);
+
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return toPublicProfile(record);
 }
 
@@ -74,14 +82,26 @@ export function getProfile(userId, id) {
 // (not the public projection) for callers, like Relationship Hub, that
 // need the actual birth-data fields to feed into the existing astrology
 // pipeline.
+<<<<<<< HEAD
 export function getProfileRecord(userId, id) {
   const record = familyProfileRepository.findById(id);
   assertOwnership(record, userId);
+=======
+export async function getProfileRecord(userId, id) {
+  const record = await familyProfileRepository.findById(id);
+
+  assertOwnership(record, userId);
+
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return record;
 }
 
 export async function updateProfile(userId, id, patch) {
+<<<<<<< HEAD
   const existing = familyProfileRepository.findById(id);
+=======
+  const existing =  await familyProfileRepository.findById(id);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   assertOwnership(existing, userId);
   const updated = await familyProfileRepository.update(id, {
     name: patch.name,
@@ -96,6 +116,7 @@ export async function updateProfile(userId, id, patch) {
 }
 
 export async function deleteProfile(userId, id) {
+<<<<<<< HEAD
   const existing = familyProfileRepository.findById(id);
   assertOwnership(existing, userId);
   return familyProfileRepository.remove(id);
@@ -103,6 +124,17 @@ export async function deleteProfile(userId, id) {
 
 export async function duplicateProfile(userId, id) {
   const existing = familyProfileRepository.findById(id);
+=======
+  const existing = await familyProfileRepository.findById(id);
+
+  assertOwnership(existing, userId);
+
+  return await familyProfileRepository.remove(id);
+}
+
+export async function duplicateProfile(userId, id) {
+  const existing =  await familyProfileRepository.findById(id);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   assertOwnership(existing, userId);
   const saved = await familyProfileRepository.create({
     userId,
@@ -120,14 +152,22 @@ export async function duplicateProfile(userId, id) {
 }
 
 export async function archiveProfile(userId, id) {
+<<<<<<< HEAD
   const existing = familyProfileRepository.findById(id);
+=======
+  const existing = await familyProfileRepository.findById(id);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   assertOwnership(existing, userId);
   const updated = await familyProfileRepository.update(id, { archived: true });
   return toPublicProfile(updated);
 }
 
 export async function restoreProfile(userId, id) {
+<<<<<<< HEAD
   const existing = familyProfileRepository.findById(id);
+=======
+  const existing = await familyProfileRepository.findById(id);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   assertOwnership(existing, userId);
   const updated = await familyProfileRepository.update(id, { archived: false });
   return toPublicProfile(updated);
@@ -138,7 +178,11 @@ export async function restoreProfile(userId, id) {
 // AI Assistant session (not on every list/get read), so "Recently Opened"
 // reflects genuine usage rather than incidental page loads.
 export async function touchProfile(userId, id) {
+<<<<<<< HEAD
   const existing = familyProfileRepository.findById(id);
+=======
+  const existing =  await familyProfileRepository.findById(id);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   assertOwnership(existing, userId);
   const updated = await familyProfileRepository.update(id, { lastOpenedAt: new Date().toISOString() });
   return toPublicProfile(updated);
@@ -149,8 +193,17 @@ export async function touchProfile(userId, id) {
 // response. `includeArchived` defaults to false (archived profiles are
 // hidden from the main list — see restoreProfile/archiveProfile above for
 // how they move between the two).
+<<<<<<< HEAD
 export function listProfiles(userId, { search, relationship, sort, includeArchived } = {}) {
   let profiles = familyProfileRepository.findByUser(userId).map(toPublicProfile);
+=======
+export async function listProfiles(
+  userId,
+  { search, relationship, sort, includeArchived } = {}
+) {
+  let profiles = (await familyProfileRepository.findByUser(userId))
+    .map(toPublicProfile);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   if (!includeArchived) {
     profiles = profiles.filter((p) => !p.archived);
@@ -175,21 +228,34 @@ export function listProfiles(userId, { search, relationship, sort, includeArchiv
     relationship: (a, b) => a.relationshipLabel.localeCompare(b.relationshipLabel),
     dob: (a, b) => new Date(a.dob) - new Date(b.dob),
   };
+<<<<<<< HEAD
+=======
+
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   profiles.sort(sorters[sort] || sorters.recent);
 
   return profiles;
 }
+<<<<<<< HEAD
 
 // Recently Opened — top N profiles with a lastOpenedAt, most recent first.
 // Used by the Dashboard Family Profiles widget and the Family Profiles
 // page's own "Recently Opened" rail.
 export function recentlyOpenedProfiles(userId, limit = 5) {
   return familyProfileRepository.findByUser(userId)
+=======
+// Recently Opened — top N profiles with a lastOpenedAt, most recent first.
+// Used by the Dashboard Family Profiles widget and the Family Profiles
+// page's own "Recently Opened" rail.
+export async function recentlyOpenedProfiles(userId, limit = 5) {
+  return (await familyProfileRepository.findByUser(userId))
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     .map(toPublicProfile)
     .filter((p) => !p.archived && p.lastOpenedAt)
     .sort((a, b) => new Date(b.lastOpenedAt) - new Date(a.lastOpenedAt))
     .slice(0, limit);
 }
+<<<<<<< HEAD
 
 export function profileStats(userId) {
   const all = familyProfileRepository.findByUser(userId).map(toPublicProfile);
@@ -198,6 +264,18 @@ export function profileStats(userId) {
     total: active.length,
     archived: all.length - active.length,
   };
+=======
+export async function profileStats(userId) {
+    const all = (await familyProfileRepository.findByUser(userId))
+        .map(toPublicProfile);
+
+    const active = all.filter((p) => !p.archived);
+
+    return {
+        total: active.length,
+        archived: all.length - active.length,
+    };
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 export default {

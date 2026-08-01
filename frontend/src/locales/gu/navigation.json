@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "હોમ",
+    "features": "વિશેષતાઓ",
+    "about": "અમારા વિશે",
+    "faq": "વારંવાર પૂછાતા પ્રશ્નો"
+  },
+  "navbar": {
+    "brandAriaLabel": "નક્ષત્રવર્સ — હોમ",
+    "primaryAriaLabel": "મુખ્ય",
+    "openMenu": "મેનૂ ખોલો",
+    "closeMenu": "મેનૂ બંધ કરો"
+  },
+  "auth": {
+    "home": "હોમ",
+    "dashboard": "ડેશબોર્ડ",
+    "reports": "અહેવાલો",
+    "profile": "પ્રોફાઇલ"
+  },
+  "accountMenu": {
+    "myProfile": "મારી પ્રોફાઇલ",
+    "dashboard": "ડેશબોર્ડ",
+    "savedReports": "સાચવેલા અહેવાલો",
+    "settings": "સેટિંગ્સ",
+    "helpAbout": "મદદ અને માહિતી",
+    "memberSince": "{{date}} થી સભ્ય",
+    "menuLabel": "ખાતું",
+    "triggerLabel": "{{name}} માટે ખાતા મેનૂ"
+  },
+  "actionDock": {
+    "askAi": "AI ને પૂછો",
+    "horoscope": "રાશિફળ",
+    "calendar": "કેલેન્ડર",
+    "lifeCoach": "લાઇફ કોચ",
+    "kundliMatching": "કુંડળી મેળાપ",
+    "panchang": "પંચાંગ",
+    "festivalCalendar": "તહેવાર કેલેન્ડર",
+    "notifications": "સૂચનાઓ",
+    "saveReport": "અહેવાલ સાચવો",
+    "saving": "સાચવી રહ્યા છીએ…",
+    "downloadPdf": "PDF ડાઉનલોડ કરો",
+    "preparing": "તૈયાર કરી રહ્યા છીએ…",
+    "printPdf": "PDF પ્રિન્ટ કરો",
+    "opening": "ખોલી રહ્યા છીએ…",
+    "reportActions": "અહેવાલ ક્રિયાઓ",
+    "openReportActions": "અહેવાલ ક્રિયાઓ ખોલો",
+    "close": "બંધ કરો",
+    "somethingWentWrong": "કંઈક ખોટું થયું."
+  },
+  "commandPalette": {
+    "ariaLabel": "કમાન્ડ પેલેટ",
+    "searchAriaLabel": "કમાન્ડ પેલેટ શોધ",
+    "commandsAriaLabel": "કમાન્ડ્સ",
+    "sections": {
+      "navigate": "નેવિગેટ કરો",
+      "theme": "થીમ",
+      "settings": "સેટિંગ્સ",
+      "recent": "તાજેતરના",
+      "recentReports": "તાજેતરના અહેવાલો",
+      "recentReportsLoading": "તાજેતરના અહેવાલો · લોડ થઈ રહ્યા છે…"
+    },
+    "nav": {
+      "dashboard": "ડેશબોર્ડ",
+      "generateReport": "અહેવાલ બનાવો",
+      "savedReports": "સાચવેલા અહેવાલો",
+      "profile": "પ્રોફાઇલ",
+      "settings": "સેટિંગ્સ",
+      "horoscope": "રાશિફળ",
+      "calendar": "કેલેન્ડર",
+      "aiAssistant": "AI સહાયક",
+      "aiLifeCoach": "AI લાઇફ કોચ",
+      "kundliMatching": "કુંડળી મેળાપ",
+      "dailyPanchang": "દૈનિક પંચાંગ અને મુહૂર્ત",
+      "festivalCalendar": "તહેવાર કેલેન્ડર",
+      "todaysFestival": "આજનો તહેવાર",
+      "upcomingFestivals": "આગામી તહેવારો",
+      "notificationCenter": "સૂચના કેન્દ્ર",
+      "unreadNotifications": "ન વાંચેલી સૂચનાઓ",
+      "familyProfiles": "કુટુંબ પ્રોફાઇલ",
+      "relationshipHub": "રિલેશનશિપ હબ",
+      "help": "મદદ"
+    },
+    "theme": {
+      "light": "સેક્રેડ ડોન પર સ્વિચ કરો",
+      "dark": "મિડનાઇટ કોસ્મિક પર સ્વિચ કરો",
+      "system": "સિસ્ટમ થીમ પર સ્વિચ કરો"
+    },
+    "settingsSections": {
+      "account": "સેટિંગ્સ · ખાતું",
+      "appearance": "સેટિંગ્સ · દેખાવ",
+      "preferences": "સેટિંગ્સ · પસંદગીઓ",
+      "privacy": "સેટિંગ્સ · ગોપનીયતા",
+      "about": "સેટિંગ્સ · માહિતી"
+    },
+    "untitledReport": "શીર્ષક વગરનો અહેવાલ",
+    "noMatches": "કોઈ મેળ ખાતું કમાન્ડ નથી.",
+    "noMatchesFor": "\"{{query}}\" માટે કોઈ મેળ ખાતું કમાન્ડ નથી.",
+    "searchPlaceholder": "પેજ, અહેવાલો, યોગ, દોષ, ઉપાયો શોધો…"
+  }
+}

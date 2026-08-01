@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← ডেশ্ব’ৰ্ডলৈ উভতি যাওক",
+    "title": "সংৰক্ষিত প্ৰতিবেদনসমূহ",
+    "titleWithCount": "সংৰক্ষিত প্ৰতিবেদনসমূহ ({{count}})",
+    "generateNewReport": "✦ নতুন প্ৰতিবেদন সৃষ্টি কৰক",
+    "loadFailed": "আপোনাৰ সংৰক্ষিত প্ৰতিবেদনসমূহ লোড হ’ব পৰা নাই।",
+    "tryAgain": "↻ পুনৰ চেষ্টা কৰক",
+    "deleteToastSuccess": "\"{{title}}\" মচা হ’ল।",
+    "deleteToastFallbackTitle": "প্ৰতিবেদন",
+    "deleteFailed": "সেই প্ৰতিবেদনটো মচিব পৰা নগ’ল।",
+    "downloadToastSuccess": "PDF ডাউনল’ড হ’ল।",
+    "downloadFailed": "PDF সৃষ্টি কৰিব পৰা নগ’ল।",
+    "emptyTitle": "এতিয়ালৈকে কোনো সংৰক্ষিত প্ৰতিবেদন নাই",
+    "emptyMessage": "ইয়াত আপোনাৰ সংগ্ৰহ সাজিবলৈ এটা ৰিডিং সৃষ্টি কৰক আৰু প্ৰতিবেদন সংৰক্ষণ কৰক ত টিপক।",
+    "emptyAction": "✦ নতুন প্ৰতিবেদন সৃষ্টি কৰক",
+    "noMatchesTitle": "কোনো মিল পোৱা নগ’ল",
+    "noMatchesMessage": "কোনো সংৰক্ষিত প্ৰতিবেদন \"{{query}}\" ৰ সৈতে মিলা নাই। এটা বেলেগ শিৰোনাম, নাম, বা লগ্ন চেষ্টা কৰক।",
+    "clearSearch": "সন্ধান পৰিষ্কাৰ কৰক",
+    "deleteDialog": {
+      "title": "এই প্ৰতিবেদনটো মচিব নেকি?",
+      "message": "\"{{title}}\" স্থায়ীভাৱে আঁতৰোৱা হ’ব। ইয়াক পূৰ্বাৱস্থালৈ অনাব নোৱাৰি।",
+      "fallbackTitle": "এই প্ৰতিবেদন",
+      "confirmLabel": "মচি পেলাওক",
+      "cancelLabel": "বাতিল কৰক"
+    }
+  },
+  "detail": {
+    "loadFailed": "সেই প্ৰতিবেদনটো লোড হ’ব পৰা নাই।",
+    "backToSavedReports": "← সংৰক্ষিত প্ৰতিবেদনসমূহলৈ উভতি যাওক",
+    "loading": "আপোনাৰ সংৰক্ষিত ৰিডিং লোড হৈ আছে…",
+    "openHoroscope": "🔮 ৰাশিফল",
+    "openCalendar": "📅 কেলেণ্ডাৰ",
+    "openLifeCoach": "🧭 লাইফ কোচ",
+    "askAI": "✨ AI ক সোধক"
+  },
+  "card": {
+    "savedOn": "{{date}} ত সংৰক্ষিত",
+    "view": "চাওক",
+    "preview": "পূৰ্বদৰ্শন",
+    "download": "PDF",
+    "delete": "মচি পেলাওক",
+    "deleting": "মচি থকা হৈছে…",
+    "lagnaSuffix": "{{lagna}} লগ্ন",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "প্ৰতিবেদন বিন্যাস",
+    "gridView": "গ্ৰিড দৃশ্য",
+    "listView": "তালিকা দৃশ্য",
+    "searchPlaceholder": "শিৰোনাম, নাম, বা লগ্নৰ দ্বাৰা সন্ধান কৰক…",
+    "searchAriaLabel": "সংৰক্ষিত প্ৰতিবেদনসমূহ সন্ধান কৰক",
+    "sortAriaLabel": "সংৰক্ষিত প্ৰতিবেদনসমূহ সজাওক",
+    "resultCountSingle": "{{count}} প্ৰতিবেদন",
+    "resultCountPlural": "{{count}} প্ৰতিবেদনসমূহ",
+    "resultCountFiltered": "{{total}} ৰ {{count}}"
+  },
+  "sort": {
+    "newest": "আটাইতকৈ নতুন প্ৰথমে",
+    "oldest": "আটাইতকৈ পুৰণি প্ৰথমে",
+    "title-asc": "শিৰোনাম (A–Z)",
+    "title-desc": "শিৰোনাম (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} ৰ পূৰ্বদৰ্শন",
+    "closePreview": "পূৰ্বদৰ্শন বন্ধ কৰক",
+    "savedOn": "{{date}} ত সংৰক্ষিত",
+    "noDetails": "এই প্ৰতিবেদনৰ বাবে কোনো অতিৰিক্ত বিৱৰণ সংৰক্ষিত নাই।",
+    "description": "এইটো আপোনাৰ সংৰক্ষিত ৰিডিংৰ বিৱৰণৰ এটা দ্ৰুত পূৰ্বদৰ্শন। প্ৰতিটো বিভাগ পঢ়িবলৈ সম্পূৰ্ণ প্ৰতিবেদন খোলক — প্ৰেম, কেৰিয়াৰ, সম্পদ, স্বাস্থ্য, দোষ আৰু যোগ, উপায়, আৰু আপোনাৰ জীৱন সাৰাংশ।",
+    "viewFullReport": "✦ সম্পূৰ্ণ প্ৰতিবেদন চাওক",
+    "preparingPdf": "PDF সাজু কৰা হৈছে…",
+    "downloadPdf": "⭳ PDF ডাউনল’ড কৰক"
+  },
+  "summarizeAiAria": "AI ৰ সৈতে এই ৰিপ'ৰ্টৰ সাৰাংশ প্রস্তুত কৰক",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy is not part of this chart's backend-derived remedies."
+}

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { getPasswordStrength, passwordRequirements } from "../../../utils/authValidation.js";
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -9,9 +13,16 @@ import { getPasswordStrength, passwordRequirements } from "../../../utils/authVa
 // how it's communicated while typing.
 // ─────────────────────────────────────────────────────────────────────────
 function PasswordStrengthMeter({ password }) {
+<<<<<<< HEAD
   if (!password) return null;
   const { score, label, color } = getPasswordStrength(password);
   const reqs = passwordRequirements(password);
+=======
+  const { t } = useTranslation(["auth"]);
+  if (!password) return null;
+  const { score, label, color } = getPasswordStrength(password, t);
+  const reqs = passwordRequirements(password, t);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   return (
     <div style={{ marginTop: 10, animation: "fadeIn 0.25s ease both" }}>

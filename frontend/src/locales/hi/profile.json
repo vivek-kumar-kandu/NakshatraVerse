@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← डैशबोर्ड पर वापस जाएं",
+    "title": "मेरी प्रोफ़ाइल",
+    "photoHint": "संपादित करने के लिए अपनी फ़ोटो पर क्लिक करें — अपलोड करें, बदलें, या हटाएं।",
+    "authProviderGoogle": "Google से साइन इन किया गया",
+    "authProviderEmail": "ईमेल और पासवर्ड",
+    "accountInformation": "खाता जानकारी",
+    "fullName": "पूरा नाम",
+    "email": "ईमेल",
+    "memberSince": "सदस्यता की शुरुआत",
+    "accountType": "खाता प्रकार",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "पासवर्ड बदलें",
+    "editProfileInSettings": "सेटिंग्स में प्रोफ़ाइल संपादित करें →",
+    "activitySummary": "प्रोफ़ाइल गतिविधि सारांश",
+    "totalReports": "कुल रिपोर्ट्स",
+    "loadingValue": "…",
+    "lastGenerated": "अंतिम बार बनाई गई",
+    "viewSavedReports": "सहेजी गई रिपोर्ट्स देखें →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "कृपया JPG, PNG, या WEBP छवि चुनें।",
+    "fileTooLarge": "वह छवि बहुत बड़ी है। कृपया 8MB से कम आकार की फ़ाइल चुनें।",
+    "processFailed": "वह छवि संसाधित नहीं की जा सकी।",
+    "photoUpdated": "प्रोफ़ाइल फ़ोटो अपडेट हो गई।",
+    "saveFailed": "आपकी फ़ोटो सहेजी नहीं जा सकी।",
+    "photoRemoved": "प्रोफ़ाइल फ़ोटो हटा दी गई।",
+    "removeFailed": "आपकी फ़ोटो हटाई नहीं जा सकी।",
+    "changePhotoAriaLabel": "प्रोफ़ाइल फ़ोटो बदलें",
+    "uploadPhotoAriaLabel": "प्रोफ़ाइल फ़ोटो अपलोड करें",
+    "menuAriaLabel": "प्रोफ़ाइल फ़ोटो विकल्प",
+    "replacePhoto": "फ़ोटो बदलें",
+    "uploadPhoto": "फ़ोटो अपलोड करें",
+    "removePhoto": "फ़ोटो हटाएं",
+    "previewDialogAriaLabel": "नई प्रोफ़ाइल फ़ोटो का पूर्वावलोकन",
+    "previewYourNewPhoto": "अपनी नई फ़ोटो का पूर्वावलोकन करें",
+    "cancel": "रद्द करें",
+    "save": "सहेजें"
+  }
+}

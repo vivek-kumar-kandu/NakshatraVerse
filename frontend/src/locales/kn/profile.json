@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ",
+    "title": "ನನ್ನ ಪ್ರೊಫೈಲ್",
+    "photoHint": "ಸಂಪಾದಿಸಲು ನಿಮ್ಮ ಫೋಟೋವನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ — ಅಪ್‌ಲೋಡ್ ಮಾಡಿ, ಬದಲಾಯಿಸಿ ಅಥವಾ ತೆಗೆದುಹಾಕಿ.",
+    "authProviderGoogle": "Google ನೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಲಾಗಿದೆ",
+    "authProviderEmail": "ಇಮೇಲ್ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್",
+    "accountInformation": "ಖಾತೆ ಮಾಹಿತಿ",
+    "fullName": "ಪೂರ್ಣ ಹೆಸರು",
+    "email": "ಇಮೇಲ್",
+    "memberSince": "ಸದಸ್ಯತ್ವದ ಆರಂಭ",
+    "accountType": "ಖಾತೆ ಪ್ರಕಾರ",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "ಪಾಸ್‌ವರ್ಡ್ ಬದಲಾಯಿಸಿ",
+    "editProfileInSettings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಪ್ರೊಫೈಲ್ ಸಂಪಾದಿಸಿ →",
+    "activitySummary": "ಪ್ರೊಫೈಲ್ ಚಟುವಟಿಕೆ ಸಾರಾಂಶ",
+    "totalReports": "ಒಟ್ಟು ವರದಿಗಳು",
+    "loadingValue": "…",
+    "lastGenerated": "ಕೊನೆಯದಾಗಿ ರಚಿಸಲಾಗಿದೆ",
+    "viewSavedReports": "ಉಳಿಸಿದ ವರದಿಗಳನ್ನು ವೀಕ್ಷಿಸಿ →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "ದಯವಿಟ್ಟು JPG, PNG ಅಥವಾ WEBP ಚಿತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+    "fileTooLarge": "ಆ ಚಿತ್ರ ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ. ದಯವಿಟ್ಟು 8MB ಗಿಂತ ಕಡಿಮೆ ಗಾತ್ರದ ಫೈಲ್ ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+    "processFailed": "ಆ ಚಿತ್ರವನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "photoUpdated": "ಪ್ರೊಫೈಲ್ ಫೋಟೋ ನವೀಕರಿಸಲಾಗಿದೆ.",
+    "saveFailed": "ನಿಮ್ಮ ಫೋಟೋವನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "photoRemoved": "ಪ್ರೊಫೈಲ್ ಫೋಟೋ ತೆಗೆದುಹಾಕಲಾಗಿದೆ.",
+    "removeFailed": "ನಿಮ್ಮ ಫೋಟೋವನ್ನು ತೆಗೆದುಹಾಕಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "changePhotoAriaLabel": "ಪ್ರೊಫೈಲ್ ಫೋಟೋವನ್ನು ಬದಲಾಯಿಸಿ",
+    "uploadPhotoAriaLabel": "ಪ್ರೊಫೈಲ್ ಫೋಟೋವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+    "menuAriaLabel": "ಪ್ರೊಫೈಲ್ ಫೋಟೋ ಆಯ್ಕೆಗಳು",
+    "replacePhoto": "ಫೋಟೋವನ್ನು ಬದಲಾಯಿಸಿ",
+    "uploadPhoto": "ಫೋಟೋವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+    "removePhoto": "ಫೋಟೋವನ್ನು ತೆಗೆದುಹಾಕಿ",
+    "previewDialogAriaLabel": "ಹೊಸ ಪ್ರೊಫೈಲ್ ಫೋಟೋದ ಮುನ್ನೋಟ",
+    "previewYourNewPhoto": "ನಿಮ್ಮ ಹೊಸ ಫೋಟೋವನ್ನು ಮುನ್ನೋಟ ಮಾಡಿ",
+    "cancel": "ರದ್ದುಗೊಳಿಸಿ",
+    "save": "ಉಳಿಸಿ"
+  }
+}

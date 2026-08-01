@@ -1,0 +1,162 @@
+{
+  "relationships": {
+    "father": "ਪਿਤਾ",
+    "mother": "ਮਾਤਾ",
+    "husband": "ਪਤੀ",
+    "wife": "ਪਤਨੀ",
+    "son": "ਪੁੱਤਰ",
+    "daughter": "ਧੀ",
+    "brother": "ਭਰਾ",
+    "sister": "ਭੈਣ",
+    "friend": "ਦੋਸਤ",
+    "client": "ਕਲਾਇੰਟ",
+    "custom": "ਕਸਟਮ"
+  },
+  "sort": {
+    "recent": "ਹਾਲ ਹੀ ਵਿੱਚ ਅੱਪਡੇਟ ਕੀਤੀ",
+    "name": "ਨਾਮ (A–Z)",
+    "relationship": "ਰਿਸ਼ਤਾ",
+    "dob": "ਜਨਮ ਮਿਤੀ"
+  },
+  "profilesPage": {
+    "backToDashboard": "← ਡੈਸ਼ਬੋਰਡ 'ਤੇ ਵਾਪਸ ਜਾਓ",
+    "title": "ਪਰਿਵਾਰਕ ਪ੍ਰੋਫਾਈਲ",
+    "subtitle": "ਆਪਣੇ ਪਰਿਵਾਰ ਦੀ ਹਰੇਕ ਜਨਮ ਕੁੰਡਲੀ ਇੱਕ ਥਾਂ 'ਤੇ ਪ੍ਰਬੰਧਿਤ ਕਰੋ।",
+    "relationshipHub": "💞 ਰਿਲੇਸ਼ਨਸ਼ਿਪ ਹੱਬ",
+    "addProfile": "+ ਪ੍ਰੋਫਾਈਲ ਸ਼ਾਮਲ ਕਰੋ",
+    "loadFailed": "ਤੁਹਾਡੀਆਂ ਪਰਿਵਾਰਕ ਪ੍ਰੋਫਾਈਲਾਂ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੀਆਂ।",
+    "recentlyOpened": "🕑 ਹਾਲ ਹੀ ਵਿੱਚ ਖੋਲ੍ਹੀਆਂ",
+    "searchPlaceholder": "ਨਾਮ, ਰਿਸ਼ਤਾ, ਜਾਂ ਸਥਾਨ ਦੁਆਰਾ ਖੋਜੋ…",
+    "searchAriaLabel": "ਪਰਿਵਾਰਕ ਪ੍ਰੋਫਾਈਲਾਂ ਖੋਜੋ",
+    "filterAriaLabel": "ਰਿਸ਼ਤੇ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ",
+    "sortAriaLabel": "ਪਰਿਵਾਰਕ ਪ੍ਰੋਫਾਈਲਾਂ ਕ੍ਰਮਬੱਧ ਕਰੋ",
+    "allRelationships": "ਸਾਰੇ ਰਿਸ਼ਤੇ",
+    "showArchived": "ਪੁਰਾਲੇਖਬੱਧ ਵਿਖਾਓ",
+    "emptyTitle": "ਹਾਲੇ ਤੱਕ ਕੋਈ ਪ੍ਰੋਫਾਈਲ ਨਹੀਂ",
+    "emptyMessageFiltered": "ਕੋਈ ਪ੍ਰੋਫਾਈਲ ਤੁਹਾਡੀ ਖੋਜ/ਫਿਲਟਰ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ।",
+    "emptyMessageDefault": "ਆਪਣਾ ਰਿਲੇਸ਼ਨਸ਼ਿਪ ਹੱਬ ਬਣਾਉਣਾ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਆਪਣੀ ਪਹਿਲੀ ਪਰਿਵਾਰਕ ਪ੍ਰੋਫਾਈਲ ਸ਼ਾਮਲ ਕਰੋ।",
+    "toasts": {
+      "updated": "{{name}} ਦੀ ਪ੍ਰੋਫਾਈਲ ਅੱਪਡੇਟ ਹੋਈ।",
+      "added": "{{name}} ਨੂੰ ਪਰਿਵਾਰਕ ਪ੍ਰੋਫਾਈਲਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤਾ।",
+      "saveFailed": "ਇਹ ਪ੍ਰੋਫਾਈਲ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਹੋ ਸਕੀ।",
+      "duplicated": "{{name}} ਦੀ ਨਕਲ ਬਣਾਈ।",
+      "duplicateFailed": "ਇਹ ਪ੍ਰੋਫਾਈਲ ਡੁਪਲੀਕੇਟ ਨਹੀਂ ਹੋ ਸਕੀ।",
+      "archived": "{{name}} ਪੁਰਾਲੇਖਬੱਧ ਕੀਤੀ।",
+      "archiveFailed": "ਇਹ ਪ੍ਰੋਫਾਈਲ ਪੁਰਾਲੇਖਬੱਧ ਨਹੀਂ ਹੋ ਸਕੀ।",
+      "restored": "{{name}} ਬਹਾਲ ਕੀਤੀ।",
+      "restoreFailed": "ਇਹ ਪ੍ਰੋਫਾਈਲ ਬਹਾਲ ਨਹੀਂ ਹੋ ਸਕੀ।",
+      "deleted": "{{name}} ਮਿਟਾਈ।",
+      "deleteFailed": "ਇਹ ਪ੍ਰੋਫਾਈਲ ਮਿਟਾਈ ਨਹੀਂ ਜਾ ਸਕੀ।"
+    },
+    "deleteDialog": {
+      "title": "ਇਹ ਪ੍ਰੋਫਾਈਲ ਮਿਟਾਓ?",
+      "message": "\"{{name}}\" ਅਤੇ ਇਸ ਨਾਲ ਸਬੰਧਤ ਕੋਈ ਵੀ ਰਿਸ਼ਤਾ ਤੁਲਨਾ ਹੁਣ ਪਹੁੰਚਯੋਗ ਨਹੀਂ ਰਹੇਗੀ। ਇਸਨੂੰ ਵਾਪਸ ਨਹੀਂ ਲਿਆ ਜਾ ਸਕਦਾ।",
+      "confirmLabel": "ਮਿਟਾਓ"
+    }
+  },
+  "profileCard": {
+    "openedOn": "{{date}} ਨੂੰ ਖੋਲ੍ਹੀ",
+    "addedOn": "{{date}} ਨੂੰ ਸ਼ਾਮਲ ਕੀਤੀ",
+    "archived": "ਪੁਰਾਲੇਖਬੱਧ",
+    "open": "✦ ਖੋਲ੍ਹੋ",
+    "compare": "💞 ਤੁਲਨਾ ਕਰੋ",
+    "edit": "✎ ਸੰਪਾਦਿਤ ਕਰੋ",
+    "duplicate": "⧉ ਡੁਪਲੀਕੇਟ ਕਰੋ",
+    "archiveAction": "🗄 ਪੁਰਾਲੇਖਬੱਧ ਕਰੋ",
+    "restore": "↺ ਬਹਾਲ ਕਰੋ",
+    "delete": "✕ ਮਿਟਾਓ",
+    "notAvailable": "—"
+  },
+  "formDialog": {
+    "editTitle": "ਪਰਿਵਾਰਕ ਪ੍ਰੋਫਾਈਲ ਸੰਪਾਦਿਤ ਕਰੋ",
+    "addTitle": "ਪਰਿਵਾਰਕ ਪ੍ਰੋਫਾਈਲ ਸ਼ਾਮਲ ਕਰੋ",
+    "relationshipLabel": "ਰਿਸ਼ਤਾ",
+    "customRelationshipLabel": "ਕਸਟਮ ਰਿਸ਼ਤਾ ਲੇਬਲ",
+    "customRelationshipPlaceholder": "ਜਿਵੇਂ ਮੈਂਟਰ, ਚਚੇਰਾ ਭਰਾ, ਵਪਾਰਕ ਭਾਈਵਾਲ",
+    "custom": "ਕਸਟਮ",
+    "genderLabel": "ਲਿੰਗ",
+    "genderMale": "♂ ਪੁਰਸ਼",
+    "genderFemale": "♀ ਇਸਤਰੀ",
+    "genderOther": "⚧ ਹੋਰ",
+    "fields": {
+      "name": "ਪੂਰਾ ਨਾਮ",
+      "namePlaceholder": "ਜਿਵੇਂ ਅਰਜੁਨ ਸ਼ਰਮਾ",
+      "dob": "ਜਨਮ ਮਿਤੀ",
+      "tob": "ਜਨਮ ਸਮਾਂ",
+      "pob": "ਜਨਮ ਸਥਾਨ",
+      "pobPlaceholder": "ਜਿਵੇਂ ਮੁੰਬਈ, ਭਾਰਤ"
+    },
+    "errors": {
+      "nameRequired": "ਨਾਮ ਲੋੜੀਂਦਾ ਹੈ",
+      "relationshipRequired": "ਇੱਕ ਰਿਸ਼ਤਾ ਚੁਣੋ",
+      "customRelationshipRequired": "ਇੱਕ ਕਸਟਮ ਰਿਸ਼ਤਾ ਲੇਬਲ ਦਰਜ ਕਰੋ",
+      "dobRequired": "ਜਨਮ ਮਿਤੀ ਲੋੜੀਂਦੀ ਹੈ",
+      "tobRequired": "ਜਨਮ ਸਮਾਂ ਲੋੜੀਂਦਾ ਹੈ",
+      "pobRequired": "ਜਨਮ ਸਥਾਨ ਲੋੜੀਂਦਾ ਹੈ",
+      "genderRequired": "ਇੱਕ ਲਿੰਗ ਚੁਣੋ"
+    },
+    "cancel": "ਰੱਦ ਕਰੋ",
+    "saving": "ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…",
+    "saveChanges": "ਤਬਦੀਲੀਆਂ ਸੁਰੱਖਿਅਤ ਕਰੋ",
+    "addProfile": "ਪ੍ਰੋਫਾਈਲ ਸ਼ਾਮਲ ਕਰੋ"
+  },
+  "widget": {
+    "title": "👨‍👩‍👧‍👦 ਪਰਿਵਾਰਕ ਪ੍ਰੋਫਾਈਲ",
+    "countSingle": "{{count}} ਪ੍ਰੋਫਾਈਲ",
+    "countPlural": "{{count}} ਪ੍ਰੋਫਾਈਲਾਂ",
+    "loadFailed": "ਪਰਿਵਾਰਕ ਪ੍ਰੋਫਾਈਲਾਂ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੀਆਂ।",
+    "emptyMessage": "ਹਾਲੇ ਤੱਕ ਕੋਈ ਪ੍ਰੋਫਾਈਲ ਨਹੀਂ — ਚਾਰਟ ਤੁਲਨਾ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਪਰਿਵਾਰ, ਦੋਸਤ, ਜਾਂ ਕਲਾਇੰਟ ਸ਼ਾਮਲ ਕਰੋ।",
+    "addProfile": "+ ਪ੍ਰੋਫਾਈਲ ਸ਼ਾਮਲ ਕਰੋ",
+    "relationshipHub": "💞 ਰਿਲੇਸ਼ਨਸ਼ਿਪ ਹੱਬ",
+    "viewAll": "ਸਾਰੀਆਂ ਪ੍ਰੋਫਾਈਲਾਂ ਵੇਖੋ →"
+  },
+  "relationshipHub": {
+    "back": "← ਪਿੱਛੇ",
+    "title": "ਰਿਲੇਸ਼ਨਸ਼ਿਪ ਹੱਬ",
+    "subtitle": "ਕਿਸੇ ਵੀ ਦੋ ਸੁਰੱਖਿਅਤ ਪ੍ਰੋਫਾਈਲਾਂ ਦੀ ਤੁਲਨਾ ਕਰੋ — ਕੁੰਡਲੀ ਮਿਲਾਨ, ਚਾਰਟ, ਤਾਕਤ, ਦੋਸ਼, ਨਕਸ਼ਤਰ, ਅਤੇ ਭਵਿੱਖਬਾਣੀਆਂ।",
+    "loadingProfiles": "ਤੁਹਾਡੀਆਂ ਪ੍ਰੋਫਾਈਲਾਂ ਲੋਡ ਹੋ ਰਹੀਆਂ ਹਨ…",
+    "needTwoTitle": "ਘੱਟੋ-ਘੱਟ ਦੋ ਪ੍ਰੋਫਾਈਲਾਂ ਸ਼ਾਮਲ ਕਰੋ",
+    "needTwoMessage": "ਰਿਲੇਸ਼ਨਸ਼ਿਪ ਹੱਬ ਵਰਤਣ ਲਈ ਤੁਹਾਨੂੰ ਦੋ ਸੁਰੱਖਿਅਤ ਪਰਿਵਾਰਕ ਪ੍ਰੋਫਾਈਲਾਂ ਦੀ ਲੋੜ ਹੈ।",
+    "profileALabel": "ਪ੍ਰੋਫਾਈਲ A",
+    "profileBLabel": "ਪ੍ਰੋਫਾਈਲ B",
+    "chooseProfile": "ਇੱਕ ਪ੍ਰੋਫਾਈਲ ਚੁਣੋ…",
+    "compareFailed": "ਇਹਨਾਂ ਦੋ ਪ੍ਰੋਫਾਈਲਾਂ ਦੀ ਤੁਲਨਾ ਨਹੀਂ ਹੋ ਸਕੀ।",
+    "comparing": "ਤੁਲਨਾ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…",
+    "compare": "✦ ਤੁਲਨਾ ਕਰੋ",
+    "tabs": {
+      "kundli": "ਕੁੰਡਲੀ ਮਿਲਾਨ",
+      "chart": "ਜਨਮ ਚਾਰਟ",
+      "strength": "ਗ੍ਰਹਿ ਤਾਕਤ",
+      "dosha": "ਦੋਸ਼",
+      "nakshatra": "ਨਕਸ਼ਤਰ",
+      "prediction": "ਭਵਿੱਖਬਾਣੀਆਂ"
+    },
+    "manglikStatusLabel": "{{name}} ਦੀ ਮਾਂਗਲਿਕ ਸਥਿਤੀ",
+    "manglikPositive": "ਮਾਂਗਲਿਕ ({{severity}})",
+    "manglikNegative": "ਮਾਂਗਲਿਕ ਨਹੀਂ",
+    "notAvailable": "—",
+    "chart": {
+      "lagna": "ਲਗਨ",
+      "moonSign": "ਚੰਦਰ ਰਾਸ਼ੀ",
+      "sunSign": "ਸੂਰਜ ਰਾਸ਼ੀ",
+      "nakshatra": "ਨਕਸ਼ਤਰ",
+      "yogas": "ਯੋਗ",
+      "doshas": "ਦੋਸ਼"
+    },
+    "strength": {
+      "strongestPlanet": "ਸਭ ਤੋਂ ਮਜ਼ਬੂਤ ਗ੍ਰਹਿ",
+      "weakestPlanet": "ਸਭ ਤੋਂ ਕਮਜ਼ੋਰ ਗ੍ਰਹਿ"
+    },
+    "doshaComparisonTitle": "ਦੋਸ਼ ਤੁਲਨਾ",
+    "nakshatraFields": {
+      "padaBadge": " · ਪਦ {{pada}}",
+      "lordBadge": "ਸੁਆਮੀ: {{lord}}",
+      "nature": "ਸੁਭਾਅ",
+      "gana": "ਗਣ",
+      "nadi": "ਨਾੜੀ",
+      "sameNakshatra": "ਇੱਕੋ ਨਕਸ਼ਤਰ?",
+      "yes": "ਹਾਂ",
+      "no": "ਨਹੀਂ"
+    }
+  }
+}

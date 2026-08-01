@@ -13,9 +13,24 @@ import { generateForUser } from "../services/notifications/notificationGeneratio
 
 export const listNotifications = asyncHandler(async (req, res) => {
   const { search, category, priority, isRead, sort, page, limit, group } = req.query;
+<<<<<<< HEAD
   const result = notificationService.listNotifications(req.user.id, {
     search, category, priority, isRead, sort, page, limit,
   });
+=======
+  const result = await notificationService.listNotifications(
+  req.user.id,
+  {
+    search,
+    category,
+    priority,
+    isRead,
+    sort,
+    page,
+    limit,
+  }
+);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   // V4.4 Phase 2 (Intelligent Notification Generation) — additive, opt-in
   // via ?group=true. Response shape is unchanged unless a caller asks for
   // grouping, so every existing consumer of this endpoint is unaffected.
@@ -27,6 +42,7 @@ export const listNotifications = asyncHandler(async (req, res) => {
 });
 
 export const getUnreadCount = asyncHandler(async (req, res) => {
+<<<<<<< HEAD
   res.json({ unreadCount: notificationService.unreadCount(req.user.id) });
 });
 
@@ -36,6 +52,25 @@ export const getLatest = asyncHandler(async (req, res) => {
 
 export const getNotification = asyncHandler(async (req, res) => {
   res.json({ notification: notificationService.getNotification(req.user.id, req.params.id) });
+=======
+  const unreadCount = await notificationService.unreadCount(req.user.id);
+
+  res.json({ unreadCount });
+});
+
+export const getLatest = asyncHandler(async (req, res) => {
+  const notification = await notificationService.latestNotification(req.user.id);
+  res.json({ notification });
+});
+
+export const getNotification = asyncHandler(async (req, res) => {
+  const notification = await notificationService.getNotification(
+    req.user.id,
+    req.params.id
+  );
+
+  res.json({ notification });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 });
 
 export const markRead = asyncHandler(async (req, res) => {

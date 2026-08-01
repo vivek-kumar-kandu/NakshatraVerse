@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "daily": "ದೈನಂದಿನ",
+    "weekly": "ವಾರಕ್ಕೊಮ್ಮೆ",
+    "monthly": "ಮಾಸಿಕ",
+    "career": "ವೃತ್ತಿ",
+    "relationship": "ಸಂಬಂಧಗಳು",
+    "finance": "ಹಣಕಾಸು",
+    "health": "ಆರೋಗ್ಯ",
+    "growth": "ಬೆಳವಣಿಗೆ"
+  },
+  "page": {
+    "back": "← ಹಿಂದೆ",
+    "title": "🧭 AI ಜೀವನ ಮಾರ್ಗದರ್ಶಕ",
+    "dailyCompanion": "{{name}} ನ ದೈನಂದಿನ ಸಂಗಾತಿ",
+    "updated": "{{time}} ರಂದು ನವೀಕರಿಸಲಾಗಿದೆ",
+    "refreshing": "ರಿಫ್ರೆಶ್ ಮಾಡಲಾಗುತ್ತಿದೆ…",
+    "refreshGuidance": "↻ ಮಾರ್ಗದರ್ಶನವನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಿ",
+    "tryAgain": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ",
+    "loadingAriaLabel": "ನಿಮ್ಮ AI ಜೀವನ ಮಾರ್ಗದರ್ಶಕ ಮಾರ್ಗದರ್ಶನ ಲೋಡ್ ಆಗುತ್ತಿದೆ",
+    "loadFailed": "ನಿಮ್ಮ AI ಜೀವನ ಮಾರ್ಗದರ್ಶಕ ಮಾರ್ಗದರ್ಶನವನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "refreshFailed": "ನಿಮ್ಮ AI ಜೀವನ ಮಾರ್ಗದರ್ಶಕ ಮಾರ್ಗದರ್ಶನವನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "noReadingTitle": "ಇನ್ನೂ ಯಾವುದೇ ರೀಡಿಂಗ್ ಲಭ್ಯವಿಲ್ಲ",
+    "noReadingMessage": "ನಿಮ್ಮ ವೈಯಕ್ತಿಕ AI ಜೀವನ ಮಾರ್ಗದರ್ಶಕವನ್ನು ನೋಡಲು ಮೊದಲು ವರದಿಯನ್ನು ರಚಿಸಿ ಅಥವಾ ತೆರೆಯಿರಿ.",
+    "backAction": "← ಹಿಂದೆ"
+  },
+  "daily": {
+    "opportunities": "ಅವಕಾಶಗಳು",
+    "challenges": "ಸವಾಲುಗಳು",
+    "recommendedActions": "ಶಿಫಾರಸು ಮಾಡಿದ ಕ್ರಿಯೆಗಳು",
+    "thingsToAvoid": "ತಪ್ಪಿಸಬೇಕಾದ ವಿಷಯಗಳು",
+    "spiritualGuidance": "🕉️ ಆಧ್ಯಾತ್ಮಿಕ ಮಾರ್ಗದರ್ಶನ"
+  },
+  "outlook": {
+    "weeklyThemeTitle": "ಈ ವಾರದ ಥೀಮ್",
+    "weeklyEnergyLabel": "ವಾರದ ಶಕ್ತಿ",
+    "monthlyThemeTitle": "ಈ ತಿಂಗಳ ಥೀಮ್",
+    "monthlyEnergyLabel": "ಮಾಸಿಕ ಶಕ್ತಿ",
+    "weeklyUnavailableTitle": "ವಾರದ ದೃಷ್ಟಿಕೋನ ಲಭ್ಯವಿಲ್ಲ",
+    "weeklyUnavailableMessage": "ನಾವು ಪ್ರಸ್ತುತ ಈ ವಾರದ ದೃಷ್ಟಿಕೋನವನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ — ದಯವಿಟ್ಟು ರಿಫ್ರೆಶ್ ಮಾಡಿ.",
+    "monthlyUnavailableTitle": "ಮಾಸಿಕ ದೃಷ್ಟಿಕೋನ ಲಭ್ಯವಿಲ್ಲ",
+    "monthlyUnavailableMessage": "ನಾವು ಪ್ರಸ್ತುತ ಈ ತಿಂಗಳ ದೃಷ್ಟಿಕೋನವನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ — ದಯವಿಟ್ಟು ರಿಫ್ರೆಶ್ ಮಾಡಿ.",
+    "weeklyFocus": "ವಾರದ ಗಮನ",
+    "personalGrowthGoal": "ವೈಯಕ್ತಿಕ ಬೆಳವಣಿಗೆಯ ಗುರಿ",
+    "careerFocus": "ವೃತ್ತಿ ಗಮನ",
+    "relationshipFocus": "ಸಂಬಂಧದ ಗಮನ",
+    "opportunities": "ಅವಕಾಶಗಳು",
+    "challenges": "ಸವಾಲುಗಳು",
+    "bestDay": "ಅತ್ಯುತ್ತಮ ದಿನ: {{weekday}} ({{date}})",
+    "cautionDay": "ಎಚ್ಚರಿಕೆಯ ದಿನ: {{weekday}} ({{date}})"
+  },
+  "career": {
+    "cardTitle": "ವೃತ್ತಿ ಮಾರ್ಗದರ್ಶಕ",
+    "progress": "ವೃತ್ತಿ ಪ್ರಗತಿ",
+    "skillDevelopmentAdvice": "ಕೌಶಲ್ಯ ಅಭಿವೃದ್ಧಿ ಸಲಹೆ",
+    "promotionGuidance": "ಬಡ್ತಿ ಮಾರ್ಗದರ್ಶನ",
+    "businessSuggestions": "ವ್ಯಾಪಾರ ಸಲಹೆಗಳು",
+    "bestTimeForDecisions": "ಪ್ರಮುಖ ನಿರ್ಧಾರಗಳಿಗೆ ಅತ್ಯುತ್ತಮ ಸಮಯ"
+  },
+  "relationship": {
+    "cardTitle": "ಸಂಬಂಧ ಮಾರ್ಗದರ್ಶಕ",
+    "guidance": "ಸಂಬಂಧ ಮಾರ್ಗದರ್ಶನ",
+    "marriageAdvice": "ವಿವಾಹ ಸಲಹೆ",
+    "familyHarmonyTips": "ಕುಟುಂಬ ಸಾಮರಸ್ಯ ಸಲಹೆಗಳು",
+    "communicationSuggestions": "ಸಂವಹನ ಸಲಹೆಗಳು",
+    "emotionalWellbeing": "ಭಾವನಾತ್ಮಕ ಯೋಗಕ್ಷೇಮ"
+  },
+  "finance": {
+    "cardTitle": "ಹಣಕಾಸು ಮಾರ್ಗದರ್ಶಕ",
+    "outlook": "ಆರ್ಥಿಕ ದೃಷ್ಟಿಕೋನ",
+    "spendingSuggestions": "ಖರ್ಚು ಸಲಹೆಗಳು",
+    "savingAdvice": "ಉಳಿತಾಯ ಸಲಹೆ",
+    "investmentAwareness": "ಹೂಡಿಕೆ ಜಾಗೃತಿ",
+    "businessOpportunities": "ವ್ಯಾಪಾರ ಅವಕಾಶಗಳು"
+  },
+  "health": {
+    "cardTitle": "ಆರೋಗ್ಯ ಮತ್ತು ಯೋಗಕ್ಷೇಮ",
+    "energyTrends": "ಶಕ್ತಿ ಪ್ರವೃತ್ತಿಗಳು",
+    "stressAwareness": "ಒತ್ತಡ ಜಾಗೃತಿ",
+    "meditationSuggestions": "ಧ್ಯಾನ ಸಲಹೆಗಳು",
+    "yogaRecommendations": "ಯೋಗ ಶಿಫಾರಸುಗಳು",
+    "spiritualPractices": "ಆಧ್ಯಾತ್ಮಿಕ ಅಭ್ಯಾಸಗಳು",
+    "lifestyleSuggestions": "ಜೀವನಶೈಲಿ ಸಲಹೆಗಳು"
+  },
+  "growth": {
+    "dailyGoals": "ದೈನಂದಿನ ಗುರಿಗಳು",
+    "weeklyGoals": "ವಾರದ ಗುರಿಗಳು",
+    "monthlyFocus": "🌕 ಮಾಸಿಕ ಗಮನ",
+    "habitSuggestions": "ಅಭ್ಯಾಸ ಸಲಹೆಗಳು",
+    "learningRecommendations": "ಕಲಿಕೆಯ ಶಿಫಾರಸುಗಳು"
+  },
+  "scoreCard": {
+    "dailyEnergyLabel": "ದೈನಂದಿನ ಶಕ್ತಿ",
+    "todaysFocus": "ಇಂದಿನ ಗಮನ"
+  },
+  "confidenceBadge": {
+    "withScore": "ವಿಶ್ವಾಸ: {{label}} ({{score}}/100)",
+    "withoutScore": "ವಿಶ್ವಾಸ: {{label}}"
+  },
+  "whyNote": {
+    "prefix": "ಏಕೆ? "
+  },
+  "luckyElements": {
+    "title": "🍀 ಇಂದಿನ ಅದೃಷ್ಟ ಅಂಶಗಳು",
+    "color": "ಬಣ್ಣ",
+    "number": "ಸಂಖ್ಯೆ",
+    "direction": "ದಿಕ್ಕು",
+    "favorableTime": "ಅನುಕೂಲಕರ ಸಮಯ"
+  },
+  "affirmation": {
+    "dailyAffirmation": "✦ ದೈನಂದಿನ ದೃಢೀಕರಣ",
+    "spiritualPractice": "🕉️ ಇಂದಿನ ಆಧ್ಯಾತ್ಮಿಕ ಅಭ್ಯಾಸ"
+  }
+}

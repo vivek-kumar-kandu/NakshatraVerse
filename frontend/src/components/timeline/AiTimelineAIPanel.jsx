@@ -1,4 +1,8 @@
 import { memo, useCallback, useEffect, useRef, useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 import TypingIndicator from "../assistant/TypingIndicator.jsx";
 import ChatMessage from "../assistant/ChatMessage.jsx";
@@ -29,6 +33,10 @@ import { fetchAiTimelineExplanation } from "../../utils/aiTimelineApi.js";
 // cross-session layer of reuse for identical selections.
 // ─────────────────────────────────────────────────────────────────────────
 function AiTimelineAIPanel({ event, chart, report, history }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["timeline"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const cacheKey = event?.id;
   const cacheRef = useRef(new Map());
   const [explanation, setExplanation] = useState(() => cacheRef.current.get(cacheKey) || null);
@@ -73,7 +81,11 @@ function AiTimelineAIPanel({ event, chart, report, history }) {
       if (requestIdRef.current === myRequestId) setExplanation(result);
     } catch (err) {
       if (requestIdRef.current === myRequestId) {
+<<<<<<< HEAD
         setError(err.message || "The AI Timeline explanation is unavailable right now.");
+=======
+        setError(err.message || t("timeline:aiPanel.loadFailed"));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       }
     } finally {
       if (requestIdRef.current === myRequestId) setLoading(false);
@@ -85,7 +97,11 @@ function AiTimelineAIPanel({ event, chart, report, history }) {
     requestExplanation();
   }, [cacheKey, requestExplanation]);
 
+<<<<<<< HEAD
   const eventLabel = `this ${event?.category || "life-area"} prediction`;
+=======
+  const eventCategory = event?.category || t("timeline:aiPanel.eventLabelFallback");
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   return (
     <GlassCard style={{ padding: 20, display: "grid", gap: 14 }}>
@@ -93,20 +109,32 @@ function AiTimelineAIPanel({ event, chart, report, history }) {
         <span aria-hidden="true" style={{ fontSize: 18 }}>🤖</span>
         <h4 style={{ margin: 0, fontSize: 13, letterSpacing: 1.5, textTransform: "uppercase",
           color: "var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily: "Inter,sans-serif", fontWeight: 500 }}>
+<<<<<<< HEAD
           AI EXPLANATION
+=======
+          {t("timeline:aiPanel.heading")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </h4>
       </div>
 
       {!explanation && !loading && !error && (
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, flexWrap: "wrap" }}>
           <p style={{ margin: 0, fontSize: 13, lineHeight: 1.6, color: "var(--nv-text-secondary, rgba(230,220,255,0.75))", fontFamily: "Inter,sans-serif" }}>
+<<<<<<< HEAD
             Get a Gemini-powered explanation of {eventLabel}, grounded entirely in this chart's own backend-computed facts.
+=======
+            {t("timeline:aiPanel.prompt", { category: eventCategory })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
           <button
             type="button"
             onClick={requestExplanation}
             className="pill-btn tap-scale"
+<<<<<<< HEAD
             aria-label={`Explain ${eventLabel} with AI`}
+=======
+            aria-label={t("timeline:aiPanel.explainAriaLabel", { category: eventCategory })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             style={{
               flexShrink: 0, padding: "10px 18px", borderRadius: 20, fontSize: 12.5, fontWeight: 600,
               cursor: "pointer", border: "1px solid var(--nv-accent-wash-strong, rgba(180,120,255,0.4))",
@@ -114,12 +142,20 @@ function AiTimelineAIPanel({ event, chart, report, history }) {
               fontFamily: "Inter,sans-serif",
             }}
           >
+<<<<<<< HEAD
             ✨ Explain with AI
+=======
+            {t("timeline:aiPanel.explainButton")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         </div>
       )}
 
+<<<<<<< HEAD
       {loading && <TypingIndicator label={`Generating an AI explanation for ${eventLabel}`} />}
+=======
+      {loading && <TypingIndicator label={t("timeline:aiPanel.generatingLabel", { category: eventCategory })} />}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
       {error && !loading && (
         <div role="alert" style={{ display: "grid", gap: 10 }}>
@@ -136,7 +172,11 @@ function AiTimelineAIPanel({ event, chart, report, history }) {
               color: "var(--nv-danger, #ffaaaa)", fontFamily: "Inter,sans-serif",
             }}
           >
+<<<<<<< HEAD
             ↻ Try again
+=======
+            {t("timeline:aiPanel.tryAgain")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         </div>
       )}

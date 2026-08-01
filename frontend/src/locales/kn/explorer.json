@@ -1,0 +1,169 @@
+{
+  "types": {
+    "planet": "ಗ್ರಹ",
+    "house": "ಭಾವ",
+    "sign": "ರಾಶಿ",
+    "yoga": "ಯೋಗ",
+    "dosha": "ದೋಷ",
+    "nakshatra": "ನಕ್ಷತ್ರ",
+    "ascendant": "ಲಗ್ನ",
+    "aspect": "ದೃಷ್ಟಿ"
+  },
+  "typeSingular": {
+    "planet": "ಗ್ರಹ",
+    "house": "ಭಾವ",
+    "sign": "ರಾಶಿ",
+    "yoga": "ಯೋಗ",
+    "dosha": "ದೋಷ",
+    "nakshatra": "ನಕ್ಷತ್ರ",
+    "ascendant": "ಲಗ್ನ",
+    "aspect": "ದೃಷ್ಟಿ"
+  },
+  "header": {
+    "title": "ಕುಂಡಲಿ ಎಕ್ಸ್‌ಪ್ಲೋರರ್",
+    "breadcrumb": "{{type}} · {{item}}",
+    "notAvailable": "—",
+    "selectPrompt": "ಅನ್ವೇಷಿಸಲು ಒಂದು ಐಟಂ ಆಯ್ಕೆಮಾಡಿ"
+  },
+  "mainPanel": {
+    "loadingPanel": "ವಿವರಗಳ ಪ್ಯಾನಲ್ ಲೋಡ್ ಆಗುತ್ತಿದೆ…",
+    "emptyTitle": "ಇನ್ನೂ ಏನನ್ನೂ ಆಯ್ಕೆ ಮಾಡಿಲ್ಲ",
+    "emptyMessage": "ಇಲ್ಲಿ ಅನ್ವೇಷಿಸಲು ಪ್ಯಾನಲ್‌ನಿಂದ ಗ್ರಹ, ಭಾವ, ರಾಶಿ, ಯೋಗ, ದೋಷ, ನಕ್ಷತ್ರ, ಲಗ್ನ ಅಥವಾ ದೃಷ್ಟಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+    "regionAriaLabel": "ಎಕ್ಸ್‌ಪ್ಲೋರರ್ ವಿವರಗಳ ಪ್ಯಾನಲ್"
+  },
+  "sidePanel": {
+    "treeAriaLabel": "ಎಕ್ಸ್‌ಪ್ಲೋರರ್ ಆಯ್ಕೆ ವರ್ಗಗಳು",
+    "categoryAriaLabel": "{{label}} ({{count}})",
+    "housePrefix": "ಭಾವ {{num}}",
+    "lordBadge": "ಒಡೆಯ: {{lord}}",
+    "aspectCountSingle": "{{count}} ದೃಷ್ಟಿ",
+    "aspectCountPlural": "{{count}} ದೃಷ್ಟಿಗಳು",
+    "netInfluence": "ನಿವ್ವಳ {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI ವಿವರಣೆ",
+    "prompt": "{{label}} ನ Gemini-ಚಾಲಿತ ವಿವರಣೆಯನ್ನು ಪಡೆಯಿರಿ, ಇದು ಸಂಪೂರ್ಣವಾಗಿ ಈ ಚಾರ್ಟ್‌ನ ಸ್ವಂತ ಬ್ಯಾಕೆಂಡ್-ಲೆಕ್ಕ ಹಾಕಿದ ಸತ್ಯಗಳನ್ನು ಆಧರಿಸಿದೆ.",
+    "explainAriaLabel": "{{label}} ಅನ್ನು AI ಮೂಲಕ ವಿವರಿಸಿ",
+    "explainButton": "✨ AI ಮೂಲಕ ವಿವರಿಸಿ",
+    "generatingLabel": "{{label}} ಗಾಗಿ AI ವಿವರಣೆಯನ್ನು ರಚಿಸಲಾಗುತ್ತಿದೆ",
+    "loadFailed": "ಎಕ್ಸ್‌ಪ್ಲೋರರ್ AI ಪ್ರಸ್ತುತ ಲಭ್ಯವಿಲ್ಲ.",
+    "tryAgain": "↻ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+  },
+  "common": {
+    "relatedPredictions": "ಸಂಬಂಧಿತ ಭವಿಷ್ಯವಾಣಿಗಳು",
+    "relatedRemedies": "ಸಂಬಂಧಿತ ಪರಿಹಾರಗಳು",
+    "noLinkedPredictionsTitle": "ಯಾವುದೇ ಲಿಂಕ್ ಮಾಡಿದ ಭವಿಷ್ಯವಾಣಿ ಇಲ್ಲ",
+    "noLinkedRemediesTitle": "ಯಾವುದೇ ಲಿಂಕ್ ಮಾಡಿದ ಪರಿಹಾರ ಇಲ್ಲ",
+    "noRemediesTitle": "ಯಾವುದೇ ಪರಿಹಾರಗಳು ಲಭ್ಯವಿಲ್ಲ"
+  },
+  "planet": {
+    "notAvailableTitle": "ಗ್ರಹ ಡೇಟಾ ಲಭ್ಯವಿಲ್ಲ",
+    "notAvailableMessage": "ಈ ಚಾರ್ಟ್‌ನಲ್ಲಿ ಈ ಗ್ರಹಕ್ಕಾಗಿ ಲೆಕ್ಕಹಾಕಿದ ಸ್ಥಾನ ಡೇಟಾ ಇನ್ನೂ ಇಲ್ಲ.",
+    "positionDignityHeading": "ಸ್ಥಾನ ಮತ್ತು ಘನತೆ",
+    "houseLabel": "ಭಾವ",
+    "signLabel": "ರಾಶಿ",
+    "retrogradeBadge": "ವಕ್ರಿ",
+    "combustBadge": "ಅಸ್ತಂಗತ",
+    "functionallyNature": "ಕ್ರಿಯಾತ್ಮಕವಾಗಿ {{nature}}",
+    "friendshipSignSuffix": "{{relation}} ರಾಶಿ",
+    "adjustedStrengthScore": "ಹೊಂದಾಣಿಕೆ ಮಾಡಿದ ಬಲ ಸ್ಕೋರ್",
+    "foundationShadbala": "ಮೂಲ ಷಡ್ಬಲ",
+    "notAvailableValue": "—",
+    "strengthUnavailable": "ಈ ಚಾರ್ಟ್‌ಗೆ ವಿವರವಾದ ಬಲ ಸ್ಕೋರಿಂಗ್ ಲಭ್ಯವಿಲ್ಲ.",
+    "noLinkedPredictionsMessage": "ಪ್ರಸ್ತುತ ಯಾವುದೇ ವರ್ಗ ಭವಿಷ್ಯವಾಣಿ {{planet}} ಅನ್ನು ಅದರ ಪ್ರಮುಖ ಅಥವಾ ಸಹಾಯಕ ಗ್ರಹವಾಗಿ ಉಲ್ಲೇಖಿಸುವುದಿಲ್ಲ.",
+    "noLinkedRemediesMessage": "ಈ ಚಾರ್ಟ್‌ನ ಭವಿಷ್ಯವಾಣಿಗಳ ಮೂಲಕ ಪ್ರಸ್ತುತ {{planet}} ಗೆ ಯಾವುದೇ ಪರಿಹಾರ ಲಿಂಕ್ ಆಗಿಲ್ಲ."
+  },
+  "house": {
+    "notAvailableTitle": "ಭಾವ ಡೇಟಾ ಲಭ್ಯವಿಲ್ಲ",
+    "notAvailableMessage": "ಇಲ್ಲಿ ಅನ್ವೇಷಿಸಲು ಪ್ಯಾನಲ್‌ನಿಂದ ಒಂದು ಭಾವವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+    "signBadge": "ರಾಶಿ: {{sign}}",
+    "lordBadge": "ಒಡೆಯ: {{lord}}",
+    "meaning": "ಅರ್ಥ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "ಇರುವ ಗ್ರಹಗಳು",
+    "noOccupants": "ಪ್ರಸ್ತುತ ಈ ಭಾವದಲ್ಲಿ ಯಾವುದೇ ಗ್ರಹವಿಲ್ಲ.",
+    "noLinkedPredictionsMessage": "ಪ್ರಸ್ತುತ ಯಾವುದೇ ವರ್ಗ ಭವಿಷ್ಯವಾಣಿ ಭಾವ {{house}} ಅನ್ನು ಸಹಾಯಕ ಭಾವವಾಗಿ ಉಲ್ಲೇಖಿಸುವುದಿಲ್ಲ.",
+    "noLinkedRemediesMessage": "ಈ ಚಾರ್ಟ್‌ನ ಭವಿಷ್ಯವಾಣಿಗಳ ಮೂಲಕ ಪ್ರಸ್ತುತ ಭಾವ {{house}} ಗೆ ಯಾವುದೇ ಪರಿಹಾರ ಲಿಂಕ್ ಆಗಿಲ್ಲ.",
+    "itemLabel": "ಭಾವ {{num}}"
+  },
+  "sign": {
+    "notAvailableTitle": "ರಾಶಿ ಡೇಟಾ ಲಭ್ಯವಿಲ್ಲ",
+    "notAvailableMessage": "ಇಲ್ಲಿ ಅನ್ವೇಷಿಸಲು ಪ್ಯಾನಲ್‌ನಿಂದ ಒಂದು ರಾಶಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+    "lordBadge": "ಒಡೆಯ: {{lord}}",
+    "lagnaBadge": "ಈ ಚಾರ್ಟ್‌ನ ಲಗ್ನ",
+    "rulingPlanet": "ಆಳುವ ಗ್ರಹ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "ಈ ರಾಶಿಯಲ್ಲಿ ಪ್ರಸ್ತುತ ಗ್ರಹಗಳು",
+    "noOccupants": "ಈ ಚಾರ್ಟ್‌ನಲ್ಲಿ ಪ್ರಸ್ತುತ ಈ ರಾಶಿಯಲ್ಲಿ ಯಾವುದೇ ಗ್ರಹವಿಲ್ಲ.",
+    "noLinkedPredictionsMessage": "ಪ್ರಸ್ತುತ ಯಾವುದೇ ವರ್ಗ ಭವಿಷ್ಯವಾಣಿ ಈ ರಾಶಿಯಲ್ಲಿರುವ ಯಾವುದೇ ಗ್ರಹಕ್ಕೆ ಸಂಬಂಧಿಸಿಲ್ಲ."
+  },
+  "yoga": {
+    "notFoundTitle": "ಯೋಗ ಕಂಡುಬಂದಿಲ್ಲ",
+    "notFoundMessage": "ಈ ಯೋಗವು ಈ ಚಾರ್ಟ್‌ಗಾಗಿ ಪ್ರಸ್ತುತ ಗುರುತಿಸಲಾದ ಸೆಟ್‌ನ ಭಾಗವಲ್ಲ.",
+    "ruleMatchedBadge": "ನಿಯಮ ಹೊಂದಿಕೆಯಾಗಿದೆ: {{name}}",
+    "contributingPlanetsHeading": "ಕೊಡುಗೆ ನೀಡುವ ಗ್ರಹಗಳು",
+    "noContributingPlanets": "ಪ್ರಸ್ತುತ ಯಾವುದೇ ವರ್ಗ ಭವಿಷ್ಯವಾಣಿ ಈ ಯೋಗದ ಶ್ರೇಯಸ್ಸನ್ನು ನಿರ್ದಿಷ್ಟ ಗ್ರಹಗಳಿಗೆ ನೀಡುವುದಿಲ್ಲ.",
+    "confidenceEffectsTitle": "ವಿಶ್ವಾಸ ಮತ್ತು ಪರಿಣಾಮಗಳು (ಲಿಂಕ್ ಮಾಡಿದ ಭವಿಷ್ಯವಾಣಿಗಳಿಂದ)",
+    "noLinkedPredictionsMessage": "ಪ್ರಸ್ತುತ ಯಾವುದೇ ವರ್ಗ ಭವಿಷ್ಯವಾಣಿ ಈ ಯೋಗವನ್ನು ಸಹಾಯಕ ಅಂಶವಾಗಿ ಉಲ್ಲೇಖಿಸುವುದಿಲ್ಲ."
+  },
+  "dosha": {
+    "notFoundTitle": "ದೋಷ ಕಂಡುಬಂದಿಲ್ಲ",
+    "notFoundMessage": "ಈ ದೋಷವು ಈ ಚಾರ್ಟ್‌ಗಾಗಿ ಪ್ರಸ್ತುತ ಗುರುತಿಸಲಾದ ಸೆಟ್‌ನ ಭಾಗವಲ್ಲ.",
+    "matchingRuleBadge": "ಹೊಂದಿಕೆಯಾಗುವ ನಿಯಮ: {{name}}",
+    "severityBadge": "ತೀವ್ರತೆ: {{severity}}",
+    "affectedHousesHeading": "ಪ್ರಭಾವಿತ ಭಾವಗಳು",
+    "houseBadge": "ಭಾವ {{num}}",
+    "noAffectedHouses": "ಪ್ರಸ್ತುತ ಯಾವುದೇ ವರ್ಗ ಭವಿಷ್ಯವಾಣಿ ಈ ದೋಷವನ್ನು ನಿರ್ದಿಷ್ಟ ಭಾವಗಳೊಂದಿಗೆ ಸಂಪರ್ಕಿಸುವುದಿಲ್ಲ.",
+    "remedies": "ಪರಿಹಾರಗಳು",
+    "noRemediesMessage": "ಪ್ರಸ್ತುತ ಈ ದೋಷಕ್ಕೆ ಯಾವುದೇ ಪರಿಹಾರ ಲಿಂಕ್ ಆಗಿಲ್ಲ.",
+    "linkedPredictions": "ಲಿಂಕ್ ಮಾಡಿದ ಭವಿಷ್ಯವಾಣಿಗಳು",
+    "noLinkedPredictionsMessage": "ಪ್ರಸ್ತುತ ಯಾವುದೇ ವರ್ಗ ಭವಿಷ್ಯವಾಣಿ ಈ ದೋಷವನ್ನು ಸಹಾಯಕ ಅಂಶವಾಗಿ ಉಲ್ಲೇಖಿಸುವುದಿಲ್ಲ."
+  },
+  "nakshatra": {
+    "notAvailableTitle": "ನಕ್ಷತ್ರ ಪ್ರೊಫೈಲ್ ಲಭ್ಯವಿಲ್ಲ",
+    "notAvailableMessage": "ಈ ಚಾರ್ಟ್‌ನಲ್ಲಿ ಲೆಕ್ಕಹಾಕಿದ ನಕ್ಷತ್ರ ಪ್ರೊಫೈಲ್ ಇನ್ನೂ ಇಲ್ಲ.",
+    "itemLabel": "ನಕ್ಷತ್ರ",
+    "padaBadge": "ಪಾದ {{pada}}",
+    "lordBadge": "ಒಡೆಯ: {{lord}}",
+    "ganaBadge": "{{gana}} ಗಣ",
+    "deity": "ದೇವತೆ",
+    "symbol": "ಚಿಹ್ನೆ",
+    "nadi": "ನಾಡಿ",
+    "yoni": "ಯೋನಿ",
+    "notAvailableValue": "—",
+    "personalityHeading": "ವ್ಯಕ್ತಿತ್ವ",
+    "careerTendencies": "ವೃತ್ತಿ ಪ್ರವೃತ್ತಿಗಳು",
+    "relationshipTendencies": "ಸಂಬಂಧ ಪ್ರವೃತ್ತಿಗಳು",
+    "spiritualTendencies": "ಆಧ್ಯಾತ್ಮಿಕ ಪ್ರವೃತ್ತಿಗಳು"
+  },
+  "ascendant": {
+    "notAvailableTitle": "ಲಗ್ನ ಲಭ್ಯವಿಲ್ಲ",
+    "notAvailableMessage": "ಈ ಚಾರ್ಟ್‌ನಲ್ಲಿ ಲೆಕ್ಕಹಾಕಿದ ಲಗ್ನ ಇನ್ನೂ ಇಲ್ಲ.",
+    "itemLabel": "ಲಗ್ನ",
+    "lordBadge": "ಒಡೆಯ: {{lord}}",
+    "risingSign": "ಲಗ್ನ (ಉದಯ ರಾಶಿ)",
+    "lagnaLord": "ಲಗ್ನಾಧಿಪತಿ",
+    "notAvailableValue": "—",
+    "characteristicsHeading": "ಗುಣಲಕ್ಷಣಗಳು (ಲಗ್ನಾಧಿಪತಿಯ ಬಲದ ಆಧಾರದ ಮೇಲೆ)",
+    "functionallyNature": "ಕ್ರಿಯಾತ್ಮಕವಾಗಿ {{nature}}",
+    "predictionsLinkedTitle": "ಲಗ್ನಾಧಿಪತಿಗೆ ಲಿಂಕ್ ಮಾಡಿದ ಭವಿಷ್ಯವಾಣಿಗಳು",
+    "lagnaLordFallback": "ಲಗ್ನಾಧಿಪತಿ",
+    "noLinkedPredictionsMessage": "ಪ್ರಸ್ತುತ ಯಾವುದೇ ವರ್ಗ ಭವಿಷ್ಯವಾಣಿ {{lord}} ಅನ್ನು ಅದರ ಪ್ರಮುಖ ಅಥವಾ ಸಹಾಯಕ ಗ್ರಹವಾಗಿ ಉಲ್ಲೇಖಿಸುವುದಿಲ್ಲ."
+  },
+  "aspect": {
+    "notAvailableTitle": "ದೃಷ್ಟಿ ಡೇಟಾ ಲಭ್ಯವಿಲ್ಲ",
+    "notAvailableMessage": "ಇಲ್ಲಿ ಅನ್ವೇಷಿಸಲು ಪ್ಯಾನಲ್‌ನಿಂದ ಒಂದು ದೃಷ್ಟಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+    "sourcesHeading": "ದೃಷ್ಟಿ ಮೂಲ → ಗುರಿ",
+    "beneficAspects": "ಶುಭ ದೃಷ್ಟಿಗಳು",
+    "maleficAspects": "ಅಶುಭ ದೃಷ್ಟಿಗಳು",
+    "netInfluenceStrength": "ನಿವ್ವಳ ಪ್ರಭಾವ (ಬಲ)",
+    "housesAspected": "ದೃಷ್ಟಿ ಪಡೆದ ಭಾವಗಳು",
+    "houseLabel": "ಭಾವ {{num}}",
+    "itemLabel": "{{target}} ಮೇಲಿನ ದೃಷ್ಟಿಗಳು",
+    "interpretPureBenefic": "ಸಂಪೂರ್ಣವಾಗಿ ಶುಭ ದೃಷ್ಟಿಗಳು — ಒಂದು ಸಹಾಯಕ ಪ್ರಭಾವ.",
+    "interpretPureMalefic": "ಸಂಪೂರ್ಣವಾಗಿ ಅಶುಭ ದೃಷ್ಟಿಗಳು — ಒಂದು ಸವಾಲಿನ ಪ್ರಭಾವ.",
+    "interpretMixedNetBenefic": "ಮಿಶ್ರ ದೃಷ್ಟಿಗಳು, ಒಟ್ಟಾರೆಯಾಗಿ ನಿವ್ವಳ ಶುಭ ಪ್ರಭಾವ.",
+    "interpretMixedNetMalefic": "ಮಿಶ್ರ ದೃಷ್ಟಿಗಳು, ಒಟ್ಟಾರೆಯಾಗಿ ನಿವ್ವಳ ಅಶುಭ ಪ್ರಭಾವ.",
+    "interpretMixedNeutral": "ಮಿಶ್ರ ದೃಷ್ಟಿಗಳು, ಅದರ ನಿವ್ವಳ ಪ್ರಭಾವ ಸಮತೋಲಿತ ಮತ್ತು ತಟಸ್ಥವಾಗಿದೆ."
+  }
+}

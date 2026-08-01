@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "daily": "ദൈനംദിനം",
+    "weekly": "പ്രതിവാരം",
+    "monthly": "പ്രതിമാസം",
+    "career": "കരിയർ",
+    "relationship": "ബന്ധങ്ങൾ",
+    "finance": "സാമ്പത്തികം",
+    "health": "ആരോഗ്യം",
+    "growth": "വളർച്ച"
+  },
+  "page": {
+    "back": "← തിരികെ",
+    "title": "🧭 AI ലൈഫ് കോച്ച്",
+    "dailyCompanion": "{{name}} ന്റെ ദൈനംദിന കൂട്ടാളി",
+    "updated": "{{time}} ന് അപ്ഡേറ്റ് ചെയ്തു",
+    "refreshing": "പുതുക്കുന്നു…",
+    "refreshGuidance": "↻ മാർഗ്ഗനിർദ്ദേശം പുതുക്കുക",
+    "tryAgain": "വീണ്ടും ശ്രമിക്കുക",
+    "loadingAriaLabel": "നിങ്ങളുടെ AI ലൈഫ് കോച്ച് മാർഗ്ഗനിർദ്ദേശം ലോഡ് ചെയ്യുന്നു",
+    "loadFailed": "നിങ്ങളുടെ AI ലൈഫ് കോച്ച് മാർഗ്ഗനിർദ്ദേശം ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "refreshFailed": "നിങ്ങളുടെ AI ലൈഫ് കോച്ച് മാർഗ്ഗനിർദ്ദേശം പുതുക്കാൻ കഴിഞ്ഞില്ല.",
+    "noReadingTitle": "ഇതുവരെ റീഡിംഗ് ലഭ്യമല്ല",
+    "noReadingMessage": "നിങ്ങളുടെ വ്യക്തിഗത AI ലൈഫ് കോച്ച് കാണാൻ ആദ്യം ഒരു റിപ്പോർട്ട് സൃഷ്ടിക്കുക അല്ലെങ്കിൽ തുറക്കുക.",
+    "backAction": "← തിരികെ"
+  },
+  "daily": {
+    "opportunities": "അവസരങ്ങൾ",
+    "challenges": "വെല്ലുവിളികൾ",
+    "recommendedActions": "ശുപാർശ ചെയ്യുന്ന പ്രവർത്തനങ്ങൾ",
+    "thingsToAvoid": "ഒഴിവാക്കേണ്ട കാര്യങ്ങൾ",
+    "spiritualGuidance": "🕉️ ആത്മീയ മാർഗ്ഗനിർദ്ദേശം"
+  },
+  "outlook": {
+    "weeklyThemeTitle": "ഈ ആഴ്ചയിലെ തീം",
+    "weeklyEnergyLabel": "പ്രതിവാര ഊർജ്ജം",
+    "monthlyThemeTitle": "ഈ മാസത്തെ തീം",
+    "monthlyEnergyLabel": "പ്രതിമാസ ഊർജ്ജം",
+    "weeklyUnavailableTitle": "പ്രതിവാര കാഴ്ചപ്പാട് ലഭ്യമല്ല",
+    "weeklyUnavailableMessage": "ഞങ്ങൾക്ക് നിലവിൽ ഈ ആഴ്ചയിലെ കാഴ്ചപ്പാട് സൃഷ്ടിക്കാൻ കഴിഞ്ഞില്ല — ദയവായി പുതുക്കുക.",
+    "monthlyUnavailableTitle": "പ്രതിമാസ കാഴ്ചപ്പാട് ലഭ്യമല്ല",
+    "monthlyUnavailableMessage": "ഞങ്ങൾക്ക് നിലവിൽ ഈ മാസത്തെ കാഴ്ചപ്പാട് സൃഷ്ടിക്കാൻ കഴിഞ്ഞില്ല — ദയവായി പുതുക്കുക.",
+    "weeklyFocus": "പ്രതിവാര ശ്രദ്ധ",
+    "personalGrowthGoal": "വ്യക്തിഗത വളർച്ച ലക്ഷ്യം",
+    "careerFocus": "കരിയർ ശ്രദ്ധ",
+    "relationshipFocus": "ബന്ധ ശ്രദ്ധ",
+    "opportunities": "അവസരങ്ങൾ",
+    "challenges": "വെല്ലുവിളികൾ",
+    "bestDay": "ഏറ്റവും മികച്ച ദിവസം: {{weekday}} ({{date}})",
+    "cautionDay": "ജാഗ്രത ദിവസം: {{weekday}} ({{date}})"
+  },
+  "career": {
+    "cardTitle": "കരിയർ കോച്ച്",
+    "progress": "കരിയർ പുരോഗതി",
+    "skillDevelopmentAdvice": "നൈപുണ്യ വികസന ഉപദേശം",
+    "promotionGuidance": "സ്ഥാനക്കയറ്റ മാർഗ്ഗനിർദ്ദേശം",
+    "businessSuggestions": "ബിസിനസ് നിർദ്ദേശങ്ങൾ",
+    "bestTimeForDecisions": "പ്രധാന തീരുമാനങ്ങൾക്കുള്ള ഏറ്റവും മികച്ച സമയം"
+  },
+  "relationship": {
+    "cardTitle": "ബന്ധ കോച്ച്",
+    "guidance": "ബന്ധ മാർഗ്ഗനിർദ്ദേശം",
+    "marriageAdvice": "വിവാഹ ഉപദേശം",
+    "familyHarmonyTips": "കുടുംബ യോജിപ്പ് നുറുങ്ങുകൾ",
+    "communicationSuggestions": "ആശയവിനിമയ നിർദ്ദേശങ്ങൾ",
+    "emotionalWellbeing": "വൈകാരിക ക്ഷേമം"
+  },
+  "finance": {
+    "cardTitle": "സാമ്പത്തിക കോച്ച്",
+    "outlook": "സാമ്പത്തിക കാഴ്ചപ്പാട്",
+    "spendingSuggestions": "ചെലവ് നിർദ്ദേശങ്ങൾ",
+    "savingAdvice": "സമ്പാദ്യ ഉപദേശം",
+    "investmentAwareness": "നിക്ഷേപ അവബോധം",
+    "businessOpportunities": "ബിസിനസ് അവസരങ്ങൾ"
+  },
+  "health": {
+    "cardTitle": "ആരോഗ്യവും ക്ഷേമവും",
+    "energyTrends": "ഊർജ്ജ പ്രവണതകൾ",
+    "stressAwareness": "സമ്മർദ്ദ അവബോധം",
+    "meditationSuggestions": "ധ്യാന നിർദ്ദേശങ്ങൾ",
+    "yogaRecommendations": "യോഗ ശുപാർശകൾ",
+    "spiritualPractices": "ആത്മീയ പരിശീലനങ്ങൾ",
+    "lifestyleSuggestions": "ജീവിതശൈലി നിർദ്ദേശങ്ങൾ"
+  },
+  "growth": {
+    "dailyGoals": "ദൈനംദിന ലക്ഷ്യങ്ങൾ",
+    "weeklyGoals": "പ്രതിവാര ലക്ഷ്യങ്ങൾ",
+    "monthlyFocus": "🌕 പ്രതിമാസ ശ്രദ്ധ",
+    "habitSuggestions": "ശീല നിർദ്ദേശങ്ങൾ",
+    "learningRecommendations": "പഠന ശുപാർശകൾ"
+  },
+  "scoreCard": {
+    "dailyEnergyLabel": "ദൈനംദിന ഊർജ്ജം",
+    "todaysFocus": "ഇന്നത്തെ ശ്രദ്ധ"
+  },
+  "confidenceBadge": {
+    "withScore": "വിശ്വാസം: {{label}} ({{score}}/100)",
+    "withoutScore": "വിശ്വാസം: {{label}}"
+  },
+  "whyNote": {
+    "prefix": "എന്തുകൊണ്ട്? "
+  },
+  "luckyElements": {
+    "title": "🍀 ഇന്നത്തെ ഭാഗ്യ ഘടകങ്ങൾ",
+    "color": "നിറം",
+    "number": "സംഖ്യ",
+    "direction": "ദിശ",
+    "favorableTime": "അനുകൂല സമയം"
+  },
+  "affirmation": {
+    "dailyAffirmation": "✦ ദൈനംദിന സ്ഥിരീകരണം",
+    "spiritualPractice": "🕉️ ഇന്നത്തെ ആത്മീയ പരിശീലനം"
+  }
+}

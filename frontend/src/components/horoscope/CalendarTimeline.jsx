@@ -1,9 +1,17 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo } from "react";
 import EmptyState from "../common/EmptyState.jsx";
 import CalendarEventCard from "./CalendarEventCard.jsx";
 
+<<<<<<< HEAD
 const TONE_DOT = {
   dasha: "#bf7fff",
+=======
+const TONE_DOT = {dasha: "#bf7fff",
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   caution: "#ff8f7e",
   auspicious: "#7effb2",
 };
@@ -19,7 +27,11 @@ function CalendarTimeline({ events }) {
     return (
       <EmptyState
         icon="📅"
+<<<<<<< HEAD
         title="No upcoming events"
+=======
+        title={t("dashboard.noUpcomingEvents", "No upcoming events")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         message="No major Dasha changes or Transit events were found in the current calculation window."
         compact
       />

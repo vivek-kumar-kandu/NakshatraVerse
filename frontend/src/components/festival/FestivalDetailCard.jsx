@@ -1,7 +1,16 @@
 import { memo } from "react";
+<<<<<<< HEAD
 import GlassCard from "../common/GlassCard.jsx";
 import Badge from "../common/Badge.jsx";
 import ExpandableSection from "../common/ExpandableSection.jsx";
+=======
+import { useTranslation } from "react-i18next";
+import GlassCard from "../common/GlassCard.jsx";
+import Badge from "../common/Badge.jsx";
+import ExpandableSection from "../common/ExpandableSection.jsx";
+import { useLanguage } from "../../context/LanguageContext.jsx";
+import { formatDate as formatDateIntl } from "../../utils/localeFormat.js";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // FestivalDetailCard (V4.5 Phase 1B — Festival Frontend Integration)
@@ -12,6 +21,7 @@ import ExpandableSection from "../common/ExpandableSection.jsx";
 // Information, Region. All read-only rendering of already-computed
 // backend data — no calculation happens here.
 // ─────────────────────────────────────────────────────────────────────────
+<<<<<<< HEAD
 const IMPORTANCE_COLOR = { High: "#ffd700", Medium: "#bf7fff", Low: "#9dc9ff" };
 
 function formatDate(value) {
@@ -27,6 +37,19 @@ function formatDate(value) {
 
 function List({ items }) {
   if (!items?.length) return <p style={{ margin: 0 }}>Not specified.</p>;
+=======
+const IMPORTANCE_COLOR = {High: "#ffd700", Medium: "#bf7fff", Low: "#9dc9ff" };
+
+function formatDate(value, lang) {
+  if (!value) return "";
+  return formatDateIntl(`${value}T00:00:00Z`, lang, {
+    weekday: "long", year: "numeric", month: "long", day: "numeric", timeZone: "UTC",
+  });
+}
+
+function List({ items, t }) {
+  if (!items?.length) return <p style={{ margin: 0 }}>{t("festival:detailCard.notSpecified")}</p>;
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <ul style={{ margin: 0, paddingLeft: 18, display: "grid", gap: 6 }}>
       {items.map((item, i) => <li key={i}>{item}</li>)}
@@ -35,6 +58,11 @@ function List({ items }) {
 }
 
 function FestivalDetailCard({ festival, onExplain, explaining, explanation }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["festival"]);
+  const { language } = useLanguage();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   if (!festival) return null;
   const importanceColor = IMPORTANCE_COLOR[festival.importance] || "#bf7fff";
 
@@ -45,11 +73,19 @@ function FestivalDetailCard({ festival, onExplain, explaining, explanation }) {
           <div>
             <h2 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 19, color: "var(--nv-text-primary, #f1e4ff)" }}>{festival.name}</h2>
             <p style={{ margin: "4px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
+<<<<<<< HEAD
               {formatDate(festival.date)}{festival.endDate && festival.endDate !== festival.date ? ` – ${formatDate(festival.endDate)}` : ""}
             </p>
           </div>
           <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
             <Badge color={importanceColor}>{festival.importance} Importance</Badge>
+=======
+              {formatDate(festival.date, language)}{festival.endDate && festival.endDate !== festival.date ? ` – ${formatDate(festival.endDate, language)}` : ""}
+            </p>
+          </div>
+          <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+            <Badge color={importanceColor}>{t("festival:detailCard.importanceSuffix", { importance: festival.importance })}</Badge>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             <Badge color="#7effb2">{festival.type}</Badge>
           </div>
         </div>
@@ -77,7 +113,11 @@ function FestivalDetailCard({ festival, onExplain, explaining, explanation }) {
               background: "rgba(123,47,255,0.18)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif",
             }}
           >
+<<<<<<< HEAD
             ✨ {explaining ? "Asking Gemini…" : "Explain This Festival"}
+=======
+            ✨ {explaining ? t("festival:detailCard.askingGemini") : t("festival:detailCard.explainThisFestival")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         )}
 
@@ -89,17 +129,26 @@ function FestivalDetailCard({ festival, onExplain, explaining, explanation }) {
       </GlassCard>
 
       {festival.historicalBackground && (
+<<<<<<< HEAD
         <ExpandableSection icon="📜" title="Historical Background">
+=======
+        <ExpandableSection icon="📜" title={t("festival:detailCard.historicalBackground")}>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           <p style={{ margin: 0 }}>{festival.historicalBackground}</p>
         </ExpandableSection>
       )}
 
       {festival.religiousSignificance && (
+<<<<<<< HEAD
         <ExpandableSection icon="🕉️" title="Significance" defaultOpen>
+=======
+        <ExpandableSection icon="🕉️" title={t("festival:detailCard.significance")} defaultOpen>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           <p style={{ margin: 0 }}>{festival.religiousSignificance}</p>
         </ExpandableSection>
       )}
 
+<<<<<<< HEAD
       <ExpandableSection icon="🪔" title="Rituals" defaultOpen>
         <List items={festival.rituals} />
       </ExpandableSection>
@@ -115,6 +164,23 @@ function FestivalDetailCard({ festival, onExplain, explaining, explanation }) {
             {festival.fastingInfo.fastType ? ` — ${festival.fastingInfo.fastType}` : ""}
           </p>
           <List items={festival.fastingInfo.guidelines} />
+=======
+      <ExpandableSection icon="🪔" title={t("festival:detailCard.rituals")} defaultOpen>
+        <List items={festival.rituals} t={t} />
+      </ExpandableSection>
+
+      <ExpandableSection icon="✨" title={t("festival:detailCard.recommendedActivities")}>
+        <List items={festival.recommendedActivities} t={t} />
+      </ExpandableSection>
+
+      {festival.fastingInfo && (
+        <ExpandableSection icon="🍽️" title={t("festival:detailCard.fastingInformation")}>
+          <p style={{ margin: "0 0 8px", fontWeight: 600, color: "var(--nv-text-primary, #e8d5ff)" }}>
+            {festival.fastingInfo.isFastObserved ? t("festival:detailCard.fastingObserved") : t("festival:detailCard.noFastingObserved")}
+            {festival.fastingInfo.fastType ? ` — ${festival.fastingInfo.fastType}` : ""}
+          </p>
+          <List items={festival.fastingInfo.guidelines} t={t} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </ExpandableSection>
       )}
     </div>

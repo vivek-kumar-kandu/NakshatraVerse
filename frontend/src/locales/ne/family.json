@@ -1,0 +1,162 @@
+{
+  "relationships": {
+    "father": "बुबा",
+    "mother": "आमा",
+    "husband": "श्रीमान्",
+    "wife": "श्रीमती",
+    "son": "छोरा",
+    "daughter": "छोरी",
+    "brother": "दाजु/भाइ",
+    "sister": "दिदी/बहिनी",
+    "friend": "साथी",
+    "client": "ग्राहक",
+    "custom": "अनुकूलित"
+  },
+  "sort": {
+    "recent": "भर्खरै अद्यावधिक गरिएको",
+    "name": "नाम (A–Z)",
+    "relationship": "नाता",
+    "dob": "जन्म मिति"
+  },
+  "profilesPage": {
+    "backToDashboard": "← ड्यासबोर्डमा फर्कनुहोस्",
+    "title": "पारिवारिक प्रोफाइल",
+    "subtitle": "तपाईंको परिवारको हरेक जन्मकुण्डली एउटै ठाउँमा व्यवस्थापन गर्नुहोस्।",
+    "relationshipHub": "💞 रिलेशनसिप हब",
+    "addProfile": "+ प्रोफाइल थप्नुहोस्",
+    "loadFailed": "तपाईंका पारिवारिक प्रोफाइलहरू लोड हुन सकेनन्।",
+    "recentlyOpened": "🕑 भर्खरै खोलिएको",
+    "searchPlaceholder": "नाम, नाता, वा स्थानद्वारा खोज्नुहोस्…",
+    "searchAriaLabel": "पारिवारिक प्रोफाइलहरू खोज्नुहोस्",
+    "filterAriaLabel": "नाता अनुसार फिल्टर गर्नुहोस्",
+    "sortAriaLabel": "पारिवारिक प्रोफाइलहरू क्रमबद्ध गर्नुहोस्",
+    "allRelationships": "सबै नाताहरू",
+    "showArchived": "सङ्ग्रहित देखाउनुहोस्",
+    "emptyTitle": "अहिलेसम्म कुनै प्रोफाइल छैन",
+    "emptyMessageFiltered": "कुनै प्रोफाइल तपाईंको खोज/फिल्टरसँग मेल खाँदैन।",
+    "emptyMessageDefault": "तपाईंको रिलेशनसिप हब बनाउन सुरु गर्न तपाईंको पहिलो पारिवारिक प्रोफाइल थप्नुहोस्।",
+    "toasts": {
+      "updated": "{{name}} को प्रोफाइल अद्यावधिक भयो।",
+      "added": "{{name}} लाई पारिवारिक प्रोफाइलमा थपियो।",
+      "saveFailed": "यो प्रोफाइल सुरक्षित हुन सकेन।",
+      "duplicated": "{{name}} को प्रतिलिपि बनाइयो।",
+      "duplicateFailed": "यो प्रोफाइल डुप्लिकेट हुन सकेन।",
+      "archived": "{{name}} सङ्ग्रहित गरियो।",
+      "archiveFailed": "यो प्रोफाइल सङ्ग्रहित हुन सकेन।",
+      "restored": "{{name}} पुनर्स्थापना गरियो।",
+      "restoreFailed": "यो प्रोफाइल पुनर्स्थापना हुन सकेन।",
+      "deleted": "{{name}} मेटाइयो।",
+      "deleteFailed": "यो प्रोफाइल मेटाउन सकिएन।"
+    },
+    "deleteDialog": {
+      "title": "यो प्रोफाइल मेटाउने हो?",
+      "message": "\"{{name}}\" र यससँग सम्बन्धित कुनै पनि नाता तुलना अब पहुँचयोग्य रहनेछैन। यसलाई फिर्ता ल्याउन सकिँदैन।",
+      "confirmLabel": "मेटाउनुहोस्"
+    }
+  },
+  "profileCard": {
+    "openedOn": "{{date}} मा खोलिएको",
+    "addedOn": "{{date}} मा थपिएको",
+    "archived": "सङ्ग्रहित",
+    "open": "✦ खोल्नुहोस्",
+    "compare": "💞 तुलना गर्नुहोस्",
+    "edit": "✎ सम्पादन गर्नुहोस्",
+    "duplicate": "⧉ डुप्लिकेट गर्नुहोस्",
+    "archiveAction": "🗄 सङ्ग्रहित गर्नुहोस्",
+    "restore": "↺ पुनर्स्थापना गर्नुहोस्",
+    "delete": "✕ मेटाउनुहोस्",
+    "notAvailable": "—"
+  },
+  "formDialog": {
+    "editTitle": "पारिवारिक प्रोफाइल सम्पादन गर्नुहोस्",
+    "addTitle": "पारिवारिक प्रोफाइल थप्नुहोस्",
+    "relationshipLabel": "नाता",
+    "customRelationshipLabel": "अनुकूलित नाता लेबल",
+    "customRelationshipPlaceholder": "जस्तै मेन्टर, चचेरो भाइ, व्यापार साझेदार",
+    "custom": "अनुकूलित",
+    "genderLabel": "लिङ्ग",
+    "genderMale": "♂ पुरुष",
+    "genderFemale": "♀ महिला",
+    "genderOther": "⚧ अन्य",
+    "fields": {
+      "name": "पूरा नाम",
+      "namePlaceholder": "जस्तै अर्जुन शर्मा",
+      "dob": "जन्म मिति",
+      "tob": "जन्म समय",
+      "pob": "जन्म स्थान",
+      "pobPlaceholder": "जस्तै मुम्बई, भारत"
+    },
+    "errors": {
+      "nameRequired": "नाम आवश्यक छ",
+      "relationshipRequired": "एउटा नाता छान्नुहोस्",
+      "customRelationshipRequired": "एउटा अनुकूलित नाता लेबल प्रविष्ट गर्नुहोस्",
+      "dobRequired": "जन्म मिति आवश्यक छ",
+      "tobRequired": "जन्म समय आवश्यक छ",
+      "pobRequired": "जन्म स्थान आवश्यक छ",
+      "genderRequired": "एउटा लिङ्ग छान्नुहोस्"
+    },
+    "cancel": "रद्द गर्नुहोस्",
+    "saving": "सुरक्षित गरिँदैछ…",
+    "saveChanges": "परिवर्तनहरू सुरक्षित गर्नुहोस्",
+    "addProfile": "प्रोफाइल थप्नुहोस्"
+  },
+  "widget": {
+    "title": "👨‍👩‍👧‍👦 पारिवारिक प्रोफाइल",
+    "countSingle": "{{count}} प्रोफाइल",
+    "countPlural": "{{count}} प्रोफाइल",
+    "loadFailed": "पारिवारिक प्रोफाइलहरू लोड हुन सकेनन्।",
+    "emptyMessage": "अहिलेसम्म कुनै प्रोफाइल छैन — चार्ट तुलना सुरु गर्न परिवार, साथीहरू, वा ग्राहक थप्नुहोस्।",
+    "addProfile": "+ प्रोफाइल थप्नुहोस्",
+    "relationshipHub": "💞 रिलेशनसिप हब",
+    "viewAll": "सबै प्रोफाइल हेर्नुहोस् →"
+  },
+  "relationshipHub": {
+    "back": "← पछाडि",
+    "title": "रिलेशनसिप हब",
+    "subtitle": "कुनै पनि दुई सुरक्षित प्रोफाइलको तुलना गर्नुहोस् — कुण्डली मिलान, चार्ट, शक्ति, दोष, नक्षत्र, र भविष्यवाणीहरू।",
+    "loadingProfiles": "तपाईंका प्रोफाइलहरू लोड हुँदैछन्…",
+    "needTwoTitle": "कम्तिमा दुई प्रोफाइल थप्नुहोस्",
+    "needTwoMessage": "रिलेशनसिप हब प्रयोग गर्न तपाईंलाई दुई सुरक्षित पारिवारिक प्रोफाइल चाहिन्छ।",
+    "profileALabel": "प्रोफाइल A",
+    "profileBLabel": "प्रोफाइल B",
+    "chooseProfile": "एउटा प्रोफाइल छान्नुहोस्…",
+    "compareFailed": "यी दुई प्रोफाइलको तुलना गर्न सकिएन।",
+    "comparing": "तुलना गरिँदैछ…",
+    "compare": "✦ तुलना गर्नुहोस्",
+    "tabs": {
+      "kundli": "कुण्डली मिलान",
+      "chart": "जन्म चार्ट",
+      "strength": "ग्रह शक्ति",
+      "dosha": "दोष",
+      "nakshatra": "नक्षत्र",
+      "prediction": "भविष्यवाणीहरू"
+    },
+    "manglikStatusLabel": "{{name}} को मांगलिक स्थिति",
+    "manglikPositive": "मांगलिक ({{severity}})",
+    "manglikNegative": "मांगलिक होइन",
+    "notAvailable": "—",
+    "chart": {
+      "lagna": "लग्न",
+      "moonSign": "चन्द्र राशि",
+      "sunSign": "सूर्य राशि",
+      "nakshatra": "नक्षत्र",
+      "yogas": "योग",
+      "doshas": "दोष"
+    },
+    "strength": {
+      "strongestPlanet": "सबैभन्दा बलियो ग्रह",
+      "weakestPlanet": "सबैभन्दा कमजोर ग्रह"
+    },
+    "doshaComparisonTitle": "दोष तुलना",
+    "nakshatraFields": {
+      "padaBadge": " · पद {{pada}}",
+      "lordBadge": "स्वामी: {{lord}}",
+      "nature": "स्वभाव",
+      "gana": "गण",
+      "nadi": "नाडी",
+      "sameNakshatra": "उही नक्षत्र?",
+      "yes": "हो",
+      "no": "होइन"
+    }
+  }
+}

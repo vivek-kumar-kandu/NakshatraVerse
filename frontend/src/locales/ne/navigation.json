@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "गृहपृष्ठ",
+    "features": "विशेषताहरू",
+    "about": "हाम्रो बारेमा",
+    "faq": "प्रायः सोधिने प्रश्नहरू"
+  },
+  "navbar": {
+    "brandAriaLabel": "नक्षत्रवर्स — गृहपृष्ठ",
+    "primaryAriaLabel": "मुख्य",
+    "openMenu": "मेनु खोल्नुहोस्",
+    "closeMenu": "मेनु बन्द गर्नुहोस्"
+  },
+  "auth": {
+    "home": "गृहपृष्ठ",
+    "dashboard": "ड्यासबोर्ड",
+    "reports": "प्रतिवेदनहरू",
+    "profile": "प्रोफाइल"
+  },
+  "accountMenu": {
+    "myProfile": "मेरो प्रोफाइल",
+    "dashboard": "ड्यासबोर्ड",
+    "savedReports": "सुरक्षित प्रतिवेदनहरू",
+    "settings": "सेटिङहरू",
+    "helpAbout": "सहायता र जानकारी",
+    "memberSince": "{{date}} देखि सदस्य",
+    "menuLabel": "खाता",
+    "triggerLabel": "{{name}} को लागि खाता मेनु"
+  },
+  "actionDock": {
+    "askAi": "AI लाई सोध्नुहोस्",
+    "horoscope": "राशिफल",
+    "calendar": "पात्रो",
+    "lifeCoach": "लाइफ कोच",
+    "kundliMatching": "कुण्डली मिलान",
+    "panchang": "पञ्चाङ्ग",
+    "festivalCalendar": "चाड पात्रो",
+    "notifications": "सूचनाहरू",
+    "saveReport": "प्रतिवेदन सुरक्षित गर्नुहोस्",
+    "saving": "सुरक्षित गरिँदैछ…",
+    "downloadPdf": "PDF डाउनलोड गर्नुहोस्",
+    "preparing": "तयार गरिँदैछ…",
+    "printPdf": "PDF प्रिन्ट गर्नुहोस्",
+    "opening": "खोलिँदैछ…",
+    "reportActions": "प्रतिवेदन कार्यहरू",
+    "openReportActions": "प्रतिवेदन कार्यहरू खोल्नुहोस्",
+    "close": "बन्द गर्नुहोस्",
+    "somethingWentWrong": "केही गडबड भयो।"
+  },
+  "commandPalette": {
+    "ariaLabel": "कमाण्ड प्यालेट",
+    "searchAriaLabel": "कमाण्ड प्यालेट खोज",
+    "commandsAriaLabel": "कमाण्डहरू",
+    "sections": {
+      "navigate": "नेभिगेट गर्नुहोस्",
+      "theme": "थिम",
+      "settings": "सेटिङहरू",
+      "recent": "हालैका",
+      "recentReports": "हालैका प्रतिवेदनहरू",
+      "recentReportsLoading": "हालैका प्रतिवेदनहरू · लोड हुँदैछ…"
+    },
+    "nav": {
+      "dashboard": "ड्यासबोर्ड",
+      "generateReport": "प्रतिवेदन बनाउनुहोस्",
+      "savedReports": "सुरक्षित प्रतिवेदनहरू",
+      "profile": "प्रोफाइल",
+      "settings": "सेटिङहरू",
+      "horoscope": "राशिफल",
+      "calendar": "पात्रो",
+      "aiAssistant": "AI सहायक",
+      "aiLifeCoach": "AI लाइफ कोच",
+      "kundliMatching": "कुण्डली मिलान",
+      "dailyPanchang": "दैनिक पञ्चाङ्ग र मुहूर्त",
+      "festivalCalendar": "चाड पात्रो",
+      "todaysFestival": "आजको चाड",
+      "upcomingFestivals": "आगामी चाडहरू",
+      "notificationCenter": "सूचना केन्द्र",
+      "unreadNotifications": "नपढिएका सूचनाहरू",
+      "familyProfiles": "पारिवारिक प्रोफाइल",
+      "relationshipHub": "रिलेशनसिप हब",
+      "help": "सहायता"
+    },
+    "theme": {
+      "light": "सेक्रेड डन मा स्विच गर्नुहोस्",
+      "dark": "मिडनाइट कस्मिकमा स्विच गर्नुहोस्",
+      "system": "सिस्टम थिममा स्विच गर्नुहोस्"
+    },
+    "settingsSections": {
+      "account": "सेटिङहरू · खाता",
+      "appearance": "सेटिङहरू · देखावट",
+      "preferences": "सेटिङहरू · प्राथमिकताहरू",
+      "privacy": "सेटिङहरू · गोपनीयता",
+      "about": "सेटिङहरू · जानकारी"
+    },
+    "untitledReport": "शीर्षकविहीन प्रतिवेदन",
+    "noMatches": "कुनै मिल्दो कमाण्ड छैन।",
+    "noMatchesFor": "\"{{query}}\" को लागि कुनै मिल्दो कमाण्ड छैन।",
+    "searchPlaceholder": "पृष्ठहरू, प्रतिवेदनहरू, योग, दोष, उपायहरू खोज्नुहोस्…"
+  }
+}

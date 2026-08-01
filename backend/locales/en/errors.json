@@ -1,0 +1,16 @@
+{
+  "notFound": "No route {{method}} {{path}}",
+  "malformedJson": "Malformed JSON in request body.",
+  "bodyTooLarge": "Request body too large.",
+  "internalError": "Internal server error.",
+  "internalErrorProduction": "Internal server error. Please try again, and contact support if the problem persists.",
+  "invalidRequest": "Invalid request: {{errors}}",
+  "serviceUnavailable": "{{feature}} is unavailable right now.",
+  "invalidProfile": "Invalid profile: {{errors}}",
+  "chooseTwoDifferentProfiles": "Choose two different profiles to compare.",
+  "comparisonError": "Internal server error while comparing these two profiles.",
+  "internalErrorWhile": "Internal server error while {{action}}.",
+  "occurrenceNotFound": "No occurrence of \"{{key}}\" found for year {{year}}.",
+  "missingApiKey": "Server is missing an API key. Set GOOGLE_API_KEY in backend/.env.",
+  "tooManyRequests": "Too many requests. Please slow down and try again shortly."
+}

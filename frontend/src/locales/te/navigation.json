@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "హోమ్",
+    "features": "ఫీచర్లు",
+    "about": "మా గురించి",
+    "faq": "తరచుగా అడిగే ప్రశ్నలు"
+  },
+  "navbar": {
+    "brandAriaLabel": "నక్షత్రవర్స్ — హోమ్",
+    "primaryAriaLabel": "ప్రధాన",
+    "openMenu": "మెనూను తెరవండి",
+    "closeMenu": "మెనూను మూసివేయండి"
+  },
+  "auth": {
+    "home": "హోమ్",
+    "dashboard": "డాష్‌బోర్డ్",
+    "reports": "నివేదికలు",
+    "profile": "ప్రొఫైల్"
+  },
+  "accountMenu": {
+    "myProfile": "నా ప్రొఫైల్",
+    "dashboard": "డాష్‌బోర్డ్",
+    "savedReports": "సేవ్ చేసిన నివేదికలు",
+    "settings": "సెట్టింగ్‌లు",
+    "helpAbout": "సహాయం & సమాచారం",
+    "memberSince": "{{date}} నుండి సభ్యుడు",
+    "menuLabel": "ఖాతా",
+    "triggerLabel": "{{name}} కోసం ఖాతా మెనూ"
+  },
+  "actionDock": {
+    "askAi": "AI ని అడగండి",
+    "horoscope": "రాశిఫలం",
+    "calendar": "క్యాలెండర్",
+    "lifeCoach": "లైఫ్ కోచ్",
+    "kundliMatching": "కుండలి మ్యాచింగ్",
+    "panchang": "పంచాంగం",
+    "festivalCalendar": "పండుగ క్యాలెండర్",
+    "notifications": "నోటిఫికేషన్‌లు",
+    "saveReport": "నివేదికను సేవ్ చేయండి",
+    "saving": "సేవ్ చేస్తోంది…",
+    "downloadPdf": "PDF డౌన్‌లోడ్ చేయండి",
+    "preparing": "సిద్ధం చేస్తోంది…",
+    "printPdf": "PDF ప్రింట్ చేయండి",
+    "opening": "తెరుస్తోంది…",
+    "reportActions": "నివేదిక చర్యలు",
+    "openReportActions": "నివేదిక చర్యలను తెరవండి",
+    "close": "మూసివేయండి",
+    "somethingWentWrong": "ఏదో తప్పు జరిగింది."
+  },
+  "commandPalette": {
+    "ariaLabel": "కమాండ్ ప్యాలెట్",
+    "searchAriaLabel": "కమాండ్ ప్యాలెట్ శోధన",
+    "commandsAriaLabel": "కమాండ్‌లు",
+    "sections": {
+      "navigate": "నావిగేట్ చేయండి",
+      "theme": "థీమ్",
+      "settings": "సెట్టింగ్‌లు",
+      "recent": "ఇటీవలివి",
+      "recentReports": "ఇటీవలి నివేదికలు",
+      "recentReportsLoading": "ఇటీవలి నివేదికలు · లోడ్ అవుతోంది…"
+    },
+    "nav": {
+      "dashboard": "డాష్‌బోర్డ్",
+      "generateReport": "నివేదికను రూపొందించండి",
+      "savedReports": "సేవ్ చేసిన నివేదికలు",
+      "profile": "ప్రొఫైల్",
+      "settings": "సెట్టింగ్‌లు",
+      "horoscope": "రాశిఫలం",
+      "calendar": "క్యాలెండర్",
+      "aiAssistant": "AI సహాయకుడు",
+      "aiLifeCoach": "AI లైఫ్ కోచ్",
+      "kundliMatching": "కుండలి మ్యాచింగ్",
+      "dailyPanchang": "రోజువారీ పంచాంగం & ముహూర్తం",
+      "festivalCalendar": "పండుగ క్యాలెండర్",
+      "todaysFestival": "నేటి పండుగ",
+      "upcomingFestivals": "రాబోయే పండుగలు",
+      "notificationCenter": "నోటిఫికేషన్ కేంద్రం",
+      "unreadNotifications": "చదవని నోటిఫికేషన్‌లు",
+      "familyProfiles": "కుటుంబ ప్రొఫైల్‌లు",
+      "relationshipHub": "రిలేషన్‌షిప్ హబ్",
+      "help": "సహాయం"
+    },
+    "theme": {
+      "light": "సేక్రెడ్ డాన్‌కు మారండి",
+      "dark": "మిడ్‌నైట్ కాస్మిక్‌కు మారండి",
+      "system": "సిస్టమ్ థీమ్‌కు మారండి"
+    },
+    "settingsSections": {
+      "account": "సెట్టింగ్‌లు · ఖాతా",
+      "appearance": "సెట్టింగ్‌లు · రూపం",
+      "preferences": "సెట్టింగ్‌లు · ప్రాధాన్యతలు",
+      "privacy": "సెట్టింగ్‌లు · గోప్యత",
+      "about": "సెట్టింగ్‌లు · సమాచారం"
+    },
+    "untitledReport": "శీర్షిక లేని నివేదిక",
+    "noMatches": "సరిపోలే కమాండ్ లేదు.",
+    "noMatchesFor": "\"{{query}}\" కోసం సరిపోలే కమాండ్ లేదు.",
+    "searchPlaceholder": "పేజీలు, నివేదికలు, యోగాలు, దోషాలు, పరిహారాలను శోధించండి…"
+  }
+}

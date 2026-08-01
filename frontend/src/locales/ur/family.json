@@ -1,0 +1,162 @@
+{
+  "relationships": {
+    "father": "والد",
+    "mother": "والدہ",
+    "husband": "شوہر",
+    "wife": "بیوی",
+    "son": "بیٹا",
+    "daughter": "بیٹی",
+    "brother": "بھائی",
+    "sister": "بہن",
+    "friend": "دوست",
+    "client": "کلائنٹ",
+    "custom": "اپنی مرضی کا"
+  },
+  "sort": {
+    "recent": "حال ہی میں اپ ڈیٹ کی گئی",
+    "name": "نام (A–Z)",
+    "relationship": "رشتہ",
+    "dob": "تاریخ پیدائش"
+  },
+  "profilesPage": {
+    "backToDashboard": "← ڈیش بورڈ پر واپس جائیں",
+    "title": "خاندانی پروفائلز",
+    "subtitle": "اپنے خاندان کی ہر جنم کنڈلی ایک ہی جگہ منظم کریں۔",
+    "relationshipHub": "💞 تعلقات مرکز",
+    "addProfile": "+ پروفائل شامل کریں",
+    "loadFailed": "آپ کی خاندانی پروفائلز لوڈ نہیں ہو سکیں۔",
+    "recentlyOpened": "🕑 حال ہی میں کھولی گئی",
+    "searchPlaceholder": "نام، رشتہ، یا مقام سے تلاش کریں…",
+    "searchAriaLabel": "خاندانی پروفائلز تلاش کریں",
+    "filterAriaLabel": "رشتے کی بنیاد پر فلٹر کریں",
+    "sortAriaLabel": "خاندانی پروفائلز ترتیب دیں",
+    "allRelationships": "تمام رشتے",
+    "showArchived": "آرکائیو شدہ دکھائیں",
+    "emptyTitle": "ابھی تک کوئی پروفائل نہیں",
+    "emptyMessageFiltered": "کوئی پروفائل آپ کی تلاش/فلٹر سے مماثل نہیں۔",
+    "emptyMessageDefault": "اپنا تعلقات مرکز بنانا شروع کرنے کے لیے اپنی پہلی خاندانی پروفائل شامل کریں۔",
+    "toasts": {
+      "updated": "{{name}} کی پروفائل اپ ڈیٹ کر دی گئی۔",
+      "added": "{{name}} کو خاندانی پروفائلز میں شامل کیا گیا۔",
+      "saveFailed": "یہ پروفائل محفوظ نہیں ہو سکی۔",
+      "duplicated": "{{name}} کی نقل بنائی گئی۔",
+      "duplicateFailed": "یہ پروفائل نقل نہیں کی جا سکی۔",
+      "archived": "{{name}} آرکائیو کر دی گئی۔",
+      "archiveFailed": "یہ پروفائل آرکائیو نہیں کی جا سکی۔",
+      "restored": "{{name}} بحال کر دی گئی۔",
+      "restoreFailed": "یہ پروفائل بحال نہیں کی جا سکی۔",
+      "deleted": "{{name}} حذف کر دی گئی۔",
+      "deleteFailed": "یہ پروفائل حذف نہیں کی جا سکی۔"
+    },
+    "deleteDialog": {
+      "title": "کیا یہ پروفائل حذف کریں؟",
+      "message": "\"{{name}}\" اور اس سے متعلق کوئی بھی رشتہ موازنہ اب قابل رسائی نہیں رہے گا۔ اسے واپس نہیں لایا جا سکتا۔",
+      "confirmLabel": "حذف کریں"
+    }
+  },
+  "profileCard": {
+    "openedOn": "{{date}} کو کھولی گئی",
+    "addedOn": "{{date}} کو شامل کی گئی",
+    "archived": "آرکائیو شدہ",
+    "open": "✦ کھولیں",
+    "compare": "💞 موازنہ کریں",
+    "edit": "✎ ترمیم کریں",
+    "duplicate": "⧉ نقل کریں",
+    "archiveAction": "🗄 آرکائیو کریں",
+    "restore": "↺ بحال کریں",
+    "delete": "✕ حذف کریں",
+    "notAvailable": "—"
+  },
+  "formDialog": {
+    "editTitle": "خاندانی پروفائل میں ترمیم کریں",
+    "addTitle": "خاندانی پروفائل شامل کریں",
+    "relationshipLabel": "رشتہ",
+    "customRelationshipLabel": "اپنی مرضی کا رشتہ لیبل",
+    "customRelationshipPlaceholder": "مثلاً مینٹور، رشتہ دار، کاروباری پارٹنر",
+    "custom": "اپنی مرضی کا",
+    "genderLabel": "جنس",
+    "genderMale": "♂ مرد",
+    "genderFemale": "♀ عورت",
+    "genderOther": "⚧ دیگر",
+    "fields": {
+      "name": "پورا نام",
+      "namePlaceholder": "مثلاً ارجن شرما",
+      "dob": "تاریخ پیدائش",
+      "tob": "وقت پیدائش",
+      "pob": "جائے پیدائش",
+      "pobPlaceholder": "مثلاً ممبئی، بھارت"
+    },
+    "errors": {
+      "nameRequired": "نام درکار ہے",
+      "relationshipRequired": "ایک رشتہ منتخب کریں",
+      "customRelationshipRequired": "اپنی مرضی کا رشتہ لیبل درج کریں",
+      "dobRequired": "تاریخ پیدائش درکار ہے",
+      "tobRequired": "وقت پیدائش درکار ہے",
+      "pobRequired": "جائے پیدائش درکار ہے",
+      "genderRequired": "ایک جنس منتخب کریں"
+    },
+    "cancel": "منسوخ کریں",
+    "saving": "محفوظ کیا جا رہا ہے…",
+    "saveChanges": "تبدیلیاں محفوظ کریں",
+    "addProfile": "پروفائل شامل کریں"
+  },
+  "widget": {
+    "title": "👨‍👩‍👧‍👦 خاندانی پروفائلز",
+    "countSingle": "{{count}} پروفائل",
+    "countPlural": "{{count}} پروفائلز",
+    "loadFailed": "خاندانی پروفائلز لوڈ نہیں ہو سکیں۔",
+    "emptyMessage": "ابھی تک کوئی پروفائل نہیں — چارٹ موازنہ شروع کرنے کے لیے خاندان، دوست، یا کلائنٹس شامل کریں۔",
+    "addProfile": "+ پروفائل شامل کریں",
+    "relationshipHub": "💞 تعلقات مرکز",
+    "viewAll": "تمام پروفائلز دیکھیں →"
+  },
+  "relationshipHub": {
+    "back": "← واپس",
+    "title": "تعلقات مرکز",
+    "subtitle": "کسی بھی دو محفوظ کردہ پروفائلز کا موازنہ کریں — کنڈلی ملان، چارٹس، طاقت، دوش، نکشتر، اور پیشین گوئیاں۔",
+    "loadingProfiles": "آپ کی پروفائلز لوڈ ہو رہی ہیں…",
+    "needTwoTitle": "کم از کم دو پروفائلز شامل کریں",
+    "needTwoMessage": "تعلقات مرکز استعمال کرنے کے لیے آپ کو دو محفوظ کردہ خاندانی پروفائلز کی ضرورت ہے۔",
+    "profileALabel": "پروفائل A",
+    "profileBLabel": "پروفائل B",
+    "chooseProfile": "ایک پروفائل منتخب کریں…",
+    "compareFailed": "ان دو پروفائلز کا موازنہ نہیں کیا جا سکا۔",
+    "comparing": "موازنہ کیا جا رہا ہے…",
+    "compare": "✦ موازنہ کریں",
+    "tabs": {
+      "kundli": "کنڈلی ملان",
+      "chart": "جنم چارٹ",
+      "strength": "سیاروی طاقت",
+      "dosha": "دوش",
+      "nakshatra": "نکشتر",
+      "prediction": "پیشین گوئیاں"
+    },
+    "manglikStatusLabel": "{{name}} کی منگلیک حیثیت",
+    "manglikPositive": "منگلیک ({{severity}})",
+    "manglikNegative": "منگلیک نہیں",
+    "notAvailable": "—",
+    "chart": {
+      "lagna": "لگن",
+      "moonSign": "قمری راشی",
+      "sunSign": "شمسی راشی",
+      "nakshatra": "نکشتر",
+      "yogas": "یوگ",
+      "doshas": "دوش"
+    },
+    "strength": {
+      "strongestPlanet": "مضبوط ترین سیارہ",
+      "weakestPlanet": "کمزور ترین سیارہ"
+    },
+    "doshaComparisonTitle": "دوش کا موازنہ",
+    "nakshatraFields": {
+      "padaBadge": " · پاد {{pada}}",
+      "lordBadge": "مالک: {{lord}}",
+      "nature": "طبیعت",
+      "gana": "گن",
+      "nadi": "ناڑی",
+      "sameNakshatra": "کیا ایک ہی نکشتر ہے؟",
+      "yes": "ہاں",
+      "no": "نہیں"
+    }
+  }
+}

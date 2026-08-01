@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "होम",
+    "features": "विशेषताएं",
+    "about": "परिचय",
+    "faq": "सामान्य प्रश्न"
+  },
+  "navbar": {
+    "brandAriaLabel": "नक्षत्रवर्स — होम",
+    "primaryAriaLabel": "मुख्य",
+    "openMenu": "मेनू खोलें",
+    "closeMenu": "मेनू बंद करें"
+  },
+  "auth": {
+    "home": "होम",
+    "dashboard": "डैशबोर्ड",
+    "reports": "रिपोर्ट्स",
+    "profile": "प्रोफ़ाइल"
+  },
+  "accountMenu": {
+    "myProfile": "मेरी प्रोफ़ाइल",
+    "dashboard": "डैशबोर्ड",
+    "savedReports": "सहेजी गई रिपोर्ट्स",
+    "settings": "सेटिंग्स",
+    "helpAbout": "सहायता और परिचय",
+    "memberSince": "{{date}} से सदस्य",
+    "menuLabel": "खाता",
+    "triggerLabel": "{{name}} के लिए खाता मेनू"
+  },
+  "actionDock": {
+    "askAi": "AI से पूछें",
+    "horoscope": "राशिफल",
+    "calendar": "कैलेंडर",
+    "lifeCoach": "लाइफ कोच",
+    "kundliMatching": "कुंडली मिलान",
+    "panchang": "पंचांग",
+    "festivalCalendar": "त्योहार कैलेंडर",
+    "notifications": "सूचनाएं",
+    "saveReport": "रिपोर्ट सहेजें",
+    "saving": "सहेजा जा रहा है…",
+    "downloadPdf": "PDF डाउनलोड करें",
+    "preparing": "तैयार किया जा रहा है…",
+    "printPdf": "PDF प्रिंट करें",
+    "opening": "खोला जा रहा है…",
+    "reportActions": "रिपोर्ट क्रियाएं",
+    "openReportActions": "रिपोर्ट क्रियाएं खोलें",
+    "close": "बंद करें",
+    "somethingWentWrong": "कुछ गलत हो गया।"
+  },
+  "commandPalette": {
+    "ariaLabel": "कमांड पैलेट",
+    "searchAriaLabel": "कमांड पैलेट खोज",
+    "commandsAriaLabel": "कमांड",
+    "sections": {
+      "navigate": "नेविगेट करें",
+      "theme": "थीम",
+      "settings": "सेटिंग्स",
+      "recent": "हाल की",
+      "recentReports": "हाल की रिपोर्ट्स",
+      "recentReportsLoading": "हाल की रिपोर्ट्स · लोड हो रही हैं…"
+    },
+    "nav": {
+      "dashboard": "डैशबोर्ड",
+      "generateReport": "रिपोर्ट बनाएं",
+      "savedReports": "सहेजी गई रिपोर्ट्स",
+      "profile": "प्रोफ़ाइल",
+      "settings": "सेटिंग्स",
+      "horoscope": "राशिफल",
+      "calendar": "कैलेंडर",
+      "aiAssistant": "AI सहायक",
+      "aiLifeCoach": "AI लाइफ कोच",
+      "kundliMatching": "कुंडली मिलान",
+      "dailyPanchang": "दैनिक पंचांग और मुहूर्त",
+      "festivalCalendar": "त्योहार कैलेंडर",
+      "todaysFestival": "आज का त्योहार",
+      "upcomingFestivals": "आगामी त्योहार",
+      "notificationCenter": "सूचना केंद्र",
+      "unreadNotifications": "अपठित सूचनाएं",
+      "familyProfiles": "परिवार प्रोफ़ाइल",
+      "relationshipHub": "रिलेशनशिप हब",
+      "help": "सहायता"
+    },
+    "theme": {
+      "light": "सेक्रेड डॉन पर स्विच करें",
+      "dark": "मिडनाइट कॉस्मिक पर स्विच करें",
+      "system": "सिस्टम थीम पर स्विच करें"
+    },
+    "settingsSections": {
+      "account": "सेटिंग्स · खाता",
+      "appearance": "सेटिंग्स · दिखावट",
+      "preferences": "सेटिंग्स · वरीयताएं",
+      "privacy": "सेटिंग्स · गोपनीयता",
+      "about": "सेटिंग्स · परिचय"
+    },
+    "untitledReport": "शीर्षकहीन रिपोर्ट",
+    "noMatches": "कोई मेल खाता कमांड नहीं।",
+    "noMatchesFor": "\"{{query}}\" के लिए कोई मेल खाता कमांड नहीं।",
+    "searchPlaceholder": "पेज, रिपोर्ट्स, योग, दोष, उपाय खोजें…"
+  }
+}

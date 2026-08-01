@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← फलकं प्रति गच्छतु",
+    "title": "सुरक्षितप्रतिवेदनानि",
+    "titleWithCount": "सुरक्षितप्रतिवेदनानि ({{count}})",
+    "generateNewReport": "✦ नूतनं प्रतिवेदनं निर्मातु",
+    "loadFailed": "भवतः सुरक्षितप्रतिवेदनानि लोड्यितुं न शक्तानि।",
+    "tryAgain": "↻ पुनः प्रयतताम्",
+    "deleteToastSuccess": "\"{{title}}\" अपाकृतम्।",
+    "deleteToastFallbackTitle": "प्रतिवेदनम्",
+    "deleteFailed": "तत् प्रतिवेदनम् अपाकर्तुं न शक्तम्।",
+    "downloadToastSuccess": "PDF अवाहितम्।",
+    "downloadFailed": "PDF निर्मातुं न शक्तम्।",
+    "emptyTitle": "अद्यापि कोऽपि सुरक्षितप्रतिवेदनं नास्ति",
+    "emptyMessage": "अत्र भवतः सङ्ग्रहं निर्मातुं पठनं निर्मातु तथा प्रतिवेदनं सुरक्षितं करोतु इत्यत्र स्पृशतु।",
+    "emptyAction": "✦ नूतनं प्रतिवेदनं निर्मातु",
+    "noMatchesTitle": "कोऽपि समानः न प्राप्तः",
+    "noMatchesMessage": "कोऽपि सुरक्षितप्रतिवेदनं \"{{query}}\" इत्यनेन सह न मेलति। भिन्नं शीर्षकं, नाम, लग्नं वा प्रयतताम्।",
+    "clearSearch": "अन्वेषणं शोधयतु",
+    "deleteDialog": {
+      "title": "इदं प्रतिवेदनम् अपाकरणीयम्?",
+      "message": "\"{{title}}\" स्थायीरूपेण अपसारितं भविष्यति। एतत् पुनः स्थापयितुं न शक्यते।",
+      "fallbackTitle": "इदं प्रतिवेदनम्",
+      "confirmLabel": "अपाकरोतु",
+      "cancelLabel": "रद्दं करोतु"
+    }
+  },
+  "detail": {
+    "loadFailed": "तत् प्रतिवेदनं लोड्यितुं न शक्तम्।",
+    "backToSavedReports": "← सुरक्षितप्रतिवेदनानि प्रति गच्छतु",
+    "loading": "भवतः सुरक्षितपठनं लोड्यते…",
+    "openHoroscope": "🔮 राशिफलम्",
+    "openCalendar": "📅 पञ्चाङ्गपत्रम्",
+    "openLifeCoach": "🧭 जीवनमार्गदर्शकः",
+    "askAI": "✨ AI पृच्छतु"
+  },
+  "card": {
+    "savedOn": "{{date}} दिनाङ्के सुरक्षितम्",
+    "view": "पश्यतु",
+    "preview": "पूर्वावलोकनम्",
+    "download": "PDF",
+    "delete": "अपाकरोतु",
+    "deleting": "अपाकृयते…",
+    "lagnaSuffix": "{{lagna}} लग्नम्",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "प्रतिवेदनरचना",
+    "gridView": "जालदृश्यम्",
+    "listView": "सूचीदृश्यम्",
+    "searchPlaceholder": "शीर्षकेन, नाम्ना, लग्नेन वा अन्विष्यतु…",
+    "searchAriaLabel": "सुरक्षितप्रतिवेदनानि अन्विष्यतु",
+    "sortAriaLabel": "सुरक्षितप्रतिवेदनानि क्रमबद्धं करोतु",
+    "resultCountSingle": "{{count}} प्रतिवेदनम्",
+    "resultCountPlural": "{{count}} प्रतिवेदनानि",
+    "resultCountFiltered": "{{total}} मध्ये {{count}}"
+  },
+  "sort": {
+    "newest": "नूतनतमं प्रथमम्",
+    "oldest": "प्राचीनतमं प्रथमम्",
+    "title-asc": "शीर्षकम् (A–Z)",
+    "title-desc": "शीर्षकम् (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} इत्यस्य पूर्वावलोकनम्",
+    "closePreview": "पूर्वावलोकनं पिधत्तु",
+    "savedOn": "{{date}} दिनाङ्के सुरक्षितम्",
+    "noDetails": "अस्य प्रतिवेदनस्य कृते कोऽपि अतिरिक्तविवरणः सुरक्षितः नास्ति।",
+    "description": "इदं भवतः सुरक्षितपठनस्य विवरणस्य शीघ्रपूर्वावलोकनम् अस्ति। प्रत्येकं विभागं पठितुं सम्पूर्णं प्रतिवेदनम् उद्घाटयतु — प्रेम, वृत्तिः, धनम्, आरोग्यम्, दोषाः योगाश्च, उपायाः, भवतः जीवनसारः च।",
+    "viewFullReport": "✦ सम्पूर्णं प्रतिवेदनं पश्यतु",
+    "preparingPdf": "PDF सज्जीक्रियते…",
+    "downloadPdf": "⭳ PDF अवाहयतु"
+  },
+  "summarizeAiAria": "AI-सहायताया अस्य वृत्तान्तस्य सारं कुरु",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy is not part of this chart's backend-derived remedies."
+}

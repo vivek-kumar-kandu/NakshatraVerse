@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "daily": "দৈনিক",
+    "weekly": "সাপ্তাহিক",
+    "monthly": "মাসিক",
+    "career": "কর্মজীবন",
+    "relationship": "সম্পর্ক",
+    "finance": "অর্থ",
+    "health": "স্বাস্থ্য",
+    "growth": "বিকাশ"
+  },
+  "page": {
+    "back": "← পিছনে",
+    "title": "🧭 AI লাইফ কোচ",
+    "dailyCompanion": "{{name}} এর দৈনিক সঙ্গী",
+    "updated": "{{time}} এ আপডেট হয়েছে",
+    "refreshing": "রিফ্রেশ করা হচ্ছে…",
+    "refreshGuidance": "↻ নির্দেশনা রিফ্রেশ করুন",
+    "tryAgain": "আবার চেষ্টা করুন",
+    "loadingAriaLabel": "আপনার AI লাইফ কোচ নির্দেশনা লোড হচ্ছে",
+    "loadFailed": "আপনার AI লাইফ কোচ নির্দেশনা লোড করা যায়নি।",
+    "refreshFailed": "আপনার AI লাইফ কোচ নির্দেশনা রিফ্রেশ করা যায়নি।",
+    "noReadingTitle": "এখনও কোনো রিডিং উপলব্ধ নেই",
+    "noReadingMessage": "আপনার ব্যক্তিগত AI লাইফ কোচ দেখতে প্রথমে একটি প্রতিবেদন তৈরি করুন বা খুলুন।",
+    "backAction": "← পিছনে"
+  },
+  "daily": {
+    "opportunities": "সুযোগ",
+    "challenges": "চ্যালেঞ্জ",
+    "recommendedActions": "সুপারিশকৃত কার্যক্রম",
+    "thingsToAvoid": "এড়িয়ে চলার বিষয়",
+    "spiritualGuidance": "🕉️ আধ্যাত্মিক নির্দেশনা"
+  },
+  "outlook": {
+    "weeklyThemeTitle": "এই সপ্তাহের থিম",
+    "weeklyEnergyLabel": "সাপ্তাহিক শক্তি",
+    "monthlyThemeTitle": "এই মাসের থিম",
+    "monthlyEnergyLabel": "মাসিক শক্তি",
+    "weeklyUnavailableTitle": "সাপ্তাহিক দৃষ্টিভঙ্গি উপলব্ধ নয়",
+    "weeklyUnavailableMessage": "আমরা এই মুহূর্তে এই সপ্তাহের দৃষ্টিভঙ্গি তৈরি করতে পারিনি — অনুগ্রহ করে রিফ্রেশ করুন।",
+    "monthlyUnavailableTitle": "মাসিক দৃষ্টিভঙ্গি উপলব্ধ নয়",
+    "monthlyUnavailableMessage": "আমরা এই মুহূর্তে এই মাসের দৃষ্টিভঙ্গি তৈরি করতে পারিনি — অনুগ্রহ করে রিফ্রেশ করুন।",
+    "weeklyFocus": "সাপ্তাহিক ফোকাস",
+    "personalGrowthGoal": "ব্যক্তিগত বিকাশ লক্ষ্য",
+    "careerFocus": "কর্মজীবন ফোকাস",
+    "relationshipFocus": "সম্পর্ক ফোকাস",
+    "opportunities": "সুযোগ",
+    "challenges": "চ্যালেঞ্জ",
+    "bestDay": "সেরা দিন: {{weekday}} ({{date}})",
+    "cautionDay": "সতর্কতার দিন: {{weekday}} ({{date}})"
+  },
+  "career": {
+    "cardTitle": "কর্মজীবন কোচ",
+    "progress": "কর্মজীবন অগ্রগতি",
+    "skillDevelopmentAdvice": "দক্ষতা উন্নয়ন পরামর্শ",
+    "promotionGuidance": "পদোন্নতি নির্দেশনা",
+    "businessSuggestions": "ব্যবসায়িক পরামর্শ",
+    "bestTimeForDecisions": "গুরুত্বপূর্ণ সিদ্ধান্তের জন্য সেরা সময়"
+  },
+  "relationship": {
+    "cardTitle": "সম্পর্ক কোচ",
+    "guidance": "সম্পর্ক নির্দেশনা",
+    "marriageAdvice": "বিবাহ পরামর্শ",
+    "familyHarmonyTips": "পারিবারিক সম্প্রীতি টিপস",
+    "communicationSuggestions": "যোগাযোগ পরামর্শ",
+    "emotionalWellbeing": "মানসিক সুস্থতা"
+  },
+  "finance": {
+    "cardTitle": "অর্থ কোচ",
+    "outlook": "আর্থিক দৃষ্টিভঙ্গি",
+    "spendingSuggestions": "ব্যয় পরামর্শ",
+    "savingAdvice": "সঞ্চয় পরামর্শ",
+    "investmentAwareness": "বিনিয়োগ সচেতনতা",
+    "businessOpportunities": "ব্যবসায়িক সুযোগ"
+  },
+  "health": {
+    "cardTitle": "স্বাস্থ্য ও সুস্থতা",
+    "energyTrends": "শক্তির প্রবণতা",
+    "stressAwareness": "মানসিক চাপ সচেতনতা",
+    "meditationSuggestions": "ধ্যান পরামর্শ",
+    "yogaRecommendations": "যোগ সুপারিশ",
+    "spiritualPractices": "আধ্যাত্মিক অনুশীলন",
+    "lifestyleSuggestions": "জীবনযাত্রার পরামর্শ"
+  },
+  "growth": {
+    "dailyGoals": "দৈনিক লক্ষ্য",
+    "weeklyGoals": "সাপ্তাহিক লক্ষ্য",
+    "monthlyFocus": "🌕 মাসিক ফোকাস",
+    "habitSuggestions": "অভ্যাস পরামর্শ",
+    "learningRecommendations": "শেখার সুপারিশ"
+  },
+  "scoreCard": {
+    "dailyEnergyLabel": "দৈনিক শক্তি",
+    "todaysFocus": "আজকের ফোকাস"
+  },
+  "confidenceBadge": {
+    "withScore": "আস্থা: {{label}} ({{score}}/100)",
+    "withoutScore": "আস্থা: {{label}}"
+  },
+  "whyNote": {
+    "prefix": "কেন? "
+  },
+  "luckyElements": {
+    "title": "🍀 আজকের ভাগ্যবান উপাদান",
+    "color": "রং",
+    "number": "সংখ্যা",
+    "direction": "দিক",
+    "favorableTime": "অনুকূল সময়"
+  },
+  "affirmation": {
+    "dailyAffirmation": "✦ দৈনিক প্রত্যয়ন",
+    "spiritualPractice": "🕉️ আজকের আধ্যাত্মিক অনুশীলন"
+  }
+}

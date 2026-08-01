@@ -8,6 +8,30 @@
 // base URL. generateAstroReport() itself is completely unchanged.
 // ─────────────────────────────────────────────────────────────────────────
 
+<<<<<<< HEAD
+=======
+// ─────────────────────────────────────────────────────────────────────────
+// Active language (Multilingual Foundation Phase)
+//
+// Single small piece of module state, set by context/LanguageContext.jsx
+// whenever the selected language changes, and read here so every outgoing
+// request — authFetch (every authenticated API module) and
+// generateAstroReport below — automatically carries an `X-User-Language`
+// header without every individual API module needing to know about
+// language at all. This is exactly the "User Setting" tier of
+// backend/middleware/language.js's negotiation priority.
+// ─────────────────────────────────────────────────────────────────────────
+let activeLanguage = null;
+
+export function setActiveLanguage(language) {
+  activeLanguage = language || null;
+}
+
+function withLanguageHeader(headers) {
+  return activeLanguage ? { ...headers, "X-User-Language": activeLanguage } : headers;
+}
+
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8617";
 
 // Phase 5 (Production Hardening): the localhost fallback above is exactly
@@ -63,7 +87,11 @@ function attemptRefresh() {
 }
 
 export async function authFetch(url, options = {}) {
+<<<<<<< HEAD
   const withCreds = { ...options, credentials: "include" };
+=======
+  const withCreds = { ...options, credentials: "include", headers: withLanguageHeader(options.headers) };
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const response = await fetch(url, withCreds);
   if (response.status !== 401) return response;
 
@@ -78,7 +106,11 @@ export async function generateAstroReport(userData, planetaryData, numerology) {
   try {
     response = await fetch(`${API_BASE_URL}/api/generate-report`, {
       method: "POST",
+<<<<<<< HEAD
       headers: { "Content-Type": "application/json" },
+=======
+      headers: withLanguageHeader({ "Content-Type": "application/json" }),
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       body: JSON.stringify({ userData, planetary: planetaryData, numerology }),
     });
   } catch (networkErr) {

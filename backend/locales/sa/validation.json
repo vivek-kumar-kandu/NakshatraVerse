@@ -1,0 +1,9 @@
+{
+  "nameRequired": "नाम आवश्यकम्",
+  "validEmailRequired": "सिद्धं ई-पत्रं आवश्यकम्",
+  "passwordMinLength": "कूटशब्दः न्यूनतमम् ८ अक्षराणां भवेत्",
+  "passwordNeedsNumber": "कूटशब्दे एका सङ्ख्या भवेत्",
+  "passwordRequired": "कूटशब्दः आवश्यकः",
+  "festivalKeyRequired": "`festivalKey` आवश्यकम्।",
+  "profileIdsRequired": "उभौ परिचयौ आवश्यकाौ।"
+}

@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "past": "Past",
+    "present": "Present",
+    "nearFuture": "Near Future",
+    "nextMonth": "Next Month",
+    "next3Months": "Next 3 Months",
+    "next6Months": "Next 6 Months",
+    "nextYear": "Next Year"
+  },
+  "horizons": {
+    "oneYear": "Next 1 Year",
+    "fiveYear": "Next 5 Years",
+    "tenYear": "Next 10 Years"
+  },
+  "filterCategories": {
+    "career": "Career",
+    "finance": "Finance",
+    "love": "Love",
+    "marriage": "Marriage",
+    "health": "Health",
+    "education": "Education",
+    "family": "Family",
+    "spiritual": "Spiritual"
+  },
+  "tab": {
+    "buildingTimeline": "Building your AI Timeline…",
+    "notAvailableTitle": "Timeline not available yet",
+    "notAvailableMessage": "Your Mahadasha/Antardasha timeline will appear here once your chart has been calculated.",
+    "currentDashaHeading": "CURRENT DASHA",
+    "mahadashaBadge": "Mahadasha: {{value}}",
+    "antardashaBadge": "Antardasha: {{value}}",
+    "dominantBadge": "Dominant: {{planet}}",
+    "notAvailableValue": "—",
+    "filterByLifeAreaHeading": "FILTER BY LIFE AREA",
+    "noEventsTitle": "No events for this filter",
+    "noEventsMessage": "No AI Timeline events match the selected life area yet. Try a different filter or select All.",
+    "sectionEventsAriaLabel": "{{label}} timeline events"
+  },
+  "filters": {
+    "ariaLabel": "Filter AI Timeline events by life area",
+    "all": "All"
+  },
+  "eventCard": {
+    "generalCategoryFallback": "General",
+    "upcomingPeriod": "Upcoming period",
+    "dateRangeArrow": "{{start}} → {{end}}",
+    "entryAriaLabel": "AI Timeline entry for {{start}}. Select to explain with AI.",
+    "entryAriaLabelWithEnd": "AI Timeline entry for {{start}} to {{end}}. Select to explain with AI.",
+    "mahadashaBadge": "Mahadasha: {{value}}",
+    "antardashaBadge": "Antardasha: {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI EXPLANATION",
+    "eventLabelFallback": "life-area",
+    "prompt": "Get a Gemini-powered explanation of this {{category}} prediction, grounded entirely in this chart's own backend-computed facts.",
+    "explainAriaLabel": "Explain this {{category}} prediction with AI",
+    "explainButton": "✨ Explain with AI",
+    "generatingLabel": "Generating an AI explanation for this {{category}} prediction",
+    "loadFailed": "The AI Timeline explanation is unavailable right now.",
+    "tryAgain": "↻ Try again"
+  },
+  "common": {
+    "nothingToShow": "Nothing to show yet."
+  },
+  "legacyCard": {
+    "upcomingPeriod": "Upcoming period",
+    "mahadashaBadge": "Mahadasha: {{value}}",
+    "antardashaBadge": "Antardasha: {{value}}"
+  }
+}

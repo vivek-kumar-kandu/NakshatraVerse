@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← ડેશબોર્ડ પર પાછા જાઓ",
+    "title": "સાચવેલા અહેવાલો",
+    "titleWithCount": "સાચવેલા અહેવાલો ({{count}})",
+    "generateNewReport": "✦ નવો અહેવાલ બનાવો",
+    "loadFailed": "તમારા સાચવેલા અહેવાલો લોડ થઈ શક્યા નહીં.",
+    "tryAgain": "↻ ફરી પ્રયત્ન કરો",
+    "deleteToastSuccess": "\"{{title}}\" કાઢી નાખ્યો.",
+    "deleteToastFallbackTitle": "અહેવાલ",
+    "deleteFailed": "તે અહેવાલ કાઢી શકાયો નહીં.",
+    "downloadToastSuccess": "PDF ડાઉનલોડ થયું.",
+    "downloadFailed": "PDF બનાવી શકાયું નહીં.",
+    "emptyTitle": "હજુ સુધી કોઈ સાચવેલો અહેવાલ નથી",
+    "emptyMessage": "અહીં તમારો સંગ્રહ બનાવવા માટે રીડિંગ બનાવો અને અહેવાલ સાચવો પર ટેપ કરો.",
+    "emptyAction": "✦ નવો અહેવાલ બનાવો",
+    "noMatchesTitle": "કોઈ મેળ મળ્યો નથી",
+    "noMatchesMessage": "કોઈ સાચવેલો અહેવાલ \"{{query}}\" સાથે મેળ ખાતો નથી. અલગ શીર્ષક, નામ, અથવા લગ્ન અજમાવો.",
+    "clearSearch": "શોધ સાફ કરો",
+    "deleteDialog": {
+      "title": "આ અહેવાલ કાઢી નાખવો છે?",
+      "message": "\"{{title}}\" કાયમ માટે દૂર કરવામાં આવશે. આ પાછું લઈ શકાશે નહીં.",
+      "fallbackTitle": "આ અહેવાલ",
+      "confirmLabel": "કાઢી નાખો",
+      "cancelLabel": "રદ કરો"
+    }
+  },
+  "detail": {
+    "loadFailed": "તે અહેવાલ લોડ થઈ શક્યો નહીં.",
+    "backToSavedReports": "← સાચવેલા અહેવાલો પર પાછા જાઓ",
+    "loading": "તમારું સાચવેલું રીડિંગ લોડ થઈ રહ્યું છે…",
+    "openHoroscope": "🔮 રાશિફળ",
+    "openCalendar": "📅 કેલેન્ડર",
+    "openLifeCoach": "🧭 લાઇફ કોચ",
+    "askAI": "✨ AI ને પૂછો"
+  },
+  "card": {
+    "savedOn": "{{date}} ના રોજ સાચવ્યું",
+    "view": "જુઓ",
+    "preview": "પૂર્વાવલોકન",
+    "download": "PDF",
+    "delete": "કાઢી નાખો",
+    "deleting": "કાઢી રહ્યા છીએ…",
+    "lagnaSuffix": "{{lagna}} લગ્ન",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "અહેવાલ લેઆઉટ",
+    "gridView": "ગ્રિડ દૃશ્ય",
+    "listView": "યાદી દૃશ્ય",
+    "searchPlaceholder": "શીર્ષક, નામ, અથવા લગ્ન દ્વારા શોધો…",
+    "searchAriaLabel": "સાચવેલા અહેવાલો શોધો",
+    "sortAriaLabel": "સાચવેલા અહેવાલો ક્રમમાં ગોઠવો",
+    "resultCountSingle": "{{count}} અહેવાલ",
+    "resultCountPlural": "{{count}} અહેવાલો",
+    "resultCountFiltered": "{{total}} માંથી {{count}}"
+  },
+  "sort": {
+    "newest": "સૌથી નવું પહેલા",
+    "oldest": "સૌથી જૂનું પહેલા",
+    "title-asc": "શીર્ષક (A–Z)",
+    "title-desc": "શીર્ષક (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} નું પૂર્વાવલોકન",
+    "closePreview": "પૂર્વાવલોકન બંધ કરો",
+    "savedOn": "{{date}} ના રોજ સાચવ્યું",
+    "noDetails": "આ અહેવાલ માટે કોઈ વધારાની વિગતો સાચવેલી નથી.",
+    "description": "આ તમારા સાચવેલા રીડિંગની વિગતોનું ઝડપી પૂર્વાવલોકન છે. દરેક વિભાગ વાંચવા માટે સંપૂર્ણ અહેવાલ ખોલો — પ્રેમ, કારકિર્દી, સંપત્તિ, આરોગ્ય, દોષ અને યોગ, ઉપાયો, અને તમારો જીવન સારાંશ.",
+    "viewFullReport": "✦ સંપૂર્ણ અહેવાલ જુઓ",
+    "preparingPdf": "PDF તૈયાર કરી રહ્યા છીએ…",
+    "downloadPdf": "⭳ PDF ડાઉનલોડ કરો"
+  },
+  "summarizeAiAria": "AI સાથે આ રિપોર્ટનો સારાંશ લો",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy is not part of this chart's backend-derived remedies."
+}

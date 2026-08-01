@@ -1,0 +1,9 @@
+{
+  "nameRequired": "নাম আবশ্যক",
+  "validEmailRequired": "একটি বৈধ ইমেল আবশ্যক",
+  "passwordMinLength": "পাসওয়ার্ডটি কমপক্ষে ৮ অক্ষরের হতে হবে",
+  "passwordNeedsNumber": "পাসওয়ার্ডে অন্তত একটি সংখ্যা থাকতে হবে",
+  "passwordRequired": "পাসওয়ার্ড আবশ্যক",
+  "festivalKeyRequired": "`festivalKey` কোয়েরি প্যারামিটার আবশ্যক।",
+  "profileIdsRequired": "profileIdA এবং profileIdB উভয়ই প্রয়োজন।"
+}

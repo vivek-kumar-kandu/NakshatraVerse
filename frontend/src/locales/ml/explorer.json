@@ -1,0 +1,169 @@
+{
+  "types": {
+    "planet": "ഗ്രഹം",
+    "house": "ഭാവം",
+    "sign": "രാശി",
+    "yoga": "യോഗം",
+    "dosha": "ദോഷം",
+    "nakshatra": "നക്ഷത്രം",
+    "ascendant": "ലഗ്നം",
+    "aspect": "ദൃഷ്ടി"
+  },
+  "typeSingular": {
+    "planet": "ഗ്രഹം",
+    "house": "ഭാവം",
+    "sign": "രാശി",
+    "yoga": "യോഗം",
+    "dosha": "ദോഷം",
+    "nakshatra": "നക്ഷത്രം",
+    "ascendant": "ലഗ്നം",
+    "aspect": "ദൃഷ്ടി"
+  },
+  "header": {
+    "title": "കുണ്ഡലി എക്സ്പ്ലോറർ",
+    "breadcrumb": "{{type}} · {{item}}",
+    "notAvailable": "—",
+    "selectPrompt": "പര്യവേക്ഷണം ചെയ്യാൻ ഒരു ഇനം തിരഞ്ഞെടുക്കുക"
+  },
+  "mainPanel": {
+    "loadingPanel": "വിശദാംശ പാനൽ ലോഡ് ചെയ്യുന്നു…",
+    "emptyTitle": "ഇതുവരെ ഒന്നും തിരഞ്ഞെടുത്തിട്ടില്ല",
+    "emptyMessage": "ഇവിടെ പര്യവേക്ഷണം ചെയ്യാൻ പാനലിൽ നിന്ന് ഗ്രഹം, ഭാവം, രാശി, യോഗം, ദോഷം, നക്ഷത്രം, ലഗ്നം, അല്ലെങ്കിൽ ദൃഷ്ടി തിരഞ്ഞെടുക്കുക.",
+    "regionAriaLabel": "എക്സ്പ്ലോറർ വിശദാംശ പാനൽ"
+  },
+  "sidePanel": {
+    "treeAriaLabel": "എക്സ്പ്ലോറർ തിരഞ്ഞെടുപ്പ് വിഭാഗങ്ങൾ",
+    "categoryAriaLabel": "{{label}} ({{count}})",
+    "housePrefix": "ഭാവം {{num}}",
+    "lordBadge": "നാഥൻ: {{lord}}",
+    "aspectCountSingle": "{{count}} ദൃഷ്ടി",
+    "aspectCountPlural": "{{count}} ദൃഷ്ടികൾ",
+    "netInfluence": "മൊത്തം {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI വിശദീകരണം",
+    "prompt": "{{label}} ന്റെ Gemini-പ്രവർത്തിത വിശദീകരണം നേടുക, ഇത് പൂർണ്ണമായും ഈ ചാർട്ടിന്റെ സ്വന്തം ബാക്കെൻഡ്-കണക്കാക്കിയ വസ്തുതകളെ അടിസ്ഥാനമാക്കിയുള്ളതാണ്.",
+    "explainAriaLabel": "{{label}} AI ഉപയോഗിച്ച് വിശദീകരിക്കുക",
+    "explainButton": "✨ AI ഉപയോഗിച്ച് വിശദീകരിക്കുക",
+    "generatingLabel": "{{label}} നായി AI വിശദീകരണം സൃഷ്ടിക്കുന്നു",
+    "loadFailed": "എക്സ്പ്ലോറർ AI നിലവിൽ ലഭ്യമല്ല.",
+    "tryAgain": "↻ വീണ്ടും ശ്രമിക്കുക"
+  },
+  "common": {
+    "relatedPredictions": "ബന്ധപ്പെട്ട പ്രവചനങ്ങൾ",
+    "relatedRemedies": "ബന്ധപ്പെട്ട പരിഹാരങ്ങൾ",
+    "noLinkedPredictionsTitle": "ബന്ധിപ്പിച്ച പ്രവചനമില്ല",
+    "noLinkedRemediesTitle": "ബന്ധിപ്പിച്ച പരിഹാരമില്ല",
+    "noRemediesTitle": "പരിഹാരങ്ങളൊന്നും ലഭ്യമല്ല"
+  },
+  "planet": {
+    "notAvailableTitle": "ഗ്രഹ ഡാറ്റ ലഭ്യമല്ല",
+    "notAvailableMessage": "ഈ ചാർട്ടിൽ ഈ ഗ്രഹത്തിനുള്ള കണക്കാക്കിയ സ്ഥാന ഡാറ്റ ഇതുവരെ ഇല്ല.",
+    "positionDignityHeading": "സ്ഥാനവും അന്തസ്സും",
+    "houseLabel": "ഭാവം",
+    "signLabel": "രാശി",
+    "retrogradeBadge": "വക്രി",
+    "combustBadge": "അസ്തമയം",
+    "functionallyNature": "പ്രവർത്തനപരമായി {{nature}}",
+    "friendshipSignSuffix": "{{relation}} രാശി",
+    "adjustedStrengthScore": "ക്രമീകരിച്ച ശക്തി സ്കോർ",
+    "foundationShadbala": "അടിസ്ഥാന ഷഡ്ബലം",
+    "notAvailableValue": "—",
+    "strengthUnavailable": "ഈ ചാർട്ടിന് വിശദമായ ശക്തി സ്കോറിംഗ് ലഭ്യമല്ല.",
+    "noLinkedPredictionsMessage": "നിലവിൽ ഒരു വിഭാഗ പ്രവചനവും {{planet}} നെ അതിന്റെ പ്രധാന അല്ലെങ്കിൽ സഹായക ഗ്രഹമായി പരാമർശിക്കുന്നില്ല.",
+    "noLinkedRemediesMessage": "ഈ ചാർട്ടിന്റെ പ്രവചനങ്ങളിലൂടെ നിലവിൽ {{planet}} മായി ബന്ധിപ്പിച്ച പരിഹാരമൊന്നുമില്ല."
+  },
+  "house": {
+    "notAvailableTitle": "ഭാവ ഡാറ്റ ലഭ്യമല്ല",
+    "notAvailableMessage": "ഇവിടെ പര്യവേക്ഷണം ചെയ്യാൻ പാനലിൽ നിന്ന് ഒരു ഭാവം തിരഞ്ഞെടുക്കുക.",
+    "signBadge": "രാശി: {{sign}}",
+    "lordBadge": "നാഥൻ: {{lord}}",
+    "meaning": "അർത്ഥം",
+    "notAvailableValue": "—",
+    "occupantsHeading": "സ്ഥിതി ചെയ്യുന്ന ഗ്രഹങ്ങൾ",
+    "noOccupants": "നിലവിൽ ഈ ഭാവത്തിൽ ഒരു ഗ്രഹവുമില്ല.",
+    "noLinkedPredictionsMessage": "നിലവിൽ ഒരു വിഭാഗ പ്രവചനവും ഭാവം {{house}} നെ സഹായക ഭാവമായി പരാമർശിക്കുന്നില്ല.",
+    "noLinkedRemediesMessage": "ഈ ചാർട്ടിന്റെ പ്രവചനങ്ങളിലൂടെ നിലവിൽ ഭാവം {{house}} മായി ബന്ധിപ്പിച്ച പരിഹാരമൊന്നുമില്ല.",
+    "itemLabel": "ഭാവം {{num}}"
+  },
+  "sign": {
+    "notAvailableTitle": "രാശി ഡാറ്റ ലഭ്യമല്ല",
+    "notAvailableMessage": "ഇവിടെ പര്യവേക്ഷണം ചെയ്യാൻ പാനലിൽ നിന്ന് ഒരു രാശി തിരഞ്ഞെടുക്കുക.",
+    "lordBadge": "നാഥൻ: {{lord}}",
+    "lagnaBadge": "ഈ ചാർട്ടിന്റെ ലഗ്നം",
+    "rulingPlanet": "ഭരിക്കുന്ന ഗ്രഹം",
+    "notAvailableValue": "—",
+    "occupantsHeading": "ഈ രാശിയിലെ നിലവിലെ ഗ്രഹങ്ങൾ",
+    "noOccupants": "ഈ ചാർട്ടിൽ നിലവിൽ ഈ രാശിയിൽ ഒരു ഗ്രഹവുമില്ല.",
+    "noLinkedPredictionsMessage": "നിലവിൽ ഒരു വിഭാഗ പ്രവചനവും ഈ രാശിയിൽ സ്ഥിതി ചെയ്യുന്ന ഒരു ഗ്രഹവുമായി ബന്ധപ്പെട്ടിട്ടില്ല."
+  },
+  "yoga": {
+    "notFoundTitle": "യോഗം കണ്ടെത്തിയില്ല",
+    "notFoundMessage": "ഈ യോഗം ഈ ചാർട്ടിനായി നിലവിൽ തിരിച്ചറിഞ്ഞ സെറ്റിന്റെ ഭാഗമല്ല.",
+    "ruleMatchedBadge": "നിയമം പൊരുത്തപ്പെട്ടു: {{name}}",
+    "contributingPlanetsHeading": "സംഭാവന ചെയ്യുന്ന ഗ്രഹങ്ങൾ",
+    "noContributingPlanets": "നിലവിൽ ഒരു വിഭാഗ പ്രവചനവും ഈ യോഗത്തിന്റെ ബഹുമതി പ്രത്യേക ഗ്രഹങ്ങൾക്ക് നൽകുന്നില്ല.",
+    "confidenceEffectsTitle": "വിശ്വാസവും ഫലങ്ങളും (ബന്ധിപ്പിച്ച പ്രവചനങ്ങളിൽ നിന്ന്)",
+    "noLinkedPredictionsMessage": "നിലവിൽ ഒരു വിഭാഗ പ്രവചനവും ഈ യോഗത്തെ സഹായക ഘടകമായി ഉദ്ധരിക്കുന്നില്ല."
+  },
+  "dosha": {
+    "notFoundTitle": "ദോഷം കണ്ടെത്തിയില്ല",
+    "notFoundMessage": "ഈ ദോഷം ഈ ചാർട്ടിനായി നിലവിൽ തിരിച്ചറിഞ്ഞ സെറ്റിന്റെ ഭാഗമല്ല.",
+    "matchingRuleBadge": "പൊരുത്തപ്പെടുന്ന നിയമം: {{name}}",
+    "severityBadge": "തീവ്രത: {{severity}}",
+    "affectedHousesHeading": "ബാധിക്കപ്പെട്ട ഭാവങ്ങൾ",
+    "houseBadge": "ഭാവം {{num}}",
+    "noAffectedHouses": "നിലവിൽ ഒരു വിഭാഗ പ്രവചനവും ഈ ദോഷത്തെ പ്രത്യേക ഭാവങ്ങളുമായി ബന്ധിപ്പിക്കുന്നില്ല.",
+    "remedies": "പരിഹാരങ്ങൾ",
+    "noRemediesMessage": "നിലവിൽ ഈ ദോഷവുമായി ബന്ധിപ്പിച്ച പരിഹാരമൊന്നുമില്ല.",
+    "linkedPredictions": "ബന്ധിപ്പിച്ച പ്രവചനങ്ങൾ",
+    "noLinkedPredictionsMessage": "നിലവിൽ ഒരു വിഭാഗ പ്രവചനവും ഈ ദോഷത്തെ സഹായക ഘടകമായി ഉദ്ധരിക്കുന്നില്ല."
+  },
+  "nakshatra": {
+    "notAvailableTitle": "നക്ഷത്ര പ്രൊഫൈൽ ലഭ്യമല്ല",
+    "notAvailableMessage": "ഈ ചാർട്ടിൽ കണക്കാക്കിയ നക്ഷത്ര പ്രൊഫൈൽ ഇതുവരെ ഇല്ല.",
+    "itemLabel": "നക്ഷത്രം",
+    "padaBadge": "പാദം {{pada}}",
+    "lordBadge": "നാഥൻ: {{lord}}",
+    "ganaBadge": "{{gana}} ഗണം",
+    "deity": "ദേവത",
+    "symbol": "ചിഹ്നം",
+    "nadi": "നാഡി",
+    "yoni": "യോനി",
+    "notAvailableValue": "—",
+    "personalityHeading": "വ്യക്തിത്വം",
+    "careerTendencies": "കരിയർ പ്രവണതകൾ",
+    "relationshipTendencies": "ബന്ധ പ്രവണതകൾ",
+    "spiritualTendencies": "ആത്മീയ പ്രവണതകൾ"
+  },
+  "ascendant": {
+    "notAvailableTitle": "ലഗ്നം ലഭ്യമല്ല",
+    "notAvailableMessage": "ഈ ചാർട്ടിൽ കണക്കാക്കിയ ലഗ്നം ഇതുവരെ ഇല്ല.",
+    "itemLabel": "ലഗ്നം",
+    "lordBadge": "നാഥൻ: {{lord}}",
+    "risingSign": "ലഗ്നം (ഉദയ രാശി)",
+    "lagnaLord": "ലഗ്ന നാഥൻ",
+    "notAvailableValue": "—",
+    "characteristicsHeading": "സവിശേഷതകൾ (ലഗ്ന നാഥന്റെ ശക്തി അനുസരിച്ച്)",
+    "functionallyNature": "പ്രവർത്തനപരമായി {{nature}}",
+    "predictionsLinkedTitle": "ലഗ്ന നാഥനുമായി ബന്ധിപ്പിച്ച പ്രവചനങ്ങൾ",
+    "lagnaLordFallback": "ലഗ്ന നാഥൻ",
+    "noLinkedPredictionsMessage": "നിലവിൽ ഒരു വിഭാഗ പ്രവചനവും {{lord}} നെ അതിന്റെ പ്രധാന അല്ലെങ്കിൽ സഹായക ഗ്രഹമായി പരാമർശിക്കുന്നില്ല."
+  },
+  "aspect": {
+    "notAvailableTitle": "ദൃഷ്ടി ഡാറ്റ ലഭ്യമല്ല",
+    "notAvailableMessage": "ഇവിടെ പര്യവേക്ഷണം ചെയ്യാൻ പാനലിൽ നിന്ന് ഒരു ദൃഷ്ടി തിരഞ്ഞെടുക്കുക.",
+    "sourcesHeading": "ദൃഷ്ടി ഉറവിടം → ലക്ഷ്യം",
+    "beneficAspects": "ശുഭ ദൃഷ്ടികൾ",
+    "maleficAspects": "അശുഭ ദൃഷ്ടികൾ",
+    "netInfluenceStrength": "മൊത്തം സ്വാധീനം (ശക്തി)",
+    "housesAspected": "ദൃഷ്ടി ലഭിച്ച ഭാവങ്ങൾ",
+    "houseLabel": "ഭാവം {{num}}",
+    "itemLabel": "{{target}} ലുള്ള ദൃഷ്ടികൾ",
+    "interpretPureBenefic": "പൂർണ്ണമായും ശുഭ ദൃഷ്ടികൾ — ഒരു സഹായക സ്വാധീനം.",
+    "interpretPureMalefic": "പൂർണ്ണമായും അശുഭ ദൃഷ്ടികൾ — ഒരു വെല്ലുവിളി നിറഞ്ഞ സ്വാധീനം.",
+    "interpretMixedNetBenefic": "മിശ്രിത ദൃഷ്ടികൾ, മൊത്തത്തിൽ ശുഭ സ്വാധീനം.",
+    "interpretMixedNetMalefic": "മിശ്രിത ദൃഷ്ടികൾ, മൊത്തത്തിൽ അശുഭ സ്വാധീനം.",
+    "interpretMixedNeutral": "മിശ്രിത ദൃഷ്ടികൾ, അതിന്റെ മൊത്തം സ്വാധീനം സന്തുലിതവും നിഷ്പക്ഷവുമാണ്."
+  }
+}

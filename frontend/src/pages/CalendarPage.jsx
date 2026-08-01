@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { useMemo, useState } from "react";
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
@@ -20,14 +24,24 @@ import { readPreferences } from "../utils/settingsStorage.js";
 // the same existing `buildCalendarEvents`/`CalendarTimeline`, no new
 // calendar logic) for a more compact view. Mirrors HoroscopePage's own
 // PERIODS switcher pattern exactly (same GlassCard + tab-btn styling).
+<<<<<<< HEAD
 const CALENDAR_VIEWS = [
   { id: "full", label: "All Sections", icon: "📋" },
   { id: "timeline", label: "Timeline", icon: "🕓" },
+=======
+const getCalendarViews = (t) => [
+  { id: "full", label: t("dashboard.allSections", "All Sections"), icon: "📋" },
+  { id: "timeline", label: t("dashboard.timeline", "Timeline"), icon: "🕓" },
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 ];
 
 function initialCalendarView() {
   const value = readPreferences().calendarView;
+<<<<<<< HEAD
   return CALENDAR_VIEWS.some((v) => v.id === value) ? value : "full";
+=======
+  return ["full", "timeline"].includes(value) ? value : "full";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -42,7 +56,13 @@ function initialCalendarView() {
 // groups, and labels data the backend already produced.
 // ─────────────────────────────────────────────────────────────────────────
 function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpenPanchang, onOpenFestivals, onOpenFestivalIntelligence }) {
+<<<<<<< HEAD
   const [calendarView, setCalendarView] = useState(initialCalendarView);
+=======
+  const { t } = useTranslation(["dashboard", "common"]);
+  const [calendarView, setCalendarView] = useState(initialCalendarView);
+  const calendarViews = getCalendarViews(t);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const dasha = report?.dasha;
   const transits = report?.transits;
 
@@ -61,7 +81,11 @@ function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpen
         <div style={{ position: "relative", zIndex: 1, maxWidth: 720, margin: "0 auto", padding: "84px 16px 60px" }}>
           <EmptyState
             icon="📅"
+<<<<<<< HEAD
             title="No reading available yet"
+=======
+            title={t("dashboard.noReadingYet", "No reading available yet")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             message="Generate or open a report first to see your Astrology Calendar."
             actionLabel="← Back"
             onAction={onBack}
@@ -88,7 +112,11 @@ function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpen
             ← Back
           </button>
           <div>
+<<<<<<< HEAD
             <h1 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 21, color: "var(--nv-text-primary, #f1e4ff)" }}>📅 Astrology Calendar</h1>
+=======
+            <h1 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 21, color: "var(--nv-text-primary, #f1e4ff)" }}>{t("dashboard.astrologyCalendar", "📅 Astrology Calendar")}</h1>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             {userData?.name && (
               <p style={{ margin: "2px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>{userData.name}'s Dasha & Transit calendar</p>
             )}
@@ -97,7 +125,11 @@ function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpen
 
         {/* View switcher — V3.0 Final Enhancement: Default Calendar View */}
         <GlassCard style={{ padding: 6, display: "flex", gap: 4 }}>
+<<<<<<< HEAD
           {CALENDAR_VIEWS.map((v) => {
+=======
+          {calendarViews.map((v) => {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             const active = v.id === calendarView;
             return (
               <button
@@ -135,7 +167,11 @@ function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpen
         {onOpenFestivalIntelligence && (
           <GlassCard style={{ padding: "14px 18px", marginBottom: 24, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 10 }}>
             <span style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
+<<<<<<< HEAD
               🔮 See spiritual meaning, personalized guidance, and preparation for your next festival.
+=======
+              🔮 {t("dashboard.festivalIntelligenceBanner", "See spiritual meaning, personalized guidance, and preparation for your next festival.")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </span>
             <button
               onClick={() => onOpenFestivalIntelligence({ chart, report })}
@@ -146,7 +182,11 @@ function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpen
                 color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif", flexShrink: 0,
               }}
             >
+<<<<<<< HEAD
               Festival Intelligence →
+=======
+              {t("dashboard.festivalIntelligence", "Festival Intelligence")} →
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </GlassCard>
         )}
@@ -156,12 +196,20 @@ function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpen
         {calendarView === "full" && (
         <section>
           <h2 style={{ margin: "0 0 12px", fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))", fontFamily: "Inter,sans-serif", textTransform: "uppercase", letterSpacing: 1 }}>
+<<<<<<< HEAD
             Current Mahadasha & Antardasha
+=======
+            {t("dashboard.currentDashaHeader", "Current Mahadasha & Antardasha")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </h2>
           {dasha?.available ? (
             <DashaCard dasha={dasha} onExplain={explainDasha} />
           ) : (
+<<<<<<< HEAD
             <EmptyState icon="🪐" title="Dasha unavailable" message="Not enough data to compute a Dasha timeline for this chart." compact />
+=======
+            <EmptyState icon="🪐" title={t("dashboard.dashaUnavailable", "Dasha unavailable")} message="Not enough data to compute a Dasha timeline for this chart." compact />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           )}
         </section>
         )}
@@ -170,7 +218,11 @@ function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpen
         {calendarView === "full" && (
         <section>
           <h2 style={{ margin: "0 0 12px", fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))", fontFamily: "Inter,sans-serif", textTransform: "uppercase", letterSpacing: 1 }}>
+<<<<<<< HEAD
             Upcoming Dasha Changes
+=======
+            {t("dashboard.upcomingDashaChanges", "Upcoming Dasha Changes")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </h2>
           {upcomingChanges.length ? (
             <div style={{ display: "grid", gap: 10 }}>
@@ -185,7 +237,11 @@ function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpen
               ))}
             </div>
           ) : (
+<<<<<<< HEAD
             <EmptyState icon="🕓" title="No upcoming changes" message="No further Dasha changes were found in the current timeline window." compact />
+=======
+            <EmptyState icon="🕓" title={t("dashboard.noUpcomingChanges", "No upcoming changes")} message="No further Dasha changes were found in the current timeline window." compact />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           )}
         </section>
         )}
@@ -194,7 +250,11 @@ function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpen
         {calendarView === "full" && (
         <section>
           <h2 style={{ margin: "0 0 12px", fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))", fontFamily: "Inter,sans-serif", textTransform: "uppercase", letterSpacing: 1 }}>
+<<<<<<< HEAD
             Important Transit Events
+=======
+            {t("dashboard.importantTransitEvents", "Important Transit Events")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </h2>
           {transits?.length ? (
             <div style={{ display: "grid", gap: 14 }}>
@@ -203,7 +263,11 @@ function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpen
               ))}
             </div>
           ) : (
+<<<<<<< HEAD
             <EmptyState icon="🔭" title="No transit data" message="Transit information isn't available for this chart yet." compact />
+=======
+            <EmptyState icon="🔭" title={t("dashboard.noTransitData", "No transit data")} message="Transit information isn't available for this chart yet." compact />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           )}
         </section>
         )}
@@ -212,11 +276,19 @@ function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpen
         {calendarView === "full" && (
         <section>
           <h2 style={{ margin: "0 0 12px", fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))", fontFamily: "Inter,sans-serif", textTransform: "uppercase", letterSpacing: 1 }}>
+<<<<<<< HEAD
             Auspicious & Caution Days
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 16 }}>
             <div>
               <p style={{ margin: "0 0 8px", fontSize: 12.5, color: "#7effb2", fontWeight: 600 }}>✓ Auspicious</p>
+=======
+            {t("dashboard.auspiciousCautionDays", "Auspicious & Caution Days")}
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 16 }}>
+            <div>
+              <p style={{ margin: "0 0 8px", fontSize: 12.5, color: "#7effb2", fontWeight: 600 }}>{t("dashboard.auspicious", "✓ Auspicious")}</p>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <div style={{ display: "grid", gap: 8 }}>
                 {auspicious.length ? auspicious.map((t) => (
                   <CalendarEventCard key={t.planet} title={`${t.planet} in ${t.transitSign}`} date={t.asOf} detail={t.effect} tone="auspicious" />
@@ -224,7 +296,11 @@ function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpen
               </div>
             </div>
             <div>
+<<<<<<< HEAD
               <p style={{ margin: "0 0 8px", fontSize: 12.5, color: "#ff8f7e", fontWeight: 600 }}>⚠ Caution</p>
+=======
+              <p style={{ margin: "0 0 8px", fontSize: 12.5, color: "#ff8f7e", fontWeight: 600 }}>{t("dashboard.caution", "⚠ Caution")}</p>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <div style={{ display: "grid", gap: 8 }}>
                 {caution.length ? caution.map((t) => (
                   <CalendarEventCard key={t.planet} title={`${t.planet} in ${t.transitSign}`} date={t.asOf} detail={t.flags.map((f) => f.name).join(", ")} tone="caution" />
@@ -238,7 +314,11 @@ function CalendarPage({ userData, chart, report, onBack, onOpenAssistant, onOpen
         {/* Major Astrology Events — merged timeline */}
         <section>
           <h2 style={{ margin: "0 0 12px", fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))", fontFamily: "Inter,sans-serif", textTransform: "uppercase", letterSpacing: 1 }}>
+<<<<<<< HEAD
             Major Astrology Events
+=======
+            {t("dashboard.majorAstrologyEvents", "Major Astrology Events")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </h2>
           <CalendarTimeline events={events} />
         </section>

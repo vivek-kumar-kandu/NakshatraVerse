@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "daily": "দৈনিক",
+    "weekly": "সাপ্তাহিক",
+    "monthly": "মাহেকীয়া",
+    "career": "কেৰিয়াৰ",
+    "relationship": "সম্পৰ্কসমূহ",
+    "finance": "বিত্ত",
+    "health": "স্বাস্থ্য",
+    "growth": "বিকাশ"
+  },
+  "page": {
+    "back": "← উভতি যাওক",
+    "title": "🧭 AI লাইফ কোচ",
+    "dailyCompanion": "{{name}} ৰ দৈনিক সঙ্গী",
+    "updated": "{{time}} ত আপডেট কৰা হ’ল",
+    "refreshing": "সতেজ কৰা হৈছে…",
+    "refreshGuidance": "↻ পথনিৰ্দেশনা সতেজ কৰক",
+    "tryAgain": "পুনৰ চেষ্টা কৰক",
+    "loadingAriaLabel": "আপোনাৰ AI লাইফ কোচ পথনিৰ্দেশনা লোড হৈ আছে",
+    "loadFailed": "আপোনাৰ AI লাইফ কোচ পথনিৰ্দেশনা লোড হ’ব পৰা নাই।",
+    "refreshFailed": "আপোনাৰ AI লাইফ কোচ পথনিৰ্দেশনা সতেজ কৰিব পৰা নগ’ল।",
+    "noReadingTitle": "এতিয়ালৈকে কোনো ৰিডিং উপলব্ধ নাই",
+    "noReadingMessage": "আপোনাৰ ব্যক্তিগত AI লাইফ কোচ চাবলৈ প্ৰথমে এটা প্ৰতিবেদন সৃষ্টি কৰক বা খোলক।",
+    "backAction": "← উভতি যাওক"
+  },
+  "daily": {
+    "opportunities": "সুযোগসমূহ",
+    "challenges": "প্ৰত্যাহ্বানসমূহ",
+    "recommendedActions": "পৰামৰ্শিত কাৰ্যসমূহ",
+    "thingsToAvoid": "এৰাই চলিবলগীয়া বিষয়সমূহ",
+    "spiritualGuidance": "🕉️ আধ্যাত্মিক পথনিৰ্দেশনা"
+  },
+  "outlook": {
+    "weeklyThemeTitle": "এই সপ্তাহৰ থিম",
+    "weeklyEnergyLabel": "সাপ্তাহিক শক্তি",
+    "monthlyThemeTitle": "এই মাহৰ থিম",
+    "monthlyEnergyLabel": "মাহেকীয়া শক্তি",
+    "weeklyUnavailableTitle": "সাপ্তাহিক দৃষ্টিভংগী উপলব্ধ নহয়",
+    "weeklyUnavailableMessage": "আমি বৰ্তমান এই সপ্তাহৰ দৃষ্টিভংগী সৃষ্টি কৰিব পৰা নাই — অনুগ্ৰহ কৰি সতেজ কৰক।",
+    "monthlyUnavailableTitle": "মাহেকীয়া দৃষ্টিভংগী উপলব্ধ নহয়",
+    "monthlyUnavailableMessage": "আমি বৰ্তমান এই মাহৰ দৃষ্টিভংগী সৃষ্টি কৰিব পৰা নাই — অনুগ্ৰহ কৰি সতেজ কৰক।",
+    "weeklyFocus": "সাপ্তাহিক গুৰুত্ব",
+    "personalGrowthGoal": "ব্যক্তিগত বিকাশ লক্ষ্য",
+    "careerFocus": "কেৰিয়াৰ গুৰুত্ব",
+    "relationshipFocus": "সম্পৰ্ক গুৰুত্ব",
+    "opportunities": "সুযোগসমূহ",
+    "challenges": "প্ৰত্যাহ্বানসমূহ",
+    "bestDay": "আটাইতকৈ ভাল দিন: {{weekday}} ({{date}})",
+    "cautionDay": "সাৱধানতাৰ দিন: {{weekday}} ({{date}})"
+  },
+  "career": {
+    "cardTitle": "কেৰিয়াৰ কোচ",
+    "progress": "কেৰিয়াৰ প্ৰগতি",
+    "skillDevelopmentAdvice": "দক্ষতা বিকাশ পৰামৰ্শ",
+    "promotionGuidance": "পদোন্নতি পথনিৰ্দেশনা",
+    "businessSuggestions": "ব্যৱসায়িক পৰামৰ্শ",
+    "bestTimeForDecisions": "গুৰুত্বপূৰ্ণ সিদ্ধান্তৰ বাবে আটাইতকৈ ভাল সময়"
+  },
+  "relationship": {
+    "cardTitle": "সম্পৰ্ক কোচ",
+    "guidance": "সম্পৰ্ক পথনিৰ্দেশনা",
+    "marriageAdvice": "বিবাহ পৰামৰ্শ",
+    "familyHarmonyTips": "পাৰিয়াল সমন্বয় টিপচমূহ",
+    "communicationSuggestions": "যোগাযোগ পৰামৰ্শ",
+    "emotionalWellbeing": "আবেগিক সুস্থতা"
+  },
+  "finance": {
+    "cardTitle": "বিত্ত কোচ",
+    "outlook": "আৰ্থিক দৃষ্টিভংগী",
+    "spendingSuggestions": "খৰচ পৰামৰ্শ",
+    "savingAdvice": "সঞ্চয় পৰামৰ্শ",
+    "investmentAwareness": "বিনিয়োগ সজাগতা",
+    "businessOpportunities": "ব্যৱসায়িক সুযোগসমূহ"
+  },
+  "health": {
+    "cardTitle": "স্বাস্থ্য আৰু সুস্থতা",
+    "energyTrends": "শক্তি প্ৰৱণতাসমূহ",
+    "stressAwareness": "চাপ সজাগতা",
+    "meditationSuggestions": "ধ্যান পৰামৰ্শ",
+    "yogaRecommendations": "যোগ পৰামৰ্শ",
+    "spiritualPractices": "আধ্যাত্মিক অভ্যাসসমূহ",
+    "lifestyleSuggestions": "জীৱনশৈলী পৰামৰ্শ"
+  },
+  "growth": {
+    "dailyGoals": "দৈনিক লক্ষ্যসমূহ",
+    "weeklyGoals": "সাপ্তাহিক লক্ষ্যসমূহ",
+    "monthlyFocus": "🌕 মাহেকীয়া গুৰুত্ব",
+    "habitSuggestions": "অভ্যাস পৰামৰ্শ",
+    "learningRecommendations": "শিক্ষণ পৰামৰ্শ"
+  },
+  "scoreCard": {
+    "dailyEnergyLabel": "দৈনিক শক্তি",
+    "todaysFocus": "আজিৰ গুৰুত্ব"
+  },
+  "confidenceBadge": {
+    "withScore": "বিশ্বাস: {{label}} ({{score}}/100)",
+    "withoutScore": "বিশ্বাস: {{label}}"
+  },
+  "whyNote": {
+    "prefix": "কিয়? "
+  },
+  "luckyElements": {
+    "title": "🍀 আজিৰ ভাগ্যবান উপাদানসমূহ",
+    "color": "ৰং",
+    "number": "সংখ্যা",
+    "direction": "দিশ",
+    "favorableTime": "অনুকূল সময়"
+  },
+  "affirmation": {
+    "dailyAffirmation": "✦ দৈনিক নিশ্চয়তা",
+    "spiritualPractice": "🕉️ আজিৰ আধ্যাত্মিক অভ্যাস"
+  }
+}

@@ -1,0 +1,933 @@
+[
+  {
+    "id": "9ebf60fe-413b-4f22-a55b-7dcef6aaad68",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Today's Panchang is Ready",
+    "message": "Friday, 2026-07-17: Shukla Tritiya (Shukla Paksha), Anuradha Nakshatra. Auspiciousness: Highly Auspicious.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "panchang:2026-07-17",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-17",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-17T14:26:18.463Z",
+    "updatedAt": "2026-07-17T14:26:18.463Z"
+  },
+  {
+    "id": "810e5ed7-65f2-4ae1-814a-2eea8e20fc08",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Brahma Muhurat Today",
+    "message": "Brahma Muhurat falls between 03:35 AM and 04:23 AM today — classically favored for meditation and spiritual practice.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "brahma-muhurat:2026-07-17",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-17",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-17T14:26:18.470Z",
+    "updatedAt": "2026-07-17T14:26:18.470Z"
+  },
+  {
+    "id": "befda6fd-007e-4f86-87db-f9bda5904f38",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Abhijit Muhurat Today",
+    "message": "Abhijit Muhurat — today's classical auspicious window — falls between 11:33 AM and 12:27 PM.",
+    "category": "muhurat",
+    "priority": "medium",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "abhijit-muhurat:2026-07-17",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-17",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-17T14:26:18.474Z",
+    "updatedAt": "2026-07-17T14:26:18.474Z"
+  },
+  {
+    "id": "b17b142b-d0c4-45f3-b8c4-1fad91a5b083",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Rahu Kaal Today",
+    "message": "Rahu Kaal falls between 10:18 AM and 12:00 PM today — classically avoided for starting new activities.",
+    "category": "panchang",
+    "priority": "medium",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "rahu-kaal:2026-07-17",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-17",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-17T14:26:18.536Z",
+    "updatedAt": "2026-07-17T14:26:18.536Z"
+  },
+  {
+    "id": "497e4c02-5479-4d2c-99e0-8c375651f810",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Yamaganda Today",
+    "message": "Yamaganda falls between 03:24 PM and 05:07 PM today.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "yamaganda:2026-07-17",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-17",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-17T14:26:18.544Z",
+    "updatedAt": "2026-07-17T14:26:18.544Z"
+  },
+  {
+    "id": "c21d2d73-e272-490e-a623-4a97c773b8f6",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Gulika Kaal Today",
+    "message": "Gulika Kaal falls between 06:53 AM and 08:36 AM today.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "gulika-kaal:2026-07-17",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-17",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-17T14:26:18.551Z",
+    "updatedAt": "2026-07-17T14:26:18.551Z"
+  },
+  {
+    "id": "9271f1ac-9687-4b5b-9222-d88fe394785b",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Festival Tomorrow",
+    "message": "Tomorrow is Chaturthi — a Vrat day (2026-07-18). The fourth Tithi of both fortnights, observed roughly twice every lunar month and traditionally dedicated to Lord Ganesha, most notably as Sankashti Chaturthi (Krishna Paksha) and Vinayaka Chaturthi (Shukla Paksha).",
+    "category": "festival",
+    "priority": "medium",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "festival:chaturthi:2026-07-18:tomorrow",
+      "destination": "panchang",
+      "festivalKey": "chaturthi"
+    },
+    "createdAt": "2026-07-17T14:26:18.558Z",
+    "updatedAt": "2026-07-17T14:26:18.558Z"
+  },
+  {
+    "id": "fe050abe-a490-4211-8e80-cebb7f7fc7b9",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Fasting Reminder",
+    "message": "Tomorrow (2026-07-18) is Chaturthi — a Full or partial day fast fast. Plan your meals accordingly.",
+    "category": "festival",
+    "priority": "medium",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "festival-intel:fasting:chaturthi:2026-07-18",
+      "destination": "panchang",
+      "festivalKey": "chaturthi"
+    },
+    "createdAt": "2026-07-17T14:26:18.565Z",
+    "updatedAt": "2026-07-17T14:26:18.565Z"
+  },
+  {
+    "id": "1847b361-417c-4a3d-ba7f-0044a20f7d62",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Marriage Muhurat Coming Up",
+    "message": "2026-07-17 (Friday) is a favorable day for Marriage — best window 11:33 AM–12:27 PM (High confidence).",
+    "category": "muhurat",
+    "priority": "high",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "muhurat:marriage:2026-07-17",
+      "destination": "panchang",
+      "activity": "marriage"
+    },
+    "createdAt": "2026-07-17T14:26:18.575Z",
+    "updatedAt": "2026-07-17T14:26:18.575Z"
+  },
+  {
+    "id": "87b493af-79c3-4b82-9023-e4935656cdf0",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "House Warming (Griha Pravesh) Muhurat Coming Up",
+    "message": "2026-07-17 (Friday) is a favorable day for House Warming (Griha Pravesh) — best window 11:33 AM–12:27 PM (High confidence).",
+    "category": "muhurat",
+    "priority": "high",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "muhurat:housewarming:2026-07-17",
+      "destination": "panchang",
+      "activity": "housewarming"
+    },
+    "createdAt": "2026-07-17T14:26:18.583Z",
+    "updatedAt": "2026-07-17T14:26:18.583Z"
+  },
+  {
+    "id": "f3f6fc14-5692-4372-bad0-c002510af4cc",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Business Opening Muhurat Coming Up",
+    "message": "2026-07-17 (Friday) is a favorable day for Business Opening — best window 11:33 AM–12:27 PM (High confidence).",
+    "category": "muhurat",
+    "priority": "high",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "muhurat:businessOpening:2026-07-17",
+      "destination": "panchang",
+      "activity": "businessOpening"
+    },
+    "createdAt": "2026-07-17T14:26:18.592Z",
+    "updatedAt": "2026-07-17T14:26:18.592Z"
+  },
+  {
+    "id": "fb82f379-de01-4e61-ae07-d086b401d310",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Education (Vidyarambha) Muhurat Coming Up",
+    "message": "2026-07-17 (Friday) is a favorable day for Education (Vidyarambha) — best window 11:33 AM–12:27 PM (High confidence).",
+    "category": "muhurat",
+    "priority": "high",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "muhurat:education:2026-07-17",
+      "destination": "panchang",
+      "activity": "education"
+    },
+    "createdAt": "2026-07-17T14:26:18.600Z",
+    "updatedAt": "2026-07-17T14:26:18.600Z"
+  },
+  {
+    "id": "9189380e-d3a4-4a0e-a828-7083873e927f",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Naming Ceremony (Namakarana) Muhurat Coming Up",
+    "message": "2026-07-17 (Friday) is a favorable day for Naming Ceremony (Namakarana) — best window 11:33 AM–12:27 PM (High confidence).",
+    "category": "muhurat",
+    "priority": "high",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "muhurat:namingCeremony:2026-07-17",
+      "destination": "panchang",
+      "activity": "namingCeremony"
+    },
+    "createdAt": "2026-07-17T14:26:18.608Z",
+    "updatedAt": "2026-07-17T14:26:18.608Z"
+  },
+  {
+    "id": "e9618cd8-f245-45e0-bc01-e4692184ae68",
+    "isRead": false,
+    "userId": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "title": "Today's Panchang is Ready",
+    "message": "Friday, 2026-07-17: Shukla Tritiya (Shukla Paksha), Anuradha Nakshatra. Auspiciousness: Highly Auspicious.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "panchang:2026-07-17",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-17",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-17T14:27:58.746Z",
+    "updatedAt": "2026-07-17T14:27:58.746Z"
+  },
+  {
+    "id": "c8b342ad-35e8-4746-8558-2028dd387f5c",
+    "isRead": false,
+    "userId": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "title": "Brahma Muhurat Today",
+    "message": "Brahma Muhurat falls between 03:35 AM and 04:23 AM today — classically favored for meditation and spiritual practice.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "brahma-muhurat:2026-07-17",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-17",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-17T14:27:58.764Z",
+    "updatedAt": "2026-07-17T14:27:58.764Z"
+  },
+  {
+    "id": "e1758c69-772b-4882-9579-62fb7bbb3080",
+    "isRead": false,
+    "userId": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "title": "Abhijit Muhurat Today",
+    "message": "Abhijit Muhurat — today's classical auspicious window — falls between 11:33 AM and 12:27 PM.",
+    "category": "muhurat",
+    "priority": "medium",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "abhijit-muhurat:2026-07-17",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-17",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-17T14:27:58.772Z",
+    "updatedAt": "2026-07-17T14:27:58.772Z"
+  },
+  {
+    "id": "db25b855-521b-4e30-99fe-dae4d55756dc",
+    "isRead": false,
+    "userId": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "title": "Rahu Kaal Today",
+    "message": "Rahu Kaal falls between 10:18 AM and 12:00 PM today — classically avoided for starting new activities.",
+    "category": "panchang",
+    "priority": "medium",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "rahu-kaal:2026-07-17",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-17",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-17T14:27:58.782Z",
+    "updatedAt": "2026-07-17T14:27:58.782Z"
+  },
+  {
+    "id": "679cbf67-dca3-4f88-b6b4-3952c9739648",
+    "isRead": false,
+    "userId": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "title": "Yamaganda Today",
+    "message": "Yamaganda falls between 03:24 PM and 05:07 PM today.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "yamaganda:2026-07-17",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-17",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-17T14:27:58.790Z",
+    "updatedAt": "2026-07-17T14:27:58.790Z"
+  },
+  {
+    "id": "4f21d4a7-8d52-45e1-8b37-84e99b2b2ef2",
+    "isRead": false,
+    "userId": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "title": "Gulika Kaal Today",
+    "message": "Gulika Kaal falls between 06:53 AM and 08:36 AM today.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "gulika-kaal:2026-07-17",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-17",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-17T14:27:58.798Z",
+    "updatedAt": "2026-07-17T14:27:58.798Z"
+  },
+  {
+    "id": "310285c1-73bd-4435-aeba-130dbc018eae",
+    "isRead": false,
+    "userId": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "title": "Festival Tomorrow",
+    "message": "Tomorrow is Chaturthi — a Vrat day (2026-07-18). The fourth Tithi of both fortnights, observed roughly twice every lunar month and traditionally dedicated to Lord Ganesha, most notably as Sankashti Chaturthi (Krishna Paksha) and Vinayaka Chaturthi (Shukla Paksha).",
+    "category": "festival",
+    "priority": "medium",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "festival:chaturthi:2026-07-18:tomorrow",
+      "destination": "panchang",
+      "festivalKey": "chaturthi"
+    },
+    "createdAt": "2026-07-17T14:27:58.806Z",
+    "updatedAt": "2026-07-17T14:27:58.806Z"
+  },
+  {
+    "id": "d3d91f54-c42c-4ccb-82ef-b81f36ec4154",
+    "isRead": false,
+    "userId": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "title": "Fasting Reminder",
+    "message": "Tomorrow (2026-07-18) is Chaturthi — a Full or partial day fast fast. Plan your meals accordingly.",
+    "category": "festival",
+    "priority": "medium",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "festival-intel:fasting:chaturthi:2026-07-18",
+      "destination": "panchang",
+      "festivalKey": "chaturthi"
+    },
+    "createdAt": "2026-07-17T14:27:58.815Z",
+    "updatedAt": "2026-07-17T14:27:58.815Z"
+  },
+  {
+    "id": "a9c96861-5f21-4dc7-a93a-02614024c9ec",
+    "isRead": false,
+    "userId": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "title": "Marriage Muhurat Coming Up",
+    "message": "2026-07-17 (Friday) is a favorable day for Marriage — best window 11:33 AM–12:27 PM (High confidence).",
+    "category": "muhurat",
+    "priority": "high",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "muhurat:marriage:2026-07-17",
+      "destination": "panchang",
+      "activity": "marriage"
+    },
+    "createdAt": "2026-07-17T14:27:58.822Z",
+    "updatedAt": "2026-07-17T14:27:58.822Z"
+  },
+  {
+    "id": "efe95f28-982b-428c-a586-1185ca141fe9",
+    "isRead": false,
+    "userId": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "title": "House Warming (Griha Pravesh) Muhurat Coming Up",
+    "message": "2026-07-17 (Friday) is a favorable day for House Warming (Griha Pravesh) — best window 11:33 AM–12:27 PM (High confidence).",
+    "category": "muhurat",
+    "priority": "high",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "muhurat:housewarming:2026-07-17",
+      "destination": "panchang",
+      "activity": "housewarming"
+    },
+    "createdAt": "2026-07-17T14:27:58.829Z",
+    "updatedAt": "2026-07-17T14:27:58.829Z"
+  },
+  {
+    "id": "38667c28-21ef-467a-9862-bd73fa909190",
+    "isRead": false,
+    "userId": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "title": "Business Opening Muhurat Coming Up",
+    "message": "2026-07-17 (Friday) is a favorable day for Business Opening — best window 11:33 AM–12:27 PM (High confidence).",
+    "category": "muhurat",
+    "priority": "high",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "muhurat:businessOpening:2026-07-17",
+      "destination": "panchang",
+      "activity": "businessOpening"
+    },
+    "createdAt": "2026-07-17T14:27:58.842Z",
+    "updatedAt": "2026-07-17T14:27:58.842Z"
+  },
+  {
+    "id": "ce369210-2845-4466-a904-5f4c3834f4fd",
+    "isRead": false,
+    "userId": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "title": "Education (Vidyarambha) Muhurat Coming Up",
+    "message": "2026-07-17 (Friday) is a favorable day for Education (Vidyarambha) — best window 11:33 AM–12:27 PM (High confidence).",
+    "category": "muhurat",
+    "priority": "high",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "muhurat:education:2026-07-17",
+      "destination": "panchang",
+      "activity": "education"
+    },
+    "createdAt": "2026-07-17T14:27:58.852Z",
+    "updatedAt": "2026-07-17T14:27:58.852Z"
+  },
+  {
+    "id": "1ae4104f-e2ea-486d-8834-9f34a02842f7",
+    "isRead": false,
+    "userId": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "title": "Naming Ceremony (Namakarana) Muhurat Coming Up",
+    "message": "2026-07-17 (Friday) is a favorable day for Naming Ceremony (Namakarana) — best window 11:33 AM–12:27 PM (High confidence).",
+    "category": "muhurat",
+    "priority": "high",
+    "expiresAt": "2026-07-17T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "muhurat:namingCeremony:2026-07-17",
+      "destination": "panchang",
+      "activity": "namingCeremony"
+    },
+    "createdAt": "2026-07-17T14:27:58.860Z",
+    "updatedAt": "2026-07-17T14:27:58.860Z"
+  },
+  {
+    "id": "7b3c28eb-de27-4a4a-992a-0a4d749ec315",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Today's Panchang is Ready",
+    "message": "Saturday, 2026-07-18: Shukla Chaturthi (Shukla Paksha), Jyeshtha Nakshatra. Auspiciousness: Auspicious.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "panchang:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T02:11:00.765Z",
+    "updatedAt": "2026-07-18T02:11:00.765Z"
+  },
+  {
+    "id": "33f68084-7b71-4ed4-af2c-6431847376f6",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Brahma Muhurat Today",
+    "message": "Brahma Muhurat falls between 03:36 AM and 04:24 AM today — classically favored for meditation and spiritual practice.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "brahma-muhurat:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T02:11:00.788Z",
+    "updatedAt": "2026-07-18T02:11:00.788Z"
+  },
+  {
+    "id": "e90ce841-ee51-493c-b92b-f2bb39bac12d",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Abhijit Muhurat Today",
+    "message": "Abhijit Muhurat — today's classical auspicious window — falls between 11:33 AM and 12:27 PM.",
+    "category": "muhurat",
+    "priority": "medium",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "abhijit-muhurat:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T02:11:00.804Z",
+    "updatedAt": "2026-07-18T02:11:00.804Z"
+  },
+  {
+    "id": "b1482c55-2f06-4f39-8ccc-5b6c13847279",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Rahu Kaal Today",
+    "message": "Rahu Kaal falls between 08:36 AM and 10:18 AM today — classically avoided for starting new activities.",
+    "category": "panchang",
+    "priority": "medium",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "rahu-kaal:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T02:11:00.811Z",
+    "updatedAt": "2026-07-18T02:11:00.811Z"
+  },
+  {
+    "id": "9cfb9018-6531-4917-874b-2225325cd083",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Yamaganda Today",
+    "message": "Yamaganda falls between 01:42 PM and 03:24 PM today.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "yamaganda:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T02:11:00.816Z",
+    "updatedAt": "2026-07-18T02:11:00.816Z"
+  },
+  {
+    "id": "cd2b7041-9dc0-4c6e-8ece-5c8ec1c84388",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Gulika Kaal Today",
+    "message": "Gulika Kaal falls between 05:12 AM and 06:54 AM today.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "gulika-kaal:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T02:11:00.820Z",
+    "updatedAt": "2026-07-18T02:11:00.820Z"
+  },
+  {
+    "id": "0f08de84-7e8c-4730-b306-860c5d6d73c0",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Festival Today",
+    "message": "Today is Chaturthi — a Vrat day (2026-07-18). The fourth Tithi of both fortnights, observed roughly twice every lunar month and traditionally dedicated to Lord Ganesha, most notably as Sankashti Chaturthi (Krishna Paksha) and Vinayaka Chaturthi (Shukla Paksha).",
+    "category": "festival",
+    "priority": "high",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "festival:chaturthi:2026-07-18:today",
+      "destination": "panchang",
+      "festivalKey": "chaturthi"
+    },
+    "createdAt": "2026-07-18T02:11:00.829Z",
+    "updatedAt": "2026-07-18T02:11:00.829Z"
+  },
+  {
+    "id": "e3079c3c-85fc-48ca-8906-1a8cd408e92c",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Puja Reminder",
+    "message": "Today is Chaturthi. Traditional puja for the day includes: Offering modak or laddoo to Lord Ganesha.",
+    "category": "festival",
+    "priority": "high",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "festival-intel:puja:chaturthi:2026-07-18",
+      "destination": "panchang",
+      "festivalKey": "chaturthi"
+    },
+    "createdAt": "2026-07-18T02:11:00.834Z",
+    "updatedAt": "2026-07-18T02:11:00.834Z"
+  },
+  {
+    "id": "4cb7e813-7a86-4f57-b792-3243fec620a9",
+    "isRead": false,
+    "userId": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "title": "Festival Starting",
+    "message": "Chaturthi begins today (2026-07-18).",
+    "category": "festival",
+    "priority": "high",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "festival-intel:starting:chaturthi:2026-07-18",
+      "destination": "panchang",
+      "festivalKey": "chaturthi"
+    },
+    "createdAt": "2026-07-18T02:11:00.838Z",
+    "updatedAt": "2026-07-18T02:11:00.838Z"
+  },
+  {
+    "id": "19fee09c-6ce1-49af-b4d1-2789dc974f6b",
+    "isRead": false,
+    "userId": "962876e2-3bfb-42b0-b7d5-979383d7ffca",
+    "title": "Today's Panchang is Ready",
+    "message": "Saturday, 2026-07-18: Shukla Chaturthi (Shukla Paksha), Jyeshtha Nakshatra. Auspiciousness: Auspicious.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "panchang:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T06:37:51.548Z",
+    "updatedAt": "2026-07-18T06:37:51.548Z"
+  },
+  {
+    "id": "2409dac6-9d8b-4354-a105-19d54eb0fd92",
+    "isRead": false,
+    "userId": "962876e2-3bfb-42b0-b7d5-979383d7ffca",
+    "title": "Brahma Muhurat Today",
+    "message": "Brahma Muhurat falls between 03:36 AM and 04:24 AM today — classically favored for meditation and spiritual practice.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "brahma-muhurat:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T06:37:51.581Z",
+    "updatedAt": "2026-07-18T06:37:51.581Z"
+  },
+  {
+    "id": "9868a4f5-edcd-447a-a3c7-b05cf6bfe646",
+    "isRead": false,
+    "userId": "962876e2-3bfb-42b0-b7d5-979383d7ffca",
+    "title": "Abhijit Muhurat Today",
+    "message": "Abhijit Muhurat — today's classical auspicious window — falls between 11:33 AM and 12:27 PM.",
+    "category": "muhurat",
+    "priority": "medium",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "abhijit-muhurat:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T06:37:51.596Z",
+    "updatedAt": "2026-07-18T06:37:51.596Z"
+  },
+  {
+    "id": "002074e1-bd51-4510-9437-3d8eee37a435",
+    "isRead": false,
+    "userId": "962876e2-3bfb-42b0-b7d5-979383d7ffca",
+    "title": "Rahu Kaal Today",
+    "message": "Rahu Kaal falls between 08:36 AM and 10:18 AM today — classically avoided for starting new activities.",
+    "category": "panchang",
+    "priority": "medium",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "rahu-kaal:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T06:37:51.599Z",
+    "updatedAt": "2026-07-18T06:37:51.599Z"
+  },
+  {
+    "id": "7dcb7818-43f5-4eb5-9e59-82307369c141",
+    "isRead": false,
+    "userId": "962876e2-3bfb-42b0-b7d5-979383d7ffca",
+    "title": "Yamaganda Today",
+    "message": "Yamaganda falls between 01:42 PM and 03:24 PM today.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "yamaganda:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T06:37:51.601Z",
+    "updatedAt": "2026-07-18T06:37:51.601Z"
+  },
+  {
+    "id": "72eeafb4-5988-49c2-a07a-a11285f88249",
+    "isRead": false,
+    "userId": "962876e2-3bfb-42b0-b7d5-979383d7ffca",
+    "title": "Gulika Kaal Today",
+    "message": "Gulika Kaal falls between 05:12 AM and 06:54 AM today.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "gulika-kaal:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T06:37:51.603Z",
+    "updatedAt": "2026-07-18T06:37:51.603Z"
+  },
+  {
+    "id": "14b05b4b-9ec2-44e9-bb90-0a183db2bdab",
+    "isRead": false,
+    "userId": "962876e2-3bfb-42b0-b7d5-979383d7ffca",
+    "title": "Festival Today",
+    "message": "Today is Chaturthi — a Vrat day (2026-07-18). The fourth Tithi of both fortnights, observed roughly twice every lunar month and traditionally dedicated to Lord Ganesha, most notably as Sankashti Chaturthi (Krishna Paksha) and Vinayaka Chaturthi (Shukla Paksha).",
+    "category": "festival",
+    "priority": "high",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "festival:chaturthi:2026-07-18:today",
+      "destination": "panchang",
+      "festivalKey": "chaturthi"
+    },
+    "createdAt": "2026-07-18T06:37:51.607Z",
+    "updatedAt": "2026-07-18T06:37:51.607Z"
+  },
+  {
+    "id": "41bdc483-7ebf-4a3b-9ce8-74689cca472b",
+    "isRead": false,
+    "userId": "962876e2-3bfb-42b0-b7d5-979383d7ffca",
+    "title": "Puja Reminder",
+    "message": "Today is Chaturthi. Traditional puja for the day includes: Offering modak or laddoo to Lord Ganesha.",
+    "category": "festival",
+    "priority": "high",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "festival-intel:puja:chaturthi:2026-07-18",
+      "destination": "panchang",
+      "festivalKey": "chaturthi"
+    },
+    "createdAt": "2026-07-18T06:37:51.611Z",
+    "updatedAt": "2026-07-18T06:37:51.611Z"
+  },
+  {
+    "id": "834fe37f-abac-4bfc-930c-34cd3d9e693c",
+    "isRead": false,
+    "userId": "962876e2-3bfb-42b0-b7d5-979383d7ffca",
+    "title": "Festival Starting",
+    "message": "Chaturthi begins today (2026-07-18).",
+    "category": "festival",
+    "priority": "high",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "festival-intel:starting:chaturthi:2026-07-18",
+      "destination": "panchang",
+      "festivalKey": "chaturthi"
+    },
+    "createdAt": "2026-07-18T06:37:51.614Z",
+    "updatedAt": "2026-07-18T06:37:51.614Z"
+  },
+  {
+    "id": "1463a6f9-ba3c-4953-94c9-c0cbea2d4e4d",
+    "isRead": false,
+    "userId": "551ff1fb-3770-4cbb-ab76-702e8db709bf",
+    "title": "Today's Panchang is Ready",
+    "message": "Saturday, 2026-07-18: Shukla Chaturthi (Shukla Paksha), Jyeshtha Nakshatra. Auspiciousness: Auspicious.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "panchang:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T07:50:07.233Z",
+    "updatedAt": "2026-07-18T07:50:07.233Z"
+  },
+  {
+    "id": "22d042a2-0991-43b1-ab4e-dfd4a9a9f2b3",
+    "isRead": false,
+    "userId": "551ff1fb-3770-4cbb-ab76-702e8db709bf",
+    "title": "Brahma Muhurat Today",
+    "message": "Brahma Muhurat falls between 03:36 AM and 04:24 AM today — classically favored for meditation and spiritual practice.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "brahma-muhurat:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T07:50:07.237Z",
+    "updatedAt": "2026-07-18T07:50:07.237Z"
+  },
+  {
+    "id": "78c8f318-5909-4abd-ae42-c82daa273c0d",
+    "isRead": false,
+    "userId": "551ff1fb-3770-4cbb-ab76-702e8db709bf",
+    "title": "Abhijit Muhurat Today",
+    "message": "Abhijit Muhurat — today's classical auspicious window — falls between 11:33 AM and 12:27 PM.",
+    "category": "muhurat",
+    "priority": "medium",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "abhijit-muhurat:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T07:50:07.293Z",
+    "updatedAt": "2026-07-18T07:50:07.293Z"
+  },
+  {
+    "id": "0bc217f5-6b06-4688-a19a-7fafb02b16ce",
+    "isRead": false,
+    "userId": "551ff1fb-3770-4cbb-ab76-702e8db709bf",
+    "title": "Rahu Kaal Today",
+    "message": "Rahu Kaal falls between 08:36 AM and 10:18 AM today — classically avoided for starting new activities.",
+    "category": "panchang",
+    "priority": "medium",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "rahu-kaal:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T07:50:07.295Z",
+    "updatedAt": "2026-07-18T07:50:07.295Z"
+  },
+  {
+    "id": "5197a7b9-98d0-4c41-8065-bc24204a221b",
+    "isRead": false,
+    "userId": "551ff1fb-3770-4cbb-ab76-702e8db709bf",
+    "title": "Yamaganda Today",
+    "message": "Yamaganda falls between 01:42 PM and 03:24 PM today.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "yamaganda:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T07:50:07.298Z",
+    "updatedAt": "2026-07-18T07:50:07.298Z"
+  },
+  {
+    "id": "d53689bf-cb7d-48e0-a1cc-3645b552081b",
+    "isRead": false,
+    "userId": "551ff1fb-3770-4cbb-ab76-702e8db709bf",
+    "title": "Gulika Kaal Today",
+    "message": "Gulika Kaal falls between 05:12 AM and 06:54 AM today.",
+    "category": "panchang",
+    "priority": "low",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "gulika-kaal:2026-07-18",
+      "destination": "panchang",
+      "groupKey": "panchang-today:2026-07-18",
+      "groupLabel": "Today's Panchang"
+    },
+    "createdAt": "2026-07-18T07:50:07.300Z",
+    "updatedAt": "2026-07-18T07:50:07.300Z"
+  },
+  {
+    "id": "90a38e6b-3d9b-4bc0-b407-2b7d0a1426e6",
+    "isRead": false,
+    "userId": "551ff1fb-3770-4cbb-ab76-702e8db709bf",
+    "title": "Festival Today",
+    "message": "Today is Chaturthi — a Vrat day (2026-07-18). The fourth Tithi of both fortnights, observed roughly twice every lunar month and traditionally dedicated to Lord Ganesha, most notably as Sankashti Chaturthi (Krishna Paksha) and Vinayaka Chaturthi (Shukla Paksha).",
+    "category": "festival",
+    "priority": "high",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "festival:chaturthi:2026-07-18:today",
+      "destination": "panchang",
+      "festivalKey": "chaturthi"
+    },
+    "createdAt": "2026-07-18T07:50:07.303Z",
+    "updatedAt": "2026-07-18T07:50:07.303Z"
+  },
+  {
+    "id": "dc649654-56e7-450f-95fb-c71086b53ce9",
+    "isRead": false,
+    "userId": "551ff1fb-3770-4cbb-ab76-702e8db709bf",
+    "title": "Puja Reminder",
+    "message": "Today is Chaturthi. Traditional puja for the day includes: Offering modak or laddoo to Lord Ganesha.",
+    "category": "festival",
+    "priority": "high",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "festival-intel:puja:chaturthi:2026-07-18",
+      "destination": "panchang",
+      "festivalKey": "chaturthi"
+    },
+    "createdAt": "2026-07-18T07:50:07.306Z",
+    "updatedAt": "2026-07-18T07:50:07.306Z"
+  },
+  {
+    "id": "b04236c9-26da-4465-95b4-dd009ed8b51b",
+    "isRead": false,
+    "userId": "551ff1fb-3770-4cbb-ab76-702e8db709bf",
+    "title": "Festival Starting",
+    "message": "Chaturthi begins today (2026-07-18).",
+    "category": "festival",
+    "priority": "high",
+    "expiresAt": "2026-07-18T23:59:59.000Z",
+    "metadata": {
+      "dedupeKey": "festival-intel:starting:chaturthi:2026-07-18",
+      "destination": "panchang",
+      "festivalKey": "chaturthi"
+    },
+    "createdAt": "2026-07-18T07:50:07.309Z",
+    "updatedAt": "2026-07-18T07:50:07.309Z"
+  }
+]

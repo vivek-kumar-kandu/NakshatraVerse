@@ -1,8 +1,30 @@
+<<<<<<< HEAD
 import { describe, it, expect, vi, afterEach } from "vitest";
+=======
+import { describe, it, expect, vi, afterEach, beforeAll } from "vitest";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import AILifeCoachPage from "../src/pages/AILifeCoachPage.jsx";
 import * as lifeCoachApi from "../src/utils/lifeCoachApi.js";
+<<<<<<< HEAD
+=======
+// Phase 2 (Life Coach i18n migration): this file renders AILifeCoachPage
+// directly rather than through App.jsx, and App.jsx (via
+// ErrorBoundary.jsx) is normally what triggers i18n/index.js's
+// side-effecting i18next.init() call. Without it, useTranslation() here
+// resolves against an uninitialized i18next singleton and t() returns
+// raw keys instead of English text. See the identical fix in
+// FamilyRelationshipHub.test.jsx / FestivalPage.test.jsx for the same
+// root cause.
+import i18n from "../src/i18n/index.js";
+
+beforeAll(async () => {
+  if (!i18n.isInitialized) {
+    await new Promise((resolve) => i18n.on("initialized", resolve));
+  }
+});
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // V4.3 (AI Life Coach) — AILifeCoachPage smoke tests. Mocks

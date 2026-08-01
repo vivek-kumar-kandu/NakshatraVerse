@@ -1,4 +1,8 @@
 import { memo } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 import Badge from "../common/Badge.jsx";
 
@@ -11,6 +15,10 @@ import Badge from "../common/Badge.jsx";
 // here, only display. `kind` only changes the accent color/icon.
 // ─────────────────────────────────────────────────────────────────────────
 function RuleResultCard({ name, detail, kind = "yoga", idx = 0 }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["results"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const color = kind === "dosha" ? "#ff8f7e" : "#c9ff7e";
   const icon = kind === "dosha" ? "🧿" : "⭐";
   return (
@@ -19,7 +27,11 @@ function RuleResultCard({ name, detail, kind = "yoga", idx = 0 }) {
       <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
         <span aria-hidden="true" style={{ fontSize: 16 }}>{icon}</span>
         <h4 style={{ margin: 0, fontSize: 13.5, color, fontFamily: "Cinzel,serif", fontWeight: 600, flex: 1 }}>{name}</h4>
+<<<<<<< HEAD
         <Badge color={color}>{kind === "dosha" ? "Dosha" : "Yoga"}</Badge>
+=======
+        <Badge color={color}>{kind === "dosha" ? t("results:doshasYogas.doshaBadge", "Dosha") : t("results:doshasYogas.yogaBadge", "Yoga")}</Badge>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </div>
       <p style={{ margin: 0, fontSize: 12.5, lineHeight: 1.6, color: "var(--nv-text-secondary, rgba(230,220,255,0.8))", fontFamily: "Inter,sans-serif" }}>
         {detail}

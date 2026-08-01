@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "past": "గతం",
+    "present": "వర్తమానం",
+    "nearFuture": "సమీప భవిష్యత్తు",
+    "nextMonth": "తదుపరి నెల",
+    "next3Months": "తదుపరి 3 నెలలు",
+    "next6Months": "తదుపరి 6 నెలలు",
+    "nextYear": "తదుపరి సంవత్సరం"
+  },
+  "horizons": {
+    "oneYear": "తదుపరి 1 సంవత్సరం",
+    "fiveYear": "తదుపరి 5 సంవత్సరాలు",
+    "tenYear": "తదుపరి 10 సంవత్సరాలు"
+  },
+  "filterCategories": {
+    "career": "కెరీర్",
+    "finance": "ఆర్థిక",
+    "love": "ప్రేమ",
+    "marriage": "వివాహం",
+    "health": "ఆరోగ్యం",
+    "education": "విద్య",
+    "family": "కుటుంబం",
+    "spiritual": "ఆధ్యాత్మిక"
+  },
+  "tab": {
+    "buildingTimeline": "మీ AI టైమ్‌లైన్ నిర్మించబడుతోంది…",
+    "notAvailableTitle": "టైమ్‌లైన్ ఇంకా అందుబాటులో లేదు",
+    "notAvailableMessage": "మీ చార్ట్ లెక్కించబడిన తర్వాత మీ మహాదశ/అంతర్దశ టైమ్‌లైన్ ఇక్కడ కనిపిస్తుంది.",
+    "currentDashaHeading": "ప్రస్తుత దశ",
+    "mahadashaBadge": "మహాదశ: {{value}}",
+    "antardashaBadge": "అంతర్దశ: {{value}}",
+    "dominantBadge": "ప్రధాన: {{planet}}",
+    "notAvailableValue": "—",
+    "filterByLifeAreaHeading": "జీవిత ప్రాంతం ఆధారంగా ఫిల్టర్ చేయండి",
+    "noEventsTitle": "ఈ ఫిల్టర్ కోసం ఈవెంట్‌లు లేవు",
+    "noEventsMessage": "ఎంచుకున్న జీవిత ప్రాంతంతో ఇంకా ఏ AI టైమ్‌లైన్ ఈవెంట్ సరిపోలలేదు. వేరే ఫిల్టర్‌ను ప్రయత్నించండి లేదా అన్నింటినీ ఎంచుకోండి.",
+    "sectionEventsAriaLabel": "{{label}} టైమ్‌లైన్ ఈవెంట్‌లు"
+  },
+  "filters": {
+    "ariaLabel": "జీవిత ప్రాంతం ఆధారంగా AI టైమ్‌లైన్ ఈవెంట్‌లను ఫిల్టర్ చేయండి",
+    "all": "అన్నీ"
+  },
+  "eventCard": {
+    "generalCategoryFallback": "సాధారణం",
+    "upcomingPeriod": "రాబోయే కాలం",
+    "dateRangeArrow": "{{start}} → {{end}}",
+    "entryAriaLabel": "{{start}} కోసం AI టైమ్‌లైన్ ఎంట్రీ. AI తో వివరించడానికి ఎంచుకోండి.",
+    "entryAriaLabelWithEnd": "{{start}} నుండి {{end}} వరకు AI టైమ్‌లైన్ ఎంట్రీ. AI తో వివరించడానికి ఎంచుకోండి.",
+    "mahadashaBadge": "మహాదశ: {{value}}",
+    "antardashaBadge": "అంతర్దశ: {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI వివరణ",
+    "eventLabelFallback": "జీవిత-ప్రాంతం",
+    "prompt": "ఈ {{category}} అంచనా యొక్క Gemini-ఆధారిత వివరణను పొందండి, ఇది పూర్తిగా ఈ చార్ట్ యొక్క సొంత బ్యాకెండ్-లెక్కించిన వాస్తవాలపై ఆధారపడి ఉంటుంది.",
+    "explainAriaLabel": "ఈ {{category}} అంచనాను AI తో వివరించండి",
+    "explainButton": "✨ AI తో వివరించండి",
+    "generatingLabel": "ఈ {{category}} అంచనా కోసం AI వివరణను రూపొందిస్తోంది",
+    "loadFailed": "AI టైమ్‌లైన్ వివరణ ప్రస్తుతం అందుబాటులో లేదు.",
+    "tryAgain": "↻ మళ్లీ ప్రయత్నించండి"
+  },
+  "common": {
+    "nothingToShow": "ఇంకా చూపించడానికి ఏమీ లేదు."
+  },
+  "legacyCard": {
+    "upcomingPeriod": "రాబోయే కాలం",
+    "mahadashaBadge": "మహాదశ: {{value}}",
+    "antardashaBadge": "అంతర్దశ: {{value}}"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "nameRequired": "નામ જરૂરી છે",
+  "validEmailRequired": "વૈધ ઇમેઇલ જરૂરી છે",
+  "passwordMinLength": "પાસવર્ડ ઓછામાં ઓછા 8 અક્ષરોનો હોવો જોઈએ",
+  "passwordNeedsNumber": "પાસવર્ડમાં ઓછામાં ઓછો એક નંબર હોવો જોઈએ",
+  "passwordRequired": "પાસવર્ડ જરૂરી છે",
+  "festivalKeyRequired": "`festivalKey` ક્વેરી પેરામીટર જરૂરી છે.",
+  "profileIdsRequired": "profileIdA અને profileIdB બંને જરૂરી છે."
+}

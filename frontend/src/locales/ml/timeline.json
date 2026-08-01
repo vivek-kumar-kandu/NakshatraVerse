@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "past": "ഭൂതകാലം",
+    "present": "വർത്തമാനകാലം",
+    "nearFuture": "സമീപ ഭാവി",
+    "nextMonth": "അടുത്ത മാസം",
+    "next3Months": "അടുത്ത 3 മാസം",
+    "next6Months": "അടുത്ത 6 മാസം",
+    "nextYear": "അടുത്ത വർഷം"
+  },
+  "horizons": {
+    "oneYear": "അടുത്ത 1 വർഷം",
+    "fiveYear": "അടുത്ത 5 വർഷം",
+    "tenYear": "അടുത്ത 10 വർഷം"
+  },
+  "filterCategories": {
+    "career": "കരിയർ",
+    "finance": "സാമ്പത്തികം",
+    "love": "പ്രണയം",
+    "marriage": "വിവാഹം",
+    "health": "ആരോഗ്യം",
+    "education": "വിദ്യാഭ്യാസം",
+    "family": "കുടുംബം",
+    "spiritual": "ആത്മീയം"
+  },
+  "tab": {
+    "buildingTimeline": "നിങ്ങളുടെ AI ടൈംലൈൻ നിർമ്മിക്കുന്നു…",
+    "notAvailableTitle": "ടൈംലൈൻ ഇതുവരെ ലഭ്യമല്ല",
+    "notAvailableMessage": "നിങ്ങളുടെ ചാർട്ട് കണക്കാക്കിയ ശേഷം നിങ്ങളുടെ മഹാദശ/അന്തർദശ ടൈംലൈൻ ഇവിടെ ദൃശ്യമാകും.",
+    "currentDashaHeading": "നിലവിലെ ദശ",
+    "mahadashaBadge": "മഹാദശ: {{value}}",
+    "antardashaBadge": "അന്തർദശ: {{value}}",
+    "dominantBadge": "പ്രധാനം: {{planet}}",
+    "notAvailableValue": "—",
+    "filterByLifeAreaHeading": "ജീവിത മേഖലയുടെ അടിസ്ഥാനത്തിൽ ഫിൽട്ടർ ചെയ്യുക",
+    "noEventsTitle": "ഈ ഫിൽട്ടറിന് ഇവന്റുകളൊന്നുമില്ല",
+    "noEventsMessage": "തിരഞ്ഞെടുത്ത ജീവിത മേഖലയുമായി ഇതുവരെ ഒരു AI ടൈംലൈൻ ഇവന്റും പൊരുത്തപ്പെടുന്നില്ല. വ്യത്യസ്തമായ ഫിൽട്ടർ പരീക്ഷിക്കുക അല്ലെങ്കിൽ എല്ലാം തിരഞ്ഞെടുക്കുക.",
+    "sectionEventsAriaLabel": "{{label}} ടൈംലൈൻ ഇവന്റുകൾ"
+  },
+  "filters": {
+    "ariaLabel": "ജീവിത മേഖലയുടെ അടിസ്ഥാനത്തിൽ AI ടൈംലൈൻ ഇവന്റുകൾ ഫിൽട്ടർ ചെയ്യുക",
+    "all": "എല്ലാം"
+  },
+  "eventCard": {
+    "generalCategoryFallback": "പൊതു",
+    "upcomingPeriod": "വരാനിരിക്കുന്ന കാലയളവ്",
+    "dateRangeArrow": "{{start}} → {{end}}",
+    "entryAriaLabel": "{{start}} ന് AI ടൈംലൈൻ എൻട്രി. AI ഉപയോഗിച്ച് വിശദീകരിക്കാൻ തിരഞ്ഞെടുക്കുക.",
+    "entryAriaLabelWithEnd": "{{start}} മുതൽ {{end}} വരെ AI ടൈംലൈൻ എൻട്രി. AI ഉപയോഗിച്ച് വിശദീകരിക്കാൻ തിരഞ്ഞെടുക്കുക.",
+    "mahadashaBadge": "മഹാദശ: {{value}}",
+    "antardashaBadge": "അന്തർദശ: {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI വിശദീകരണം",
+    "eventLabelFallback": "ജീവിത-മേഖല",
+    "prompt": "ഈ {{category}} പ്രവചനത്തിന്റെ Gemini-പ്രവർത്തിത വിശദീകരണം നേടുക, ഇത് പൂർണ്ണമായും ഈ ചാർട്ടിന്റെ സ്വന്തം ബാക്കെൻഡ്-കണക്കാക്കിയ വസ്തുതകളെ അടിസ്ഥാനമാക്കിയുള്ളതാണ്.",
+    "explainAriaLabel": "ഈ {{category}} പ്രവചനം AI ഉപയോഗിച്ച് വിശദീകരിക്കുക",
+    "explainButton": "✨ AI ഉപയോഗിച്ച് വിശദീകരിക്കുക",
+    "generatingLabel": "ഈ {{category}} പ്രവചനത്തിനായി AI വിശദീകരണം സൃഷ്ടിക്കുന്നു",
+    "loadFailed": "AI ടൈംലൈൻ വിശദീകരണം നിലവിൽ ലഭ്യമല്ല.",
+    "tryAgain": "↻ വീണ്ടും ശ്രമിക്കുക"
+  },
+  "common": {
+    "nothingToShow": "ഇതുവരെ കാണിക്കാൻ ഒന്നുമില്ല."
+  },
+  "legacyCard": {
+    "upcomingPeriod": "വരാനിരിക്കുന്ന കാലയളവ്",
+    "mahadashaBadge": "മഹാദശ: {{value}}",
+    "antardashaBadge": "അന്തർദശ: {{value}}"
+  }
+}

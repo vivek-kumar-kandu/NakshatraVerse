@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "ମୂଳପୃଷ୍ଠା",
+    "features": "ବିଶେଷତା",
+    "about": "ଆମ ବିଷୟରେ",
+    "faq": "ବାରମ୍ବାର ପଚରାଯାଉଥିବା ପ୍ରଶ୍ନ"
+  },
+  "navbar": {
+    "brandAriaLabel": "ନକ୍ଷତ୍ରଭର୍ସ — ମୂଳପୃଷ୍ଠା",
+    "primaryAriaLabel": "ମୁଖ୍ୟ",
+    "openMenu": "ମେନୁ ଖୋଲନ୍ତୁ",
+    "closeMenu": "ମେନୁ ବନ୍ଦ କରନ୍ତୁ"
+  },
+  "auth": {
+    "home": "ମୂଳପୃଷ୍ଠା",
+    "dashboard": "ଡ୍ୟାସବୋର୍ଡ",
+    "reports": "ରିପୋର୍ଟଗୁଡ଼ିକ",
+    "profile": "ପ୍ରୋଫାଇଲ୍"
+  },
+  "accountMenu": {
+    "myProfile": "ମୋର ପ୍ରୋଫାଇଲ୍",
+    "dashboard": "ଡ୍ୟାସବୋର୍ଡ",
+    "savedReports": "ସଞ୍ଚିତ ରିପୋର୍ଟଗୁଡ଼ିକ",
+    "settings": "ସେଟିଂସମୂହ",
+    "helpAbout": "ସାହାଯ୍ୟ ଏବଂ ସୂଚନା",
+    "memberSince": "{{date}} ଠାରୁ ସଦସ୍ୟ",
+    "menuLabel": "ଖାତା",
+    "triggerLabel": "{{name}} ପାଇଁ ଖାତା ମେନୁ"
+  },
+  "actionDock": {
+    "askAi": "AI କୁ ପଚାରନ୍ତୁ",
+    "horoscope": "ରାଶିଫଳ",
+    "calendar": "କ୍ୟାଲେଣ୍ଡର",
+    "lifeCoach": "ଲାଇଫ୍ କୋଚ୍",
+    "kundliMatching": "କୁଣ୍ଡଳୀ ମିଳନ",
+    "panchang": "ପଞ୍ଚାଙ୍ଗ",
+    "festivalCalendar": "ପର୍ବ କ୍ୟାଲେଣ୍ଡର",
+    "notifications": "ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ",
+    "saveReport": "ରିପୋର୍ଟ ସଞ୍ଚୟ କରନ୍ତୁ",
+    "saving": "ସଞ୍ଚୟ କରାଯାଉଛି…",
+    "downloadPdf": "PDF ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+    "preparing": "ପ୍ରସ୍ତୁତ କରାଯାଉଛି…",
+    "printPdf": "PDF ପ୍ରିଣ୍ଟ କରନ୍ତୁ",
+    "opening": "ଖୋଲାଯାଉଛି…",
+    "reportActions": "ରିପୋର୍ଟ କାର୍ଯ୍ୟସମୂହ",
+    "openReportActions": "ରିପୋର୍ଟ କାର୍ଯ୍ୟସମୂହ ଖୋଲନ୍ତୁ",
+    "close": "ବନ୍ଦ କରନ୍ତୁ",
+    "somethingWentWrong": "କିଛି ଭୁଲ ହୋଇଛି।"
+  },
+  "commandPalette": {
+    "ariaLabel": "କମାଣ୍ଡ ପ୍ୟାଲେଟ୍",
+    "searchAriaLabel": "କମାଣ୍ଡ ପ୍ୟାଲେଟ୍ ସନ୍ଧାନ",
+    "commandsAriaLabel": "କମାଣ୍ଡଗୁଡ଼ିକ",
+    "sections": {
+      "navigate": "ନେଭିଗେଟ୍ କରନ୍ତୁ",
+      "theme": "ଥିମ୍",
+      "settings": "ସେଟିଂସମୂହ",
+      "recent": "ସାମ୍ପ୍ରତିକ",
+      "recentReports": "ସାମ୍ପ୍ରତିକ ରିପୋର୍ଟଗୁଡ଼ିକ",
+      "recentReportsLoading": "ସାମ୍ପ୍ରତିକ ରିପୋର୍ଟଗୁଡ଼ିକ · ଲୋଡ୍ ହେଉଛି…"
+    },
+    "nav": {
+      "dashboard": "ଡ୍ୟାସବୋର୍ଡ",
+      "generateReport": "ରିପୋର୍ଟ ତିଆରି କରନ୍ତୁ",
+      "savedReports": "ସଞ୍ଚିତ ରିପୋର୍ଟଗୁଡ଼ିକ",
+      "profile": "ପ୍ରୋଫାଇଲ୍",
+      "settings": "ସେଟିଂସମୂହ",
+      "horoscope": "ରାଶିଫଳ",
+      "calendar": "କ୍ୟାଲେଣ୍ଡର",
+      "aiAssistant": "AI ସହାୟକ",
+      "aiLifeCoach": "AI ଲାଇଫ୍ କୋଚ୍",
+      "kundliMatching": "କୁଣ୍ଡଳୀ ମିଳନ",
+      "dailyPanchang": "ଦୈନିକ ପଞ୍ଚାଙ୍ଗ ଏବଂ ମୁହୂର୍ତ",
+      "festivalCalendar": "ପର୍ବ କ୍ୟାଲେଣ୍ଡର",
+      "todaysFestival": "ଆଜିର ପର୍ବ",
+      "upcomingFestivals": "ଆଗାମୀ ପର୍ବଗୁଡ଼ିକ",
+      "notificationCenter": "ବିଜ୍ଞପ୍ତି କେନ୍ଦ୍ର",
+      "unreadNotifications": "ଅପଠିତ ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ",
+      "familyProfiles": "ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍‌ଗୁଡ଼ିକ",
+      "relationshipHub": "ସମ୍ପର୍କ କେନ୍ଦ୍ର",
+      "help": "ସାହାଯ୍ୟ"
+    },
+    "theme": {
+      "light": "ସେକ୍ରେଡ୍ ଡନ୍ କୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ",
+      "dark": "ମିଡନାଇଟ୍ କସ୍ମିକ୍ କୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ",
+      "system": "ସିଷ୍ଟମ୍ ଥିମ୍ କୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
+    },
+    "settingsSections": {
+      "account": "ସେଟିଂସମୂହ · ଖାତା",
+      "appearance": "ସେଟିଂସମୂହ · ଚେହେରା",
+      "preferences": "ସେଟିଂସମୂହ · ପସନ୍ଦ",
+      "privacy": "ସେଟିଂସମୂହ · ଗୋପନୀୟତା",
+      "about": "ସେଟିଂସମୂହ · ସୂଚନା"
+    },
+    "untitledReport": "ଶୀର୍ଷକହୀନ ରିପୋର୍ଟ",
+    "noMatches": "କୌଣସି ମେଳଖାଉଥିବା କମାଣ୍ଡ ନାହିଁ।",
+    "noMatchesFor": "\"{{query}}\" ପାଇଁ କୌଣସି ମେଳଖାଉଥିବା କମାଣ୍ଡ ନାହିଁ।",
+    "searchPlaceholder": "ପୃଷ୍ଠାଗୁଡ଼ିକ, ରିପୋର୍ଟଗୁଡ଼ିକ, ଯୋଗ, ଦୋଷ, ଉପାୟ ସନ୍ଧାନ କରନ୍ତୁ…"
+  }
+}

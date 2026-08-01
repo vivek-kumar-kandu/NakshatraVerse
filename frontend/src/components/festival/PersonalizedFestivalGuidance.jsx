@@ -1,4 +1,8 @@
 import { memo, useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 import InsightRow from "../common/InsightRow.jsx";
 import * as festivalIntelligenceApi from "../../utils/festivalIntelligenceApi.js";
@@ -15,6 +19,7 @@ import * as festivalIntelligenceApi from "../../utils/festivalIntelligenceApi.js
 // nothing here is a new astrology calculation.
 // ─────────────────────────────────────────────────────────────────────────
 const FOCUS_FIELDS = [
+<<<<<<< HEAD
   { key: "careerFocus", label: "Career", icon: "💼", color: "#9dc9ff" },
   { key: "financeFocus", label: "Finance", icon: "💰", color: "#ffd700" },
   { key: "relationshipFocus", label: "Relationships", icon: "💞", color: "#ff9ec9" },
@@ -24,6 +29,18 @@ const FOCUS_FIELDS = [
 ];
 
 function PersonalizedFestivalGuidance({ festival, chart, report, onOpenReading }) {
+=======
+  {key: "careerFocus", icon: "💼", color: "#9dc9ff" },
+  { key: "financeFocus", icon: "💰", color: "#ffd700" },
+  { key: "relationshipFocus", icon: "💞", color: "#ff9ec9" },
+  { key: "healthFocus", icon: "🌿", color: "#7effb2" },
+  { key: "spiritualFocus", icon: "🕉️", color: "#bf7fff" },
+  { key: "personalGrowthFocus", icon: "🌱", color: "#ffb37e" },
+];
+
+function PersonalizedFestivalGuidance({ festival, chart, report, onOpenReading }) {
+  const { t } = useTranslation(["festival"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [guidance, setGuidance] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -34,11 +51,18 @@ function PersonalizedFestivalGuidance({ festival, chart, report, onOpenReading }
     return (
       <GlassCard style={{ padding: "18px 20px", textAlign: "center" }}>
         <h3 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 15.5, color: "var(--nv-text-primary, #f1e4ff)" }}>
+<<<<<<< HEAD
           🌟 Personalized Festival Guidance
         </h3>
         <p style={{ margin: "8px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
           Open this festival from one of your saved readings to see why it's especially meaningful for you —
           career, finance, relationships, health, spiritual, and personal-growth focus, all grounded in your own chart.
+=======
+          {t("festival:personalizedGuidance.title")}
+        </h3>
+        <p style={{ margin: "8px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
+          {t("festival:personalizedGuidance.noChartMessage")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </p>
         {onOpenReading && (
           <button
@@ -50,7 +74,11 @@ function PersonalizedFestivalGuidance({ festival, chart, report, onOpenReading }
               color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif",
             }}
           >
+<<<<<<< HEAD
             Open a Saved Reading →
+=======
+            {t("festival:personalizedGuidance.openSavedReading")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         )}
       </GlassCard>
@@ -62,7 +90,11 @@ function PersonalizedFestivalGuidance({ festival, chart, report, onOpenReading }
     setError(null);
     festivalIntelligenceApi.getPersonalizedFestivalGuidance(festival, chart, report)
       .then((result) => setGuidance(result.guidance))
+<<<<<<< HEAD
       .catch((err) => setError(err.message || "Could not load personalized guidance right now."))
+=======
+      .catch((err) => setError(err.message || t("festival:personalizedGuidance.loadFailed")))
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       .finally(() => setLoading(false));
   };
 
@@ -72,10 +104,17 @@ function PersonalizedFestivalGuidance({ festival, chart, report, onOpenReading }
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
           <div>
             <h3 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 15.5, color: "var(--nv-text-primary, #f1e4ff)" }}>
+<<<<<<< HEAD
               🌟 Personalized Festival Guidance
             </h3>
             <p style={{ margin: "4px 0 0", fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
               Grounded in your own Dasha, Transits, and Predictions.
+=======
+              {t("festival:personalizedGuidance.title")}
+            </h3>
+            <p style={{ margin: "4px 0 0", fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
+              {t("festival:personalizedGuidance.subtitle")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
           </div>
           {!guidance && (
@@ -89,7 +128,11 @@ function PersonalizedFestivalGuidance({ festival, chart, report, onOpenReading }
                 background: "rgba(123,47,255,0.18)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif", flexShrink: 0,
               }}
             >
+<<<<<<< HEAD
               ✨ {loading ? "Asking Gemini…" : "Why Is This Meaningful For Me?"}
+=======
+              ✨ {loading ? t("festival:intelligencePanel.askingGemini") : t("festival:personalizedGuidance.whyMeaningful")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           )}
         </div>
@@ -105,7 +148,11 @@ function PersonalizedFestivalGuidance({ festival, chart, report, onOpenReading }
       {guidance && (
         <GlassCard style={{ padding: "6px 20px" }}>
           {FOCUS_FIELDS.filter((f) => guidance[f.key]).map((f) => (
+<<<<<<< HEAD
             <InsightRow key={f.key} label={`${f.icon} ${f.label}`} value={guidance[f.key]} color={f.color} />
+=======
+            <InsightRow key={f.key} label={`${f.icon} ${t(`festival:personalizedGuidance.focusFields.${f.key}`)}`} value={guidance[f.key]} color={f.color} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           ))}
         </GlassCard>
       )}

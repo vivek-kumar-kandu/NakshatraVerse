@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "past": "ماضی",
+    "present": "حال",
+    "nearFuture": "قریبی مستقبل",
+    "nextMonth": "اگلا مہینہ",
+    "next3Months": "اگلے 3 مہینے",
+    "next6Months": "اگلے 6 مہینے",
+    "nextYear": "اگلا سال"
+  },
+  "horizons": {
+    "oneYear": "اگلا 1 سال",
+    "fiveYear": "اگلے 5 سال",
+    "tenYear": "اگلے 10 سال"
+  },
+  "filterCategories": {
+    "career": "کیریئر",
+    "finance": "مالیات",
+    "love": "محبت",
+    "marriage": "شادی",
+    "health": "صحت",
+    "education": "تعلیم",
+    "family": "خاندان",
+    "spiritual": "روحانی"
+  },
+  "tab": {
+    "buildingTimeline": "آپ کی AI ٹائم لائن تیار کی جا رہی ہے…",
+    "notAvailableTitle": "ٹائم لائن ابھی دستیاب نہیں ہے",
+    "notAvailableMessage": "آپ کے چارٹ کے حساب ہونے کے بعد آپ کی مہاداشا/انترداشا ٹائم لائن یہاں ظاہر ہوگی۔",
+    "currentDashaHeading": "موجودہ داشا",
+    "mahadashaBadge": "مہاداشا: {{value}}",
+    "antardashaBadge": "انترداشا: {{value}}",
+    "dominantBadge": "غالب: {{planet}}",
+    "notAvailableValue": "—",
+    "filterByLifeAreaHeading": "زندگی کے شعبے کی بنیاد پر فلٹر کریں",
+    "noEventsTitle": "اس فلٹر کے لیے کوئی واقعہ نہیں",
+    "noEventsMessage": "منتخب کردہ زندگی کے شعبے سے ابھی تک کوئی AI ٹائم لائن واقعہ مماثل نہیں ہے۔ مختلف فلٹر آزمائیں یا تمام منتخب کریں۔",
+    "sectionEventsAriaLabel": "{{label}} ٹائم لائن واقعات"
+  },
+  "filters": {
+    "ariaLabel": "زندگی کے شعبے کی بنیاد پر AI ٹائم لائن واقعات فلٹر کریں",
+    "all": "تمام"
+  },
+  "eventCard": {
+    "generalCategoryFallback": "عام",
+    "upcomingPeriod": "آنے والا عرصہ",
+    "dateRangeArrow": "{{start}} → {{end}}",
+    "entryAriaLabel": "{{start}} کے لیے AI ٹائم لائن اندراج۔ AI سے سمجھانے کے لیے منتخب کریں۔",
+    "entryAriaLabelWithEnd": "{{start}} سے {{end}} تک کے لیے AI ٹائم لائن اندراج۔ AI سے سمجھانے کے لیے منتخب کریں۔",
+    "mahadashaBadge": "مہاداشا: {{value}}",
+    "antardashaBadge": "انترداشا: {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI وضاحت",
+    "eventLabelFallback": "زندگی کا شعبہ",
+    "prompt": "اس {{category}} پیشین گوئی کی ایک Gemini سے چلنے والی وضاحت حاصل کریں، جو مکمل طور پر اس چارٹ کے اپنے بیک اینڈ سے حساب کردہ حقائق پر مبنی ہے۔",
+    "explainAriaLabel": "اس {{category}} پیشین گوئی کو AI سے سمجھائیں",
+    "explainButton": "✨ AI سے سمجھائیں",
+    "generatingLabel": "اس {{category}} پیشین گوئی کے لیے AI وضاحت تیار کی جا رہی ہے",
+    "loadFailed": "AI ٹائم لائن وضاحت فی الحال دستیاب نہیں ہے۔",
+    "tryAgain": "↻ دوبارہ کوشش کریں"
+  },
+  "common": {
+    "nothingToShow": "ابھی دکھانے کے لیے کچھ نہیں ہے۔"
+  },
+  "legacyCard": {
+    "upcomingPeriod": "آنے والا عرصہ",
+    "mahadashaBadge": "مہاداشا: {{value}}",
+    "antardashaBadge": "انترداشا: {{value}}"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← ڈیش بورڈ پر واپس جائیں",
+    "title": "میری پروفائل",
+    "photoHint": "ترمیم کرنے کے لیے اپنی تصویر پر کلک کریں — اپ لوڈ کریں، تبدیل کریں، یا ہٹائیں۔",
+    "authProviderGoogle": "Google کے ساتھ سائن ان کیا گیا",
+    "authProviderEmail": "ای میل اور پاس ورڈ",
+    "accountInformation": "اکاؤنٹ کی معلومات",
+    "fullName": "پورا نام",
+    "email": "ای میل",
+    "memberSince": "رکنیت کا آغاز",
+    "accountType": "اکاؤنٹ کی قسم",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "پاس ورڈ تبدیل کریں",
+    "editProfileInSettings": "ترتیبات میں پروفائل میں ترمیم کریں →",
+    "activitySummary": "پروفائل سرگرمی کا خلاصہ",
+    "totalReports": "کل رپورٹس",
+    "loadingValue": "…",
+    "lastGenerated": "آخری بار بنائی گئی",
+    "viewSavedReports": "محفوظ کردہ رپورٹس دیکھیں →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "براہ کرم JPG، PNG، یا WEBP تصویر منتخب کریں۔",
+    "fileTooLarge": "وہ تصویر بہت بڑی ہے۔ براہ کرم 8MB سے کم سائز کی فائل منتخب کریں۔",
+    "processFailed": "وہ تصویر پروسیس نہیں کی جا سکی۔",
+    "photoUpdated": "پروفائل تصویر اپ ڈیٹ کر دی گئی۔",
+    "saveFailed": "آپ کی تصویر محفوظ نہیں کی جا سکی۔",
+    "photoRemoved": "پروفائل تصویر ہٹا دی گئی۔",
+    "removeFailed": "آپ کی تصویر ہٹائی نہیں جا سکی۔",
+    "changePhotoAriaLabel": "پروفائل تصویر تبدیل کریں",
+    "uploadPhotoAriaLabel": "پروفائل تصویر اپ لوڈ کریں",
+    "menuAriaLabel": "پروفائل تصویر کے اختیارات",
+    "replacePhoto": "تصویر تبدیل کریں",
+    "uploadPhoto": "تصویر اپ لوڈ کریں",
+    "removePhoto": "تصویر ہٹائیں",
+    "previewDialogAriaLabel": "نئی پروفائل تصویر کا پیش نظارہ",
+    "previewYourNewPhoto": "اپنی نئی تصویر کا پیش نظارہ کریں",
+    "cancel": "منسوخ کریں",
+    "save": "محفوظ کریں"
+  }
+}

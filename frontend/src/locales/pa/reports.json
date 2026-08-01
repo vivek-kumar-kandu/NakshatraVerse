@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← ਡੈਸ਼ਬੋਰਡ 'ਤੇ ਵਾਪਸ ਜਾਓ",
+    "title": "ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟਾਂ",
+    "titleWithCount": "ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟਾਂ ({{count}})",
+    "generateNewReport": "✦ ਨਵੀਂ ਰਿਪੋਰਟ ਬਣਾਓ",
+    "loadFailed": "ਤੁਹਾਡੀਆਂ ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟਾਂ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੀਆਂ।",
+    "tryAgain": "↻ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+    "deleteToastSuccess": "\"{{title}}\" ਮਿਟਾ ਦਿੱਤੀ ਗਈ।",
+    "deleteToastFallbackTitle": "ਰਿਪੋਰਟ",
+    "deleteFailed": "ਉਹ ਰਿਪੋਰਟ ਮਿਟਾਈ ਨਹੀਂ ਜਾ ਸਕੀ।",
+    "downloadToastSuccess": "PDF ਡਾਊਨਲੋਡ ਹੋ ਗਈ।",
+    "downloadFailed": "PDF ਨਹੀਂ ਬਣਾਈ ਜਾ ਸਕੀ।",
+    "emptyTitle": "ਹਾਲੇ ਤੱਕ ਕੋਈ ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟ ਨਹੀਂ",
+    "emptyMessage": "ਇੱਥੇ ਆਪਣਾ ਸੰਗ੍ਰਹਿ ਬਣਾਉਣ ਲਈ ਰੀਡਿੰਗ ਬਣਾਓ ਅਤੇ ਰਿਪੋਰਟ ਸੁਰੱਖਿਅਤ ਕਰੋ 'ਤੇ ਟੈਪ ਕਰੋ।",
+    "emptyAction": "✦ ਨਵੀਂ ਰਿਪੋਰਟ ਬਣਾਓ",
+    "noMatchesTitle": "ਕੋਈ ਮੇਲ ਨਹੀਂ ਮਿਲਿਆ",
+    "noMatchesMessage": "ਕੋਈ ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟ \"{{query}}\" ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ। ਵੱਖਰਾ ਸਿਰਲੇਖ, ਨਾਮ, ਜਾਂ ਲਗਨ ਅਜ਼ਮਾਓ।",
+    "clearSearch": "ਖੋਜ ਸਾਫ਼ ਕਰੋ",
+    "deleteDialog": {
+      "title": "ਇਹ ਰਿਪੋਰਟ ਮਿਟਾਓ?",
+      "message": "\"{{title}}\" ਸਥਾਈ ਤੌਰ 'ਤੇ ਹਟਾ ਦਿੱਤੀ ਜਾਵੇਗੀ। ਇਸਨੂੰ ਵਾਪਸ ਨਹੀਂ ਲਿਆ ਜਾ ਸਕਦਾ।",
+      "fallbackTitle": "ਇਹ ਰਿਪੋਰਟ",
+      "confirmLabel": "ਮਿਟਾਓ",
+      "cancelLabel": "ਰੱਦ ਕਰੋ"
+    }
+  },
+  "detail": {
+    "loadFailed": "ਉਹ ਰਿਪੋਰਟ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੀ।",
+    "backToSavedReports": "← ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟਾਂ 'ਤੇ ਵਾਪਸ ਜਾਓ",
+    "loading": "ਤੁਹਾਡੀ ਸੁਰੱਖਿਅਤ ਰੀਡਿੰਗ ਲੋਡ ਹੋ ਰਹੀ ਹੈ…",
+    "openHoroscope": "🔮 ਰਾਸ਼ੀਫਲ",
+    "openCalendar": "📅 ਕੈਲੰਡਰ",
+    "openLifeCoach": "🧭 ਲਾਈਫ ਕੋਚ",
+    "askAI": "✨ AI ਨੂੰ ਪੁੱਛੋ"
+  },
+  "card": {
+    "savedOn": "{{date}} ਨੂੰ ਸੁਰੱਖਿਅਤ ਕੀਤੀ",
+    "view": "ਵੇਖੋ",
+    "preview": "ਝਲਕ",
+    "download": "PDF",
+    "delete": "ਮਿਟਾਓ",
+    "deleting": "ਮਿਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ…",
+    "lagnaSuffix": "{{lagna}} ਲਗਨ",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "ਰਿਪੋਰਟ ਖਾਕਾ",
+    "gridView": "ਗਰਿੱਡ ਦ੍ਰਿਸ਼",
+    "listView": "ਸੂਚੀ ਦ੍ਰਿਸ਼",
+    "searchPlaceholder": "ਸਿਰਲੇਖ, ਨਾਮ, ਜਾਂ ਲਗਨ ਦੁਆਰਾ ਖੋਜੋ…",
+    "searchAriaLabel": "ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟਾਂ ਖੋਜੋ",
+    "sortAriaLabel": "ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟਾਂ ਕ੍ਰਮਬੱਧ ਕਰੋ",
+    "resultCountSingle": "{{count}} ਰਿਪੋਰਟ",
+    "resultCountPlural": "{{count}} ਰਿਪੋਰਟਾਂ",
+    "resultCountFiltered": "{{total}} ਵਿੱਚੋਂ {{count}}"
+  },
+  "sort": {
+    "newest": "ਸਭ ਤੋਂ ਨਵੀਂ ਪਹਿਲਾਂ",
+    "oldest": "ਸਭ ਤੋਂ ਪੁਰਾਣੀ ਪਹਿਲਾਂ",
+    "title-asc": "ਸਿਰਲੇਖ (A–Z)",
+    "title-desc": "ਸਿਰਲੇਖ (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} ਦੀ ਝਲਕ",
+    "closePreview": "ਝਲਕ ਬੰਦ ਕਰੋ",
+    "savedOn": "{{date}} ਨੂੰ ਸੁਰੱਖਿਅਤ ਕੀਤੀ",
+    "noDetails": "ਇਸ ਰਿਪੋਰਟ ਲਈ ਕੋਈ ਵਾਧੂ ਵੇਰਵੇ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਹਨ।",
+    "description": "ਇਹ ਤੁਹਾਡੀ ਸੁਰੱਖਿਅਤ ਰੀਡਿੰਗ ਦੇ ਵੇਰਵਿਆਂ ਦੀ ਇੱਕ ਤੇਜ਼ ਝਲਕ ਹੈ। ਹਰ ਭਾਗ ਪੜ੍ਹਨ ਲਈ ਪੂਰੀ ਰਿਪੋਰਟ ਖੋਲ੍ਹੋ — ਪਿਆਰ, ਕਰੀਅਰ, ਧਨ, ਸਿਹਤ, ਦੋਸ਼ ਅਤੇ ਯੋਗ, ਉਪਾਅ, ਅਤੇ ਤੁਹਾਡਾ ਜੀਵਨ ਸਾਰ।",
+    "viewFullReport": "✦ ਪੂਰੀ ਰਿਪੋਰਟ ਵੇਖੋ",
+    "preparingPdf": "PDF ਤਿਆਰ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…",
+    "downloadPdf": "⭳ PDF ਡਾਊਨਲੋਡ ਕਰੋ"
+  },
+  "summarizeAiAria": "AI ਨਾਲ ਇਸ ਰਿਪੋਰਟ ਦਾ ਸੰਖੇਪ ਲਓ",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy is not part of this chart's backend-derived remedies."
+}

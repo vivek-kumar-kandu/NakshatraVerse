@@ -1,0 +1,111 @@
+{
+  "header": {
+    "title": "آپ کا ڈیش بورڈ",
+    "welcomeBack": "واپسی پر خوش آمدید، {{name}} ✦",
+    "welcomeBackFallbackName": "مسافر",
+    "generateNewReport": "✦ نئی رپورٹ بنائیں"
+  },
+  "error": {
+    "loadFailed": "آپ کی محفوظ کردہ رپورٹس لوڈ نہیں ہو سکیں۔",
+    "tryAgain": "↻ دوبارہ کوشش کریں"
+  },
+  "userSummary": {
+    "authProviderGoogle": "Google کے ساتھ سائن ان کیا گیا",
+    "authProviderEmail": "ای میل اور پاس ورڈ",
+    "viewFullProfile": "مکمل پروفائل دیکھیں →"
+  },
+  "statistics": {
+    "sectionTitle": "اعداد و شمار",
+    "savedReports": "محفوظ کردہ رپورٹس",
+    "memberSince": "رکنیت کا آغاز",
+    "latestReading": "تازہ ترین ریڈنگ",
+    "currentTheme": "موجودہ تھیم",
+    "systemThemeLabel": "سسٹم ({{themeName}})",
+    "notAvailable": "—",
+    "loadingValue": "…"
+  },
+  "astrologySummary": {
+    "sectionTitle": "علمِ نجوم کا خلاصہ",
+    "cardTitle": "آپ کی تازہ ترین ریڈنگ سے",
+    "padaBadge": " · پاد {{pada}}",
+    "lordBadge": "مالک: {{lord}}",
+    "currentMahadasha": "موجودہ مہاداشا",
+    "currentAntardasha": "موجودہ انترداشا"
+  },
+  "quickActions": {
+    "sectionTitle": "فوری کارروائیاں",
+    "generateNewReport": {
+      "label": "نئی رپورٹ بنائیں",
+      "desc": "ایک نئی ویدک ریڈنگ شروع کریں"
+    },
+    "continueReading": {
+      "label": "ریڈنگ جاری رکھیں",
+      "desc": "اپنی آخری دیکھی گئی رپورٹ دوبارہ کھولیں"
+    },
+    "myProfile": {
+      "label": "میری پروفائل",
+      "desc": "اپنی پروفائل کی تفصیلات دیکھیں"
+    },
+    "savedReports": {
+      "label": "محفوظ کردہ رپورٹس",
+      "desc": "اپنا مکمل مجموعہ براؤز کریں"
+    },
+    "askAI": {
+      "label": "AI سے پوچھیں",
+      "desc": "اپنے علمِ نجوم کے معاون سے چیٹ کریں"
+    },
+    "aiLifeCoach": {
+      "label": "AI لائف کوچ",
+      "desc": "روزانہ، کیریئر، تعلقات، مالی اور صحت کی رہنمائی"
+    },
+    "kundliMatching": {
+      "label": "کنڈلی ملان",
+      "desc": "دو افراد کی ویدک موافقت چیک کریں"
+    },
+    "panchangMuhurat": {
+      "label": "پنچانگ اور مہورت",
+      "desc": "روزانہ پنچانگ اور نیک مہورت تلاش کنندہ"
+    },
+    "familyProfiles": {
+      "label": "خاندانی پروفائلز",
+      "desc": "اپنے خاندان کی ہر جنم کنڈلی کا انتظام کریں"
+    },
+    "relationshipHub": {
+      "label": "تعلقات مرکز",
+      "desc": "کسی بھی دو محفوظ کردہ پروفائلز کا موازنہ کریں"
+    },
+    "settings": {
+      "label": "ترتیبات",
+      "desc": "اپنا اکاؤنٹ منظم کریں"
+    }
+  },
+  "recentReports": {
+    "sectionTitle": "حالیہ رپورٹس",
+    "viewAll": "تمام دیکھیں →",
+    "emptyTitle": "ابھی تک کوئی ریڈنگ نہیں",
+    "emptyMessage": "یہاں دکھانے کے لیے اپنی پہلی ویدک ریڈنگ بنائیں۔",
+    "emptyAction": "✦ نئی رپورٹ بنائیں"
+  },
+  "aiLifeCoach": "AI لائف کوچ",
+  "todaysFocus": "آج کی توجہ:",
+  "personalizedInsights": "ذاتی بصیرت",
+  "yourPersonalizedGuidance": "✦ آپ کی ذاتی رہنمائی",
+  "insightPeriod": "بصیرت کا دورانیہ",
+  "whatsChanged": "کیا تبدیل ہوا ہے:",
+  "noUpcomingEvents": "کوئی آنے والے واقعات نہیں ہیں",
+  "loadingPanchang": "پنچانگ کا جائزہ لوڈ ہو رہا ہے…",
+  "bestTimeToday": "✨ آج کا بہترین وقت",
+  "recommendedActivities": "✓ تجویز کردہ سرگرمیاں",
+  "thingsToAvoid": "⚠ پرہیز کرنے کی باتیں",
+  "noReadingYet": "ابھی تک کوئی پڑھائی دستیاب نہیں ہے",
+  "astrologyCalendar": "📅 نجومی کیلنڈر",
+  "dashaUnavailable": "دشا دستیاب نہیں ہے",
+  "noUpcomingChanges": "کوئی آنے والی تبدیلیاں نہیں ہیں",
+  "noTransitData": "کوئی گوچر ڈیٹا نہیں ہے",
+  "auspicious": "✓ مبارک",
+  "caution": "⚠ ہوشیار",
+  "horoscopeDashboard": "🔮 زائچہ ڈیش بورڈ",
+  "noWeeklyFocus": "ہفتہ وار توجہ دستیاب نہیں ہے",
+  "noMonthlySegments": "اس مہینے میں کوئی ماہانہ حصے نہیں ہیں",
+  "dailyPanchangMuhurat": "🕉️ روزانہ پنچانگ اور مہورت"
+}

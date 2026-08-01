@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "past": "ભૂતકાળ",
+    "present": "વર્તમાન",
+    "nearFuture": "નજીકનું ભવિષ્ય",
+    "nextMonth": "આગામી મહિનો",
+    "next3Months": "આગામી 3 મહિના",
+    "next6Months": "આગામી 6 મહિના",
+    "nextYear": "આગામી વર્ષ"
+  },
+  "horizons": {
+    "oneYear": "આગામી 1 વર્ષ",
+    "fiveYear": "આગામી 5 વર્ષ",
+    "tenYear": "આગામી 10 વર્ષ"
+  },
+  "filterCategories": {
+    "career": "કારકિર્દી",
+    "finance": "નાણાં",
+    "love": "પ્રેમ",
+    "marriage": "લગ્ન",
+    "health": "આરોગ્ય",
+    "education": "શિક્ષણ",
+    "family": "કુટુંબ",
+    "spiritual": "આધ્યાત્મિક"
+  },
+  "tab": {
+    "buildingTimeline": "તમારી AI ટાઇમલાઇન બનાવી રહ્યા છીએ…",
+    "notAvailableTitle": "ટાઇમલાઇન હજુ ઉપલબ્ધ નથી",
+    "notAvailableMessage": "તમારો ચાર્ટ ગણતરી થયા પછી તમારી મહાદશા/અંતર્દશા ટાઇમલાઇન અહીં દેખાશે.",
+    "currentDashaHeading": "વર્તમાન દશા",
+    "mahadashaBadge": "મહાદશા: {{value}}",
+    "antardashaBadge": "અંતર્દશા: {{value}}",
+    "dominantBadge": "પ્રભાવી: {{planet}}",
+    "notAvailableValue": "—",
+    "filterByLifeAreaHeading": "જીવન ક્ષેત્ર પ્રમાણે ફિલ્ટર કરો",
+    "noEventsTitle": "આ ફિલ્ટર માટે કોઈ ઘટના નથી",
+    "noEventsMessage": "પસંદ કરેલા જીવન ક્ષેત્ર સાથે હજુ સુધી કોઈ AI ટાઇમલાઇન ઘટના મેળ ખાતી નથી. અલગ ફિલ્ટર અજમાવો અથવા બધા પસંદ કરો.",
+    "sectionEventsAriaLabel": "{{label}} ટાઇમલાઇન ઘટનાઓ"
+  },
+  "filters": {
+    "ariaLabel": "જીવન ક્ષેત્ર પ્રમાણે AI ટાઇમલાઇન ઘટનાઓ ફિલ્ટર કરો",
+    "all": "બધા"
+  },
+  "eventCard": {
+    "generalCategoryFallback": "સામાન્ય",
+    "upcomingPeriod": "આગામી સમયગાળો",
+    "dateRangeArrow": "{{start}} → {{end}}",
+    "entryAriaLabel": "{{start}} માટે AI ટાઇમલાઇન એન્ટ્રી. AI વડે સમજાવવા માટે પસંદ કરો.",
+    "entryAriaLabelWithEnd": "{{start}} થી {{end}} માટે AI ટાઇમલાઇન એન્ટ્રી. AI વડે સમજાવવા માટે પસંદ કરો.",
+    "mahadashaBadge": "મહાદશા: {{value}}",
+    "antardashaBadge": "અંતર્દશા: {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI સમજૂતી",
+    "eventLabelFallback": "જીવન-ક્ષેત્ર",
+    "prompt": "આ {{category}} ભવિષ્યવાણીની Gemini-સંચાલિત સમજૂતી મેળવો, જે સંપૂર્ણપણે આ ચાર્ટની પોતાની બેકએન્ડ-ગણતરી કરેલી હકીકતો પર આધારિત છે.",
+    "explainAriaLabel": "આ {{category}} ભવિષ્યવાણીને AI વડે સમજાવો",
+    "explainButton": "✨ AI વડે સમજાવો",
+    "generatingLabel": "આ {{category}} ભવિષ્યવાણી માટે AI સમજૂતી બનાવી રહ્યા છીએ",
+    "loadFailed": "AI ટાઇમલાઇન સમજૂતી હાલમાં ઉપલબ્ધ નથી.",
+    "tryAgain": "↻ ફરી પ્રયત્ન કરો"
+  },
+  "common": {
+    "nothingToShow": "હજુ સુધી બતાવવા માટે કંઈ નથી."
+  },
+  "legacyCard": {
+    "upcomingPeriod": "આગામી સમયગાળો",
+    "mahadashaBadge": "મહાદશા: {{value}}",
+    "antardashaBadge": "અંતર્દશા: {{value}}"
+  }
+}

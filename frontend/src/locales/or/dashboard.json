@@ -1,0 +1,111 @@
+{
+  "header": {
+    "title": "ଆପଣଙ୍କର ଡ୍ୟାସବୋର୍ଡ",
+    "welcomeBack": "ପୁନଃ ଆଗମନରେ ସ୍ୱାଗତ, {{name}} ✦",
+    "welcomeBackFallbackName": "ଯାତ୍ରୀ",
+    "generateNewReport": "✦ ନୂତନ ରିପୋର୍ଟ ତିଆରି କରନ୍ତୁ"
+  },
+  "error": {
+    "loadFailed": "ଆପଣଙ୍କର ସଞ୍ଚିତ ରିପୋର୍ଟଗୁଡ଼ିକ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "tryAgain": "↻ ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ"
+  },
+  "userSummary": {
+    "authProviderGoogle": "Google ସହିତ ସାଇନ୍ ଇନ୍ କରାଯାଇଛି",
+    "authProviderEmail": "ଇମେଲ୍ ଏବଂ ପାସୱାର୍ଡ",
+    "viewFullProfile": "ପୂର୍ଣ୍ଣ ପ୍ରୋଫାଇଲ୍ ଦେଖନ୍ତୁ →"
+  },
+  "statistics": {
+    "sectionTitle": "ପରିସଂଖ୍ୟାନ",
+    "savedReports": "ସଞ୍ଚିତ ରିପୋର୍ଟଗୁଡ଼ିକ",
+    "memberSince": "ସଦସ୍ୟତାର ଆରମ୍ଭ",
+    "latestReading": "ସର୍ବଶେଷ ରିଡିଂ",
+    "currentTheme": "ବର୍ତ୍ତମାନ ଥିମ୍",
+    "systemThemeLabel": "ସିଷ୍ଟମ୍ ({{themeName}})",
+    "notAvailable": "—",
+    "loadingValue": "…"
+  },
+  "astrologySummary": {
+    "sectionTitle": "ଜ୍ୟୋତିଷ ସାରାଂଶ",
+    "cardTitle": "ଆପଣଙ୍କର ସର୍ବଶେଷ ରିଡିଂରୁ",
+    "padaBadge": " · ପାଦ {{pada}}",
+    "lordBadge": "ସ୍ୱାମୀ: {{lord}}",
+    "currentMahadasha": "ବର୍ତ୍ତମାନ ମହାଦଶା",
+    "currentAntardasha": "ବର୍ତ୍ତମାନ ଅନ୍ତର୍ଦଶା"
+  },
+  "quickActions": {
+    "sectionTitle": "ଦ୍ରୁତ କାର୍ଯ୍ୟସମୂହ",
+    "generateNewReport": {
+      "label": "ନୂତନ ରିପୋର୍ଟ ତିଆରି କରନ୍ତୁ",
+      "desc": "ଏକ ନୂତନ ବୈଦିକ ରିଡିଂ ଆରମ୍ଭ କରନ୍ତୁ"
+    },
+    "continueReading": {
+      "label": "ରିଡିଂ ଜାରି ରଖନ୍ତୁ",
+      "desc": "ଆପଣ ଶେଷରେ ଦେଖିଥିବା ରିପୋର୍ଟ ପୁନଃ ଖୋଲନ୍ତୁ"
+    },
+    "myProfile": {
+      "label": "ମୋର ପ୍ରୋଫାଇଲ୍",
+      "desc": "ଆପଣଙ୍କର ପ୍ରୋଫାଇଲ୍ ବିବରଣୀ ଦେଖନ୍ତୁ"
+    },
+    "savedReports": {
+      "label": "ସଞ୍ଚିତ ରିପୋର୍ଟଗୁଡ଼ିକ",
+      "desc": "ଆପଣଙ୍କର ସମ୍ପୂର୍ଣ୍ଣ ସଂଗ୍ରହ ବ୍ରାଉଜ୍ କରନ୍ତୁ"
+    },
+    "askAI": {
+      "label": "AI କୁ ପଚାରନ୍ତୁ",
+      "desc": "ଆପଣଙ୍କର ଜ୍ୟୋତିଷ ସହାୟକ ସହିତ ଚାଟ୍ କରନ୍ତୁ"
+    },
+    "aiLifeCoach": {
+      "label": "AI ଲାଇଫ୍ କୋଚ୍",
+      "desc": "ଦୈନିକ, କ୍ୟାରିୟର, ସମ୍ପର୍କ, ଅର୍ଥ ଏବଂ ସ୍ୱାସ୍ଥ୍ୟ ମାର୍ଗଦର୍ଶନ"
+    },
+    "kundliMatching": {
+      "label": "କୁଣ୍ଡଳୀ ମିଳନ",
+      "desc": "ଦୁଇ ବ୍ୟକ୍ତିଙ୍କର ବୈଦିକ ଉପଯୁକ୍ତତା ଯାଞ୍ଚ କରନ୍ତୁ"
+    },
+    "panchangMuhurat": {
+      "label": "ପଞ୍ଚାଙ୍ଗ ଏବଂ ମୁହୂର୍ତ",
+      "desc": "ଦୈନିକ ପଞ୍ଚାଙ୍ଗ ଏବଂ ଶୁଭ ମୁହୂର୍ତ ଖୋଜାଳୀ"
+    },
+    "familyProfiles": {
+      "label": "ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍‌ଗୁଡ଼ିକ",
+      "desc": "ଆପଣଙ୍କର ପରିବାରର ପ୍ରତ୍ୟେକ ଜନ୍ମକୁଣ୍ଡଳୀ ପରିଚାଳନା କରନ୍ତୁ"
+    },
+    "relationshipHub": {
+      "label": "ସମ୍ପର୍କ କେନ୍ଦ୍ର",
+      "desc": "ଯେକୌଣସି ଦୁଇଟି ସଞ୍ଚିତ ପ୍ରୋଫାଇଲ୍ ତୁଳନା କରନ୍ତୁ"
+    },
+    "settings": {
+      "label": "ସେଟିଂସମୂହ",
+      "desc": "ଆପଣଙ୍କର ଖାତା ପରିଚାଳନା କରନ୍ତୁ"
+    }
+  },
+  "recentReports": {
+    "sectionTitle": "ସାମ୍ପ୍ରତିକ ରିପୋର୍ଟଗୁଡ଼ିକ",
+    "viewAll": "ସମସ୍ତ ଦେଖନ୍ତୁ →",
+    "emptyTitle": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ରିଡିଂ ନାହିଁ",
+    "emptyMessage": "ଏଠାରେ ଦେଖାଇବାକୁ ଆପଣଙ୍କର ପ୍ରଥମ ବୈଦିକ ରିଡିଂ ତିଆରି କରନ୍ତୁ।",
+    "emptyAction": "✦ ନୂତନ ରିପୋର୍ଟ ତିଆରି କରନ୍ତୁ"
+  },
+  "aiLifeCoach": "AI ଲାଇଫ୍ କୋଚ୍",
+  "todaysFocus": "ଆଜିର ଧ୍ୟାନ:",
+  "personalizedInsights": "ବ୍ୟକ୍ତିଗତ ଅନ୍ତର୍ଦୃଷ୍ଟି",
+  "yourPersonalizedGuidance": "✦ ଆପଣଙ୍କ ବ୍ୟକ୍ତିଗତ ମାର୍ଗଦର୍ଶନ",
+  "insightPeriod": "ଅନ୍ତର୍ଦୃଷ୍ଟି ସମୟ",
+  "whatsChanged": "କ’ଣ ବଦଳିଛି:",
+  "noUpcomingEvents": "କୌଣସି ଆଗାମୀ କାର୍ଯ୍ୟକ୍ରମ ନାହିଁ",
+  "loadingPanchang": "ପଞ୍ଚାଙ୍ଗ ସଂକ୍ଷିପ୍ତ ଲୋଡ୍ ହେଉଛି…",
+  "bestTimeToday": "✨ ଆଜିର ଶ୍ରେଷ୍ଠ ସମୟ",
+  "recommendedActivities": "✓ ସୁପାରିଶ କାର୍ଯ୍ୟକଳାପ",
+  "thingsToAvoid": "⚠ ବର୍ଜନୀୟ ବିଷୟ",
+  "noReadingYet": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ରିଡିଂ ଉପଲବ୍ଧ ନାହିଁ",
+  "astrologyCalendar": "📅 ଜ୍ୟୋତିଷ କ୍ୟାଲେଣ୍ଡର୍",
+  "dashaUnavailable": "ଦଶା ଉପଲବ୍ଧ ନାହିଁ",
+  "noUpcomingChanges": "କୌଣସି ଆଗାମୀ ପରିବର୍ତ୍ତନ ନାହିଁ",
+  "noTransitData": "କୌଣସି ଗୋଚର ତଥ୍ୟ ନାହିଁ",
+  "auspicious": "✓ ଶୁଭ",
+  "caution": "⚠ ସାବଧାନ",
+  "horoscopeDashboard": "🔮 ରାଶିଫଳ ଡ୍ୟାସବୋର୍ଡ",
+  "noWeeklyFocus": "ସାପ୍ତାହିକ ଧ୍ୟାନ ଉପଲବ୍ଧ ନାହିଁ",
+  "noMonthlySegments": "ଏହି ମାସରେ କୌଣସି ମାସିକ ବିଭାଗ ନାହିଁ",
+  "dailyPanchangMuhurat": "🕉️ ଦୈନିକ ପଞ୍ଚାଙ୍ଗ ଏବଂ ମୁହୂର୍ତ୍ତ"
+}

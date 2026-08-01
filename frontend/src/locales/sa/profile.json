@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← फलकं प्रति गच्छतु",
+    "title": "मम परिचयः",
+    "photoHint": "सम्पादनाय भवतः प्रतिच्छायायां स्पृशतु — आरोहयतु, परिवर्तयतु, अपाकरोतु वा।",
+    "authProviderGoogle": "Google द्वारा साइन् इन् कृतम्",
+    "authProviderEmail": "विपत्रं गुप्तशब्दः च",
+    "accountInformation": "खातासूचना",
+    "fullName": "पूर्णं नाम",
+    "email": "विपत्रम्",
+    "memberSince": "सदस्यत्वस्य आरम्भः",
+    "accountType": "खाताप्रकारः",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "गुप्तशब्दं परिवर्तयतु",
+    "editProfileInSettings": "विन्यासेषु परिचयं सम्पादयतु →",
+    "activitySummary": "परिचयकार्यसारः",
+    "totalReports": "सर्वाणि प्रतिवेदनानि",
+    "loadingValue": "…",
+    "lastGenerated": "अन्तिमवारं निर्मितम्",
+    "viewSavedReports": "सुरक्षितप्रतिवेदनानि पश्यतु →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "कृपया JPG, PNG, WEBP वा प्रतिच्छायां चिनुतु।",
+    "fileTooLarge": "सा प्रतिच्छाया अतीव बृहती अस्ति। कृपया 8MB तः न्यूनं परिमाणस्य सञ्चिकां चिनुतु।",
+    "processFailed": "सा प्रतिच्छाया संसाधयितुं न शक्ता।",
+    "photoUpdated": "परिचयप्रतिच्छाया अद्यतनिता।",
+    "saveFailed": "भवतः प्रतिच्छाया सुरक्षितुं न शक्ता।",
+    "photoRemoved": "परिचयप्रतिच्छाया अपाकृता।",
+    "removeFailed": "भवतः प्रतिच्छाया अपाकर्तुं न शक्ता।",
+    "changePhotoAriaLabel": "परिचयप्रतिच्छायां परिवर्तयतु",
+    "uploadPhotoAriaLabel": "परिचयप्रतिच्छायां आरोहयतु",
+    "menuAriaLabel": "परिचयप्रतिच्छायाविकल्पाः",
+    "replacePhoto": "प्रतिच्छायां प्रतिस्थापयतु",
+    "uploadPhoto": "प्रतिच्छायां आरोहयतु",
+    "removePhoto": "प्रतिच्छायां अपाकरोतु",
+    "previewDialogAriaLabel": "नूतनायाः परिचयप्रतिच्छायायाः पूर्वावलोकनम्",
+    "previewYourNewPhoto": "भवतः नूतनां प्रतिच्छायां पूर्वावलोकयतु",
+    "cancel": "रद्दं करोतु",
+    "save": "सुरक्षितं करोतु"
+  }
+}

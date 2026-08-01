@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← ਡੈਸ਼ਬੋਰਡ 'ਤੇ ਵਾਪਸ ਜਾਓ",
+    "title": "ਮੇਰੀ ਪ੍ਰੋਫਾਈਲ",
+    "photoHint": "ਸੰਪਾਦਿਤ ਕਰਨ ਲਈ ਆਪਣੀ ਫੋਟੋ 'ਤੇ ਕਲਿੱਕ ਕਰੋ — ਅੱਪਲੋਡ ਕਰੋ, ਬਦਲੋ, ਜਾਂ ਹਟਾਓ।",
+    "authProviderGoogle": "Google ਨਾਲ ਸਾਈਨ ਇਨ ਕੀਤਾ",
+    "authProviderEmail": "ਈਮੇਲ ਅਤੇ ਪਾਸਵਰਡ",
+    "accountInformation": "ਖਾਤਾ ਜਾਣਕਾਰੀ",
+    "fullName": "ਪੂਰਾ ਨਾਮ",
+    "email": "ਈਮੇਲ",
+    "memberSince": "ਮੈਂਬਰਸ਼ਿਪ ਦੀ ਸ਼ੁਰੂਆਤ",
+    "accountType": "ਖਾਤੇ ਦੀ ਕਿਸਮ",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "ਪਾਸਵਰਡ ਬਦਲੋ",
+    "editProfileInSettings": "ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਪ੍ਰੋਫਾਈਲ ਸੰਪਾਦਿਤ ਕਰੋ →",
+    "activitySummary": "ਪ੍ਰੋਫਾਈਲ ਗਤੀਵਿਧੀ ਸਾਰ",
+    "totalReports": "ਕੁੱਲ ਰਿਪੋਰਟਾਂ",
+    "loadingValue": "…",
+    "lastGenerated": "ਆਖਰੀ ਵਾਰ ਬਣਾਈ",
+    "viewSavedReports": "ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟਾਂ ਵੇਖੋ →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ JPG, PNG, ਜਾਂ WEBP ਤਸਵੀਰ ਚੁਣੋ।",
+    "fileTooLarge": "ਉਹ ਤਸਵੀਰ ਬਹੁਤ ਵੱਡੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ 8MB ਤੋਂ ਘੱਟ ਆਕਾਰ ਦੀ ਫਾਈਲ ਚੁਣੋ।",
+    "processFailed": "ਉਹ ਤਸਵੀਰ ਪ੍ਰੋਸੈਸ ਨਹੀਂ ਹੋ ਸਕੀ।",
+    "photoUpdated": "ਪ੍ਰੋਫਾਈਲ ਫੋਟੋ ਅੱਪਡੇਟ ਹੋਈ।",
+    "saveFailed": "ਤੁਹਾਡੀ ਫੋਟੋ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਹੋ ਸਕੀ।",
+    "photoRemoved": "ਪ੍ਰੋਫਾਈਲ ਫੋਟੋ ਹਟਾਈ ਗਈ।",
+    "removeFailed": "ਤੁਹਾਡੀ ਫੋਟੋ ਹਟਾਈ ਨਹੀਂ ਜਾ ਸਕੀ।",
+    "changePhotoAriaLabel": "ਪ੍ਰੋਫਾਈਲ ਫੋਟੋ ਬਦਲੋ",
+    "uploadPhotoAriaLabel": "ਪ੍ਰੋਫਾਈਲ ਫੋਟੋ ਅੱਪਲੋਡ ਕਰੋ",
+    "menuAriaLabel": "ਪ੍ਰੋਫਾਈਲ ਫੋਟੋ ਵਿਕਲਪ",
+    "replacePhoto": "ਫੋਟੋ ਬਦਲੋ",
+    "uploadPhoto": "ਫੋਟੋ ਅੱਪਲੋਡ ਕਰੋ",
+    "removePhoto": "ਫੋਟੋ ਹਟਾਓ",
+    "previewDialogAriaLabel": "ਨਵੀਂ ਪ੍ਰੋਫਾਈਲ ਫੋਟੋ ਦੀ ਝਲਕ",
+    "previewYourNewPhoto": "ਆਪਣੀ ਨਵੀਂ ਫੋਟੋ ਦੀ ਝਲਕ ਵੇਖੋ",
+    "cancel": "ਰੱਦ ਕਰੋ",
+    "save": "ਸੁਰੱਖਿਅਤ ਕਰੋ"
+  }
+}

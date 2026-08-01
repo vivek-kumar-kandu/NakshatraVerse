@@ -1,0 +1,162 @@
+{
+  "relationships": {
+    "father": "ପିତା",
+    "mother": "ମାତା",
+    "husband": "ସ୍ୱାମୀ",
+    "wife": "ପତ୍ନୀ",
+    "son": "ପୁଅ",
+    "daughter": "ଝିଅ",
+    "brother": "ଭାଇ",
+    "sister": "ଭଉଣୀ",
+    "friend": "ବନ୍ଧୁ",
+    "client": "ଗ୍ରାହକ",
+    "custom": "କଷ୍ଟମ୍"
+  },
+  "sort": {
+    "recent": "ସାମ୍ପ୍ରତିକ ଅଦ୍ୟତନ",
+    "name": "ନାମ (A–Z)",
+    "relationship": "ସମ୍ପର୍କ",
+    "dob": "ଜନ୍ମ ତାରିଖ"
+  },
+  "profilesPage": {
+    "backToDashboard": "← ଡ୍ୟାସବୋର୍ଡକୁ ଫେରନ୍ତୁ",
+    "title": "ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍‌ଗୁଡ଼ିକ",
+    "subtitle": "ଆପଣଙ୍କର ପରିବାରର ପ୍ରତ୍ୟେକ ଜନ୍ମକୁଣ୍ଡଳୀ ଏକ ସ୍ଥାନରେ ପରିଚାଳନା କରନ୍ତୁ।",
+    "relationshipHub": "💞 ସମ୍ପର୍କ କେନ୍ଦ୍ର",
+    "addProfile": "+ ପ୍ରୋଫାଇଲ୍ ଯୋଡନ୍ତୁ",
+    "loadFailed": "ଆପଣଙ୍କର ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍‌ଗୁଡ଼ିକ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "recentlyOpened": "🕑 ସାମ୍ପ୍ରତିକ ଖୋଲାଯାଇଥିବା",
+    "searchPlaceholder": "ନାମ, ସମ୍ପର୍କ, କିମ୍ବା ସ୍ଥାନ ଦ୍ୱାରା ସନ୍ଧାନ କରନ୍ତୁ…",
+    "searchAriaLabel": "ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍‌ଗୁଡ଼ିକ ସନ୍ଧାନ କରନ୍ତୁ",
+    "filterAriaLabel": "ସମ୍ପର୍କ ଆଧାରରେ ଫିଲ୍ଟର କରନ୍ତୁ",
+    "sortAriaLabel": "ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍‌ଗୁଡ଼ିକ ସଜାନ୍ତୁ",
+    "allRelationships": "ସମସ୍ତ ସମ୍ପର୍କ",
+    "showArchived": "ଆର୍କାଇଭ୍ ହୋଇଥିବା ଦେଖାନ୍ତୁ",
+    "emptyTitle": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ପ୍ରୋଫାଇଲ୍ ନାହିଁ",
+    "emptyMessageFiltered": "କୌଣସି ପ୍ରୋଫାଇଲ୍ ଆପଣଙ୍କର ସନ୍ଧାନ/ଫିଲ୍ଟର ସହିତ ମେଳ ଖାଏ ନାହିଁ।",
+    "emptyMessageDefault": "ଆପଣଙ୍କର ସମ୍ପର୍କ କେନ୍ଦ୍ର ତିଆରି କରିବା ଆରମ୍ଭ କରିବାକୁ ଆପଣଙ୍କର ପ୍ରଥମ ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍ ଯୋଡନ୍ତୁ।",
+    "toasts": {
+      "updated": "{{name}} ର ପ୍ରୋଫାଇଲ୍ ଅଦ୍ୟତନ ହୋଇଛି।",
+      "added": "{{name}} ଙ୍କୁ ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍‌ରେ ଯୋଡାଯାଇଛି।",
+      "saveFailed": "ଏହି ପ୍ରୋଫାଇଲ୍ ସଞ୍ଚୟ ହୋଇପାରିଲା ନାହିଁ।",
+      "duplicated": "{{name}} ର ପ୍ରତିଲିପି ତିଆରି ହୋଇଛି।",
+      "duplicateFailed": "ଏହି ପ୍ରୋଫାଇଲ୍ ନକଲ ହୋଇପାରିଲା ନାହିଁ।",
+      "archived": "{{name}} ଆର୍କାଇଭ୍ ହୋଇଛି।",
+      "archiveFailed": "ଏହି ପ୍ରୋଫାଇଲ୍ ଆର୍କାଇଭ୍ ହୋଇପାରିଲା ନାହିଁ।",
+      "restored": "{{name}} ପୁନଃସ୍ଥାପିତ ହୋଇଛି।",
+      "restoreFailed": "ଏହି ପ୍ରୋଫାଇଲ୍ ପୁନଃସ୍ଥାପିତ ହୋଇପାରିଲା ନାହିଁ।",
+      "deleted": "{{name}} ବିଲୋପ ହୋଇଛି।",
+      "deleteFailed": "ଏହି ପ୍ରୋଫାଇଲ୍ ବିଲୋପ ହୋଇପାରିଲା ନାହିଁ।"
+    },
+    "deleteDialog": {
+      "title": "ଏହି ପ୍ରୋଫାଇଲ୍ ବିଲୋପ କରିବେ କି?",
+      "message": "\"{{name}}\" ଏବଂ ତାହା ସହିତ ସମ୍ବନ୍ଧିତ କୌଣସି ସମ୍ପର୍କ ତୁଳନା ଆଉ ପ୍ରବେଶଯୋଗ୍ୟ ରହିବ ନାହିଁ। ଏହା ପୂର୍ବାବସ୍ଥାକୁ ଫେରାଇ ହେବ ନାହିଁ।",
+      "confirmLabel": "ବିଲୋପ କରନ୍ତୁ"
+    }
+  },
+  "profileCard": {
+    "openedOn": "{{date}} ରେ ଖୋଲାଗଲା",
+    "addedOn": "{{date}} ରେ ଯୋଡାଗଲା",
+    "archived": "ଆର୍କାଇଭ୍ ହୋଇଛି",
+    "open": "✦ ଖୋଲନ୍ତୁ",
+    "compare": "💞 ତୁଳନା କରନ୍ତୁ",
+    "edit": "✎ ସମ୍ପାଦନା କରନ୍ତୁ",
+    "duplicate": "⧉ ନକଲ କରନ୍ତୁ",
+    "archiveAction": "🗄 ଆର୍କାଇଭ୍ କରନ୍ତୁ",
+    "restore": "↺ ପୁନଃସ୍ଥାପନ କରନ୍ତୁ",
+    "delete": "✕ ବିଲୋପ କରନ୍ତୁ",
+    "notAvailable": "—"
+  },
+  "formDialog": {
+    "editTitle": "ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍ ସମ୍ପାଦନା କରନ୍ତୁ",
+    "addTitle": "ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍ ଯୋଡନ୍ତୁ",
+    "relationshipLabel": "ସମ୍ପର୍କ",
+    "customRelationshipLabel": "କଷ୍ଟମ୍ ସମ୍ପର୍କ ଲେବଲ୍",
+    "customRelationshipPlaceholder": "ଯଥା ମେଣ୍ଟର, ସମ୍ପର୍କୀୟ, ବ୍ୟବସାୟ ଭାଗିଦାର",
+    "custom": "କଷ୍ଟମ୍",
+    "genderLabel": "ଲିଙ୍ଗ",
+    "genderMale": "♂ ପୁରୁଷ",
+    "genderFemale": "♀ ମହିଳା",
+    "genderOther": "⚧ ଅନ୍ୟ",
+    "fields": {
+      "name": "ପୂର୍ଣ୍ଣ ନାମ",
+      "namePlaceholder": "ଯଥା ଅର୍ଜୁନ ଶର୍ମା",
+      "dob": "ଜନ୍ମ ତାରିଖ",
+      "tob": "ଜନ୍ମ ସମୟ",
+      "pob": "ଜନ୍ମ ସ୍ଥାନ",
+      "pobPlaceholder": "ଯଥା ମୁମ୍ବାଇ, ଭାରତ"
+    },
+    "errors": {
+      "nameRequired": "ନାମ ଆବଶ୍ୟକ",
+      "relationshipRequired": "ଏକ ସମ୍ପର୍କ ବାଛନ୍ତୁ",
+      "customRelationshipRequired": "ଏକ କଷ୍ଟମ୍ ସମ୍ପର୍କ ଲେବଲ୍ ପ୍ରବେଶ କରନ୍ତୁ",
+      "dobRequired": "ଜନ୍ମ ତାରିଖ ଆବଶ୍ୟକ",
+      "tobRequired": "ଜନ୍ମ ସମୟ ଆବଶ୍ୟକ",
+      "pobRequired": "ଜନ୍ମ ସ୍ଥାନ ଆବଶ୍ୟକ",
+      "genderRequired": "ଏକ ଲିଙ୍ଗ ବାଛନ୍ତୁ"
+    },
+    "cancel": "ବାତିଲ୍ କରନ୍ତୁ",
+    "saving": "ସଞ୍ଚୟ କରାଯାଉଛି…",
+    "saveChanges": "ପରିବର୍ତ୍ତନଗୁଡ଼ିକ ସଞ୍ଚୟ କରନ୍ତୁ",
+    "addProfile": "ପ୍ରୋଫାଇଲ୍ ଯୋଡନ୍ତୁ"
+  },
+  "widget": {
+    "title": "👨‍👩‍👧‍👦 ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍‌ଗୁଡ଼ିକ",
+    "countSingle": "{{count}} ପ୍ରୋଫାଇଲ୍",
+    "countPlural": "{{count}} ପ୍ରୋଫାଇଲ୍‌ଗୁଡ଼ିକ",
+    "loadFailed": "ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍‌ଗୁଡ଼ିକ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "emptyMessage": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ପ୍ରୋଫାଇଲ୍ ନାହିଁ — ଚାର୍ଟ ତୁଳନା ଆରମ୍ଭ କରିବାକୁ ପରିବାର, ବନ୍ଧୁ, କିମ୍ବା ଗ୍ରାହକ ଯୋଡନ୍ତୁ।",
+    "addProfile": "+ ପ୍ରୋଫାଇଲ୍ ଯୋଡନ୍ତୁ",
+    "relationshipHub": "💞 ସମ୍ପର୍କ କେନ୍ଦ୍ର",
+    "viewAll": "ସମସ୍ତ ପ୍ରୋଫାଇଲ୍ ଦେଖନ୍ତୁ →"
+  },
+  "relationshipHub": {
+    "back": "← ପଛକୁ",
+    "title": "ସମ୍ପର୍କ କେନ୍ଦ୍ର",
+    "subtitle": "ଯେକୌଣସି ଦୁଇଟି ସଞ୍ଚିତ ପ୍ରୋଫାଇଲ୍ ତୁଳନା କରନ୍ତୁ — କୁଣ୍ଡଳୀ ମିଳନ, ଚାର୍ଟ, ଶକ୍ତି, ଦୋଷ, ନକ୍ଷତ୍ର, ଏବଂ ଭବିଷ୍ୟବାଣୀ।",
+    "loadingProfiles": "ଆପଣଙ୍କର ପ୍ରୋଫାଇଲ୍‌ଗୁଡ଼ିକ ଲୋଡ୍ ହେଉଛି…",
+    "needTwoTitle": "ଅତିକମରେ ଦୁଇଟି ପ୍ରୋଫାଇଲ୍ ଯୋଡନ୍ତୁ",
+    "needTwoMessage": "ସମ୍ପର୍କ କେନ୍ଦ୍ର ବ୍ୟବହାର କରିବାକୁ ଆପଣଙ୍କୁ ଦୁଇଟି ସଞ୍ଚିତ ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍ ଆବଶ୍ୟକ।",
+    "profileALabel": "ପ୍ରୋଫାଇଲ୍ A",
+    "profileBLabel": "ପ୍ରୋଫାଇଲ୍ B",
+    "chooseProfile": "ଏକ ପ୍ରୋଫାଇଲ୍ ବାଛନ୍ତୁ…",
+    "compareFailed": "ଏହି ଦୁଇଟି ପ୍ରୋଫାଇଲ୍‌ର ତୁଳନା ହୋଇପାରିଲା ନାହିଁ।",
+    "comparing": "ତୁଳନା କରାଯାଉଛି…",
+    "compare": "✦ ତୁଳନା କରନ୍ତୁ",
+    "tabs": {
+      "kundli": "କୁଣ୍ଡଳୀ ମିଳନ",
+      "chart": "ଜନ୍ମ ଚାର୍ଟ",
+      "strength": "ଗ୍ରହ ଶକ୍ତି",
+      "dosha": "ଦୋଷ",
+      "nakshatra": "ନକ୍ଷତ୍ର",
+      "prediction": "ଭବିଷ୍ୟବାଣୀ"
+    },
+    "manglikStatusLabel": "{{name}} ର ମାଙ୍ଗଳିକ ସ୍ଥିତି",
+    "manglikPositive": "ମାଙ୍ଗଳିକ ({{severity}})",
+    "manglikNegative": "ମାଙ୍ଗଳିକ ନୁହେଁ",
+    "notAvailable": "—",
+    "chart": {
+      "lagna": "ଲଗ୍ନ",
+      "moonSign": "ଚନ୍ଦ୍ର ରାଶି",
+      "sunSign": "ସୂର୍ଯ୍ୟ ରାଶି",
+      "nakshatra": "ନକ୍ଷତ୍ର",
+      "yogas": "ଯୋଗ",
+      "doshas": "ଦୋଷ"
+    },
+    "strength": {
+      "strongestPlanet": "ସର୍ବାଧିକ ଶକ୍ତିଶାଳୀ ଗ୍ରହ",
+      "weakestPlanet": "ସର୍ବାଧିକ ଦୁର୍ବଳ ଗ୍ରହ"
+    },
+    "doshaComparisonTitle": "ଦୋଷ ତୁଳନା",
+    "nakshatraFields": {
+      "padaBadge": " · ପାଦ {{pada}}",
+      "lordBadge": "ସ୍ୱାମୀ: {{lord}}",
+      "nature": "ସ୍ୱଭାବ",
+      "gana": "ଗଣ",
+      "nadi": "ନାଡ଼ୀ",
+      "sameNakshatra": "ସମାନ ନକ୍ଷତ୍ର?",
+      "yes": "ହଁ",
+      "no": "ନାହିଁ"
+    }
+  }
+}

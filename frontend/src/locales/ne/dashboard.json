@@ -1,0 +1,111 @@
+{
+  "header": {
+    "title": "तपाईंको ड्यासबोर्ड",
+    "welcomeBack": "फर्केर आउनुभएकोमा स्वागत छ, {{name}} ✦",
+    "welcomeBackFallbackName": "यात्री",
+    "generateNewReport": "✦ नयाँ प्रतिवेदन बनाउनुहोस्"
+  },
+  "error": {
+    "loadFailed": "तपाईंका सुरक्षित प्रतिवेदनहरू लोड हुन सकेनन्।",
+    "tryAgain": "↻ फेरि प्रयास गर्नुहोस्"
+  },
+  "userSummary": {
+    "authProviderGoogle": "Google बाट साइन इन गरिएको",
+    "authProviderEmail": "इमेल र पासवर्ड",
+    "viewFullProfile": "पूर्ण प्रोफाइल हेर्नुहोस् →"
+  },
+  "statistics": {
+    "sectionTitle": "तथ्याङ्क",
+    "savedReports": "सुरक्षित प्रतिवेदनहरू",
+    "memberSince": "सदस्यताको सुरुवात",
+    "latestReading": "नवीनतम रिडिङ",
+    "currentTheme": "हालको थिम",
+    "systemThemeLabel": "सिस्टम ({{themeName}})",
+    "notAvailable": "—",
+    "loadingValue": "…"
+  },
+  "astrologySummary": {
+    "sectionTitle": "ज्योतिष सारांश",
+    "cardTitle": "तपाईंको नवीनतम रिडिङबाट",
+    "padaBadge": " · पद {{pada}}",
+    "lordBadge": "स्वामी: {{lord}}",
+    "currentMahadasha": "हालको महादशा",
+    "currentAntardasha": "हालको अन्तर्दशा"
+  },
+  "quickActions": {
+    "sectionTitle": "छिटो कार्यहरू",
+    "generateNewReport": {
+      "label": "नयाँ प्रतिवेदन बनाउनुहोस्",
+      "desc": "एउटा नयाँ वैदिक रिडिङ सुरु गर्नुहोस्"
+    },
+    "continueReading": {
+      "label": "रिडिङ जारी राख्नुहोस्",
+      "desc": "तपाईंले अन्तिम पटक हेर्नुभएको प्रतिवेदन फेरि खोल्नुहोस्"
+    },
+    "myProfile": {
+      "label": "मेरो प्रोफाइल",
+      "desc": "तपाईंको प्रोफाइलको विवरण हेर्नुहोस्"
+    },
+    "savedReports": {
+      "label": "सुरक्षित प्रतिवेदनहरू",
+      "desc": "तपाईंको सम्पूर्ण संग्रह ब्राउज गर्नुहोस्"
+    },
+    "askAI": {
+      "label": "AI लाई सोध्नुहोस्",
+      "desc": "तपाईंको ज्योतिष सहायकसँग कुराकानी गर्नुहोस्"
+    },
+    "aiLifeCoach": {
+      "label": "AI लाइफ कोच",
+      "desc": "दैनिक, करियर, सम्बन्ध, वित्त र स्वास्थ्य मार्गदर्शन"
+    },
+    "kundliMatching": {
+      "label": "कुण्डली मिलान",
+      "desc": "दुई व्यक्तिको वैदिक अनुकूलता जाँच गर्नुहोस्"
+    },
+    "panchangMuhurat": {
+      "label": "पञ्चाङ्ग र मुहूर्त",
+      "desc": "दैनिक पञ्चाङ्ग र शुभ मुहूर्त खोजकर्ता"
+    },
+    "familyProfiles": {
+      "label": "पारिवारिक प्रोफाइल",
+      "desc": "तपाईंको परिवारको हरेक जन्मकुण्डली व्यवस्थापन गर्नुहोस्"
+    },
+    "relationshipHub": {
+      "label": "रिलेशनसिप हब",
+      "desc": "कुनै पनि दुई सुरक्षित प्रोफाइलको तुलना गर्नुहोस्"
+    },
+    "settings": {
+      "label": "सेटिङहरू",
+      "desc": "तपाईंको खाता व्यवस्थापन गर्नुहोस्"
+    }
+  },
+  "recentReports": {
+    "sectionTitle": "हालैका प्रतिवेदनहरू",
+    "viewAll": "सबै हेर्नुहोस् →",
+    "emptyTitle": "अहिलेसम्म कुनै रिडिङ छैन",
+    "emptyMessage": "यहाँ देखाउनको लागि तपाईंको पहिलो वैदिक रिडिङ बनाउनुहोस्।",
+    "emptyAction": "✦ नयाँ प्रतिवेदन बनाउनुहोस्"
+  },
+  "aiLifeCoach": "AI लाइफ कोच",
+  "todaysFocus": "आजको ध्यान:",
+  "personalizedInsights": "व्यक्तिगत अन्तर्दृष्टि",
+  "yourPersonalizedGuidance": "✦ तपाईंको व्यक्तिगत मार्गदर्शन",
+  "insightPeriod": "अन्तर्दृष्टि अवधि",
+  "whatsChanged": "के परिवर्तन भयो:",
+  "noUpcomingEvents": "कुनै आगामी कार्यक्रम छैन",
+  "loadingPanchang": "पञ्चाङ्ग अवलोकन लोड हुँदैछ…",
+  "bestTimeToday": "✨ आजको उत्तम समय",
+  "recommendedActivities": "✓ सिफारिस गरिएका गतिविधिहरू",
+  "thingsToAvoid": "⚠ नगर्नुपर्ने कुराहरू",
+  "noReadingYet": "अहिलेसम्म कुनै पठन उपलब्ध छैन",
+  "astrologyCalendar": "📅 ज्योतिष क्यालेन्डर",
+  "dashaUnavailable": "दशा उपलब्ध छैन",
+  "noUpcomingChanges": "कुनै आगामी परिवर्तन छैन",
+  "noTransitData": "कुनै गोचर डेटा छैन",
+  "auspicious": "✓ शुभ",
+  "caution": "⚠ सावधानी",
+  "horoscopeDashboard": "🔮 राशिफल ड्यासबोर्ड",
+  "noWeeklyFocus": "साप्ताहिक ध्यान उपलब्ध छैन",
+  "noMonthlySegments": "यस महिना कुनै मासिक खण्डहरू छैनन्",
+  "dailyPanchangMuhurat": "🕉️ दैनिक पञ्चाङ्ग र मुहूर्त"
+}

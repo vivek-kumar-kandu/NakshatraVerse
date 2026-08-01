@@ -1,0 +1,16 @@
+{
+  "notFound": "मार्गः न लब्धः {{method}} {{path}}",
+  "malformedJson": "अनुरोध-काये अशुद्धम् JSON।",
+  "bodyTooLarge": "अनुरोध-कायः अतिविशालः।",
+  "internalError": "आन्तरिक-सेवादाता-दोषः।",
+  "internalErrorProduction": "आन्तरिक-सेवादाता-दोषः। कृपया पुनः प्रयतताम्।",
+  "invalidRequest": "असिद्धः अनुरोधः: {{errors}}",
+  "serviceUnavailable": "{{feature}} अधुना न लभ्यते।",
+  "invalidProfile": "असिद्धः परिचयः: {{errors}}",
+  "chooseTwoDifferentProfiles": "तुलनार्थं द्वे भिन्ने परिचयौ चिनोतु।",
+  "comparisonError": "एतयोः परिचययोः तुलनासमये आन्तरिक-दोषः।",
+  "internalErrorWhile": "{{action}} कुर्वन् आन्तरिक-दोषः।",
+  "occurrenceNotFound": "वर्षस्य {{year}} कृते \"{{key}}\" न लब्धम्।",
+  "missingApiKey": "सेवादात्रे API-कुञ्जिका नास्ति।",
+  "tooManyRequests": "अत्यधिक-अनुरोधः। कृपया शनैः प्रयतताम्।"
+}

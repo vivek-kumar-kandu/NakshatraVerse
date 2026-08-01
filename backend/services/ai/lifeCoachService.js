@@ -29,7 +29,11 @@ function todayDateStr() {
 // backend facts they were built from — same "return the AI text plus the
 // facts it was grounded in" shape /api/panchang/explain and
 // /api/assistant/chat already use.
+<<<<<<< HEAD
 export async function generateDailyGuidance({ chart, report, date, lat, lon }) {
+=======
+export async function generateDailyGuidance({ chart, report, date, lat, lon, language }) {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   let insights = null;
   try {
     insights = buildStructuredInsights(chart);
@@ -86,6 +90,10 @@ export async function generateDailyGuidance({ chart, report, date, lat, lon }) {
     chart, report, insights, panchang, date: resolvedDate,
     weekly, monthly, luckyElements,
     spiritualPracticeActivity: spiritualPracticeSelection?.activity,
+<<<<<<< HEAD
+=======
+    language,
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   });
   const guidance = await callGemini(prompt);
 

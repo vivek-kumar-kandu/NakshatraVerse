@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "career": "Career",
+    "relationship": "Relationship",
+    "finance": "Finance",
+    "health": "Health",
+    "growth": "Growth"
+  },
+  "page": {
+    "back": "← Back",
+    "title": "🧭 AI Life Coach",
+    "dailyCompanion": "{{name}}'s daily companion",
+    "updated": "Updated {{time}}",
+    "refreshing": "Refreshing…",
+    "refreshGuidance": "↻ Refresh Guidance",
+    "tryAgain": "Try Again",
+    "loadingAriaLabel": "Loading your AI Life Coach guidance",
+    "loadFailed": "Could not load your AI Life Coach guidance.",
+    "refreshFailed": "Could not refresh your AI Life Coach guidance.",
+    "noReadingTitle": "No reading available yet",
+    "noReadingMessage": "Generate or open a report first to see your personalized AI Life Coach.",
+    "backAction": "← Back"
+  },
+  "daily": {
+    "opportunities": "Opportunities",
+    "challenges": "Challenges",
+    "recommendedActions": "Recommended Actions",
+    "thingsToAvoid": "Things to Avoid",
+    "spiritualGuidance": "🕉️ Spiritual Guidance"
+  },
+  "outlook": {
+    "weeklyThemeTitle": "This Week's Theme",
+    "weeklyEnergyLabel": "Weekly Energy",
+    "monthlyThemeTitle": "This Month's Theme",
+    "monthlyEnergyLabel": "Monthly Energy",
+    "weeklyUnavailableTitle": "Weekly Outlook unavailable",
+    "weeklyUnavailableMessage": "We couldn't compute this week's outlook right now — try refreshing.",
+    "monthlyUnavailableTitle": "Monthly Outlook unavailable",
+    "monthlyUnavailableMessage": "We couldn't compute this month's outlook right now — try refreshing.",
+    "weeklyFocus": "Weekly Focus",
+    "personalGrowthGoal": "Personal Growth Goal",
+    "careerFocus": "Career Focus",
+    "relationshipFocus": "Relationship Focus",
+    "opportunities": "Opportunities",
+    "challenges": "Challenges",
+    "bestDay": "Best Day: {{weekday}} ({{date}})",
+    "cautionDay": "Caution Day: {{weekday}} ({{date}})"
+  },
+  "career": {
+    "cardTitle": "Career Coach",
+    "progress": "Career Progress",
+    "skillDevelopmentAdvice": "Skill Development Advice",
+    "promotionGuidance": "Promotion Guidance",
+    "businessSuggestions": "Business Suggestions",
+    "bestTimeForDecisions": "Best Time for Important Decisions"
+  },
+  "relationship": {
+    "cardTitle": "Relationship Coach",
+    "guidance": "Relationship Guidance",
+    "marriageAdvice": "Marriage Advice",
+    "familyHarmonyTips": "Family Harmony Tips",
+    "communicationSuggestions": "Communication Suggestions",
+    "emotionalWellbeing": "Emotional Wellbeing"
+  },
+  "finance": {
+    "cardTitle": "Finance Coach",
+    "outlook": "Financial Outlook",
+    "spendingSuggestions": "Spending Suggestions",
+    "savingAdvice": "Saving Advice",
+    "investmentAwareness": "Investment Awareness",
+    "businessOpportunities": "Business Opportunities"
+  },
+  "health": {
+    "cardTitle": "Health & Wellness",
+    "energyTrends": "Energy Trends",
+    "stressAwareness": "Stress Awareness",
+    "meditationSuggestions": "Meditation Suggestions",
+    "yogaRecommendations": "Yoga Recommendations",
+    "spiritualPractices": "Spiritual Practices",
+    "lifestyleSuggestions": "Lifestyle Suggestions"
+  },
+  "growth": {
+    "dailyGoals": "Daily Goals",
+    "weeklyGoals": "Weekly Goals",
+    "monthlyFocus": "🌕 Monthly Focus",
+    "habitSuggestions": "Habit Suggestions",
+    "learningRecommendations": "Learning Recommendations"
+  },
+  "scoreCard": {
+    "dailyEnergyLabel": "Daily Energy",
+    "todaysFocus": "Today's Focus"
+  },
+  "confidenceBadge": {
+    "withScore": "Confidence: {{label}} ({{score}}/100)",
+    "withoutScore": "Confidence: {{label}}"
+  },
+  "whyNote": {
+    "prefix": "Why? "
+  },
+  "luckyElements": {
+    "title": "🍀 Lucky Elements Today",
+    "color": "Color",
+    "number": "Number",
+    "direction": "Direction",
+    "favorableTime": "Favorable Time"
+  },
+  "affirmation": {
+    "dailyAffirmation": "✦ Daily Affirmation",
+    "spiritualPractice": "🕉️ Today's Spiritual Practice"
+  }
+}

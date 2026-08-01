@@ -1,0 +1,111 @@
+{
+  "header": {
+    "title": "നിങ്ങളുടെ ഡാഷ്ബോർഡ്",
+    "welcomeBack": "തിരികെ വരവിന് സ്വാഗതം, {{name}} ✦",
+    "welcomeBackFallbackName": "യാത്രികൻ",
+    "generateNewReport": "✦ പുതിയ റിപ്പോർട്ട് സൃഷ്ടിക്കുക"
+  },
+  "error": {
+    "loadFailed": "നിങ്ങളുടെ സംരക്ഷിച്ച റിപ്പോർട്ടുകൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "tryAgain": "↻ വീണ്ടും ശ്രമിക്കുക"
+  },
+  "userSummary": {
+    "authProviderGoogle": "Google ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്തു",
+    "authProviderEmail": "ഇമെയിലും പാസ്‌വേഡും",
+    "viewFullProfile": "പൂർണ്ണ പ്രൊഫൈൽ കാണുക →"
+  },
+  "statistics": {
+    "sectionTitle": "സ്ഥിതിവിവരക്കണക്കുകൾ",
+    "savedReports": "സംരക്ഷിച്ച റിപ്പോർട്ടുകൾ",
+    "memberSince": "അംഗത്വം ആരംഭിച്ചത്",
+    "latestReading": "ഏറ്റവും പുതിയ റീഡിംഗ്",
+    "currentTheme": "നിലവിലെ തീം",
+    "systemThemeLabel": "സിസ്റ്റം ({{themeName}})",
+    "notAvailable": "—",
+    "loadingValue": "…"
+  },
+  "astrologySummary": {
+    "sectionTitle": "ജ്യോതിഷ സംഗ്രഹം",
+    "cardTitle": "നിങ്ങളുടെ ഏറ്റവും പുതിയ റീഡിംഗിൽ നിന്ന്",
+    "padaBadge": " · പാദം {{pada}}",
+    "lordBadge": "നാഥൻ: {{lord}}",
+    "currentMahadasha": "നിലവിലെ മഹാദശ",
+    "currentAntardasha": "നിലവിലെ അന്തർദശ"
+  },
+  "quickActions": {
+    "sectionTitle": "പെട്ടെന്നുള്ള പ്രവർത്തനങ്ങൾ",
+    "generateNewReport": {
+      "label": "പുതിയ റിപ്പോർട്ട് സൃഷ്ടിക്കുക",
+      "desc": "ഒരു പുതിയ വൈദിക റീഡിംഗ് ആരംഭിക്കുക"
+    },
+    "continueReading": {
+      "label": "റീഡിംഗ് തുടരുക",
+      "desc": "നിങ്ങൾ അവസാനം കണ്ട റിപ്പോർട്ട് വീണ്ടും തുറക്കുക"
+    },
+    "myProfile": {
+      "label": "എന്റെ പ്രൊഫൈൽ",
+      "desc": "നിങ്ങളുടെ പ്രൊഫൈൽ വിവരങ്ങൾ കാണുക"
+    },
+    "savedReports": {
+      "label": "സംരക്ഷിച്ച റിപ്പോർട്ടുകൾ",
+      "desc": "നിങ്ങളുടെ മുഴുവൻ ശേഖരവും ബ്രൗസ് ചെയ്യുക"
+    },
+    "askAI": {
+      "label": "AI യോട് ചോദിക്കുക",
+      "desc": "നിങ്ങളുടെ ജ്യോതിഷ സഹായിയുമായി ചാറ്റ് ചെയ്യുക"
+    },
+    "aiLifeCoach": {
+      "label": "AI ലൈഫ് കോച്ച്",
+      "desc": "ദൈനംദിന, കരിയർ, ബന്ധങ്ങൾ, സാമ്പത്തികം, ആരോഗ്യ മാർഗ്ഗനിർദ്ദേശം"
+    },
+    "kundliMatching": {
+      "label": "കുണ്ഡലി പൊരുത്തം",
+      "desc": "രണ്ട് വ്യക്തികളുടെ വൈദിക അനുയോജ്യത പരിശോധിക്കുക"
+    },
+    "panchangMuhurat": {
+      "label": "പഞ്ചാംഗവും മുഹൂർത്തവും",
+      "desc": "ദൈനംദിന പഞ്ചാംഗവും ശുഭ മുഹൂർത്ത അന്വേഷകനും"
+    },
+    "familyProfiles": {
+      "label": "കുടുംബ പ്രൊഫൈലുകൾ",
+      "desc": "നിങ്ങളുടെ കുടുംബത്തിലെ ഓരോ ജാതകവും കൈകാര്യം ചെയ്യുക"
+    },
+    "relationshipHub": {
+      "label": "റിലേഷൻഷിപ്പ് ഹബ്",
+      "desc": "ഏതെങ്കിലും രണ്ട് സംരക്ഷിച്ച പ്രൊഫൈലുകൾ താരതമ്യം ചെയ്യുക"
+    },
+    "settings": {
+      "label": "ക്രമീകരണങ്ങൾ",
+      "desc": "നിങ്ങളുടെ അക്കൗണ്ട് കൈകാര്യം ചെയ്യുക"
+    }
+  },
+  "recentReports": {
+    "sectionTitle": "സമീപകാല റിപ്പോർട്ടുകൾ",
+    "viewAll": "എല്ലാം കാണുക →",
+    "emptyTitle": "ഇതുവരെ റീഡിംഗുകളൊന്നുമില്ല",
+    "emptyMessage": "ഇവിടെ കാണിക്കാൻ നിങ്ങളുടെ ആദ്യത്തെ വൈദിക റീഡിംഗ് സൃഷ്ടിക്കുക.",
+    "emptyAction": "✦ പുതിയ റിപ്പോർട്ട് സൃഷ്ടിക്കുക"
+  },
+  "aiLifeCoach": "AI ലൈഫ് കോച്ച്",
+  "todaysFocus": "ഇന്നത്തെ ശ്രദ്ധ:",
+  "personalizedInsights": "വ്യക്തിഗത ഉൾക്കാഴ്ചകൾ",
+  "yourPersonalizedGuidance": "✦ നിങ്ങളുടെ വ്യക്തിഗത മാർഗ്ഗനിർദ്ദേശം",
+  "insightPeriod": "ഉൾക്കാഴ്ച കാലയളവ്",
+  "whatsChanged": "എന്താണ് മാറിയത്:",
+  "noUpcomingEvents": "വരാനിരിക്കുന്ന ഇവന്റുകളൊന്നുമില്ല",
+  "loadingPanchang": "പഞ്ചാംഗ വിശകലനം ലോഡുചെയ്യുന്നു…",
+  "bestTimeToday": "✨ ഇന്നത്തെ മികച്ച സമയം",
+  "recommendedActivities": "✓ നിർദ്ദേശിച്ച പ്രവർത്തനങ്ങൾ",
+  "thingsToAvoid": "⚠ ഒഴിവാക്കേണ്ട കാര്യങ്ങൾ",
+  "noReadingYet": "വായന ലഭ്യമായിട്ടില്ല",
+  "astrologyCalendar": "📅 ജ്യോതിഷ കലണ്ടർ",
+  "dashaUnavailable": "ദശ ലഭ്യമല്ല",
+  "noUpcomingChanges": "വരാനിരിക്കുന്ന മാറ്റങ്ങളൊന്നുമില്ല",
+  "noTransitData": "ഗോചര വിവരങ്ങളില്ല",
+  "auspicious": "✓ ശുഭകരം",
+  "caution": "⚠ ജാഗ്രത",
+  "horoscopeDashboard": "🔮 രാശിഫല ഡാഷ്‌ബോർഡ്",
+  "noWeeklyFocus": "വാരാന്ത്യ ശ്രദ്ധ ലഭ്യമല്ല",
+  "noMonthlySegments": "ഈ മാസം പ്രതിമാസ വിഭാഗങ്ങളൊന്നുമില്ല",
+  "dailyPanchangMuhurat": "🕉️ ദിനചര്യ പഞ്ചാംഗവും മുഹൂർത്തവും"
+}

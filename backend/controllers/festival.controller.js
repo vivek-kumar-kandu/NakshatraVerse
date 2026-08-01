@@ -27,14 +27,22 @@ export const listFestivals = asyncHandler(async (req, res) => {
 export const getFestivalsForYear = asyncHandler(async (req, res) => {
   const { errors, year } = validateYearQuery(req.query || {});
   if (errors.length) {
+<<<<<<< HEAD
     return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
+=======
+    return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
   try {
     const festivals = await withTiming("Festival year computation", async () => festivalService.getFestivalsForYear(year));
     res.json({ year, festivals });
   } catch (err) {
     logger.error("Festival year computation error:", err);
+<<<<<<< HEAD
     res.status(500).json({ error: "Internal server error while computing the festival calendar." });
+=======
+    res.status(500).json({ error: req.t("errors.internalErrorWhile", { action: "computing the festival calendar" }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -42,14 +50,22 @@ export const getFestivalsForYear = asyncHandler(async (req, res) => {
 export const getFestivalsForMonth = asyncHandler(async (req, res) => {
   const { errors, year, month } = validateMonthQuery(req.query || {});
   if (errors.length) {
+<<<<<<< HEAD
     return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
+=======
+    return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
   try {
     const festivals = await withTiming("Festival month computation", async () => festivalService.getFestivalsForMonth(year, month));
     res.json({ year, month, festivals });
   } catch (err) {
     logger.error("Festival month computation error:", err);
+<<<<<<< HEAD
     res.status(500).json({ error: "Internal server error while computing the festival calendar." });
+=======
+    res.status(500).json({ error: req.t("errors.internalErrorWhile", { action: "computing the festival calendar" }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -57,14 +73,22 @@ export const getFestivalsForMonth = asyncHandler(async (req, res) => {
 export const getUpcomingFestivals = asyncHandler(async (req, res) => {
   const { errors, date, days } = validateUpcomingQuery(req.query || {});
   if (errors.length) {
+<<<<<<< HEAD
     return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
+=======
+    return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
   try {
     const festivals = await withTiming("Upcoming festival computation", async () => festivalService.getUpcomingFestivals(date, days));
     res.json({ from: date, days, festivals });
   } catch (err) {
     logger.error("Upcoming festival computation error:", err);
+<<<<<<< HEAD
     res.status(500).json({ error: "Internal server error while computing upcoming festivals." });
+=======
+    res.status(500).json({ error: req.t("errors.internalErrorWhile", { action: "computing upcoming festivals" }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -72,14 +96,22 @@ export const getUpcomingFestivals = asyncHandler(async (req, res) => {
 export const getFestivalsOnDate = asyncHandler(async (req, res) => {
   const { errors, date } = validateDateQuery({ date: req.params.date });
   if (errors.length) {
+<<<<<<< HEAD
     return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
+=======
+    return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
   try {
     const festivals = await withTiming("Festival-on-date computation", async () => festivalService.getFestivalsForDate(date));
     res.json({ date, festivals });
   } catch (err) {
     logger.error("Festival-on-date computation error:", err);
+<<<<<<< HEAD
     res.status(500).json({ error: "Internal server error while checking festivals for the given date." });
+=======
+    res.status(500).json({ error: req.t("errors.internalErrorWhile", { action: "checking festivals for the given date" }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -90,7 +122,11 @@ export const getFestivalByKey = asyncHandler(async (req, res) => {
   const yearResult = validateYearQuery(req.query || {});
   const errors = [...keyResult.errors, ...yearResult.errors];
   if (errors.length) {
+<<<<<<< HEAD
     return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
+=======
+    return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
   try {
     const result = await withTiming("Single festival computation", async () => festivalService.getFestival(keyResult.key, yearResult.year));
@@ -100,7 +136,11 @@ export const getFestivalByKey = asyncHandler(async (req, res) => {
       return res.status(err.status).json({ error: err.message });
     }
     logger.error("Single festival computation error:", err);
+<<<<<<< HEAD
     res.status(500).json({ error: "Internal server error while computing this festival." });
+=======
+    res.status(500).json({ error: req.t("errors.internalErrorWhile", { action: "computing this festival" }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 });
 
@@ -111,17 +151,29 @@ export const getFestivalByKey = asyncHandler(async (req, res) => {
 export const explainFestival = asyncHandler(async (req, res) => {
   const { errors, festival } = validateExplainRequest(req.body || {});
   if (errors.length) {
+<<<<<<< HEAD
     return res.status(400).json({ error: `Invalid request: ${errors.join(", ")}` });
+=======
+    return res.status(400).json({ error: req.t("errors.invalidRequest", { errors: errors.join(", ") }) });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   if (!config.GOOGLE_API_KEY) {
     logger.error("festivals/explain called but no API key is configured.");
     return res.status(500).json({
+<<<<<<< HEAD
       error: "Server is missing an API key. Set GOOGLE_API_KEY in backend/.env (see backend/.env.example).",
     });
   }
 
   const prompt = buildFestivalExplainPrompt(festival);
+=======
+      error: req.t ? req.t("errors.missingApiKey") : "Server is missing an API key. Set GOOGLE_API_KEY in backend/.env (see backend/.env.example).",
+    });
+  }
+
+  const prompt = buildFestivalExplainPrompt(festival, req.language);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   try {
     const explanation = await withTiming("Gemini AI request (festival)", () => callGemini(prompt));

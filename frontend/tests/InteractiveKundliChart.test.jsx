@@ -1,9 +1,31 @@
+<<<<<<< HEAD
 import { describe, it, expect, vi } from "vitest";
+=======
+import { describe, it, expect, vi, beforeAll } from "vitest";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { render, screen, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import InteractiveKundliChart from "../src/components/common/InteractiveKundliChart.jsx";
 import { ExplorerProvider, useExplorer } from "../src/context/ExplorerContext.jsx";
 import ExplorerTab from "../src/components/explorer/ExplorerTab.jsx";
+<<<<<<< HEAD
+=======
+// Phase 2 (Explorer i18n migration): this file renders ExplorerTab
+// directly rather than through App.jsx, and App.jsx (via
+// ErrorBoundary.jsx) is normally what triggers i18n/index.js's
+// side-effecting i18next.init() call. Without it, useTranslation() here
+// resolves against an uninitialized i18next singleton and t() returns
+// raw keys instead of English text. See the identical fix in
+// FamilyRelationshipHub.test.jsx / FestivalPage.test.jsx for the same
+// root cause.
+import i18n from "../src/i18n/index.js";
+
+beforeAll(async () => {
+  if (!i18n.isInitialized) {
+    await new Promise((resolve) => i18n.on("initialized", resolve));
+  }
+});
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // V5.1 — Interactive Kundli / Explorer Integration

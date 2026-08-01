@@ -1,4 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import Badge from "../components/common/Badge.jsx";
@@ -29,9 +33,15 @@ import { useToast } from "../components/common/Toast.jsx";
 // specific festival's detail view instead of landing on the list.
 // ─────────────────────────────────────────────────────────────────────────
 const TABS = [
+<<<<<<< HEAD
   { id: "today", label: "Today", icon: "📍" },
   { id: "upcoming", label: "Upcoming", icon: "🔜" },
   { id: "browse", label: "Browse All", icon: "📚" },
+=======
+  {id: "today", labelKey: "today", icon: "📍" },
+  { id: "upcoming", labelKey: "upcoming", icon: "🔜" },
+  { id: "browse", labelKey: "browse", icon: "📚" },
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 ];
 
 const TYPE_FILTERS = ["All", "Festival", "Vrat"];
@@ -42,6 +52,10 @@ function todayStr() {
 }
 
 function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["festival"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const toast = useToast();
   const [tab, setTab] = useState(initialFestivalKey ? "detail" : "today");
 
@@ -71,7 +85,11 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
     setTodayError(null);
     festivalApi.getTodaysFestivals()
       .then(setToday)
+<<<<<<< HEAD
       .catch((err) => setTodayError(err.message || "Could not load today's festival."))
+=======
+      .catch((err) => setTodayError(err.message || t("festival:page.todayLoadFailed")))
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       .finally(() => setLoadingToday(false));
   }, []);
 
@@ -80,7 +98,11 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
     setUpcomingError(null);
     festivalApi.getUpcomingFestivals(todayStr(), 60)
       .then(setUpcoming)
+<<<<<<< HEAD
       .catch((err) => setUpcomingError(err.message || "Could not load upcoming festivals."))
+=======
+      .catch((err) => setUpcomingError(err.message || t("festival:page.upcomingLoadFailed")))
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       .finally(() => setLoadingUpcoming(false));
   }, []);
 
@@ -89,7 +111,11 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
     setYearError(null);
     festivalApi.getFestivalsForYear(year)
       .then(setYearFestivals)
+<<<<<<< HEAD
       .catch((err) => setYearError(err.message || "Could not load the festival calendar."))
+=======
+      .catch((err) => setYearError(err.message || t("festival:page.yearLoadFailed")))
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       .finally(() => setLoadingYear(false));
   }, []);
 
@@ -110,7 +136,11 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
           : result.occurrences?.[0];
         if (occurrence) { setSelected(occurrence); setTab("detail"); }
       })
+<<<<<<< HEAD
       .catch(() => toast?.error?.("Could not open that festival."));
+=======
+      .catch(() => toast?.error?.(t("festival:page.openFestivalFailed")));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [initialFestivalKey, initialDate]);
 
@@ -125,7 +155,11 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
     setExplaining(true);
     festivalApi.explainFestival(selected)
       .then(setExplanation)
+<<<<<<< HEAD
       .catch((err) => toast?.error?.(err.message || "AI explanation unavailable right now."))
+=======
+      .catch((err) => toast?.error?.(err.message || t("festival:page.explainFailed")))
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       .finally(() => setExplaining(false));
   }, [selected, toast]);
 
@@ -159,12 +193,21 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
               color: "var(--nv-text-primary, #e8d5ff)", padding: "10px 16px", borderRadius: 20, cursor: "pointer", fontSize: 13,
             }}
           >
+<<<<<<< HEAD
             ← Back
           </button>
           <div>
             <h1 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 21, color: "var(--nv-text-primary, #f1e4ff)" }}>🎉 Festival Calendar</h1>
             <p style={{ margin: "2px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
               Backend-computed Hindu festivals & Vrats — dates, rituals, and significance.
+=======
+            {t("festival:page.back")}
+          </button>
+          <div>
+            <h1 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 21, color: "var(--nv-text-primary, #f1e4ff)" }}>{t("festival:page.title")}</h1>
+            <p style={{ margin: "2px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
+              {t("festival:page.subtitle")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
           </div>
         </div>
@@ -172,12 +215,21 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
         {/* Tab switcher */}
         {tab !== "detail" && (
           <GlassCard style={{ padding: 6, display: "flex", gap: 4, flexWrap: "wrap" }}>
+<<<<<<< HEAD
             {TABS.map((t) => {
               const active = t.id === tab;
               return (
                 <button
                   key={t.id}
                   onClick={() => setTab(t.id)}
+=======
+            {TABS.map((tab_) => {
+              const active = tab_.id === tab;
+              return (
+                <button
+                  key={tab_.id}
+                  onClick={() => setTab(tab_.id)}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   className="tab-btn tap-scale"
                   style={{
                     flex: "1 1 120px", padding: "10px 14px", border: "none", borderRadius: 12, cursor: "pointer",
@@ -186,7 +238,11 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
                     background: active ? "rgba(255,215,0,0.12)" : "transparent",
                   }}
                 >
+<<<<<<< HEAD
                   {t.icon} {t.label}
+=======
+                  {tab_.icon} {t(`festival:page.tabs.${tab_.labelKey}`)}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </button>
               );
             })}
@@ -201,22 +257,37 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
             {today?.length > 0 ? (
               <div style={{ display: "grid", gap: 12 }}>
                 <h2 style={{ margin: 0, fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))", textTransform: "uppercase", letterSpacing: 1 }}>
+<<<<<<< HEAD
                   Today's Festival{today.length > 1 ? "s" : ""}
+=======
+                  {t("festival:page.todaysFestivalsHeading", { plural: today.length > 1 ? "s" : "" })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </h2>
                 {today.map((f) => <FestivalCard key={f.key} festival={f} onOpen={openDetail} />)}
               </div>
             ) : (
+<<<<<<< HEAD
               <EmptyState icon="📍" title="No festival today" message="There's no observed festival or Vrat on today's date." />
+=======
+              <EmptyState icon="📍" title={t("festival:page.noFestivalTodayTitle")} message={t("festival:page.noFestivalTodayMessage")} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             )}
 
             {nextFestival && (
               <GlassCard style={{ padding: "18px 20px", marginTop: 20 }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
                   <div>
+<<<<<<< HEAD
                     <p style={{ margin: 0, fontSize: 11.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))", textTransform: "uppercase", letterSpacing: 1 }}>Next Up</p>
                     <p style={{ margin: "4px 0 0", fontSize: 14.5, fontWeight: 700, color: "var(--nv-text-primary, #e8d5ff)" }}>{nextFestival.name}</p>
                   </div>
                   <Badge color="#ffd700">{daysRemaining === 0 ? "Today" : `In ${daysRemaining} day${daysRemaining === 1 ? "" : "s"}`}</Badge>
+=======
+                    <p style={{ margin: 0, fontSize: 11.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))", textTransform: "uppercase", letterSpacing: 1 }}>{t("festival:page.nextUp")}</p>
+                    <p style={{ margin: "4px 0 0", fontSize: 14.5, fontWeight: 700, color: "var(--nv-text-primary, #e8d5ff)" }}>{nextFestival.name}</p>
+                  </div>
+                  <Badge color="#ffd700">{daysRemaining === 0 ? t("festival:page.daysRemainingToday") : t(daysRemaining === 1 ? "festival:page.daysRemainingSingle" : "festival:page.daysRemainingPlural", { count: daysRemaining })}</Badge>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </div>
               </GlassCard>
             )}
@@ -237,7 +308,11 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
               onItemClick={(item) => openDetail(sortedUpcoming.find((f) => `${f.key}-${f.date}` === item.id))}
             />
           ) : (
+<<<<<<< HEAD
             <EmptyState icon="🔜" title="No upcoming festivals found" message="Nothing found in the next 60 days." />
+=======
+            <EmptyState icon="🔜" title={t("festival:page.noUpcomingTitle")} message={t("festival:page.noUpcomingMessage")} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           )
         )}
 
@@ -250,8 +325,13 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
                   type="search"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
+<<<<<<< HEAD
                   placeholder="Search festivals…"
                   aria-label="Search festivals"
+=======
+                  placeholder={t("festival:page.searchPlaceholder")}
+                  aria-label={t("festival:page.searchAriaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   style={{
                     width: "100%", padding: "9px 14px", borderRadius: 20, fontSize: 13,
                     border: "1px solid var(--nv-accent-border, rgba(180,120,255,0.3))", background: "var(--nv-surface, rgba(18,0,38,0.6))",
@@ -262,7 +342,11 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
               <select
                 value={typeFilter}
                 onChange={(e) => setTypeFilter(e.target.value)}
+<<<<<<< HEAD
                 aria-label="Filter by type"
+=======
+                aria-label={t("festival:page.typeFilterAriaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 className="select-input"
                 style={{
                   padding: "9px 14px", borderRadius: 20, fontSize: 12.5, cursor: "pointer",
@@ -270,12 +354,20 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
                   color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif",
                 }}
               >
+<<<<<<< HEAD
                 {TYPE_FILTERS.map((t) => <option key={t} value={t}>{t}</option>)}
+=======
+                {TYPE_FILTERS.map((tf) => <option key={tf} value={tf}>{t(`festival:typeFilters.${tf}`)}</option>)}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </select>
               <select
                 value={browseYear}
                 onChange={(e) => setBrowseYear(Number(e.target.value))}
+<<<<<<< HEAD
                 aria-label="Select year"
+=======
+                aria-label={t("festival:page.yearAriaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 className="select-input"
                 style={{
                   padding: "9px 14px", borderRadius: 20, fontSize: 12.5, cursor: "pointer",
@@ -294,7 +386,11 @@ function FestivalPage({ onBack, initialFestivalKey, initialDate }) {
                 {filteredYearFestivals.map((f) => <FestivalCard key={`${f.key}-${f.date}`} festival={f} onOpen={openDetail} compact />)}
               </div>
             ) : (
+<<<<<<< HEAD
               <EmptyState icon="🔍" title="No festivals match" message="Try a different search term or type filter." />
+=======
+              <EmptyState icon="🔍" title={t("festival:page.noMatchTitle")} message={t("festival:page.noMatchMessage")} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             )}
           </>
         )}

@@ -1,4 +1,8 @@
 import { useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 const EyeIcon = ({ open }) => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -27,6 +31,10 @@ const EyeIcon = ({ open }) => (
 // wiring it into the existing forms doesn't touch any auth logic.
 // ─────────────────────────────────────────────────────────────────────────
 function PasswordField({ id, label, value, onChange, onBlur, autoComplete, name, error, hint, disabled, inputStyle }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["auth"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [visible, setVisible] = useState(false);
 
   return (
@@ -56,7 +64,11 @@ function PasswordField({ id, label, value, onChange, onBlur, autoComplete, name,
           type="button"
           className="auth-icon-btn"
           onClick={() => setVisible((v) => !v)}
+<<<<<<< HEAD
           aria-label={visible ? `Hide ${label.toLowerCase()}` : `Show ${label.toLowerCase()}`}
+=======
+          aria-label={visible ? t("auth:passwordField.hideAriaLabel", { label: label.toLowerCase() }) : t("auth:passwordField.showAriaLabel", { label: label.toLowerCase() })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           tabIndex={0}
           disabled={disabled}
           style={{

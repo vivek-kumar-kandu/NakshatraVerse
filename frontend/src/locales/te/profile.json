@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← డాష్‌బోర్డ్‌కు తిరిగి వెళ్లండి",
+    "title": "నా ప్రొఫైల్",
+    "photoHint": "సవరించడానికి మీ ఫోటోపై క్లిక్ చేయండి — అప్‌లోడ్ చేయండి, మార్చండి లేదా తీసివేయండి.",
+    "authProviderGoogle": "Google తో సైన్ ఇన్ చేయబడింది",
+    "authProviderEmail": "ఇమెయిల్ & పాస్‌వర్డ్",
+    "accountInformation": "ఖాతా సమాచారం",
+    "fullName": "పూర్తి పేరు",
+    "email": "ఇమెయిల్",
+    "memberSince": "సభ్యత్వం ప్రారంభం",
+    "accountType": "ఖాతా రకం",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "పాస్‌వర్డ్‌ను మార్చండి",
+    "editProfileInSettings": "సెట్టింగ్‌లలో ప్రొఫైల్‌ను సవరించండి →",
+    "activitySummary": "ప్రొఫైల్ కార్యాచరణ సారాంశం",
+    "totalReports": "మొత్తం నివేదికలు",
+    "loadingValue": "…",
+    "lastGenerated": "చివరిగా రూపొందించబడింది",
+    "viewSavedReports": "సేవ్ చేసిన నివేదికలను చూడండి →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "దయచేసి JPG, PNG లేదా WEBP చిత్రాన్ని ఎంచుకోండి.",
+    "fileTooLarge": "ఆ చిత్రం చాలా పెద్దది. దయచేసి 8MB కంటే తక్కువ పరిమాణంలో ఫైల్‌ను ఎంచుకోండి.",
+    "processFailed": "ఆ చిత్రాన్ని ప్రాసెస్ చేయలేకపోయింది.",
+    "photoUpdated": "ప్రొఫైల్ ఫోటో నవీకరించబడింది.",
+    "saveFailed": "మీ ఫోటోను సేవ్ చేయలేకపోయింది.",
+    "photoRemoved": "ప్రొఫైల్ ఫోటో తీసివేయబడింది.",
+    "removeFailed": "మీ ఫోటోను తీసివేయలేకపోయింది.",
+    "changePhotoAriaLabel": "ప్రొఫైల్ ఫోటోను మార్చండి",
+    "uploadPhotoAriaLabel": "ప్రొఫైల్ ఫోటోను అప్‌లోడ్ చేయండి",
+    "menuAriaLabel": "ప్రొఫైల్ ఫోటో ఎంపికలు",
+    "replacePhoto": "ఫోటోను భర్తీ చేయండి",
+    "uploadPhoto": "ఫోటోను అప్‌లోడ్ చేయండి",
+    "removePhoto": "ఫోటోను తీసివేయండి",
+    "previewDialogAriaLabel": "కొత్త ప్రొఫైల్ ఫోటో యొక్క ప్రివ్యూ",
+    "previewYourNewPhoto": "మీ కొత్త ఫోటోను ప్రివ్యూ చేయండి",
+    "cancel": "రద్దు చేయండి",
+    "save": "సేవ్ చేయండి"
+  }
+}

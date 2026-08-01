@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← डैशबोर्ड पर वापस जाएं",
+    "title": "सहेजी गई रिपोर्ट्स",
+    "titleWithCount": "सहेजी गई रिपोर्ट्स ({{count}})",
+    "generateNewReport": "✦ नई रिपोर्ट बनाएं",
+    "loadFailed": "आपकी सहेजी गई रिपोर्ट्स लोड नहीं हो सकीं।",
+    "tryAgain": "↻ फिर कोशिश करें",
+    "deleteToastSuccess": "\"{{title}}\" हटा दी गई।",
+    "deleteToastFallbackTitle": "रिपोर्ट",
+    "deleteFailed": "वह रिपोर्ट हटाई नहीं जा सकी।",
+    "downloadToastSuccess": "PDF डाउनलोड हो गई।",
+    "downloadFailed": "PDF नहीं बनाई जा सकी।",
+    "emptyTitle": "अभी तक कोई सहेजी गई रिपोर्ट नहीं",
+    "emptyMessage": "यहां अपना संग्रह बनाने के लिए रीडिंग बनाएं और रिपोर्ट सहेजें पर टैप करें।",
+    "emptyAction": "✦ नई रिपोर्ट बनाएं",
+    "noMatchesTitle": "कोई मेल नहीं मिला",
+    "noMatchesMessage": "कोई सहेजी गई रिपोर्ट \"{{query}}\" से मेल नहीं खाती। कोई अलग शीर्षक, नाम, या लग्न आज़माएं।",
+    "clearSearch": "खोज साफ़ करें",
+    "deleteDialog": {
+      "title": "इस रिपोर्ट को हटाएं?",
+      "message": "\"{{title}}\" स्थायी रूप से हटा दी जाएगी। इसे वापस नहीं किया जा सकता।",
+      "fallbackTitle": "यह रिपोर्ट",
+      "confirmLabel": "हटाएं",
+      "cancelLabel": "रद्द करें"
+    }
+  },
+  "detail": {
+    "loadFailed": "वह रिपोर्ट लोड नहीं हो सकी।",
+    "backToSavedReports": "← सहेजी गई रिपोर्ट्स पर वापस जाएं",
+    "loading": "आपकी सहेजी गई रीडिंग लोड हो रही है…",
+    "openHoroscope": "🔮 राशिफल",
+    "openCalendar": "📅 कैलेंडर",
+    "openLifeCoach": "🧭 लाइफ कोच",
+    "askAI": "✨ AI से पूछें"
+  },
+  "card": {
+    "savedOn": "{{date}} को सहेजी गई",
+    "view": "देखें",
+    "preview": "पूर्वावलोकन",
+    "download": "PDF",
+    "delete": "हटाएं",
+    "deleting": "हटाया जा रहा है…",
+    "lagnaSuffix": "{{lagna}} लग्न",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "रिपोर्ट लेआउट",
+    "gridView": "ग्रिड दृश्य",
+    "listView": "सूची दृश्य",
+    "searchPlaceholder": "शीर्षक, नाम, या लग्न से खोजें…",
+    "searchAriaLabel": "सहेजी गई रिपोर्ट्स खोजें",
+    "sortAriaLabel": "सहेजी गई रिपोर्ट्स क्रमबद्ध करें",
+    "resultCountSingle": "{{count}} रिपोर्ट",
+    "resultCountPlural": "{{count}} रिपोर्ट्स",
+    "resultCountFiltered": "{{total}} में से {{count}}"
+  },
+  "sort": {
+    "newest": "सबसे नई पहले",
+    "oldest": "सबसे पुरानी पहले",
+    "title-asc": "शीर्षक (A–Z)",
+    "title-desc": "शीर्षक (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} का पूर्वावलोकन",
+    "closePreview": "पूर्वावलोकन बंद करें",
+    "savedOn": "{{date}} को सहेजी गई",
+    "noDetails": "इस रिपोर्ट के लिए कोई अतिरिक्त विवरण सहेजा नहीं गया।",
+    "description": "यह आपकी सहेजी गई रीडिंग के विवरण का एक त्वरित पूर्वावलोकन है। हर अनुभाग पढ़ने के लिए पूरी रिपोर्ट खोलें — प्रेम, करियर, धन, स्वास्थ्य, दोष व योग, उपाय, और आपका जीवन सारांश।",
+    "viewFullReport": "✦ पूरी रिपोर्ट देखें",
+    "preparingPdf": "PDF तैयार की जा रही है…",
+    "downloadPdf": "⭳ PDF डाउनलोड करें"
+  },
+  "summarizeAiAria": "AI के साथ इस रिपोर्ट का सारांश लें",
+  "whyThisRemedy": "💡 यह उपाय क्यों?",
+  "remedyNotFound": "यह उपाय इस चार्ट के बैकएंड-व्युत्पन्न उपायों का हिस्सा नहीं है।"
+}

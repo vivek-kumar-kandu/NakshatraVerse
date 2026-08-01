@@ -1,0 +1,165 @@
+{
+  "typeFilters": {
+    "All": "ಎಲ್ಲಾ",
+    "Festival": "ಹಬ್ಬ",
+    "Vrat": "ವ್ರತ"
+  },
+  "page": {
+    "back": "← ಹಿಂದೆ",
+    "title": "🎉 ಹಬ್ಬ ಕ್ಯಾಲೆಂಡರ್",
+    "subtitle": "ಬ್ಯಾಕೆಂಡ್‌ನಿಂದ ಲೆಕ್ಕಹಾಕಿದ ಹಿಂದೂ ಹಬ್ಬಗಳು ಮತ್ತು ವ್ರತಗಳು — ದಿನಾಂಕಗಳು, ಆಚರಣೆಗಳು ಮತ್ತು ಮಹತ್ವ.",
+    "tabs": {
+      "today": "ಇಂದು",
+      "upcoming": "ಮುಂಬರುವ",
+      "browse": "ಎಲ್ಲಾ ಬ್ರೌಸ್ ಮಾಡಿ"
+    },
+    "todayLoadFailed": "ಇಂದಿನ ಹಬ್ಬವನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "upcomingLoadFailed": "ಮುಂಬರುವ ಹಬ್ಬಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "yearLoadFailed": "ಹಬ್ಬ ಕ್ಯಾಲೆಂಡರ್ ಅನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "openFestivalFailed": "ಆ ಹಬ್ಬವನ್ನು ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "todaysFestivalsHeading": "ಇಂದಿನ ಹಬ್ಬ{{plural}}",
+    "noFestivalTodayTitle": "ಇಂದು ಯಾವುದೇ ಹಬ್ಬವಿಲ್ಲ",
+    "noFestivalTodayMessage": "ಇಂದಿನ ದಿನಾಂಕದಂದು ಆಚರಿಸಬೇಕಾದ ಯಾವುದೇ ಹಬ್ಬ ಅಥವಾ ವ್ರತ ಇಲ್ಲ.",
+    "nextUp": "ಮುಂದೆ ಏನಿದೆ",
+    "daysRemainingToday": "ಇಂದು",
+    "daysRemainingSingle": "{{count}} ದಿನದಲ್ಲಿ",
+    "daysRemainingPlural": "{{count}} ದಿನಗಳಲ್ಲಿ",
+    "noUpcomingTitle": "ಯಾವುದೇ ಮುಂಬರುವ ಹಬ್ಬಗಳು ಕಂಡುಬಂದಿಲ್ಲ",
+    "noUpcomingMessage": "ಮುಂದಿನ 60 ದಿನಗಳಲ್ಲಿ ಏನೂ ಕಂಡುಬಂದಿಲ್ಲ.",
+    "searchPlaceholder": "ಹಬ್ಬಗಳನ್ನು ಹುಡುಕಿ…",
+    "searchAriaLabel": "ಹಬ್ಬಗಳನ್ನು ಹುಡುಕಿ",
+    "typeFilterAriaLabel": "ಪ್ರಕಾರದ ಆಧಾರದ ಮೇಲೆ ಫಿಲ್ಟರ್ ಮಾಡಿ",
+    "yearAriaLabel": "ವರ್ಷವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+    "noMatchTitle": "ಯಾವುದೇ ಹಬ್ಬ ಹೊಂದುವುದಿಲ್ಲ",
+    "noMatchMessage": "ಬೇರೆ ಹುಡುಕಾಟ ಪದ ಅಥವಾ ಪ್ರಕಾರ ಫಿಲ್ಟರ್ ಪ್ರಯತ್ನಿಸಿ.",
+    "explainFailed": "AI ವಿವರಣೆ ಪ್ರಸ್ತುತ ಲಭ್ಯವಿಲ್ಲ."
+  },
+  "detailCard": {
+    "importanceSuffix": "{{importance}} ಮಹತ್ವ",
+    "notSpecified": "ನಿರ್ದಿಷ್ಟಪಡಿಸಿಲ್ಲ.",
+    "explainButton": "✨ {{status}}",
+    "askingGemini": "Gemini ಅನ್ನು ಕೇಳಲಾಗುತ್ತಿದೆ…",
+    "explainThisFestival": "ಈ ಹಬ್ಬವನ್ನು ವಿವರಿಸಿ",
+    "historicalBackground": "ಐತಿಹಾಸಿಕ ಹಿನ್ನೆಲೆ",
+    "significance": "ಮಹತ್ವ",
+    "rituals": "ಆಚರಣೆಗಳು",
+    "recommendedActivities": "ಶಿಫಾರಸು ಮಾಡಿದ ಚಟುವಟಿಕೆಗಳು",
+    "fastingInformation": "ಉಪವಾಸ ಮಾಹಿತಿ",
+    "fastingObserved": "ಉಪವಾಸವನ್ನು ಆಚರಿಸಲಾಗುತ್ತದೆ",
+    "noFastingObserved": "ಸಾಂಪ್ರದಾಯಿಕವಾಗಿ ಯಾವುದೇ ಉಪವಾಸವನ್ನು ಆಚರಿಸುವುದಿಲ್ಲ"
+  },
+  "familySuggestions": {
+    "title": "👨‍👩‍👧‍👦 ಕುಟುಂಬ ಹಬ್ಬ ಸಲಹೆಗಳು",
+    "signInPrompt": "ನಿಮ್ಮ ಪ್ರಿಯಜನರಿಗಾಗಿ ಹಂಚಿಕೊಂಡ ಆಚರಣೆ ಸಲಹೆಗಳು ಮತ್ತು ಜ್ಞಾಪನೆಗಳನ್ನು ಪಡೆಯಲು ಸೈನ್ ಇನ್ ಮಾಡಿ ಮತ್ತು ಕುಟುಂಬ ಪ್ರೊಫೈಲ್ ಸೇರಿಸಿ.",
+    "loadFailed": "ಪ್ರಸ್ತುತ ಕುಟುಂಬ ಹಬ್ಬ ಸಲಹೆಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "remindersTitle": "ಕುಟುಂಬ ಹಬ್ಬ ಜ್ಞಾಪನೆಗಳು",
+    "noProfiles": "ಇನ್ನೂ ಯಾವುದೇ ಕುಟುಂಬ ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ಉಳಿಸಲಾಗಿಲ್ಲ.",
+    "addOne": "ಒಂದನ್ನು ಸೇರಿಸಿ →",
+    "sharedCelebrationTitle": "ಹಂಚಿಕೊಂಡ ಆಚರಣೆ ಸಲಹೆಗಳು",
+    "suggestedActivitiesTitle": "ಸೂಚಿಸಿದ ಕುಟುಂಬ ಚಟುವಟಿಕೆಗಳು"
+  },
+  "intelligencePanel": {
+    "title": "🔮 ಹಬ್ಬ ಬುದ್ಧಿಮತ್ತೆ",
+    "subtitle": "ಆಧ್ಯಾತ್ಮಿಕ ಅರ್ಥ, ಪೌರಾಣಿಕ ಕಥೆ ಮತ್ತು ಪೂಜಾ ಅವಲೋಕನ — ಮೇಲಿನ ಮೂಲಭೂತ ಅಂಶಗಳನ್ನು ಮೀರಿ.",
+    "loadFailed": "ಪ್ರಸ್ತುತ ಹಬ್ಬ ಬುದ್ಧಿಮತ್ತೆಯನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "revealButton": "✨ {{status}}",
+    "askingGemini": "Gemini ಅನ್ನು ಕೇಳಲಾಗುತ್ತಿದೆ…",
+    "revealDeeper": "ಆಳವಾದ ಬುದ್ಧಿಮತ್ತೆಯನ್ನು ಬಹಿರಂಗಪಡಿಸಿ",
+    "spiritualMeaning": "ಆಧ್ಯಾತ್ಮಿಕ ಅರ್ಥ",
+    "mythologicalStory": "ಪೌರಾಣಿಕ ಕಥೆ",
+    "modernPracticalMeaning": "ಆಧುನಿಕ ಪ್ರಾಯೋಗಿಕ ಅರ್ಥ",
+    "culturalSignificance": "ವೈಜ್ಞಾನಿಕ / ಸಾಂಸ್ಕೃತಿಕ ಮಹತ್ವ",
+    "pujaOverview": "ಪೂಜಾ ಅವಲೋಕನ",
+    "thingsToAvoid": "ತಪ್ಪಿಸಬೇಕಾದ ವಿಷಯಗಳು",
+    "aiAssistedBadge": "AI-ಸಹಾಯ — ಸಂಪ್ರದಾಯಗಳು ಪ್ರದೇಶ/ಕುಟುಂಬಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಭಿನ್ನವಾಗಿರಬಹುದು"
+  },
+  "preparationChecklist": {
+    "nothingSpecified": "ಏನನ್ನೂ ನಿರ್ದಿಷ್ಟಪಡಿಸಿಲ್ಲ.",
+    "loadFailed": "ಪ್ರಸ್ತುತ ಸಿದ್ಧತೆ ಪಟ್ಟಿಯನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "sections": {
+      "preparationChecklist": "ಸಿದ್ಧತೆ ಪಟ್ಟಿ",
+      "shoppingChecklist": "ಖರೀದಿ ಪಟ್ಟಿ",
+      "pujaMaterials": "ಪೂಜಾ ಸಾಮಗ್ರಿಗಳು",
+      "fastingPreparation": "ಉಪವಾಸ ಸಿದ್ಧತೆ",
+      "morningRoutine": "ಬೆಳಗಿನ ದಿನಚರಿ",
+      "eveningRitual": "ಸಂಜೆಯ ಆಚರಣೆ",
+      "postFestivalReflection": "ಹಬ್ಬದ ನಂತರದ ಚಿಂತನೆ"
+    }
+  },
+  "personalizedGuidance": {
+    "title": "🌟 ವೈಯಕ್ತಿಕಗೊಳಿಸಿದ ಹಬ್ಬ ಮಾರ್ಗದರ್ಶನ",
+    "noChartMessage": "ಈ ಹಬ್ಬ ನಿಮಗೆ ವಿಶೇಷವಾಗಿ ಏಕೆ ಅರ್ಥಪೂರ್ಣವಾಗಿದೆ ಎಂದು ನೋಡಲು — ವೃತ್ತಿ, ಹಣಕಾಸು, ಸಂಬಂಧಗಳು, ಆರೋಗ್ಯ, ಆಧ್ಯಾತ್ಮಿಕ ಮತ್ತು ವೈಯಕ್ತಿಕ ಬೆಳವಣಿಗೆಯ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸಿ, ನಿಮ್ಮ ಸ್ವಂತ ಚಾರ್ಟ್ ಆಧಾರದ ಮೇಲೆ — ನಿಮ್ಮ ಉಳಿಸಿದ ರೀಡಿಂಗ್‌ಗಳಲ್ಲಿ ಒಂದರಿಂದ ಈ ಹಬ್ಬವನ್ನು ತೆರೆಯಿರಿ.",
+    "openSavedReading": "ಉಳಿಸಿದ ರೀಡಿಂಗ್ ಅನ್ನು ತೆರೆಯಿರಿ →",
+    "subtitle": "ನಿಮ್ಮ ಸ್ವಂತ ದಶೆ, ಗೋಚಾರ ಮತ್ತು ಭವಿಷ್ಯವಾಣಿಗಳ ಆಧಾರದ ಮೇಲೆ.",
+    "loadFailed": "ಪ್ರಸ್ತುತ ವೈಯಕ್ತಿಕಗೊಳಿಸಿದ ಮಾರ್ಗದರ್ಶನವನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "askButton": "✨ {{status}}",
+    "whyMeaningful": "ಇದು ನನಗೆ ಏಕೆ ಅರ್ಥಪೂರ್ಣವಾಗಿದೆ?",
+    "focusFields": {
+      "careerFocus": "ವೃತ್ತಿ",
+      "financeFocus": "ಹಣಕಾಸು",
+      "relationshipFocus": "ಸಂಬಂಧಗಳು",
+      "healthFocus": "ಆರೋಗ್ಯ",
+      "spiritualFocus": "ಆಧ್ಯಾತ್ಮಿಕ",
+      "personalGrowthFocus": "ವೈಯಕ್ತಿಕ ಬೆಳವಣಿಗೆ"
+    }
+  },
+  "intelligencePage": {
+    "back": "← ಹಿಂದೆ",
+    "title": "🔮 ಹಬ್ಬ ಬುದ್ಧಿಮತ್ತೆ",
+    "subtitle": "ಒಂದು ಹಬ್ಬಕ್ಕಾಗಿ ಆಳವಾದ ಅರ್ಥ, ವೈಯಕ್ತಿಕಗೊಳಿಸಿದ ಮಾರ್ಗದರ್ಶನ, ಸಿದ್ಧತೆ ಮತ್ತು ಕುಟುಂಬ ಸಲಹೆಗಳು.",
+    "loadFailed": "ಈ ಹಬ್ಬವನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "loadUpcomingFailed": "ಯಾವುದೇ ಮುಂಬರುವ ಹಬ್ಬವನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "noFestivalTitle": "ಯಾವುದೇ ಹಬ್ಬವನ್ನು ಆಯ್ಕೆ ಮಾಡಿಲ್ಲ",
+    "noFestivalMessage": "ಅದರ ಪೂರ್ಣ ಬುದ್ಧಿಮತ್ತೆಯನ್ನು ನೋಡಲು ಹಬ್ಬ ಕ್ಯಾಲೆಂಡರ್, ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ಅಥವಾ ಕ್ಯಾಲೆಂಡರ್ ಪುಟದಿಂದ ಒಂದು ಹಬ್ಬವನ್ನು ತೆರೆಯಿರಿ.",
+    "ritualFlow": "ಆಚರಣೆ ಕ್ರಮ",
+    "timelineUnavailable": "ಈ ಹಬ್ಬಕ್ಕಾಗಿ ಟೈಮ್‌ಲೈನ್ ಲಭ್ಯವಿಲ್ಲ.",
+    "festivalIntelligence": "ಹಬ್ಬ ಬುದ್ಧಿಮತ್ತೆ",
+    "personalizedGuidance": "ವೈಯಕ್ತಿಕಗೊಳಿಸಿದ ಮಾರ್ಗದರ್ಶನ",
+    "festivalPreparation": "ಹಬ್ಬದ ಸಿದ್ಧತೆ",
+    "family": "ಕುಟುಂಬ"
+  },
+  "widget": {
+    "title": "ಇಂದಿನ ಹಬ್ಬ",
+    "openCalendar": "ಹಬ್ಬ ಕ್ಯಾಲೆಂಡರ್ ಅನ್ನು ತೆರೆಯಿರಿ →",
+    "loading": "ಲೋಡ್ ಆಗುತ್ತಿದೆ…",
+    "noFestivalToday": "ಇಂದು ಯಾವುದೇ ಹಬ್ಬ ಇಲ್ಲ.",
+    "nextFestival": "ಮುಂದಿನ ಹಬ್ಬ",
+    "daysRemainingLabel": "ಉಳಿದ ದಿನಗಳು",
+    "daysRemainingSingle": "{{count}} ದಿನ",
+    "daysRemainingPlural": "{{count}} ದಿನಗಳು",
+    "importance": "ಮಹತ್ವ",
+    "preparationProgress": "ಸಿದ್ಧತೆ ಪ್ರಗತಿ",
+    "preparationItemsReady": "{{count}} ಪಟ್ಟಿ ಐಟಂಗಳು ಸಿದ್ಧವಾಗಿವೆ",
+    "upcomingRitual": "ಮುಂಬರುವ ಆಚರಣೆ",
+    "personalizedTip": "ವೈಯಕ್ತಿಕಗೊಳಿಸಿದ ಸಲಹೆ",
+    "viewIntelligence": "🔮 ಹಬ್ಬ ಬುದ್ಧಿಮತ್ತೆಯನ್ನು ವೀಕ್ಷಿಸಿ"
+  },
+  "muhurat": {
+    "bestMuhuratFor": "{{activity}} ಗಾಗಿ ಉತ್ತಮ ಮುಹೂರ್ತ",
+    "confidence": {
+      "high": "ಹೆಚ್ಚು",
+      "medium": "ಮಧ್ಯಮ",
+      "low": "ಕಡಿಮೆ"
+    },
+    "confidenceBadge": "{{level}} ವಿಶ್ವಾಸ",
+    "bestDate": "ಉತ್ತಮ ದಿನಾಂಕ",
+    "bestTimeWindow": "ಉತ್ತಮ ಸಮಯ",
+    "tithi": "ತಿಥಿ",
+    "auspiciousWindow": "ಶುಭ ಸಮಯ",
+    "cautionPeriod": "ಎಚ್ಚರಿಕೆ ಅವಧಿ (ತಪ್ಪಿಸಿ)",
+    "rahuKaal": "ರಾಹು ಕಾಲ",
+    "yamaganda": "ಯಮಗಂಡ",
+    "gulikaKaal": "ಗುಳಿಕ ಕಾಲ",
+    "otherStrongDates": "ಇತರ ಉತ್ತಮ ದಿನಾಂಕಗಳು",
+    "askingAI": "AI ಅನ್ನು ಕೇಳಲಾಗುತ್ತಿದೆ…",
+    "explainWhy": "🔮 ಈ ಮುಹೂರ್ತ ಏಕೆ ಎಂದು ವಿವರಿಸಿ",
+    "nakshatra": "ನಕ್ಷತ್ರ"
+  },
+  "calendarStrip": {
+    "heading": "🎉 ಈ ತಿಂಗಳ ಹಬ್ಬಗಳು",
+    "viewCalendarLink": "ಹಬ್ಬಗಳ ಕ್ಯಾಲೆಂಡರ್ ನೋಡಿ →",
+    "todayLabel": "ಇಂದು:",
+    "loadingOverview": "ಹಬ್ಬದ ಅವಲೋಕನ ಲೋಡ್ ಆಗುತ್ತಿದೆ…",
+    "importanceSuffix": "ಪ್ರಾಮುಖ್ಯತೆ"
+  }
+}

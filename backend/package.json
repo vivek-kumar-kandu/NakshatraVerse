@@ -23,6 +23,10 @@
     "express": "^4.21.1",
     "google-auth-library": "^9.14.2",
     "jsonwebtoken": "^9.0.2",
+<<<<<<< HEAD
+=======
+    "mongoose": "^9.7.4",
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     "pdfkit": "^0.15.1"
   },
   "devDependencies": {

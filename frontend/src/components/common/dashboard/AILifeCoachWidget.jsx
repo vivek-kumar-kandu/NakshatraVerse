@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo, useEffect, useState } from "react";
 import SummaryCard from "./SummaryCard.jsx";
 import Badge from "../Badge.jsx";
@@ -16,6 +20,10 @@ import * as lifeCoachApi from "../../../utils/lifeCoachApi.js";
 // its own Astrology Summary card — no second/duplicate report fetch.
 // ─────────────────────────────────────────────────────────────────────────
 function AILifeCoachWidget({ reportData, onOpenFull }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["dashboard", "common"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [guidance, setGuidance] = useState(null);
   const [error, setError] = useState(false);
 
@@ -32,7 +40,11 @@ function AILifeCoachWidget({ reportData, onOpenFull }) {
   return (
     <SummaryCard
       icon="🧭"
+<<<<<<< HEAD
       title="AI Life Coach"
+=======
+      title={t("dashboard:aiLifeCoach", "AI Life Coach")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       action={onOpenFull && (
         <button
           onClick={onOpenFull}
@@ -47,7 +59,11 @@ function AILifeCoachWidget({ reportData, onOpenFull }) {
       )}
     >
       {!guidance ? (
+<<<<<<< HEAD
         <div style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>Loading…</div>
+=======
+        <div style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>{t("common:loading", "Loading…")}</div>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       ) : (
         <>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 12, alignItems: "center" }}>
@@ -55,7 +71,11 @@ function AILifeCoachWidget({ reportData, onOpenFull }) {
           </div>
           {guidance.todaysFocus && (
             <p style={{ margin: "0 0 8px", fontSize: 12.5, lineHeight: 1.5, color: "var(--nv-text-primary, #e8d5ff)" }}>
+<<<<<<< HEAD
               <strong style={{ color: "var(--nv-text-muted, rgba(200,160,255,0.6))", fontWeight: 600 }}>Today's Focus: </strong>
+=======
+              <strong style={{ color: "var(--nv-text-muted, rgba(200,160,255,0.6))", fontWeight: 600 }}>{t("dashboard:todaysFocus", "Today's Focus:")} </strong>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               {guidance.todaysFocus}
             </p>
           )}

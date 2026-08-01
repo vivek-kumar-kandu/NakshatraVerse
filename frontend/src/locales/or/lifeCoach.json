@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "daily": "ଦୈନିକ",
+    "weekly": "ସାପ୍ତାହିକ",
+    "monthly": "ମାସିକ",
+    "career": "କ୍ୟାରିୟର",
+    "relationship": "ସମ୍ପର୍କ",
+    "finance": "ଅର୍ଥ",
+    "health": "ସ୍ୱାସ୍ଥ୍ୟ",
+    "growth": "ବିକାଶ"
+  },
+  "page": {
+    "back": "← ପଛକୁ",
+    "title": "🧭 AI ଲାଇଫ୍ କୋଚ୍",
+    "dailyCompanion": "{{name}} ର ଦୈନିକ ସାଥୀ",
+    "updated": "{{time}} ରେ ଅଦ୍ୟତନ",
+    "refreshing": "ସତେଜ କରାଯାଉଛି…",
+    "refreshGuidance": "↻ ମାର୍ଗଦର୍ଶନ ସତେଜ କରନ୍ତୁ",
+    "tryAgain": "ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ",
+    "loadingAriaLabel": "ଆପଣଙ୍କର AI ଲାଇଫ୍ କୋଚ୍ ମାର୍ଗଦର୍ଶନ ଲୋଡ୍ ହେଉଛି",
+    "loadFailed": "ଆପଣଙ୍କର AI ଲାଇଫ୍ କୋଚ୍ ମାର୍ଗଦର୍ଶନ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "refreshFailed": "ଆପଣଙ୍କର AI ଲାଇଫ୍ କୋଚ୍ ମାର୍ଗଦର୍ଶନ ସତେଜ ହୋଇପାରିଲା ନାହିଁ।",
+    "noReadingTitle": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ରିଡିଂ ଉପଲବ୍ଧ ନାହିଁ",
+    "noReadingMessage": "ଆପଣଙ୍କର ବ୍ୟକ୍ତିଗତ AI ଲାଇଫ୍ କୋଚ୍ ଦେଖିବାକୁ ପ୍ରଥମେ ଏକ ରିପୋର୍ଟ ତିଆରି କରନ୍ତୁ କିମ୍ବା ଖୋଲନ୍ତୁ।",
+    "backAction": "← ପଛକୁ"
+  },
+  "daily": {
+    "opportunities": "ସୁଯୋଗଗୁଡ଼ିକ",
+    "challenges": "ଆହ୍ୱାନଗୁଡ଼ିକ",
+    "recommendedActions": "ପରାମର୍ଶିତ କାର୍ଯ୍ୟସମୂହ",
+    "thingsToAvoid": "ଏଡାଇବାକୁ ଥିବା ବିଷୟଗୁଡ଼ିକ",
+    "spiritualGuidance": "🕉️ ଆଧ୍ୟାତ୍ମିକ ମାର୍ଗଦର୍ଶନ"
+  },
+  "outlook": {
+    "weeklyThemeTitle": "ଏହି ସପ୍ତାହର ବିଷୟ",
+    "weeklyEnergyLabel": "ସାପ୍ତାହିକ ଶକ୍ତି",
+    "monthlyThemeTitle": "ଏହି ମାସର ବିଷୟ",
+    "monthlyEnergyLabel": "ମାସିକ ଶକ୍ତି",
+    "weeklyUnavailableTitle": "ସାପ୍ତାହିକ ଦୃଷ୍ଟିକୋଣ ଉପଲବ୍ଧ ନାହିଁ",
+    "weeklyUnavailableMessage": "ଆମେ ବର୍ତ୍ତମାନ ଏହି ସପ୍ତାହର ଦୃଷ୍ଟିକୋଣ ତିଆରି କରିପାରିଲୁ ନାହିଁ — ଦୟାକରି ସତେଜ କରନ୍ତୁ।",
+    "monthlyUnavailableTitle": "ମାସିକ ଦୃଷ୍ଟିକୋଣ ଉପଲବ୍ଧ ନାହିଁ",
+    "monthlyUnavailableMessage": "ଆମେ ବର୍ତ୍ତମାନ ଏହି ମାସର ଦୃଷ୍ଟିକୋଣ ତିଆରି କରିପାରିଲୁ ନାହିଁ — ଦୟାକରି ସତେଜ କରନ୍ତୁ।",
+    "weeklyFocus": "ସାପ୍ତାହିକ ଫୋକସ୍",
+    "personalGrowthGoal": "ବ୍ୟକ୍ତିଗତ ବିକାଶ ଲକ୍ଷ୍ୟ",
+    "careerFocus": "କ୍ୟାରିୟର ଫୋକସ୍",
+    "relationshipFocus": "ସମ୍ପର୍କ ଫୋକସ୍",
+    "opportunities": "ସୁଯୋଗଗୁଡ଼ିକ",
+    "challenges": "ଆହ୍ୱାନଗୁଡ଼ିକ",
+    "bestDay": "ସର୍ବୋତ୍ତମ ଦିନ: {{weekday}} ({{date}})",
+    "cautionDay": "ସତର୍କତା ଦିନ: {{weekday}} ({{date}})"
+  },
+  "career": {
+    "cardTitle": "କ୍ୟାରିୟର କୋଚ୍",
+    "progress": "କ୍ୟାରିୟର ପ୍ରଗତି",
+    "skillDevelopmentAdvice": "କୌଶଳ ବିକାଶ ପରାମର୍ଶ",
+    "promotionGuidance": "ପଦୋନ୍ନତି ମାର୍ଗଦର୍ଶନ",
+    "businessSuggestions": "ବ୍ୟବସାୟ ପରାମର୍ଶ",
+    "bestTimeForDecisions": "ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ନିଷ୍ପତ୍ତି ପାଇଁ ସର୍ବୋତ୍ତମ ସମୟ"
+  },
+  "relationship": {
+    "cardTitle": "ସମ୍ପର୍କ କୋଚ୍",
+    "guidance": "ସମ୍ପର୍କ ମାର୍ଗଦର୍ଶନ",
+    "marriageAdvice": "ବିବାହ ପରାମର୍ଶ",
+    "familyHarmonyTips": "ପାରିବାରିକ ସାମଞ୍ଜସ୍ୟ ଟିପ୍ସ",
+    "communicationSuggestions": "ଯୋଗାଯୋଗ ପରାମର୍ଶ",
+    "emotionalWellbeing": "ଭାବନାତ୍ମକ ସୁସ୍ଥତା"
+  },
+  "finance": {
+    "cardTitle": "ଅର୍ଥ କୋଚ୍",
+    "outlook": "ଆର୍ଥିକ ଦୃଷ୍ଟିକୋଣ",
+    "spendingSuggestions": "ଖର୍ଚ୍ଚ ପରାମର୍ଶ",
+    "savingAdvice": "ସଞ୍ଚୟ ପରାମର୍ଶ",
+    "investmentAwareness": "ନିବେଶ ସଚେତନତା",
+    "businessOpportunities": "ବ୍ୟବସାୟ ସୁଯୋଗ"
+  },
+  "health": {
+    "cardTitle": "ସ୍ୱାସ୍ଥ୍ୟ ଏବଂ ସୁସ୍ଥତା",
+    "energyTrends": "ଶକ୍ତି ଧାରା",
+    "stressAwareness": "ଚାପ ସଚେତନତା",
+    "meditationSuggestions": "ଧ୍ୟାନ ପରାମର୍ଶ",
+    "yogaRecommendations": "ଯୋଗ ପରାମର୍ଶ",
+    "spiritualPractices": "ଆଧ୍ୟାତ୍ମିକ ଅଭ୍ୟାସ",
+    "lifestyleSuggestions": "ଜୀବନଶୈଳୀ ପରାମର୍ଶ"
+  },
+  "growth": {
+    "dailyGoals": "ଦୈନିକ ଲକ୍ଷ୍ୟ",
+    "weeklyGoals": "ସାପ୍ତାହିକ ଲକ୍ଷ୍ୟ",
+    "monthlyFocus": "🌕 ମାସିକ ଫୋକସ୍",
+    "habitSuggestions": "ଅଭ୍ୟାସ ପରାମର୍ଶ",
+    "learningRecommendations": "ଶିକ୍ଷଣ ପରାମର୍ଶ"
+  },
+  "scoreCard": {
+    "dailyEnergyLabel": "ଦୈନିକ ଶକ୍ତି",
+    "todaysFocus": "ଆଜିର ଫୋକସ୍"
+  },
+  "confidenceBadge": {
+    "withScore": "ବିଶ୍ୱାସ: {{label}} ({{score}}/100)",
+    "withoutScore": "ବିଶ୍ୱାସ: {{label}}"
+  },
+  "whyNote": {
+    "prefix": "କାହିଁକି? "
+  },
+  "luckyElements": {
+    "title": "🍀 ଆଜିର ଭାଗ୍ୟବାନ ଉପାଦାନ",
+    "color": "ରଙ୍ଗ",
+    "number": "ସଂଖ୍ୟା",
+    "direction": "ଦିଗ",
+    "favorableTime": "ଅନୁକୂଳ ସମୟ"
+  },
+  "affirmation": {
+    "dailyAffirmation": "✦ ଦୈନିକ ପୁଷ୍ଟିକରଣ",
+    "spiritualPractice": "🕉️ ଆଜିର ଆଧ୍ୟାତ୍ମିକ ଅଭ୍ୟାସ"
+  }
+}

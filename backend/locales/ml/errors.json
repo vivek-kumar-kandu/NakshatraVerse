@@ -1,0 +1,16 @@
+{
+  "notFound": "റൂട്ട് ലഭ്യമല്ല {{method}} {{path}}",
+  "malformedJson": "അഭ്യർത്ഥന ബോഡിയിൽ തെറ്റായ JSON.",
+  "bodyTooLarge": "അഭ്യർത്ഥന ബോഡി വളരെ വലുതാണ്.",
+  "internalError": "ആന്തരിക സെർവർ പിശക്.",
+  "internalErrorProduction": "ആന്തരിക സെർവർ പിശക്. വീണ്ടും ശ്രമിക്കുക.",
+  "invalidRequest": "അസാധുവായ അഭ്യർത്ഥന: {{errors}}",
+  "serviceUnavailable": "{{feature}} ഇപ്പോൾ ലഭ്യമല്ല.",
+  "invalidProfile": "അസാധുവായ പ്രൊഫൈൽ: {{errors}}",
+  "chooseTwoDifferentProfiles": "താരതമ്യം ചെയ്യാൻ രണ്ട് വ്യത്യസ്ത പ്രൊഫൈലുകൾ തിരഞ്ഞെടുക്കുക.",
+  "comparisonError": "ഈ രണ്ട് പ്രൊഫൈലുകൾ താരതമ്യം ചെയ്യുമ്പോൾ ആന്തരിക സെർവർ പിശക്.",
+  "internalErrorWhile": "{{action}} ചെയ്യുമ്പോൾ ആന്തരിക സെർവർ പിശക്.",
+  "occurrenceNotFound": "{{year}} വർഷത്തിൽ \"{{key}}\" കണ്ടെത്തിയില്ല.",
+  "missingApiKey": "സെർവറിൽ API കീ ഇല്ല. backend/.env-ൽ GOOGLE_API_KEY സെറ്റ് ചെയ്യുക.",
+  "tooManyRequests": "വളരെ കൂടുതൽ അഭ്യർത്ഥനകൾ. ദയവായി കുറച്ചു കഴിഞ്ഞ് വീണ്ടും ശ്രമിക്കുക."
+}

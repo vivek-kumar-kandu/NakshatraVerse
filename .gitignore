@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ─────────────────────────────────────────────────────────────────────────
 # NakshatraVerse — root .gitignore (covers backend/ and frontend/)
 # ─────────────────────────────────────────────────────────────────────────
@@ -71,3 +72,25 @@ yarn-debug.log*
 *.gz
 
 audit-report.json
+=======
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node modules & logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production build output
+dist/
+build/
+
+# IDE & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)

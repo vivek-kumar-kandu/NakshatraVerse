@@ -1,0 +1,111 @@
+{
+  "header": {
+    "title": "ನಿಮ್ಮ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+    "welcomeBack": "ಮತ್ತೆ ಸ್ವಾಗತ, {{name}} ✦",
+    "welcomeBackFallbackName": "ಪ್ರವಾಸಿ",
+    "generateNewReport": "✦ ಹೊಸ ವರದಿಯನ್ನು ರಚಿಸಿ"
+  },
+  "error": {
+    "loadFailed": "ನಿಮ್ಮ ಉಳಿಸಿದ ವರದಿಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "tryAgain": "↻ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+  },
+  "userSummary": {
+    "authProviderGoogle": "Google ನೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಲಾಗಿದೆ",
+    "authProviderEmail": "ಇಮೇಲ್ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್",
+    "viewFullProfile": "ಪೂರ್ಣ ಪ್ರೊಫೈಲ್ ವೀಕ್ಷಿಸಿ →"
+  },
+  "statistics": {
+    "sectionTitle": "ಅಂಕಿಅಂಶಗಳು",
+    "savedReports": "ಉಳಿಸಿದ ವರದಿಗಳು",
+    "memberSince": "ಸದಸ್ಯತ್ವದ ಆರಂಭ",
+    "latestReading": "ಇತ್ತೀಚಿನ ರೀಡಿಂಗ್",
+    "currentTheme": "ಪ್ರಸ್ತುತ ಥೀಮ್",
+    "systemThemeLabel": "ಸಿಸ್ಟಮ್ ({{themeName}})",
+    "notAvailable": "—",
+    "loadingValue": "…"
+  },
+  "astrologySummary": {
+    "sectionTitle": "ಜ್ಯೋತಿಷ್ಯ ಸಾರಾಂಶ",
+    "cardTitle": "ನಿಮ್ಮ ಇತ್ತೀಚಿನ ರೀಡಿಂಗ್‌ನಿಂದ",
+    "padaBadge": " · ಪಾದ {{pada}}",
+    "lordBadge": "ಒಡೆಯ: {{lord}}",
+    "currentMahadasha": "ಪ್ರಸ್ತುತ ಮಹಾದಶೆ",
+    "currentAntardasha": "ಪ್ರಸ್ತುತ ಅಂತರ್ದಶೆ"
+  },
+  "quickActions": {
+    "sectionTitle": "ತ್ವರಿತ ಕ್ರಿಯೆಗಳು",
+    "generateNewReport": {
+      "label": "ಹೊಸ ವರದಿಯನ್ನು ರಚಿಸಿ",
+      "desc": "ಹೊಸ ವೈದಿಕ ರೀಡಿಂಗ್ ಪ್ರಾರಂಭಿಸಿ"
+    },
+    "continueReading": {
+      "label": "ರೀಡಿಂಗ್ ಮುಂದುವರಿಸಿ",
+      "desc": "ನಿಮ್ಮ ಕೊನೆಯದಾಗಿ ನೋಡಿದ ವರದಿಯನ್ನು ಮತ್ತೆ ತೆರೆಯಿರಿ"
+    },
+    "myProfile": {
+      "label": "ನನ್ನ ಪ್ರೊಫೈಲ್",
+      "desc": "ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ವಿವರಗಳನ್ನು ವೀಕ್ಷಿಸಿ"
+    },
+    "savedReports": {
+      "label": "ಉಳಿಸಿದ ವರದಿಗಳು",
+      "desc": "ನಿಮ್ಮ ಸಂಪೂರ್ಣ ಸಂಗ್ರಹವನ್ನು ಬ್ರೌಸ್ ಮಾಡಿ"
+    },
+    "askAI": {
+      "label": "AI ಅನ್ನು ಕೇಳಿ",
+      "desc": "ನಿಮ್ಮ ಜ್ಯೋತಿಷ್ಯ ಸಹಾಯಕರೊಂದಿಗೆ ಚಾಟ್ ಮಾಡಿ"
+    },
+    "aiLifeCoach": {
+      "label": "AI ಜೀವನ ಮಾರ್ಗದರ್ಶಕ",
+      "desc": "ದೈನಂದಿನ, ವೃತ್ತಿ, ಸಂಬಂಧಗಳು, ಹಣಕಾಸು ಮತ್ತು ಆರೋಗ್ಯ ಮಾರ್ಗದರ್ಶನ"
+    },
+    "kundliMatching": {
+      "label": "ಕುಂಡಲಿ ಹೊಂದಾಣಿಕೆ",
+      "desc": "ಇಬ್ಬರು ವ್ಯಕ್ತಿಗಳ ವೈದಿಕ ಹೊಂದಾಣಿಕೆಯನ್ನು ಪರಿಶೀಲಿಸಿ"
+    },
+    "panchangMuhurat": {
+      "label": "ಪಂಚಾಂಗ ಮತ್ತು ಮುಹೂರ್ತ",
+      "desc": "ದೈನಂದಿನ ಪಂಚಾಂಗ ಮತ್ತು ಶುಭ ಮುಹೂರ್ತ ಶೋಧಕ"
+    },
+    "familyProfiles": {
+      "label": "ಕುಟುಂಬ ಪ್ರೊಫೈಲ್‌ಗಳು",
+      "desc": "ನಿಮ್ಮ ಕುಟುಂಬದ ಪ್ರತಿಯೊಂದು ಜನ್ಮಕುಂಡಲಿಯನ್ನು ನಿರ್ವಹಿಸಿ"
+    },
+    "relationshipHub": {
+      "label": "ಸಂಬಂಧ ಕೇಂದ್ರ",
+      "desc": "ಯಾವುದೇ ಎರಡು ಉಳಿಸಿದ ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ಹೋಲಿಸಿ"
+    },
+    "settings": {
+      "label": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+      "desc": "ನಿಮ್ಮ ಖಾತೆಯನ್ನು ನಿರ್ವಹಿಸಿ"
+    }
+  },
+  "recentReports": {
+    "sectionTitle": "ಇತ್ತೀಚಿನ ವರದಿಗಳು",
+    "viewAll": "ಎಲ್ಲಾ ವೀಕ್ಷಿಸಿ →",
+    "emptyTitle": "ಇನ್ನೂ ಯಾವುದೇ ರೀಡಿಂಗ್ ಇಲ್ಲ",
+    "emptyMessage": "ಇಲ್ಲಿ ತೋರಿಸಲು ನಿಮ್ಮ ಮೊದಲ ವೈದಿಕ ರೀಡಿಂಗ್ ಅನ್ನು ರಚಿಸಿ.",
+    "emptyAction": "✦ ಹೊಸ ವರದಿಯನ್ನು ರಚಿಸಿ"
+  },
+  "aiLifeCoach": "AI లైఫ్ కోచ్",
+  "todaysFocus": "ఇందిన గమనాంశ:",
+  "personalizedInsights": "వ్యక్తిగత అవలోకనగళు",
+  "yourPersonalizedGuidance": "✦ నిమ్మ వ్యక్తిగత మార్గదర్శన",
+  "insightPeriod": "అవలోకన అవధి",
+  "whatsChanged": "ఏను బదలాగిదె:",
+  "noUpcomingEvents": "యావుదే రాబోవువ విచారగళిల్ల",
+  "loadingPanchang": "పంచాంగ విహంగమదృష్టి లోడ్ ఆగుత్తిదె…",
+  "bestTimeToday": "✨ ఇందిన ఉత్తమ సమయ",
+  "recommendedActivities": "✓ సిఫారసు మాడలాద జటువటికెగళు",
+  "thingsToAvoid": "⚠ త్యజిసబేకాద విచారగళు",
+  "noReadingYet": "ఇన్నూ యావుదే నివేదనె లభ్యవిల్ల",
+  "astrologyCalendar": "📅 జ్యోతిష్య క్యాలెండర్",
+  "dashaUnavailable": "దశె లభ్యవిల్ల",
+  "noUpcomingChanges": "యావుదే బదలావణెగళిల్ల",
+  "noTransitData": "గోచార డేటా ఇల్ల",
+  "auspicious": "✓ శుభ",
+  "caution": "⚠ హెచ్చరికె",
+  "horoscopeDashboard": "🔮 రాశిభవిష్య డాష్‌బోర్డ్",
+  "noWeeklyFocus": "వారద గమనాంశ లభ్యవిల్ల",
+  "noMonthlySegments": "ఈ తింగళల్లి యావుదే మాసిక విభాగగళిల్ల",
+  "dailyPanchangMuhurat": "🕉️ దిననిత్యద పంచాంగ మత్తు ముహూర్త"
+}

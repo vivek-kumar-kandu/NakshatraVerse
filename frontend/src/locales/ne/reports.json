@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← ड्यासबोर्डमा फर्कनुहोस्",
+    "title": "सुरक्षित प्रतिवेदनहरू",
+    "titleWithCount": "सुरक्षित प्रतिवेदनहरू ({{count}})",
+    "generateNewReport": "✦ नयाँ प्रतिवेदन बनाउनुहोस्",
+    "loadFailed": "तपाईंका सुरक्षित प्रतिवेदनहरू लोड हुन सकेनन्।",
+    "tryAgain": "↻ फेरि प्रयास गर्नुहोस्",
+    "deleteToastSuccess": "\"{{title}}\" मेटाइयो।",
+    "deleteToastFallbackTitle": "प्रतिवेदन",
+    "deleteFailed": "त्यो प्रतिवेदन मेटाउन सकिएन।",
+    "downloadToastSuccess": "PDF डाउनलोड भयो।",
+    "downloadFailed": "PDF बनाउन सकिएन।",
+    "emptyTitle": "अहिलेसम्म कुनै सुरक्षित प्रतिवेदन छैन",
+    "emptyMessage": "यहाँ तपाईंको संग्रह बनाउन एउटा रिडिङ बनाउनुहोस् र प्रतिवेदन सुरक्षित गर्नुहोस्मा ट्याप गर्नुहोस्।",
+    "emptyAction": "✦ नयाँ प्रतिवेदन बनाउनुहोस्",
+    "noMatchesTitle": "कुनै मिलान फेला परेन",
+    "noMatchesMessage": "कुनै सुरक्षित प्रतिवेदन \"{{query}}\" सँग मेल खाँदैन। फरक शीर्षक, नाम, वा लग्न प्रयास गर्नुहोस्।",
+    "clearSearch": "खोज खाली गर्नुहोस्",
+    "deleteDialog": {
+      "title": "यो प्रतिवेदन मेटाउने हो?",
+      "message": "\"{{title}}\" स्थायी रूपमा हटाइनेछ। यसलाई फिर्ता ल्याउन सकिँदैन।",
+      "fallbackTitle": "यो प्रतिवेदन",
+      "confirmLabel": "मेटाउनुहोस्",
+      "cancelLabel": "रद्द गर्नुहोस्"
+    }
+  },
+  "detail": {
+    "loadFailed": "त्यो प्रतिवेदन लोड हुन सकेन।",
+    "backToSavedReports": "← सुरक्षित प्रतिवेदनहरूमा फर्कनुहोस्",
+    "loading": "तपाईंको सुरक्षित रिडिङ लोड हुँदैछ…",
+    "openHoroscope": "🔮 राशिफल",
+    "openCalendar": "📅 पात्रो",
+    "openLifeCoach": "🧭 लाइफ कोच",
+    "askAI": "✨ AI लाई सोध्नुहोस्"
+  },
+  "card": {
+    "savedOn": "{{date}} मा सुरक्षित गरिएको",
+    "view": "हेर्नुहोस्",
+    "preview": "पूर्वावलोकन",
+    "download": "PDF",
+    "delete": "मेटाउनुहोस्",
+    "deleting": "मेटाइँदैछ…",
+    "lagnaSuffix": "{{lagna}} लग्न",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "प्रतिवेदन लेआउट",
+    "gridView": "ग्रिड दृश्य",
+    "listView": "सूची दृश्य",
+    "searchPlaceholder": "शीर्षक, नाम, वा लग्नद्वारा खोज्नुहोस्…",
+    "searchAriaLabel": "सुरक्षित प्रतिवेदनहरू खोज्नुहोस्",
+    "sortAriaLabel": "सुरक्षित प्रतिवेदनहरू क्रमबद्ध गर्नुहोस्",
+    "resultCountSingle": "{{count}} प्रतिवेदन",
+    "resultCountPlural": "{{count}} प्रतिवेदनहरू",
+    "resultCountFiltered": "{{total}} मध्ये {{count}}"
+  },
+  "sort": {
+    "newest": "सबैभन्दा नयाँ पहिले",
+    "oldest": "सबैभन्दा पुरानो पहिले",
+    "title-asc": "शीर्षक (A–Z)",
+    "title-desc": "शीर्षक (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} को पूर्वावलोकन",
+    "closePreview": "पूर्वावलोकन बन्द गर्नुहोस्",
+    "savedOn": "{{date}} मा सुरक्षित गरिएको",
+    "noDetails": "यस प्रतिवेदनका लागि कुनै थप विवरण सुरक्षित छैन।",
+    "description": "यो तपाईंको सुरक्षित रिडिङको विवरणको एक छिटो पूर्वावलोकन हो। प्रत्येक खण्ड पढ्न पूर्ण प्रतिवेदन खोल्नुहोस् — प्रेम, करियर, धन, स्वास्थ्य, दोष र योग, उपायहरू, र तपाईंको जीवन सारांश।",
+    "viewFullReport": "✦ पूर्ण प्रतिवेदन हेर्नुहोस्",
+    "preparingPdf": "PDF तयार गरिँदैछ…",
+    "downloadPdf": "⭳ PDF डाउनलोड गर्नुहोस्"
+  },
+  "summarizeAiAria": "AI को साथ यो रिपोर्ट सारांशित गर्नुहोस्",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy is not part of this chart's backend-derived remedies."
+}

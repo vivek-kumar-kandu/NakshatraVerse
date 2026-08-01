@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← டாஷ்போர்டுக்குத் திரும்பு",
+    "title": "எனது சுயவிவரம்",
+    "photoHint": "திருத்த உங்கள் புகைப்படத்தில் கிளிக் செய்யவும் — பதிவேற்றவும், மாற்றவும் அல்லது அகற்றவும்.",
+    "authProviderGoogle": "Google மூலம் உள்நுழைந்தது",
+    "authProviderEmail": "மின்னஞ்சல் மற்றும் கடவுச்சொல்",
+    "accountInformation": "கணக்குத் தகவல்",
+    "fullName": "முழு பெயர்",
+    "email": "மின்னஞ்சல்",
+    "memberSince": "உறுப்பினர் ஆனது",
+    "accountType": "கணக்கு வகை",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "கடவுச்சொல்லை மாற்றவும்",
+    "editProfileInSettings": "அமைப்புகளில் சுயவிவரத்தைத் திருத்தவும் →",
+    "activitySummary": "சுயவிவர செயல்பாட்டு சுருக்கம்",
+    "totalReports": "மொத்த அறிக்கைகள்",
+    "loadingValue": "…",
+    "lastGenerated": "கடைசியாக உருவாக்கப்பட்டது",
+    "viewSavedReports": "சேமிக்கப்பட்ட அறிக்கைகளைக் காண்க →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "JPG, PNG அல்லது WEBP படத்தைத் தேர்ந்தெடுக்கவும்.",
+    "fileTooLarge": "அந்த படம் மிகவும் பெரியது. தயவுசெய்து 8MB க்கும் குறைவான அளவு கொண்ட கோப்பைத் தேர்ந்தெடுக்கவும்.",
+    "processFailed": "அந்த படத்தைச் செயலாக்க முடியவில்லை.",
+    "photoUpdated": "சுயவிவர படம் புதுப்பிக்கப்பட்டது.",
+    "saveFailed": "உங்கள் படத்தைச் சேமிக்க முடியவில்லை.",
+    "photoRemoved": "சுயவிவர படம் அகற்றப்பட்டது.",
+    "removeFailed": "உங்கள் படத்தை அகற்ற முடியவில்லை.",
+    "changePhotoAriaLabel": "சுயவிவர படத்தை மாற்றவும்",
+    "uploadPhotoAriaLabel": "சுயவிவர படத்தைப் பதிவேற்றவும்",
+    "menuAriaLabel": "சுயவிவர படம் விருப்பங்கள்",
+    "replacePhoto": "படத்தை மாற்றவும்",
+    "uploadPhoto": "படத்தைப் பதிவேற்றவும்",
+    "removePhoto": "படத்தை அகற்றவும்",
+    "previewDialogAriaLabel": "புதிய சுயவிவர படத்தின் முன்னோட்டம்",
+    "previewYourNewPhoto": "உங்கள் புதிய படத்தை முன்னோட்டமிடவும்",
+    "cancel": "ரத்து செய்யவும்",
+    "save": "சேமிக்கவும்"
+  }
+}

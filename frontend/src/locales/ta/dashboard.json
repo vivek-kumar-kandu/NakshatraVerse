@@ -1,0 +1,111 @@
+{
+  "header": {
+    "title": "உங்கள் டாஷ்போர்டு",
+    "welcomeBack": "மீண்டும் வரவேற்கிறோம், {{name}} ✦",
+    "welcomeBackFallbackName": "பயணி",
+    "generateNewReport": "✦ புதிய அறிக்கையை உருவாக்கவும்"
+  },
+  "error": {
+    "loadFailed": "உங்கள் சேமிக்கப்பட்ட அறிக்கைகளை ஏற்ற முடியவில்லை.",
+    "tryAgain": "↻ மீண்டும் முயற்சிக்கவும்"
+  },
+  "userSummary": {
+    "authProviderGoogle": "Google மூலம் உள்நுழைந்தது",
+    "authProviderEmail": "மின்னஞ்சல் மற்றும் கடவுச்சொல்",
+    "viewFullProfile": "முழு சுயவிவரத்தைக் காண்க →"
+  },
+  "statistics": {
+    "sectionTitle": "புள்ளிவிவரங்கள்",
+    "savedReports": "சேமிக்கப்பட்ட அறிக்கைகள்",
+    "memberSince": "உறுப்பினர் ஆனது",
+    "latestReading": "சமீபத்திய படிப்பு",
+    "currentTheme": "தற்போதைய தீம்",
+    "systemThemeLabel": "சிஸ்டம் ({{themeName}})",
+    "notAvailable": "—",
+    "loadingValue": "…"
+  },
+  "astrologySummary": {
+    "sectionTitle": "ஜோதிட சுருக்கம்",
+    "cardTitle": "உங்கள் சமீபத்திய படிப்பிலிருந்து",
+    "padaBadge": " · பாதம் {{pada}}",
+    "lordBadge": "அதிபதி: {{lord}}",
+    "currentMahadasha": "தற்போதைய மகாதசை",
+    "currentAntardasha": "தற்போதைய அந்தர்தசை"
+  },
+  "quickActions": {
+    "sectionTitle": "விரைவு செயல்கள்",
+    "generateNewReport": {
+      "label": "புதிய அறிக்கையை உருவாக்கவும்",
+      "desc": "ஒரு புதிய வேத படிப்பைத் தொடங்கவும்"
+    },
+    "continueReading": {
+      "label": "படிப்பைத் தொடரவும்",
+      "desc": "உங்கள் கடைசியாகப் பார்த்த அறிக்கையை மீண்டும் திறக்கவும்"
+    },
+    "myProfile": {
+      "label": "எனது சுயவிவரம்",
+      "desc": "உங்கள் சுயவிவர விவரங்களைக் காண்க"
+    },
+    "savedReports": {
+      "label": "சேமிக்கப்பட்ட அறிக்கைகள்",
+      "desc": "உங்கள் முழு தொகுப்பையும் உலாவவும்"
+    },
+    "askAI": {
+      "label": "AI-யிடம் கேளுங்கள்",
+      "desc": "உங்கள் ஜோதிட உதவியாளருடன் அரட்டையடிக்கவும்"
+    },
+    "aiLifeCoach": {
+      "label": "AI வாழ்க்கை பயிற்சியாளர்",
+      "desc": "தினசரி, தொழில், உறவுகள், நிதி மற்றும் ஆரோக்கிய வழிகாட்டுதல்"
+    },
+    "kundliMatching": {
+      "label": "ஜாதக பொருத்தம்",
+      "desc": "இரண்டு நபர்களின் வேத பொருத்தத்தைச் சரிபார்க்கவும்"
+    },
+    "panchangMuhurat": {
+      "label": "பஞ்சாங்கம் மற்றும் முகூர்த்தம்",
+      "desc": "தினசரி பஞ்சாங்கம் மற்றும் நல்ல முகூர்த்த தேடல்"
+    },
+    "familyProfiles": {
+      "label": "குடும்ப சுயவிவரங்கள்",
+      "desc": "உங்கள் குடும்பத்தின் ஒவ்வொரு ஜாதகத்தையும் நிர்வகிக்கவும்"
+    },
+    "relationshipHub": {
+      "label": "உறவுகள் மையம்",
+      "desc": "எந்த இரண்டு சேமிக்கப்பட்ட சுயவிவரங்களையும் ஒப்பிடவும்"
+    },
+    "settings": {
+      "label": "அமைப்புகள்",
+      "desc": "உங்கள் கணக்கை நிர்வகிக்கவும்"
+    }
+  },
+  "recentReports": {
+    "sectionTitle": "சமீபத்திய அறிக்கைகள்",
+    "viewAll": "அனைத்தையும் காண்க →",
+    "emptyTitle": "இதுவரை படிப்பு எதுவும் இல்லை",
+    "emptyMessage": "இங்கே காட்ட உங்கள் முதல் வேத படிப்பை உருவாக்கவும்.",
+    "emptyAction": "✦ புதிய அறிக்கையை உருவாக்கவும்"
+  },
+  "aiLifeCoach": "AI லைஃப் கோச்",
+  "todaysFocus": "இன்றைய கவனம்:",
+  "personalizedInsights": "தனிப்பயனாக்கப்பட்ட நுண்ணறிவுகள்",
+  "yourPersonalizedGuidance": "✦ உங்கள் தனிப்பயனாக்கப்பட்ட வழிகாட்டுதல்",
+  "insightPeriod": "நுண்ணறிவு காலம்",
+  "whatsChanged": "என்ன மாறியுள்ளது:",
+  "noUpcomingEvents": "வரவிருக்கும் நிகழ்வுகள் எதுவும் இல்லை",
+  "loadingPanchang": "பஞ்சாங்கம் மேலோட்டம் ஏற்றப்படுகிறது…",
+  "bestTimeToday": "✨ இன்றைய சிறந்த நேரம்",
+  "recommendedActivities": "✓ பரிந்துரைக்கப்பட்ட செயல்பாடுகள்",
+  "thingsToAvoid": "✓ தவிர்க்க வேண்டியவை",
+  "noReadingYet": "இன்னும் வாசிப்பு கிடைக்கவில்லை",
+  "astrologyCalendar": "📅 ஜோதிட நாட்காட்டி",
+  "dashaUnavailable": "தசா கிடைக்கவில்லை",
+  "noUpcomingChanges": "வரவிருக்கும் மாற்றங்கள் எதுவும் இல்லை",
+  "noTransitData": "கோசார தரவு இல்லை",
+  "auspicious": "✓ சுப நேரம்",
+  "caution": "⚠ எச்சரிக்கை",
+  "horoscopeDashboard": "🔮 ராசிபலன் தகவல் பலகை",
+  "noWeeklyFocus": "வாராந்திர கவனம் கிடைக்கவில்லை",
+  "noMonthlySegments": "இந்த மாதத்தில் மாதாந்திர பகுதிகள் இல்லை",
+  "dailyPanchangMuhurat": "🕉️ தினசரி பஞ்சாங்கம் & முகூர்த்தம்"
+}

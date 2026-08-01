@@ -1,0 +1,87 @@
+{
+  "categories": {
+    "system": "સિસ્ટમ",
+    "reminder": "રિમાઇન્ડર",
+    "ai": "AI",
+    "panchang": "પંચાંગ",
+    "muhurat": "મુહૂર્ત",
+    "prediction": "ભવિષ્યવાણી",
+    "transit": "ગોચર",
+    "family": "કુટુંબ",
+    "festival": "તહેવાર",
+    "general": "સામાન્ય"
+  },
+  "priorities": {
+    "critical": "અતિ મહત્વપૂર્ણ",
+    "high": "ઉચ્ચ",
+    "medium": "મધ્યમ",
+    "low": "નીચું"
+  },
+  "sort": {
+    "newest": "સૌથી નવું પહેલા",
+    "oldest": "સૌથી જૂનું પહેલા",
+    "priority": "પ્રાથમિકતા"
+  },
+  "center": {
+    "back": "← પાછા",
+    "title": "🔔 સૂચના કેન્દ્ર",
+    "totalSingle": "કુલ {{count}} સૂચના",
+    "totalPlural": "કુલ {{count}} સૂચનાઓ",
+    "searchPlaceholder": "સૂચનાઓ શોધો…",
+    "searchAriaLabel": "સૂચનાઓ શોધો",
+    "filterCategoryAriaLabel": "શ્રેણી પ્રમાણે ફિલ્ટર કરો",
+    "allCategories": "બધી શ્રેણીઓ",
+    "filterPriorityAriaLabel": "પ્રાથમિકતા પ્રમાણે ફિલ્ટર કરો",
+    "allPriorities": "બધી પ્રાથમિકતાઓ",
+    "filterReadStatusAriaLabel": "વાંચન સ્થિતિ પ્રમાણે ફિલ્ટર કરો",
+    "all": "બધા",
+    "unread": "ન વાંચેલ",
+    "read": "વાંચેલ",
+    "sortAriaLabel": "સૂચનાઓ ક્રમમાં ગોઠવો",
+    "markAllRead": "✓ બધું વાંચેલ તરીકે ચિહ્નિત કરો",
+    "clearRead": "🗑️ વાંચેલ સાફ કરો",
+    "loadFailedTitle": "સૂચનાઓ લોડ થઈ શકી નહીં",
+    "retry": "ફરી પ્રયત્ન કરો",
+    "emptyTitle": "કોઈ સૂચના નથી",
+    "emptyMessage": "તમે સંપૂર્ણપણે અપ ટુ ડેટ છો — તમારા વર્તમાન ફિલ્ટર સાથે અહીં કંઈ મેળ ખાતું નથી.",
+    "prevPage": "← પાછલું",
+    "nextPage": "આગળનું →",
+    "pageOf": "પાનું {{page}} માંથી {{totalPages}}",
+    "toasts": {
+      "markReadFailed": "સૂચનાને વાંચેલ તરીકે ચિહ્નિત કરી શકાઈ નહીં.",
+      "markAllReadSuccess": "બધી સૂચનાઓ વાંચેલ તરીકે ચિહ્નિત કરી.",
+      "markAllReadFailed": "બધું વાંચેલ તરીકે ચિહ્નિત કરી શકાયું નહીં.",
+      "deleteFailed": "સૂચના કાઢી શકાઈ નહીં.",
+      "clearReadSuccess": "વાંચેલી સૂચનાઓ સાફ કરી.",
+      "clearReadFailed": "વાંચેલી સૂચનાઓ સાફ કરી શકાઈ નહીં."
+    },
+    "clearDialog": {
+      "title": "વાંચેલી સૂચનાઓ સાફ કરવી છે?",
+      "message": "આ દરેક વાંચેલી સૂચના કાઢી નાખશે. આ પાછું લઈ શકાશે નહીં.",
+      "confirmLabel": "વાંચેલ સાફ કરો",
+      "loadingLabel": "સાફ કરી રહ્યા છીએ…"
+    },
+    "loadFailedGeneric": "સૂચનાઓ લોડ થઈ શકી નહીં."
+  },
+  "card": {
+    "open": "ખોલો →",
+    "openTitle": "ખોલો",
+    "openAriaLabel": "સંબંધિત મોડ્યુલ ખોલો",
+    "markReadTitle": "વાંચેલ તરીકે ચિહ્નિત કરો",
+    "markReadLabel": "✓ વાંચેલ",
+    "deleteTitle": "સૂચના કાઢી નાખો",
+    "deleteAriaLabel": "સૂચના કાઢી નાખો"
+  },
+  "group": {
+    "updateSingle": "{{count}} અપડેટ",
+    "updatePlural": "{{count}} અપડેટ",
+    "unreadBadge": "{{count}} ન વાંચેલ"
+  },
+  "widget": {
+    "title": "🔔 સૂચનાઓ",
+    "unreadCount": "{{count}} ન વાંચેલ",
+    "loadFailed": "સૂચનાઓ લોડ થઈ શકી નહીં.",
+    "emptyMessage": "હજુ સુધી કોઈ સૂચના નથી — તમે સંપૂર્ણપણે અપ ટુ ડેટ છો.",
+    "openCenter": "સૂચના કેન્દ્ર ખોલો →"
+  }
+}

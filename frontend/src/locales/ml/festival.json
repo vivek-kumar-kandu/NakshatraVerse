@@ -1,0 +1,165 @@
+{
+  "typeFilters": {
+    "All": "എല്ലാം",
+    "Festival": "ഉത്സവം",
+    "Vrat": "വ്രതം"
+  },
+  "page": {
+    "back": "← തിരികെ",
+    "title": "🎉 ഉത്സവ കലണ്ടർ",
+    "subtitle": "ബാക്കെൻഡ് കണക്കാക്കിയ ഹൈന്ദവ ഉത്സവങ്ങളും വ്രതങ്ങളും — തീയതികൾ, ആചാരങ്ങൾ, പ്രാധാന്യം.",
+    "tabs": {
+      "today": "ഇന്ന്",
+      "upcoming": "വരാനിരിക്കുന്നത്",
+      "browse": "എല്ലാം ബ്രൗസ് ചെയ്യുക"
+    },
+    "todayLoadFailed": "ഇന്നത്തെ ഉത്സവം ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "upcomingLoadFailed": "വരാനിരിക്കുന്ന ഉത്സവങ്ങൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "yearLoadFailed": "ഉത്സവ കലണ്ടർ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "openFestivalFailed": "ആ ഉത്സവം തുറക്കാൻ കഴിഞ്ഞില്ല.",
+    "todaysFestivalsHeading": "ഇന്നത്തെ ഉത്സവം{{plural}}",
+    "noFestivalTodayTitle": "ഇന്ന് ഉത്സവമില്ല",
+    "noFestivalTodayMessage": "ഇന്നത്തെ തീയതിയിൽ ആഘോഷിക്കാൻ ഉത്സവമോ വ്രതമോ ഇല്ല.",
+    "nextUp": "അടുത്തത് എന്താണ്",
+    "daysRemainingToday": "ഇന്ന്",
+    "daysRemainingSingle": "{{count}} ദിവസത്തിൽ",
+    "daysRemainingPlural": "{{count}} ദിവസങ്ങളിൽ",
+    "noUpcomingTitle": "വരാനിരിക്കുന്ന ഉത്സവങ്ങളൊന്നും കണ്ടെത്തിയില്ല",
+    "noUpcomingMessage": "അടുത്ത 60 ദിവസങ്ങളിൽ ഒന്നും കണ്ടെത്തിയില്ല.",
+    "searchPlaceholder": "ഉത്സവങ്ങൾ തിരയുക…",
+    "searchAriaLabel": "ഉത്സവങ്ങൾ തിരയുക",
+    "typeFilterAriaLabel": "തരത്തിന്റെ അടിസ്ഥാനത്തിൽ ഫിൽട്ടർ ചെയ്യുക",
+    "yearAriaLabel": "വർഷം തിരഞ്ഞെടുക്കുക",
+    "noMatchTitle": "ഉത്സവങ്ങളൊന്നും പൊരുത്തപ്പെടുന്നില്ല",
+    "noMatchMessage": "വ്യത്യസ്തമായ തിരയൽ പദമോ തരം ഫിൽട്ടറോ പരീക്ഷിക്കുക.",
+    "explainFailed": "AI വിശദീകരണം നിലവിൽ ലഭ്യമല്ല."
+  },
+  "detailCard": {
+    "importanceSuffix": "{{importance}} പ്രാധാന്യം",
+    "notSpecified": "വ്യക്തമാക്കിയിട്ടില്ല.",
+    "explainButton": "✨ {{status}}",
+    "askingGemini": "Gemini യോട് ചോദിക്കുന്നു…",
+    "explainThisFestival": "ഈ ഉത്സവം വിശദീകരിക്കുക",
+    "historicalBackground": "ചരിത്ര പശ്ചാത്തലം",
+    "significance": "പ്രാധാന്യം",
+    "rituals": "ആചാരങ്ങൾ",
+    "recommendedActivities": "ശുപാർശ ചെയ്യുന്ന പ്രവർത്തനങ്ങൾ",
+    "fastingInformation": "വ്രത വിവരം",
+    "fastingObserved": "വ്രതം ആചരിക്കുന്നു",
+    "noFastingObserved": "പരമ്പരാഗതമായി വ്രതം ആചരിക്കാറില്ല"
+  },
+  "familySuggestions": {
+    "title": "👨‍👩‍👧‍👦 കുടുംബ ഉത്സവ നിർദ്ദേശങ്ങൾ",
+    "signInPrompt": "നിങ്ങളുടെ പ്രിയപ്പെട്ടവർക്കായി പങ്കിട്ട ആഘോഷ നിർദ്ദേശങ്ങളും ഓർമ്മപ്പെടുത്തലുകളും ലഭിക്കാൻ സൈൻ ഇൻ ചെയ്ത് കുടുംബ പ്രൊഫൈൽ ചേർക്കുക.",
+    "loadFailed": "നിലവിൽ കുടുംബ ഉത്സവ നിർദ്ദേശങ്ങൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "remindersTitle": "കുടുംബ ഉത്സവ ഓർമ്മപ്പെടുത്തലുകൾ",
+    "noProfiles": "ഇതുവരെ കുടുംബ പ്രൊഫൈലുകളൊന്നും സംരക്ഷിച്ചിട്ടില്ല.",
+    "addOne": "ഒന്ന് ചേർക്കുക →",
+    "sharedCelebrationTitle": "പങ്കിട്ട ആഘോഷ നിർദ്ദേശങ്ങൾ",
+    "suggestedActivitiesTitle": "നിർദ്ദേശിച്ച കുടുംബ പ്രവർത്തനങ്ങൾ"
+  },
+  "intelligencePanel": {
+    "title": "🔮 ഉത്സവ ബുദ്ധിശക്തി",
+    "subtitle": "ആത്മീയ അർത്ഥം, പുരാണ കഥ, പൂജ അവലോകനം — മുകളിലുള്ള അടിസ്ഥാനകാര്യങ്ങൾക്ക് അപ്പുറം.",
+    "loadFailed": "നിലവിൽ ഉത്സവ ബുദ്ധിശക്തി ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "revealButton": "✨ {{status}}",
+    "askingGemini": "Gemini യോട് ചോദിക്കുന്നു…",
+    "revealDeeper": "ആഴത്തിലുള്ള ബുദ്ധിശക്തി വെളിപ്പെടുത്തുക",
+    "spiritualMeaning": "ആത്മീയ അർത്ഥം",
+    "mythologicalStory": "പുരാണ കഥ",
+    "modernPracticalMeaning": "ആധുനിക പ്രായോഗിക അർത്ഥം",
+    "culturalSignificance": "ശാസ്ത്രീയ / സാംസ്കാരിക പ്രാധാന്യം",
+    "pujaOverview": "പൂജ അവലോകനം",
+    "thingsToAvoid": "ഒഴിവാക്കേണ്ട കാര്യങ്ങൾ",
+    "aiAssistedBadge": "AI-സഹായത്തോടെ — പാരമ്പര്യങ്ങൾ പ്രദേശം/കുടുംബം അനുസരിച്ച് വ്യത്യാസപ്പെടാം"
+  },
+  "preparationChecklist": {
+    "nothingSpecified": "ഒന്നും വ്യക്തമാക്കിയിട്ടില്ല.",
+    "loadFailed": "നിലവിൽ തയ്യാറെടുപ്പ് ചെക്ക്‌ലിസ്റ്റ് ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "sections": {
+      "preparationChecklist": "തയ്യാറെടുപ്പ് ചെക്ക്‌ലിസ്റ്റ്",
+      "shoppingChecklist": "ഷോപ്പിംഗ് ചെക്ക്‌ലിസ്റ്റ്",
+      "pujaMaterials": "പൂജ സാമഗ്രികൾ",
+      "fastingPreparation": "വ്രത തയ്യാറെടുപ്പ്",
+      "morningRoutine": "പ്രഭാത ദിനചര്യ",
+      "eveningRitual": "സായാഹ്ന ആചാരം",
+      "postFestivalReflection": "ഉത്സവാനന്തര ചിന്ത"
+    }
+  },
+  "personalizedGuidance": {
+    "title": "🌟 വ്യക്തിഗതമാക്കിയ ഉത്സവ മാർഗ്ഗനിർദ്ദേശം",
+    "noChartMessage": "ഈ ഉത്സവം നിങ്ങൾക്ക് പ്രത്യേകിച്ച് അർത്ഥവത്താകുന്നത് എന്തുകൊണ്ടാണെന്ന് കാണാൻ — കരിയർ, സാമ്പത്തികം, ബന്ധങ്ങൾ, ആരോഗ്യം, ആത്മീയം, വ്യക്തിഗത വളർച്ച എന്നിവയിൽ ശ്രദ്ധ കേന്ദ്രീകരിച്ച്, നിങ്ങളുടെ സ്വന്തം ചാർട്ടിനെ അടിസ്ഥാനമാക്കി — നിങ്ങളുടെ സംരക്ഷിച്ച റീഡിംഗുകളിലൊന്നിൽ നിന്ന് ഈ ഉത്സവം തുറക്കുക.",
+    "openSavedReading": "സംരക്ഷിച്ച റീഡിംഗ് തുറക്കുക →",
+    "subtitle": "നിങ്ങളുടെ സ്വന്തം ദശ, ഗോചരം, പ്രവചനങ്ങൾ എന്നിവയെ അടിസ്ഥാനമാക്കി.",
+    "loadFailed": "നിലവിൽ വ്യക്തിഗതമാക്കിയ മാർഗ്ഗനിർദ്ദേശം ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "askButton": "✨ {{status}}",
+    "whyMeaningful": "ഇത് എനിക്ക് എന്തുകൊണ്ട് അർത്ഥവത്താണ്?",
+    "focusFields": {
+      "careerFocus": "കരിയർ",
+      "financeFocus": "സാമ്പത്തികം",
+      "relationshipFocus": "ബന്ധങ്ങൾ",
+      "healthFocus": "ആരോഗ്യം",
+      "spiritualFocus": "ആത്മീയം",
+      "personalGrowthFocus": "വ്യക്തിഗത വളർച്ച"
+    }
+  },
+  "intelligencePage": {
+    "back": "← തിരികെ",
+    "title": "🔮 ഉത്സവ ബുദ്ധിശക്തി",
+    "subtitle": "ഒരു ഉത്സവത്തിനുള്ള ആഴത്തിലുള്ള അർത്ഥം, വ്യക്തിഗതമാക്കിയ മാർഗ്ഗനിർദ്ദേശം, തയ്യാറെടുപ്പ്, കുടുംബ നിർദ്ദേശങ്ങൾ.",
+    "loadFailed": "ഈ ഉത്സവം ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "loadUpcomingFailed": "വരാനിരിക്കുന്ന ഉത്സവമൊന്നും ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "noFestivalTitle": "ഉത്സവം ഒന്നും തിരഞ്ഞെടുത്തിട്ടില്ല",
+    "noFestivalMessage": "അതിന്റെ പൂർണ്ണ ബുദ്ധിശക്തി കാണാൻ ഉത്സവ കലണ്ടർ, ഡാഷ്ബോർഡ്, അല്ലെങ്കിൽ കലണ്ടർ പേജിൽ നിന്ന് ഒരു ഉത്സവം തുറക്കുക.",
+    "ritualFlow": "ആചാര ക്രമം",
+    "timelineUnavailable": "ഈ ഉത്സവത്തിന് ടൈംലൈൻ ലഭ്യമല്ല.",
+    "festivalIntelligence": "ഉത്സവ ബുദ്ധിശക്തി",
+    "personalizedGuidance": "വ്യക്തിഗതമാക്കിയ മാർഗ്ഗനിർദ്ദേശം",
+    "festivalPreparation": "ഉത്സവ തയ്യാറെടുപ്പ്",
+    "family": "കുടുംബം"
+  },
+  "widget": {
+    "title": "ഇന്നത്തെ ഉത്സവം",
+    "openCalendar": "ഉത്സവ കലണ്ടർ തുറക്കുക →",
+    "loading": "ലോഡ് ചെയ്യുന്നു…",
+    "noFestivalToday": "ഇന്ന് ഉത്സവമില്ല.",
+    "nextFestival": "അടുത്ത ഉത്സവം",
+    "daysRemainingLabel": "ബാക്കിയുള്ള ദിവസങ്ങൾ",
+    "daysRemainingSingle": "{{count}} ദിവസം",
+    "daysRemainingPlural": "{{count}} ദിവസങ്ങൾ",
+    "importance": "പ്രാധാന്യം",
+    "preparationProgress": "തയ്യാറെടുപ്പ് പുരോഗതി",
+    "preparationItemsReady": "{{count}} ചെക്ക്‌ലിസ്റ്റ് ഇനങ്ങൾ തയ്യാർ",
+    "upcomingRitual": "വരാനിരിക്കുന്ന ആചാരം",
+    "personalizedTip": "വ്യക്തിഗതമാക്കിയ ടിപ്പ്",
+    "viewIntelligence": "🔮 ഉത്സവ ബുദ്ധിശക്തി കാണുക"
+  },
+  "muhurat": {
+    "bestMuhuratFor": "{{activity}} യ്ക്കുള്ള മികച്ച മുഹൂർത്തം",
+    "confidence": {
+      "high": "ഉയർന്ന",
+      "medium": "ഇടത്തരം",
+      "low": "കുറഞ്ഞ"
+    },
+    "confidenceBadge": "{{level}} വിശ്വാസം",
+    "bestDate": "മികച്ച തീയതി",
+    "bestTimeWindow": "മികച്ച സമയപരിധി",
+    "tithi": "തിഥി",
+    "auspiciousWindow": "ശുഭ സമയം",
+    "cautionPeriod": "ജാഗ്രതാ കാലയളവ് (ഒഴിവാക്കുക)",
+    "rahuKaal": "രാഹു കാലം",
+    "yamaganda": "യമഗണ്ഡം",
+    "gulikaKaal": "ഗുളിക കാലം",
+    "otherStrongDates": "മറ്റ് നല്ല തീയതികൾ",
+    "askingAI": "AI-യോട് ചോദിക്കുന്നു…",
+    "explainWhy": "🔮 ഈ മുഹൂർത്തം എന്തുകൊണ്ടെന്ന് വിശദീകരിക്കുക",
+    "nakshatra": "നക്ഷത്രം"
+  },
+  "calendarStrip": {
+    "heading": "🎉 ഈ മാസത്തെ ഉത്സവങ്ങൾ",
+    "viewCalendarLink": "ഉത്സവ കലണ്ടർ കാണുക →",
+    "todayLabel": "ഇന്ന്:",
+    "loadingOverview": "ഉത്സവ അവലോകനം ലോഡ് ചെയ്യുന്നു…",
+    "importanceSuffix": "പ്രാധാന്യം"
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "types": {
+    "planet": "గ్రహం",
+    "house": "భావం",
+    "sign": "రాశి",
+    "yoga": "యోగం",
+    "dosha": "దోషం",
+    "nakshatra": "నక్షత్రం",
+    "ascendant": "లగ్నం",
+    "aspect": "దృష్టి"
+  },
+  "typeSingular": {
+    "planet": "గ్రహం",
+    "house": "భావం",
+    "sign": "రాశి",
+    "yoga": "యోగం",
+    "dosha": "దోషం",
+    "nakshatra": "నక్షత్రం",
+    "ascendant": "లగ్నం",
+    "aspect": "దృష్టి"
+  },
+  "header": {
+    "title": "కుండలి ఎక్స్‌ప్లోరర్",
+    "breadcrumb": "{{type}} · {{item}}",
+    "notAvailable": "—",
+    "selectPrompt": "అన్వేషించడానికి ఒక అంశాన్ని ఎంచుకోండి"
+  },
+  "mainPanel": {
+    "loadingPanel": "వివరాల ప్యానెల్ లోడ్ అవుతోంది…",
+    "emptyTitle": "ఇంకా ఏదీ ఎంపిక చేయబడలేదు",
+    "emptyMessage": "ఇక్కడ అన్వేషించడానికి ప్యానెల్ నుండి గ్రహం, భావం, రాశి, యోగం, దోషం, నక్షత్రం, లగ్నం లేదా దృష్టిని ఎంచుకోండి.",
+    "regionAriaLabel": "ఎక్స్‌ప్లోరర్ వివరాల ప్యానెల్"
+  },
+  "sidePanel": {
+    "treeAriaLabel": "ఎక్స్‌ప్లోరర్ ఎంపిక వర్గాలు",
+    "categoryAriaLabel": "{{label}} ({{count}})",
+    "housePrefix": "భావం {{num}}",
+    "lordBadge": "అధిపతి: {{lord}}",
+    "aspectCountSingle": "{{count}} దృష్టి",
+    "aspectCountPlural": "{{count}} దృష్టులు",
+    "netInfluence": "నికర {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI వివరణ",
+    "prompt": "{{label}} యొక్క Gemini-ఆధారిత వివరణను పొందండి, ఇది పూర్తిగా ఈ చార్ట్ యొక్క సొంత బ్యాకెండ్-లెక్కించిన వాస్తవాలపై ఆధారపడి ఉంటుంది.",
+    "explainAriaLabel": "{{label}} ని AI తో వివరించండి",
+    "explainButton": "✨ AI తో వివరించండి",
+    "generatingLabel": "{{label}} కోసం AI వివరణను రూపొందిస్తోంది",
+    "loadFailed": "ఎక్స్‌ప్లోరర్ AI ప్రస్తుతం అందుబాటులో లేదు.",
+    "tryAgain": "↻ మళ్లీ ప్రయత్నించండి"
+  },
+  "common": {
+    "relatedPredictions": "సంబంధిత అంచనాలు",
+    "relatedRemedies": "సంబంధిత పరిహారాలు",
+    "noLinkedPredictionsTitle": "లింక్ చేసిన అంచనా లేదు",
+    "noLinkedRemediesTitle": "లింక్ చేసిన పరిహారం లేదు",
+    "noRemediesTitle": "పరిహారాలు అందుబాటులో లేవు"
+  },
+  "planet": {
+    "notAvailableTitle": "గ్రహ డేటా అందుబాటులో లేదు",
+    "notAvailableMessage": "ఈ చార్ట్‌లో ఇంకా ఈ గ్రహం కోసం లెక్కించిన స్థానం డేటా లేదు.",
+    "positionDignityHeading": "స్థానం & గౌరవం",
+    "houseLabel": "భావం",
+    "signLabel": "రాశి",
+    "retrogradeBadge": "వక్రగతి",
+    "combustBadge": "అస్తంగత",
+    "functionallyNature": "క్రియాత్మకంగా {{nature}}",
+    "friendshipSignSuffix": "{{relation}} రాశి",
+    "adjustedStrengthScore": "సర్దుబాటు చేసిన బల స్కోరు",
+    "foundationShadbala": "మూల షడ్బలం",
+    "notAvailableValue": "—",
+    "strengthUnavailable": "ఈ చార్ట్ కోసం వివరణాత్మక బల స్కోరింగ్ అందుబాటులో లేదు.",
+    "noLinkedPredictionsMessage": "ప్రస్తుతం ఏ వర్గ అంచనా {{planet}} ను దాని ప్రధాన లేదా సహాయక గ్రహంగా పేర్కొనలేదు.",
+    "noLinkedRemediesMessage": "ఈ చార్ట్ యొక్క అంచనాల ద్వారా ప్రస్తుతం {{planet}} తో ఎటువంటి పరిహారం లింక్ చేయబడలేదు."
+  },
+  "house": {
+    "notAvailableTitle": "భావ డేటా అందుబాటులో లేదు",
+    "notAvailableMessage": "ఇక్కడ అన్వేషించడానికి ప్యానెల్ నుండి ఒక భావాన్ని ఎంచుకోండి.",
+    "signBadge": "రాశి: {{sign}}",
+    "lordBadge": "అధిపతి: {{lord}}",
+    "meaning": "అర్థం",
+    "notAvailableValue": "—",
+    "occupantsHeading": "స్థానంలో ఉన్న గ్రహాలు",
+    "noOccupants": "ప్రస్తుతం ఈ భావంలో ఏ గ్రహం లేదు.",
+    "noLinkedPredictionsMessage": "ప్రస్తుతం ఏ వర్గ అంచనా భావం {{house}} ను సహాయక భావంగా పేర్కొనలేదు.",
+    "noLinkedRemediesMessage": "ఈ చార్ట్ యొక్క అంచనాల ద్వారా ప్రస్తుతం భావం {{house}} తో ఎటువంటి పరిహారం లింక్ చేయబడలేదు.",
+    "itemLabel": "భావం {{num}}"
+  },
+  "sign": {
+    "notAvailableTitle": "రాశి డేటా అందుబాటులో లేదు",
+    "notAvailableMessage": "ఇక్కడ అన్వేషించడానికి ప్యానెల్ నుండి ఒక రాశిని ఎంచుకోండి.",
+    "lordBadge": "అధిపతి: {{lord}}",
+    "lagnaBadge": "ఈ చార్ట్ యొక్క లగ్నం",
+    "rulingPlanet": "పాలక గ్రహం",
+    "notAvailableValue": "—",
+    "occupantsHeading": "ఈ రాశిలో ప్రస్తుత గ్రహాలు",
+    "noOccupants": "ఈ చార్ట్‌లో ప్రస్తుతం ఈ రాశిలో ఏ గ్రహం లేదు.",
+    "noLinkedPredictionsMessage": "ప్రస్తుతం ఏ వర్గ అంచనా ఈ రాశిలో ఉన్న ఏ గ్రహంతో సంబంధం కలిగి లేదు."
+  },
+  "yoga": {
+    "notFoundTitle": "యోగం కనుగొనబడలేదు",
+    "notFoundMessage": "ఈ యోగం ఈ చార్ట్ కోసం ప్రస్తుతం గుర్తించిన సెట్‌లో భాగం కాదు.",
+    "ruleMatchedBadge": "నియమం సరిపోలింది: {{name}}",
+    "contributingPlanetsHeading": "దోహదపడే గ్రహాలు",
+    "noContributingPlanets": "ప్రస్తుతం ఏ వర్గ అంచనా ఈ యోగం యొక్క ఘనతను నిర్దిష్ట గ్రహాలకు ఇవ్వలేదు.",
+    "confidenceEffectsTitle": "విశ్వాసం & ప్రభావాలు (లింక్ చేసిన అంచనాల నుండి)",
+    "noLinkedPredictionsMessage": "ప్రస్తుతం ఏ వర్గ అంచనా ఈ యోగాన్ని సహాయక కారకంగా పేర్కొనలేదు."
+  },
+  "dosha": {
+    "notFoundTitle": "దోషం కనుగొనబడలేదు",
+    "notFoundMessage": "ఈ దోషం ఈ చార్ట్ కోసం ప్రస్తుతం గుర్తించిన సెట్‌లో భాగం కాదు.",
+    "matchingRuleBadge": "సరిపోలే నియమం: {{name}}",
+    "severityBadge": "తీవ్రత: {{severity}}",
+    "affectedHousesHeading": "ప్రభావిత భావాలు",
+    "houseBadge": "భావం {{num}}",
+    "noAffectedHouses": "ప్రస్తుతం ఏ వర్గ అంచనా ఈ దోషాన్ని నిర్దిష్ట భావాలతో అనుసంధానించలేదు.",
+    "remedies": "పరిహారాలు",
+    "noRemediesMessage": "ప్రస్తుతం ఈ దోషంతో ఎటువంటి పరిహారం లింక్ చేయబడలేదు.",
+    "linkedPredictions": "లింక్ చేసిన అంచనాలు",
+    "noLinkedPredictionsMessage": "ప్రస్తుతం ఏ వర్గ అంచనా ఈ దోషాన్ని సహాయక కారకంగా పేర్కొనలేదు."
+  },
+  "nakshatra": {
+    "notAvailableTitle": "నక్షత్ర ప్రొఫైల్ అందుబాటులో లేదు",
+    "notAvailableMessage": "ఈ చార్ట్‌లో ఇంకా లెక్కించిన నక్షత్ర ప్రొఫైల్ లేదు.",
+    "itemLabel": "నక్షత్రం",
+    "padaBadge": "పాదం {{pada}}",
+    "lordBadge": "అధిపతి: {{lord}}",
+    "ganaBadge": "{{gana}} గణం",
+    "deity": "దేవత",
+    "symbol": "చిహ్నం",
+    "nadi": "నాడి",
+    "yoni": "యోని",
+    "notAvailableValue": "—",
+    "personalityHeading": "వ్యక్తిత్వం",
+    "careerTendencies": "కెరీర్ ధోరణులు",
+    "relationshipTendencies": "సంబంధ ధోరణులు",
+    "spiritualTendencies": "ఆధ్యాత్మిక ధోరణులు"
+  },
+  "ascendant": {
+    "notAvailableTitle": "లగ్నం అందుబాటులో లేదు",
+    "notAvailableMessage": "ఈ చార్ట్‌లో ఇంకా లెక్కించిన లగ్నం లేదు.",
+    "itemLabel": "లగ్నం",
+    "lordBadge": "అధిపతి: {{lord}}",
+    "risingSign": "లగ్నం (ఉదయ రాశి)",
+    "lagnaLord": "లగ్నాధిపతి",
+    "notAvailableValue": "—",
+    "characteristicsHeading": "లక్షణాలు (లగ్నాధిపతి బలం ఆధారంగా)",
+    "functionallyNature": "క్రియాత్మకంగా {{nature}}",
+    "predictionsLinkedTitle": "లగ్నాధిపతితో లింక్ చేసిన అంచనాలు",
+    "lagnaLordFallback": "లగ్నాధిపతి",
+    "noLinkedPredictionsMessage": "ప్రస్తుతం ఏ వర్గ అంచనా {{lord}} ను దాని ప్రధాన లేదా సహాయక గ్రహంగా పేర్కొనలేదు."
+  },
+  "aspect": {
+    "notAvailableTitle": "దృష్టి డేటా అందుబాటులో లేదు",
+    "notAvailableMessage": "ఇక్కడ అన్వేషించడానికి ప్యానెల్ నుండి ఒక దృష్టిని ఎంచుకోండి.",
+    "sourcesHeading": "దృష్టి మూలం → లక్ష్యం",
+    "beneficAspects": "శుభ దృష్టులు",
+    "maleficAspects": "అశుభ దృష్టులు",
+    "netInfluenceStrength": "నికర ప్రభావం (బలం)",
+    "housesAspected": "దృష్టి పొందిన భావాలు",
+    "houseLabel": "భావం {{num}}",
+    "itemLabel": "{{target}} పై దృష్టులు",
+    "interpretPureBenefic": "పూర్తిగా శుభ దృష్టులు — ఒక సహాయక ప్రభావం.",
+    "interpretPureMalefic": "పూర్తిగా అశుభ దృష్టులు — ఒక సవాలుతో కూడిన ప్రభావం.",
+    "interpretMixedNetBenefic": "మిశ్రమ దృష్టులు, మొత్తంమీద నికర శుభ ప్రభావం.",
+    "interpretMixedNetMalefic": "మిశ్రమ దృష్టులు, మొత్తంమీద నికర అశుభ ప్రభావం.",
+    "interpretMixedNeutral": "మిశ్రమ దృష్టులు, దీని నికర ప్రభావం సమతుల్యంగా మరియు తటస్థంగా ఉంది."
+  }
+}

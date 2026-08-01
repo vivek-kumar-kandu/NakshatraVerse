@@ -1,0 +1,16 @@
+{
+  "notFound": "రౌట్ ఇల్ల {{method}} {{path}}",
+  "malformedJson": "అభ్యర్థనె బాడియల్లి దోషపూరిత JSON.",
+  "bodyTooLarge": "అభ్యర్థనె బాడి తంబా దొడ్డదాగిదె.",
+  "internalError": "ఆంతరిక సర్వర్ దోష.",
+  "internalErrorProduction": "ఆంతరిక సర్వర్ దోష. దయచేసి మళ్లీ ప్రయత్నిసి.",
+  "invalidRequest": "అమాన్య అభ్యర్థనె: {{errors}}",
+  "serviceUnavailable": "{{feature}} ఇల్లి లభ్యవిల్ల.",
+  "invalidProfile": "అమాన్య ప్రొఫైల్: {{errors}}",
+  "chooseTwoDifferentProfiles": "హోలసలు ఎరడు విభిన్న ప్రొఫైల్‌గళన్ను ఆరిసి.",
+  "comparisonError": "ఈ ఎరడు ప్రొఫైల్‌గళన్ను హోలిసువాగ ఆంతరిక సర్వర్ దోష.",
+  "internalErrorWhile": "{{action}} మాడువాగ ఆంతరిక సర్వర్ దోష.",
+  "occurrenceNotFound": "{{year}} వర్షక్కాగి \"{{key}}\" దియావుదే సంఘటనె సిగలిల్ల.",
+  "missingApiKey": "సర్వర్ నల్లి API కీ ఇల్ల. backend/.env నల్లి GOOGLE_API_KEY సెట్ మాడి.",
+  "tooManyRequests": "తంబా అభ్యర్థనెగళు. దయచేసి విళంబిసి మళ్లీ ప్రయత్నిసి."
+}

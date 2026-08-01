@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← डॅशबोर्डवर परत जा",
+    "title": "माझी प्रोफाइल",
+    "photoHint": "संपादित करण्यासाठी तुमच्या फोटोवर क्लिक करा — अपलोड करा, बदला, किंवा काढा.",
+    "authProviderGoogle": "Google ने साइन इन केले",
+    "authProviderEmail": "ईमेल आणि पासवर्ड",
+    "accountInformation": "खाते माहिती",
+    "fullName": "पूर्ण नाव",
+    "email": "ईमेल",
+    "memberSince": "सदस्यत्वाची सुरुवात",
+    "accountType": "खाते प्रकार",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "पासवर्ड बदला",
+    "editProfileInSettings": "सेटिंग्जमध्ये प्रोफाइल संपादित करा →",
+    "activitySummary": "प्रोफाइल क्रियाकलाप सारांश",
+    "totalReports": "एकूण अहवाल",
+    "loadingValue": "…",
+    "lastGenerated": "शेवटचे तयार केले",
+    "viewSavedReports": "जतन केलेले अहवाल पहा →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "कृपया JPG, PNG, किंवा WEBP प्रतिमा निवडा.",
+    "fileTooLarge": "ती प्रतिमा खूप मोठी आहे. कृपया 8MB पेक्षा कमी आकाराची फाइल निवडा.",
+    "processFailed": "ती प्रतिमा प्रक्रिया करता आली नाही.",
+    "photoUpdated": "प्रोफाइल फोटो अद्ययावत केला.",
+    "saveFailed": "तुमचा फोटो जतन करता आला नाही.",
+    "photoRemoved": "प्रोफाइल फोटो काढला.",
+    "removeFailed": "तुमचा फोटो काढता आला नाही.",
+    "changePhotoAriaLabel": "प्रोफाइल फोटो बदला",
+    "uploadPhotoAriaLabel": "प्रोफाइल फोटो अपलोड करा",
+    "menuAriaLabel": "प्रोफाइल फोटो पर्याय",
+    "replacePhoto": "फोटो बदला",
+    "uploadPhoto": "फोटो अपलोड करा",
+    "removePhoto": "फोटो काढा",
+    "previewDialogAriaLabel": "नवीन प्रोफाइल फोटोचे पूर्वावलोकन",
+    "previewYourNewPhoto": "तुमच्या नवीन फोटोचे पूर्वावलोकन करा",
+    "cancel": "रद्द करा",
+    "save": "जतन करा"
+  }
+}

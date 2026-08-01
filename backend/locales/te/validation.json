@@ -1,0 +1,9 @@
+{
+  "nameRequired": "పేరు అవసరం",
+  "validEmailRequired": "చెల్లుబాటు అయ్యే ఈమెయిల్ అవసరం",
+  "passwordMinLength": "పాస్‌వర్డ్ కనీసం 8 అక్షరాలు ఉండాలి",
+  "passwordNeedsNumber": "పాస్‌వర్డ్‌లో కనీసం ఒక సంఖ్య ఉండాలి",
+  "passwordRequired": "పాస్‌వర్డ్ అవసరం",
+  "festivalKeyRequired": "`festivalKey` పారామీటర్ అవసరం.",
+  "profileIdsRequired": "profileIdA మరియు profileIdB రెండూ అవసరం."
+}

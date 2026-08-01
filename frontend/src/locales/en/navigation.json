@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "faq": "FAQ"
+  },
+  "navbar": {
+    "brandAriaLabel": "NakshatraVerse — home",
+    "primaryAriaLabel": "Primary",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "auth": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "reports": "Reports",
+    "profile": "Profile"
+  },
+  "accountMenu": {
+    "myProfile": "My Profile",
+    "dashboard": "Dashboard",
+    "savedReports": "Saved Reports",
+    "settings": "Settings",
+    "helpAbout": "Help & About",
+    "memberSince": "Member since {{date}}",
+    "menuLabel": "Account",
+    "triggerLabel": "Account menu for {{name}}"
+  },
+  "actionDock": {
+    "askAi": "Ask AI",
+    "horoscope": "Horoscope",
+    "calendar": "Calendar",
+    "lifeCoach": "Life Coach",
+    "kundliMatching": "Kundli Matching",
+    "panchang": "Panchang",
+    "festivalCalendar": "Festival Calendar",
+    "notifications": "Notifications",
+    "saveReport": "Save Report",
+    "saving": "Saving…",
+    "downloadPdf": "Download PDF",
+    "preparing": "Preparing…",
+    "printPdf": "Print PDF",
+    "opening": "Opening…",
+    "reportActions": "Report actions",
+    "openReportActions": "Open report actions",
+    "close": "Close",
+    "somethingWentWrong": "Something went wrong."
+  },
+  "commandPalette": {
+    "ariaLabel": "Command Palette",
+    "searchAriaLabel": "Command Palette search",
+    "commandsAriaLabel": "Commands",
+    "sections": {
+      "navigate": "Navigate",
+      "theme": "Theme",
+      "settings": "Settings",
+      "recent": "Recent",
+      "recentReports": "Recent Reports",
+      "recentReportsLoading": "Recent Reports · loading…"
+    },
+    "nav": {
+      "dashboard": "Dashboard",
+      "generateReport": "Generate Report",
+      "savedReports": "Saved Reports",
+      "profile": "Profile",
+      "settings": "Settings",
+      "horoscope": "Horoscope",
+      "calendar": "Calendar",
+      "aiAssistant": "AI Assistant",
+      "aiLifeCoach": "AI Life Coach",
+      "kundliMatching": "Kundli Matching",
+      "dailyPanchang": "Daily Panchang & Muhurat",
+      "festivalCalendar": "Festival Calendar",
+      "todaysFestival": "Today's Festival",
+      "upcomingFestivals": "Upcoming Festivals",
+      "notificationCenter": "Notification Center",
+      "unreadNotifications": "Unread Notifications",
+      "familyProfiles": "Family Profiles",
+      "relationshipHub": "Relationship Hub",
+      "help": "Help"
+    },
+    "theme": {
+      "light": "Switch to Sacred Dawn",
+      "dark": "Switch to Midnight Cosmic",
+      "system": "Switch to System Theme"
+    },
+    "settingsSections": {
+      "account": "Settings · Account",
+      "appearance": "Settings · Appearance",
+      "preferences": "Settings · Preferences",
+      "privacy": "Settings · Privacy",
+      "about": "Settings · About"
+    },
+    "untitledReport": "Untitled Report",
+    "noMatches": "No matching commands.",
+    "noMatchesFor": "No matching commands for \"{{query}}\".",
+    "searchPlaceholder": "Search pages, reports, yogas, doshas, remedies…"
+  }
+}

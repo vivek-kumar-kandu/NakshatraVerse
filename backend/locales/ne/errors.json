@@ -1,0 +1,16 @@
+{
+  "notFound": "कुनै मार्ग भेटिएन {{method}} {{path}}",
+  "malformedJson": "अनुरोध बडीमा विकृत JSON।",
+  "bodyTooLarge": "अनुरोध बडी धेरै ठूलो छ।",
+  "internalError": "आन्तरिक सर्भर त्रुटि।",
+  "internalErrorProduction": "आन्तरिक सर्भर त्रुटि। कृपया पुनः प्रयास गर्नुहोस्।",
+  "invalidRequest": "अमान्य अनुरोध: {{errors}}",
+  "serviceUnavailable": "{{feature}} अहिले उपलब्ध छैन।",
+  "invalidProfile": "अमान्य प्रोफाइल: {{errors}}",
+  "chooseTwoDifferentProfiles": "तुलना गर्न दुई फरक प्रोफाइलहरू छान्नुहोस्।",
+  "comparisonError": "यी दुई प्रोफाइलहरू तुलना गर्दा आन्तरिक सर्भर त्रुटि।",
+  "internalErrorWhile": "{{action}} गर्दा आन्तरिक सर्भर त्रुटि।",
+  "occurrenceNotFound": "वर्ष {{year}} को लागि \"{{key}}\" को कुनै घटना भेटिएन।",
+  "missingApiKey": "सर्भरमा API कुञ्जी छैन। backend/.env मा GOOGLE_API_KEY सेट गर्नुहोस्।",
+  "tooManyRequests": "धेरै अनुरोधहरू। कृपया अलि पछि पुनः प्रयास गर्नुहोस्।"
+}

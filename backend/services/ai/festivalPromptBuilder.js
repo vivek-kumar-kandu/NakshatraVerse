@@ -5,8 +5,14 @@
 // festivalService.js) and must explain them in prose — it must NEVER
 // calculate, invent, or alter a festival's date, type, or importance.
 // ─────────────────────────────────────────────────────────────────────────
+<<<<<<< HEAD
 
 export function buildFestivalExplainPrompt(festival) {
+=======
+import { getAiLanguageInstruction } from "../localization/aiLanguageInstruction.js";
+
+export function buildFestivalExplainPrompt(festival, language) {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return `You are a Vedic astrology and Hindu-festival explainer. You are given an ALREADY-CALCULATED festival occurrence produced by a backend calculation engine. Your ONLY job is to explain its significance in warm, readable prose. You must NEVER calculate, invent, guess, or alter the Date, Type, or Importance given below, and you must NEVER state a different date for this festival than the one given.
 
 Rules you must strictly follow:
@@ -34,7 +40,11 @@ Return this exact JSON structure, writing natural prose for each value based str
   "significance": "3-4 sentences explaining what this festival/vrat means and why it falls on the Date given, based strictly on the facts above",
   "practicalGuidance": "2-3 sentences of practical, hedged guidance for observing the day, drawing only from the Recommended Activities/Rituals/Fasting Information above",
   "funFact": "1-2 sentences sharing an interesting, hedged historical/cultural note drawn strictly from the Historical Background above"
+<<<<<<< HEAD
 }`;
+=======
+}${getAiLanguageInstruction(language)}`;
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 export default { buildFestivalExplainPrompt };

@@ -50,8 +50,14 @@ export async function saveReport(userId, { title, userData, chart, report }) {
   return record;
 }
 
+<<<<<<< HEAD
 export function listReports(userId) {
   return reportRepository.findByUser(userId).map((r) => ({
+=======
+export async function listReports(userId) {
+  const reports = await reportRepository.findByUser(userId);
+  return reports.map((r) => ({
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     id: r.id,
     title: r.title,
     createdAt: r.createdAt,
@@ -61,14 +67,23 @@ export function listReports(userId) {
   }));
 }
 
+<<<<<<< HEAD
 export function getReport(userId, id) {
   const record = reportRepository.findById(id);
+=======
+export async function getReport(userId, id) {
+  const record = await reportRepository.findById(id);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   assertOwnership(record, userId);
   return record;
 }
 
 export async function deleteReport(userId, id) {
+<<<<<<< HEAD
   const record = reportRepository.findById(id);
+=======
+  const record = await reportRepository.findById(id);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   assertOwnership(record, userId);
   const result = await reportRepository.remove(id);
   // Same reasoning as saveReport(): a deleted reading changes this user's

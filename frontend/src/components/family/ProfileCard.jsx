@@ -1,6 +1,14 @@
 import { memo } from "react";
+<<<<<<< HEAD
 import GlassCard from "../common/GlassCard.jsx";
 import Badge from "../common/Badge.jsx";
+=======
+import { useTranslation } from "react-i18next";
+import GlassCard from "../common/GlassCard.jsx";
+import Badge from "../common/Badge.jsx";
+import { useLanguage } from "../../context/LanguageContext.jsx";
+import { formatDate as formatDateIntl } from "../../utils/localeFormat.js";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // ProfileCard (V4.2 — Family Profiles & Relationship Hub)
@@ -15,6 +23,7 @@ const RELATIONSHIP_ICONS = {
   brother: "🧑", sister: "👧", friend: "🤝", client: "💼", custom: "✦",
 };
 
+<<<<<<< HEAD
 function formatDate(value) {
   if (!value) return "—";
   try {
@@ -22,6 +31,11 @@ function formatDate(value) {
   } catch {
     return "—";
   }
+=======
+function formatDate(value, t, lang) {
+  if (!value) return t ? t("family:profileCard.notAvailable") : "—";
+  return formatDateIntl(value, lang, { year: "numeric", month: "short", day: "numeric" });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 const actionBtnStyle = (variant) => ({
@@ -34,6 +48,11 @@ const actionBtnStyle = (variant) => ({
 });
 
 function ProfileCard({ profile, onOpen, onEdit, onDuplicate, onArchive, onRestore, onDelete, onCompare }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["family"]);
+  const { language } = useLanguage();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const p = profile;
   return (
     <GlassCard className="tap-scale" style={{ padding: 0, overflow: "hidden", display: "flex", flexDirection: "column" }}>
@@ -56,13 +75,18 @@ function ProfileCard({ profile, onOpen, onEdit, onDuplicate, onArchive, onRestor
             {p.name}
           </h3>
           <p style={{ margin: "3px 0 0", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
+<<<<<<< HEAD
             {p.lastOpenedAt ? `opened ${formatDate(p.lastOpenedAt)}` : `added ${formatDate(p.createdAt)}`}
+=======
+            {p.lastOpenedAt ? t("family:profileCard.openedOn", { date: formatDate(p.lastOpenedAt, t, language) }) : t("family:profileCard.addedOn", { date: formatDate(p.createdAt, t, language) })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         </div>
       </div>
 
       <div style={{ padding: "14px 20px", display: "flex", flexWrap: "wrap", gap: 8, flex: 1 }}>
         <Badge color="#bf7fff">{p.relationshipLabel}</Badge>
+<<<<<<< HEAD
         {p.dob && <Badge color="#9dc9ff">{formatDate(p.dob)}</Badge>}
         {p.pob && <Badge color="#ffd700">{p.pob}</Badge>}
         {p.archived && <Badge color="#ff9d9d">Archived</Badge>}
@@ -76,6 +100,21 @@ function ProfileCard({ profile, onOpen, onEdit, onDuplicate, onArchive, onRestor
         {!p.archived && onArchive && <button type="button" className="tap-scale" style={actionBtnStyle()} onClick={() => onArchive(p)}>🗄 Archive</button>}
         {p.archived && onRestore && <button type="button" className="tap-scale" style={actionBtnStyle()} onClick={() => onRestore(p)}>↺ Restore</button>}
         {onDelete && <button type="button" className="tap-scale" style={actionBtnStyle("danger")} onClick={() => onDelete(p)}>✕ Delete</button>}
+=======
+        {p.dob && <Badge color="#9dc9ff">{formatDate(p.dob, t, language)}</Badge>}
+        {p.pob && <Badge color="#ffd700">{p.pob}</Badge>}
+        {p.archived && <Badge color="#ff9d9d">{t("family:profileCard.archived")}</Badge>}
+      </div>
+
+      <div style={{ padding: "12px 20px 16px", display: "flex", gap: 8, flexWrap: "wrap", borderTop: "1px solid var(--nv-accent-wash, rgba(180,120,255,0.1))" }}>
+        {!p.archived && onOpen && <button type="button" className="tap-scale" style={actionBtnStyle()} onClick={() => onOpen(p)}>{t("family:profileCard.open")}</button>}
+        {!p.archived && onCompare && <button type="button" className="tap-scale" style={actionBtnStyle()} onClick={() => onCompare(p)}>{t("family:profileCard.compare")}</button>}
+        {!p.archived && onEdit && <button type="button" className="tap-scale" style={actionBtnStyle()} onClick={() => onEdit(p)}>{t("family:profileCard.edit")}</button>}
+        {onDuplicate && <button type="button" className="tap-scale" style={actionBtnStyle()} onClick={() => onDuplicate(p)}>{t("family:profileCard.duplicate")}</button>}
+        {!p.archived && onArchive && <button type="button" className="tap-scale" style={actionBtnStyle()} onClick={() => onArchive(p)}>{t("family:profileCard.archiveAction")}</button>}
+        {p.archived && onRestore && <button type="button" className="tap-scale" style={actionBtnStyle()} onClick={() => onRestore(p)}>{t("family:profileCard.restore")}</button>}
+        {onDelete && <button type="button" className="tap-scale" style={actionBtnStyle("danger")} onClick={() => onDelete(p)}>{t("family:profileCard.delete")}</button>}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </div>
     </GlassCard>
   );

@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← ড্যাশবোর্ডে ফিরে যান",
+    "title": "সংরক্ষিত প্রতিবেদন",
+    "titleWithCount": "সংরক্ষিত প্রতিবেদন ({{count}})",
+    "generateNewReport": "✦ নতুন প্রতিবেদন তৈরি করুন",
+    "loadFailed": "আপনার সংরক্ষিত প্রতিবেদনগুলি লোড করা যায়নি।",
+    "tryAgain": "↻ আবার চেষ্টা করুন",
+    "deleteToastSuccess": "\"{{title}}\" মুছে ফেলা হয়েছে।",
+    "deleteToastFallbackTitle": "প্রতিবেদন",
+    "deleteFailed": "সেই প্রতিবেদনটি মুছে ফেলা যায়নি।",
+    "downloadToastSuccess": "PDF ডাউনলোড হয়েছে।",
+    "downloadFailed": "PDF তৈরি করা যায়নি।",
+    "emptyTitle": "এখনও কোনো সংরক্ষিত প্রতিবেদন নেই",
+    "emptyMessage": "এখানে আপনার সংগ্রহ তৈরি করতে একটি রিডিং তৈরি করুন এবং প্রতিবেদন সংরক্ষণ করুন-এ ট্যাপ করুন।",
+    "emptyAction": "✦ নতুন প্রতিবেদন তৈরি করুন",
+    "noMatchesTitle": "কোনো মিল পাওয়া যায়নি",
+    "noMatchesMessage": "কোনো সংরক্ষিত প্রতিবেদন \"{{query}}\" এর সাথে মেলে না। একটি ভিন্ন শিরোনাম, নাম, বা লগ্ন চেষ্টা করুন।",
+    "clearSearch": "অনুসন্ধান পরিষ্কার করুন",
+    "deleteDialog": {
+      "title": "এই প্রতিবেদনটি মুছে ফেলবেন?",
+      "message": "\"{{title}}\" স্থায়ীভাবে সরিয়ে ফেলা হবে। এটি পূর্বাবস্থায় ফেরানো যাবে না।",
+      "fallbackTitle": "এই প্রতিবেদন",
+      "confirmLabel": "মুছে ফেলুন",
+      "cancelLabel": "বাতিল করুন"
+    }
+  },
+  "detail": {
+    "loadFailed": "সেই প্রতিবেদনটি লোড করা যায়নি।",
+    "backToSavedReports": "← সংরক্ষিত প্রতিবেদনে ফিরে যান",
+    "loading": "আপনার সংরক্ষিত রিডিং লোড হচ্ছে…",
+    "openHoroscope": "🔮 রাশিফল",
+    "openCalendar": "📅 ক্যালেন্ডার",
+    "openLifeCoach": "🧭 লাইফ কোচ",
+    "askAI": "✨ AI কে জিজ্ঞাসা করুন"
+  },
+  "card": {
+    "savedOn": "{{date}} তারিখে সংরক্ষিত",
+    "view": "দেখুন",
+    "preview": "পূর্বরূপ",
+    "download": "PDF",
+    "delete": "মুছে ফেলুন",
+    "deleting": "মুছে ফেলা হচ্ছে…",
+    "lagnaSuffix": "{{lagna}} লগ্ন",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "প্রতিবেদন লেআউট",
+    "gridView": "গ্রিড দৃশ্য",
+    "listView": "তালিকা দৃশ্য",
+    "searchPlaceholder": "শিরোনাম, নাম, বা লগ্ন দিয়ে অনুসন্ধান করুন…",
+    "searchAriaLabel": "সংরক্ষিত প্রতিবেদন অনুসন্ধান করুন",
+    "sortAriaLabel": "সংরক্ষিত প্রতিবেদন সাজান",
+    "resultCountSingle": "{{count}} প্রতিবেদন",
+    "resultCountPlural": "{{count}} প্রতিবেদন",
+    "resultCountFiltered": "{{total}} এর মধ্যে {{count}}"
+  },
+  "sort": {
+    "newest": "সবচেয়ে নতুন প্রথমে",
+    "oldest": "সবচেয়ে পুরনো প্রথমে",
+    "title-asc": "শিরোনাম (A–Z)",
+    "title-desc": "শিরোনাম (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} এর পূর্বরূপ",
+    "closePreview": "পূর্বরূপ বন্ধ করুন",
+    "savedOn": "{{date}} তারিখে সংরক্ষিত",
+    "noDetails": "এই প্রতিবেদনের জন্য কোনো অতিরিক্ত বিবরণ সংরক্ষিত নেই।",
+    "description": "এটি আপনার সংরক্ষিত রিডিং-এর বিবরণের একটি দ্রুত পূর্বরূপ। প্রতিটি বিভাগ পড়তে সম্পূর্ণ প্রতিবেদন খুলুন — প্রেম, কর্মজীবন, সম্পদ, স্বাস্থ্য, দোষ ও যোগ, প্রতিকার, এবং আপনার জীবন সারাংশ।",
+    "viewFullReport": "✦ সম্পূর্ণ প্রতিবেদন দেখুন",
+    "preparingPdf": "PDF প্রস্তুত করা হচ্ছে…",
+    "downloadPdf": "⭳ PDF ডাউনলোড করুন"
+  },
+  "summarizeAiAria": "AI দিয়ে এই রিপোর্টের সারসংক্ষেপ করুন",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy is not part of this chart's backend-derived remedies."
+}

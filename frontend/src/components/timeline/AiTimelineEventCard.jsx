@@ -1,4 +1,8 @@
 import { memo } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 import Badge from "../common/Badge.jsx";
 import { PLANET_COLORS } from "../../constants/astrology.js";
@@ -24,9 +28,16 @@ const CATEGORY_LABEL = Object.fromEntries(TIMELINE_FILTER_CATEGORIES.map((c) => 
 // event to explain never requires a mouse.
 // ─────────────────────────────────────────────────────────────────────────
 function AiTimelineEventCard({ event, isLast, highlighted = false, selected = false, onSelect, hidePrediction = false }) {
+<<<<<<< HEAD
   const color = confidenceColor(event.confidence?.label);
   const planetColor = PLANET_COLORS[event.dominantPlanet] || "#bf7fff";
   const categoryLabel = CATEGORY_LABEL[event.filterCategory] || event.category || "General";
+=======
+  const { t } = useTranslation(["timeline"]);
+  const color = confidenceColor(event.confidence?.label);
+  const planetColor = PLANET_COLORS[event.dominantPlanet] || "#bf7fff";
+  const categoryLabel = event.filterCategory ? t(`timeline:filterCategories.${event.filterCategory}`, CATEGORY_LABEL[event.filterCategory]) : (event.category || t("timeline:eventCard.generalCategoryFallback"));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const categoryIcon = CATEGORY_ICON[event.filterCategory] || "✨";
 
   const handleKeyDown = (e) => {
@@ -52,7 +63,11 @@ function AiTimelineEventCard({ event, isLast, highlighted = false, selected = fa
         role="button"
         tabIndex={0}
         aria-pressed={selected}
+<<<<<<< HEAD
         aria-label={`AI Timeline entry for ${event.timePeriod?.startDate || "an upcoming period"}${event.timePeriod?.endDate ? ` to ${event.timePeriod.endDate}` : ""}. Select to explain with AI.`}
+=======
+        aria-label={event.timePeriod?.startDate ? (event.timePeriod?.endDate ? t("timeline:eventCard.entryAriaLabelWithEnd", { start: event.timePeriod.startDate, end: event.timePeriod.endDate }) : t("timeline:eventCard.entryAriaLabel", { start: event.timePeriod.startDate })) : t("timeline:eventCard.entryAriaLabel", { start: t("timeline:eventCard.upcomingPeriod") })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         onClick={() => onSelect?.(event)}
         onKeyDown={handleKeyDown}
         data-highlighted={highlighted ? "true" : undefined}
@@ -72,7 +87,11 @@ function AiTimelineEventCard({ event, isLast, highlighted = false, selected = fa
             <span aria-hidden="true">{categoryIcon}</span>
             {categoryLabel}
             <span style={{ color: "var(--nv-text-muted, rgba(200,160,255,0.55))", fontWeight: 400 }}>
+<<<<<<< HEAD
               · {event.timePeriod?.startDate ? `${event.timePeriod.startDate} → ${event.timePeriod.endDate}` : "Upcoming period"}
+=======
+              · {event.timePeriod?.startDate ? t("timeline:eventCard.dateRangeArrow", { start: event.timePeriod.startDate, end: event.timePeriod.endDate }) : t("timeline:eventCard.upcomingPeriod")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </span>
           </span>
           <Badge color={color}>{event.confidence?.label} · {event.confidence?.score}/100</Badge>
@@ -85,8 +104,13 @@ function AiTimelineEventCard({ event, isLast, highlighted = false, selected = fa
         )}
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: (event.suggestedRemedies?.length || event.relatedTransit) ? 10 : 0 }}>
+<<<<<<< HEAD
           {event.activeMahadasha && <Badge color="#bf7fff">Mahadasha: {event.activeMahadasha}</Badge>}
           {event.activeAntardasha && <Badge color="#bf7fff">Antardasha: {event.activeAntardasha}</Badge>}
+=======
+          {event.activeMahadasha && <Badge color="#bf7fff">{t("timeline:eventCard.mahadashaBadge", { value: event.activeMahadasha })}</Badge>}
+          {event.activeAntardasha && <Badge color="#bf7fff">{t("timeline:eventCard.antardashaBadge", { value: event.activeAntardasha })}</Badge>}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           {event.dominantPlanet && <Badge color={planetColor}>{event.dominantPlanet}</Badge>}
           {(event.supportingYogas || []).map((y, i) => <Badge key={`yoga-${i}`} color="#7effb2">{y.name}</Badge>)}
           {(event.supportingDoshas || []).map((d, i) => <Badge key={`dosha-${i}`} color="#ff8f7e">{d.name}</Badge>)}

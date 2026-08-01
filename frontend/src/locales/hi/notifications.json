@@ -1,0 +1,87 @@
+{
+  "categories": {
+    "system": "सिस्टम",
+    "reminder": "अनुस्मारक",
+    "ai": "AI",
+    "panchang": "पंचांग",
+    "muhurat": "मुहूर्त",
+    "prediction": "भविष्यवाणी",
+    "transit": "गोचर",
+    "family": "परिवार",
+    "festival": "त्योहार",
+    "general": "सामान्य"
+  },
+  "priorities": {
+    "critical": "अति महत्वपूर्ण",
+    "high": "उच्च",
+    "medium": "मध्यम",
+    "low": "निम्न"
+  },
+  "sort": {
+    "newest": "सबसे नई पहले",
+    "oldest": "सबसे पुरानी पहले",
+    "priority": "प्राथमिकता"
+  },
+  "center": {
+    "back": "← वापस",
+    "title": "🔔 सूचना केंद्र",
+    "totalSingle": "कुल {{count}} सूचना",
+    "totalPlural": "कुल {{count}} सूचनाएं",
+    "searchPlaceholder": "सूचनाएं खोजें…",
+    "searchAriaLabel": "सूचनाएं खोजें",
+    "filterCategoryAriaLabel": "श्रेणी के अनुसार फ़िल्टर करें",
+    "allCategories": "सभी श्रेणियां",
+    "filterPriorityAriaLabel": "प्राथमिकता के अनुसार फ़िल्टर करें",
+    "allPriorities": "सभी प्राथमिकताएं",
+    "filterReadStatusAriaLabel": "पढ़ी स्थिति के अनुसार फ़िल्टर करें",
+    "all": "सभी",
+    "unread": "अपठित",
+    "read": "पढ़ी गई",
+    "sortAriaLabel": "सूचनाएं क्रमबद्ध करें",
+    "markAllRead": "✓ सभी को पढ़ा हुआ चिह्नित करें",
+    "clearRead": "🗑️ पढ़ी हुई साफ़ करें",
+    "loadFailedTitle": "सूचनाएं लोड नहीं हो सकीं",
+    "retry": "पुनः प्रयास करें",
+    "emptyTitle": "कोई सूचना नहीं",
+    "emptyMessage": "आप पूरी तरह अप टू डेट हैं — आपके वर्तमान फ़िल्टर से कुछ मेल नहीं खाता।",
+    "prevPage": "← पिछला",
+    "nextPage": "अगला →",
+    "pageOf": "पृष्ठ {{page}} का {{totalPages}}",
+    "toasts": {
+      "markReadFailed": "सूचना को पढ़ा हुआ चिह्नित नहीं किया जा सका।",
+      "markAllReadSuccess": "सभी सूचनाएं पढ़ी हुई चिह्नित की गईं।",
+      "markAllReadFailed": "सभी को पढ़ा हुआ चिह्नित नहीं किया जा सका।",
+      "deleteFailed": "सूचना हटाई नहीं जा सकी।",
+      "clearReadSuccess": "पढ़ी हुई सूचनाएं साफ़ कर दी गईं।",
+      "clearReadFailed": "पढ़ी हुई सूचनाएं साफ़ नहीं की जा सकीं।"
+    },
+    "clearDialog": {
+      "title": "पढ़ी हुई सूचनाएं साफ़ करें?",
+      "message": "यह हर पढ़ी हुई सूचना हटा देगा। इसे वापस नहीं किया जा सकता।",
+      "confirmLabel": "पढ़ी हुई साफ़ करें",
+      "loadingLabel": "साफ़ किया जा रहा है…"
+    },
+    "loadFailedGeneric": "सूचनाएं लोड नहीं हो सकीं।"
+  },
+  "card": {
+    "open": "खोलें →",
+    "openTitle": "खोलें",
+    "openAriaLabel": "संबंधित मॉड्यूल खोलें",
+    "markReadTitle": "पढ़ा हुआ चिह्नित करें",
+    "markReadLabel": "✓ पढ़ी गई",
+    "deleteTitle": "सूचना हटाएं",
+    "deleteAriaLabel": "सूचना हटाएं"
+  },
+  "group": {
+    "updateSingle": "{{count}} अपडेट",
+    "updatePlural": "{{count}} अपडेट",
+    "unreadBadge": "{{count}} अपठित"
+  },
+  "widget": {
+    "title": "🔔 सूचनाएं",
+    "unreadCount": "{{count}} अपठित",
+    "loadFailed": "सूचनाएं लोड नहीं हो सकीं।",
+    "emptyMessage": "अभी तक कोई सूचना नहीं — आप पूरी तरह अप टू डेट हैं।",
+    "openCenter": "सूचना केंद्र खोलें →"
+  }
+}

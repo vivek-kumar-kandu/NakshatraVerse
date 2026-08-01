@@ -1,0 +1,165 @@
+{
+  "typeFilters": {
+    "All": "تمام",
+    "Festival": "تہوار",
+    "Vrat": "ورت"
+  },
+  "page": {
+    "back": "← واپس",
+    "title": "🎉 تہوار کیلنڈر",
+    "subtitle": "بیک اینڈ کے حساب کردہ ہندو تہوار اور ورت — تاریخیں، رسومات، اور اہمیت۔",
+    "tabs": {
+      "today": "آج",
+      "upcoming": "آنے والے",
+      "browse": "تمام براؤز کریں"
+    },
+    "todayLoadFailed": "آج کا تہوار لوڈ نہیں ہو سکا۔",
+    "upcomingLoadFailed": "آنے والے تہوار لوڈ نہیں ہو سکے۔",
+    "yearLoadFailed": "تہوار کیلنڈر لوڈ نہیں ہو سکا۔",
+    "openFestivalFailed": "وہ تہوار کھولا نہیں جا سکا۔",
+    "todaysFestivalsHeading": "آج کا تہوار{{plural}}",
+    "noFestivalTodayTitle": "آج کوئی تہوار نہیں",
+    "noFestivalTodayMessage": "آج کی تاریخ پر منانے کے لیے کوئی تہوار یا ورت نہیں ہے۔",
+    "nextUp": "اگلا کیا ہے",
+    "daysRemainingToday": "آج",
+    "daysRemainingSingle": "{{count}} دن میں",
+    "daysRemainingPlural": "{{count}} دنوں میں",
+    "noUpcomingTitle": "کوئی آنے والا تہوار نہیں ملا",
+    "noUpcomingMessage": "اگلے 60 دنوں میں کچھ نہیں ملا۔",
+    "searchPlaceholder": "تہوار تلاش کریں…",
+    "searchAriaLabel": "تہوار تلاش کریں",
+    "typeFilterAriaLabel": "قسم کی بنیاد پر فلٹر کریں",
+    "yearAriaLabel": "سال منتخب کریں",
+    "noMatchTitle": "کوئی تہوار مماثل نہیں",
+    "noMatchMessage": "مختلف تلاش کی اصطلاح یا قسم فلٹر آزمائیں۔",
+    "explainFailed": "AI وضاحت فی الحال دستیاب نہیں ہے۔"
+  },
+  "detailCard": {
+    "importanceSuffix": "{{importance}} اہمیت",
+    "notSpecified": "متعین نہیں ہے۔",
+    "explainButton": "✨ {{status}}",
+    "askingGemini": "Gemini سے پوچھا جا رہا ہے…",
+    "explainThisFestival": "اس تہوار کی وضاحت کریں",
+    "historicalBackground": "تاریخی پس منظر",
+    "significance": "اہمیت",
+    "rituals": "رسومات",
+    "recommendedActivities": "تجویز کردہ سرگرمیاں",
+    "fastingInformation": "روزے کی معلومات",
+    "fastingObserved": "روزہ رکھا جاتا ہے",
+    "noFastingObserved": "روایتی طور پر کوئی روزہ نہیں رکھا جاتا"
+  },
+  "familySuggestions": {
+    "title": "👨‍👩‍👧‍👦 خاندانی تہوار تجاویز",
+    "signInPrompt": "اپنے پیاروں کے لیے مشترکہ جشن کی تجاویز اور یاد دہانیاں حاصل کرنے کے لیے سائن ان کریں اور خاندانی پروفائل شامل کریں۔",
+    "loadFailed": "فی الحال خاندانی تہوار تجاویز لوڈ نہیں ہو سکیں۔",
+    "remindersTitle": "خاندانی تہوار یاد دہانیاں",
+    "noProfiles": "ابھی تک کوئی خاندانی پروفائل محفوظ نہیں ہے۔",
+    "addOne": "ایک شامل کریں →",
+    "sharedCelebrationTitle": "مشترکہ جشن کی تجاویز",
+    "suggestedActivitiesTitle": "تجویز کردہ خاندانی سرگرمیاں"
+  },
+  "intelligencePanel": {
+    "title": "🔮 تہوار کی بصیرت",
+    "subtitle": "روحانی معنی، افسانوی کہانی، اور پوجا کا جائزہ — اوپر کی بنیادی باتوں سے آگے۔",
+    "loadFailed": "فی الحال تہوار کی بصیرت لوڈ نہیں ہو سکی۔",
+    "revealButton": "✨ {{status}}",
+    "askingGemini": "Gemini سے پوچھا جا رہا ہے…",
+    "revealDeeper": "گہری بصیرت ظاہر کریں",
+    "spiritualMeaning": "روحانی معنی",
+    "mythologicalStory": "افسانوی کہانی",
+    "modernPracticalMeaning": "جدید عملی معنی",
+    "culturalSignificance": "سائنسی / ثقافتی اہمیت",
+    "pujaOverview": "پوجا کا جائزہ",
+    "thingsToAvoid": "بچنے والی چیزیں",
+    "aiAssistedBadge": "AI-معاون — روایات علاقے/خاندان کے مطابق مختلف ہو سکتی ہیں"
+  },
+  "preparationChecklist": {
+    "nothingSpecified": "کچھ متعین نہیں ہے۔",
+    "loadFailed": "فی الحال تیاری کی چیک لسٹ لوڈ نہیں ہو سکی۔",
+    "sections": {
+      "preparationChecklist": "تیاری کی چیک لسٹ",
+      "shoppingChecklist": "خریداری کی چیک لسٹ",
+      "pujaMaterials": "پوجا کا سامان",
+      "fastingPreparation": "روزے کی تیاری",
+      "morningRoutine": "صبح کا معمول",
+      "eveningRitual": "شام کی رسم",
+      "postFestivalReflection": "تہوار کے بعد کا غور و فکر"
+    }
+  },
+  "personalizedGuidance": {
+    "title": "🌟 ذاتی نوعیت کی تہوار رہنمائی",
+    "noChartMessage": "یہ دیکھنے کے لیے کہ یہ تہوار آپ کے لیے خاص طور پر کیوں معنی خیز ہے — کیریئر، مالیات، تعلقات، صحت، روحانیت، اور ذاتی ترقی پر مرکوز، آپ کے اپنے چارٹ کی بنیاد پر — اپنی کسی محفوظ کردہ ریڈنگ سے یہ تہوار کھولیں۔",
+    "openSavedReading": "ایک محفوظ کردہ ریڈنگ کھولیں →",
+    "subtitle": "آپ کی اپنی داشا، گوچر، اور پیشین گوئیوں کی بنیاد پر۔",
+    "loadFailed": "فی الحال ذاتی نوعیت کی رہنمائی لوڈ نہیں ہو سکی۔",
+    "askButton": "✨ {{status}}",
+    "whyMeaningful": "یہ میرے لیے کیوں معنی خیز ہے؟",
+    "focusFields": {
+      "careerFocus": "کیریئر",
+      "financeFocus": "مالیات",
+      "relationshipFocus": "تعلقات",
+      "healthFocus": "صحت",
+      "spiritualFocus": "روحانیت",
+      "personalGrowthFocus": "ذاتی ترقی"
+    }
+  },
+  "intelligencePage": {
+    "back": "← واپس",
+    "title": "🔮 تہوار کی بصیرت",
+    "subtitle": "ایک تہوار کے لیے گہری معنی، ذاتی نوعیت کی رہنمائی، تیاری، اور خاندانی تجاویز۔",
+    "loadFailed": "یہ تہوار لوڈ نہیں ہو سکا۔",
+    "loadUpcomingFailed": "کوئی آنے والا تہوار لوڈ نہیں ہو سکا۔",
+    "noFestivalTitle": "کوئی تہوار منتخب نہیں",
+    "noFestivalMessage": "اس کی مکمل بصیرت دیکھنے کے لیے تہوار کیلنڈر، ڈیش بورڈ، یا کیلنڈر صفحہ سے ایک تہوار کھولیں۔",
+    "ritualFlow": "رسم کی ترتیب",
+    "timelineUnavailable": "اس تہوار کے لیے ٹائم لائن دستیاب نہیں ہے۔",
+    "festivalIntelligence": "تہوار کی بصیرت",
+    "personalizedGuidance": "ذاتی نوعیت کی رہنمائی",
+    "festivalPreparation": "تہوار کی تیاری",
+    "family": "خاندان"
+  },
+  "widget": {
+    "title": "آج کا تہوار",
+    "openCalendar": "تہوار کیلنڈر کھولیں →",
+    "loading": "لوڈ ہو رہا ہے…",
+    "noFestivalToday": "آج کوئی تہوار نہیں ہے۔",
+    "nextFestival": "اگلا تہوار",
+    "daysRemainingLabel": "باقی دن",
+    "daysRemainingSingle": "{{count}} دن",
+    "daysRemainingPlural": "{{count}} دن",
+    "importance": "اہمیت",
+    "preparationProgress": "تیاری کی پیش رفت",
+    "preparationItemsReady": "{{count}} چیک لسٹ اشیاء تیار",
+    "upcomingRitual": "آنے والی رسم",
+    "personalizedTip": "ذاتی نوعیت کا مشورہ",
+    "viewIntelligence": "🔮 تہوار کی بصیرت دیکھیں"
+  },
+  "muhurat": {
+    "bestMuhuratFor": "{{activity}} کے لیے بہترین مہورت",
+    "confidence": {
+      "high": "اعلیٰ",
+      "medium": "درمیانہ",
+      "low": "کم"
+    },
+    "confidenceBadge": "{{level}} اعتماد",
+    "bestDate": "بہترین تاریخ",
+    "bestTimeWindow": "بہترین وقت کی کھڑکی",
+    "tithi": "تیتھی",
+    "auspiciousWindow": "مبارک وقت",
+    "cautionPeriod": "احتیاطی وقت (بچیں)",
+    "rahuKaal": "راہو کال",
+    "yamaganda": "یمگنڈ",
+    "gulikaKaal": "گلیکا کال",
+    "otherStrongDates": "دیگر اچھی تاریخیں",
+    "askingAI": "AI سے پوچھا جا رہا ہے…",
+    "explainWhy": "🔮 یہ مہورت کیوں ہے، وضاحت کریں",
+    "nakshatra": "نکشتر"
+  },
+  "calendarStrip": {
+    "heading": "🎉 اس مہینے کے تہوار",
+    "viewCalendarLink": "تہوار کیلنڈر دیکھیں →",
+    "todayLabel": "آج:",
+    "loadingOverview": "تہوار کا جائزہ لوڈ ہو رہا ہے…",
+    "importanceSuffix": "اہمیت"
+  }
+}

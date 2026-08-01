@@ -1,0 +1,16 @@
+{
+  "notFound": "কোনো রুট পাওয়া যায়নি {{method}} {{path}}",
+  "malformedJson": "অনুরোধের বডিতে ত্রুটিপূর্ণ JSON।",
+  "bodyTooLarge": "অনুরোধের বডি অত্যন্ত বড়।",
+  "internalError": "অভ্যন্তরীণ সার্ভার ত্রুটি।",
+  "internalErrorProduction": "অভ্যন্তরীণ সার্ভার ত্রুটি। অনুগ্রহ করে আবার চেষ্টা করুন।",
+  "invalidRequest": "অকার্যকর অনুরোধ: {{errors}}",
+  "serviceUnavailable": "{{feature}} এই মুহূর্তে উপলব্ধ নয়।",
+  "invalidProfile": "অকার্যকর প্রোফাইল: {{errors}}",
+  "chooseTwoDifferentProfiles": "তুলনা করতে দুটি ভিন্ন প্রোফাইল বেছে নিন।",
+  "comparisonError": "এই দুটি প্রোফাইল তুলনা করার সময় অভ্যন্তরীণ সার্ভার ত্রুটি।",
+  "internalErrorWhile": "{{action}} করার সময় অভ্যন্তরীণ সার্ভার ত্রুটি।",
+  "occurrenceNotFound": "{{year}} সালের জন্য \"{{key}}\"-এর কোনো বিবরণ পাওয়া যায়নি।",
+  "missingApiKey": "সার্ভারে API কী অনুপস্থিত। backend/.env-এ GOOGLE_API_KEY সেট করুন।",
+  "tooManyRequests": "অনেক বেশি অনুরোধ। অনুগ্রহ করে ধীর গতিতে একটু পরে আবার চেষ্টা করুন।"
+}

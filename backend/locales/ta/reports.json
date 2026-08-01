@@ -1,0 +1,6 @@
+{
+  "notFound": "அறிக்கை கிடைக்கவில்லை.",
+  "fieldsRequired": "அறிக்கையைச் சேமிக்க userData, chart, மற்றும் report அனைத்தும் தேவை.",
+  "pdfFieldsRequired": "PDF உருவாக்க userData, chart, மற்றும் report அனைத்தும் தேவை.",
+  "matchingPdfFieldsRequired": "PDF உருவாக்க அனைத்து விவரங்களும் தேவை."
+}

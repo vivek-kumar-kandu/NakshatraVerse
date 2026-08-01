@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← ડેશબોર્ડ પર પાછા જાઓ",
+    "title": "મારી પ્રોફાઇલ",
+    "photoHint": "સંપાદિત કરવા માટે તમારા ફોટા પર ક્લિક કરો — અપલોડ કરો, બદલો, અથવા દૂર કરો.",
+    "authProviderGoogle": "Google સાથે સાઇન ઇન કર્યું",
+    "authProviderEmail": "ઈમેલ અને પાસવર્ડ",
+    "accountInformation": "ખાતાની માહિતી",
+    "fullName": "પૂરું નામ",
+    "email": "ઈમેલ",
+    "memberSince": "સભ્યપદની શરૂઆત",
+    "accountType": "ખાતાનો પ્રકાર",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "પાસવર્ડ બદલો",
+    "editProfileInSettings": "સેટિંગ્સમાં પ્રોફાઇલ સંપાદિત કરો →",
+    "activitySummary": "પ્રોફાઇલ પ્રવૃત્તિ સારાંશ",
+    "totalReports": "કુલ અહેવાલો",
+    "loadingValue": "…",
+    "lastGenerated": "છેલ્લે બનાવ્યું",
+    "viewSavedReports": "સાચવેલા અહેવાલો જુઓ →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "કૃપા કરીને JPG, PNG, અથવા WEBP છબી પસંદ કરો.",
+    "fileTooLarge": "તે છબી ખૂબ મોટી છે. કૃપા કરીને 8MB થી ઓછા કદની ફાઇલ પસંદ કરો.",
+    "processFailed": "તે છબી પ્રક્રિયા કરી શકાઈ નહીં.",
+    "photoUpdated": "પ્રોફાઇલ ફોટો અપડેટ થયો.",
+    "saveFailed": "તમારો ફોટો સાચવી શકાયો નહીં.",
+    "photoRemoved": "પ્રોફાઇલ ફોટો દૂર કર્યો.",
+    "removeFailed": "તમારો ફોટો દૂર કરી શકાયો નહીં.",
+    "changePhotoAriaLabel": "પ્રોફાઇલ ફોટો બદલો",
+    "uploadPhotoAriaLabel": "પ્રોફાઇલ ફોટો અપલોડ કરો",
+    "menuAriaLabel": "પ્રોફાઇલ ફોટો વિકલ્પો",
+    "replacePhoto": "ફોટો બદલો",
+    "uploadPhoto": "ફોટો અપલોડ કરો",
+    "removePhoto": "ફોટો દૂર કરો",
+    "previewDialogAriaLabel": "નવા પ્રોફાઇલ ફોટાનું પૂર્વાવલોકન",
+    "previewYourNewPhoto": "તમારા નવા ફોટાનું પૂર્વાવલોકન કરો",
+    "cancel": "રદ કરો",
+    "save": "સાચવો"
+  }
+}

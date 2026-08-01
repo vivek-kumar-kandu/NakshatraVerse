@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "daily": "روزانہ",
+    "weekly": "ہفتہ وار",
+    "monthly": "ماہانہ",
+    "career": "کیریئر",
+    "relationship": "تعلقات",
+    "finance": "مالیات",
+    "health": "صحت",
+    "growth": "ترقی"
+  },
+  "page": {
+    "back": "← واپس",
+    "title": "🧭 AI لائف کوچ",
+    "dailyCompanion": "{{name}} کا روزانہ ساتھی",
+    "updated": "{{time}} کو اپ ڈیٹ کیا گیا",
+    "refreshing": "تازہ کیا جا رہا ہے…",
+    "refreshGuidance": "↻ رہنمائی تازہ کریں",
+    "tryAgain": "دوبارہ کوشش کریں",
+    "loadingAriaLabel": "آپ کی AI لائف کوچ رہنمائی لوڈ ہو رہی ہے",
+    "loadFailed": "آپ کی AI لائف کوچ رہنمائی لوڈ نہیں ہو سکی۔",
+    "refreshFailed": "آپ کی AI لائف کوچ رہنمائی تازہ نہیں ہو سکی۔",
+    "noReadingTitle": "ابھی تک کوئی ریڈنگ دستیاب نہیں",
+    "noReadingMessage": "اپنا ذاتی AI لائف کوچ دیکھنے کے لیے پہلے ایک رپورٹ بنائیں یا کھولیں۔",
+    "backAction": "← واپس"
+  },
+  "daily": {
+    "opportunities": "مواقع",
+    "challenges": "چیلنجز",
+    "recommendedActions": "تجویز کردہ اقدامات",
+    "thingsToAvoid": "بچنے والی چیزیں",
+    "spiritualGuidance": "🕉️ روحانی رہنمائی"
+  },
+  "outlook": {
+    "weeklyThemeTitle": "اس ہفتے کا موضوع",
+    "weeklyEnergyLabel": "ہفتہ وار توانائی",
+    "monthlyThemeTitle": "اس مہینے کا موضوع",
+    "monthlyEnergyLabel": "ماہانہ توانائی",
+    "weeklyUnavailableTitle": "ہفتہ وار نظریہ دستیاب نہیں",
+    "weeklyUnavailableMessage": "ہم فی الحال اس ہفتے کا نظریہ نہیں بنا سکے — براہ کرم تازہ کریں۔",
+    "monthlyUnavailableTitle": "ماہانہ نظریہ دستیاب نہیں",
+    "monthlyUnavailableMessage": "ہم فی الحال اس مہینے کا نظریہ نہیں بنا سکے — براہ کرم تازہ کریں۔",
+    "weeklyFocus": "ہفتہ وار توجہ",
+    "personalGrowthGoal": "ذاتی ترقی کا ہدف",
+    "careerFocus": "کیریئر پر توجہ",
+    "relationshipFocus": "تعلقات پر توجہ",
+    "opportunities": "مواقع",
+    "challenges": "چیلنجز",
+    "bestDay": "بہترین دن: {{weekday}} ({{date}})",
+    "cautionDay": "احتیاط کا دن: {{weekday}} ({{date}})"
+  },
+  "career": {
+    "cardTitle": "کیریئر کوچ",
+    "progress": "کیریئر کی پیش رفت",
+    "skillDevelopmentAdvice": "مہارت کی ترقی کا مشورہ",
+    "promotionGuidance": "ترقی کی رہنمائی",
+    "businessSuggestions": "کاروباری تجاویز",
+    "bestTimeForDecisions": "اہم فیصلوں کے لیے بہترین وقت"
+  },
+  "relationship": {
+    "cardTitle": "تعلقات کوچ",
+    "guidance": "تعلقات کی رہنمائی",
+    "marriageAdvice": "شادی کا مشورہ",
+    "familyHarmonyTips": "خاندانی ہم آہنگی کی تجاویز",
+    "communicationSuggestions": "بات چیت کی تجاویز",
+    "emotionalWellbeing": "جذباتی خوشحالی"
+  },
+  "finance": {
+    "cardTitle": "مالی کوچ",
+    "outlook": "مالی نظریہ",
+    "spendingSuggestions": "اخراجات کی تجاویز",
+    "savingAdvice": "بچت کا مشورہ",
+    "investmentAwareness": "سرمایہ کاری کی آگاہی",
+    "businessOpportunities": "کاروباری مواقع"
+  },
+  "health": {
+    "cardTitle": "صحت اور خوشحالی",
+    "energyTrends": "توانائی کے رجحانات",
+    "stressAwareness": "تناؤ کی آگاہی",
+    "meditationSuggestions": "مراقبے کی تجاویز",
+    "yogaRecommendations": "یوگ کی سفارشات",
+    "spiritualPractices": "روحانی مشقیں",
+    "lifestyleSuggestions": "طرز زندگی کی تجاویز"
+  },
+  "growth": {
+    "dailyGoals": "روزانہ کے اہداف",
+    "weeklyGoals": "ہفتہ وار اہداف",
+    "monthlyFocus": "🌕 ماہانہ توجہ",
+    "habitSuggestions": "عادت کی تجاویز",
+    "learningRecommendations": "سیکھنے کی سفارشات"
+  },
+  "scoreCard": {
+    "dailyEnergyLabel": "روزانہ توانائی",
+    "todaysFocus": "آج کی توجہ"
+  },
+  "confidenceBadge": {
+    "withScore": "اعتماد: {{label}} ({{score}}/100)",
+    "withoutScore": "اعتماد: {{label}}"
+  },
+  "whyNote": {
+    "prefix": "کیوں؟ "
+  },
+  "luckyElements": {
+    "title": "🍀 آج کے خوش قسمت عناصر",
+    "color": "رنگ",
+    "number": "نمبر",
+    "direction": "سمت",
+    "favorableTime": "موافق وقت"
+  },
+  "affirmation": {
+    "dailyAffirmation": "✦ روزانہ کی توثیق",
+    "spiritualPractice": "🕉️ آج کی روحانی مشق"
+  }
+}

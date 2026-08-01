@@ -1,0 +1,32 @@
+[
+  {
+    "id": "e2ce2fd3-946a-49d5-a540-5fabd2777f36",
+    "name": "Vivek Kumar",
+    "email": "vivekk11951@gmail.com",
+    "passwordHash": null,
+    "googleId": "112860221298231706345",
+    "picture": "https://lh3.googleusercontent.com/a/ACg8ocIb2GvZUmbNrB4PNux5g_3THRRY-smZTDFyEECzsfBV5EQdlWOQ=s96-c",
+    "createdAt": "2026-07-17T14:26:16.779Z",
+    "updatedAt": "2026-07-17T14:26:16.779Z"
+  },
+  {
+    "id": "552a2e7d-2519-4b13-a520-502b72460c6e",
+    "name": "VIvek Kumar",
+    "email": "vk6073859@gmail.com",
+    "passwordHash": "$2a$12$mV2NPE3vaPzlkPFK9dEyy.5N5oQdT1XK5Qq9.lGYgvU/PeGhs2Uyy",
+    "googleId": null,
+    "picture": null,
+    "createdAt": "2026-07-17T14:27:58.634Z",
+    "updatedAt": "2026-07-17T14:27:58.634Z"
+  },
+  {
+    "id": "962876e2-3bfb-42b0-b7d5-979383d7ffca",
+    "name": "New One",
+    "email": "newo78698@gmail.com",
+    "passwordHash": null,
+    "googleId": "101072718551233386654",
+    "picture": "https://lh3.googleusercontent.com/a/ACg8ocJkDsp-iVRtNTS5BR0aQ-04bfcOTbW88vyTL9Kf2vspaegc=s96-c",
+    "createdAt": "2026-07-18T06:37:51.169Z",
+    "updatedAt": "2026-07-18T06:37:51.169Z"
+  }
+]

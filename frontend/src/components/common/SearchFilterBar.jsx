@@ -1,4 +1,8 @@
 import { memo } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { SORT_OPTIONS } from "../../utils/reportDisplay.js";
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -19,17 +23,29 @@ const selectStyle = {
   color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif", appearance: "none",
 };
 
+<<<<<<< HEAD
 function ViewToggle({ view, onChange }) {
   return (
     <div
       role="group"
       aria-label="Report layout"
+=======
+function ViewToggle({ view, onChange, t }) {
+  return (
+    <div
+      role="group"
+      aria-label={t("reports:searchFilterBar.reportLayoutAriaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       style={{
         display: "flex", border: "1px solid var(--nv-accent-border, rgba(180,120,255,0.3))", borderRadius: 20,
         overflow: "hidden", flexShrink: 0,
       }}
     >
+<<<<<<< HEAD
       {[{ id: "grid", icon: "▦", label: "Grid view" }, { id: "list", icon: "☰", label: "List view" }].map((opt) => (
+=======
+      {[{ id: "grid", icon: "▦", label: t("reports:searchFilterBar.gridView") }, { id: "list", icon: "☰", label: t("reports:searchFilterBar.listView") }].map((opt) => (
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         <button
           key={opt.id}
           type="button"
@@ -52,6 +68,10 @@ function ViewToggle({ view, onChange }) {
 }
 
 function SearchFilterBar({ query, onQueryChange, sort, onSortChange, view, onViewChange, resultCount, totalCount }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["reports"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 10, marginBottom: 16 }}>
       <div style={{ position: "relative", flex: "1 1 220px", minWidth: 180 }}>
@@ -65,8 +85,13 @@ function SearchFilterBar({ query, onQueryChange, sort, onSortChange, view, onVie
           type="search"
           value={query}
           onChange={(e) => onQueryChange(e.target.value)}
+<<<<<<< HEAD
           placeholder="Search by title, name, or lagna…"
           aria-label="Search saved reports"
+=======
+          placeholder={t("reports:searchFilterBar.searchPlaceholder")}
+          aria-label={t("reports:searchFilterBar.searchAriaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           style={{
             width: "100%", padding: "10px 14px 10px 36px", borderRadius: 20, fontSize: 13,
             border: "1px solid var(--nv-accent-border, rgba(180,120,255,0.3))", background: "var(--nv-surface, rgba(18,0,38,0.6))",
@@ -77,25 +102,46 @@ function SearchFilterBar({ query, onQueryChange, sort, onSortChange, view, onVie
 
       <label style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 0 }}>
         <span style={{ position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(0,0,0,0)" }}>
+<<<<<<< HEAD
           Sort saved reports
+=======
+          {t("reports:searchFilterBar.sortAriaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </span>
         <select
           value={sort}
           onChange={(e) => onSortChange(e.target.value)}
+<<<<<<< HEAD
           aria-label="Sort saved reports"
+=======
+          aria-label={t("reports:searchFilterBar.sortAriaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           className="select-input"
           style={selectStyle}
         >
           {SORT_OPTIONS.map((opt) => (
+<<<<<<< HEAD
             <option key={opt.value} value={opt.value}>{opt.label}</option>
+=======
+            <option key={opt.value} value={opt.value}>{t(`reports:sort.${opt.value}`)}</option>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           ))}
         </select>
       </label>
 
+<<<<<<< HEAD
       <ViewToggle view={view} onChange={onViewChange} />
 
       <span aria-live="polite" style={{ fontSize: 11.5, color: "var(--nv-text-muted, rgba(200,160,255,0.5))", flexShrink: 0 }}>
         {resultCount === totalCount ? `${totalCount} report${totalCount === 1 ? "" : "s"}` : `${resultCount} of ${totalCount}`}
+=======
+      <ViewToggle view={view} onChange={onViewChange} t={t} />
+
+      <span aria-live="polite" style={{ fontSize: 11.5, color: "var(--nv-text-muted, rgba(200,160,255,0.5))", flexShrink: 0 }}>
+        {resultCount === totalCount
+          ? t(totalCount === 1 ? "reports:searchFilterBar.resultCountSingle" : "reports:searchFilterBar.resultCountPlural", { count: totalCount })
+          : t("reports:searchFilterBar.resultCountFiltered", { count: resultCount, total: totalCount })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </span>
     </div>
   );

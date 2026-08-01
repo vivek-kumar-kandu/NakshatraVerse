@@ -1,4 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import Badge from "../components/common/Badge.jsx";
@@ -41,6 +45,10 @@ function ResultsPage(props) {
 }
 
 function ResultsPageInner({ userData, report, planetary, numerology, error }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["results"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [activeTab, setActiveTab] = useState(initialReportTab);
   const [visible, setVisible] = useState(false);
   useEffect(() => { setTimeout(() => setVisible(true), 80); }, []);
@@ -86,46 +94,79 @@ function ResultsPageInner({ userData, report, planetary, numerology, error }) {
       case "love":
         return (
           <TwoSectionTab failed={failed} sections={[
+<<<<<<< HEAD
             { title:"Love Life", icon:"💕", color:"#ff7eb3", text:report?.loveLife, placeholder:"Reading Venus and Moon alignments…" },
             { title:"Marriage", icon:"💍", color:"#ffb07e", text:report?.marriage, placeholder:"Consulting Jupiter and the 7th house…" },
+=======
+            { title:t("results:sections.loveLife.title"), icon:"💕", color:"#ff7eb3", text:report?.loveLife, placeholder:t("results:sections.loveLife.placeholder") },
+            { title:t("results:sections.marriage.title"), icon:"💍", color:"#ffb07e", text:report?.marriage, placeholder:t("results:sections.marriage.placeholder") },
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           ]} />
         );
       case "career":
         return (
+<<<<<<< HEAD
           <SingleTab icon="💼" title="Career" color="#7eb8ff" text={report?.career} placeholder="Analyzing Saturn, Sun, and the 10th house…" failed={failed}>
             <GlassCard style={{ padding:20 }}>
               <h3 style={{ margin:"0 0 12px", fontSize:13, letterSpacing:1.5, textTransform:"uppercase",
                 color:"var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>KEY PLANETARY INFLUENCES</h3>
               {["Sun ☀️","Saturn ♄","Mercury ☿"].map(p => (
                 <InsightRow key={p} label={p} value={`House ${planetary[p]?.house} · ${planetary[p]?.sign}`} color={PLANET_COLORS[p]} />
+=======
+          <SingleTab icon="💼" title={t("results:sections.career.title")} color="#7eb8ff" text={report?.career} placeholder={t("results:sections.career.placeholder")} failed={failed}>
+            <GlassCard style={{ padding:20 }}>
+              <h3 style={{ margin:"0 0 12px", fontSize:13, letterSpacing:1.5, textTransform:"uppercase",
+                color:"var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>{t("results:sections.career.keyPlanetaryInfluences")}</h3>
+              {["Sun ☀️","Saturn ♄","Mercury ☿"].map(p => (
+                <InsightRow key={p} label={p} value={`${t("results:kundli.house", { number: planetary[p]?.house })} · ${planetary[p]?.sign}`} color={PLANET_COLORS[p]} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               ))}
             </GlassCard>
           </SingleTab>
         );
       case "wealth":
         return (
+<<<<<<< HEAD
           <SingleTab icon="💰" title="Finance & Wealth" color="#ffd700" text={report?.finance} placeholder="Consulting Jupiter and the 2nd house…" failed={failed}>
             <GlassCard style={{ padding:20 }}>
               <h3 style={{ margin:"0 0 12px", fontSize:13, letterSpacing:1.5, textTransform:"uppercase",
                 color:"var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>WEALTH INDICATORS</h3>
               {["Jupiter ♃","Venus ♀","Moon 🌙"].map(p => (
                 <InsightRow key={p} label={p} value={`House ${planetary[p]?.house} · ${planetary[p]?.sign}`} color={PLANET_COLORS[p]} />
+=======
+          <SingleTab icon="💰" title={t("results:sections.wealth.title")} color="#ffd700" text={report?.finance} placeholder={t("results:sections.wealth.placeholder")} failed={failed}>
+            <GlassCard style={{ padding:20 }}>
+              <h3 style={{ margin:"0 0 12px", fontSize:13, letterSpacing:1.5, textTransform:"uppercase",
+                color:"var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>{t("results:sections.wealth.wealthIndicators")}</h3>
+              {["Jupiter ♃","Venus ♀","Moon 🌙"].map(p => (
+                <InsightRow key={p} label={p} value={`${t("results:kundli.house", { number: planetary[p]?.house })} · ${planetary[p]?.sign}`} color={PLANET_COLORS[p]} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               ))}
             </GlassCard>
           </SingleTab>
         );
       case "health":
         return (
+<<<<<<< HEAD
           <SingleTab icon="🌿" title="Health" color="#7effb2" text={report?.health} placeholder="Analyzing Sun, Mars, and the 6th house…" failed={failed}>
             <GlassCard style={{ padding:20 }}>
               <h3 style={{ margin:"0 0 12px", fontSize:13, letterSpacing:1.5, textTransform:"uppercase",
                 color:"var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>HEALTH PLANETS</h3>
               {["Sun ☀️","Mars ♂","Saturn ♄"].map(p => (
                 <InsightRow key={p} label={p} value={`House ${planetary[p]?.house} · ${planetary[p]?.sign}`} color={PLANET_COLORS[p]} />
+=======
+          <SingleTab icon="🌿" title={t("results:sections.health.title")} color="#7effb2" text={report?.health} placeholder={t("results:sections.health.placeholder")} failed={failed}>
+            <GlassCard style={{ padding:20 }}>
+              <h3 style={{ margin:"0 0 12px", fontSize:13, letterSpacing:1.5, textTransform:"uppercase",
+                color:"var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>{t("results:sections.health.healthPlanets")}</h3>
+              {["Sun ☀️","Mars ♂","Saturn ♄"].map(p => (
+                <InsightRow key={p} label={p} value={`${t("results:kundli.house", { number: planetary[p]?.house })} · ${planetary[p]?.sign}`} color={PLANET_COLORS[p]} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               ))}
             </GlassCard>
           </SingleTab>
         );
+<<<<<<< HEAD
       case "doshas":
         return (
           <div style={{ display:"grid", gap:16 }}>
@@ -153,20 +194,81 @@ function ResultsPageInner({ userData, report, planetary, numerology, error }) {
                 </div>
               ) : (
                 <EmptyState compact icon="🧿" title="No doshas detected" message="No major dosha was found based on the calculated chart." />
+=======
+      case "doshas": {
+        // The AI narrative above (report.doshas / report.yogas) is grounded
+        // in the FULL backend-confirmed set — base engine (chart.yogas /
+        // chart.doshas) PLUS the advanced engine (report.advancedYogas /
+        // report.advancedDoshas — see responseFormatter.js's `totalYogas` /
+        // `totalDoshas`). The "Detected Yogas/Doshas" cards below must be
+        // built from that same combined set, or the AI text ends up
+        // mentioning yogas/doshas (e.g. Adhi Yoga, Sunapha Yoga, Parivartana
+        // Yoga) that never appear as cards underneath. Dedupe by name in
+        // case a name were ever detected by both engines.
+        const dedupeByName = (items) => {
+          const seen = new Set();
+          return items.filter((item) => {
+            if (seen.has(item.name)) return false;
+            seen.add(item.name);
+            return true;
+          });
+        };
+        const allYogas = dedupeByName([...(report?.chart?.yogas || []), ...(report?.advancedYogas || [])]);
+        const allDoshas = dedupeByName([...(report?.chart?.doshas || []), ...(report?.advancedDoshas || [])]);
+        return (
+          <div style={{ display:"grid", gap:16 }}>
+            <TwoSectionTab failed={failed} sections={[
+              { title:t("results:sections.doshas.title"), icon:"🧿", color:"#ff7b7b", text:report?.doshas, placeholder:t("results:sections.doshas.placeholder") },
+              { title:t("results:sections.yogas.title"), icon:"⭐", color:"#c9ff7e", text:report?.yogas, placeholder:t("results:sections.yogas.placeholder") },
+            ]} />
+            {/* V3.0 Phase 3: the backend Rule Engine's own structured
+                findings (base chart.yogas/chart.doshas plus the advanced
+                engine's advancedYogas/advancedDoshas), shown as expandable,
+                individually readable cards alongside the AI narrative
+                above. */}
+            <ExpandableSection icon="⭐" title={t("results:doshasYogas.detectedYogas")} color="#c9ff7e" count={allYogas.length}>
+              {allYogas.length > 0 ? (
+                <div style={{ display:"grid", gap:10, gridTemplateColumns:"repeat(auto-fit,minmax(260px,1fr))" }}>
+                  {allYogas.map((y, idx) => <RuleResultCard key={y.name} name={y.name} detail={y.detail} kind="yoga" idx={idx} />)}
+                </div>
+              ) : (
+                <EmptyState compact icon="⭐" title={t("results:doshasYogas.noYogasTitle")} message={t("results:doshasYogas.noYogasMessage")} />
+              )}
+            </ExpandableSection>
+            <ExpandableSection icon="🧿" title={t("results:doshasYogas.detectedDoshas")} color="#ff8f7e" count={allDoshas.length}>
+              {allDoshas.length > 0 ? (
+                <div style={{ display:"grid", gap:10, gridTemplateColumns:"repeat(auto-fit,minmax(260px,1fr))" }}>
+                  {allDoshas.map((d, idx) => <RuleResultCard key={d.name} name={d.name} detail={d.detail} kind="dosha" idx={idx} />)}
+                </div>
+              ) : (
+                <EmptyState compact icon="🧿" title={t("results:doshasYogas.noDoshasTitle")} message={t("results:doshasYogas.noDoshasMessage")} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               )}
             </ExpandableSection>
           </div>
         );
+<<<<<<< HEAD
       case "remedies":
         return (
           <div style={{ display:"grid", gap:16 }}>
             <SingleTab icon="🪬" title="Remedies & Recommendations" color="#ffb347" text={report?.remedies} placeholder="Preparing personalised Vedic remedies…" failed={failed} />
+=======
+      }
+      case "remedies":
+        return (
+          <div style={{ display:"grid", gap:16 }}>
+            <SingleTab icon="🪬" title={t("results:sections.remedies.title")} color="#ffb347" text={report?.remedies} placeholder={t("results:sections.remedies.placeholder")} failed={failed} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             {/* V3.0 Phase 3: the actual backend-computed remedies
                 (report.chart.remedies — { type, detail } from
                 remedyRuleEvaluator.js) replace the previous static
                 placeholder category list, which never reflected real
                 chart data. */}
+<<<<<<< HEAD
             <ExpandableSection icon="🪬" title="Suggested Remedies" color="#ffb347" count={report?.chart?.remedies?.length ?? 0}>
+=======
+            <ExpandableSection icon="🪬" title={t("results:remedies.suggestedRemedies")} color="#ffb347" count={report?.chart?.remedies?.length ?? 0}>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               {report?.chart?.remedies?.length > 0 ? (
                 <div style={{ display:"grid", gap:10, gridTemplateColumns:"repeat(auto-fit,minmax(240px,1fr))" }}>
                   {report.chart.remedies.map((r, idx) => (
@@ -180,7 +282,11 @@ function ResultsPageInner({ userData, report, planetary, numerology, error }) {
                   ))}
                 </div>
               ) : (
+<<<<<<< HEAD
                 <EmptyState compact icon="🪬" title="No specific remedies" message="No traditional remedy is suggested based on the currently calculated chart." />
+=======
+                <EmptyState compact icon="🪬" title={t("results:remedies.noRemediesTitle")} message={t("results:remedies.noRemediesMessage")} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               )}
             </ExpandableSection>
           </div>
@@ -200,18 +306,32 @@ function ResultsPageInner({ userData, report, planetary, numerology, error }) {
               <span aria-hidden="true" style={{ fontSize:28 }}>✨</span>
               <h3 style={{ margin:0, fontSize:20, background:GOLD_GRADIENT,
                 WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", fontFamily:"Cinzel,serif" }}>
+<<<<<<< HEAD
                 AI-Generated Life Summary
               </h3>
               <Badge color="#ffd700" style={{ marginLeft:"auto", animation:"aiGlowPulse 2.6s ease-in-out infinite" }}>AI Insight</Badge>
             </div>
             <AiText text={report?.lifeSummary} placeholder="Weaving your complete cosmic story…" failed={failed} />
+=======
+                {t("results:summary.heading")}
+              </h3>
+              <Badge color="#ffd700" style={{ marginLeft:"auto", animation:"aiGlowPulse 2.6s ease-in-out infinite" }}>{t("results:aiInsight")}</Badge>
+            </div>
+            <AiText text={report?.lifeSummary} placeholder={t("results:summary.placeholder")} failed={failed} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             {report?.lifeSummary && (
               <div style={{ marginTop:20, paddingTop:20, borderTop:"1px solid rgba(255,215,0,0.15)" }}>
                 <div style={{ display:"flex", flexWrap:"wrap", gap:8 }}>
                   <Badge color="#ffd700">{userData.name}</Badge>
+<<<<<<< HEAD
                   <Badge color="#bf7fff">Lagna: {userData.lagna}</Badge>
                   <Badge color="#9dc9ff">Mulank: {numerology.mulank}</Badge>
                   <Badge color="#ff7eb3">Bhagyank: {numerology.bhagyank}</Badge>
+=======
+                  <Badge color="#bf7fff">{t("results:overview.fields.lagna")}: {userData.lagna}</Badge>
+                  <Badge color="#9dc9ff">{t("results:numerologyCard.mulankLabel")}: {numerology.mulank}</Badge>
+                  <Badge color="#ff7eb3">{t("results:numerologyCard.bhagyankLabel")}: {numerology.bhagyank}</Badge>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </div>
               </div>
             )}
@@ -258,8 +378,13 @@ function ResultsPageInner({ userData, report, planetary, numerology, error }) {
           </div>
           <div style={{ display:"flex", gap:8, flexWrap:"wrap" }}>
             <Badge color="#ffd700">{userData.lagna}</Badge>
+<<<<<<< HEAD
             <Badge color="#bf7fff">♾ Mulank {numerology.mulank}</Badge>
             <Badge color="#9dc9ff">⚡ Bhagyank {numerology.bhagyank}</Badge>
+=======
+            <Badge color="#bf7fff">♾ {t("results:numerologyCard.mulankLabel")} {numerology.mulank}</Badge>
+            <Badge color="#9dc9ff">⚡ {t("results:numerologyCard.bhagyankLabel")} {numerology.bhagyank}</Badge>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </div>
         </header>
 
@@ -267,7 +392,11 @@ function ResultsPageInner({ userData, report, planetary, numerology, error }) {
         <div aria-hidden="true" style={{ height:1, background:"linear-gradient(90deg,transparent,rgba(180,120,255,0.3),transparent)", margin:"16px 0" }} />
 
         {/* Tab bar */}
+<<<<<<< HEAD
         <nav aria-label="Report sections">
+=======
+        <nav aria-label={t("results:page.reportSectionsAriaLabel")}>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           <GlassCard style={{ padding:"8px 12px", marginBottom:20, borderRadius:40 }}>
             <TabBar active={activeTab} onChange={handleTabChange} />
           </GlassCard>
@@ -285,7 +414,11 @@ function ResultsPageInner({ userData, report, planetary, numerology, error }) {
 
         {/* Footer */}
         <footer style={{ textAlign:"center", marginTop:40, color:"rgba(180,130,255,0.3)", fontSize:12, fontFamily:"Inter,sans-serif" }}>
+<<<<<<< HEAD
           NakshatraVerse · Ancient Wisdom meets Gemini AI · For guidance purposes only
+=======
+          {t("results:page.footerTagline")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </footer>
       </div>
     </div>

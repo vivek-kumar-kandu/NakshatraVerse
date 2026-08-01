@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import ResultsPage from "./ResultsPage.jsx";
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import * as reportsApi from "../utils/reportsApi.js";
@@ -13,6 +17,10 @@ import { SkeletonBlock } from "../components/common/Skeleton.jsx";
 // mapping the saved record's shape onto ResultsPage's existing props.
 // ─────────────────────────────────────────────────────────────────────────
 function SavedReportPage({ reportId, onBack, onOpenAssistant, onOpenHoroscope, onOpenCalendar, onOpenLifeCoach }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["reports", "common"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [record, setRecord] = useState(null);
   const [error, setError] = useState(null);
 
@@ -20,9 +28,15 @@ function SavedReportPage({ reportId, onBack, onOpenAssistant, onOpenHoroscope, o
     let cancelled = false;
     reportsApi.getReport(reportId)
       .then((r) => { if (!cancelled) setRecord(r); })
+<<<<<<< HEAD
       .catch((err) => { if (!cancelled) setError(err.message || "Could not load that report."); });
     return () => { cancelled = true; };
   }, [reportId]);
+=======
+      .catch((err) => { if (!cancelled) setError(err.message || t("reports:detail.loadFailed")); });
+    return () => { cancelled = true; };
+  }, [reportId, t]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   if (error) {
     return (
@@ -31,7 +45,11 @@ function SavedReportPage({ reportId, onBack, onOpenAssistant, onOpenHoroscope, o
         <div style={{ position: "relative", zIndex: 1, textAlign: "center", color: "var(--nv-danger, #ffaaaa)" }}>
           <p>{error}</p>
           <button onClick={onBack} className="pill-btn" style={{ background: "none", border: "1px solid rgba(180,120,255,0.35)", color: "var(--nv-text-primary, #e8d5ff)", padding: "10px 20px", borderRadius: 20, cursor: "pointer" }}>
+<<<<<<< HEAD
             ← Back to Saved Reports
+=======
+            {t("reports:detail.backToSavedReports")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         </div>
       </div>
@@ -47,7 +65,11 @@ function SavedReportPage({ reportId, onBack, onOpenAssistant, onOpenHoroscope, o
           padding: "84px 16px 60px", display: "grid", gap: 20,
         }}>
           <p role="status" aria-live="polite" style={{ margin: 0, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", fontSize: 13 }}>
+<<<<<<< HEAD
             Loading your saved reading…
+=======
+            {t("reports:detail.loading")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
             <SkeletonBlock width={52} height={52} radius="50%" />
@@ -75,7 +97,11 @@ function SavedReportPage({ reportId, onBack, onOpenAssistant, onOpenHoroscope, o
           fontSize: 13, fontFamily: "Inter,sans-serif", backdropFilter: "blur(var(--nv-glass-blur-sm, 14px))",
         }}
       >
+<<<<<<< HEAD
         ← Back to Saved Reports
+=======
+        {t("reports:detail.backToSavedReports")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </button>
       {(onOpenAssistant || onOpenHoroscope || onOpenCalendar || onOpenLifeCoach) && (
         <div style={{ position: "fixed", bottom: 18, right: 14, zIndex: 998, display: "flex", gap: 10, flexWrap: "wrap", justifyContent: "flex-end" }}>
@@ -90,7 +116,11 @@ function SavedReportPage({ reportId, onBack, onOpenAssistant, onOpenHoroscope, o
                 backdropFilter: "blur(var(--nv-glass-blur-sm, 14px))",
               }}
             >
+<<<<<<< HEAD
               🔮 Horoscope
+=======
+              {t("reports:detail.openHoroscope")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           )}
           {onOpenCalendar && (
@@ -104,7 +134,11 @@ function SavedReportPage({ reportId, onBack, onOpenAssistant, onOpenHoroscope, o
                 backdropFilter: "blur(var(--nv-glass-blur-sm, 14px))",
               }}
             >
+<<<<<<< HEAD
               📅 Calendar
+=======
+              {t("reports:detail.openCalendar")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           )}
           {onOpenLifeCoach && (
@@ -118,7 +152,11 @@ function SavedReportPage({ reportId, onBack, onOpenAssistant, onOpenHoroscope, o
                 backdropFilter: "blur(var(--nv-glass-blur-sm, 14px))",
               }}
             >
+<<<<<<< HEAD
               🧭 Life Coach
+=======
+              {t("reports:detail.openLifeCoach")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           )}
           {onOpenAssistant && (
@@ -132,7 +170,11 @@ function SavedReportPage({ reportId, onBack, onOpenAssistant, onOpenHoroscope, o
                 backdropFilter: "blur(var(--nv-glass-blur-sm, 14px))",
               }}
             >
+<<<<<<< HEAD
               ✨ Ask AI
+=======
+              {t("reports:detail.askAI")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           )}
         </div>

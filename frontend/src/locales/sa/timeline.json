@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "past": "भूतम्",
+    "present": "वर्तमानम्",
+    "nearFuture": "निकटभविष्यत्",
+    "nextMonth": "अग्रिमः मासः",
+    "next3Months": "अग्रिमाः 3 मासाः",
+    "next6Months": "अग्रिमाः 6 मासाः",
+    "nextYear": "अग्रिमं वर्षम्"
+  },
+  "horizons": {
+    "oneYear": "अग्रिमं 1 वर्षम्",
+    "fiveYear": "अग्रिमानि 5 वर्षाणि",
+    "tenYear": "अग्रिमानि 10 वर्षाणि"
+  },
+  "filterCategories": {
+    "career": "वृत्तिः",
+    "finance": "अर्थः",
+    "love": "प्रेम",
+    "marriage": "विवाहः",
+    "health": "आरोग्यम्",
+    "education": "शिक्षा",
+    "family": "कुटुम्बम्",
+    "spiritual": "आध्यात्मिकम्"
+  },
+  "tab": {
+    "buildingTimeline": "भवतः AI कालरेखा निर्मीयते…",
+    "notAvailableTitle": "कालरेखा अद्यापि न उपलब्धा",
+    "notAvailableMessage": "भवतः चित्रे गणिते सति भवतः महादशा/अन्तर्दशाकालरेखा अत्र दृश्यते।",
+    "currentDashaHeading": "वर्तमानदशा",
+    "mahadashaBadge": "महादशा: {{value}}",
+    "antardashaBadge": "अन्तर्दशा: {{value}}",
+    "dominantBadge": "प्रमुखः: {{planet}}",
+    "notAvailableValue": "—",
+    "filterByLifeAreaHeading": "जीवनक्षेत्रानुसारं शोधयतु",
+    "noEventsTitle": "अस्य शोधनस्य कृते कापि घटना नास्ति",
+    "noEventsMessage": "चयनितेन जीवनक्षेत्रेण सह अद्यापि कापि AI कालरेखाघटना न मेलति। भिन्नं शोधनं प्रयतताम् अथवा सर्वाणि चिनुतु।",
+    "sectionEventsAriaLabel": "{{label}} कालरेखाघटनाः"
+  },
+  "filters": {
+    "ariaLabel": "जीवनक्षेत्रानुसारं AI कालरेखाघटनाः शोधयतु",
+    "all": "सर्वाणि"
+  },
+  "eventCard": {
+    "generalCategoryFallback": "सामान्यम्",
+    "upcomingPeriod": "आगामी कालावधिः",
+    "dateRangeArrow": "{{start}} → {{end}}",
+    "entryAriaLabel": "{{start}} कृते AI कालरेखाप्रविष्टिः। AI द्वारा व्याख्यातुं चिनुतु।",
+    "entryAriaLabelWithEnd": "{{start}} तः {{end}} कृते AI कालरेखाप्रविष्टिः। AI द्वारा व्याख्यातुं चिनुतु।",
+    "mahadashaBadge": "महादशा: {{value}}",
+    "antardashaBadge": "अन्तर्दशा: {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI व्याख्या",
+    "eventLabelFallback": "जीवन-क्षेत्रम्",
+    "prompt": "अस्याः {{category}} भविष्यवाण्याः Gemini-सञ्चालितां व्याख्यां प्राप्नुतु, या सम्पूर्णतया अस्य चित्रस्य स्वपश्चगणितेभ्यः तथ्येभ्यः आधृता।",
+    "explainAriaLabel": "इमां {{category}} भविष्यवाणीं AI द्वारा व्याख्यातु",
+    "explainButton": "✨ AI द्वारा व्याख्यातु",
+    "generatingLabel": "अस्याः {{category}} भविष्यवाण्याः कृते AI व्याख्या निर्मीयते",
+    "loadFailed": "AI कालरेखाव्याख्या सम्प्रति न उपलब्धा।",
+    "tryAgain": "↻ पुनः प्रयतताम्"
+  },
+  "common": {
+    "nothingToShow": "अद्यापि दर्शनाय किमपि नास्ति।"
+  },
+  "legacyCard": {
+    "upcomingPeriod": "आगामी कालावधिः",
+    "mahadashaBadge": "महादशा: {{value}}",
+    "antardashaBadge": "अन्तर्दशा: {{value}}"
+  }
+}

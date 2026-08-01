@@ -1,0 +1,169 @@
+{
+  "types": {
+    "planet": "ਗ੍ਰਹਿ",
+    "house": "ਭਾਵ",
+    "sign": "ਰਾਸ਼ੀ",
+    "yoga": "ਯੋਗ",
+    "dosha": "ਦੋਸ਼",
+    "nakshatra": "ਨਕਸ਼ਤਰ",
+    "ascendant": "ਲਗਨ",
+    "aspect": "ਦ੍ਰਿਸ਼ਟੀ"
+  },
+  "typeSingular": {
+    "planet": "ਗ੍ਰਹਿ",
+    "house": "ਭਾਵ",
+    "sign": "ਰਾਸ਼ੀ",
+    "yoga": "ਯੋਗ",
+    "dosha": "ਦੋਸ਼",
+    "nakshatra": "ਨਕਸ਼ਤਰ",
+    "ascendant": "ਲਗਨ",
+    "aspect": "ਦ੍ਰਿਸ਼ਟੀ"
+  },
+  "header": {
+    "title": "ਕੁੰਡਲੀ ਐਕਸਪਲੋਰਰ",
+    "breadcrumb": "{{type}} · {{item}}",
+    "notAvailable": "—",
+    "selectPrompt": "ਐਕਸਪਲੋਰ ਕਰਨ ਲਈ ਇੱਕ ਆਈਟਮ ਚੁਣੋ"
+  },
+  "mainPanel": {
+    "loadingPanel": "ਵੇਰਵਾ ਪੈਨਲ ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ…",
+    "emptyTitle": "ਹਾਲੇ ਤੱਕ ਕੁਝ ਨਹੀਂ ਚੁਣਿਆ ਗਿਆ",
+    "emptyMessage": "ਇੱਥੇ ਐਕਸਪਲੋਰ ਕਰਨ ਲਈ ਪੈਨਲ ਤੋਂ ਗ੍ਰਹਿ, ਭਾਵ, ਰਾਸ਼ੀ, ਯੋਗ, ਦੋਸ਼, ਨਕਸ਼ਤਰ, ਲਗਨ, ਜਾਂ ਦ੍ਰਿਸ਼ਟੀ ਚੁਣੋ।",
+    "regionAriaLabel": "ਐਕਸਪਲੋਰਰ ਵੇਰਵਾ ਪੈਨਲ"
+  },
+  "sidePanel": {
+    "treeAriaLabel": "ਐਕਸਪਲੋਰਰ ਚੋਣ ਸ਼੍ਰੇਣੀਆਂ",
+    "categoryAriaLabel": "{{label}} ({{count}})",
+    "housePrefix": "ਭਾਵ {{num}}",
+    "lordBadge": "ਸੁਆਮੀ: {{lord}}",
+    "aspectCountSingle": "{{count}} ਦ੍ਰਿਸ਼ਟੀ",
+    "aspectCountPlural": "{{count}} ਦ੍ਰਿਸ਼ਟੀਆਂ",
+    "netInfluence": "ਸ਼ੁੱਧ {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI ਵਿਆਖਿਆ",
+    "prompt": "{{label}} ਦੀ ਇੱਕ Gemini-ਸੰਚਾਲਿਤ ਵਿਆਖਿਆ ਪ੍ਰਾਪਤ ਕਰੋ, ਜੋ ਪੂਰੀ ਤਰ੍ਹਾਂ ਇਸ ਚਾਰਟ ਦੇ ਆਪਣੇ ਬੈਕਐਂਡ-ਗਣਨਾ ਕੀਤੇ ਤੱਥਾਂ 'ਤੇ ਆਧਾਰਿਤ ਹੈ।",
+    "explainAriaLabel": "{{label}} ਨੂੰ AI ਨਾਲ ਸਮਝਾਓ",
+    "explainButton": "✨ AI ਨਾਲ ਸਮਝਾਓ",
+    "generatingLabel": "{{label}} ਲਈ AI ਵਿਆਖਿਆ ਬਣਾਈ ਜਾ ਰਹੀ ਹੈ",
+    "loadFailed": "ਐਕਸਪਲੋਰਰ AI ਇਸ ਵੇਲੇ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।",
+    "tryAgain": "↻ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ"
+  },
+  "common": {
+    "relatedPredictions": "ਸਬੰਧਤ ਭਵਿੱਖਬਾਣੀਆਂ",
+    "relatedRemedies": "ਸਬੰਧਤ ਉਪਾਅ",
+    "noLinkedPredictionsTitle": "ਕੋਈ ਜੁੜੀ ਭਵਿੱਖਬਾਣੀ ਨਹੀਂ",
+    "noLinkedRemediesTitle": "ਕੋਈ ਜੁੜਿਆ ਉਪਾਅ ਨਹੀਂ",
+    "noRemediesTitle": "ਕੋਈ ਉਪਾਅ ਉਪਲਬਧ ਨਹੀਂ"
+  },
+  "planet": {
+    "notAvailableTitle": "ਗ੍ਰਹਿ ਡਾਟਾ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+    "notAvailableMessage": "ਇਸ ਚਾਰਟ ਵਿੱਚ ਹਾਲੇ ਇਸ ਗ੍ਰਹਿ ਲਈ ਗਣਨਾ ਕੀਤਾ ਸਥਿਤੀ ਡਾਟਾ ਨਹੀਂ ਹੈ।",
+    "positionDignityHeading": "ਸਥਿਤੀ ਅਤੇ ਗੌਰਵ",
+    "houseLabel": "ਭਾਵ",
+    "signLabel": "ਰਾਸ਼ੀ",
+    "retrogradeBadge": "ਵਕਰੀ",
+    "combustBadge": "ਅਸਤ",
+    "functionallyNature": "ਕਾਰਜਾਤਮਕ ਤੌਰ 'ਤੇ {{nature}}",
+    "friendshipSignSuffix": "{{relation}} ਰਾਸ਼ੀ",
+    "adjustedStrengthScore": "ਸਮਾਯੋਜਿਤ ਤਾਕਤ ਸਕੋਰ",
+    "foundationShadbala": "ਮੂਲ ਸ਼ਡਬਲ",
+    "notAvailableValue": "—",
+    "strengthUnavailable": "ਇਸ ਚਾਰਟ ਲਈ ਵਿਸਤ੍ਰਿਤ ਤਾਕਤ ਸਕੋਰਿੰਗ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।",
+    "noLinkedPredictionsMessage": "ਇਸ ਵੇਲੇ ਕੋਈ ਸ਼੍ਰੇਣੀ ਭਵਿੱਖਬਾਣੀ {{planet}} ਨੂੰ ਇਸਦੇ ਮੁੱਖ ਜਾਂ ਸਹਾਇਕ ਗ੍ਰਹਿ ਵਜੋਂ ਨਹੀਂ ਦੱਸਦੀ।",
+    "noLinkedRemediesMessage": "ਇਸ ਚਾਰਟ ਦੀਆਂ ਭਵਿੱਖਬਾਣੀਆਂ ਦੁਆਰਾ ਇਸ ਵੇਲੇ {{planet}} ਨਾਲ ਕੋਈ ਉਪਾਅ ਜੁੜਿਆ ਨਹੀਂ ਹੈ।"
+  },
+  "house": {
+    "notAvailableTitle": "ਭਾਵ ਡਾਟਾ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+    "notAvailableMessage": "ਇੱਥੇ ਐਕਸਪਲੋਰ ਕਰਨ ਲਈ ਪੈਨਲ ਤੋਂ ਇੱਕ ਭਾਵ ਚੁਣੋ।",
+    "signBadge": "ਰਾਸ਼ੀ: {{sign}}",
+    "lordBadge": "ਸੁਆਮੀ: {{lord}}",
+    "meaning": "ਅਰਥ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "ਸਥਿਤ ਗ੍ਰਹਿ",
+    "noOccupants": "ਇਸ ਵੇਲੇ ਇਸ ਭਾਵ ਵਿੱਚ ਕੋਈ ਗ੍ਰਹਿ ਸਥਿਤ ਨਹੀਂ ਹੈ।",
+    "noLinkedPredictionsMessage": "ਇਸ ਵੇਲੇ ਕੋਈ ਸ਼੍ਰੇਣੀ ਭਵਿੱਖਬਾਣੀ ਭਾਵ {{house}} ਨੂੰ ਸਹਾਇਕ ਭਾਵ ਵਜੋਂ ਨਹੀਂ ਦੱਸਦੀ।",
+    "noLinkedRemediesMessage": "ਇਸ ਚਾਰਟ ਦੀਆਂ ਭਵਿੱਖਬਾਣੀਆਂ ਦੁਆਰਾ ਇਸ ਵੇਲੇ ਭਾਵ {{house}} ਨਾਲ ਕੋਈ ਉਪਾਅ ਜੁੜਿਆ ਨਹੀਂ ਹੈ।",
+    "itemLabel": "ਭਾਵ {{num}}"
+  },
+  "sign": {
+    "notAvailableTitle": "ਰਾਸ਼ੀ ਡਾਟਾ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+    "notAvailableMessage": "ਇੱਥੇ ਐਕਸਪਲੋਰ ਕਰਨ ਲਈ ਪੈਨਲ ਤੋਂ ਇੱਕ ਰਾਸ਼ੀ ਚੁਣੋ।",
+    "lordBadge": "ਸੁਆਮੀ: {{lord}}",
+    "lagnaBadge": "ਇਸ ਚਾਰਟ ਦਾ ਲਗਨ",
+    "rulingPlanet": "ਸ਼ਾਸਕ ਗ੍ਰਹਿ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "ਇਸ ਰਾਸ਼ੀ ਵਿੱਚ ਮੌਜੂਦਾ ਗ੍ਰਹਿ",
+    "noOccupants": "ਇਸ ਚਾਰਟ ਵਿੱਚ ਇਸ ਵੇਲੇ ਇਸ ਰਾਸ਼ੀ ਵਿੱਚ ਕੋਈ ਗ੍ਰਹਿ ਸਥਿਤ ਨਹੀਂ ਹੈ।",
+    "noLinkedPredictionsMessage": "ਇਸ ਵੇਲੇ ਕੋਈ ਸ਼੍ਰੇਣੀ ਭਵਿੱਖਬਾਣੀ ਇਸ ਰਾਸ਼ੀ ਵਿੱਚ ਸਥਿਤ ਕਿਸੇ ਗ੍ਰਹਿ ਨਾਲ ਸਬੰਧਤ ਨਹੀਂ ਹੈ।"
+  },
+  "yoga": {
+    "notFoundTitle": "ਯੋਗ ਨਹੀਂ ਮਿਲਿਆ",
+    "notFoundMessage": "ਇਹ ਯੋਗ ਇਸ ਚਾਰਟ ਲਈ ਇਸ ਵੇਲੇ ਪਛਾਣੇ ਗਏ ਸਮੂਹ ਦਾ ਹਿੱਸਾ ਨਹੀਂ ਹੈ।",
+    "ruleMatchedBadge": "ਨਿਯਮ ਮੇਲ ਖਾਧਾ: {{name}}",
+    "contributingPlanetsHeading": "ਯੋਗਦਾਨ ਪਾਉਣ ਵਾਲੇ ਗ੍ਰਹਿ",
+    "noContributingPlanets": "ਇਸ ਵੇਲੇ ਕੋਈ ਸ਼੍ਰੇਣੀ ਭਵਿੱਖਬਾਣੀ ਇਸ ਯੋਗ ਦਾ ਸਿਹਰਾ ਖਾਸ ਗ੍ਰਹਿਆਂ ਨੂੰ ਨਹੀਂ ਦਿੰਦੀ।",
+    "confidenceEffectsTitle": "ਭਰੋਸਾ ਅਤੇ ਪ੍ਰਭਾਵ (ਜੁੜੀਆਂ ਭਵਿੱਖਬਾਣੀਆਂ ਤੋਂ)",
+    "noLinkedPredictionsMessage": "ਇਸ ਵੇਲੇ ਕੋਈ ਸ਼੍ਰੇਣੀ ਭਵਿੱਖਬਾਣੀ ਇਸ ਯੋਗ ਨੂੰ ਸਹਾਇਕ ਕਾਰਕ ਵਜੋਂ ਨਹੀਂ ਦੱਸਦੀ।"
+  },
+  "dosha": {
+    "notFoundTitle": "ਦੋਸ਼ ਨਹੀਂ ਮਿਲਿਆ",
+    "notFoundMessage": "ਇਹ ਦੋਸ਼ ਇਸ ਚਾਰਟ ਲਈ ਇਸ ਵੇਲੇ ਪਛਾਣੇ ਗਏ ਸਮੂਹ ਦਾ ਹਿੱਸਾ ਨਹੀਂ ਹੈ।",
+    "matchingRuleBadge": "ਮੇਲ ਖਾਂਦਾ ਨਿਯਮ: {{name}}",
+    "severityBadge": "ਤੀਬਰਤਾ: {{severity}}",
+    "affectedHousesHeading": "ਪ੍ਰਭਾਵਿਤ ਭਾਵ",
+    "houseBadge": "ਭਾਵ {{num}}",
+    "noAffectedHouses": "ਇਸ ਵੇਲੇ ਕੋਈ ਸ਼੍ਰੇਣੀ ਭਵਿੱਖਬਾਣੀ ਇਸ ਦੋਸ਼ ਨੂੰ ਖਾਸ ਭਾਵਾਂ ਨਾਲ ਨਹੀਂ ਜੋੜਦੀ।",
+    "remedies": "ਉਪਾਅ",
+    "noRemediesMessage": "ਇਸ ਵੇਲੇ ਇਸ ਦੋਸ਼ ਨਾਲ ਕੋਈ ਉਪਾਅ ਜੁੜਿਆ ਨਹੀਂ ਹੈ।",
+    "linkedPredictions": "ਜੁੜੀਆਂ ਭਵਿੱਖਬਾਣੀਆਂ",
+    "noLinkedPredictionsMessage": "ਇਸ ਵੇਲੇ ਕੋਈ ਸ਼੍ਰੇਣੀ ਭਵਿੱਖਬਾਣੀ ਇਸ ਦੋਸ਼ ਨੂੰ ਸਹਾਇਕ ਕਾਰਕ ਵਜੋਂ ਨਹੀਂ ਦੱਸਦੀ।"
+  },
+  "nakshatra": {
+    "notAvailableTitle": "ਨਕਸ਼ਤਰ ਪ੍ਰੋਫਾਈਲ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+    "notAvailableMessage": "ਇਸ ਚਾਰਟ ਵਿੱਚ ਹਾਲੇ ਗਣਨਾ ਕੀਤੀ ਨਕਸ਼ਤਰ ਪ੍ਰੋਫਾਈਲ ਨਹੀਂ ਹੈ।",
+    "itemLabel": "ਨਕਸ਼ਤਰ",
+    "padaBadge": "ਪਦ {{pada}}",
+    "lordBadge": "ਸੁਆਮੀ: {{lord}}",
+    "ganaBadge": "{{gana}} ਗਣ",
+    "deity": "ਦੇਵਤਾ",
+    "symbol": "ਪ੍ਰਤੀਕ",
+    "nadi": "ਨਾੜੀ",
+    "yoni": "ਯੋਨੀ",
+    "notAvailableValue": "—",
+    "personalityHeading": "ਵਿਅਕਤੀਤਵ",
+    "careerTendencies": "ਕਰੀਅਰ ਰੁਝਾਨ",
+    "relationshipTendencies": "ਰਿਸ਼ਤੇ ਦੇ ਰੁਝਾਨ",
+    "spiritualTendencies": "ਅਧਿਆਤਮਿਕ ਰੁਝਾਨ"
+  },
+  "ascendant": {
+    "notAvailableTitle": "ਲਗਨ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+    "notAvailableMessage": "ਇਸ ਚਾਰਟ ਵਿੱਚ ਹਾਲੇ ਗਣਨਾ ਕੀਤਾ ਲਗਨ ਨਹੀਂ ਹੈ।",
+    "itemLabel": "ਲਗਨ",
+    "lordBadge": "ਸੁਆਮੀ: {{lord}}",
+    "risingSign": "ਲਗਨ (ਉਦੈ ਰਾਸ਼ੀ)",
+    "lagnaLord": "ਲਗਨ ਸੁਆਮੀ",
+    "notAvailableValue": "—",
+    "characteristicsHeading": "ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ (ਲਗਨ ਸੁਆਮੀ ਦੀ ਤਾਕਤ ਅਨੁਸਾਰ)",
+    "functionallyNature": "ਕਾਰਜਾਤਮਕ ਤੌਰ 'ਤੇ {{nature}}",
+    "predictionsLinkedTitle": "ਲਗਨ ਸੁਆਮੀ ਨਾਲ ਜੁੜੀਆਂ ਭਵਿੱਖਬਾਣੀਆਂ",
+    "lagnaLordFallback": "ਲਗਨ ਸੁਆਮੀ",
+    "noLinkedPredictionsMessage": "ਇਸ ਵੇਲੇ ਕੋਈ ਸ਼੍ਰੇਣੀ ਭਵਿੱਖਬਾਣੀ {{lord}} ਨੂੰ ਇਸਦੇ ਮੁੱਖ ਜਾਂ ਸਹਾਇਕ ਗ੍ਰਹਿ ਵਜੋਂ ਨਹੀਂ ਦੱਸਦੀ।"
+  },
+  "aspect": {
+    "notAvailableTitle": "ਦ੍ਰਿਸ਼ਟੀ ਡਾਟਾ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+    "notAvailableMessage": "ਇੱਥੇ ਐਕਸਪਲੋਰ ਕਰਨ ਲਈ ਪੈਨਲ ਤੋਂ ਇੱਕ ਦ੍ਰਿਸ਼ਟੀ ਚੁਣੋ।",
+    "sourcesHeading": "ਦ੍ਰਿਸ਼ਟੀ ਸਰੋਤ → ਟੀਚਾ",
+    "beneficAspects": "ਸ਼ੁਭ ਦ੍ਰਿਸ਼ਟੀਆਂ",
+    "maleficAspects": "ਅਸ਼ੁਭ ਦ੍ਰਿਸ਼ਟੀਆਂ",
+    "netInfluenceStrength": "ਸ਼ੁੱਧ ਪ੍ਰਭਾਵ (ਤਾਕਤ)",
+    "housesAspected": "ਦ੍ਰਿਸ਼ਟੀ ਪ੍ਰਾਪਤ ਭਾਵ",
+    "houseLabel": "ਭਾਵ {{num}}",
+    "itemLabel": "{{target}} 'ਤੇ ਦ੍ਰਿਸ਼ਟੀਆਂ",
+    "interpretPureBenefic": "ਪੂਰੀ ਤਰ੍ਹਾਂ ਸ਼ੁਭ ਦ੍ਰਿਸ਼ਟੀਆਂ — ਇੱਕ ਸਹਾਇਕ ਪ੍ਰਭਾਵ।",
+    "interpretPureMalefic": "ਪੂਰੀ ਤਰ੍ਹਾਂ ਅਸ਼ੁਭ ਦ੍ਰਿਸ਼ਟੀਆਂ — ਇੱਕ ਚੁਣੌਤੀਪੂਰਨ ਪ੍ਰਭਾਵ।",
+    "interpretMixedNetBenefic": "ਮਿਸ਼ਰਿਤ ਦ੍ਰਿਸ਼ਟੀਆਂ, ਸਮੁੱਚੇ ਤੌਰ 'ਤੇ ਸ਼ੁੱਧ ਸ਼ੁਭ ਪ੍ਰਭਾਵ।",
+    "interpretMixedNetMalefic": "ਮਿਸ਼ਰਿਤ ਦ੍ਰਿਸ਼ਟੀਆਂ, ਸਮੁੱਚੇ ਤੌਰ 'ਤੇ ਸ਼ੁੱਧ ਅਸ਼ੁਭ ਪ੍ਰਭਾਵ।",
+    "interpretMixedNeutral": "ਮਿਸ਼ਰਿਤ ਦ੍ਰਿਸ਼ਟੀਆਂ ਜਿਨ੍ਹਾਂ ਦਾ ਸ਼ੁੱਧ ਪ੍ਰਭਾਵ ਸੰਤੁਲਿਤ ਅਤੇ ਨਿਰਪੱਖ ਹੈ।"
+  }
+}

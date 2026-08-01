@@ -1,5 +1,12 @@
 import { memo } from "react";
+<<<<<<< HEAD
 import GlassCard from "./GlassCard.jsx";
+=======
+import { useTranslation } from "react-i18next";
+import GlassCard from "./GlassCard.jsx";
+import { useLanguage } from "../../context/LanguageContext.jsx";
+import { formatDate as formatDateIntl } from "../../utils/localeFormat.js";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // Timeline (V4.5 Phase 1B — Festival Frontend Integration)
@@ -13,6 +20,7 @@ import GlassCard from "./GlassCard.jsx";
 // styling so the app doesn't gain a second, differently-styled timeline
 // language.
 // ─────────────────────────────────────────────────────────────────────────
+<<<<<<< HEAD
 function formatDate(value) {
   if (!value) return "";
   try {
@@ -29,6 +37,23 @@ function Timeline({ items = [], emptyLabel = "Nothing to show yet.", onItemClick
     return (
       <GlassCard style={{ padding: 20, textAlign: "center", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
         {emptyLabel}
+=======
+function formatDate(value, lang) {
+  if (!value) return "";
+  return formatDateIntl(`${value}T00:00:00Z`, lang, {
+    year: "numeric", month: "short", day: "numeric", timeZone: "UTC",
+  });
+}
+
+function Timeline({ items = [], emptyLabel, onItemClick }) {
+  const { t } = useTranslation(["timeline"]);
+  const { language } = useLanguage();
+  const resolvedEmptyLabel = emptyLabel ?? t("timeline:common.nothingToShow");
+  if (!items.length) {
+    return (
+      <GlassCard style={{ padding: 20, textAlign: "center", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
+        {resolvedEmptyLabel}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </GlassCard>
     );
   }
@@ -65,7 +90,11 @@ function Timeline({ items = [], emptyLabel = "Nothing to show yet.", onItemClick
                     {item.title}
                   </span>
                   <span style={{ fontSize: 11.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily: "Inter,sans-serif" }}>
+<<<<<<< HEAD
                     {formatDate(item.date)}
+=======
+                    {formatDate(item.date, language)}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   </span>
                 </div>
                 {item.subtitle && (

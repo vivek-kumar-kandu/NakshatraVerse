@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "daily": "दैनिकम्",
+    "weekly": "साप्ताहिकम्",
+    "monthly": "मासिकम्",
+    "career": "वृत्तिः",
+    "relationship": "सम्बन्धाः",
+    "finance": "अर्थः",
+    "health": "आरोग्यम्",
+    "growth": "विकासः"
+  },
+  "page": {
+    "back": "← पृष्ठतः",
+    "title": "🧭 AI जीवनमार्गदर्शकः",
+    "dailyCompanion": "{{name}} इत्यस्य दैनिकसहचरः",
+    "updated": "{{time}} इत्यत्र अद्यतनितम्",
+    "refreshing": "नवीक्रियते…",
+    "refreshGuidance": "↻ मार्गदर्शनं नवीकरोतु",
+    "tryAgain": "पुनः प्रयतताम्",
+    "loadingAriaLabel": "भवतः AI जीवनमार्गदर्शनं लोड्यते",
+    "loadFailed": "भवतः AI जीवनमार्गदर्शनं लोड्यितुं न शक्तम्।",
+    "refreshFailed": "भवतः AI जीवनमार्गदर्शनं नवीकर्तुं न शक्तम्।",
+    "noReadingTitle": "अद्यापि कोऽपि पठनः उपलब्धः नास्ति",
+    "noReadingMessage": "भवतः वैयक्तिकं AI जीवनमार्गदर्शकं द्रष्टुं प्रथमं प्रतिवेदनं निर्मातु उद्घाटयतु वा।",
+    "backAction": "← पृष्ठतः"
+  },
+  "daily": {
+    "opportunities": "अवसराः",
+    "challenges": "आह्वानानि",
+    "recommendedActions": "अनुशंसितकार्याणि",
+    "thingsToAvoid": "वर्जनीयानि",
+    "spiritualGuidance": "🕉️ आध्यात्मिकमार्गदर्शनम्"
+  },
+  "outlook": {
+    "weeklyThemeTitle": "अस्य सप्ताहस्य विषयः",
+    "weeklyEnergyLabel": "साप्ताहिकी शक्तिः",
+    "monthlyThemeTitle": "अस्य मासस्य विषयः",
+    "monthlyEnergyLabel": "मासिकी शक्तिः",
+    "weeklyUnavailableTitle": "साप्ताहिकदृष्टिकोणः न उपलब्धः",
+    "weeklyUnavailableMessage": "वयं सम्प्रति अस्य सप्ताहस्य दृष्टिकोणं निर्मातुं न शक्ताः — कृपया नवीकरोतु।",
+    "monthlyUnavailableTitle": "मासिकदृष्टिकोणः न उपलब्धः",
+    "monthlyUnavailableMessage": "वयं सम्प्रति अस्य मासस्य दृष्टिकोणं निर्मातुं न शक्ताः — कृपया नवीकरोतु।",
+    "weeklyFocus": "साप्ताहिकं केन्द्रम्",
+    "personalGrowthGoal": "वैयक्तिकविकासलक्ष्यम्",
+    "careerFocus": "वृत्तिकेन्द्रम्",
+    "relationshipFocus": "सम्बन्धकेन्द्रम्",
+    "opportunities": "अवसराः",
+    "challenges": "आह्वानानि",
+    "bestDay": "सर्वोत्तमः दिनः: {{weekday}} ({{date}})",
+    "cautionDay": "सावधानतायाः दिनः: {{weekday}} ({{date}})"
+  },
+  "career": {
+    "cardTitle": "वृत्तिमार्गदर्शकः",
+    "progress": "वृत्तिप्रगतिः",
+    "skillDevelopmentAdvice": "कौशलविकाससल्लाहः",
+    "promotionGuidance": "पदोन्नतिमार्गदर्शनम्",
+    "businessSuggestions": "वाणिज्यसूचनाः",
+    "bestTimeForDecisions": "महत्त्वपूर्णनिर्णयानां कृते सर्वोत्तमः समयः"
+  },
+  "relationship": {
+    "cardTitle": "सम्बन्धमार्गदर्शकः",
+    "guidance": "सम्बन्धमार्गदर्शनम्",
+    "marriageAdvice": "विवाहसल्लाहः",
+    "familyHarmonyTips": "कौटुम्बिकसामरस्यसूचनाः",
+    "communicationSuggestions": "संवादसूचनाः",
+    "emotionalWellbeing": "भावनात्मकस्वास्थ्यम्"
+  },
+  "finance": {
+    "cardTitle": "अर्थमार्गदर्शकः",
+    "outlook": "आर्थिकदृष्टिकोणः",
+    "spendingSuggestions": "व्ययसूचनाः",
+    "savingAdvice": "सञ्चयसल्लाहः",
+    "investmentAwareness": "निवेशजागरूकता",
+    "businessOpportunities": "वाणिज्यावसराः"
+  },
+  "health": {
+    "cardTitle": "आरोग्यं स्वास्थ्यं च",
+    "energyTrends": "शक्तिप्रवृत्तयः",
+    "stressAwareness": "तनावजागरूकता",
+    "meditationSuggestions": "ध्यानसूचनाः",
+    "yogaRecommendations": "योगानुशंसाः",
+    "spiritualPractices": "आध्यात्मिकाभ्यासाः",
+    "lifestyleSuggestions": "जीवनशैलीसूचनाः"
+  },
+  "growth": {
+    "dailyGoals": "दैनिकलक्ष्याणि",
+    "weeklyGoals": "साप्ताहिकलक्ष्याणि",
+    "monthlyFocus": "🌕 मासिकं केन्द्रम्",
+    "habitSuggestions": "अभ्याससूचनाः",
+    "learningRecommendations": "अध्ययनानुशंसाः"
+  },
+  "scoreCard": {
+    "dailyEnergyLabel": "दैनिकी शक्तिः",
+    "todaysFocus": "अद्यत्ववं केन्द्रम्"
+  },
+  "confidenceBadge": {
+    "withScore": "विश्वासः: {{label}} ({{score}}/100)",
+    "withoutScore": "विश्वासः: {{label}}"
+  },
+  "whyNote": {
+    "prefix": "कस्मात्? "
+  },
+  "luckyElements": {
+    "title": "🍀 अद्यत्वस्य भाग्यशालितत्त्वानि",
+    "color": "वर्णः",
+    "number": "अङ्कः",
+    "direction": "दिशा",
+    "favorableTime": "अनुकूलसमयः"
+  },
+  "affirmation": {
+    "dailyAffirmation": "✦ दैनिकं दृढीकरणम्",
+    "spiritualPractice": "🕉️ अद्यत्ववः आध्यात्मिकाभ्यासः"
+  }
+}

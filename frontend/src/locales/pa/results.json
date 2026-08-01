@@ -1,0 +1,225 @@
+{
+  "overview": {
+    "birthDetails": "ਜਨਮ ਵੇਰਵੇ",
+    "fields": {
+      "dob": "ਜਨਮ ਮਿਤੀ",
+      "tob": "ਜਨਮ ਸਮਾਂ",
+      "pob": "ਜਨਮ ਸਥਾਨ",
+      "lagna": "ਲਗਨ",
+      "mulank": "ਮੂਲਾਂਕ",
+      "bhagyank": "ਭਾਗਿਆਂਕ"
+    },
+    "aiLifeSummary": "AI ਲਾਈਫ ਸਮਰੀ",
+    "aiSummaryPlaceholder": "ਤੁਹਾਡੀ ਬ੍ਰਹਿਮੰਡੀ ਕਹਾਣੀ ਬੁਣੀ ਜਾ ਰਹੀ ਹੈ…"
+  },
+  "kundli": {
+    "birthChart": "ਜਨਮ ਚਾਰਟ",
+    "tapHint": "ਖੋਜ ਕਰਨ ਲਈ ਕਿਸੇ ਗ੍ਰਹਿ ਜਾਂ ਭਾਵ 'ਤੇ ਟੈਪ ਕਰੋ",
+    "planetaryPositions": "ਗ੍ਰਹਿ ਸਥਿਤੀਆਂ",
+    "closePlanetDetail": "ਗ੍ਰਹਿ ਵੇਰਵਾ ਬੰਦ ਕਰੋ",
+    "close": "ਬੰਦ ਕਰੋ ✕",
+    "house": "ਭਾਵ {{number}}",
+    "zodiacSign": "ਰਾਸ਼ੀ",
+    "defaultSignificance": "ਇਸ ਚਾਰਟ ਵਿੱਚ ਇੱਕ ਮੁੱਖ ਪ੍ਰਭਾਵ।",
+    "houseOverview": "ਭਾਵ ਸੰਖੇਪ ਜਾਣਕਾਰੀ"
+  },
+  "aiInsight": "AI ਸੂਝ",
+  "sections": {
+    "loveLife": {
+      "title": "ਰਿਸ਼ਤੇ",
+      "placeholder": "ਸ਼ੁਕਰ ਅਤੇ ਚੰਦਰਮਾ ਦੀ ਸਥਿਤੀ ਪੜ੍ਹੀ ਜਾ ਰਹੀ ਹੈ…"
+    },
+    "marriage": {
+      "title": "ਵਿਆਹ",
+      "placeholder": "ਗੁਰੂ ਅਤੇ ਸੱਤਵੇਂ ਭਾਵ ਬਾਰੇ ਸਲਾਹ ਲਈ ਜਾ ਰਹੀ ਹੈ…"
+    },
+    "career": {
+      "title": "ਕਰੀਅਰ",
+      "placeholder": "ਸ਼ਨੀ, ਸੂਰਜ ਅਤੇ ਦਸਵੇਂ ਭਾਵ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…",
+      "keyPlanetaryInfluences": "ਮੁੱਖ ਗ੍ਰਹਿ ਪ੍ਰਭਾਵ"
+    },
+    "wealth": {
+      "title": "ਵਿੱਤ & ਧਨ",
+      "placeholder": "ਗੁਰੂ ਅਤੇ ਦੂਜੇ ਭਾਵ ਬਾਰੇ ਸਲਾਹ ਲਈ ਜਾ ਰਹੀ ਹੈ…",
+      "wealthIndicators": "ਧਨ ਸੂਚਕ"
+    },
+    "health": {
+      "title": "ਸਿਹਤ",
+      "placeholder": "ਸੂਰਜ, ਮੰਗਲ ਅਤੇ ਛੇਵੇਂ ਭਾਵ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…",
+      "healthPlanets": "ਸਿਹਤ ਗ੍ਰਹਿ"
+    },
+    "doshas": {
+      "title": "ਦੋਸ਼",
+      "placeholder": "ਮੰਗਲ ਦੋਸ਼, ਕਾਲ ਸਰਪ ਦੋਸ਼ ਦੀ ਜਾਂਚ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…"
+    },
+    "yogas": {
+      "title": "ਯੋਗ",
+      "placeholder": "ਰਾਜ ਯੋਗ, ਗਜ ਕੇਸਰੀ ਯੋਗ ਦੀ ਪਛਾਣ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…"
+    },
+    "remedies": {
+      "title": "ਉਪਾਅ ਅਤੇ ਸਿਫ਼ਾਰਸ਼ਾਂ",
+      "placeholder": "ਨਿੱਜੀ ਵੈਦਿਕ ਉਪਾਅ ਤਿਆਰ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ…"
+    }
+  },
+  "doshasYogas": {
+    "detectedYogas": "ਖੋਜਿਆ ਗਿਆ ਯੋਗ",
+    "detectedDoshas": "ਖੋਜਿਆ ਗਿਆ ਦੋਸ਼",
+    "noYogasTitle": "ਕੋਈ ਯੋਗ ਨਹੀਂ ਮਿਲਿਆ",
+    "noYogasMessage": "ਗਣਨਾ ਕੀਤੇ ਚਾਰਟ ਦੇ ਆਧਾਰ 'ਤੇ ਕੋਈ ਮੁੱਖ ਯੋਗ ਨਹੀਂ ਮਿਲਿਆ।",
+    "noDoshasTitle": "ਕੋਈ ਦੋਸ਼ ਨਹੀਂ ਮਿਲਿਆ",
+    "noDoshasMessage": "ਗਣਨਾ ਕੀਤੇ ਚਾਰਟ ਦੇ ਆਧਾਰ 'ਤੇ ਕੋਈ ਮੁੱਖ ਦੋਸ਼ ਨਹੀਂ ਮਿਲਿਆ।"
+  },
+  "remedies": {
+    "suggestedRemedies": "ਸੁਝਾਏ ਗਏ ਉਪਾਅ",
+    "noRemediesTitle": "ਕੋਈ ਖਾਸ ਉਪਾਅ ਨਹੀਂ",
+    "noRemediesMessage": "ਵਰਤਮਾਨ ਵਿੱਚ ਗਣਨਾ ਕੀਤੇ ਚਾਰਟ ਦੇ ਆਧਾਰ 'ਤੇ ਕੋਈ ਰਵਾਇਤੀ ਉਪਾਅ ਸੁਝਾਇਆ ਨਹੀਂ ਗਿਆ।",
+    "types": {
+      "General (Lagna Lord)": "सामान्य (लग्नेश)",
+      "Fasting": "व्रत व उपवास",
+      "Charity": "दान व सेवा",
+      "Mangal Dosha Remedy": "मंगल दोष निवारण"
+    }
+  },
+  "summary": {
+    "heading": "AI-ਤਿਆਰ ਜੀਵਨ ਸਾਰ",
+    "placeholder": "ਤੁਹਾਡੀ ਸੰਪੂਰਨ ਬ੍ਰਹਿਮੰਡੀ ਕਹਾਣੀ ਬੁਣੀ ਜਾ ਰਹੀ ਹੈ…"
+  },
+  "page": {
+    "reportSectionsAriaLabel": "ਰਿਪੋਰਟ ਭਾਗ",
+    "footerTagline": "ਨਕਸ਼ਤਰਵਰਸ · ਪ੍ਰਾਚੀਨ ਗਿਆਨ ਅਤੇ Gemini AI ਦਾ ਸੰਗਮ · ਸਿਰਫ਼ ਮਾਰਗਦਰਸ਼ਨ ਲਈ"
+  },
+  "predictions": {
+    "notAvailableTitle": "ਭਵਿੱਖਬਾਣੀਆਂ ਅਜੇ ਉਪਲਬਧ ਨਹੀਂ",
+    "notAvailableMessage": "ਤੁਹਾਡੇ ਚਾਰਟ ਦੀ ਗਣਨਾ ਹੋਣ ਤੋਂ ਬਾਅਦ ਬੈਕਐਂਡ-ਗਣਨਾ ਕੀਤੀਆਂ ਭਵਿੱਖਬਾਣੀਆਂ ਇੱਥੇ ਦਿਖਾਈ ਦੇਣਗੀਆਂ।",
+    "categoryPredictions": "ਸ਼੍ਰੇਣੀ ਭਵਿੱਖਬਾਣੀਆਂ",
+    "transitForecast": "ਗੋਚਰ ਪੂਰਵ ਅਨੁਮਾਨ"
+  },
+  "numerologyCard": {
+    "heading": "ਅੰਕ ਵਿਗਿਆਨ",
+    "mulankLabel": "ਮੂਲਾਂਕ",
+    "bhagyankLabel": "ਭਾਗਿਆਂਕ",
+    "lifePath": "ਜੀਵਨ ਮਾਰਗ {{number}}",
+    "defaultDescription": "ਇੱਕ ਵਿਲੱਖਣ ਆਤਮਾ ਸੰਖਿਆ"
+  },
+  "nakshatraCard": {
+    "heading": "ਨਕਸ਼ਤਰ ਪ੍ਰੋਫਾਈਲ",
+    "pada": "ਪਦ {{number}}",
+    "lord": "ਸੁਆਮੀ: {{value}}",
+    "gana": "ਗਣ: {{value}}",
+    "nadi": "ਨਾੜੀ: {{value}}",
+    "yoni": "ਯੋਨੀ: {{value}}",
+    "symbol": "ਪ੍ਰਤੀਕ",
+    "deity": "ਦੇਵਤਾ",
+    "nature": "ਸੁਭਾਅ",
+    "career": "ਕਰੀਅਰ",
+    "relationships": "ਰਿਸ਼ਤੇ",
+    "spiritual": "ਅਧਿਆਤਮਿਕ"
+  },
+  "zodiacWheel": {
+    "wheelAriaLabel": "ਵੈਦਿਕ ਜਨਮ ਚਾਰਟ ਚੱਕਰ, ਲਗਨ (ਉਦੈ) {{sign}} ਵਿੱਚ",
+    "unknownSign": "ਇੱਕ ਅਣਜਾਣ ਰਾਸ਼ੀ",
+    "noPlanetsHere": "ਇੱਥੇ ਕੋਈ ਗ੍ਰਹਿ ਨਹੀਂ",
+    "noPlanets": "ਕੋਈ ਗ੍ਰਹਿ ਨਹੀਂ",
+    "houseAriaLabel": "ਭਾਵ {{number}}, {{sign}} — {{planets}}",
+    "planetAriaLabel": "{{planet}}: ਭਾਵ {{house}}, {{sign}}"
+  },
+  "chartControls": "ਚਾਰਟ ਵਿਊ ਕੰਟਰੋਲ",
+  "zoomInAria": "ਜ਼ੂਮ ਇਨ ਕਰੋ",
+  "zoomIn": "➕ ਜ਼ੂਮ ਇਨ",
+  "zoomOutAria": "ਜ਼ੂਮ ਆਊਟ ਕਰੋ",
+  "zoomOut": "➖ ਜ਼ੂਮ ਆਊਟ",
+  "resetViewAria": "ਵਿਊ ਰੀਸੈੱਟ ਕਰੋ",
+  "resetView": "🎯 ਵਿਊ ਰੀਸੈੱਟ ਕਰੋ",
+  "chartAria": "ਇੰਟਰਐਕਟਿਵ ਜਨਮ ਕੁੰਡਲੀ।",
+  "vimshottariDasha": "🪐 ਵਿੰਸ਼ੋਤਰੀ ਦਸ਼ਾ",
+  "gender": "ਲਿੰਗ",
+  "noneDetected": "ਕੋਈ ਨਹੀਂ ਮਿਲਿਆ।",
+  "ashtakootaGunaMilan": "ਅਸ਼ਟਕੂਟ (ਗੁਣ ਮਿਲਾਨ)",
+  "manglikAnalysis": "ਮਾਂਗਲਿਕ ਵਿਸ਼ਲੇਸ਼ਣ ਅਤੇ ਅਨੁਕੂਲਤਾ",
+  "majorDoshaComparison": "ਮੁੱਖ ਦੋਸ਼ ਤੁਲਨਾ",
+  "strongWeakComparison": "ਮਜ਼ਬੂਤ ਅਤੇ ਕਮਜ਼ੋਰ ਗ੍ਰਹਿ ਤੁਲਨਾ",
+  "strongest": "ਸਭ ਤੋਂ ਮਜ਼ਬੂਤ:",
+  "weakest": "ਸਭ ਤੋਂ ਕਮਜ਼ੋਰ:",
+  "moonSignNakshatraCompat": "ਚੰਦਰਮਾ ਰਾਸ਼ੀ ਅਤੇ ਨਕਸ਼ਤਰ ਅਨੁਕੂਲਤਾ",
+  "moonSignLabel": "ਚੰਦਰਮਾ ਰਾਸ਼ੀ:",
+  "nakshatraLabel": "ਨਕਸ਼ਤਰ:",
+  "aiCompatInsights": "AI ਅਨੁਕੂਲਤਾ ਅੰਤਰਦ੍ਰਿਸ਼ਟੀ",
+  "personA": "ਵਿਅਕਤੀ A",
+  "personB": "ਵਿਅਕਤੀ B",
+  "tabs": {
+    "overview": "अवलोकन",
+    "kundli": "जन्म कुंडली",
+    "love": "प्रेम व विवाह",
+    "career": "करियर",
+    "wealth": "धन व वित्त",
+    "health": "स्वास्थ्य",
+    "doshas": "दोष व योग",
+    "remedies": "उपाय",
+    "predictions": "भविष्यवाणी",
+    "timeline": "टाइमलाइन",
+    "summary": "जीवन सारांश",
+    "explorer": "एक्सप्लोरर"
+  },
+  "categories": {
+    "career": "करियर",
+    "finance": "वित्त",
+    "wealth": "धन व वित्त",
+    "relationships": "रिश्ते",
+    "health": "स्वास्थ्य",
+    "education": "शिक्षा",
+    "family": "परिवार",
+    "spiritual": "आध्यात्मिक"
+  },
+  "confidence": {
+    "high": "उच्च",
+    "moderate": "मध्यम",
+    "medium": "मध्यम",
+    "low": "निम्न"
+  },
+  "predictionFields": {
+    "mahadasha": "महादशा",
+    "antardasha": "अंतर्दशा",
+    "dominantPlanet": "प्रमुख ग्रह",
+    "timePeriod": "समयावधि"
+  },
+  "planets": {
+    "sun": "सूर्य",
+    "moon": "चंद्रमा",
+    "mars": "मंगल",
+    "mercury": "बुध",
+    "jupiter": "बृहस्पति",
+    "venus": "शुक्र",
+    "saturn": "शनि",
+    "rahu": "राहु",
+    "ketu": "केतु"
+  },
+  "ganas": {
+    "deva": "देव",
+    "manushya": "मनुष्य",
+    "rakshasa": "राक्षस"
+  },
+  "nadis": {
+    "adi": "आदि",
+    "madhya": "मध्य",
+    "antya": "अंत्य",
+    "pitta": "पित्त",
+    "vata": "वात",
+    "kapha": "कफ"
+  },
+  "yonis": {
+    "horse": "अश्व",
+    "elephant": "गज",
+    "sheep": "मेष",
+    "serpent": "सर्प",
+    "dog": "श्वान",
+    "cat": "मार्जार",
+    "rat": "मूषक",
+    "cow": "गौ",
+    "buffalo": "महिष",
+    "tiger": "व्याघ्र",
+    "hare": "शशक",
+    "monkey": "वानर",
+    "mongoose": "नकुल",
+    "lion": "सिंह"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "typeFilters": {
+    "All": "அனைத்தும்",
+    "Festival": "திருவிழா",
+    "Vrat": "விரதம்"
+  },
+  "page": {
+    "back": "← பின்செல்",
+    "title": "🎉 திருவிழா நாட்காட்டி",
+    "subtitle": "பின்தளத்தால் கணக்கிடப்பட்ட இந்து திருவிழாக்கள் மற்றும் விரதங்கள் — தேதிகள், சடங்குகள் மற்றும் முக்கியத்துவம்.",
+    "tabs": {
+      "today": "இன்று",
+      "upcoming": "வரவிருக்கும்",
+      "browse": "அனைத்தையும் உலாவவும்"
+    },
+    "todayLoadFailed": "இன்றைய திருவிழாவை ஏற்ற முடியவில்லை.",
+    "upcomingLoadFailed": "வரவிருக்கும் திருவிழாக்களை ஏற்ற முடியவில்லை.",
+    "yearLoadFailed": "திருவிழா நாட்காட்டியை ஏற்ற முடியவில்லை.",
+    "openFestivalFailed": "அந்த திருவிழாவைத் திறக்க முடியவில்லை.",
+    "todaysFestivalsHeading": "இன்றைய திருவிழா{{plural}}",
+    "noFestivalTodayTitle": "இன்று திருவிழா இல்லை",
+    "noFestivalTodayMessage": "இன்றைய தேதியில் கொண்டாடப்படும் திருவிழா அல்லது விரதம் எதுவும் இல்லை.",
+    "nextUp": "அடுத்து என்ன",
+    "daysRemainingToday": "இன்று",
+    "daysRemainingSingle": "{{count}} நாளில்",
+    "daysRemainingPlural": "{{count}} நாட்களில்",
+    "noUpcomingTitle": "வரவிருக்கும் திருவிழாக்கள் எதுவும் கிடைக்கவில்லை",
+    "noUpcomingMessage": "அடுத்த 60 நாட்களில் எதுவும் கிடைக்கவில்லை.",
+    "searchPlaceholder": "திருவிழாக்களைத் தேடவும்…",
+    "searchAriaLabel": "திருவிழாக்களைத் தேடவும்",
+    "typeFilterAriaLabel": "வகை அடிப்படையில் வடிகட்டவும்",
+    "yearAriaLabel": "ஆண்டைத் தேர்ந்தெடுக்கவும்",
+    "noMatchTitle": "எந்த திருவிழாவும் பொருந்தவில்லை",
+    "noMatchMessage": "வேறு தேடல் சொல் அல்லது வகை வடிகட்டியை முயற்சிக்கவும்.",
+    "explainFailed": "AI விளக்கம் தற்போது கிடைக்கவில்லை."
+  },
+  "detailCard": {
+    "importanceSuffix": "{{importance}} முக்கியத்துவம்",
+    "notSpecified": "குறிப்பிடப்படவில்லை.",
+    "explainButton": "✨ {{status}}",
+    "askingGemini": "Gemini-யிடம் கேட்கப்படுகிறது…",
+    "explainThisFestival": "இந்த திருவிழாவை விளக்கவும்",
+    "historicalBackground": "வரலாற்று பின்னணி",
+    "significance": "முக்கியத்துவம்",
+    "rituals": "சடங்குகள்",
+    "recommendedActivities": "பரிந்துரைக்கப்பட்ட செயல்பாடுகள்",
+    "fastingInformation": "விரத தகவல்",
+    "fastingObserved": "விரதம் அனுசரிக்கப்படுகிறது",
+    "noFastingObserved": "பாரம்பரியமாக விரதம் அனுசரிக்கப்படுவதில்லை"
+  },
+  "familySuggestions": {
+    "title": "👨‍👩‍👧‍👦 குடும்ப திருவிழா பரிந்துரைகள்",
+    "signInPrompt": "உங்கள் அன்பானவர்களுக்கான பகிரப்பட்ட கொண்டாட்ட பரிந்துரைகள் மற்றும் நினைவூட்டல்களைப் பெற உள்நுழைந்து, குடும்ப சுயவிவரத்தைச் சேர்க்கவும்.",
+    "loadFailed": "தற்போது குடும்ப திருவிழா பரிந்துரைகளை ஏற்ற முடியவில்லை.",
+    "remindersTitle": "குடும்ப திருவிழா நினைவூட்டல்கள்",
+    "noProfiles": "இதுவரை குடும்ப சுயவிவரங்கள் சேமிக்கப்படவில்லை.",
+    "addOne": "ஒன்றைச் சேர்க்கவும் →",
+    "sharedCelebrationTitle": "பகிரப்பட்ட கொண்டாட்ட பரிந்துரைகள்",
+    "suggestedActivitiesTitle": "பரிந்துரைக்கப்பட்ட குடும்ப செயல்பாடுகள்"
+  },
+  "intelligencePanel": {
+    "title": "🔮 திருவிழா நுண்ணறிவு",
+    "subtitle": "ஆன்மீக அர்த்தம், புராண கதை மற்றும் பூஜை கண்ணோட்டம் — மேலே உள்ள அடிப்படைகளுக்கு அப்பால்.",
+    "loadFailed": "தற்போது திருவிழா நுண்ணறிவை ஏற்ற முடியவில்லை.",
+    "revealButton": "✨ {{status}}",
+    "askingGemini": "Gemini-யிடம் கேட்கப்படுகிறது…",
+    "revealDeeper": "ஆழமான நுண்ணறிவை வெளிப்படுத்தவும்",
+    "spiritualMeaning": "ஆன்மீக அர்த்தம்",
+    "mythologicalStory": "புராண கதை",
+    "modernPracticalMeaning": "நவீன நடைமுறை அர்த்தம்",
+    "culturalSignificance": "அறிவியல் / கலாச்சார முக்கியத்துவம்",
+    "pujaOverview": "பூஜை கண்ணோட்டம்",
+    "thingsToAvoid": "தவிர்க்க வேண்டியவை",
+    "aiAssistedBadge": "AI-உதவியுடன் — பாரம்பரியங்கள் பிராந்தியம்/குடும்பத்தின் அடிப்படையில் மாறுபடலாம்"
+  },
+  "preparationChecklist": {
+    "nothingSpecified": "எதுவும் குறிப்பிடப்படவில்லை.",
+    "loadFailed": "தற்போது தயார் செய்யும் பட்டியலை ஏற்ற முடியவில்லை.",
+    "sections": {
+      "preparationChecklist": "தயார் செய்யும் பட்டியல்",
+      "shoppingChecklist": "கடை பட்டியல்",
+      "pujaMaterials": "பூஜை பொருட்கள்",
+      "fastingPreparation": "விரத தயாரிப்பு",
+      "morningRoutine": "காலை வழக்கம்",
+      "eveningRitual": "மாலை சடங்கு",
+      "postFestivalReflection": "திருவிழாவுக்குப் பிந்தைய சிந்தனை"
+    }
+  },
+  "personalizedGuidance": {
+    "title": "🌟 தனிப்பயன் திருவிழா வழிகாட்டுதல்",
+    "noChartMessage": "இந்த திருவிழா உங்களுக்கு ஏன் சிறப்பாக அர்த்தமுள்ளதாக இருக்கிறது என்பதைப் பார்க்க — தொழில், நிதி, உறவுகள், ஆரோக்கியம், ஆன்மீகம் மற்றும் தனிப்பட்ட வளர்ச்சியில் கவனம் செலுத்தி, உங்கள் சொந்த ஜாதகத்தை அடிப்படையாகக் கொண்டு — உங்கள் சேமிக்கப்பட்ட படிப்புகளில் ஒன்றிலிருந்து இந்த திருவிழாவைத் திறக்கவும்.",
+    "openSavedReading": "சேமிக்கப்பட்ட படிப்பைத் திறக்கவும் →",
+    "subtitle": "உங்கள் சொந்த தசை, கோச்சாரம் மற்றும் கணிப்புகளின் அடிப்படையில்.",
+    "loadFailed": "தற்போது தனிப்பயன் வழிகாட்டுதலை ஏற்ற முடியவில்லை.",
+    "askButton": "✨ {{status}}",
+    "whyMeaningful": "இது எனக்கு ஏன் அர்த்தமுள்ளதாக இருக்கிறது?",
+    "focusFields": {
+      "careerFocus": "தொழில்",
+      "financeFocus": "நிதி",
+      "relationshipFocus": "உறவுகள்",
+      "healthFocus": "ஆரோக்கியம்",
+      "spiritualFocus": "ஆன்மீகம்",
+      "personalGrowthFocus": "தனிப்பட்ட வளர்ச்சி"
+    }
+  },
+  "intelligencePage": {
+    "back": "← பின்செல்",
+    "title": "🔮 திருவிழா நுண்ணறிவு",
+    "subtitle": "ஒரு திருவிழாவிற்கான ஆழமான அர்த்தம், தனிப்பயன் வழிகாட்டுதல், தயாரிப்பு மற்றும் குடும்ப பரிந்துரைகள்.",
+    "loadFailed": "இந்த திருவிழாவை ஏற்ற முடியவில்லை.",
+    "loadUpcomingFailed": "வரவிருக்கும் திருவிழா எதையும் ஏற்ற முடியவில்லை.",
+    "noFestivalTitle": "திருவிழா எதுவும் தேர்ந்தெடுக்கப்படவில்லை",
+    "noFestivalMessage": "அதன் முழு நுண்ணறிவைப் பார்க்க திருவிழா நாட்காட்டி, டாஷ்போர்டு அல்லது நாட்காட்டி பக்கத்திலிருந்து ஒரு திருவிழாவைத் திறக்கவும்.",
+    "ritualFlow": "சடங்கு வரிசை",
+    "timelineUnavailable": "இந்த திருவிழாவிற்கு காலவரிசை கிடைக்கவில்லை.",
+    "festivalIntelligence": "திருவிழா நுண்ணறிவு",
+    "personalizedGuidance": "தனிப்பயன் வழிகாட்டுதல்",
+    "festivalPreparation": "திருவிழா தயாரிப்பு",
+    "family": "குடும்பம்"
+  },
+  "widget": {
+    "title": "இன்றைய திருவிழா",
+    "openCalendar": "திருவிழா நாட்காட்டியைத் திறக்கவும் →",
+    "loading": "ஏற்றப்படுகிறது…",
+    "noFestivalToday": "இன்று திருவிழா இல்லை.",
+    "nextFestival": "அடுத்த திருவிழா",
+    "daysRemainingLabel": "மீதமுள்ள நாட்கள்",
+    "daysRemainingSingle": "{{count}} நாள்",
+    "daysRemainingPlural": "{{count}} நாட்கள்",
+    "importance": "முக்கியத்துவம்",
+    "preparationProgress": "தயாரிப்பு முன்னேற்றம்",
+    "preparationItemsReady": "{{count}} பட்டியல் உருப்படிகள் தயார்",
+    "upcomingRitual": "வரவிருக்கும் சடங்கு",
+    "personalizedTip": "தனிப்பயன் குறிப்பு",
+    "viewIntelligence": "🔮 திருவிழா நுண்ணறிவைக் காண்க"
+  },
+  "muhurat": {
+    "bestMuhuratFor": "{{activity}} க்கான சிறந்த முகூர்த்தம்",
+    "confidence": {
+      "high": "உயர்",
+      "medium": "நடுத்தர",
+      "low": "குறைவு"
+    },
+    "confidenceBadge": "{{level}} நம்பிக்கை",
+    "bestDate": "சிறந்த தேதி",
+    "bestTimeWindow": "சிறந்த நேர இடைவெளி",
+    "tithi": "திதி",
+    "auspiciousWindow": "சுப நேரம்",
+    "cautionPeriod": "எச்சரிக்கை காலம் (தவிர்க்கவும்)",
+    "rahuKaal": "ராகு காலம்",
+    "yamaganda": "யமகண்டம்",
+    "gulikaKaal": "குளிக காலம்",
+    "otherStrongDates": "மற்ற நல்ல தேதிகள்",
+    "askingAI": "AI-யிடம் கேட்கப்படுகிறது…",
+    "explainWhy": "🔮 இந்த முகூர்த்தம் ஏன் என்று விளக்கவும்",
+    "nakshatra": "நட்சத்திரம்"
+  },
+  "calendarStrip": {
+    "heading": "🎉 இந்த மாத பண்டிகைகள்",
+    "viewCalendarLink": "பண்டிகை நாட்காட்டியைப் பார்க்கவும் →",
+    "todayLabel": "இன்று:",
+    "loadingOverview": "பண்டிகை கண்ணோட்டம் ஏற்றப்படுகிறது…",
+    "importanceSuffix": "முக்கியத்துவம்"
+  }
+}

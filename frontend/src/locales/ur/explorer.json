@@ -1,0 +1,169 @@
+{
+  "types": {
+    "planet": "سیارہ",
+    "house": "بھاؤ",
+    "sign": "راشی",
+    "yoga": "یوگ",
+    "dosha": "دوش",
+    "nakshatra": "نکشتر",
+    "ascendant": "لگن",
+    "aspect": "نظر"
+  },
+  "typeSingular": {
+    "planet": "سیارہ",
+    "house": "بھاؤ",
+    "sign": "راشی",
+    "yoga": "یوگ",
+    "dosha": "دوش",
+    "nakshatra": "نکشتر",
+    "ascendant": "لگن",
+    "aspect": "نظر"
+  },
+  "header": {
+    "title": "کنڈلی ایکسپلورر",
+    "breadcrumb": "{{type}} · {{item}}",
+    "notAvailable": "—",
+    "selectPrompt": "دریافت کرنے کے لیے ایک آئٹم منتخب کریں"
+  },
+  "mainPanel": {
+    "loadingPanel": "تفصیلات پینل لوڈ ہو رہا ہے…",
+    "emptyTitle": "ابھی تک کچھ منتخب نہیں کیا گیا",
+    "emptyMessage": "یہاں دریافت کرنے کے لیے پینل سے سیارہ، بھاؤ، راشی، یوگ، دوش، نکشتر، لگن، یا نظر منتخب کریں۔",
+    "regionAriaLabel": "ایکسپلورر تفصیلات پینل"
+  },
+  "sidePanel": {
+    "treeAriaLabel": "ایکسپلورر انتخاب کی اقسام",
+    "categoryAriaLabel": "{{label}} ({{count}})",
+    "housePrefix": "بھاؤ {{num}}",
+    "lordBadge": "مالک: {{lord}}",
+    "aspectCountSingle": "{{count}} نظر",
+    "aspectCountPlural": "{{count}} نظریں",
+    "netInfluence": "خالص {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI وضاحت",
+    "prompt": "{{label}} کی ایک Gemini سے چلنے والی وضاحت حاصل کریں، جو مکمل طور پر اس چارٹ کے اپنے بیک اینڈ سے حساب کردہ حقائق پر مبنی ہے۔",
+    "explainAriaLabel": "{{label}} کو AI سے سمجھائیں",
+    "explainButton": "✨ AI سے سمجھائیں",
+    "generatingLabel": "{{label}} کے لیے AI وضاحت تیار کی جا رہی ہے",
+    "loadFailed": "ایکسپلورر AI فی الحال دستیاب نہیں ہے۔",
+    "tryAgain": "↻ دوبارہ کوشش کریں"
+  },
+  "common": {
+    "relatedPredictions": "متعلقہ پیشین گوئیاں",
+    "relatedRemedies": "متعلقہ علاج",
+    "noLinkedPredictionsTitle": "کوئی منسلک پیشین گوئی نہیں",
+    "noLinkedRemediesTitle": "کوئی منسلک علاج نہیں",
+    "noRemediesTitle": "کوئی علاج دستیاب نہیں"
+  },
+  "planet": {
+    "notAvailableTitle": "سیارے کا ڈیٹا دستیاب نہیں",
+    "notAvailableMessage": "اس چارٹ میں ابھی تک اس سیارے کے لیے حساب کردہ پوزیشن کا ڈیٹا نہیں ہے۔",
+    "positionDignityHeading": "پوزیشن اور وقار",
+    "houseLabel": "بھاؤ",
+    "signLabel": "راشی",
+    "retrogradeBadge": "واکری",
+    "combustBadge": "اسست",
+    "functionallyNature": "فعلی طور پر {{nature}}",
+    "friendshipSignSuffix": "{{relation}} راشی",
+    "adjustedStrengthScore": "ایڈجسٹ شدہ طاقت کا اسکور",
+    "foundationShadbala": "بنیادی شدبل",
+    "notAvailableValue": "—",
+    "strengthUnavailable": "اس چارٹ کے لیے تفصیلی طاقت کا اسکورنگ دستیاب نہیں ہے۔",
+    "noLinkedPredictionsMessage": "فی الحال کوئی زمرہ پیشین گوئی {{planet}} کو اس کے بنیادی یا معاون سیارے کے طور پر ذکر نہیں کرتی۔",
+    "noLinkedRemediesMessage": "اس چارٹ کی پیشین گوئیوں کے ذریعے فی الحال {{planet}} کے ساتھ کوئی علاج منسلک نہیں ہے۔"
+  },
+  "house": {
+    "notAvailableTitle": "بھاؤ کا ڈیٹا دستیاب نہیں",
+    "notAvailableMessage": "یہاں دریافت کرنے کے لیے پینل سے ایک بھاؤ منتخب کریں۔",
+    "signBadge": "راشی: {{sign}}",
+    "lordBadge": "مالک: {{lord}}",
+    "meaning": "معنی",
+    "notAvailableValue": "—",
+    "occupantsHeading": "موجود سیارے",
+    "noOccupants": "فی الحال اس بھاؤ میں کوئی سیارہ موجود نہیں ہے۔",
+    "noLinkedPredictionsMessage": "فی الحال کوئی زمرہ پیشین گوئی بھاؤ {{house}} کو معاون بھاؤ کے طور پر ذکر نہیں کرتی۔",
+    "noLinkedRemediesMessage": "اس چارٹ کی پیشین گوئیوں کے ذریعے فی الحال بھاؤ {{house}} کے ساتھ کوئی علاج منسلک نہیں ہے۔",
+    "itemLabel": "بھاؤ {{num}}"
+  },
+  "sign": {
+    "notAvailableTitle": "راشی کا ڈیٹا دستیاب نہیں",
+    "notAvailableMessage": "یہاں دریافت کرنے کے لیے پینل سے ایک راشی منتخب کریں۔",
+    "lordBadge": "مالک: {{lord}}",
+    "lagnaBadge": "اس چارٹ کا لگن",
+    "rulingPlanet": "حکمران سیارہ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "اس راشی میں موجودہ سیارے",
+    "noOccupants": "اس چارٹ میں فی الحال اس راشی میں کوئی سیارہ موجود نہیں ہے۔",
+    "noLinkedPredictionsMessage": "فی الحال کوئی زمرہ پیشین گوئی اس راشی میں موجود کسی سیارے سے متعلق نہیں ہے۔"
+  },
+  "yoga": {
+    "notFoundTitle": "یوگ نہیں ملا",
+    "notFoundMessage": "یہ یوگ اس چارٹ کے لیے فی الحال شناخت شدہ سیٹ کا حصہ نہیں ہے۔",
+    "ruleMatchedBadge": "اصول میل کھایا: {{name}}",
+    "contributingPlanetsHeading": "حصہ ڈالنے والے سیارے",
+    "noContributingPlanets": "فی الحال کوئی زمرہ پیشین گوئی اس یوگ کا سہرا مخصوص سیاروں کو نہیں دیتی۔",
+    "confidenceEffectsTitle": "اعتماد اور اثرات (منسلک پیشین گوئیوں سے)",
+    "noLinkedPredictionsMessage": "فی الحال کوئی زمرہ پیشین گوئی اس یوگ کو معاون عنصر کے طور پر حوالہ نہیں دیتی۔"
+  },
+  "dosha": {
+    "notFoundTitle": "دوش نہیں ملا",
+    "notFoundMessage": "یہ دوش اس چارٹ کے لیے فی الحال شناخت شدہ سیٹ کا حصہ نہیں ہے۔",
+    "matchingRuleBadge": "میل کھاتا اصول: {{name}}",
+    "severityBadge": "شدت: {{severity}}",
+    "affectedHousesHeading": "متاثرہ بھاؤ",
+    "houseBadge": "بھاؤ {{num}}",
+    "noAffectedHouses": "فی الحال کوئی زمرہ پیشین گوئی اس دوش کو مخصوص بھاؤ سے نہیں جوڑتی۔",
+    "remedies": "علاج",
+    "noRemediesMessage": "فی الحال اس دوش کے ساتھ کوئی علاج منسلک نہیں ہے۔",
+    "linkedPredictions": "منسلک پیشین گوئیاں",
+    "noLinkedPredictionsMessage": "فی الحال کوئی زمرہ پیشین گوئی اس دوش کو معاون عنصر کے طور پر حوالہ نہیں دیتی۔"
+  },
+  "nakshatra": {
+    "notAvailableTitle": "نکشتر پروفائل دستیاب نہیں",
+    "notAvailableMessage": "اس چارٹ میں ابھی تک حساب کردہ نکشتر پروفائل نہیں ہے۔",
+    "itemLabel": "نکشتر",
+    "padaBadge": "پاد {{pada}}",
+    "lordBadge": "مالک: {{lord}}",
+    "ganaBadge": "{{gana}} گن",
+    "deity": "دیوتا",
+    "symbol": "علامت",
+    "nadi": "ناڑی",
+    "yoni": "یونی",
+    "notAvailableValue": "—",
+    "personalityHeading": "شخصیت",
+    "careerTendencies": "کیریئر کے رجحانات",
+    "relationshipTendencies": "تعلقات کے رجحانات",
+    "spiritualTendencies": "روحانی رجحانات"
+  },
+  "ascendant": {
+    "notAvailableTitle": "لگن دستیاب نہیں",
+    "notAvailableMessage": "اس چارٹ میں ابھی تک حساب کردہ لگن نہیں ہے۔",
+    "itemLabel": "لگن",
+    "lordBadge": "مالک: {{lord}}",
+    "risingSign": "لگن (طلوعی راشی)",
+    "lagnaLord": "لگن کا مالک",
+    "notAvailableValue": "—",
+    "characteristicsHeading": "خصوصیات (لگن کے مالک کی طاقت کے مطابق)",
+    "functionallyNature": "فعلی طور پر {{nature}}",
+    "predictionsLinkedTitle": "لگن کے مالک سے منسلک پیشین گوئیاں",
+    "lagnaLordFallback": "لگن کا مالک",
+    "noLinkedPredictionsMessage": "فی الحال کوئی زمرہ پیشین گوئی {{lord}} کو اس کے بنیادی یا معاون سیارے کے طور پر ذکر نہیں کرتی۔"
+  },
+  "aspect": {
+    "notAvailableTitle": "نظر کا ڈیٹا دستیاب نہیں",
+    "notAvailableMessage": "یہاں دریافت کرنے کے لیے پینل سے ایک نظر منتخب کریں۔",
+    "sourcesHeading": "نظر کا ماخذ → ہدف",
+    "beneficAspects": "نیک نظریں",
+    "maleficAspects": "بد نظریں",
+    "netInfluenceStrength": "خالص اثر (طاقت)",
+    "housesAspected": "نظر پانے والے بھاؤ",
+    "houseLabel": "بھاؤ {{num}}",
+    "itemLabel": "{{target}} پر نظریں",
+    "interpretPureBenefic": "مکمل طور پر نیک نظریں — ایک معاون اثر۔",
+    "interpretPureMalefic": "مکمل طور پر بد نظریں — ایک مشکل اثر۔",
+    "interpretMixedNetBenefic": "مخلوط نظریں، مجموعی طور پر خالص نیک اثر۔",
+    "interpretMixedNetMalefic": "مخلوط نظریں، مجموعی طور پر خالص بد اثر۔",
+    "interpretMixedNeutral": "مخلوط نظریں جن کا خالص اثر متوازن اور غیر جانبدار ہے۔"
+  }
+}

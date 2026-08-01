@@ -1,0 +1,111 @@
+{
+  "header": {
+    "title": "ਤੁਹਾਡਾ ਡੈਸ਼ਬੋਰਡ",
+    "welcomeBack": "ਵਾਪਸ ਆਉਣ 'ਤੇ ਸੁਆਗਤ ਹੈ, {{name}} ✦",
+    "welcomeBackFallbackName": "ਯਾਤਰੀ",
+    "generateNewReport": "✦ ਨਵੀਂ ਰਿਪੋਰਟ ਬਣਾਓ"
+  },
+  "error": {
+    "loadFailed": "ਤੁਹਾਡੀਆਂ ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟਾਂ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੀਆਂ।",
+    "tryAgain": "↻ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ"
+  },
+  "userSummary": {
+    "authProviderGoogle": "Google ਨਾਲ ਸਾਈਨ ਇਨ ਕੀਤਾ",
+    "authProviderEmail": "ਈਮੇਲ ਅਤੇ ਪਾਸਵਰਡ",
+    "viewFullProfile": "ਪੂਰੀ ਪ੍ਰੋਫਾਈਲ ਵੇਖੋ →"
+  },
+  "statistics": {
+    "sectionTitle": "ਅੰਕੜੇ",
+    "savedReports": "ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟਾਂ",
+    "memberSince": "ਮੈਂਬਰਸ਼ਿਪ ਦੀ ਸ਼ੁਰੂਆਤ",
+    "latestReading": "ਨਵੀਨਤਮ ਰੀਡਿੰਗ",
+    "currentTheme": "ਮੌਜੂਦਾ ਥੀਮ",
+    "systemThemeLabel": "ਸਿਸਟਮ ({{themeName}})",
+    "notAvailable": "—",
+    "loadingValue": "…"
+  },
+  "astrologySummary": {
+    "sectionTitle": "ਜੋਤਿਸ਼ ਸਾਰ",
+    "cardTitle": "ਤੁਹਾਡੀ ਨਵੀਨਤਮ ਰੀਡਿੰਗ ਤੋਂ",
+    "padaBadge": " · ਪਦ {{pada}}",
+    "lordBadge": "ਸੁਆਮੀ: {{lord}}",
+    "currentMahadasha": "ਮੌਜੂਦਾ ਮਹਾਦਸ਼ਾ",
+    "currentAntardasha": "ਮੌਜੂਦਾ ਅੰਤਰਦਸ਼ਾ"
+  },
+  "quickActions": {
+    "sectionTitle": "ਤੁਰੰਤ ਕਾਰਵਾਈਆਂ",
+    "generateNewReport": {
+      "label": "ਨਵੀਂ ਰਿਪੋਰਟ ਬਣਾਓ",
+      "desc": "ਇੱਕ ਨਵੀਂ ਵੈਦਿਕ ਰੀਡਿੰਗ ਸ਼ੁਰੂ ਕਰੋ"
+    },
+    "continueReading": {
+      "label": "ਰੀਡਿੰਗ ਜਾਰੀ ਰੱਖੋ",
+      "desc": "ਆਪਣੀ ਆਖਰੀ ਵੇਖੀ ਰਿਪੋਰਟ ਦੁਬਾਰਾ ਖੋਲ੍ਹੋ"
+    },
+    "myProfile": {
+      "label": "ਮੇਰੀ ਪ੍ਰੋਫਾਈਲ",
+      "desc": "ਆਪਣੀ ਪ੍ਰੋਫਾਈਲ ਦੇ ਵੇਰਵੇ ਵੇਖੋ"
+    },
+    "savedReports": {
+      "label": "ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟਾਂ",
+      "desc": "ਆਪਣਾ ਪੂਰਾ ਸੰਗ੍ਰਹਿ ਬ੍ਰਾਊਜ਼ ਕਰੋ"
+    },
+    "askAI": {
+      "label": "AI ਨੂੰ ਪੁੱਛੋ",
+      "desc": "ਆਪਣੇ ਜੋਤਿਸ਼ ਸਹਾਇਕ ਨਾਲ ਗੱਲਬਾਤ ਕਰੋ"
+    },
+    "aiLifeCoach": {
+      "label": "AI ਲਾਈਫ ਕੋਚ",
+      "desc": "ਰੋਜ਼ਾਨਾ, ਕਰੀਅਰ, ਰਿਸ਼ਤੇ, ਵਿੱਤ ਅਤੇ ਸਿਹਤ ਮਾਰਗਦਰਸ਼ਨ"
+    },
+    "kundliMatching": {
+      "label": "ਕੁੰਡਲੀ ਮਿਲਾਨ",
+      "desc": "ਦੋ ਵਿਅਕਤੀਆਂ ਦੀ ਵੈਦਿਕ ਅਨੁਕੂਲਤਾ ਦੀ ਜਾਂਚ ਕਰੋ"
+    },
+    "panchangMuhurat": {
+      "label": "ਪੰਚਾਂਗ ਅਤੇ ਮੁਹੂਰਤ",
+      "desc": "ਰੋਜ਼ਾਨਾ ਪੰਚਾਂਗ ਅਤੇ ਸ਼ੁਭ ਮੁਹੂਰਤ ਖੋਜੀ"
+    },
+    "familyProfiles": {
+      "label": "ਪਰਿਵਾਰਕ ਪ੍ਰੋਫਾਈਲ",
+      "desc": "ਆਪਣੇ ਪਰਿਵਾਰ ਦੀ ਹਰੇਕ ਜਨਮ ਕੁੰਡਲੀ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ"
+    },
+    "relationshipHub": {
+      "label": "ਰਿਲੇਸ਼ਨਸ਼ਿਪ ਹੱਬ",
+      "desc": "ਕਿਸੇ ਵੀ ਦੋ ਸੁਰੱਖਿਅਤ ਪ੍ਰੋਫਾਈਲਾਂ ਦੀ ਤੁਲਨਾ ਕਰੋ"
+    },
+    "settings": {
+      "label": "ਸੈਟਿੰਗਾਂ",
+      "desc": "ਆਪਣੇ ਖਾਤੇ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ"
+    }
+  },
+  "recentReports": {
+    "sectionTitle": "ਹਾਲੀਆ ਰਿਪੋਰਟਾਂ",
+    "viewAll": "ਸਾਰੀਆਂ ਵੇਖੋ →",
+    "emptyTitle": "ਹਾਲੇ ਤੱਕ ਕੋਈ ਰੀਡਿੰਗ ਨਹੀਂ",
+    "emptyMessage": "ਇੱਥੇ ਦਿਖਾਉਣ ਲਈ ਆਪਣੀ ਪਹਿਲੀ ਵੈਦਿਕ ਰੀਡਿੰਗ ਬਣਾਓ।",
+    "emptyAction": "✦ ਨਵੀਂ ਰਿਪੋਰਟ ਬਣਾਓ"
+  },
+  "aiLifeCoach": "AI ਲਾਈਫ ਕੋਚ",
+  "todaysFocus": "ਅੱਜ ਦਾ ਧਿਆਨ:",
+  "personalizedInsights": "ਵਿਅਕਤੀਗਤ ਅੰਤਰਦ੍ਰਿਸ਼ਟੀ",
+  "yourPersonalizedGuidance": "✦ ਤੁਹਾਡੀ ਵਿਅਕਤੀਗਤ ਮਾਰਗਦਰਸ਼ਨ",
+  "insightPeriod": "ਅੰਤਰਦ੍ਰਿਸ਼ਟੀ ਦੀ ਮਿਆਦ",
+  "whatsChanged": "ਕੀ ਬਦਲਿਆ ਹੈ:",
+  "noUpcomingEvents": "ਕੋਈ ਆਉਣ ਵਾਲੇ ਸਮਾਗਮ ਨਹੀਂ",
+  "loadingPanchang": "ਪੰਚਾਂਗ ਸੰਖੇਪ ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ…",
+  "bestTimeToday": "✨ ਅੱਜ ਦਾ ਸਭ ਤੋਂ ਵਧੀਆ ਸਮਾਂ",
+  "recommendedActivities": "✓ ਸਿਫ਼ਾਰਸ਼ ਕੀਤੀਆਂ ਗਤੀਵਿਧੀਆਂ",
+  "thingsToAvoid": "⚠ ਬਚਣ ਵਾਲੀਆਂ ਗੱਲਾਂ",
+  "noReadingYet": "ਹਜੇ ਤੱਕ ਕੋਈ ਰੀਡਿੰਗ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+  "astrologyCalendar": "📅 ਜੋਤਿਸ਼ ਕੈਲੰਡਰ",
+  "dashaUnavailable": "ਦਸ਼ਾ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+  "noUpcomingChanges": "ਕੋਈ ਆਉਣ ਵਾਲੀਆਂ ਤਬਦੀਲੀਆਂ ਨਹੀਂ",
+  "noTransitData": "ਕੋਈ ਗੋਚਰ ਡੇਟਾ ਨਹੀਂ",
+  "auspicious": "✓ ਸ਼ੁਭ",
+  "caution": "⚠ ਸਾਵਧਾਨ",
+  "horoscopeDashboard": "🔮 ਰਾਸ਼ੀਫਲ ਡੈਸ਼ਬੋਰਡ",
+  "noWeeklyFocus": "ਹਫ਼ਤਾਵਾਰੀ ਧਿਆਨ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+  "noMonthlySegments": "ਇਸ ਮਹੀਨੇ ਕੋਈ ਮਹੀਨਾਵਾਰ ਹਿੱਸੇ ਨਹੀਂ ਹਨ",
+  "dailyPanchangMuhurat": "🕉️ ਰੋਜ਼ਾਨਾ ਪੰਚਾਂਗ ਅਤੇ ਮੁਹੂਰਤ"
+}

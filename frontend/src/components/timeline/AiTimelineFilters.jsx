@@ -1,4 +1,8 @@
 import { memo } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { TIMELINE_FILTER_CATEGORIES } from "../../constants/aiTimeline.js";
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -12,6 +16,10 @@ import { TIMELINE_FILTER_CATEGORIES } from "../../constants/aiTimeline.js";
 // already uses.
 // ─────────────────────────────────────────────────────────────────────────
 function AiTimelineFilters({ activeCategory, onChange }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["timeline"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const chipStyle = (isActive) => ({
     padding: "8px 14px", borderRadius: 18, fontSize: 12.5, fontWeight: 600, cursor: "pointer",
     border: isActive ? "1px solid rgba(255,215,0,0.55)" : "1px solid rgba(180,120,255,0.25)",
@@ -23,7 +31,11 @@ function AiTimelineFilters({ activeCategory, onChange }) {
   return (
     <div
       role="group"
+<<<<<<< HEAD
       aria-label="Filter AI Timeline events by life area"
+=======
+      aria-label={t("timeline:filters.ariaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       style={{ display: "flex", flexWrap: "wrap", gap: 8 }}
     >
       <button
@@ -34,7 +46,11 @@ function AiTimelineFilters({ activeCategory, onChange }) {
         className="tap-scale"
         style={chipStyle(activeCategory === null)}
       >
+<<<<<<< HEAD
         All
+=======
+        {t("timeline:filters.all")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </button>
       {TIMELINE_FILTER_CATEGORIES.map(({ key, label, icon }) => (
         <button
@@ -46,7 +62,11 @@ function AiTimelineFilters({ activeCategory, onChange }) {
           className="tap-scale"
           style={chipStyle(activeCategory === key)}
         >
+<<<<<<< HEAD
           <span aria-hidden="true">{icon}</span> {label}
+=======
+          <span aria-hidden="true">{icon}</span> {t(`timeline:filterCategories.${key}`, label)}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </button>
       ))}
     </div>

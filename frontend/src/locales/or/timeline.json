@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "past": "ଅତୀତ",
+    "present": "ବର୍ତ୍ତମାନ",
+    "nearFuture": "ନିକଟ ଭବିଷ୍ୟତ",
+    "nextMonth": "ପରବର୍ତ୍ତୀ ମାସ",
+    "next3Months": "ପରବର୍ତ୍ତୀ 3 ମାସ",
+    "next6Months": "ପରବର୍ତ୍ତୀ 6 ମାସ",
+    "nextYear": "ପରବର୍ତ୍ତୀ ବର୍ଷ"
+  },
+  "horizons": {
+    "oneYear": "ପରବର୍ତ୍ତୀ 1 ବର୍ଷ",
+    "fiveYear": "ପରବର୍ତ୍ତୀ 5 ବର୍ଷ",
+    "tenYear": "ପରବର୍ତ୍ତୀ 10 ବର୍ଷ"
+  },
+  "filterCategories": {
+    "career": "କ୍ୟାରିୟର",
+    "finance": "ଅର୍ଥ",
+    "love": "ପ୍ରେମ",
+    "marriage": "ବିବାହ",
+    "health": "ସ୍ୱାସ୍ଥ୍ୟ",
+    "education": "ଶିକ୍ଷା",
+    "family": "ପରିବାର",
+    "spiritual": "ଆଧ୍ୟାତ୍ମିକ"
+  },
+  "tab": {
+    "buildingTimeline": "ଆପଣଙ୍କର AI ଟାଇମଲାଇନ୍ ତିଆରି ହେଉଛି…",
+    "notAvailableTitle": "ଟାଇମଲାଇନ୍ ଏପର୍ଯ୍ୟନ୍ତ ଉପଲବ୍ଧ ନାହିଁ",
+    "notAvailableMessage": "ଆପଣଙ୍କର ଚାର୍ଟ ଗଣିତ ହେଲାପରେ ଆପଣଙ୍କର ମହାଦଶା/ଅନ୍ତର୍ଦଶା ଟାଇମଲାଇନ୍ ଏଠାରେ ଦେଖାଯିବ।",
+    "currentDashaHeading": "ବର୍ତ୍ତମାନ ଦଶା",
+    "mahadashaBadge": "ମହାଦଶା: {{value}}",
+    "antardashaBadge": "ଅନ୍ତର୍ଦଶା: {{value}}",
+    "dominantBadge": "ପ୍ରମୁଖ: {{planet}}",
+    "notAvailableValue": "—",
+    "filterByLifeAreaHeading": "ଜୀବନ କ୍ଷେତ୍ର ଆଧାରରେ ଫିଲ୍ଟର କରନ୍ତୁ",
+    "noEventsTitle": "ଏହି ଫିଲ୍ଟର ପାଇଁ କୌଣସି ଘଟଣା ନାହିଁ",
+    "noEventsMessage": "ଚୟନ ହୋଇଥିବା ଜୀବନ କ୍ଷେତ୍ର ସହିତ ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି AI ଟାଇମଲାଇନ୍ ଘଟଣା ମେଳ ଖାଏ ନାହିଁ। ଏକ ଭିନ୍ନ ଫିଲ୍ଟର ଚେଷ୍ଟା କରନ୍ତୁ କିମ୍ବା ସମସ୍ତ ବାଛନ୍ତୁ।",
+    "sectionEventsAriaLabel": "{{label}} ଟାଇମଲାଇନ୍ ଘଟଣାଗୁଡ଼ିକ"
+  },
+  "filters": {
+    "ariaLabel": "ଜୀବନ କ୍ଷେତ୍ର ଆଧାରରେ AI ଟାଇମଲାଇନ୍ ଘଟଣାଗୁଡ଼ିକ ଫିଲ୍ଟର କରନ୍ତୁ",
+    "all": "ସମସ୍ତ"
+  },
+  "eventCard": {
+    "generalCategoryFallback": "ସାଧାରଣ",
+    "upcomingPeriod": "ଆଗାମୀ ଅବଧି",
+    "dateRangeArrow": "{{start}} → {{end}}",
+    "entryAriaLabel": "{{start}} ପାଇଁ AI ଟାଇମଲାଇନ୍ ପ୍ରବେଶ। AI ଦ୍ୱାରା ବ୍ୟାଖ୍ୟା କରିବାକୁ ବାଛନ୍ତୁ।",
+    "entryAriaLabelWithEnd": "{{start}} ରୁ {{end}} ପାଇଁ AI ଟାଇମଲାଇନ୍ ପ୍ରବେଶ। AI ଦ୍ୱାରା ବ୍ୟାଖ୍ୟା କରିବାକୁ ବାଛନ୍ତୁ।",
+    "mahadashaBadge": "ମହାଦଶା: {{value}}",
+    "antardashaBadge": "ଅନ୍ତର୍ଦଶା: {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI ବ୍ୟାଖ୍ୟା",
+    "eventLabelFallback": "ଜୀବନ-କ୍ଷେତ୍ର",
+    "prompt": "ଏହି {{category}} ଭବିଷ୍ୟବାଣୀର ଏକ Gemini-ପରିଚାଳିତ ବ୍ୟାଖ୍ୟା ପାଆନ୍ତୁ, ଯାହା ସମ୍ପୂର୍ଣ୍ଣ ଭାବରେ ଏହି ଚାର୍ଟର ନିଜସ୍ୱ ବ୍ୟାକଏଣ୍ଡ-ଗଣିତ ତଥ୍ୟ ଉପରେ ଆଧାରିତ।",
+    "explainAriaLabel": "ଏହି {{category}} ଭବିଷ୍ୟବାଣୀକୁ AI ଦ୍ୱାରା ବ୍ୟାଖ୍ୟା କରନ୍ତୁ",
+    "explainButton": "✨ AI ଦ୍ୱାରା ବ୍ୟାଖ୍ୟା କରନ୍ତୁ",
+    "generatingLabel": "ଏହି {{category}} ଭବିଷ୍ୟବାଣୀ ପାଇଁ AI ବ୍ୟାଖ୍ୟା ତିଆରି କରାଯାଉଛି",
+    "loadFailed": "AI ଟାଇମଲାଇନ୍ ବ୍ୟାଖ୍ୟା ବର୍ତ୍ତମାନ ଉପଲବ୍ଧ ନାହିଁ।",
+    "tryAgain": "↻ ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ"
+  },
+  "common": {
+    "nothingToShow": "ଏପର୍ଯ୍ୟନ୍ତ ଦେଖାଇବାକୁ କିଛି ନାହିଁ।"
+  },
+  "legacyCard": {
+    "upcomingPeriod": "ଆଗାମୀ ଅବଧି",
+    "mahadashaBadge": "ମହାଦଶା: {{value}}",
+    "antardashaBadge": "ଅନ୍ତର୍ଦଶା: {{value}}"
+  }
+}

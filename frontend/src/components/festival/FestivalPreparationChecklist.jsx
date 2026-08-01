@@ -1,4 +1,8 @@
 import { memo, useEffect, useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import ExpandableSection from "../common/ExpandableSection.jsx";
 import SkeletonList from "../common/Skeleton.jsx";
 import * as festivalIntelligenceApi from "../../utils/festivalIntelligenceApi.js";
@@ -15,6 +19,7 @@ import * as festivalIntelligenceApi from "../../utils/festivalIntelligenceApi.js
 // record, so it never needs a backend write.
 // ─────────────────────────────────────────────────────────────────────────
 const SECTIONS = [
+<<<<<<< HEAD
   { key: "preparationChecklist", title: "Preparation Checklist", icon: "📝" },
   { key: "shoppingChecklist", title: "Shopping Checklist", icon: "🛍️" },
   { key: "pujaMaterials", title: "Puja Materials", icon: "🪔" },
@@ -26,6 +31,19 @@ const SECTIONS = [
 
 function ChecklistItems({ items, sectionKey, checked, onToggle }) {
   if (!items?.length) return <p style={{ margin: 0 }}>Nothing specified.</p>;
+=======
+  {key: "preparationChecklist", icon: "📝" },
+  { key: "shoppingChecklist", icon: "🛍️" },
+  { key: "pujaMaterials", icon: "🪔" },
+  { key: "fastingPreparation", icon: "🍽️" },
+  { key: "morningRoutine", icon: "🌅" },
+  { key: "eveningRitual", icon: "🌆" },
+  { key: "postFestivalReflection", icon: "🙏" },
+];
+
+function ChecklistItems({ items, sectionKey, checked, onToggle, t }) {
+  if (!items?.length) return <p style={{ margin: 0 }}>{t("festival:preparationChecklist.nothingSpecified")}</p>;
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <div style={{ display: "grid", gap: 8 }}>
       {items.map((item, i) => {
@@ -48,6 +66,10 @@ function ChecklistItems({ items, sectionKey, checked, onToggle }) {
 }
 
 function FestivalPreparationChecklist({ festival }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["festival"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [preparation, setPreparation] = useState(null);
   const [error, setError] = useState(null);
   const [checked, setChecked] = useState({});
@@ -59,7 +81,11 @@ function FestivalPreparationChecklist({ festival }) {
     setChecked({});
     festivalIntelligenceApi.getFestivalPreparation(festival)
       .then(setPreparation)
+<<<<<<< HEAD
       .catch((err) => setError(err.message || "Could not load the preparation checklist right now."));
+=======
+      .catch((err) => setError(err.message || t("festival:preparationChecklist.loadFailed")));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [festival?.key, festival?.date]);
 
@@ -71,9 +97,15 @@ function FestivalPreparationChecklist({ festival }) {
 
   return (
     <div style={{ display: "grid", gap: 10 }}>
+<<<<<<< HEAD
       {SECTIONS.map((s) => (
         <ExpandableSection key={s.key} icon={s.icon} title={s.title}>
           <ChecklistItems items={preparation[s.key]} sectionKey={s.key} checked={checked} onToggle={toggle} />
+=======
+      {SECTIONS.map((sec) => (
+        <ExpandableSection key={sec.key} icon={sec.icon} title={t(`festival:preparationChecklist.sections.${sec.key}`)}>
+          <ChecklistItems items={preparation[sec.key]} sectionKey={sec.key} checked={checked} onToggle={toggle} t={t} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </ExpandableSection>
       ))}
     </div>

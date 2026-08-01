@@ -1,0 +1,169 @@
+{
+  "types": {
+    "planet": "ग्रहः",
+    "house": "भावः",
+    "sign": "राशिः",
+    "yoga": "योगः",
+    "dosha": "दोषः",
+    "nakshatra": "नक्षत्रम्",
+    "ascendant": "लग्नम्",
+    "aspect": "दृष्टिः"
+  },
+  "typeSingular": {
+    "planet": "ग्रहः",
+    "house": "भावः",
+    "sign": "राशिः",
+    "yoga": "योगः",
+    "dosha": "दोषः",
+    "nakshatra": "नक्षत्रम्",
+    "ascendant": "लग्नम्",
+    "aspect": "दृष्टिः"
+  },
+  "header": {
+    "title": "कुण्डलीअन्वेषकः",
+    "breadcrumb": "{{type}} · {{item}}",
+    "notAvailable": "—",
+    "selectPrompt": "अन्वेषणार्थं एकं विषयं चिनुतु"
+  },
+  "mainPanel": {
+    "loadingPanel": "विवरणफलकं लोड्यते…",
+    "emptyTitle": "अद्यापि किमपि न चयनितम्",
+    "emptyMessage": "अत्र अन्वेषणार्थं फलकात् ग्रहं, भावं, राशिं, योगं, दोषं, नक्षत्रं, लग्नं, दृष्टिं वा चिनुतु।",
+    "regionAriaLabel": "अन्वेषकविवरणफलकम्"
+  },
+  "sidePanel": {
+    "treeAriaLabel": "अन्वेषकचयनवर्गाः",
+    "categoryAriaLabel": "{{label}} ({{count}})",
+    "housePrefix": "भावः {{num}}",
+    "lordBadge": "स्वामी: {{lord}}",
+    "aspectCountSingle": "{{count}} दृष्टिः",
+    "aspectCountPlural": "{{count}} दृष्टयः",
+    "netInfluence": "शुद्धम् {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI व्याख्या",
+    "prompt": "{{label}} इत्यस्य Gemini-सञ्चालितां व्याख्यां प्राप्नुतु, या सम्पूर्णतया अस्य चित्रस्य स्वपश्चगणितेभ्यः तथ्येभ्यः आधृता।",
+    "explainAriaLabel": "{{label}} इत्येतत् AI द्वारा व्याख्यातु",
+    "explainButton": "✨ AI द्वारा व्याख्यातु",
+    "generatingLabel": "{{label}} कृते AI व्याख्या निर्मीयते",
+    "loadFailed": "अन्वेषकAI सम्प्रति न उपलब्धः।",
+    "tryAgain": "↻ पुनः प्रयतताम्"
+  },
+  "common": {
+    "relatedPredictions": "सम्बद्धभविष्यवाण्यः",
+    "relatedRemedies": "सम्बद्धउपायाः",
+    "noLinkedPredictionsTitle": "कोऽपि सम्बद्धा भविष्यवाणी नास्ति",
+    "noLinkedRemediesTitle": "कोऽपि सम्बद्धः उपायः नास्ति",
+    "noRemediesTitle": "कोऽपि उपायः उपलब्धः नास्ति"
+  },
+  "planet": {
+    "notAvailableTitle": "ग्रहदत्तांशः न उपलब्धः",
+    "notAvailableMessage": "अस्मिन् चित्रे अद्यापि अस्य ग्रहस्य कृते गणितः स्थितिदत्तांशः नास्ति।",
+    "positionDignityHeading": "स्थितिः गौरवं च",
+    "houseLabel": "भावः",
+    "signLabel": "राशिः",
+    "retrogradeBadge": "वक्री",
+    "combustBadge": "अस्तः",
+    "functionallyNature": "कार्यात्मकरूपेण {{nature}}",
+    "friendshipSignSuffix": "{{relation}} राशिः",
+    "adjustedStrengthScore": "समायोजितशक्त्यङ्कः",
+    "foundationShadbala": "मूलषड्बलम्",
+    "notAvailableValue": "—",
+    "strengthUnavailable": "अस्य चित्रस्य कृते विस्तृतशक्त्यङ्कनं न उपलब्धम्।",
+    "noLinkedPredictionsMessage": "सम्प्रति कोऽपि वर्गभविष्यवाणी {{planet}} इत्येतत् तस्य मुख्यं सहायकं वा ग्रहं इति न कथयति।",
+    "noLinkedRemediesMessage": "अस्य चित्रस्य भविष्यवाणीभिः सम्प्रति {{planet}} इत्यनेन सह कोऽपि उपायः न सम्बद्धः।"
+  },
+  "house": {
+    "notAvailableTitle": "भावदत्तांशः न उपलब्धः",
+    "notAvailableMessage": "अत्र अन्वेषणार्थं फलकात् एकं भावं चिनुतु।",
+    "signBadge": "राशिः: {{sign}}",
+    "lordBadge": "स्वामी: {{lord}}",
+    "meaning": "अर्थः",
+    "notAvailableValue": "—",
+    "occupantsHeading": "स्थिताः ग्रहाः",
+    "noOccupants": "सम्प्रति अस्मिन् भावे कोऽपि ग्रहः न स्थितः।",
+    "noLinkedPredictionsMessage": "सम्प्रति कोऽपि वर्गभविष्यवाणी भावम् {{house}} सहायकभावम् इति न कथयति।",
+    "noLinkedRemediesMessage": "अस्य चित्रस्य भविष्यवाणीभिः सम्प्रति भावेन {{house}} सह कोऽपि उपायः न सम्बद्धः।",
+    "itemLabel": "भावः {{num}}"
+  },
+  "sign": {
+    "notAvailableTitle": "राशिदत्तांशः न उपलब्धः",
+    "notAvailableMessage": "अत्र अन्वेषणार्थं फलकात् एकां राशिं चिनुतु।",
+    "lordBadge": "स्वामी: {{lord}}",
+    "lagnaBadge": "अस्य चित्रस्य लग्नम्",
+    "rulingPlanet": "शासकग्रहः",
+    "notAvailableValue": "—",
+    "occupantsHeading": "अस्यां राशौ वर्तमानाः ग्रहाः",
+    "noOccupants": "अस्मिन् चित्रे सम्प्रति अस्यां राशौ कोऽपि ग्रहः न स्थितः।",
+    "noLinkedPredictionsMessage": "सम्प्रति कोऽपि वर्गभविष्यवाणी अस्यां राशौ स्थितेन केनचित् ग्रहेण सह न सम्बद्धा।"
+  },
+  "yoga": {
+    "notFoundTitle": "योगः न प्राप्तः",
+    "notFoundMessage": "अयं योगः अस्य चित्रस्य कृते सम्प्रति परिचितसमूहस्य भागः नास्ति।",
+    "ruleMatchedBadge": "नियमः मेलितः: {{name}}",
+    "contributingPlanetsHeading": "योगदायकाः ग्रहाः",
+    "noContributingPlanets": "सम्प्रति कोऽपि वर्गभविष्यवाणी अस्य योगस्य श्रेयं विशिष्टेभ्यः ग्रहेभ्यः न ददाति।",
+    "confidenceEffectsTitle": "विश्वासः परिणामाश्च (सम्बद्धभविष्यवाणीभ्यः)",
+    "noLinkedPredictionsMessage": "सम्प्रति कोऽपि वर्गभविष्यवाणी अमुं योगं सहायककारणम् इति न कथयति।"
+  },
+  "dosha": {
+    "notFoundTitle": "दोषः न प्राप्तः",
+    "notFoundMessage": "अयं दोषः अस्य चित्रस्य कृते सम्प्रति परिचितसमूहस्य भागः नास्ति।",
+    "matchingRuleBadge": "मेलितः नियमः: {{name}}",
+    "severityBadge": "तीव्रता: {{severity}}",
+    "affectedHousesHeading": "प्रभावितभावाः",
+    "houseBadge": "भावः {{num}}",
+    "noAffectedHouses": "सम्प्रति कोऽपि वर्गभविष्यवाणी अमुं दोषं विशिष्टैः भावैः सह न योजयति।",
+    "remedies": "उपायाः",
+    "noRemediesMessage": "सम्प्रति अनेन दोषेण सह कोऽपि उपायः न सम्बद्धः।",
+    "linkedPredictions": "सम्बद्धभविष्यवाण्यः",
+    "noLinkedPredictionsMessage": "सम्प्रति कोऽपि वर्गभविष्यवाणी अमुं दोषं सहायककारणम् इति न कथयति।"
+  },
+  "nakshatra": {
+    "notAvailableTitle": "नक्षत्रपरिचयः न उपलब्धः",
+    "notAvailableMessage": "अस्मिन् चित्रे अद्यापि गणितः नक्षत्रपरिचयः नास्ति।",
+    "itemLabel": "नक्षत्रम्",
+    "padaBadge": "पदम् {{pada}}",
+    "lordBadge": "स्वामी: {{lord}}",
+    "ganaBadge": "{{gana}} गणः",
+    "deity": "देवता",
+    "symbol": "प्रतीकम्",
+    "nadi": "नाडी",
+    "yoni": "योनिः",
+    "notAvailableValue": "—",
+    "personalityHeading": "व्यक्तित्वम्",
+    "careerTendencies": "वृत्तिप्रवृत्तयः",
+    "relationshipTendencies": "सम्बन्धप्रवृत्तयः",
+    "spiritualTendencies": "आध्यात्मिकप्रवृत्तयः"
+  },
+  "ascendant": {
+    "notAvailableTitle": "लग्नं न उपलब्धम्",
+    "notAvailableMessage": "अस्मिन् चित्रे अद्यापि गणितं लग्नं नास्ति।",
+    "itemLabel": "लग्नम्",
+    "lordBadge": "स्वामी: {{lord}}",
+    "risingSign": "लग्नम् (उदयराशिः)",
+    "lagnaLord": "लग्नस्वामी",
+    "notAvailableValue": "—",
+    "characteristicsHeading": "विशेषताः (लग्नस्वामिनः शक्त्यनुसारम्)",
+    "functionallyNature": "कार्यात्मकरूपेण {{nature}}",
+    "predictionsLinkedTitle": "लग्नस्वामिना सह सम्बद्धाः भविष्यवाण्यः",
+    "lagnaLordFallback": "लग्नस्वामी",
+    "noLinkedPredictionsMessage": "सम्प्रति कोऽपि वर्गभविष्यवाणी {{lord}} इत्येतत् तस्य मुख्यं सहायकं वा ग्रहं इति न कथयति।"
+  },
+  "aspect": {
+    "notAvailableTitle": "दृष्टिदत्तांशः न उपलब्धः",
+    "notAvailableMessage": "अत्र अन्वेषणार्थं फलकात् एकां दृष्टिं चिनुतु।",
+    "sourcesHeading": "दृष्टिस्रोतः → लक्ष्यम्",
+    "beneficAspects": "शुभदृष्टयः",
+    "maleficAspects": "अशुभदृष्टयः",
+    "netInfluenceStrength": "शुद्धप्रभावः (शक्तिः)",
+    "housesAspected": "दृष्टिप्राप्ताः भावाः",
+    "houseLabel": "भावः {{num}}",
+    "itemLabel": "{{target}} इत्यस्मिन् दृष्टयः",
+    "interpretPureBenefic": "सम्पूर्णतया शुभाः दृष्टयः — एकः सहायकः प्रभावः।",
+    "interpretPureMalefic": "सम्पूर्णतया अशुभाः दृष्टयः — एकः दुष्करः प्रभावः।",
+    "interpretMixedNetBenefic": "मिश्रिताः दृष्टयः, समग्रतया शुद्धः शुभः प्रभावः।",
+    "interpretMixedNetMalefic": "मिश्रिताः दृष्टयः, समग्रतया शुद्धः अशुभः प्रभावः।",
+    "interpretMixedNeutral": "मिश्रिताः दृष्टयः याषां शुद्धः प्रभावः सन्तुलितः तटस्थश्च अस्ति।"
+  }
+}

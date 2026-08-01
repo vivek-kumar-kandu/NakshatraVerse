@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { useState } from "react";
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
@@ -10,7 +14,11 @@ import CompatibilityMeter from "../components/matching/CompatibilityMeter.jsx";
 import { GOLD_GRADIENT } from "../constants/astrology.js";
 import { computeMatch, generateMatchingReport, exportMatchingPdf } from "../utils/matchingApi.js";
 
+<<<<<<< HEAD
 const EMPTY_PERSON = { name: "", gender: "", dob: "", tob: "", pob: "" };
+=======
+const EMPTY_PERSON = {name: "", gender: "", dob: "", tob: "", pob: "" };
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 function validatePersonClient(person) {
   const e = {};
@@ -23,11 +31,19 @@ function validatePersonClient(person) {
 }
 
 function DoshaColumn({ title, doshas }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["results", "common"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <div style={{ flex: "1 1 240px", minWidth: 220 }}>
       <h4 style={{ margin: "0 0 10px", fontSize: 13, color: "#bf7fff", fontFamily: "Cinzel,serif" }}>{title}</h4>
       {doshas.length === 0 ? (
+<<<<<<< HEAD
         <p style={{ fontSize: 13, color: "var(--nv-text-muted, rgba(200,160,255,0.55))", fontStyle: "italic" }}>None detected.</p>
+=======
+        <p style={{ fontSize: 13, color: "var(--nv-text-muted, rgba(200,160,255,0.55))", fontStyle: "italic" }}>{t("results:noneDetected", "None detected.")}</p>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       ) : (
         <div style={{ display: "grid", gap: 8 }}>
           {doshas.map((d, i) => (
@@ -43,6 +59,10 @@ function DoshaColumn({ title, doshas }) {
 }
 
 function MatchingPage({ onBack }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["matching", "common", "results"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [stage, setStage] = useState("form"); // form | loading | results
   const [personA, setPersonA] = useState(EMPTY_PERSON);
   const [personB, setPersonB] = useState(EMPTY_PERSON);
@@ -116,10 +136,17 @@ function MatchingPage({ onBack }) {
         <div style={{ position: "relative", zIndex: 1, textAlign: "center", padding: 24 }}>
           <div aria-hidden="true" style={{ fontSize: 52, marginBottom: 18, animation: "pulse 2s infinite" }}>💞</div>
           <h2 style={{ margin: "0 0 10px", fontSize: 22, background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif" }}>
+<<<<<<< HEAD
             Calculating Compatibility
           </h2>
           <p aria-live="polite" style={{ margin: 0, fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.8))" }}>
             Computing Ashtakoota, Manglik analysis, and dosha comparison…
+=======
+            {t("matching:calculatingCompatibility", "Calculating Compatibility")}
+          </h2>
+          <p aria-live="polite" style={{ margin: 0, fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.8))" }}>
+            {t("matching:computingAshtakoota", "Computing Ashtakoota, Manglik analysis, and dosha comparison…")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         </div>
       </div>
@@ -136,15 +163,26 @@ function MatchingPage({ onBack }) {
         <div style={{ position: "relative", zIndex: 1, maxWidth: 920, margin: "0 auto", padding: "32px 20px" }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 20, gap: 12, flexWrap: "wrap" }}>
             <button type="button" className="pill-btn tap-scale" onClick={onBack} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(180,120,255,0.28)", color: "var(--nv-text-secondary, rgba(210,175,255,0.76))", borderRadius: 20, padding: "8px 16px", fontSize: 13, cursor: "pointer" }}>
+<<<<<<< HEAD
               ← Back
             </button>
             <button type="button" className="pill-btn tap-scale" onClick={handleReset} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(180,120,255,0.28)", color: "var(--nv-text-secondary, rgba(210,175,255,0.76))", borderRadius: 20, padding: "8px 16px", fontSize: 13, cursor: "pointer" }}>
               ↺ New Matching
+=======
+              ← {t("common:back", "Back")}
+            </button>
+            <button type="button" className="pill-btn tap-scale" onClick={handleReset} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(180,120,255,0.28)", color: "var(--nv-text-secondary, rgba(210,175,255,0.76))", borderRadius: 20, padding: "8px 16px", fontSize: 13, cursor: "pointer" }}>
+              ↺ {t("matching:newMatching", "New Matching")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </div>
 
           <h1 style={{ margin: "0 0 4px", textAlign: "center", fontSize: "clamp(24px,4vw,32px)", background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif" }}>
+<<<<<<< HEAD
             Kundli Matching Report
+=======
+            {t("matching:kundliMatchingReport", "Kundli Matching Report")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </h1>
           <p style={{ margin: "0 0 28px", textAlign: "center", fontSize: 15, color: "var(--nv-text-secondary, rgba(210,175,255,0.76))" }}>
             {pA.name} <span aria-hidden="true">✦</span> {pB.name}
@@ -169,7 +207,11 @@ function MatchingPage({ onBack }) {
 
           {/* Koota score cards */}
           <GlassCard style={{ padding: "24px 20px", marginBottom: 20 }}>
+<<<<<<< HEAD
             <h3 style={{ margin: "0 0 18px", fontSize: 16, color: "#bf7fff", fontFamily: "Cinzel,serif" }}>Ashtakoota (Guna Milan)</h3>
+=======
+            <h3 style={{ margin: "0 0 18px", fontSize: 16, color: "#bf7fff", fontFamily: "Cinzel,serif" }}>{t("results.ashtakootaGunaMilan", "Ashtakoota (Guna Milan)")}</h3>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             <div style={{ display: "flex", flexWrap: "wrap", gap: 18, justifyContent: "center" }}>
               {kootas.map((k) => (
                 <div key={k.name} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, width: 100 }}>
@@ -181,7 +223,11 @@ function MatchingPage({ onBack }) {
 
           {/* Manglik Analysis */}
           <div style={{ display: "grid", gap: 14, marginBottom: 20 }}>
+<<<<<<< HEAD
             <ExpandableSection icon="🔥" title="Manglik Analysis & Compatibility" color="#ff9d6a">
+=======
+            <ExpandableSection icon="🔥" title={t("results.manglikAnalysis", "Manglik Analysis & Compatibility")} color="#ff9d6a">
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 14 }}>
                 {[{ label: pA.name, m: matching.manglik.personA }, { label: pB.name, m: matching.manglik.personB }].map(({ label, m }) => (
                   <div key={label} style={{ flex: "1 1 220px" }}>
@@ -201,33 +247,56 @@ function MatchingPage({ onBack }) {
               </div>
             </ExpandableSection>
 
+<<<<<<< HEAD
             <ExpandableSection icon="🧿" title="Major Dosha Comparison" color="#bf7fff" defaultOpen={false}>
+=======
+            <ExpandableSection icon="🧿" title={t("results.majorDoshaComparison", "Major Dosha Comparison")} color="#bf7fff" defaultOpen={false}>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <div style={{ display: "flex", gap: 20, flexWrap: "wrap" }}>
                 <DoshaColumn title={pA.name} doshas={matching.doshaComparison.personA} />
                 <DoshaColumn title={pB.name} doshas={matching.doshaComparison.personB} />
               </div>
             </ExpandableSection>
 
+<<<<<<< HEAD
             <ExpandableSection icon="⚡" title="Strong & Weak Planet Comparison" color="#ffd700" defaultOpen={false}>
+=======
+            <ExpandableSection icon="⚡" title={t("results.strongWeakComparison", "Strong & Weak Planet Comparison")} color="#ffd700" defaultOpen={false}>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <div style={{ display: "flex", gap: 20, flexWrap: "wrap" }}>
                 {[{ label: pA.name, s: matching.planetStrength.personA }, { label: pB.name, s: matching.planetStrength.personB }].map(({ label, s }) => (
                   <div key={label} style={{ flex: "1 1 220px" }}>
                     <h4 style={{ margin: "0 0 8px", fontSize: 13, color: "#bf7fff", fontFamily: "Cinzel,serif" }}>{label}</h4>
+<<<<<<< HEAD
                     <p style={{ margin: "0 0 4px", fontSize: 13 }}><strong style={{ color: "#8fe58f" }}>Strongest:</strong> {s.strongest?.planet} ({s.strongest?.total})</p>
                     <p style={{ margin: 0, fontSize: 13 }}><strong style={{ color: "#ff9d9d" }}>Weakest:</strong> {s.weakest?.planet} ({s.weakest?.total})</p>
+=======
+                    <p style={{ margin: "0 0 4px", fontSize: 13 }}><strong style={{ color: "#8fe58f" }}>{t("results.strongest", "Strongest:")}</strong> {s.strongest?.planet} ({s.strongest?.total})</p>
+                    <p style={{ margin: 0, fontSize: 13 }}><strong style={{ color: "#ff9d9d" }}>{t("results.weakest", "Weakest:")}</strong> {s.weakest?.planet} ({s.weakest?.total})</p>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   </div>
                 ))}
               </div>
             </ExpandableSection>
 
+<<<<<<< HEAD
             <ExpandableSection icon="🌙" title="Moon Sign & Nakshatra Compatibility" color="#e8d5ff" defaultOpen={false}>
               <p style={{ margin: "0 0 6px", fontSize: 13 }}>
                 <strong>Moon Sign:</strong> {matching.moonSignCompatibility.personA} & {matching.moonSignCompatibility.personB}
+=======
+            <ExpandableSection icon="🌙" title={t("results.moonSignNakshatraCompat", "Moon Sign & Nakshatra Compatibility")} color="#e8d5ff" defaultOpen={false}>
+              <p style={{ margin: "0 0 6px", fontSize: 13 }}>
+                <strong>{t("results.moonSignLabel", "Moon Sign:")}</strong> {matching.moonSignCompatibility.personA} & {matching.moonSignCompatibility.personB}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 {matching.moonSignCompatibility.sameSign ? " (same sign)" : ""}
               </p>
               <p style={{ margin: "0 0 12px", fontSize: 12.5, color: "var(--nv-text-secondary, rgba(210,175,255,0.76))" }}>{matching.moonSignCompatibility.bhakoot.detail}</p>
               <p style={{ margin: "0 0 6px", fontSize: 13 }}>
+<<<<<<< HEAD
                 <strong>Nakshatra:</strong> {matching.nakshatraCompatibility.personA?.name} & {matching.nakshatraCompatibility.personB?.name}
+=======
+                <strong>{t("results.nakshatraLabel", "Nakshatra:")}</strong> {matching.nakshatraCompatibility.personA?.name} & {matching.nakshatraCompatibility.personB?.name}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 {matching.nakshatraCompatibility.sameNakshatra ? " (same Nakshatra)" : ""}
               </p>
               <p style={{ margin: 0, fontSize: 12.5, color: "var(--nv-text-secondary, rgba(210,175,255,0.76))" }}>
@@ -236,7 +305,11 @@ function MatchingPage({ onBack }) {
             </ExpandableSection>
 
             {explanation && (
+<<<<<<< HEAD
               <ExpandableSection icon="🤖" title="AI Compatibility Insights" color="#ffd700">
+=======
+              <ExpandableSection icon="🤖" title={t("results.aiCompatInsights", "AI Compatibility Insights")} color="#ffd700">
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 {[
                   ["Compatibility Summary", explanation.compatibilitySummary],
                   ["Strengths", explanation.strengths],
@@ -283,24 +356,41 @@ function MatchingPage({ onBack }) {
       <div style={{ position: "relative", zIndex: 1, maxWidth: 760, margin: "0 auto", padding: "40px 20px" }}>
         {onBack && (
           <button type="button" className="pill-btn tap-scale" onClick={onBack} style={{ marginBottom: 20, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(180,120,255,0.28)", color: "var(--nv-text-secondary, rgba(210,175,255,0.76))", borderRadius: 20, padding: "8px 16px", fontSize: 13, cursor: "pointer" }}>
+<<<<<<< HEAD
             ← Back
+=======
+            ← {t("common:back", "Back")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         )}
         <div style={{ textAlign: "center", marginBottom: 32 }}>
           <div aria-hidden="true" style={{ fontSize: 48, marginBottom: 12 }}>💞</div>
           <h1 style={{ margin: "0 0 8px", fontSize: "clamp(26px,5vw,38px)", fontWeight: 700, letterSpacing: 1,
             background: GOLD_GRADIENT, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif" }}>
+<<<<<<< HEAD
             Kundli Matching
           </h1>
           <p style={{ margin: 0, fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))" }}>
             Professional Vedic Ashtakoota (Guna Milan) Compatibility Analysis
+=======
+            {t("matching:kundliMatching", "Kundli Matching")}
+          </h1>
+          <p style={{ margin: 0, fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))" }}>
+            {t("matching:ashtakootaSubtitle", "Professional Vedic Ashtakoota (Guna Milan) Compatibility Analysis")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         </div>
 
         <div style={{ display: "flex", gap: 20, flexWrap: "wrap", marginBottom: 24 }}>
+<<<<<<< HEAD
           <PersonInputCard title="Person A" accent="#bf7fff" person={personA} errors={errorsA}
             onChange={(key, val) => { setPersonA((p) => ({ ...p, [key]: val })); setErrorsA((e) => ({ ...e, [key]: "" })); }} />
           <PersonInputCard title="Person B" accent="#ffd700" person={personB} errors={errorsB}
+=======
+          <PersonInputCard title={t("results.personA", "Person A")} accent="#bf7fff" person={personA} errors={errorsA}
+            onChange={(key, val) => { setPersonA((p) => ({ ...p, [key]: val })); setErrorsA((e) => ({ ...e, [key]: "" })); }} />
+          <PersonInputCard title={t("results.personB", "Person B")} accent="#ffd700" person={personB} errors={errorsB}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             onChange={(key, val) => { setPersonB((p) => ({ ...p, [key]: val })); setErrorsB((e) => ({ ...e, [key]: "" })); }} />
         </div>
 

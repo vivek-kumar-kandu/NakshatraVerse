@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "past": "ਅਤੀਤ",
+    "present": "ਵਰਤਮਾਨ",
+    "nearFuture": "ਨੇੜਲਾ ਭਵਿੱਖ",
+    "nextMonth": "ਅਗਲਾ ਮਹੀਨਾ",
+    "next3Months": "ਅਗਲੇ 3 ਮਹੀਨੇ",
+    "next6Months": "ਅਗਲੇ 6 ਮਹੀਨੇ",
+    "nextYear": "ਅਗਲਾ ਸਾਲ"
+  },
+  "horizons": {
+    "oneYear": "ਅਗਲਾ 1 ਸਾਲ",
+    "fiveYear": "ਅਗਲੇ 5 ਸਾਲ",
+    "tenYear": "ਅਗਲੇ 10 ਸਾਲ"
+  },
+  "filterCategories": {
+    "career": "ਕਰੀਅਰ",
+    "finance": "ਵਿੱਤ",
+    "love": "ਪਿਆਰ",
+    "marriage": "ਵਿਆਹ",
+    "health": "ਸਿਹਤ",
+    "education": "ਸਿੱਖਿਆ",
+    "family": "ਪਰਿਵਾਰ",
+    "spiritual": "ਅਧਿਆਤਮਿਕ"
+  },
+  "tab": {
+    "buildingTimeline": "ਤੁਹਾਡੀ AI ਟਾਈਮਲਾਈਨ ਬਣਾਈ ਜਾ ਰਹੀ ਹੈ…",
+    "notAvailableTitle": "ਟਾਈਮਲਾਈਨ ਹਾਲੇ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+    "notAvailableMessage": "ਤੁਹਾਡਾ ਚਾਰਟ ਗਣਨਾ ਹੋਣ ਤੋਂ ਬਾਅਦ ਤੁਹਾਡੀ ਮਹਾਦਸ਼ਾ/ਅੰਤਰਦਸ਼ਾ ਟਾਈਮਲਾਈਨ ਇੱਥੇ ਦਿਖਾਈ ਦੇਵੇਗੀ।",
+    "currentDashaHeading": "ਮੌਜੂਦਾ ਦਸ਼ਾ",
+    "mahadashaBadge": "ਮਹਾਦਸ਼ਾ: {{value}}",
+    "antardashaBadge": "ਅੰਤਰਦਸ਼ਾ: {{value}}",
+    "dominantBadge": "ਪ੍ਰਧਾਨ: {{planet}}",
+    "notAvailableValue": "—",
+    "filterByLifeAreaHeading": "ਜੀਵਨ ਖੇਤਰ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ",
+    "noEventsTitle": "ਇਸ ਫਿਲਟਰ ਲਈ ਕੋਈ ਘਟਨਾ ਨਹੀਂ",
+    "noEventsMessage": "ਚੁਣੇ ਗਏ ਜੀਵਨ ਖੇਤਰ ਨਾਲ ਹਾਲੇ ਤੱਕ ਕੋਈ AI ਟਾਈਮਲਾਈਨ ਘਟਨਾ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ। ਵੱਖਰਾ ਫਿਲਟਰ ਅਜ਼ਮਾਓ ਜਾਂ ਸਾਰੇ ਚੁਣੋ।",
+    "sectionEventsAriaLabel": "{{label}} ਟਾਈਮਲਾਈਨ ਘਟਨਾਵਾਂ"
+  },
+  "filters": {
+    "ariaLabel": "ਜੀਵਨ ਖੇਤਰ ਅਨੁਸਾਰ AI ਟਾਈਮਲਾਈਨ ਘਟਨਾਵਾਂ ਫਿਲਟਰ ਕਰੋ",
+    "all": "ਸਾਰੇ"
+  },
+  "eventCard": {
+    "generalCategoryFallback": "ਆਮ",
+    "upcomingPeriod": "ਆਗਾਮੀ ਸਮਾਂ",
+    "dateRangeArrow": "{{start}} → {{end}}",
+    "entryAriaLabel": "{{start}} ਲਈ AI ਟਾਈਮਲਾਈਨ ਐਂਟਰੀ। AI ਨਾਲ ਸਮਝਾਉਣ ਲਈ ਚੁਣੋ।",
+    "entryAriaLabelWithEnd": "{{start}} ਤੋਂ {{end}} ਲਈ AI ਟਾਈਮਲਾਈਨ ਐਂਟਰੀ। AI ਨਾਲ ਸਮਝਾਉਣ ਲਈ ਚੁਣੋ।",
+    "mahadashaBadge": "ਮਹਾਦਸ਼ਾ: {{value}}",
+    "antardashaBadge": "ਅੰਤਰਦਸ਼ਾ: {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI ਵਿਆਖਿਆ",
+    "eventLabelFallback": "ਜੀਵਨ-ਖੇਤਰ",
+    "prompt": "ਇਸ {{category}} ਭਵਿੱਖਬਾਣੀ ਦੀ ਇੱਕ Gemini-ਸੰਚਾਲਿਤ ਵਿਆਖਿਆ ਪ੍ਰਾਪਤ ਕਰੋ, ਜੋ ਪੂਰੀ ਤਰ੍ਹਾਂ ਇਸ ਚਾਰਟ ਦੇ ਆਪਣੇ ਬੈਕਐਂਡ-ਗਣਨਾ ਕੀਤੇ ਤੱਥਾਂ 'ਤੇ ਆਧਾਰਿਤ ਹੈ।",
+    "explainAriaLabel": "ਇਸ {{category}} ਭਵਿੱਖਬਾਣੀ ਨੂੰ AI ਨਾਲ ਸਮਝਾਓ",
+    "explainButton": "✨ AI ਨਾਲ ਸਮਝਾਓ",
+    "generatingLabel": "ਇਸ {{category}} ਭਵਿੱਖਬਾਣੀ ਲਈ AI ਵਿਆਖਿਆ ਬਣਾਈ ਜਾ ਰਹੀ ਹੈ",
+    "loadFailed": "AI ਟਾਈਮਲਾਈਨ ਵਿਆਖਿਆ ਇਸ ਵੇਲੇ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।",
+    "tryAgain": "↻ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ"
+  },
+  "common": {
+    "nothingToShow": "ਹਾਲੇ ਦਿਖਾਉਣ ਲਈ ਕੁਝ ਨਹੀਂ ਹੈ।"
+  },
+  "legacyCard": {
+    "upcomingPeriod": "ਆਗਾਮੀ ਸਮਾਂ",
+    "mahadashaBadge": "ਮਹਾਦਸ਼ਾ: {{value}}",
+    "antardashaBadge": "ਅੰਤਰਦਸ਼ਾ: {{value}}"
+  }
+}

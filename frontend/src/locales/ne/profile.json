@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← ड्यासबोर्डमा फर्कनुहोस्",
+    "title": "मेरो प्रोफाइल",
+    "photoHint": "सम्पादन गर्न आफ्नो फोटोमा क्लिक गर्नुहोस् — अपलोड गर्नुहोस्, परिवर्तन गर्नुहोस्, वा हटाउनुहोस्।",
+    "authProviderGoogle": "Google बाट साइन इन गरिएको",
+    "authProviderEmail": "इमेल र पासवर्ड",
+    "accountInformation": "खाता जानकारी",
+    "fullName": "पूरा नाम",
+    "email": "इमेल",
+    "memberSince": "सदस्यताको सुरुवात",
+    "accountType": "खाता प्रकार",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "पासवर्ड परिवर्तन गर्नुहोस्",
+    "editProfileInSettings": "सेटिङमा प्रोफाइल सम्पादन गर्नुहोस् →",
+    "activitySummary": "प्रोफाइल गतिविधि सारांश",
+    "totalReports": "कुल प्रतिवेदनहरू",
+    "loadingValue": "…",
+    "lastGenerated": "अन्तिम पटक बनाइएको",
+    "viewSavedReports": "सुरक्षित प्रतिवेदनहरू हेर्नुहोस् →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "कृपया JPG, PNG, वा WEBP तस्बिर छान्नुहोस्।",
+    "fileTooLarge": "त्यो तस्बिर धेरै ठूलो छ। कृपया 8MB भन्दा कम आकारको फाइल छान्नुहोस्।",
+    "processFailed": "त्यो तस्बिर प्रक्रिया गर्न सकिएन।",
+    "photoUpdated": "प्रोफाइल तस्बिर अद्यावधिक भयो।",
+    "saveFailed": "तपाईंको तस्बिर सुरक्षित हुन सकेन।",
+    "photoRemoved": "प्रोफाइल तस्बिर हटाइयो।",
+    "removeFailed": "तपाईंको तस्बिर हटाउन सकिएन।",
+    "changePhotoAriaLabel": "प्रोफाइल तस्बिर परिवर्तन गर्नुहोस्",
+    "uploadPhotoAriaLabel": "प्रोफाइल तस्बिर अपलोड गर्नुहोस्",
+    "menuAriaLabel": "प्रोफाइल तस्बिर विकल्पहरू",
+    "replacePhoto": "तस्बिर बदल्नुहोस्",
+    "uploadPhoto": "तस्बिर अपलोड गर्नुहोस्",
+    "removePhoto": "तस्बिर हटाउनुहोस्",
+    "previewDialogAriaLabel": "नयाँ प्रोफाइल तस्बिरको पूर्वावलोकन",
+    "previewYourNewPhoto": "आफ्नो नयाँ तस्बिरको पूर्वावलोकन गर्नुहोस्",
+    "cancel": "रद्द गर्नुहोस्",
+    "save": "सुरक्षित गर्नुहोस्"
+  }
+}

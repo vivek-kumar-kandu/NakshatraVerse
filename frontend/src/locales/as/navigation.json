@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "গৃহপৃষ্ঠা",
+    "features": "বৈশিষ্ট্যসমূহ",
+    "about": "আমাৰ বিষয়ে",
+    "faq": "সঘনাই সোধা প্ৰশ্ন"
+  },
+  "navbar": {
+    "brandAriaLabel": "নক্ষত্ৰভাৰ্চ — গৃহপৃষ্ঠা",
+    "primaryAriaLabel": "মুখ্য",
+    "openMenu": "মেনু খোলক",
+    "closeMenu": "মেনু বন্ধ কৰক"
+  },
+  "auth": {
+    "home": "গৃহপৃষ্ঠা",
+    "dashboard": "ডেশ্ব’ৰ্ড",
+    "reports": "প্ৰতিবেদনসমূহ",
+    "profile": "প্ৰ’ফাইল"
+  },
+  "accountMenu": {
+    "myProfile": "মোৰ প্ৰ’ফাইল",
+    "dashboard": "ডেশ্ব’ৰ্ড",
+    "savedReports": "সংৰক্ষিত প্ৰতিবেদনসমূহ",
+    "settings": "ছেটিংসমূহ",
+    "helpAbout": "সহায় আৰু তথ্য",
+    "memberSince": "{{date}} ৰ পৰা সদস্য",
+    "menuLabel": "একাউণ্ট",
+    "triggerLabel": "{{name}} ৰ বাবে একাউণ্ট মেনু"
+  },
+  "actionDock": {
+    "askAi": "AI ক সোধক",
+    "horoscope": "ৰাশিফল",
+    "calendar": "কেলেণ্ডাৰ",
+    "lifeCoach": "লাইফ কোচ",
+    "kundliMatching": "কুণ্ডলী মিলন",
+    "panchang": "পঞ্চাং",
+    "festivalCalendar": "উৎসৱ কেলেণ্ডাৰ",
+    "notifications": "জাননীসমূহ",
+    "saveReport": "প্ৰতিবেদন সংৰক্ষণ কৰক",
+    "saving": "সংৰক্ষণ কৰা হৈছে…",
+    "downloadPdf": "PDF ডাউনল’ড কৰক",
+    "preparing": "সাজু কৰা হৈছে…",
+    "printPdf": "PDF প্ৰিণ্ট কৰক",
+    "opening": "খোলা হৈছে…",
+    "reportActions": "প্ৰতিবেদন কাৰ্যসমূহ",
+    "openReportActions": "প্ৰতিবেদন কাৰ্যসমূহ খোলক",
+    "close": "বন্ধ কৰক",
+    "somethingWentWrong": "কিবা এটা ভুল হ’ল।"
+  },
+  "commandPalette": {
+    "ariaLabel": "কমাণ্ড পেলেট",
+    "searchAriaLabel": "কমাণ্ড পেলেট সন্ধান",
+    "commandsAriaLabel": "কমাণ্ডসমূহ",
+    "sections": {
+      "navigate": "নেভিগেট কৰক",
+      "theme": "থিম",
+      "settings": "ছেটিংসমূহ",
+      "recent": "শেহতীয়া",
+      "recentReports": "শেহতীয়া প্ৰতিবেদনসমূহ",
+      "recentReportsLoading": "শেহতীয়া প্ৰতিবেদনসমূহ · লোড হৈ আছে…"
+    },
+    "nav": {
+      "dashboard": "ডেশ্ব’ৰ্ড",
+      "generateReport": "প্ৰতিবেদন সৃষ্টি কৰক",
+      "savedReports": "সংৰক্ষিত প্ৰতিবেদনসমূহ",
+      "profile": "প্ৰ’ফাইল",
+      "settings": "ছেটিংসমূহ",
+      "horoscope": "ৰাশিফল",
+      "calendar": "কেলেণ্ডাৰ",
+      "aiAssistant": "AI সহায়ক",
+      "aiLifeCoach": "AI লাইফ কোচ",
+      "kundliMatching": "কুণ্ডলী মিলন",
+      "dailyPanchang": "দৈনিক পঞ্চাং আৰু মুহূৰ্ত",
+      "festivalCalendar": "উৎসৱ কেলেণ্ডাৰ",
+      "todaysFestival": "আজিৰ উৎসৱ",
+      "upcomingFestivals": "আগন্তুক উৎসৱসমূহ",
+      "notificationCenter": "জাননী কেন্দ্ৰ",
+      "unreadNotifications": "নপঢ়া জাননীসমূহ",
+      "familyProfiles": "পাৰিয়াল প্ৰ’ফাইলসমূহ",
+      "relationshipHub": "সম্পৰ্ক কেন্দ্ৰ",
+      "help": "সহায়"
+    },
+    "theme": {
+      "light": "ছেক্ৰেড ড’নলৈ সলনি কৰক",
+      "dark": "মিডনাইট কচমিকলৈ সলনি কৰক",
+      "system": "চিষ্টেম থিমলৈ সলনি কৰক"
+    },
+    "settingsSections": {
+      "account": "ছেটিংসমূহ · একাউণ্ট",
+      "appearance": "ছেটিংসমূহ · ৰূপ",
+      "preferences": "ছেটিংসমূহ · পছন্দসমূহ",
+      "privacy": "ছেটিংসমূহ · গোপনীयता",
+      "about": "ছেটিংসমূহ · তথ্য"
+    },
+    "untitledReport": "শিৰোনামহীন প্ৰতিবেদন",
+    "noMatches": "কোনো মিলা কমাণ্ড নাই।",
+    "noMatchesFor": "\"{{query}}\" ৰ বাবে কোনো মিলা কমাণ্ড নাই।",
+    "searchPlaceholder": "পৃষ্ঠাসমূহ, প্ৰতিবেদনসমূহ, যোগ, দোষ, উপায় সন্ধান কৰক…"
+  }
+}

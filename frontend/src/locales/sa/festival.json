@@ -1,0 +1,165 @@
+{
+  "typeFilters": {
+    "All": "सर्वाणि",
+    "Festival": "उत्सवः",
+    "Vrat": "व्रतम्"
+  },
+  "page": {
+    "back": "← पृष्ठतः",
+    "title": "🎉 उत्सवपत्रम्",
+    "subtitle": "पश्चदत्तांशेन गणिताः हिन्दूउत्सवाः व्रतानि च — दिनाङ्काः, आचाराः, महत्त्वं च।",
+    "tabs": {
+      "today": "अद्य",
+      "upcoming": "आगामिनः",
+      "browse": "सर्वाणि अवलोकयतु"
+    },
+    "todayLoadFailed": "अद्यत्ववः उत्सवः लोड्यितुं न शक्तः।",
+    "upcomingLoadFailed": "आगामिनः उत्सवाः लोड्यितुं न शक्ताः।",
+    "yearLoadFailed": "उत्सवपत्रं लोड्यितुं न शक्तम्।",
+    "openFestivalFailed": "सः उत्सवः उद्घाटयितुं न शक्तः।",
+    "todaysFestivalsHeading": "अद्यत्ववः उत्सवः{{plural}}",
+    "noFestivalTodayTitle": "अद्य कोऽपि उत्सवः नास्ति",
+    "noFestivalTodayMessage": "अद्यत्वे दिनाङ्के कोऽपि पालनीयः उत्सवः व्रतं वा नास्ति।",
+    "nextUp": "अग्रे किम्",
+    "daysRemainingToday": "अद्य",
+    "daysRemainingSingle": "{{count}} दिने",
+    "daysRemainingPlural": "{{count}} दिनेषु",
+    "noUpcomingTitle": "कोऽपि आगामी उत्सवः न प्राप्तः",
+    "noUpcomingMessage": "अग्रिमेषु 60 दिनेषु किमपि न प्राप्तम्।",
+    "searchPlaceholder": "उत्सवान् अन्विष्यतु…",
+    "searchAriaLabel": "उत्सवान् अन्विष्यतु",
+    "typeFilterAriaLabel": "प्रकारानुसारं शोधयतु",
+    "yearAriaLabel": "वर्षं चिनुतु",
+    "noMatchTitle": "कोऽपि उत्सवः न मेलति",
+    "noMatchMessage": "भिन्नं अन्वेषणशब्दं प्रकारशोधनं वा प्रयतताम्।",
+    "explainFailed": "AI व्याख्या सम्प्रति न उपलब्धा।"
+  },
+  "detailCard": {
+    "importanceSuffix": "{{importance}} महत्त्वम्",
+    "notSpecified": "निर्दिष्टं नास्ति।",
+    "explainButton": "✨ {{status}}",
+    "askingGemini": "Gemini पृच्छ्यते…",
+    "explainThisFestival": "इमम् उत्सवं व्याख्यातु",
+    "historicalBackground": "ऐतिहासिकपृष्ठभूमिः",
+    "significance": "महत्त्वम्",
+    "rituals": "आचाराः",
+    "recommendedActivities": "अनुशंसितकार्याणि",
+    "fastingInformation": "व्रतसूचना",
+    "fastingObserved": "व्रतं पाल्यते",
+    "noFastingObserved": "परम्परया कोऽपि व्रतं न पाल्यते"
+  },
+  "familySuggestions": {
+    "title": "👨‍👩‍👧‍👦 कुटुम्बउत्सवसूचनाः",
+    "signInPrompt": "भवतः प्रियजनानां कृते साझोत्सवसूचनाः स्मारकानि च प्राप्तुं साइन् इन् करोतु कुटुम्बपरिचयं च योजयतु।",
+    "loadFailed": "सम्प्रति कुटुम्बउत्सवसूचनाः लोड्यितुं न शक्ताः।",
+    "remindersTitle": "कुटुम्बउत्सवस्मारकानि",
+    "noProfiles": "अद्यापि कोऽपि कुटुम्बपरिचयः सुरक्षितः नास्ति।",
+    "addOne": "एकं योजयतु →",
+    "sharedCelebrationTitle": "साझोत्सवसूचनाः",
+    "suggestedActivitiesTitle": "सूचितानि कौटुम्बिककार्याणि"
+  },
+  "intelligencePanel": {
+    "title": "🔮 उत्सवबुद्धिः",
+    "subtitle": "आध्यात्मिकार्थः, पौराणिककथा, पूजासारांशश्च — उपर्युक्तमूलतत्त्वेभ्यः परम्।",
+    "loadFailed": "सम्प्रति उत्सवबुद्धिः लोड्यितुं न शक्ता।",
+    "revealButton": "✨ {{status}}",
+    "askingGemini": "Gemini पृच्छ्यते…",
+    "revealDeeper": "गभीरां बुद्धिं प्रकटयतु",
+    "spiritualMeaning": "आध्यात्मिकार्थः",
+    "mythologicalStory": "पौराणिककथा",
+    "modernPracticalMeaning": "आधुनिकव्यावहारिकार्थः",
+    "culturalSignificance": "वैज्ञानिक / सांस्कृतिकमहत्त्वम्",
+    "pujaOverview": "पूजासारांशः",
+    "thingsToAvoid": "वर्जनीयानि",
+    "aiAssistedBadge": "AI-सहायितम् — परम्पराः क्षेत्र/कुटुम्बानुसारं भिन्नाः भवितुम् अर्हन्ति"
+  },
+  "preparationChecklist": {
+    "nothingSpecified": "किमपि निर्दिष्टं नास्ति।",
+    "loadFailed": "सम्प्रति सज्जीकरणसूची लोड्यितुं न शक्ता।",
+    "sections": {
+      "preparationChecklist": "सज्जीकरणसूची",
+      "shoppingChecklist": "क्रयसूची",
+      "pujaMaterials": "पूजासामग्री",
+      "fastingPreparation": "व्रतसज्जीकरणम्",
+      "morningRoutine": "प्रातःकालिकक्रमः",
+      "eveningRitual": "सायङ्कालिकाचारः",
+      "postFestivalReflection": "उत्सवोत्तरचिन्तनम्"
+    }
+  },
+  "personalizedGuidance": {
+    "title": "🌟 वैयक्तिकउत्सवमार्गदर्शनम्",
+    "noChartMessage": "अयम् उत्सवः भवतः कृते विशेषतः कस्मात् अर्थपूर्णः इति ज्ञातुं — वृत्तिं, अर्थं, सम्बन्धान्, आरोग्यं, आध्यात्मिकं, वैयक्तिकविकासं च केन्द्रीकृत्य, भवतः स्वचित्रम् आधृत्य — भवतः कस्यचित् सुरक्षितपठनात् इमम् उत्सवम् उद्घाटयतु।",
+    "openSavedReading": "सुरक्षितं पठनम् उद्घाटयतु →",
+    "subtitle": "भवतः स्वदशा, गोचरः, भविष्यवाण्यश्च आधृत्य।",
+    "loadFailed": "सम्प्रति वैयक्तिकमार्गदर्शनं लोड्यितुं न शक्तम्।",
+    "askButton": "✨ {{status}}",
+    "whyMeaningful": "एतत् मम कृते कस्मात् अर्थपूर्णम्?",
+    "focusFields": {
+      "careerFocus": "वृत्तिः",
+      "financeFocus": "अर्थः",
+      "relationshipFocus": "सम्बन्धाः",
+      "healthFocus": "आरोग्यम्",
+      "spiritualFocus": "आध्यात्मिकम्",
+      "personalGrowthFocus": "वैयक्तिकविकासः"
+    }
+  },
+  "intelligencePage": {
+    "back": "← पृष्ठतः",
+    "title": "🔮 उत्सवबुद्धिः",
+    "subtitle": "एकस्य उत्सवस्य कृते गभीरार्थः, वैयक्तिकमार्गदर्शनम्, सज्जीकरणम्, कुटुम्बसूचनाश्च।",
+    "loadFailed": "अयम् उत्सवः लोड्यितुं न शक्तः।",
+    "loadUpcomingFailed": "कोऽपि आगामी उत्सवः लोड्यितुं न शक्तः।",
+    "noFestivalTitle": "कोऽपि उत्सवः न चयनितः",
+    "noFestivalMessage": "तस्य सम्पूर्णां बुद्धिं द्रष्टुं उत्सवपत्रात्, फलकात्, पत्रपृष्ठात् वा एकम् उत्सवम् उद्घाटयतु।",
+    "ritualFlow": "आचारक्रमः",
+    "timelineUnavailable": "अस्य उत्सवस्य कृते कालरेखा न उपलब्धा।",
+    "festivalIntelligence": "उत्सवबुद्धिः",
+    "personalizedGuidance": "वैयक्तिकमार्गदर्शनम्",
+    "festivalPreparation": "उत्सवसज्जीकरणम्",
+    "family": "कुटुम्बम्"
+  },
+  "widget": {
+    "title": "अद्यत्ववः उत्सवः",
+    "openCalendar": "उत्सवपत्रम् उद्घाटयतु →",
+    "loading": "लोड्यते…",
+    "noFestivalToday": "अद्य कोऽपि उत्सवः नास्ति।",
+    "nextFestival": "अग्रिमः उत्सवः",
+    "daysRemainingLabel": "अवशिष्टदिनानि",
+    "daysRemainingSingle": "{{count}} दिनम्",
+    "daysRemainingPlural": "{{count}} दिनानि",
+    "importance": "महत्त्वम्",
+    "preparationProgress": "सज्जीकरणप्रगतिः",
+    "preparationItemsReady": "{{count}} सूचीविषयाः सज्जाः",
+    "upcomingRitual": "आगामी आचारः",
+    "personalizedTip": "वैयक्तिकसूचना",
+    "viewIntelligence": "🔮 उत्सवबुद्धिं पश्यतु"
+  },
+  "muhurat": {
+    "bestMuhuratFor": "{{activity}} कृते श्रेष्ठं मुहूर्तम्",
+    "confidence": {
+      "high": "उच्चः",
+      "medium": "मध्यमः",
+      "low": "न्यूनः"
+    },
+    "confidenceBadge": "{{level}} विश्वासः",
+    "bestDate": "श्रेष्ठा तिथिः",
+    "bestTimeWindow": "श्रेष्ठः समयावधिः",
+    "tithi": "तिथिः",
+    "auspiciousWindow": "शुभावधिः",
+    "cautionPeriod": "सावधानावधिः (वर्जयतु)",
+    "rahuKaal": "राहुकालः",
+    "yamaganda": "यमगण्डः",
+    "gulikaKaal": "गुलिककालः",
+    "otherStrongDates": "अन्याः उत्तमाः तिथयः",
+    "askingAI": "AI पृच्छ्यते…",
+    "explainWhy": "🔮 इदं मुहूर्तं कस्मात् इति व्याख्यातु",
+    "nakshatra": "नक्षत्रम्"
+  },
+  "calendarStrip": {
+    "heading": "🎉 अस्य मासस्य उत्सवाः",
+    "viewCalendarLink": "उत्सवपञ्जिकां पश्यतु →",
+    "todayLabel": "अद्य:",
+    "loadingOverview": "उत्सवावलोकनं लोड्यते…",
+    "importanceSuffix": "महत्त्वम्"
+  }
+}

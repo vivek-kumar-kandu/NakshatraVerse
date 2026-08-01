@@ -1,0 +1,87 @@
+{
+  "categories": {
+    "system": "ಸಿಸ್ಟಮ್",
+    "reminder": "ಜ್ಞಾಪನೆ",
+    "ai": "AI",
+    "panchang": "ಪಂಚಾಂಗ",
+    "muhurat": "ಮುಹೂರ್ತ",
+    "prediction": "ಭವಿಷ್ಯವಾಣಿ",
+    "transit": "ಗೋಚಾರ",
+    "family": "ಕುಟುಂಬ",
+    "festival": "ಹಬ್ಬ",
+    "general": "ಸಾಮಾನ್ಯ"
+  },
+  "priorities": {
+    "critical": "ಅತ್ಯಂತ ಮುಖ್ಯ",
+    "high": "ಹೆಚ್ಚು",
+    "medium": "ಮಧ್ಯಮ",
+    "low": "ಕಡಿಮೆ"
+  },
+  "sort": {
+    "newest": "ಹೊಸತು ಮೊದಲು",
+    "oldest": "ಹಳೆಯದು ಮೊದಲು",
+    "priority": "ಆದ್ಯತೆ"
+  },
+  "center": {
+    "back": "← ಹಿಂದೆ",
+    "title": "🔔 ಅಧಿಸೂಚನೆ ಕೇಂದ್ರ",
+    "totalSingle": "ಒಟ್ಟು {{count}} ಅಧಿಸೂಚನೆ",
+    "totalPlural": "ಒಟ್ಟು {{count}} ಅಧಿಸೂಚನೆಗಳು",
+    "searchPlaceholder": "ಅಧಿಸೂಚನೆಗಳನ್ನು ಹುಡುಕಿ…",
+    "searchAriaLabel": "ಅಧಿಸೂಚನೆಗಳನ್ನು ಹುಡುಕಿ",
+    "filterCategoryAriaLabel": "ವರ್ಗದ ಆಧಾರದ ಮೇಲೆ ಫಿಲ್ಟರ್ ಮಾಡಿ",
+    "allCategories": "ಎಲ್ಲಾ ವರ್ಗಗಳು",
+    "filterPriorityAriaLabel": "ಆದ್ಯತೆಯ ಆಧಾರದ ಮೇಲೆ ಫಿಲ್ಟರ್ ಮಾಡಿ",
+    "allPriorities": "ಎಲ್ಲಾ ಆದ್ಯತೆಗಳು",
+    "filterReadStatusAriaLabel": "ಓದಿದ ಸ್ಥಿತಿಯ ಆಧಾರದ ಮೇಲೆ ಫಿಲ್ಟರ್ ಮಾಡಿ",
+    "all": "ಎಲ್ಲಾ",
+    "unread": "ಓದದ",
+    "read": "ಓದಿದ",
+    "sortAriaLabel": "ಅಧಿಸೂಚನೆಗಳನ್ನು ವಿಂಗಡಿಸಿ",
+    "markAllRead": "✓ ಎಲ್ಲವನ್ನೂ ಓದಿದಂತೆ ಗುರುತಿಸಿ",
+    "clearRead": "🗑️ ಓದಿದವುಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ",
+    "loadFailedTitle": "ಅಧಿಸೂಚನೆಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ",
+    "retry": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ",
+    "emptyTitle": "ಯಾವುದೇ ಅಧಿಸೂಚನೆಗಳಿಲ್ಲ",
+    "emptyMessage": "ನೀವು ಸಂಪೂರ್ಣವಾಗಿ ಅಪ್ ಟು ಡೇಟ್ ಆಗಿದ್ದೀರಿ — ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಫಿಲ್ಟರ್‌ಗೆ ಇಲ್ಲಿ ಏನೂ ಹೊಂದುವುದಿಲ್ಲ.",
+    "prevPage": "← ಹಿಂದಿನ",
+    "nextPage": "ಮುಂದಿನ →",
+    "pageOf": "ಪುಟ {{page}} / {{totalPages}}",
+    "toasts": {
+      "markReadFailed": "ಅಧಿಸೂಚನೆಯನ್ನು ಓದಿದಂತೆ ಗುರುತಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+      "markAllReadSuccess": "ಎಲ್ಲಾ ಅಧಿಸೂಚನೆಗಳನ್ನು ಓದಿದಂತೆ ಗುರುತಿಸಲಾಗಿದೆ.",
+      "markAllReadFailed": "ಎಲ್ಲವನ್ನೂ ಓದಿದಂತೆ ಗುರುತಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+      "deleteFailed": "ಅಧಿಸೂಚನೆಯನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+      "clearReadSuccess": "ಓದಿದ ಅಧಿಸೂಚನೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ.",
+      "clearReadFailed": "ಓದಿದ ಅಧಿಸೂಚನೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+    },
+    "clearDialog": {
+      "title": "ಓದಿದ ಅಧಿಸೂಚನೆಗಳನ್ನು ತೆರವುಗೊಳಿಸುವುದೇ?",
+      "message": "ಇದು ಓದಿದ ಪ್ರತಿಯೊಂದು ಅಧಿಸೂಚನೆಯನ್ನು ಅಳಿಸುತ್ತದೆ. ಇದನ್ನು ಮರಳಿ ಪಡೆಯಲಾಗುವುದಿಲ್ಲ.",
+      "confirmLabel": "ಓದಿದವುಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ",
+      "loadingLabel": "ತೆರವುಗೊಳಿಸಲಾಗುತ್ತಿದೆ…"
+    },
+    "loadFailedGeneric": "ಅಧಿಸೂಚನೆಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+  },
+  "card": {
+    "open": "ತೆರೆಯಿರಿ →",
+    "openTitle": "ತೆರೆಯಿರಿ",
+    "openAriaLabel": "ಸಂಬಂಧಿತ ಮಾಡ್ಯೂಲ್ ಅನ್ನು ತೆರೆಯಿರಿ",
+    "markReadTitle": "ಓದಿದಂತೆ ಗುರುತಿಸಿ",
+    "markReadLabel": "✓ ಓದಿದೆ",
+    "deleteTitle": "ಅಧಿಸೂಚನೆಯನ್ನು ಅಳಿಸಿ",
+    "deleteAriaLabel": "ಅಧಿಸೂಚನೆಯನ್ನು ಅಳಿಸಿ"
+  },
+  "group": {
+    "updateSingle": "{{count}} ನವೀಕರಣ",
+    "updatePlural": "{{count}} ನವೀಕರಣಗಳು",
+    "unreadBadge": "{{count}} ಓದದ"
+  },
+  "widget": {
+    "title": "🔔 ಅಧಿಸೂಚನೆಗಳು",
+    "unreadCount": "{{count}} ಓದದ",
+    "loadFailed": "ಅಧಿಸೂಚನೆಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "emptyMessage": "ಇನ್ನೂ ಯಾವುದೇ ಅಧಿಸೂಚನೆಗಳಿಲ್ಲ — ನೀವು ಸಂಪೂರ್ಣವಾಗಿ ಅಪ್ ಟು ಡೇಟ್ ಆಗಿದ್ದೀರಿ.",
+    "openCenter": "ಅಧಿಸೂಚನೆ ಕೇಂದ್ರವನ್ನು ತೆರೆಯಿರಿ →"
+  }
+}

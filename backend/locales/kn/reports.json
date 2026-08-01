@@ -1,0 +1,6 @@
+{
+  "notFound": "వరది సిగలిల్ల.",
+  "fieldsRequired": "వరది సెవ్ మాడలు userData, chart, మత్తు report ఎల్లా అగత్యవిదె.",
+  "pdfFieldsRequired": "PDF రచిసలు userData, chart, మత్తు report ఎల్లా అగత్యవిదె.",
+  "matchingPdfFieldsRequired": "PDF రచిసలు ఎల్లా మాహితిగళు అగత్యవిదె."
+}

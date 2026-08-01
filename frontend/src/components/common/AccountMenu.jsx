@@ -1,5 +1,12 @@
 import { useState, useRef, useEffect, useCallback } from "react";
+<<<<<<< HEAD
 import { useAuth } from "../../context/AuthContext.jsx";
+=======
+import { useTranslation } from "react-i18next";
+import { useAuth } from "../../context/AuthContext.jsx";
+import { useLanguage } from "../../context/LanguageContext.jsx";
+import { formatDate as formatDateIntl } from "../../utils/localeFormat.js";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { PURPLE_GRADIENT } from "../../constants/astrology.js";
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -30,6 +37,7 @@ function initials(name) {
   return value || "✦";
 }
 
+<<<<<<< HEAD
 function formatDate(value) {
   if (!value) return "—";
   try {
@@ -37,6 +45,11 @@ function formatDate(value) {
   } catch {
     return "—";
   }
+=======
+function formatDate(value, lang) {
+  if (!value) return "—";
+  return formatDateIntl(value, lang, { year: "numeric", month: "short", day: "numeric" });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 // Circular avatar: shows the uploaded profile photo when the account has
@@ -72,6 +85,7 @@ function Avatar({ user, size = 34 }) {
 // "reports" (SavedReportsPage.jsx), "settings" (SettingsPage.jsx) — with
 // no overlap between them. See the Dashboard & Navigation Cleanup notes in
 // those files.
+<<<<<<< HEAD
 const MENU_ITEMS = (onNavigate, goHelp) => [
   { key: "profile", icon: "👤", label: "My Profile", onSelect: () => onNavigate("profile") },
   { key: "dashboard", icon: "📊", label: "Dashboard", onSelect: () => onNavigate("dashboard") },
@@ -81,6 +95,19 @@ const MENU_ITEMS = (onNavigate, goHelp) => [
 ];
 
 function AccountMenu({ onNavigate, onLogout }) {
+=======
+const MENU_ITEMS = (t, onNavigate, goHelp) => [
+  {key: "profile", icon: "👤", label: t("navigation:accountMenu.myProfile"), onSelect: () => onNavigate("profile") },
+  { key: "dashboard", icon: "📊", label: t("navigation:accountMenu.dashboard"), onSelect: () => onNavigate("dashboard") },
+  { key: "reports", icon: "📜", label: t("navigation:accountMenu.savedReports"), onSelect: () => onNavigate("reports") },
+  { key: "settings", icon: "⚙️", label: t("navigation:accountMenu.settings"), onSelect: () => onNavigate("settings") },
+  { key: "help", icon: "❓", label: t("navigation:accountMenu.helpAbout"), onSelect: goHelp },
+];
+
+function AccountMenu({ onNavigate, onLogout }) {
+  const { t } = useTranslation(["navigation"]);
+  const { language } = useLanguage();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const { user, loading, logout } = useAuth();
   const [open, setOpen] = useState(false);
   const handleLogout = onLogout || logout;
@@ -107,7 +134,11 @@ function AccountMenu({ onNavigate, onLogout }) {
     onNavigate("dashboard");
   }, [onNavigate]);
 
+<<<<<<< HEAD
   const items = MENU_ITEMS(onNavigate, goHelp);
+=======
+  const items = MENU_ITEMS(t, onNavigate, goHelp);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   // Click-outside + Escape-to-close, same pattern as ConfirmDialog.jsx
   // (mousedown listener + keydown listener, both removed on close/unmount).
@@ -163,17 +194,28 @@ function AccountMenu({ onNavigate, onLogout }) {
 
   if (!user) {
     return (
+<<<<<<< HEAD
       <div style={{ position: "fixed", top: 14, right: 14, zIndex: 1000, fontFamily: "Inter,sans-serif" }}>
         <div style={{ display: "flex", gap: 8 }}>
           <button onClick={() => onNavigate("login")} className="pill-btn account-focusable" style={{ ...pillStyle, padding: "8px 16px", color: "var(--nv-text-secondary, rgba(200,160,255,0.85))" }}>
             Sign In
+=======
+      <div style={{ position: "fixed", top: 14, insetInlineEnd: 14, zIndex: 1000, fontFamily: "Inter,sans-serif" }}>
+        <div style={{ display: "flex", gap: 8 }}>
+          <button onClick={() => onNavigate("login")} className="pill-btn account-focusable" style={{ ...pillStyle, padding: "8px 16px", color: "var(--nv-text-secondary, rgba(200,160,255,0.85))" }}>
+            {t("navigation:accountMenu.signIn", "Sign In")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
           <button
             onClick={() => onNavigate("signup")}
             className="pill-btn account-focusable"
             style={{ ...pillStyle, padding: "8px 16px", background: "var(--nv-accent-gradient, linear-gradient(135deg, #7b2fff, #4a00a0))", border: "1px solid rgba(180,120,255,0.45)", color: "var(--nv-text-on-accent, #fff)", fontWeight: 600 }}
           >
+<<<<<<< HEAD
             Sign Up
+=======
+            {t("navigation:accountMenu.signUp", "Sign Up")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </button>
         </div>
       </div>
@@ -181,7 +223,11 @@ function AccountMenu({ onNavigate, onLogout }) {
   }
 
   return (
+<<<<<<< HEAD
     <div style={{ position: "fixed", top: 14, right: 14, zIndex: 1000, fontFamily: "Inter,sans-serif" }}>
+=======
+    <div style={{ position: "fixed", top: 14, insetInlineEnd: 14, zIndex: 1000, fontFamily: "Inter,sans-serif" }}>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       <div ref={containerRef} style={{ position: "relative" }}>
         <button
           ref={triggerRef}
@@ -190,7 +236,11 @@ function AccountMenu({ onNavigate, onLogout }) {
           style={pillStyle}
           aria-haspopup="menu"
           aria-expanded={open}
+<<<<<<< HEAD
           aria-label={`Account menu for ${user.name}`}
+=======
+          aria-label={t("navigation:accountMenu.triggerLabel", { name: user.name })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         >
           <Avatar user={user} size={30} />
           <span style={{ maxWidth: 120, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{user.name}</span>
@@ -201,9 +251,15 @@ function AccountMenu({ onNavigate, onLogout }) {
           <div
             className="dropdown-panel account-dropdown"
             role="menu"
+<<<<<<< HEAD
             aria-label="Account"
             style={{
               position: "absolute", top: "calc(100% + 10px)", right: 0, width: "min(280px, 88vw)",
+=======
+            aria-label={t("navigation:accountMenu.menuLabel")}
+            style={{
+              position: "absolute", top: "calc(100% + 10px)", insetInlineEnd: 0, width: "min(280px, 88vw)",
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               background: "var(--nv-surface-strong, rgba(18,0,38,0.94))", backdropFilter: "blur(var(--nv-glass-blur, 20px))", WebkitBackdropFilter: "blur(var(--nv-glass-blur, 20px))",
               border: "1px solid var(--nv-surface-border, rgba(180,120,255,0.25))", borderRadius: 16, padding: 8,
               boxShadow: "var(--nv-shadow-xl, 0 12px 40px rgba(0,0,0,0.45))", overflow: "hidden",
@@ -220,7 +276,11 @@ function AccountMenu({ onNavigate, onLogout }) {
                   {user.email}
                 </div>
                 <div style={{ fontSize: 11, color: "var(--nv-text-faint, rgba(200,160,255,0.45))", marginTop: 2 }}>
+<<<<<<< HEAD
                   Member since {formatDate(user.createdAt)}
+=======
+                  {t("navigation:accountMenu.memberSince", { date: formatDate(user.createdAt, language) })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </div>
               </div>
             </div>
@@ -259,7 +319,11 @@ function AccountMenu({ onNavigate, onLogout }) {
               }}
             >
               <span aria-hidden="true">🚪</span>
+<<<<<<< HEAD
               Logout
+=======
+              {t("navigation:accountMenu.logout", "Logout")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </div>
         )}

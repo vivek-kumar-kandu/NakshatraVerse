@@ -1,0 +1,6 @@
+{
+  "notFound": "റിപ്പോർട്ട് കണ്ടെത്തിയില്ല.",
+  "fieldsRequired": "റിപ്പോർട്ട് സേവ് ചെയ്യാൻ userData, chart, report എന്നിവയെല്ലാം ആവശ്യമാണ്.",
+  "pdfFieldsRequired": "PDF ജനറേറ്റ് ചെയ്യാൻ userData, chart, report എന്നിവയെല്ലാം ആവശ്യമാണ്.",
+  "matchingPdfFieldsRequired": "PDF ജനറേറ്റ് ചെയ്യാൻ എല്ലാ വിവരങ്ങളും ആവശ്യമാണ്."
+}

@@ -1,6 +1,11 @@
 import { memo } from "react";
 import GlassCard from "../common/GlassCard.jsx";
 import Badge from "../common/Badge.jsx";
+<<<<<<< HEAD
+=======
+import { useLanguage } from "../../context/LanguageContext.jsx";
+import { formatDate as formatDateIntl } from "../../utils/localeFormat.js";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // FestivalCard (V4.5 Phase 1B — Festival Frontend Integration)
@@ -12,6 +17,7 @@ import Badge from "../common/Badge.jsx";
 // ─────────────────────────────────────────────────────────────────────────
 const IMPORTANCE_COLOR = { High: "#ffd700", Medium: "#bf7fff", Low: "#9dc9ff" };
 
+<<<<<<< HEAD
 function formatDate(value) {
   if (!value) return "";
   try {
@@ -24,6 +30,17 @@ function formatDate(value) {
 }
 
 function FestivalCard({ festival, onOpen, compact = false }) {
+=======
+function formatDate(value, lang) {
+  if (!value) return "";
+  return formatDateIntl(`${value}T00:00:00Z`, lang, {
+    weekday: "short", year: "numeric", month: "short", day: "numeric", timeZone: "UTC",
+  });
+}
+
+function FestivalCard({ festival, onOpen, compact = false }) {
+  const { language } = useLanguage();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   if (!festival) return null;
   const importanceColor = IMPORTANCE_COLOR[festival.importance] || "#bf7fff";
 
@@ -41,7 +58,11 @@ function FestivalCard({ festival, onOpen, compact = false }) {
               {festival.name}
             </h3>
             <p style={{ margin: "3px 0 0", fontSize: 11.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
+<<<<<<< HEAD
               {formatDate(festival.date)}{festival.endDate && festival.endDate !== festival.date ? ` – ${formatDate(festival.endDate)}` : ""}
+=======
+              {formatDate(festival.date, language)}{festival.endDate && festival.endDate !== festival.date ? ` – ${formatDate(festival.endDate, language)}` : ""}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </p>
           </div>
           <div style={{ display: "flex", gap: 6, flexWrap: "wrap", flexShrink: 0 }}>

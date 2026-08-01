@@ -37,7 +37,11 @@ function decode(req) {
 export function requireAuth(req, res, next) {
   const user = decode(req);
   if (!user) {
+<<<<<<< HEAD
     return res.status(401).json({ error: "Authentication required. Please sign in." });
+=======
+    return res.status(401).json({ error: req.t ? req.t("auth.authRequired") : "Authentication required. Please sign in." });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
   req.user = user;
   next();

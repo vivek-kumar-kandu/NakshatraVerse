@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { useMemo, useState } from "react";
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
@@ -31,7 +35,11 @@ import { readPreferences } from "../utils/settingsStorage.js";
 // ─────────────────────────────────────────────────────────────────────────
 
 const PERIODS = [
+<<<<<<< HEAD
   { id: "daily", label: "Daily", icon: "🌅" },
+=======
+  {id: "daily", label: "Daily", icon: "🌅" },
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   { id: "weekly", label: "Weekly", icon: "🌓" },
   { id: "monthly", label: "Monthly", icon: "🌕" },
 ];
@@ -68,7 +76,11 @@ function HoroscopePage({ userData, chart, report, onBack, onOpenAssistant }) {
         <div style={{ position: "relative", zIndex: 1, maxWidth: 720, margin: "0 auto", padding: "84px 16px 60px" }}>
           <EmptyState
             icon="🔮"
+<<<<<<< HEAD
             title="No reading available yet"
+=======
+            title={t("dashboard.noReadingYet", "No reading available yet")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             message="Generate or open a report first to see your personalized Horoscope Dashboard."
             actionLabel="← Back"
             onAction={onBack}
@@ -95,7 +107,11 @@ function HoroscopePage({ userData, chart, report, onBack, onOpenAssistant }) {
             ← Back
           </button>
           <div>
+<<<<<<< HEAD
             <h1 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 21, color: "var(--nv-text-primary, #f1e4ff)" }}>🔮 Horoscope Dashboard</h1>
+=======
+            <h1 style={{ margin: 0, fontFamily: "Cinzel,serif", fontSize: 21, color: "var(--nv-text-primary, #f1e4ff)" }}>{t("dashboard.horoscopeDashboard", "🔮 Horoscope Dashboard")}</h1>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             {userData?.name && (
               <p style={{ margin: "2px 0 0", fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>{userData.name}'s personalized horoscope</p>
             )}
@@ -143,7 +159,11 @@ function HoroscopePage({ userData, chart, report, onBack, onOpenAssistant }) {
               ))}
             </div>
           ) : (
+<<<<<<< HEAD
             <EmptyState icon="🌓" title="No weekly focus available" message="Predictions will appear here once your chart's Dasha period is calculated." compact />
+=======
+            <EmptyState icon="🌓" title={t("dashboard.noWeeklyFocus", "No weekly focus available")} message="Predictions will appear here once your chart's Dasha period is calculated." compact />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           )
         )}
 
@@ -157,7 +177,11 @@ function HoroscopePage({ userData, chart, report, onBack, onOpenAssistant }) {
               ))}
             </div>
           ) : (
+<<<<<<< HEAD
             <EmptyState icon="🌕" title="No monthly segments this month" message="Your 1-year Dasha timeline doesn't have a segment change falling within the current calendar month." compact />
+=======
+            <EmptyState icon="🌕" title={t("dashboard.noMonthlySegments", "No monthly segments this month")} message="Your 1-year Dasha timeline doesn't have a segment change falling within the current calendar month." compact />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           )
         )}
       </div>

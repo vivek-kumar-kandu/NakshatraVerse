@@ -5,6 +5,7 @@
 // services/reports/reportService.js — this file only stores/retrieves
 // records by id/userId.
 // ─────────────────────────────────────────────────────────────────────────
+<<<<<<< HEAD
 import path from "node:path";
 import config from "../config/env.js";
 import JsonFileStore from "../db/jsonFileStore.js";
@@ -28,6 +29,26 @@ export function findByUser(userId) {
 
 export async function remove(id) {
   return store.remove(id);
+=======
+import Report from "../models/Report.model.js";
+
+export async function create(record) {
+  return await Report.create(record);
+}
+
+export async function findById(id) {
+  return await Report.findById(id);
+}
+
+export async function findByUser(userId) {
+  return await Report.find({ userId }).sort({
+    createdAt: -1,
+  });
+}
+
+export async function remove(id) {
+  return await Report.findByIdAndDelete(id);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 export default { create, findById, findByUser, remove };

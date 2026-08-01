@@ -1,0 +1,165 @@
+{
+  "typeFilters": {
+    "All": "બધા",
+    "Festival": "તહેવાર",
+    "Vrat": "વ્રત"
+  },
+  "page": {
+    "back": "← પાછા",
+    "title": "🎉 તહેવાર કેલેન્ડર",
+    "subtitle": "બેકએન્ડ દ્વારા ગણતરી કરેલા હિન્દુ તહેવારો અને વ્રત — તારીખો, રીતિરિવાજો, અને મહત્વ.",
+    "tabs": {
+      "today": "આજે",
+      "upcoming": "આગામી",
+      "browse": "બધા બ્રાઉઝ કરો"
+    },
+    "todayLoadFailed": "આજનો તહેવાર લોડ થઈ શક્યો નહીં.",
+    "upcomingLoadFailed": "આગામી તહેવારો લોડ થઈ શક્યા નહીં.",
+    "yearLoadFailed": "તહેવાર કેલેન્ડર લોડ થઈ શક્યું નહીં.",
+    "openFestivalFailed": "તે તહેવાર ખોલી શકાયો નહીં.",
+    "todaysFestivalsHeading": "આજનો તહેવાર{{plural}}",
+    "noFestivalTodayTitle": "આજે કોઈ તહેવાર નથી",
+    "noFestivalTodayMessage": "આજની તારીખે કોઈ ઉજવાતો તહેવાર કે વ્રત નથી.",
+    "nextUp": "આગળ શું છે",
+    "daysRemainingToday": "આજે",
+    "daysRemainingSingle": "{{count}} દિવસમાં",
+    "daysRemainingPlural": "{{count}} દિવસોમાં",
+    "noUpcomingTitle": "કોઈ આગામી તહેવારો મળ્યા નથી",
+    "noUpcomingMessage": "આગામી 60 દિવસમાં કંઈ મળ્યું નથી.",
+    "searchPlaceholder": "તહેવારો શોધો…",
+    "searchAriaLabel": "તહેવારો શોધો",
+    "typeFilterAriaLabel": "પ્રકાર પ્રમાણે ફિલ્ટર કરો",
+    "yearAriaLabel": "વર્ષ પસંદ કરો",
+    "noMatchTitle": "કોઈ તહેવાર મેળ ખાતો નથી",
+    "noMatchMessage": "અલગ શોધ શબ્દ અથવા પ્રકાર ફિલ્ટર અજમાવો.",
+    "explainFailed": "AI સમજૂતી હાલમાં ઉપલબ્ધ નથી."
+  },
+  "detailCard": {
+    "importanceSuffix": "{{importance}} મહત્વ",
+    "notSpecified": "નિર્દિષ્ટ નથી.",
+    "explainButton": "✨ {{status}}",
+    "askingGemini": "Gemini ને પૂછી રહ્યા છીએ…",
+    "explainThisFestival": "આ તહેવાર સમજાવો",
+    "historicalBackground": "ઐતિહાસિક પૃષ્ઠભૂમિ",
+    "significance": "મહત્વ",
+    "rituals": "રીતિરિવાજો",
+    "recommendedActivities": "ભલામણ કરેલ પ્રવૃત્તિઓ",
+    "fastingInformation": "ઉપવાસ માહિતી",
+    "fastingObserved": "ઉપવાસ રાખવામાં આવે છે",
+    "noFastingObserved": "પરંપરાગત રીતે કોઈ ઉપવાસ રાખવામાં આવતો નથી"
+  },
+  "familySuggestions": {
+    "title": "👨‍👩‍👧‍👦 કુટુંબ તહેવાર સૂચનો",
+    "signInPrompt": "તમારા પ્રિયજનો માટે વહેંચાયેલ ઉજવણી સૂચનો અને રિમાઇન્ડર મેળવવા માટે સાઇન ઇન કરો અને કુટુંબ પ્રોફાઇલ ઉમેરો.",
+    "loadFailed": "હાલમાં કુટુંબ તહેવાર સૂચનો લોડ થઈ શક્યા નથી.",
+    "remindersTitle": "કુટુંબ તહેવાર રિમાઇન્ડર",
+    "noProfiles": "હજુ સુધી કોઈ કુટુંબ પ્રોફાઇલ સાચવેલ નથી.",
+    "addOne": "એક ઉમેરો →",
+    "sharedCelebrationTitle": "વહેંચાયેલ ઉજવણી સૂચનો",
+    "suggestedActivitiesTitle": "સૂચવેલ કૌટુંબિક પ્રવૃત્તિઓ"
+  },
+  "intelligencePanel": {
+    "title": "🔮 તહેવાર બુદ્ધિમત્તા",
+    "subtitle": "આધ્યાત્મિક અર્થ, પૌરાણિક કથા, અને પૂજા વિહંગાવલોકન — ઉપરની મૂળભૂત બાબતોથી આગળ.",
+    "loadFailed": "હાલમાં તહેવાર બુદ્ધિમત્તા લોડ થઈ શકી નથી.",
+    "revealButton": "✨ {{status}}",
+    "askingGemini": "Gemini ને પૂછી રહ્યા છીએ…",
+    "revealDeeper": "ઊંડી બુદ્ધિમત્તા જાહેર કરો",
+    "spiritualMeaning": "આધ્યાત્મિક અર્થ",
+    "mythologicalStory": "પૌરાણિક કથા",
+    "modernPracticalMeaning": "આધુનિક વ્યવહારુ અર્થ",
+    "culturalSignificance": "વૈજ્ઞાનિક / સાંસ્કૃતિક મહત્વ",
+    "pujaOverview": "પૂજા વિહંગાવલોકન",
+    "thingsToAvoid": "ટાળવા જેવી બાબતો",
+    "aiAssistedBadge": "AI-સહાયિત — પરંપરાઓ પ્રદેશ/કુટુંબ પ્રમાણે અલગ હોઈ શકે છે"
+  },
+  "preparationChecklist": {
+    "nothingSpecified": "કંઈ નિર્દિષ્ટ નથી.",
+    "loadFailed": "હાલમાં તૈયારી ચેકલિસ્ટ લોડ થઈ શકી નથી.",
+    "sections": {
+      "preparationChecklist": "તૈયારી ચેકલિસ્ટ",
+      "shoppingChecklist": "ખરીદી ચેકલિસ્ટ",
+      "pujaMaterials": "પૂજા સામગ્રી",
+      "fastingPreparation": "ઉપવાસની તૈયારી",
+      "morningRoutine": "સવારની દિનચર્યા",
+      "eveningRitual": "સાંજની વિધિ",
+      "postFestivalReflection": "તહેવાર પછીનું ચિંતન"
+    }
+  },
+  "personalizedGuidance": {
+    "title": "🌟 વ્યક્તિગત તહેવાર માર્ગદર્શન",
+    "noChartMessage": "આ તહેવાર તમારા માટે ખાસ કરીને શા માટે અર્થપૂર્ણ છે તે જોવા માટે — કારકિર્દી, નાણાં, સંબંધો, આરોગ્ય, આધ્યાત્મિક, અને વ્યક્તિગત વિકાસ પર કેન્દ્રિત, તમારા પોતાના ચાર્ટ પર આધારિત — તમારા કોઈ સાચવેલા રીડિંગમાંથી આ તહેવાર ખોલો.",
+    "openSavedReading": "સાચવેલું રીડિંગ ખોલો →",
+    "subtitle": "તમારી પોતાની દશા, ગોચર, અને ભવિષ્યવાણીઓ પર આધારિત.",
+    "loadFailed": "હાલમાં વ્યક્તિગત માર્ગદર્શન લોડ થઈ શક્યું નથી.",
+    "askButton": "✨ {{status}}",
+    "whyMeaningful": "આ મારા માટે અર્થપૂર્ણ કેમ છે?",
+    "focusFields": {
+      "careerFocus": "કારકિર્દી",
+      "financeFocus": "નાણાં",
+      "relationshipFocus": "સંબંધો",
+      "healthFocus": "આરોગ્ય",
+      "spiritualFocus": "આધ્યાત્મિક",
+      "personalGrowthFocus": "વ્યક્તિગત વિકાસ"
+    }
+  },
+  "intelligencePage": {
+    "back": "← પાછા",
+    "title": "🔮 તહેવાર બુદ્ધિમત્તા",
+    "subtitle": "એક તહેવાર માટે ઊંડો અર્થ, વ્યક્તિગત માર્ગદર્શન, તૈયારી, અને કુટુંબ સૂચનો.",
+    "loadFailed": "આ તહેવાર લોડ થઈ શક્યો નહીં.",
+    "loadUpcomingFailed": "કોઈ આગામી તહેવાર લોડ થઈ શક્યો નહીં.",
+    "noFestivalTitle": "કોઈ તહેવાર પસંદ કરેલ નથી",
+    "noFestivalMessage": "તેની સંપૂર્ણ બુદ્ધિમત્તા જોવા માટે તહેવાર કેલેન્ડર, ડેશબોર્ડ, અથવા કેલેન્ડર પેજ પરથી એક તહેવાર ખોલો.",
+    "ritualFlow": "વિધિ ક્રમ",
+    "timelineUnavailable": "આ તહેવાર માટે ટાઇમલાઇન ઉપલબ્ધ નથી.",
+    "festivalIntelligence": "તહેવાર બુદ્ધિમત્તા",
+    "personalizedGuidance": "વ્યક્તિગત માર્ગદર્શન",
+    "festivalPreparation": "તહેવારની તૈયારી",
+    "family": "કુટુંબ"
+  },
+  "widget": {
+    "title": "આજનો તહેવાર",
+    "openCalendar": "તહેવાર કેલેન્ડર ખોલો →",
+    "loading": "લોડ થઈ રહ્યું છે…",
+    "noFestivalToday": "આજે કોઈ તહેવાર નથી.",
+    "nextFestival": "આગામી તહેવાર",
+    "daysRemainingLabel": "બાકી દિવસો",
+    "daysRemainingSingle": "{{count}} દિવસ",
+    "daysRemainingPlural": "{{count}} દિવસો",
+    "importance": "મહત્વ",
+    "preparationProgress": "તૈયારી પ્રગતિ",
+    "preparationItemsReady": "{{count}} ચેકલિસ્ટ આઇટમ તૈયાર",
+    "upcomingRitual": "આગામી વિધિ",
+    "personalizedTip": "વ્યક્તિગત ટિપ",
+    "viewIntelligence": "🔮 તહેવાર બુદ્ધિમત્તા જુઓ"
+  },
+  "muhurat": {
+    "bestMuhuratFor": "{{activity}} માટે શ્રેષ્ઠ મુહૂર્ત",
+    "confidence": {
+      "high": "ઉચ્ચ",
+      "medium": "મધ્યમ",
+      "low": "ઓછું"
+    },
+    "confidenceBadge": "{{level}} વિશ્વાસ",
+    "bestDate": "શ્રેષ્ઠ તારીખ",
+    "bestTimeWindow": "શ્રેષ્ઠ સમય વિન્ડો",
+    "tithi": "તિથિ",
+    "auspiciousWindow": "શુભ સમયગાળો",
+    "cautionPeriod": "સાવચેતી સમયગાળો (ટાળો)",
+    "rahuKaal": "રાહુ કાળ",
+    "yamaganda": "યમગંડ",
+    "gulikaKaal": "ગુલિક કાળ",
+    "otherStrongDates": "અન્ય સારી તારીખો",
+    "askingAI": "AI ને પૂછવામાં આવી રહ્યું છે…",
+    "explainWhy": "🔮 આ મુહૂર્ત શા માટે તે સમજાવો",
+    "nakshatra": "નક્ષત્ર"
+  },
+  "calendarStrip": {
+    "heading": "🎉 આ મહિનાના તહેવારો",
+    "viewCalendarLink": "તહેવાર કેલેન્ડર જુઓ →",
+    "todayLabel": "આજે:",
+    "loadingOverview": "તહેવાર ઝાંખી લોડ થઈ રહી છે…",
+    "importanceSuffix": "મહત્વ"
+  }
+}

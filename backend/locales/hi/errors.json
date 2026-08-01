@@ -1,0 +1,16 @@
+{
+  "notFound": "कोई मार्ग नहीं {{method}} {{path}}",
+  "malformedJson": "अनुरोध मुख्य भाग में विकृत JSON।",
+  "bodyTooLarge": "अनुरोध का मुख्य भाग बहुत बड़ा है।",
+  "internalError": "आंतरिक सर्वर त्रुटि।",
+  "internalErrorProduction": "आंतरिक सर्वर त्रुटि। कृपया पुनः प्रयास करें, और समस्या बनी रहने पर सहायता से संपर्क करें।",
+  "invalidRequest": "अमान्य अनुरोध: {{errors}}",
+  "serviceUnavailable": "{{feature}} अभी उपलब्ध नहीं है।",
+  "invalidProfile": "अमान्य प्रोफ़ाइल: {{errors}}",
+  "chooseTwoDifferentProfiles": "तुलना करने के लिए दो अलग-अलग प्रोफ़ाइल चुनें।",
+  "comparisonError": "इन दोनों प्रोफ़ाइलों की तुलना करते समय आंतरिक सर्वर त्रुटि।",
+  "internalErrorWhile": "{{action}} करते समय आंतरिक सर्वर त्रुटि।",
+  "occurrenceNotFound": "वर्ष {{year}} के लिए \"{{key}}\" की कोई घटना नहीं मिली।",
+  "missingApiKey": "सर्वर में API कुंजी गायब है। backend/.env में GOOGLE_API_KEY सेट करें।",
+  "tooManyRequests": "बहुत सारे अनुरोध। कृपया धीमे हो जाएं और शीघ्र ही पुनः प्रयास करें।"
+}

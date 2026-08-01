@@ -1,0 +1,169 @@
+{
+  "types": {
+    "planet": "গ্ৰহ",
+    "house": "ভাৱ",
+    "sign": "ৰাশি",
+    "yoga": "যোগ",
+    "dosha": "দোষ",
+    "nakshatra": "নক্ষত্ৰ",
+    "ascendant": "লগ্ন",
+    "aspect": "দৃষ্টি"
+  },
+  "typeSingular": {
+    "planet": "গ্ৰহ",
+    "house": "ভাৱ",
+    "sign": "ৰাশি",
+    "yoga": "যোগ",
+    "dosha": "দোষ",
+    "nakshatra": "নক্ষত্ৰ",
+    "ascendant": "লগ্ন",
+    "aspect": "দৃষ্টি"
+  },
+  "header": {
+    "title": "কুণ্ডলী এক্সপ্লʼৰাৰ",
+    "breadcrumb": "{{type}} · {{item}}",
+    "notAvailable": "—",
+    "selectPrompt": "অন্বেষণ কৰিবলৈ এটা বস্তু বাছক"
+  },
+  "mainPanel": {
+    "loadingPanel": "বিৱৰণ পেনেল লোড হৈ আছে…",
+    "emptyTitle": "এতিয়ালৈকে একো বাছি লোৱা হোৱা নাই",
+    "emptyMessage": "ইয়াত অন্বেষণ কৰিবলৈ পেনেলৰ পৰা গ্ৰহ, ভাৱ, ৰাশি, যোগ, দোষ, নক্ষত্ৰ, লগ্ন, বা দৃষ্টি বাছক।",
+    "regionAriaLabel": "এক্সপ্লʼৰাৰ বিৱৰণ পেনেল"
+  },
+  "sidePanel": {
+    "treeAriaLabel": "এক্সপ্লʼৰাৰ নিৰ্বাচন শ্ৰেণীসমূহ",
+    "categoryAriaLabel": "{{label}} ({{count}})",
+    "housePrefix": "ভাৱ {{num}}",
+    "lordBadge": "স্বামী: {{lord}}",
+    "aspectCountSingle": "{{count}} দৃষ্টি",
+    "aspectCountPlural": "{{count}} দৃষ্টিসমূহ",
+    "netInfluence": "নীট {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI ব্যাখ্যা",
+    "prompt": "{{label}} ৰ এটা Gemini-চালিত ব্যাখ্যা পাওক, যিটো সম্পূৰ্ণৰূপে এই চাৰ্টৰ নিজৰ বেকএণ্ড-গণনা কৰা তথ্যৰ ওপৰত ভিত্তি কৰি।",
+    "explainAriaLabel": "{{label}} ক AI ৰ দ্বাৰা ব্যাখ্যা কৰক",
+    "explainButton": "✨ AI ৰ দ্বাৰা ব্যাখ্যা কৰক",
+    "generatingLabel": "{{label}} ৰ বাবে AI ব্যাখ্যা সৃষ্টি কৰা হৈছে",
+    "loadFailed": "এক্সপ্লʼৰাৰ AI বৰ্তমান উপলব্ধ নহয়।",
+    "tryAgain": "↻ পুনৰ চেষ্টা কৰক"
+  },
+  "common": {
+    "relatedPredictions": "সম্পৰ্কিত ভৱিষ্যদ্বাণীসমূহ",
+    "relatedRemedies": "সম্পৰ্কিত উপায়সমূহ",
+    "noLinkedPredictionsTitle": "কোনো সংযুক্ত ভৱিষ্যদ্বাণী নাই",
+    "noLinkedRemediesTitle": "কোনো সংযুক্ত উপায় নাই",
+    "noRemediesTitle": "কোনো উপায় উপলব্ধ নাই"
+  },
+  "planet": {
+    "notAvailableTitle": "গ্ৰহৰ তথ্য উপলব্ধ নাই",
+    "notAvailableMessage": "এই চাৰ্টত এতিয়ালৈকে এই গ্ৰহৰ বাবে গণনা কৰা স্থান তথ্য নাই।",
+    "positionDignityHeading": "স্থান আৰু মৰ্যাদা",
+    "houseLabel": "ভাৱ",
+    "signLabel": "ৰাশি",
+    "retrogradeBadge": "বক্ৰী",
+    "combustBadge": "অস্ত",
+    "functionallyNature": "কাৰ্যকৰীভাৱে {{nature}}",
+    "friendshipSignSuffix": "{{relation}} ৰাশি",
+    "adjustedStrengthScore": "সামঞ্জস্যপূৰ্ণ শক্তি স্ক’ৰ",
+    "foundationShadbala": "মূল ষড়বল",
+    "notAvailableValue": "—",
+    "strengthUnavailable": "এই চাৰ্টৰ বাবে বিতংভাৱে শক্তি স্ক’ৰিং উপলব্ধ নহয়।",
+    "noLinkedPredictionsMessage": "বৰ্তমান কোনো শ্ৰেণী ভৱিষ্যদ্বাণীয়ে {{planet}} ক ইয়াৰ মুখ্য বা সহায়ক গ্ৰহ বুলি উল্লেখ কৰা নাই।",
+    "noLinkedRemediesMessage": "এই চাৰ্টৰ ভৱিষ্যদ্বাণীৰ জৰিয়তে বৰ্তমান {{planet}} ৰ সৈতে কোনো উপায় সংযুক্ত নাই।"
+  },
+  "house": {
+    "notAvailableTitle": "ভাৱৰ তথ্য উপলব্ধ নাই",
+    "notAvailableMessage": "ইয়াত অন্বেষণ কৰিবলৈ পেনেলৰ পৰা এটা ভাৱ বাছক।",
+    "signBadge": "ৰাশি: {{sign}}",
+    "lordBadge": "স্বামী: {{lord}}",
+    "meaning": "অৰ্থ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "স্থিত গ্ৰহসমূহ",
+    "noOccupants": "বৰ্তমান এই ভাৱত কোনো গ্ৰহ স্থিত নাই।",
+    "noLinkedPredictionsMessage": "বৰ্তমান কোনো শ্ৰেণী ভৱিষ্যদ্বাণীয়ে ভাৱ {{house}} ক সহায়ক ভাৱ বুলি উল্লেখ কৰা নাই।",
+    "noLinkedRemediesMessage": "এই চাৰ্টৰ ভৱিষ্যদ্বাণীৰ জৰিয়তে বৰ্তমান ভাৱ {{house}} ৰ সৈতে কোনো উপায় সংযুক্ত নাই।",
+    "itemLabel": "ভাৱ {{num}}"
+  },
+  "sign": {
+    "notAvailableTitle": "ৰাশিৰ তথ্য উপলব্ধ নাই",
+    "notAvailableMessage": "ইয়াত অন্বেষণ কৰিবলৈ পেনেলৰ পৰা এটা ৰাশি বাছক।",
+    "lordBadge": "স্বামী: {{lord}}",
+    "lagnaBadge": "এই চাৰ্টৰ লগ্ন",
+    "rulingPlanet": "শাসক গ্ৰহ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "এই ৰাশিত বৰ্তমানৰ গ্ৰহসমূহ",
+    "noOccupants": "এই চাৰ্টত বৰ্তমান এই ৰাশিত কোনো গ্ৰহ স্থিত নাই।",
+    "noLinkedPredictionsMessage": "বৰ্তমান কোনো শ্ৰেণী ভৱিষ্যদ্বাণী এই ৰাশিত স্থিত কোনো গ্ৰহৰ সৈতে সম্পৰ্কিত নাই।"
+  },
+  "yoga": {
+    "notFoundTitle": "যোগ পোৱা নগ’ল",
+    "notFoundMessage": "এই যোগটো এই চাৰ্টৰ বাবে বৰ্তমান চিনাক্ত কৰা ছেটৰ অংশ নহয়।",
+    "ruleMatchedBadge": "নিয়ম মিলিল: {{name}}",
+    "contributingPlanetsHeading": "অৱদান দিয়া গ্ৰহসমূহ",
+    "noContributingPlanets": "বৰ্তমান কোনো শ্ৰেণী ভৱিষ্যদ্বাণীয়ে এই যোগৰ কৃতিত্ব নিৰ্দিষ্ট গ্ৰহলৈ দিয়া নাই।",
+    "confidenceEffectsTitle": "বিশ্বাস আৰু প্ৰভাৱসমূহ (সংযুক্ত ভৱিষ্যদ্বাণীৰ পৰা)",
+    "noLinkedPredictionsMessage": "বৰ্তমান কোনো শ্ৰেণী ভৱিষ্যদ্বাণীয়ে এই যোগক সহায়ক কাৰক বুলি উল্লেখ কৰা নাই।"
+  },
+  "dosha": {
+    "notFoundTitle": "দোষ পোৱা নগ’ল",
+    "notFoundMessage": "এই দোষটো এই চাৰ্টৰ বাবে বৰ্তমান চিনাক্ত কৰা ছেটৰ অংশ নহয়।",
+    "matchingRuleBadge": "মিলা নিয়ম: {{name}}",
+    "severityBadge": "তীব্ৰতা: {{severity}}",
+    "affectedHousesHeading": "প্ৰভাৱিত ভাৱসমূহ",
+    "houseBadge": "ভাৱ {{num}}",
+    "noAffectedHouses": "বৰ্তমান কোনো শ্ৰেণী ভৱিষ্যদ্বাণীয়ে এই দোষক নিৰ্দিষ্ট ভাৱৰ সৈতে জড়িত কৰা নাই।",
+    "remedies": "উপায়সমূহ",
+    "noRemediesMessage": "বৰ্তমান এই দোষৰ সৈতে কোনো উপায় সংযুক্ত নাই।",
+    "linkedPredictions": "সংযুক্ত ভৱিষ্যদ্বাণীসমূহ",
+    "noLinkedPredictionsMessage": "বৰ্তমান কোনো শ্ৰেণী ভৱিষ্যদ্বাণীয়ে এই দোষক সহায়ক কাৰক বুলি উল্লেখ কৰা নাই।"
+  },
+  "nakshatra": {
+    "notAvailableTitle": "নক্ষত্ৰ প্ৰ’ফাইল উপলব্ধ নহয়",
+    "notAvailableMessage": "এই চাৰ্টত এতিয়ালৈকে গণনা কৰা নক্ষত্ৰ প্ৰ’ফাইল নাই।",
+    "itemLabel": "নক্ষত্ৰ",
+    "padaBadge": "পাদ {{pada}}",
+    "lordBadge": "স্বামী: {{lord}}",
+    "ganaBadge": "{{gana}} গণ",
+    "deity": "দেৱতা",
+    "symbol": "প্ৰতীক",
+    "nadi": "নাড়ী",
+    "yoni": "যোনি",
+    "notAvailableValue": "—",
+    "personalityHeading": "ব্যক্তিত্ব",
+    "careerTendencies": "কেৰিয়াৰ প্ৰৱণতাসমূহ",
+    "relationshipTendencies": "সম্পৰ্ক প্ৰৱণতাসমূহ",
+    "spiritualTendencies": "আধ্যাত্মিক প্ৰৱণতাসমূহ"
+  },
+  "ascendant": {
+    "notAvailableTitle": "লগ্ন উপলব্ধ নহয়",
+    "notAvailableMessage": "এই চাৰ্টত এতিয়ালৈকে গণনা কৰা লগ্ন নাই।",
+    "itemLabel": "লগ্ন",
+    "lordBadge": "স্বামী: {{lord}}",
+    "risingSign": "লগ্ন (উদয় ৰাশি)",
+    "lagnaLord": "লগ্ন স্বামী",
+    "notAvailableValue": "—",
+    "characteristicsHeading": "বৈশিষ্ট্যসমূহ (লগ্ন স্বামীৰ শক্তি অনুসৰি)",
+    "functionallyNature": "কাৰ্যকৰীভাৱে {{nature}}",
+    "predictionsLinkedTitle": "লগ্ন স্বামীৰ সৈতে সংযুক্ত ভৱিষ্যদ্বাণীসমূহ",
+    "lagnaLordFallback": "লগ্ন স্বামী",
+    "noLinkedPredictionsMessage": "বৰ্তমান কোনো শ্ৰেণী ভৱিষ্যদ্বাণীয়ে {{lord}} ক ইয়াৰ মুখ্য বা সহায়ক গ্ৰহ বুলি উল্লেখ কৰা নাই।"
+  },
+  "aspect": {
+    "notAvailableTitle": "দৃষ্টিৰ তথ্য উপলব্ধ নাই",
+    "notAvailableMessage": "ইয়াত অন্বেষণ কৰিবলৈ পেনেলৰ পৰা এটা দৃষ্টি বাছক।",
+    "sourcesHeading": "দৃষ্টি উৎস → লক্ষ্য",
+    "beneficAspects": "শুভ দৃষ্টিসমূহ",
+    "maleficAspects": "অশুভ দৃষ্টিসমূহ",
+    "netInfluenceStrength": "নীট প্ৰভাৱ (শক্তি)",
+    "housesAspected": "দৃষ্টি পোৱা ভাৱসমূহ",
+    "houseLabel": "ভাৱ {{num}}",
+    "itemLabel": "{{target}} ৰ ওপৰত দৃষ্টিসমূহ",
+    "interpretPureBenefic": "সম্পূৰ্ণৰূপে শুভ দৃষ্টিসমূহ — এটা সহায়ক প্ৰভাৱ।",
+    "interpretPureMalefic": "সম্পূৰ্ণৰূপে অশুভ দৃষ্টিসমূহ — এটা প্ৰত্যাহ্বানমূলক প্ৰভাৱ।",
+    "interpretMixedNetBenefic": "মিহলি দৃষ্টিসমূহ, সামগ্ৰিকভাৱে নীট শুভ প্ৰভাৱ।",
+    "interpretMixedNetMalefic": "মিহলি দৃষ্টিসমূহ, সামগ্ৰিকভাৱে নীট অশুভ প্ৰভাৱ।",
+    "interpretMixedNeutral": "মিহলি দৃষ্টিসমূহ যাৰ নীট প্ৰভাৱ সন্তুলিত আৰু নিৰপেক্ষ।"
+  }
+}

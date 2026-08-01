@@ -1,0 +1,87 @@
+{
+  "categories": {
+    "system": "ਸਿਸਟਮ",
+    "reminder": "ਰਿਮਾਈਂਡਰ",
+    "ai": "AI",
+    "panchang": "ਪੰਚਾਂਗ",
+    "muhurat": "ਮੁਹੂਰਤ",
+    "prediction": "ਭਵਿੱਖਬਾਣੀ",
+    "transit": "ਗੋਚਰ",
+    "family": "ਪਰਿਵਾਰ",
+    "festival": "ਤਿਉਹਾਰ",
+    "general": "ਆਮ"
+  },
+  "priorities": {
+    "critical": "ਅਤਿ ਮਹੱਤਵਪੂਰਨ",
+    "high": "ਉੱਚ",
+    "medium": "ਦਰਮਿਆਨਾ",
+    "low": "ਘੱਟ"
+  },
+  "sort": {
+    "newest": "ਸਭ ਤੋਂ ਨਵੀਂ ਪਹਿਲਾਂ",
+    "oldest": "ਸਭ ਤੋਂ ਪੁਰਾਣੀ ਪਹਿਲਾਂ",
+    "priority": "ਤਰਜੀਹ"
+  },
+  "center": {
+    "back": "← ਪਿੱਛੇ",
+    "title": "🔔 ਸੂਚਨਾ ਕੇਂਦਰ",
+    "totalSingle": "ਕੁੱਲ {{count}} ਸੂਚਨਾ",
+    "totalPlural": "ਕੁੱਲ {{count}} ਸੂਚਨਾਵਾਂ",
+    "searchPlaceholder": "ਸੂਚਨਾਵਾਂ ਖੋਜੋ…",
+    "searchAriaLabel": "ਸੂਚਨਾਵਾਂ ਖੋਜੋ",
+    "filterCategoryAriaLabel": "ਸ਼੍ਰੇਣੀ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ",
+    "allCategories": "ਸਾਰੀਆਂ ਸ਼੍ਰੇਣੀਆਂ",
+    "filterPriorityAriaLabel": "ਤਰਜੀਹ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ",
+    "allPriorities": "ਸਾਰੀਆਂ ਤਰਜੀਹਾਂ",
+    "filterReadStatusAriaLabel": "ਪੜ੍ਹਨ ਸਥਿਤੀ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ",
+    "all": "ਸਾਰੇ",
+    "unread": "ਨਾ ਪੜ੍ਹੀ",
+    "read": "ਪੜ੍ਹੀ",
+    "sortAriaLabel": "ਸੂਚਨਾਵਾਂ ਕ੍ਰਮਬੱਧ ਕਰੋ",
+    "markAllRead": "✓ ਸਭ ਨੂੰ ਪੜ੍ਹਿਆ ਚਿੰਨ੍ਹਿਤ ਕਰੋ",
+    "clearRead": "🗑️ ਪੜ੍ਹੀਆਂ ਸਾਫ਼ ਕਰੋ",
+    "loadFailedTitle": "ਸੂਚਨਾਵਾਂ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੀਆਂ",
+    "retry": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+    "emptyTitle": "ਕੋਈ ਸੂਚਨਾ ਨਹੀਂ",
+    "emptyMessage": "ਤੁਸੀਂ ਪੂਰੀ ਤਰ੍ਹਾਂ ਅੱਪ ਟੂ ਡੇਟ ਹੋ — ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਫਿਲਟਰ ਨਾਲ ਇੱਥੇ ਕੁਝ ਨਹੀਂ ਮੇਲ ਖਾਂਦਾ।",
+    "prevPage": "← ਪਿਛਲਾ",
+    "nextPage": "ਅਗਲਾ →",
+    "pageOf": "ਸਫ਼ਾ {{page}} ਵਿੱਚੋਂ {{totalPages}}",
+    "toasts": {
+      "markReadFailed": "ਸੂਚਨਾ ਪੜ੍ਹੀ ਚਿੰਨ੍ਹਿਤ ਨਹੀਂ ਹੋ ਸਕੀ।",
+      "markAllReadSuccess": "ਸਾਰੀਆਂ ਸੂਚਨਾਵਾਂ ਪੜ੍ਹੀਆਂ ਚਿੰਨ੍ਹਿਤ ਕੀਤੀਆਂ।",
+      "markAllReadFailed": "ਸਭ ਨੂੰ ਪੜ੍ਹਿਆ ਚਿੰਨ੍ਹਿਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।",
+      "deleteFailed": "ਸੂਚਨਾ ਮਿਟਾਈ ਨਹੀਂ ਜਾ ਸਕੀ।",
+      "clearReadSuccess": "ਪੜ੍ਹੀਆਂ ਸੂਚਨਾਵਾਂ ਸਾਫ਼ ਕੀਤੀਆਂ।",
+      "clearReadFailed": "ਪੜ੍ਹੀਆਂ ਸੂਚਨਾਵਾਂ ਸਾਫ਼ ਨਹੀਂ ਹੋ ਸਕੀਆਂ।"
+    },
+    "clearDialog": {
+      "title": "ਪੜ੍ਹੀਆਂ ਸੂਚਨਾਵਾਂ ਸਾਫ਼ ਕਰੀਏ?",
+      "message": "ਇਹ ਹਰ ਪੜ੍ਹੀ ਸੂਚਨਾ ਮਿਟਾ ਦੇਵੇਗਾ। ਇਸਨੂੰ ਵਾਪਸ ਨਹੀਂ ਲਿਆ ਜਾ ਸਕਦਾ।",
+      "confirmLabel": "ਪੜ੍ਹੀਆਂ ਸਾਫ਼ ਕਰੋ",
+      "loadingLabel": "ਸਾਫ਼ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"
+    },
+    "loadFailedGeneric": "ਸੂਚਨਾਵਾਂ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੀਆਂ।"
+  },
+  "card": {
+    "open": "ਖੋਲ੍ਹੋ →",
+    "openTitle": "ਖੋਲ੍ਹੋ",
+    "openAriaLabel": "ਸਬੰਧਤ ਮੋਡੀਊਲ ਖੋਲ੍ਹੋ",
+    "markReadTitle": "ਪੜ੍ਹਿਆ ਚਿੰਨ੍ਹਿਤ ਕਰੋ",
+    "markReadLabel": "✓ ਪੜ੍ਹੀ",
+    "deleteTitle": "ਸੂਚਨਾ ਮਿਟਾਓ",
+    "deleteAriaLabel": "ਸੂਚਨਾ ਮਿਟਾਓ"
+  },
+  "group": {
+    "updateSingle": "{{count}} ਅੱਪਡੇਟ",
+    "updatePlural": "{{count}} ਅੱਪਡੇਟ",
+    "unreadBadge": "{{count}} ਨਾ ਪੜ੍ਹੀ"
+  },
+  "widget": {
+    "title": "🔔 ਸੂਚਨਾਵਾਂ",
+    "unreadCount": "{{count}} ਨਾ ਪੜ੍ਹੀ",
+    "loadFailed": "ਸੂਚਨਾਵਾਂ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੀਆਂ।",
+    "emptyMessage": "ਹਾਲੇ ਤੱਕ ਕੋਈ ਸੂਚਨਾ ਨਹੀਂ — ਤੁਸੀਂ ਪੂਰੀ ਤਰ੍ਹਾਂ ਅੱਪ ਟੂ ਡੇਟ ਹੋ।",
+    "openCenter": "ਸੂਚਨਾ ਕੇਂਦਰ ਖੋਲ੍ਹੋ →"
+  }
+}

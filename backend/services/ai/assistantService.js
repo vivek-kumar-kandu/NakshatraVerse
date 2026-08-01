@@ -74,6 +74,10 @@ export async function answerChatQuestion({
   festivalContext,
   panchangContext,
   muhuratContext,
+<<<<<<< HEAD
+=======
+  language,
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }) {
   const trimmedQuestion = question.trim();
   const hasChart = !!chart && typeof chart === "object";
@@ -113,11 +117,19 @@ export async function answerChatQuestion({
       festivalContext,
       panchangContext,
       muhuratContext,
+<<<<<<< HEAD
+=======
+      language,
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     });
   } else {
     // General Astrology Mode: no chart at all, and the question doesn't
     // need one — answer from general astrology knowledge only.
+<<<<<<< HEAD
     prompt = buildGeneralChatPrompt({ history: trimHistory(history), question: trimmedQuestion });
+=======
+    prompt = buildGeneralChatPrompt({ history: trimHistory(history), question: trimmedQuestion, language });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   }
 
   const result = await callGemini(prompt);

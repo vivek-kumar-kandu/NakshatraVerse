@@ -1,0 +1,9 @@
+{
+  "nameRequired": "নাম প্ৰয়োজন",
+  "validEmailRequired": "এটা বৈধ ইমেইল প্ৰয়োজন",
+  "passwordMinLength": "পাছৱৰ্ড অন্ততঃ ৮ টা আখৰৰ হ'ব লাগিব",
+  "passwordNeedsNumber": "পাছৱৰ্ডত অন্ততঃ এটা সংখ্যা থাকিব লাগিব",
+  "passwordRequired": "পাছৱৰ্ড প্ৰয়োজন",
+  "festivalKeyRequired": "`festivalKey` পেৰামিটাৰ প্ৰয়োজন।",
+  "profileIdsRequired": "profileIdA আৰু profileIdB দুয়োটা প্ৰয়োজন।"
+}

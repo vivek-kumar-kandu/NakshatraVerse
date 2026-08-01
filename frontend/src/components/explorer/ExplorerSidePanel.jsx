@@ -1,4 +1,8 @@
 import { memo, useMemo, useRef, useCallback } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../common/GlassCard.jsx";
 import ExplorerCard from "./ExplorerCard.jsx";
 import { EXPLORER_SELECTION_TYPES } from "../../constants/explorer.js";
@@ -32,7 +36,11 @@ import { useExplorer } from "../../context/ExplorerContext.jsx";
 // framework only.
 // ─────────────────────────────────────────────────────────────────────────
 
+<<<<<<< HEAD
 function buildItems(typeId, { userData, planetary, report }) {
+=======
+function buildItems(typeId, { userData, planetary, report }, t) {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   switch (typeId) {
     case "planet":
       return PLANETS.map((p) => ({
@@ -44,7 +52,11 @@ function buildItems(typeId, { userData, planetary, report }) {
     case "house":
       return Object.entries(HOUSE_MEANINGS).map(([num, meaning]) => ({
         id: `house-${num}`,
+<<<<<<< HEAD
         label: `House ${num}`,
+=======
+        label: t("explorer:sidePanel.housePrefix", { num }),
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         sublabel: meaning,
       }));
     case "sign":
@@ -62,7 +74,11 @@ function buildItems(typeId, { userData, planetary, report }) {
         ? [{
             id: "nakshatra-profile",
             label: report.nakshatraProfile.nakshatra || report.nakshatraProfile.name,
+<<<<<<< HEAD
             sublabel: report.nakshatraProfile.lord ? `Lord: ${report.nakshatraProfile.lord}` : undefined,
+=======
+            sublabel: report.nakshatraProfile.lord ? t("explorer:sidePanel.lordBadge", { lord: report.nakshatraProfile.lord }) : undefined,
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           }]
         : [];
     case "ascendant":
@@ -82,10 +98,19 @@ function buildItems(typeId, { userData, planetary, report }) {
         .filter(([, profile]) => (profile?.aspectInfluence?.aspectedBy || []).length > 0)
         .map(([plainName, profile]) => {
           const { aspectedBy, netInfluence } = profile.aspectInfluence;
+<<<<<<< HEAD
           return {
             id: `aspect-${plainName}`,
             label: `${plainName} ← ${aspectedBy.join(", ")}`,
             sublabel: `${aspectedBy.length} aspect${aspectedBy.length === 1 ? "" : "s"} · net ${netInfluence >= 0 ? "+" : ""}${netInfluence}`,
+=======
+          const aspectCount = t(aspectedBy.length === 1 ? "explorer:sidePanel.aspectCountSingle" : "explorer:sidePanel.aspectCountPlural", { count: aspectedBy.length });
+          const net = t("explorer:sidePanel.netInfluence", { value: `${netInfluence >= 0 ? "+" : ""}${netInfluence}` });
+          return {
+            id: `aspect-${plainName}`,
+            label: `${plainName} ← ${aspectedBy.join(", ")}`,
+            sublabel: `${aspectCount} · ${net}`,
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           };
         });
     }
@@ -95,25 +120,42 @@ function buildItems(typeId, { userData, planetary, report }) {
 }
 
 function ExplorerSidePanel({ userData, planetary, report }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["explorer"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const { selectedType, selectedItem, isSectionExpanded, toggleSection, selectItem,
           keyboardIndex, setKeyboardIndex, setFocusRegion } = useExplorer();
   const rowRefs = useRef([]);
 
   const data = useMemo(() => ({ userData, planetary, report }), [userData, planetary, report]);
+<<<<<<< HEAD
+=======
+  const typeMetas = useMemo(() => EXPLORER_SELECTION_TYPES.map((type) => ({ ...type, label: t(`explorer:types.${type.id}`, type.label) })), [t]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   // Flatten categories + (if expanded) their items into one list of rows,
   // so arrow-key navigation can move through a single linear sequence.
   const rows = useMemo(() => {
     const out = [];
+<<<<<<< HEAD
     EXPLORER_SELECTION_TYPES.forEach((type) => {
       const items = buildItems(type.id, data);
+=======
+    typeMetas.forEach((type) => {
+      const items = buildItems(type.id, data, t);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       out.push({ kind: "category", type, itemCount: items.length });
       if (isSectionExpanded(type.id)) {
         items.forEach((item) => out.push({ kind: "item", type, item }));
       }
     });
     return out;
+<<<<<<< HEAD
   }, [data, isSectionExpanded]);
+=======
+  }, [data, isSectionExpanded, typeMetas, t]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   rowRefs.current = rowRefs.current.slice(0, rows.length);
 
@@ -175,7 +217,11 @@ function ExplorerSidePanel({ userData, planetary, report }) {
     <GlassCard
       style={{ padding: 12, display: "flex", flexDirection: "column", gap: 4, maxHeight: 560, overflowY: "auto" }}
       role="tree"
+<<<<<<< HEAD
       aria-label="Explorer selection categories"
+=======
+      aria-label={t("explorer:sidePanel.treeAriaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       onFocus={() => setFocusRegion("sidePanel")}
     >
       {rows.map((row, idx) => {
@@ -189,7 +235,11 @@ function ExplorerSidePanel({ userData, planetary, report }) {
               type="button"
               role="treeitem"
               aria-expanded={expanded}
+<<<<<<< HEAD
               aria-label={`${row.type.label} (${row.itemCount})`}
+=======
+              aria-label={t("explorer:sidePanel.categoryAriaLabel", { label: row.type.label, count: row.itemCount })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               tabIndex={isFocusStop ? 0 : -1}
               onFocus={() => setKeyboardIndex(idx)}
               onKeyDown={(e) => handleKeyDown(e, idx)}

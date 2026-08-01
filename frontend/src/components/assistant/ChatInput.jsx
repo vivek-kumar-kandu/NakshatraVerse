@@ -1,4 +1,8 @@
 import { memo, useState, useRef, useEffect } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // ChatInput — V3.0 Phase 4 (AI Astrology Assistant)
@@ -7,6 +11,10 @@ import { memo, useState, useRef, useEffect } from "react";
 // overlapping questions.
 // ─────────────────────────────────────────────────────────────────────────
 function ChatInput({ onSend, disabled, autoFocus = false }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [value, setValue] = useState("");
   const textareaRef = useRef(null);
 
@@ -54,8 +62,13 @@ function ChatInput({ onSend, disabled, autoFocus = false }) {
         onKeyDown={handleKeyDown}
         disabled={disabled}
         rows={1}
+<<<<<<< HEAD
         placeholder="Ask about your report…"
         aria-label="Ask the AI assistant about your report"
+=======
+        placeholder={t("assistant.inputPlaceholder", "Ask about your report…")}
+        aria-label={t("assistant.inputAria", "Ask the AI assistant about your report")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         style={{
           flex: 1, resize: "none", border: "none", outline: "none", background: "transparent",
           color: "var(--nv-text-primary, #f1e4ff)", fontFamily: "Inter,sans-serif", fontSize: 14, lineHeight: 1.5,
@@ -66,7 +79,11 @@ function ChatInput({ onSend, disabled, autoFocus = false }) {
         type="button"
         onClick={submit}
         disabled={disabled || !value.trim()}
+<<<<<<< HEAD
         aria-label="Send message"
+=======
+        aria-label={t("assistant.sendAria", "Send message")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         className="pill-btn tap-scale"
         style={{
           flexShrink: 0, width: 40, height: 40, borderRadius: "50%", border: "none",

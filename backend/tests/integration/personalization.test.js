@@ -2,6 +2,11 @@ import { describe, it, expect } from "vitest";
 import request from "supertest";
 process.env.NODE_ENV = "test";
 const { createApp } = await import("../../server.js");
+<<<<<<< HEAD
+=======
+const { connectTestMongo } = await import("../helpers/connectTestMongo.js");
+await connectTestMongo();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 const { signAccessToken } = await import("../../services/auth/tokenService.js");
 const app = createApp();
 

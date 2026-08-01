@@ -1,0 +1,225 @@
+{
+  "overview": {
+    "birthDetails": "ಜನ್ಮ ವಿವರಗಳು",
+    "fields": {
+      "dob": "ಜನ್ಮ ದಿನಾಂಕ",
+      "tob": "ಜನ್ಮ ಸಮಯ",
+      "pob": "ಜನ್ಮ ಸ್ಥಳ",
+      "lagna": "ಲಗ್ನ",
+      "mulank": "ಮೂಲಾಂಕ",
+      "bhagyank": "ಭಾಗ್ಯಾಂಕ"
+    },
+    "aiLifeSummary": "AI ಜೀವನ ಸಾರಾಂಶ",
+    "aiSummaryPlaceholder": "ನಿಮ್ಮ ವಿಶ್ವ ಕಥೆಯನ್ನು ಹೆಣೆಯಲಾಗುತ್ತಿದೆ…"
+  },
+  "kundli": {
+    "birthChart": "ಜನ್ಮ ಚಾರ್ಟ್",
+    "tapHint": "ಅನ್ವೇಷಿಸಲು ಗ್ರಹ ಅಥವಾ ಭಾವವನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ",
+    "planetaryPositions": "ಗ್ರಹಗಳು ಸ್ಥಾನಗಳು",
+    "closePlanetDetail": "ಗ್ರಹದ ವಿವರ ಮುಚ್ಚಿ",
+    "close": "ಮುಚ್ಚಿ ✕",
+    "house": "ಭಾವ {{number}}",
+    "zodiacSign": "ರಾಶಿ",
+    "defaultSignificance": "ಈ ಚಾರ್ಟ್‌ನಲ್ಲಿ ಒಂದು ಪ್ರಮುಖ ಪ್ರಭಾವ.",
+    "houseOverview": "ಭಾವ ಅವಲೋಕನ"
+  },
+  "aiInsight": "AI ಒಳನೋಟ",
+  "sections": {
+    "loveLife": {
+      "title": "ಸಂಬಂಧಗಳು",
+      "placeholder": "ಶುಕ್ರ ಮತ್ತು ಚಂದ್ರನ ಸ್ಥಾನಗಳನ್ನು ಓದಲಾಗುತ್ತಿದೆ…"
+    },
+    "marriage": {
+      "title": "ವಿವಾಹ",
+      "placeholder": "ಗುರು ಮತ್ತು ಏಳನೇ ಭಾವವನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…"
+    },
+    "career": {
+      "title": "ವೃತ್ತಿ",
+      "placeholder": "ಶನಿ, ಸೂರ್ಯ ಮತ್ತು ಹತ್ತನೇ ಭಾವವನ್ನು ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ…",
+      "keyPlanetaryInfluences": "ಪ್ರಮುಖ ಗ್ರಹಗಳು ಪ್ರಭಾವಗಳು"
+    },
+    "wealth": {
+      "title": "ಹಣಕಾಸು & ಸಂಪತ್ತು",
+      "placeholder": "ಗುರು ಮತ್ತು ಎರಡನೇ ಭಾವವನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…",
+      "wealthIndicators": "ಸಂಪತ್ತು ಸೂಚಕಗಳು"
+    },
+    "health": {
+      "title": "ಆರೋಗ್ಯ",
+      "placeholder": "ಸೂರ್ಯ, ಮಂಗಳ ಮತ್ತು ಆರನೇ ಭಾವವನ್ನು ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ…",
+      "healthPlanets": "ಆರೋಗ್ಯ ಗ್ರಹಗಳು"
+    },
+    "doshas": {
+      "title": "ದೋಷಗಳು",
+      "placeholder": "ಮಂಗಳ ದೋಷ, ಕಾಲ ಸರ್ಪ ದೋಷವನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…"
+    },
+    "yogas": {
+      "title": "ಯೋಗಗಳು",
+      "placeholder": "ರಾಜ ಯೋಗ, ಗಜ ಕೇಸರಿ ಯೋಗವನ್ನು ಗುರುತಿಸಲಾಗುತ್ತಿದೆ…"
+    },
+    "remedies": {
+      "title": "ಪರಿಹಾರಗಳು ಮತ್ತು ಶಿಫಾರಸುಗಳು",
+      "placeholder": "ವೈಯಕ್ತಿಕ ವೈದಿಕ ಪರಿಹಾರಗಳನ್ನು ಸಿದ್ಧಪಡಿಸಲಾಗುತ್ತಿದೆ…"
+    }
+  },
+  "doshasYogas": {
+    "detectedYogas": "ಪತ್ತೆಯಾದ ಯೋಗಗಳು",
+    "detectedDoshas": "ಪತ್ತೆಯಾದ ದೋಷಗಳು",
+    "noYogasTitle": "ಯಾವುದೇ ಯೋಗ ಪತ್ತೆಯಾಗಿಲ್ಲ",
+    "noYogasMessage": "ಲೆಕ್ಕಾಚಾರ ಮಾಡಿದ ಚಾರ್ಟ್ ಆಧಾರದ ಮೇಲೆ ಯಾವುದೇ ಪ್ರಮುಖ ಯೋಗ ಕಂಡುಬಂದಿಲ್ಲ.",
+    "noDoshasTitle": "ಯಾವುದೇ ದೋಷ ಪತ್ತೆಯಾಗಿಲ್ಲ",
+    "noDoshasMessage": "ಲೆಕ್ಕಾಚಾರ ಮಾಡಿದ ಚಾರ್ಟ್ ಆಧಾರದ ಮೇಲೆ ಯಾವುದೇ ಪ್ರಮುಖ ದೋಷ ಕಂಡುಬಂದಿಲ್ಲ."
+  },
+  "remedies": {
+    "suggestedRemedies": "ಸೂಚಿಸಿದ ಪರಿಹಾರಗಳು",
+    "noRemediesTitle": "ಯಾವುದೇ ನಿರ್ದಿಷ್ಟ ಪರಿಹಾರವಿಲ್ಲ",
+    "noRemediesMessage": "ಪ್ರಸ್ತುತ ಲೆಕ್ಕಾಚಾರ ಮಾಡಿದ ಚಾರ್ಟ್ ಆಧಾರದ ಮೇಲೆ ಯಾವುದೇ ಸಾಂಪ್ರದಾಯಿಕ ಪರಿಹಾರವನ್ನು ಸೂಚಿಸಲಾಗಿಲ್ಲ.",
+    "types": {
+      "General (Lagna Lord)": "सामान्य (लग्नेश)",
+      "Fasting": "व्रत व उपवास",
+      "Charity": "दान व सेवा",
+      "Mangal Dosha Remedy": "मंगल दोष निवारण"
+    }
+  },
+  "summary": {
+    "heading": "AI-ರಚಿತ ಜೀವನ ಸಾರಾಂಶ",
+    "placeholder": "ನಿಮ್ಮ ಸಂಪೂರ್ಣ ವಿಶ್ವ ಕಥೆಯನ್ನು ಹೆಣೆಯಲಾಗುತ್ತಿದೆ…"
+  },
+  "page": {
+    "reportSectionsAriaLabel": "ವರದಿ ವಿಭಾಗಗಳು",
+    "footerTagline": "ನಕ್ಷತ್ರವರ್ಸ್ · ಪ್ರಾಚೀನ ಜ್ಞಾನ ಮತ್ತು Gemini AI ಸಂಗಮ · ಮಾರ್ಗದರ್ಶನಕ್ಕಾಗಿ ಮಾತ್ರ"
+  },
+  "predictions": {
+    "notAvailableTitle": "ಭವಿಷ್ಯವಾಣಿಗಳು ಇನ್ನೂ ಲಭ್ಯವಿಲ್ಲ",
+    "notAvailableMessage": "ನಿಮ್ಮ ಚಾರ್ಟ್ ಲೆಕ್ಕಾಚಾರ ಮಾಡಿದ ನಂತರ ಬ್ಯಾಕೆಂಡ್-ಲೆಕ್ಕಾಚಾರದ ಭವಿಷ್ಯವಾಣಿಗಳು ಇಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.",
+    "categoryPredictions": "ವರ್ಗ ಭವಿಷ್ಯವಾಣಿಗಳು",
+    "transitForecast": "ಗೋಚಾರ ಮುನ್ಸೂಚನೆ"
+  },
+  "numerologyCard": {
+    "heading": "ಅಂಕಶಾಸ್ತ್ರ",
+    "mulankLabel": "ಮೂಲಾಂಕ",
+    "bhagyankLabel": "ಭಾಗ್ಯಾಂಕ",
+    "lifePath": "ಜೀವನ ಮಾರ್ಗ {{number}}",
+    "defaultDescription": "ಒಂದು ಅನನ್ಯ ಆತ್ಮ ಸಂಖ್ಯೆ"
+  },
+  "nakshatraCard": {
+    "heading": "ನಕ್ಷತ್ರ ಪ್ರೊಫೈಲ್",
+    "pada": "ಪಾದ {{number}}",
+    "lord": "ಒಡೆಯ: {{value}}",
+    "gana": "ಗಣ: {{value}}",
+    "nadi": "ನಾಡಿ: {{value}}",
+    "yoni": "ಯೋನಿ: {{value}}",
+    "symbol": "ಚಿಹ್ನೆ",
+    "deity": "ದೇವತೆ",
+    "nature": "ಸ್ವಭಾವ",
+    "career": "ವೃತ್ತಿ",
+    "relationships": "ಸಂಬಂಧಗಳು",
+    "spiritual": "ಆಧ್ಯಾತ್ಮಿಕ"
+  },
+  "zodiacWheel": {
+    "wheelAriaLabel": "ವೈದಿಕ ಜನ್ಮ ಚಾರ್ಟ್ ಚಕ್ರ, ಲಗ್ನ {{sign}} ನಲ್ಲಿ",
+    "unknownSign": "ಅಜ್ಞಾತ ರಾಶಿ",
+    "noPlanetsHere": "ಇಲ್ಲಿ ಗ್ರಹಗಳಿಲ್ಲ",
+    "noPlanets": "ಗ್ರಹಗಳಿಲ್ಲ",
+    "houseAriaLabel": "ಭಾವ {{number}}, {{sign}} — {{planets}}",
+    "planetAriaLabel": "{{planet}}: ಭಾವ {{house}}, {{sign}}"
+  },
+  "chartControls": "చార్ట్ వీక్షణె నియంత్రణెగళు",
+  "zoomInAria": "జూమ్ ఇన్",
+  "zoomIn": "➕ జూಮ್ ఇన్",
+  "zoomOutAria": "జూమ్ అవుట్",
+  "zoomOut": "➖ జూమ్ అవుట్",
+  "resetViewAria": "వీక్షణె రీసెట్ మాడి",
+  "resetView": "🎯 వీక్షణె రీసెట్ మాడి",
+  "chartAria": "ఇంటరాక్టివ్ జనన చార్ట్.",
+  "vimshottariDasha": "🪐 వింశోత్తరీ దశె",
+  "gender": "లింగ",
+  "noneDetected": "యావుదూ కండుబరలిల్ల.",
+  "ashtakootaGunaMilan": "అష్టకూట (గుణ మిలన)",
+  "manglikAnalysis": "మాంగళిక విశ్లేషణె మత్తు అనూకూలతె",
+  "majorDoshaComparison": "ప్రముఖ దోష హోలికె",
+  "strongWeakComparison": "బలవాద మత్తు బలహీన గ్రహగళ హోలికె",
+  "strongest": "అత్యంత బలవాదದ್ದು:",
+  "weakest": "అత్యంత బలహీనవాదದ್ದು:",
+  "moonSignNakshatraCompat": "చంద్ర రాశి మత్తు నక్షత్ర అనూకూలతె",
+  "moonSignLabel": "చంద్ర రాశి:",
+  "nakshatraLabel": "నక్షత్ర:",
+  "aiCompatInsights": "AI అనూకూలతె అవలోకనగళు",
+  "personA": "వ్యక్తి A",
+  "personB": "వ్యక్తి B",
+  "tabs": {
+    "overview": "अवलोकन",
+    "kundli": "जन्म कुंडली",
+    "love": "प्रेम व विवाह",
+    "career": "करियर",
+    "wealth": "धन व वित्त",
+    "health": "स्वास्थ्य",
+    "doshas": "दोष व योग",
+    "remedies": "उपाय",
+    "predictions": "भविष्यवाणी",
+    "timeline": "टाइमलाइन",
+    "summary": "जीवन सारांश",
+    "explorer": "एक्सप्लोरर"
+  },
+  "categories": {
+    "career": "करियर",
+    "finance": "वित्त",
+    "wealth": "धन व वित्त",
+    "relationships": "रिश्ते",
+    "health": "स्वास्थ्य",
+    "education": "शिक्षा",
+    "family": "परिवार",
+    "spiritual": "आध्यात्मिक"
+  },
+  "confidence": {
+    "high": "उच्च",
+    "moderate": "मध्यम",
+    "medium": "मध्यम",
+    "low": "निम्न"
+  },
+  "predictionFields": {
+    "mahadasha": "महादशा",
+    "antardasha": "अंतर्दशा",
+    "dominantPlanet": "प्रमुख ग्रह",
+    "timePeriod": "समयावधि"
+  },
+  "planets": {
+    "sun": "सूर्य",
+    "moon": "चंद्रमा",
+    "mars": "मंगल",
+    "mercury": "बुध",
+    "jupiter": "बृहस्पति",
+    "venus": "शुक्र",
+    "saturn": "शनि",
+    "rahu": "राहु",
+    "ketu": "केतु"
+  },
+  "ganas": {
+    "deva": "देव",
+    "manushya": "मनुष्य",
+    "rakshasa": "राक्षस"
+  },
+  "nadis": {
+    "adi": "आदि",
+    "madhya": "मध्य",
+    "antya": "अंत्य",
+    "pitta": "पित्त",
+    "vata": "वात",
+    "kapha": "कफ"
+  },
+  "yonis": {
+    "horse": "अश्व",
+    "elephant": "गज",
+    "sheep": "मेष",
+    "serpent": "सर्प",
+    "dog": "श्वान",
+    "cat": "मार्जार",
+    "rat": "मूषक",
+    "cow": "गौ",
+    "buffalo": "महिष",
+    "tiger": "व्याघ्र",
+    "hare": "शशक",
+    "monkey": "वानर",
+    "mongoose": "नकुल",
+    "lion": "सिंह"
+  }
+}

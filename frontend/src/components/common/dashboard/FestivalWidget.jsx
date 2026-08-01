@@ -1,4 +1,8 @@
 import { memo, useEffect, useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import SummaryCard from "./SummaryCard.jsx";
 import InsightRow from "../InsightRow.jsx";
 import Badge from "../Badge.jsx";
@@ -25,7 +29,11 @@ import * as festivalIntelligenceApi from "../../../utils/festivalIntelligenceApi
 // (optional) opens the new Festival Intelligence page for the relevant
 // occurrence.
 // ─────────────────────────────────────────────────────────────────────────
+<<<<<<< HEAD
 const IMPORTANCE_COLOR = { High: "#ffd700", Medium: "#bf7fff", Low: "#9dc9ff" };
+=======
+const IMPORTANCE_COLOR = {High: "#ffd700", Medium: "#bf7fff", Low: "#9dc9ff" };
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 function todayStr() {
   return new Date().toISOString().slice(0, 10);
@@ -36,6 +44,10 @@ function daysBetween(a, b) {
 }
 
 function FestivalWidget({ onViewFull, onOpenIntelligence }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["festival"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [today, setToday] = useState(null);
   const [next, setNext] = useState(null);
   const [error, setError] = useState(false);
@@ -91,7 +103,11 @@ function FestivalWidget({ onViewFull, onOpenIntelligence }) {
   return (
     <SummaryCard
       icon="🎉"
+<<<<<<< HEAD
       title="Today's Festival"
+=======
+      title={t("festival:widget.title")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       action={onViewFull && (
         <button
           onClick={onViewFull}
@@ -101,12 +117,20 @@ function FestivalWidget({ onViewFull, onOpenIntelligence }) {
             color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif", flexShrink: 0,
           }}
         >
+<<<<<<< HEAD
           Open Festival Calendar →
+=======
+          {t("festival:widget.openCalendar")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </button>
       )}
     >
       {loading ? (
+<<<<<<< HEAD
         <div style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>Loading…</div>
+=======
+        <div style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>{t("festival:widget.loading")}</div>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       ) : (
         <>
           {primaryToday ? (
@@ -115,6 +139,7 @@ function FestivalWidget({ onViewFull, onOpenIntelligence }) {
               <Badge color="#7effb2">{primaryToday.type}</Badge>
             </div>
           ) : (
+<<<<<<< HEAD
             <div style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))", marginBottom: 12 }}>No festival today.</div>
           )}
           {next && (
@@ -128,6 +153,25 @@ function FestivalWidget({ onViewFull, onOpenIntelligence }) {
           {prepCount != null && <InsightRow label="Preparation Progress" value={`${prepCount} checklist items ready`} color="#7effb2" />}
           {upcomingRitual && <InsightRow label="Upcoming Ritual" value={upcomingRitual.title} color="#bf7fff" />}
           {personalizedTip && <InsightRow label="Personalized Tip" value={personalizedTip} color="#ffd700" />}
+=======
+            <div style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.55))", marginBottom: 12 }}>{t("festival:widget.noFestivalToday")}</div>
+          )}
+          {next && (
+            <>
+              <InsightRow label={t("festival:widget.nextFestival")} value={next.name} color="#ffd700" />
+              <InsightRow
+                label={t("festival:widget.daysRemainingLabel")}
+                value={t(daysBetween(next.date, todayStr()) === 1 ? "festival:widget.daysRemainingSingle" : "festival:widget.daysRemainingPlural", { count: daysBetween(next.date, todayStr()) })}
+                color="#9dc9ff"
+              />
+              <InsightRow label={t("festival:widget.importance")} value={next.importance} color={IMPORTANCE_COLOR[next.importance] || "#bf7fff"} />
+            </>
+          )}
+          {/* V4.5 Phase 2 (Festival Intelligence) — additive rows below */}
+          {prepCount != null && <InsightRow label={t("festival:widget.preparationProgress")} value={t("festival:widget.preparationItemsReady", { count: prepCount })} color="#7effb2" />}
+          {upcomingRitual && <InsightRow label={t("festival:widget.upcomingRitual")} value={upcomingRitual.title} color="#bf7fff" />}
+          {personalizedTip && <InsightRow label={t("festival:widget.personalizedTip")} value={personalizedTip} color="#ffd700" />}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
           {relevant && onOpenIntelligence && (
             <button
@@ -139,7 +183,11 @@ function FestivalWidget({ onViewFull, onOpenIntelligence }) {
                 color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif",
               }}
             >
+<<<<<<< HEAD
               🔮 View Festival Intelligence
+=======
+              {t("festival:widget.viewIntelligence")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           )}
         </>

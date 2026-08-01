@@ -1,4 +1,8 @@
 import { lazy, memo, Suspense } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import EmptyState from "../common/EmptyState.jsx";
 import GlassCard from "../common/GlassCard.jsx";
 import { useExplorer } from "../../context/ExplorerContext.jsx";
@@ -14,8 +18,12 @@ import { useExplorer } from "../../context/ExplorerContext.jsx";
 // explorer logic and Gemini explanations are later phases.
 // ─────────────────────────────────────────────────────────────────────────
 
+<<<<<<< HEAD
 const PANEL_LOADERS = {
   planet:    lazy(() => import("./panels/PlanetExplorerPanel.jsx")),
+=======
+const PANEL_LOADERS = {planet:    lazy(() => import("./panels/PlanetExplorerPanel.jsx")),
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   house:     lazy(() => import("./panels/HouseExplorerPanel.jsx")),
   sign:      lazy(() => import("./panels/SignExplorerPanel.jsx")),
   yoga:      lazy(() => import("./panels/YogaExplorerPanel.jsx")),
@@ -25,25 +33,42 @@ const PANEL_LOADERS = {
   aspect:    lazy(() => import("./panels/AspectExplorerPanel.jsx")),
 };
 
+<<<<<<< HEAD
 function PanelFallback() {
   return (
     <GlassCard style={{ padding: 24 }} role="status" aria-live="polite">
       <p style={{ margin: 0, fontSize: 13, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
         Loading detail panel…
+=======
+function PanelFallback({ t }) {
+  return (
+    <GlassCard style={{ padding: 24 }} role="status" aria-live="polite">
+      <p style={{ margin: 0, fontSize: 13, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
+        {t("explorer:mainPanel.loadingPanel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </p>
     </GlassCard>
   );
 }
 
 function ExplorerMainPanel({ userData, planetary, report, chart }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["explorer"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const { selectedType, selectedItem, focusRegion, setFocusRegion } = useExplorer();
 
   if (!selectedType) {
     return (
       <EmptyState
         icon="🧭"
+<<<<<<< HEAD
         title="Nothing selected yet"
         message="Choose a planet, house, sign, yoga, dosha, nakshatra, ascendant, or aspect from the panel to explore it here."
+=======
+        title={t("explorer:mainPanel.emptyTitle")}
+        message={t("explorer:mainPanel.emptyMessage")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       />
     );
   }
@@ -54,11 +79,19 @@ function ExplorerMainPanel({ userData, planetary, report, chart }) {
   return (
     <div
       role="region"
+<<<<<<< HEAD
       aria-label="Explorer detail panel"
       tabIndex={-1}
       onFocus={() => focusRegion !== "mainPanel" && setFocusRegion("mainPanel")}
     >
       <Suspense fallback={<PanelFallback />}>
+=======
+      aria-label={t("explorer:mainPanel.regionAriaLabel")}
+      tabIndex={-1}
+      onFocus={() => focusRegion !== "mainPanel" && setFocusRegion("mainPanel")}
+    >
+      <Suspense fallback={<PanelFallback t={t} />}>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         {/* V5.0 Phase 5B (Explorer Infrastructure — Backend Integration):
             userData/planetary/report are the same, already-loaded props
             ExplorerLayout/ExplorerSidePanel already receive — passed

@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← Back to Dashboard",
+    "title": "Saved Reports",
+    "titleWithCount": "Saved Reports ({{count}})",
+    "generateNewReport": "✦ Generate New Report",
+    "loadFailed": "Could not load your saved reports.",
+    "tryAgain": "↻ Try again",
+    "deleteToastSuccess": "\"{{title}}\" deleted.",
+    "deleteToastFallbackTitle": "Report",
+    "deleteFailed": "Could not delete that report.",
+    "downloadToastSuccess": "PDF downloaded.",
+    "downloadFailed": "Could not generate the PDF.",
+    "emptyTitle": "No saved reports yet",
+    "emptyMessage": "Generate a reading and tap Save Report to build your archive here.",
+    "emptyAction": "✦ Generate New Report",
+    "noMatchesTitle": "No matches found",
+    "noMatchesMessage": "No saved reports match \"{{query}}\". Try a different title, name, or lagna.",
+    "clearSearch": "Clear search",
+    "deleteDialog": {
+      "title": "Delete this report?",
+      "message": "\"{{title}}\" will be permanently removed. This can't be undone.",
+      "fallbackTitle": "This report",
+      "confirmLabel": "Delete",
+      "cancelLabel": "Cancel"
+    }
+  },
+  "detail": {
+    "loadFailed": "Could not load that report.",
+    "backToSavedReports": "← Back to Saved Reports",
+    "loading": "Loading your saved reading…",
+    "openHoroscope": "🔮 Horoscope",
+    "openCalendar": "📅 Calendar",
+    "openLifeCoach": "🧭 Life Coach",
+    "askAI": "✨ Ask AI"
+  },
+  "card": {
+    "savedOn": "saved {{date}}",
+    "view": "View",
+    "preview": "Preview",
+    "download": "PDF",
+    "delete": "Delete",
+    "deleting": "Deleting…",
+    "lagnaSuffix": "{{lagna}} Lagna",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "Report layout",
+    "gridView": "Grid view",
+    "listView": "List view",
+    "searchPlaceholder": "Search by title, name, or lagna…",
+    "searchAriaLabel": "Search saved reports",
+    "sortAriaLabel": "Sort saved reports",
+    "resultCountSingle": "{{count}} report",
+    "resultCountPlural": "{{count}} reports",
+    "resultCountFiltered": "{{count}} of {{total}}"
+  },
+  "sort": {
+    "newest": "Newest first",
+    "oldest": "Oldest first",
+    "title-asc": "Title (A–Z)",
+    "title-desc": "Title (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "Preview of {{title}}",
+    "closePreview": "Close preview",
+    "savedOn": "saved {{date}}",
+    "noDetails": "No additional details saved for this report.",
+    "description": "This is a quick preview of your saved reading's details. Open the full report to read every section — Love, Career, Wealth, Health, Doshas & Yogas, Remedies, and your Life Summary.",
+    "viewFullReport": "✦ View Full Report",
+    "preparingPdf": "Preparing PDF…",
+    "downloadPdf": "⭳ Download PDF"
+  },
+  "summarizeAiAria": "Summarize with AI — this report",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy isn't part of this chart's backend-derived remedies."
+}

@@ -1,7 +1,16 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo, useState } from "react";
 import MarkdownLite from "./MarkdownLite.jsx";
 import Badge from "../common/Badge.jsx";
 import ExpandableSection from "../common/ExpandableSection.jsx";
+<<<<<<< HEAD
+=======
+import { useLanguage } from "../../context/LanguageContext.jsx";
+import { formatTime as formatTimeIntl } from "../../utils/localeFormat.js";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // ChatMessage — V3.0 Phase 4 (AI Astrology Assistant)
@@ -23,12 +32,17 @@ import ExpandableSection from "../common/ExpandableSection.jsx";
 // rather than introducing new colors.
 // ─────────────────────────────────────────────────────────────────────────
 
+<<<<<<< HEAD
 function formatTimestamp(ts) {
   try {
     return new Date(ts).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
   } catch {
     return "";
   }
+=======
+function formatTimestamp(ts, lang) {
+  return formatTimeIntl(ts, lang, { hour: "numeric", minute: "2-digit" });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 function ActionButton({ label, icon, onClick, title }) {
@@ -65,7 +79,13 @@ function ChatMessage({
   onRegenerate,
   onAskSuggested,
 }) {
+<<<<<<< HEAD
   const [copied, setCopied] = useState(false);
+=======
+  const { t } = useTranslation();
+  const [copied, setCopied] = useState(false);
+  const { language } = useLanguage();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const isUser = role === "user";
   const hasStructured = !isUser && (shortAnswer || detailedExplanation);
 
@@ -113,7 +133,11 @@ function ChatMessage({
               {/* Detailed Explanation */}
               {detailedExplanation && (
                 shortAnswer ? (
+<<<<<<< HEAD
                   <ExpandableSection icon="📖" title="Detailed Explanation" defaultOpen>
+=======
+                  <ExpandableSection icon="📖" title={t("assistant.detailedExplanation", "Detailed Explanation")} defaultOpen>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                     <MarkdownLite text={detailedExplanation} />
                   </ExpandableSection>
                 ) : (
@@ -125,7 +149,11 @@ function ChatMessage({
               {!!evidence?.length && (
                 <div style={{ display: "grid", gap: 6 }}>
                   <span style={{ fontSize: 10.5, letterSpacing: 0.6, textTransform: "uppercase", color: "var(--nv-text-faint, rgba(200,160,255,0.5))" }}>
+<<<<<<< HEAD
                     Backend Evidence
+=======
+                    {t("assistant.backendEvidence", "Backend Evidence")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   </span>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
                     {evidence.map((fact, i) => (
@@ -170,14 +198,23 @@ function ChatMessage({
           {/* Copy / Regenerate actions */}
           {!isUser && !failed && (content || shortAnswer || detailedExplanation) && (
             <div style={{ display: "flex", gap: 14, marginTop: 2 }}>
+<<<<<<< HEAD
               <ActionButton label={copied ? "Copied!" : "Copy"} icon="📋" onClick={handleCopy} title="Copy response" />
               {onRegenerate && <ActionButton label="Regenerate" icon="↻" onClick={onRegenerate} title="Regenerate this explanation" />}
+=======
+              <ActionButton label={copied ? t("copied", "Copied!") : t("copy", "Copy")} icon="📋" onClick={handleCopy} title={t("assistant.copyResponse", "Copy response")} />
+              {onRegenerate && <ActionButton label={t("regenerate", "Regenerate")} icon="↻" onClick={onRegenerate} title={t("assistant.regenerateExplanation", "Regenerate this explanation")} />}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </div>
           )}
         </div>
         {timestamp && (
           <span style={{ fontSize: 11, color: "var(--nv-text-faint, rgba(200,160,255,0.4))", padding: "0 4px" }}>
+<<<<<<< HEAD
             {formatTimestamp(timestamp)}
+=======
+            {formatTimestamp(timestamp, language)}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </span>
         )}
       </div>

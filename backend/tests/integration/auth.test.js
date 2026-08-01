@@ -14,10 +14,29 @@ process.env.JWT_SECRET = "test-secret-for-integration-tests";
 process.env.DATA_DIR = TEST_DATA_DIR;
 
 const { createApp } = await import("../../server.js");
+<<<<<<< HEAD
+=======
+const { connectTestMongo } = await import("../helpers/connectTestMongo.js");
+await connectTestMongo();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 const app = createApp();
 
 const USER = { name: "Asha Test", email: "asha@example.com", password: "password123" };
 
+<<<<<<< HEAD
+=======
+// Unlike DATA_DIR above, the Mongo connection here points at a real,
+// persistent cluster shared across local test runs — there's no
+// per-run ephemeral database. Without this cleanup, USER.email survives
+// from whatever run last created it and "creates an account" starts
+// failing with 409 instead of 201, purely due to leftover state rather
+// than a real regression.
+const { default: User } = await import("../../models/User.model.js");
+beforeAll(async () => {
+  await User.deleteOne({ email: USER.email });
+});
+
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 describe("POST /api/auth/register", () => {
   it("creates an account and sets session cookies", async () => {
     const res = await request(app).post("/api/auth/register").send(USER);

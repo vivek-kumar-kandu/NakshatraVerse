@@ -1,0 +1,165 @@
+{
+  "typeFilters": {
+    "All": "ସମସ୍ତ",
+    "Festival": "ପର୍ବ",
+    "Vrat": "ବ୍ରତ"
+  },
+  "page": {
+    "back": "← ପଛକୁ",
+    "title": "🎉 ପର୍ବ କ୍ୟାଲେଣ୍ଡର",
+    "subtitle": "ବ୍ୟାକଏଣ୍ଡ ଦ୍ୱାରା ଗଣିତ ହିନ୍ଦୁ ପର୍ବ ଏବଂ ବ୍ରତ — ତାରିଖ, ରୀତିନୀତି, ଏବଂ ମହତ୍ୱ।",
+    "tabs": {
+      "today": "ଆଜି",
+      "upcoming": "ଆଗାମୀ",
+      "browse": "ସମସ୍ତ ବ୍ରାଉଜ୍ କରନ୍ତୁ"
+    },
+    "todayLoadFailed": "ଆଜିର ପର୍ବ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "upcomingLoadFailed": "ଆଗାମୀ ପର୍ବଗୁଡ଼ିକ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "yearLoadFailed": "ପର୍ବ କ୍ୟାଲେଣ୍ଡର ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "openFestivalFailed": "ସେହି ପର୍ବ ଖୋଲି ହୋଇପାରିଲା ନାହିଁ।",
+    "todaysFestivalsHeading": "ଆଜିର ପର୍ବ{{plural}}",
+    "noFestivalTodayTitle": "ଆଜି କୌଣସି ପର୍ବ ନାହିଁ",
+    "noFestivalTodayMessage": "ଆଜିର ତାରିଖରେ ପାଳନ କରାଯିବାକୁ ଥିବା କୌଣସି ପର୍ବ କିମ୍ବା ବ୍ରତ ନାହିଁ।",
+    "nextUp": "ପରବର୍ତ୍ତୀ କଣ",
+    "daysRemainingToday": "ଆଜି",
+    "daysRemainingSingle": "{{count}} ଦିନରେ",
+    "daysRemainingPlural": "{{count}} ଦିନରେ",
+    "noUpcomingTitle": "କୌଣସି ଆଗାମୀ ପର୍ବ ମିଳିଲା ନାହିଁ",
+    "noUpcomingMessage": "ଆଗାମୀ 60 ଦିନରେ କିଛି ମିଳିଲା ନାହିଁ।",
+    "searchPlaceholder": "ପର୍ବଗୁଡ଼ିକ ସନ୍ଧାନ କରନ୍ତୁ…",
+    "searchAriaLabel": "ପର୍ବଗୁଡ଼ିକ ସନ୍ଧାନ କରନ୍ତୁ",
+    "typeFilterAriaLabel": "ପ୍ରକାର ଆଧାରରେ ଫିଲ୍ଟର କରନ୍ତୁ",
+    "yearAriaLabel": "ବର୍ଷ ବାଛନ୍ତୁ",
+    "noMatchTitle": "କୌଣସି ପର୍ବ ମେଳ ଖାଏ ନାହିଁ",
+    "noMatchMessage": "ଏକ ଭିନ୍ନ ସନ୍ଧାନ ଶବ୍ଦ କିମ୍ବା ପ୍ରକାର ଫିଲ୍ଟର ଚେଷ୍ଟା କରନ୍ତୁ।",
+    "explainFailed": "AI ବ୍ୟାଖ୍ୟା ବର୍ତ୍ତମାନ ଉପଲବ୍ଧ ନାହିଁ।"
+  },
+  "detailCard": {
+    "importanceSuffix": "{{importance}} ମହତ୍ୱ",
+    "notSpecified": "ନିର୍ଦ୍ଦିଷ୍ଟ ନାହିଁ।",
+    "explainButton": "✨ {{status}}",
+    "askingGemini": "Gemini କୁ ପଚରାଯାଉଛି…",
+    "explainThisFestival": "ଏହି ପର୍ବ ବ୍ୟାଖ୍ୟା କରନ୍ତୁ",
+    "historicalBackground": "ଐତିହାସିକ ପୃଷ୍ଠଭୂମି",
+    "significance": "ମହତ୍ୱ",
+    "rituals": "ରୀତିନୀତି",
+    "recommendedActivities": "ପରାମର୍ଶିତ କାର୍ଯ୍ୟକଳାପ",
+    "fastingInformation": "ଉପବାସ ସୂଚନା",
+    "fastingObserved": "ଉପବାସ ପାଳନ କରାଯାଏ",
+    "noFastingObserved": "ପାରମ୍ପରିକ ଭାବରେ କୌଣସି ଉପବାସ ପାଳନ କରାଯାଏ ନାହିଁ"
+  },
+  "familySuggestions": {
+    "title": "👨‍👩‍👧‍👦 ପାରିବାରିକ ପର୍ବ ପରାମର୍ଶ",
+    "signInPrompt": "ଆପଣଙ୍କର ପ୍ରିୟଜନଙ୍କ ପାଇଁ ସହଭାଗୀ ଉତ୍ସବ ପରାମର୍ଶ ଏବଂ ସ୍ମାରକ ପାଇବାକୁ ସାଇନ୍ ଇନ୍ କରନ୍ତୁ ଏବଂ ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍ ଯୋଡନ୍ତୁ।",
+    "loadFailed": "ବର୍ତ୍ତମାନ ପାରିବାରିକ ପର୍ବ ପରାମର୍ଶ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "remindersTitle": "ପାରିବାରିକ ପର୍ବ ସ୍ମାରକ",
+    "noProfiles": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ପାରିବାରିକ ପ୍ରୋଫାଇଲ୍ ସଞ୍ଚିତ ନାହିଁ।",
+    "addOne": "ଗୋଟିଏ ଯୋଡନ୍ତୁ →",
+    "sharedCelebrationTitle": "ସହଭାଗୀ ଉତ୍ସବ ପରାମର୍ଶ",
+    "suggestedActivitiesTitle": "ପରାମର୍ଶିତ ପାରିବାରିକ କାର୍ଯ୍ୟକଳାପ"
+  },
+  "intelligencePanel": {
+    "title": "🔮 ପର୍ବ ବୁଦ୍ଧିମତା",
+    "subtitle": "ଆଧ୍ୟାତ୍ମିକ ଅର୍ଥ, ପୌରାଣିକ କାହାଣୀ, ଏବଂ ପୂଜା ସମୀକ୍ଷା — ଉପରର ମୌଳିକ ବିଷୟଗୁଡ଼ିକ ବାହାରେ।",
+    "loadFailed": "ବର୍ତ୍ତମାନ ପର୍ବ ବୁଦ୍ଧିମତା ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "revealButton": "✨ {{status}}",
+    "askingGemini": "Gemini କୁ ପଚରାଯାଉଛି…",
+    "revealDeeper": "ଗଭୀର ବୁଦ୍ଧିମତା ପ୍ରକଟ କରନ୍ତୁ",
+    "spiritualMeaning": "ଆଧ୍ୟାତ୍ମିକ ଅର୍ଥ",
+    "mythologicalStory": "ପୌରାଣିକ କାହାଣୀ",
+    "modernPracticalMeaning": "ଆଧୁନିକ ବ୍ୟାବହାରିକ ଅର୍ଥ",
+    "culturalSignificance": "ବୈଜ୍ଞାନିକ / ସାଂସ୍କୃତିକ ମହତ୍ୱ",
+    "pujaOverview": "ପୂଜା ସମୀକ୍ଷା",
+    "thingsToAvoid": "ଏଡାଇବାକୁ ଥିବା ବିଷୟଗୁଡ଼ିକ",
+    "aiAssistedBadge": "AI-ସହାୟତାପ୍ରାପ୍ତ — ପରମ୍ପରାଗୁଡ଼ିକ ଅଞ୍ଚଳ/ପରିବାର ଅନୁସାରେ ଭିନ୍ନ ହୋଇପାରେ"
+  },
+  "preparationChecklist": {
+    "nothingSpecified": "କିଛି ନିର୍ଦ୍ଦିଷ୍ଟ ନାହିଁ।",
+    "loadFailed": "ବର୍ତ୍ତମାନ ପ୍ରସ୍ତୁତି ଚେକଲିଷ୍ଟ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "sections": {
+      "preparationChecklist": "ପ୍ରସ୍ତୁତି ଚେକଲିଷ୍ଟ",
+      "shoppingChecklist": "କିଣାକଣି ଚେକଲିଷ୍ଟ",
+      "pujaMaterials": "ପୂଜା ସାମଗ୍ରୀ",
+      "fastingPreparation": "ଉପବାସ ପ୍ରସ୍ତୁତି",
+      "morningRoutine": "ସକାଳର ଦିନଚର୍ଯ୍ୟା",
+      "eveningRitual": "ସନ୍ଧ୍ୟାର ରୀତି",
+      "postFestivalReflection": "ପର୍ବ ପରବର୍ତ୍ତୀ ଚିନ୍ତନ"
+    }
+  },
+  "personalizedGuidance": {
+    "title": "🌟 ବ୍ୟକ୍ତିଗତ ପର୍ବ ମାର୍ଗଦର୍ଶନ",
+    "noChartMessage": "ଏହି ପର୍ବ ଆପଣଙ୍କ ପାଇଁ କାହିଁକି ବିଶେଷ ଭାବରେ ଅର୍ଥପୂର୍ଣ୍ଣ ତାହା ଦେଖିବାକୁ — କ୍ୟାରିୟର, ଅର୍ଥ, ସମ୍ପର୍କ, ସ୍ୱାସ୍ଥ୍ୟ, ଆଧ୍ୟାତ୍ମିକ, ଏବଂ ବ୍ୟକ୍ତିଗତ ବିକାଶ ଉପରେ କେନ୍ଦ୍ରିତ, ଆପଣଙ୍କର ନିଜ ଚାର୍ଟ ଉପରେ ଆଧାରିତ — ଆପଣଙ୍କର ଏକ ସଞ୍ଚିତ ରିଡିଂରୁ ଏହି ପର୍ବ ଖୋଲନ୍ତୁ।",
+    "openSavedReading": "ଏକ ସଞ୍ଚିତ ରିଡିଂ ଖୋଲନ୍ତୁ →",
+    "subtitle": "ଆପଣଙ୍କର ନିଜ ଦଶା, ଗୋଚର, ଏବଂ ଭବିଷ୍ୟବାଣୀ ଉପରେ ଆଧାରିତ।",
+    "loadFailed": "ବର୍ତ୍ତମାନ ବ୍ୟକ୍ତିଗତ ମାର୍ଗଦର୍ଶନ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "askButton": "✨ {{status}}",
+    "whyMeaningful": "ଏହା ମୋ ପାଇଁ କାହିଁକି ଅର୍ଥପୂର୍ଣ୍ଣ?",
+    "focusFields": {
+      "careerFocus": "କ୍ୟାରିୟର",
+      "financeFocus": "ଅର୍ଥ",
+      "relationshipFocus": "ସମ୍ପର୍କ",
+      "healthFocus": "ସ୍ୱାସ୍ଥ୍ୟ",
+      "spiritualFocus": "ଆଧ୍ୟାତ୍ମିକ",
+      "personalGrowthFocus": "ବ୍ୟକ୍ତିଗତ ବିକାଶ"
+    }
+  },
+  "intelligencePage": {
+    "back": "← ପଛକୁ",
+    "title": "🔮 ପର୍ବ ବୁଦ୍ଧିମତା",
+    "subtitle": "ଏକ ପର୍ବ ପାଇଁ ଗଭୀର ଅର୍ଥ, ବ୍ୟକ୍ତିଗତ ମାର୍ଗଦର୍ଶନ, ପ୍ରସ୍ତୁତି, ଏବଂ ପାରିବାରିକ ପରାମର୍ଶ।",
+    "loadFailed": "ଏହି ପର୍ବ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "loadUpcomingFailed": "କୌଣସି ଆଗାମୀ ପର୍ବ ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ।",
+    "noFestivalTitle": "କୌଣସି ପର୍ବ ଚୟନିତ ନାହିଁ",
+    "noFestivalMessage": "ଏହାର ପୂର୍ଣ୍ଣ ବୁଦ୍ଧିମତା ଦେଖିବାକୁ ପର୍ବ କ୍ୟାଲେଣ୍ଡର, ଡ୍ୟାସବୋର୍ଡ, କିମ୍ବା କ୍ୟାଲେଣ୍ଡର ପୃଷ୍ଠାରୁ ଏକ ପର୍ବ ଖୋଲନ୍ତୁ।",
+    "ritualFlow": "ରୀତି କ୍ରମ",
+    "timelineUnavailable": "ଏହି ପର୍ବ ପାଇଁ ଟାଇମଲାଇନ୍ ଉପଲବ୍ଧ ନାହିଁ।",
+    "festivalIntelligence": "ପର୍ବ ବୁଦ୍ଧିମତା",
+    "personalizedGuidance": "ବ୍ୟକ୍ତିଗତ ମାର୍ଗଦର୍ଶନ",
+    "festivalPreparation": "ପର୍ବ ପ୍ରସ୍ତୁତି",
+    "family": "ପରିବାର"
+  },
+  "widget": {
+    "title": "ଆଜିର ପର୍ବ",
+    "openCalendar": "ପର୍ବ କ୍ୟାଲେଣ୍ଡର ଖୋଲନ୍ତୁ →",
+    "loading": "ଲୋଡ୍ ହେଉଛି…",
+    "noFestivalToday": "ଆଜି କୌଣସି ପର୍ବ ନାହିଁ।",
+    "nextFestival": "ପରବର୍ତ୍ତୀ ପର୍ବ",
+    "daysRemainingLabel": "ବାକି ଦିନ",
+    "daysRemainingSingle": "{{count}} ଦିନ",
+    "daysRemainingPlural": "{{count}} ଦିନ",
+    "importance": "ମହତ୍ୱ",
+    "preparationProgress": "ପ୍ରସ୍ତୁତି ପ୍ରଗତି",
+    "preparationItemsReady": "{{count}} ଚେକଲିଷ୍ଟ ଆଇଟମ୍ ପ୍ରସ୍ତୁତ",
+    "upcomingRitual": "ଆଗାମୀ ରୀତି",
+    "personalizedTip": "ବ୍ୟକ୍ତିଗତ ପରାମର୍ଶ",
+    "viewIntelligence": "🔮 ପର୍ବ ବୁଦ୍ଧିମତା ଦେଖନ୍ତୁ"
+  },
+  "muhurat": {
+    "bestMuhuratFor": "{{activity}} ପାଇଁ ସର୍ବୋତ୍ତମ ମୁହୂର୍ତ୍ତ",
+    "confidence": {
+      "high": "ଉଚ୍ଚ",
+      "medium": "ମଧ୍ୟମ",
+      "low": "କମ"
+    },
+    "confidenceBadge": "{{level}} ବିଶ୍ୱାସ",
+    "bestDate": "ସର୍ବୋତ୍ତମ ତାରିଖ",
+    "bestTimeWindow": "ସର୍ବୋତ୍ତମ ସମୟ",
+    "tithi": "ତିଥି",
+    "auspiciousWindow": "ଶୁଭ ସମୟ",
+    "cautionPeriod": "ସତର୍କତା ସମୟ (ଏଡ଼ାନ୍ତୁ)",
+    "rahuKaal": "ରାହୁ କାଳ",
+    "yamaganda": "ଯମଗଣ୍ଡ",
+    "gulikaKaal": "ଗୁଳିକ କାଳ",
+    "otherStrongDates": "ଅନ୍ୟ ଭଲ ତାରିଖ",
+    "askingAI": "AI କୁ ପଚରାଯାଉଛି…",
+    "explainWhy": "🔮 ଏହି ମୁହୂର୍ତ୍ତ କାହିଁକି ବ୍ୟାଖ୍ୟା କରନ୍ତୁ",
+    "nakshatra": "ନକ୍ଷତ୍ର"
+  },
+  "calendarStrip": {
+    "heading": "🎉 ଏହି ମାସର ପର୍ବପର୍ବାଣୀ",
+    "viewCalendarLink": "ପର୍ବ କ୍ୟାଲେଣ୍ଡର୍ ଦେଖନ୍ତୁ →",
+    "todayLabel": "ଆଜି:",
+    "loadingOverview": "ପର୍ବ ସମୀକ୍ଷା ଲୋଡ୍ ହେଉଛି…",
+    "importanceSuffix": "ଗୁରୁତ୍ୱ"
+  }
+}

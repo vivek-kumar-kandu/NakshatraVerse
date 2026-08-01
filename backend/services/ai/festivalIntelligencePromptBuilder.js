@@ -25,6 +25,10 @@
 //      Gemini can explain why the festival is meaningful *for this person
 //      specifically*. Only ever called when a chart is available.
 // ─────────────────────────────────────────────────────────────────────────
+<<<<<<< HEAD
+=======
+import { getAiLanguageInstruction } from "../localization/aiLanguageInstruction.js";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 function renderFestivalFacts(festival) {
   return `- Name: ${festival.name}
@@ -40,7 +44,11 @@ function renderFestivalFacts(festival) {
 - Region: ${(festival.region || []).join("; ") || "Pan-Indian"}`;
 }
 
+<<<<<<< HEAD
 export function buildFestivalIntelligencePrompt(festival) {
+=======
+export function buildFestivalIntelligencePrompt(festival, language) {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return `You are a Vedic astrology and Hindu-festival explainer. You are given an ALREADY-CALCULATED festival occurrence produced by a backend calculation engine. Your ONLY job is to add richer context around it in warm, readable prose and short lists. You must NEVER calculate, invent, guess, or alter the Date, Type, or Importance given below, and you must NEVER state a different date for this festival than the one given.
 
 Rules you must strictly follow:
@@ -62,7 +70,11 @@ Return this exact JSON structure, writing natural prose/lists for each value bas
   "culturalSignificance": "2-3 sentences on the broader cultural/seasonal/scientific-adjacent significance (e.g. seasonal timing, harvest, agricultural or lunar-calendar context) where genuinely applicable — otherwise focus on cultural context alone",
   "thingsToAvoid": ["3-5 short, commonly-cited customary things to avoid on this day"],
   "pujaOverview": "3-5 sentence, hedged, general overview of how the puja/ritual for this day is traditionally structured (not a full step-by-step script) — note that specific family/regional/temple traditions vary"
+<<<<<<< HEAD
 }`;
+=======
+}${getAiLanguageInstruction(language)}`;
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 function renderInsightsForPersonalization(insights) {
@@ -84,7 +96,11 @@ function renderPanchangForPersonalization(panchang) {
   return `Tithi: ${panchang.tithi?.name}; Nakshatra: ${panchang.nakshatra?.name}; Auspiciousness: ${panchang.auspiciousnessLabel} (${panchang.auspiciousnessScore}/100).`;
 }
 
+<<<<<<< HEAD
 export function buildPersonalizedFestivalPrompt({ festival, insights, panchang }) {
+=======
+export function buildPersonalizedFestivalPrompt({ festival, insights, panchang, language }) {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return `You are a Vedic astrology explainer producing PERSONALIZED festival guidance for one specific person. A backend calculation engine has ALREADY computed the festival occurrence, this person's Dasha, Transits, category Predictions, and today's Panchang below. Your ONLY job is to connect these already-computed facts into a warm, hedged, personalized explanation of why this festival is meaningful for this person right now. You must NEVER calculate, invent, guess, or alter any Dasha lord, Transit, Prediction, Panchang value, or the festival's Date/Type/Importance.
 
 Rules you must strictly follow:
@@ -112,7 +128,11 @@ Return this exact JSON structure:
   "healthFocus": "1-2 hedged sentences connecting this festival to this person's health/wellbeing, grounded in the facts above (never a diagnosis)",
   "spiritualFocus": "1-2 hedged sentences connecting this festival to this person's spiritual practice, grounded in the facts above",
   "personalGrowthFocus": "1-2 hedged sentences connecting this festival to this person's personal growth, grounded in the facts above"
+<<<<<<< HEAD
 }`;
+=======
+}${getAiLanguageInstruction(language)}`;
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 }
 
 export default { buildFestivalIntelligencePrompt, buildPersonalizedFestivalPrompt };

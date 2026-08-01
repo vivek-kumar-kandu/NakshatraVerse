@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← ڈیش بورڈ پر واپس جائیں",
+    "title": "محفوظ کردہ رپورٹس",
+    "titleWithCount": "محفوظ کردہ رپورٹس ({{count}})",
+    "generateNewReport": "✦ نئی رپورٹ بنائیں",
+    "loadFailed": "آپ کی محفوظ کردہ رپورٹس لوڈ نہیں ہو سکیں۔",
+    "tryAgain": "↻ دوبارہ کوشش کریں",
+    "deleteToastSuccess": "\"{{title}}\" حذف کر دی گئی۔",
+    "deleteToastFallbackTitle": "رپورٹ",
+    "deleteFailed": "وہ رپورٹ حذف نہیں کی جا سکی۔",
+    "downloadToastSuccess": "PDF ڈاؤن لوڈ ہو گئی۔",
+    "downloadFailed": "PDF نہیں بنائی جا سکی۔",
+    "emptyTitle": "ابھی تک کوئی محفوظ کردہ رپورٹ نہیں",
+    "emptyMessage": "یہاں اپنا مجموعہ بنانے کے لیے ایک ریڈنگ بنائیں اور رپورٹ محفوظ کریں پر ٹیپ کریں۔",
+    "emptyAction": "✦ نئی رپورٹ بنائیں",
+    "noMatchesTitle": "کوئی مماثلت نہیں ملی",
+    "noMatchesMessage": "کوئی محفوظ کردہ رپورٹ \"{{query}}\" سے میل نہیں کھاتی۔ مختلف عنوان، نام، یا لگن آزمائیں۔",
+    "clearSearch": "تلاش صاف کریں",
+    "deleteDialog": {
+      "title": "کیا یہ رپورٹ حذف کریں؟",
+      "message": "\"{{title}}\" مستقل طور پر ہٹا دی جائے گی۔ اسے واپس نہیں لایا جا سکتا۔",
+      "fallbackTitle": "یہ رپورٹ",
+      "confirmLabel": "حذف کریں",
+      "cancelLabel": "منسوخ کریں"
+    }
+  },
+  "detail": {
+    "loadFailed": "وہ رپورٹ لوڈ نہیں ہو سکی۔",
+    "backToSavedReports": "← محفوظ کردہ رپورٹس پر واپس جائیں",
+    "loading": "آپ کی محفوظ کردہ ریڈنگ لوڈ ہو رہی ہے…",
+    "openHoroscope": "🔮 قسمت نامہ",
+    "openCalendar": "📅 کیلنڈر",
+    "openLifeCoach": "🧭 لائف کوچ",
+    "askAI": "✨ AI سے پوچھیں"
+  },
+  "card": {
+    "savedOn": "{{date}} کو محفوظ کیا گیا",
+    "view": "دیکھیں",
+    "preview": "پیش نظارہ",
+    "download": "PDF",
+    "delete": "حذف کریں",
+    "deleting": "حذف کیا جا رہا ہے…",
+    "lagnaSuffix": "{{lagna}} لگن",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "رپورٹ لے آؤٹ",
+    "gridView": "گرڈ منظر",
+    "listView": "فہرست منظر",
+    "searchPlaceholder": "عنوان، نام، یا لگن سے تلاش کریں…",
+    "searchAriaLabel": "محفوظ کردہ رپورٹس تلاش کریں",
+    "sortAriaLabel": "محفوظ کردہ رپورٹس ترتیب دیں",
+    "resultCountSingle": "{{count}} رپورٹ",
+    "resultCountPlural": "{{count}} رپورٹس",
+    "resultCountFiltered": "{{total}} میں سے {{count}}"
+  },
+  "sort": {
+    "newest": "تازہ ترین پہلے",
+    "oldest": "قدیم ترین پہلے",
+    "title-asc": "عنوان (A–Z)",
+    "title-desc": "عنوان (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} کا پیش نظارہ",
+    "closePreview": "پیش نظارہ بند کریں",
+    "savedOn": "{{date}} کو محفوظ کیا گیا",
+    "noDetails": "اس رپورٹ کے لیے کوئی اضافی تفصیلات محفوظ نہیں ہیں۔",
+    "description": "یہ آپ کی محفوظ کردہ ریڈنگ کی تفصیلات کا ایک فوری پیش نظارہ ہے۔ ہر حصہ پڑھنے کے لیے مکمل رپورٹ کھولیں — محبت، کیریئر، دولت، صحت، دوش اور یوگ، علاج، اور آپ کا زندگی کا خلاصہ۔",
+    "viewFullReport": "✦ مکمل رپورٹ دیکھیں",
+    "preparingPdf": "PDF تیار کی جا رہی ہے…",
+    "downloadPdf": "⭳ PDF ڈاؤن لوڈ کریں"
+  },
+  "summarizeAiAria": "AI کے ساتھ اس رپورٹ کا خلاصہ کریں",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy is not part of this chart's backend-derived remedies."
+}

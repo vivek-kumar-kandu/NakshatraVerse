@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "past": "கடந்த காலம்",
+    "present": "நிகழ்காலம்",
+    "nearFuture": "அருகிய எதிர்காலம்",
+    "nextMonth": "அடுத்த மாதம்",
+    "next3Months": "அடுத்த 3 மாதங்கள்",
+    "next6Months": "அடுத்த 6 மாதங்கள்",
+    "nextYear": "அடுத்த ஆண்டு"
+  },
+  "horizons": {
+    "oneYear": "அடுத்த 1 ஆண்டு",
+    "fiveYear": "அடுத்த 5 ஆண்டுகள்",
+    "tenYear": "அடுத்த 10 ஆண்டுகள்"
+  },
+  "filterCategories": {
+    "career": "தொழில்",
+    "finance": "நிதி",
+    "love": "காதல்",
+    "marriage": "திருமணம்",
+    "health": "ஆரோக்கியம்",
+    "education": "கல்வி",
+    "family": "குடும்பம்",
+    "spiritual": "ஆன்மீகம்"
+  },
+  "tab": {
+    "buildingTimeline": "உங்கள் AI காலவரிசை உருவாக்கப்படுகிறது…",
+    "notAvailableTitle": "காலவரிசை இதுவரை கிடைக்கவில்லை",
+    "notAvailableMessage": "உங்கள் ஜாதகம் கணக்கிடப்பட்ட பிறகு உங்கள் மகாதசை/அந்தர்தசை காலவரிசை இங்கு தோன்றும்.",
+    "currentDashaHeading": "தற்போதைய தசை",
+    "mahadashaBadge": "மகாதசை: {{value}}",
+    "antardashaBadge": "அந்தர்தசை: {{value}}",
+    "dominantBadge": "முதன்மை: {{planet}}",
+    "notAvailableValue": "—",
+    "filterByLifeAreaHeading": "வாழ்க்கை பகுதி அடிப்படையில் வடிகட்டவும்",
+    "noEventsTitle": "இந்த வடிகட்டிக்கு நிகழ்வுகள் இல்லை",
+    "noEventsMessage": "தேர்ந்தெடுக்கப்பட்ட வாழ்க்கை பகுதியுடன் இதுவரை எந்த AI காலவரிசை நிகழ்வும் பொருந்தவில்லை. வேறு வடிகட்டியை முயற்சிக்கவும் அல்லது அனைத்தையும் தேர்ந்தெடுக்கவும்.",
+    "sectionEventsAriaLabel": "{{label}} காலவரிசை நிகழ்வுகள்"
+  },
+  "filters": {
+    "ariaLabel": "வாழ்க்கை பகுதி அடிப்படையில் AI காலவரிசை நிகழ்வுகளை வடிகட்டவும்",
+    "all": "அனைத்தும்"
+  },
+  "eventCard": {
+    "generalCategoryFallback": "பொது",
+    "upcomingPeriod": "வரவிருக்கும் காலம்",
+    "dateRangeArrow": "{{start}} → {{end}}",
+    "entryAriaLabel": "{{start}} க்கான AI காலவரிசை உள்ளீடு. AI மூலம் விளக்க தேர்ந்தெடுக்கவும்.",
+    "entryAriaLabelWithEnd": "{{start}} முதல் {{end}} வரையிலான AI காலவரிசை உள்ளீடு. AI மூலம் விளக்க தேர்ந்தெடுக்கவும்.",
+    "mahadashaBadge": "மகாதசை: {{value}}",
+    "antardashaBadge": "அந்தர்தசை: {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI விளக்கம்",
+    "eventLabelFallback": "வாழ்க்கை-பகுதி",
+    "prompt": "இந்த {{category}} கணிப்பின் Gemini-இயக்கப்பட்ட விளக்கத்தைப் பெறுங்கள், இது முழுவதுமாக இந்த ஜாதகத்தின் சொந்த பின்தள-கணக்கிடப்பட்ட உண்மைகளை அடிப்படையாகக் கொண்டது.",
+    "explainAriaLabel": "இந்த {{category}} கணிப்பை AI மூலம் விளக்கவும்",
+    "explainButton": "✨ AI மூலம் விளக்கவும்",
+    "generatingLabel": "இந்த {{category}} கணிப்பிற்கான AI விளக்கம் உருவாக்கப்படுகிறது",
+    "loadFailed": "AI காலவரிசை விளக்கம் தற்போது கிடைக்கவில்லை.",
+    "tryAgain": "↻ மீண்டும் முயற்சிக்கவும்"
+  },
+  "common": {
+    "nothingToShow": "இதுவரை காட்ட எதுவும் இல்லை."
+  },
+  "legacyCard": {
+    "upcomingPeriod": "வரவிருக்கும் காலம்",
+    "mahadashaBadge": "மகாதசை: {{value}}",
+    "antardashaBadge": "அந்தர்தசை: {{value}}"
+  }
+}

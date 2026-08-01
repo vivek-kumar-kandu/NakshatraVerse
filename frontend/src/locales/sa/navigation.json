@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "गृहम्",
+    "features": "विशेषताः",
+    "about": "अस्माकं विषये",
+    "faq": "सामान्यप्रश्नाः"
+  },
+  "navbar": {
+    "brandAriaLabel": "नक्षत्रवर्स — गृहम्",
+    "primaryAriaLabel": "मुख्यम्",
+    "openMenu": "सूचीं उद्घाटयतु",
+    "closeMenu": "सूचीं पिधत्तु"
+  },
+  "auth": {
+    "home": "गृहम्",
+    "dashboard": "फलकम्",
+    "reports": "प्रतिवेदनानि",
+    "profile": "परिचयः"
+  },
+  "accountMenu": {
+    "myProfile": "मम परिचयः",
+    "dashboard": "फलकम्",
+    "savedReports": "सुरक्षितप्रतिवेदनानि",
+    "settings": "विन्यासाः",
+    "helpAbout": "सहायता तथा विषये",
+    "memberSince": "{{date}} तः सदस्यः",
+    "menuLabel": "खाता",
+    "triggerLabel": "{{name}} कृते खातासूची"
+  },
+  "actionDock": {
+    "askAi": "AI पृच्छतु",
+    "horoscope": "राशिफलम्",
+    "calendar": "पञ्चाङ्गपत्रम्",
+    "lifeCoach": "जीवनमार्गदर्शकः",
+    "kundliMatching": "कुण्डलीमेलनम्",
+    "panchang": "पञ्चाङ्गम्",
+    "festivalCalendar": "उत्सवपत्रम्",
+    "notifications": "सूचनाः",
+    "saveReport": "प्रतिवेदनं सुरक्षितं करोतु",
+    "saving": "सुरक्षितं क्रियते…",
+    "downloadPdf": "PDF अवाहयतु",
+    "preparing": "सज्जीक्रियते…",
+    "printPdf": "PDF मुद्रयतु",
+    "opening": "उद्घाट्यते…",
+    "reportActions": "प्रतिवेदनक्रियाः",
+    "openReportActions": "प्रतिवेदनक्रियाः उद्घाटयतु",
+    "close": "पिधत्तु",
+    "somethingWentWrong": "किमपि दोषः जातः।"
+  },
+  "commandPalette": {
+    "ariaLabel": "आदेशपट्टिका",
+    "searchAriaLabel": "आदेशपट्टिका अन्वेषणम्",
+    "commandsAriaLabel": "आदेशाः",
+    "sections": {
+      "navigate": "दिशानिर्देशः",
+      "theme": "विषयवस्तु",
+      "settings": "विन्यासाः",
+      "recent": "नूतनतमानि",
+      "recentReports": "नूतनतमप्रतिवेदनानि",
+      "recentReportsLoading": "नूतनतमप्रतिवेदनानि · लोड्यन्ते…"
+    },
+    "nav": {
+      "dashboard": "फलकम्",
+      "generateReport": "प्रतिवेदनं निर्मातु",
+      "savedReports": "सुरक्षितप्रतिवेदनानि",
+      "profile": "परिचयः",
+      "settings": "विन्यासाः",
+      "horoscope": "राशिफलम्",
+      "calendar": "पञ्चाङ्गपत्रम्",
+      "aiAssistant": "AI सहायकः",
+      "aiLifeCoach": "AI जीवनमार्गदर्शकः",
+      "kundliMatching": "कुण्डलीमेलनम्",
+      "dailyPanchang": "दैनिकपञ्चाङ्गं मुहूर्तं च",
+      "festivalCalendar": "उत्सवपत्रम्",
+      "todaysFestival": "अद्यत्ववः उत्सवः",
+      "upcomingFestivals": "आगामिनः उत्सवाः",
+      "notificationCenter": "सूचनाकेन्द्रम्",
+      "unreadNotifications": "अपठितसूचनाः",
+      "familyProfiles": "कुटुम्बपरिचयाः",
+      "relationshipHub": "सम्बन्धकेन्द्रम्",
+      "help": "सहायता"
+    },
+    "theme": {
+      "light": "सेक्रेड्-डॉन् इति परिवर्तयतु",
+      "dark": "मिड्नाइट्-कॉस्मिक् इति परिवर्तयतु",
+      "system": "तन्त्रविषयवस्तु इति परिवर्तयतु"
+    },
+    "settingsSections": {
+      "account": "विन्यासाः · खाता",
+      "appearance": "विन्यासाः · दर्शनम्",
+      "preferences": "विन्यासाः · वरीयताः",
+      "privacy": "विन्यासाः · गोपनीयता",
+      "about": "विन्यासाः · विषये"
+    },
+    "untitledReport": "अनामप्रतिवेदनम्",
+    "noMatches": "कोऽपि समानः आदेशः नास्ति।",
+    "noMatchesFor": "\"{{query}}\" कृते कोऽपि समानः आदेशः नास्ति।",
+    "searchPlaceholder": "पृष्ठानि, प्रतिवेदनानि, योगान्, दोषान्, उपायान् च अन्विष्यतु…"
+  }
+}

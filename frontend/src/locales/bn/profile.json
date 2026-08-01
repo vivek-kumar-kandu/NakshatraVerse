@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← ড্যাশবোর্ডে ফিরে যান",
+    "title": "আমার প্রোফাইল",
+    "photoHint": "সম্পাদনা করতে আপনার ছবিতে ক্লিক করুন — আপলোড করুন, পরিবর্তন করুন, বা সরান।",
+    "authProviderGoogle": "Google দিয়ে সাইন ইন করা হয়েছে",
+    "authProviderEmail": "ইমেল ও পাসওয়ার্ড",
+    "accountInformation": "অ্যাকাউন্ট তথ্য",
+    "fullName": "পুরো নাম",
+    "email": "ইমেল",
+    "memberSince": "সদস্যপদ শুরু",
+    "accountType": "অ্যাকাউন্টের ধরন",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "পাসওয়ার্ড পরিবর্তন করুন",
+    "editProfileInSettings": "সেটিংসে প্রোফাইল সম্পাদনা করুন →",
+    "activitySummary": "প্রোফাইল কার্যকলাপ সারাংশ",
+    "totalReports": "মোট প্রতিবেদন",
+    "loadingValue": "…",
+    "lastGenerated": "সর্বশেষ তৈরি হয়েছে",
+    "viewSavedReports": "সংরক্ষিত প্রতিবেদন দেখুন →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "অনুগ্রহ করে একটি JPG, PNG, বা WEBP ছবি নির্বাচন করুন।",
+    "fileTooLarge": "সেই ছবিটি খুব বড়। অনুগ্রহ করে 8MB এর কম আকারের একটি ফাইল নির্বাচন করুন।",
+    "processFailed": "সেই ছবিটি প্রক্রিয়া করা যায়নি।",
+    "photoUpdated": "প্রোফাইল ছবি আপডেট হয়েছে।",
+    "saveFailed": "আপনার ছবি সংরক্ষণ করা যায়নি।",
+    "photoRemoved": "প্রোফাইল ছবি সরানো হয়েছে।",
+    "removeFailed": "আপনার ছবি সরানো যায়নি।",
+    "changePhotoAriaLabel": "প্রোফাইল ছবি পরিবর্তন করুন",
+    "uploadPhotoAriaLabel": "প্রোফাইল ছবি আপলোড করুন",
+    "menuAriaLabel": "প্রোফাইল ছবির বিকল্প",
+    "replacePhoto": "ছবি প্রতিস্থাপন করুন",
+    "uploadPhoto": "ছবি আপলোড করুন",
+    "removePhoto": "ছবি সরান",
+    "previewDialogAriaLabel": "নতুন প্রোফাইল ছবির পূর্বরূপ",
+    "previewYourNewPhoto": "আপনার নতুন ছবির পূর্বরূপ দেখুন",
+    "cancel": "বাতিল করুন",
+    "save": "সংরক্ষণ করুন"
+  }
+}

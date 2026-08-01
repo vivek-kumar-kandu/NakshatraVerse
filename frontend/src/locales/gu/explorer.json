@@ -1,0 +1,169 @@
+{
+  "types": {
+    "planet": "ગ્રહ",
+    "house": "ભાવ",
+    "sign": "રાશિ",
+    "yoga": "યોગ",
+    "dosha": "દોષ",
+    "nakshatra": "નક્ષત્ર",
+    "ascendant": "લગ્ન",
+    "aspect": "દૃષ્ટિ"
+  },
+  "typeSingular": {
+    "planet": "ગ્રહ",
+    "house": "ભાવ",
+    "sign": "રાશિ",
+    "yoga": "યોગ",
+    "dosha": "દોષ",
+    "nakshatra": "નક્ષત્ર",
+    "ascendant": "લગ્ન",
+    "aspect": "દૃષ્ટિ"
+  },
+  "header": {
+    "title": "કુંડળી એક્સપ્લોરર",
+    "breadcrumb": "{{type}} · {{item}}",
+    "notAvailable": "—",
+    "selectPrompt": "એક્સપ્લોર કરવા માટે એક આઇટમ પસંદ કરો"
+  },
+  "mainPanel": {
+    "loadingPanel": "વિગત પેનલ લોડ થઈ રહી છે…",
+    "emptyTitle": "હજુ સુધી કંઈ પસંદ કરેલ નથી",
+    "emptyMessage": "અહીં એક્સપ્લોર કરવા માટે પેનલમાંથી ગ્રહ, ભાવ, રાશિ, યોગ, દોષ, નક્ષત્ર, લગ્ન, અથવા દૃષ્ટિ પસંદ કરો.",
+    "regionAriaLabel": "એક્સપ્લોરર વિગત પેનલ"
+  },
+  "sidePanel": {
+    "treeAriaLabel": "એક્સપ્લોરર પસંદગી શ્રેણીઓ",
+    "categoryAriaLabel": "{{label}} ({{count}})",
+    "housePrefix": "ભાવ {{num}}",
+    "lordBadge": "સ્વામી: {{lord}}",
+    "aspectCountSingle": "{{count}} દૃષ્ટિ",
+    "aspectCountPlural": "{{count}} દૃષ્ટિઓ",
+    "netInfluence": "ચોખ્ખું {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI સમજૂતી",
+    "prompt": "{{label}} ની Gemini-સંચાલિત સમજૂતી મેળવો, જે સંપૂર્ણપણે આ ચાર્ટની પોતાની બેકએન્ડ-ગણતરી કરેલી હકીકતો પર આધારિત છે.",
+    "explainAriaLabel": "{{label}} ને AI વડે સમજાવો",
+    "explainButton": "✨ AI વડે સમજાવો",
+    "generatingLabel": "{{label}} માટે AI સમજૂતી બનાવી રહ્યા છીએ",
+    "loadFailed": "એક્સપ્લોરર AI હાલમાં ઉપલબ્ધ નથી.",
+    "tryAgain": "↻ ફરી પ્રયત્ન કરો"
+  },
+  "common": {
+    "relatedPredictions": "સંબંધિત ભવિષ્યવાણીઓ",
+    "relatedRemedies": "સંબંધિત ઉપાયો",
+    "noLinkedPredictionsTitle": "કોઈ જોડાયેલ ભવિષ્યવાણી નથી",
+    "noLinkedRemediesTitle": "કોઈ જોડાયેલ ઉપાય નથી",
+    "noRemediesTitle": "કોઈ ઉપાય ઉપલબ્ધ નથી"
+  },
+  "planet": {
+    "notAvailableTitle": "ગ્રહ ડેટા ઉપલબ્ધ નથી",
+    "notAvailableMessage": "આ ચાર્ટમાં હજુ સુધી આ ગ્રહ માટે ગણતરી કરેલ સ્થિતિ ડેટા નથી.",
+    "positionDignityHeading": "સ્થિતિ અને ગૌરવ",
+    "houseLabel": "ભાવ",
+    "signLabel": "રાશિ",
+    "retrogradeBadge": "વક્રી",
+    "combustBadge": "અસ્ત",
+    "functionallyNature": "કાર્યાત્મક રીતે {{nature}}",
+    "friendshipSignSuffix": "{{relation}} રાશિ",
+    "adjustedStrengthScore": "સમાયોજિત શક્તિ સ્કોર",
+    "foundationShadbala": "મૂળ ષડ્બલ",
+    "notAvailableValue": "—",
+    "strengthUnavailable": "આ ચાર્ટ માટે વિગતવાર શક્તિ સ્કોરિંગ ઉપલબ્ધ નથી.",
+    "noLinkedPredictionsMessage": "હાલમાં કોઈ શ્રેણી ભવિષ્યવાણી {{planet}} ને તેના મુખ્ય કે સહાયક ગ્રહ તરીકે જણાવતી નથી.",
+    "noLinkedRemediesMessage": "આ ચાર્ટની ભવિષ્યવાણીઓ દ્વારા હાલમાં {{planet}} સાથે કોઈ ઉપાય જોડાયેલ નથી."
+  },
+  "house": {
+    "notAvailableTitle": "ભાવ ડેટા ઉપલબ્ધ નથી",
+    "notAvailableMessage": "અહીં એક્સપ્લોર કરવા માટે પેનલમાંથી એક ભાવ પસંદ કરો.",
+    "signBadge": "રાશિ: {{sign}}",
+    "lordBadge": "સ્વામી: {{lord}}",
+    "meaning": "અર્થ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "સ્થિત ગ્રહો",
+    "noOccupants": "હાલમાં આ ભાવમાં કોઈ ગ્રહ સ્થિત નથી.",
+    "noLinkedPredictionsMessage": "હાલમાં કોઈ શ્રેણી ભવિષ્યવાણી ભાવ {{house}} ને સહાયક ભાવ તરીકે જણાવતી નથી.",
+    "noLinkedRemediesMessage": "આ ચાર્ટની ભવિષ્યવાણીઓ દ્વારા હાલમાં ભાવ {{house}} સાથે કોઈ ઉપાય જોડાયેલ નથી.",
+    "itemLabel": "ભાવ {{num}}"
+  },
+  "sign": {
+    "notAvailableTitle": "રાશિ ડેટા ઉપલબ્ધ નથી",
+    "notAvailableMessage": "અહીં એક્સપ્લોર કરવા માટે પેનલમાંથી એક રાશિ પસંદ કરો.",
+    "lordBadge": "સ્વામી: {{lord}}",
+    "lagnaBadge": "આ ચાર્ટનું લગ્ન",
+    "rulingPlanet": "શાસક ગ્રહ",
+    "notAvailableValue": "—",
+    "occupantsHeading": "આ રાશિમાં હાલના ગ્રહો",
+    "noOccupants": "આ ચાર્ટમાં હાલમાં આ રાશિમાં કોઈ ગ્રહ સ્થિત નથી.",
+    "noLinkedPredictionsMessage": "હાલમાં કોઈ શ્રેણી ભવિષ્યવાણી આ રાશિમાં સ્થિત કોઈ ગ્રહ સાથે જોડાયેલ નથી."
+  },
+  "yoga": {
+    "notFoundTitle": "યોગ મળ્યો નથી",
+    "notFoundMessage": "આ યોગ આ ચાર્ટ માટે હાલમાં ઓળખાયેલા સેટનો ભાગ નથી.",
+    "ruleMatchedBadge": "નિયમ મેળ ખાધો: {{name}}",
+    "contributingPlanetsHeading": "યોગદાન આપતા ગ્રહો",
+    "noContributingPlanets": "હાલમાં કોઈ શ્રેણી ભવિષ્યવાણી આ યોગનું શ્રેય ચોક્કસ ગ્રહોને આપતી નથી.",
+    "confidenceEffectsTitle": "વિશ્વાસ અને અસરો (જોડાયેલી ભવિષ્યવાણીઓમાંથી)",
+    "noLinkedPredictionsMessage": "હાલમાં કોઈ શ્રેણી ભવિષ્યવાણી આ યોગને સહાયક પરિબળ તરીકે ટાંકતી નથી."
+  },
+  "dosha": {
+    "notFoundTitle": "દોષ મળ્યો નથી",
+    "notFoundMessage": "આ દોષ આ ચાર્ટ માટે હાલમાં ઓળખાયેલા સેટનો ભાગ નથી.",
+    "matchingRuleBadge": "મેળ ખાતો નિયમ: {{name}}",
+    "severityBadge": "તીવ્રતા: {{severity}}",
+    "affectedHousesHeading": "અસરગ્રસ્ત ભાવો",
+    "houseBadge": "ભાવ {{num}}",
+    "noAffectedHouses": "હાલમાં કોઈ શ્રેણી ભવિષ્યવાણી આ દોષને ચોક્કસ ભાવો સાથે જોડતી નથી.",
+    "remedies": "ઉપાયો",
+    "noRemediesMessage": "હાલમાં આ દોષ સાથે કોઈ ઉપાય જોડાયેલ નથી.",
+    "linkedPredictions": "જોડાયેલી ભવિષ્યવાણીઓ",
+    "noLinkedPredictionsMessage": "હાલમાં કોઈ શ્રેણી ભવિષ્યવાણી આ દોષને સહાયક પરિબળ તરીકે ટાંકતી નથી."
+  },
+  "nakshatra": {
+    "notAvailableTitle": "નક્ષત્ર પ્રોફાઇલ ઉપલબ્ધ નથી",
+    "notAvailableMessage": "આ ચાર્ટમાં હજુ સુધી ગણતરી કરેલ નક્ષત્ર પ્રોફાઇલ નથી.",
+    "itemLabel": "નક્ષત્ર",
+    "padaBadge": "પદ {{pada}}",
+    "lordBadge": "સ્વામી: {{lord}}",
+    "ganaBadge": "{{gana}} ગણ",
+    "deity": "દેવતા",
+    "symbol": "પ્રતીક",
+    "nadi": "નાડી",
+    "yoni": "યોનિ",
+    "notAvailableValue": "—",
+    "personalityHeading": "વ્યક્તિત્વ",
+    "careerTendencies": "કારકિર્દી વલણો",
+    "relationshipTendencies": "સંબંધ વલણો",
+    "spiritualTendencies": "આધ્યાત્મિક વલણો"
+  },
+  "ascendant": {
+    "notAvailableTitle": "લગ્ન ઉપલબ્ધ નથી",
+    "notAvailableMessage": "આ ચાર્ટમાં હજુ સુધી ગણતરી કરેલું લગ્ન નથી.",
+    "itemLabel": "લગ્ન",
+    "lordBadge": "સ્વામી: {{lord}}",
+    "risingSign": "લગ્ન (ઉદય રાશિ)",
+    "lagnaLord": "લગ્ન સ્વામી",
+    "notAvailableValue": "—",
+    "characteristicsHeading": "લક્ષણો (લગ્ન સ્વામીની શક્તિ પ્રમાણે)",
+    "functionallyNature": "કાર્યાત્મક રીતે {{nature}}",
+    "predictionsLinkedTitle": "લગ્ન સ્વામી સાથે જોડાયેલી ભવિષ્યવાણીઓ",
+    "lagnaLordFallback": "લગ્ન સ્વામી",
+    "noLinkedPredictionsMessage": "હાલમાં કોઈ શ્રેણી ભવિષ્યવાણી {{lord}} ને તેના મુખ્ય કે સહાયક ગ્રહ તરીકે જણાવતી નથી."
+  },
+  "aspect": {
+    "notAvailableTitle": "દૃષ્ટિ ડેટા ઉપલબ્ધ નથી",
+    "notAvailableMessage": "અહીં એક્સપ્લોર કરવા માટે પેનલમાંથી એક દૃષ્ટિ પસંદ કરો.",
+    "sourcesHeading": "દૃષ્ટિ સ્રોત → લક્ષ્ય",
+    "beneficAspects": "શુભ દૃષ્ટિઓ",
+    "maleficAspects": "અશુભ દૃષ્ટિઓ",
+    "netInfluenceStrength": "ચોખ્ખી અસર (શક્તિ)",
+    "housesAspected": "દૃષ્ટિ પ્રાપ્ત ભાવો",
+    "houseLabel": "ભાવ {{num}}",
+    "itemLabel": "{{target}} પર દૃષ્ટિઓ",
+    "interpretPureBenefic": "સંપૂર્ણપણે શુભ દૃષ્ટિઓ — એક સહાયક અસર.",
+    "interpretPureMalefic": "સંપૂર્ણપણે અશુભ દૃષ્ટિઓ — એક પડકારજનક અસર.",
+    "interpretMixedNetBenefic": "મિશ્ર દૃષ્ટિઓ, એકંદરે ચોખ્ખી શુભ અસર.",
+    "interpretMixedNetMalefic": "મિશ્ર દૃષ્ટિઓ, એકંદરે ચોખ્ખી અશુભ અસર.",
+    "interpretMixedNeutral": "મિશ્ર દૃષ્ટિઓ જેની ચોખ્ખી અસર સંતુલિત અને તટસ્થ છે."
+  }
+}

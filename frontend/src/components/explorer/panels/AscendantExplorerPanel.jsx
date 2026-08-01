@@ -1,4 +1,8 @@
 import { memo, useMemo } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../../common/GlassCard.jsx";
 import Badge from "../../common/Badge.jsx";
 import InsightRow from "../../common/InsightRow.jsx";
@@ -26,6 +30,10 @@ import { predictionsForPlanet } from "../../../utils/explorerData.js";
 //     shared `predictionsForPlanet` helper.
 // ─────────────────────────────────────────────────────────────────────────
 function AscendantExplorerPanel({ userData, report, chart }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["explorer"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const lagna = userData?.lagna;
   const glyph = lagna ? ZODIAC_SIGNS[SIGN_NAMES.indexOf(lagna)] : undefined;
   const lord = lagna ? SIGN_LORD[lagna] : undefined;
@@ -38,13 +46,19 @@ function AscendantExplorerPanel({ userData, report, chart }) {
 
   if (!lagna) {
     return (
+<<<<<<< HEAD
       <ExplorerDetailShell icon="🌅" label="Ascendant" color="#ffd700" item={{ label: "Ascendant" }}>
         <EmptyState icon="🌅" title="Ascendant not available" message="This chart doesn't have a computed Lagna yet." />
+=======
+      <ExplorerDetailShell icon="🌅" label={t("explorer:typeSingular.ascendant")} color="#ffd700" item={{ label: t("explorer:ascendant.itemLabel") }}>
+        <EmptyState icon="🌅" title={t("explorer:ascendant.notAvailableTitle")} message={t("explorer:ascendant.notAvailableMessage")} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </ExplorerDetailShell>
     );
   }
 
   return (
+<<<<<<< HEAD
     <ExplorerDetailShell icon="🌅" label="Ascendant" color="#ffd700" item={{ label: lagna }}>
       <GlassCard style={{ padding: 24 }}>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 14 }}>
@@ -53,18 +67,36 @@ function AscendantExplorerPanel({ userData, report, chart }) {
         </div>
         <InsightRow label="Lagna (Rising Sign)" value={lagna} color="#ffd700" />
         <InsightRow label="Lagna Lord" value={lord || "—"} color="#bf7fff" />
+=======
+    <ExplorerDetailShell icon="🌅" label={t("explorer:typeSingular.ascendant")} color="#ffd700" item={{ label: lagna }}>
+      <GlassCard style={{ padding: 24 }}>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 14 }}>
+          {glyph && <Badge color="#ffd700">{glyph} {lagna}</Badge>}
+          {lord && <Badge color="#bf7fff">{t("explorer:ascendant.lordBadge", { lord })}</Badge>}
+        </div>
+        <InsightRow label={t("explorer:ascendant.risingSign")} value={lagna} color="#ffd700" />
+        <InsightRow label={t("explorer:ascendant.lagnaLord")} value={lord || t("explorer:ascendant.notAvailableValue")} color="#bf7fff" />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
         {lordStrength && (
           <>
             <h4 style={{ margin: "16px 0 8px", fontSize: 13, letterSpacing: 1.5, textTransform: "uppercase",
               color: "var(--nv-text-muted, rgba(200,160,255,0.5))", fontFamily: "Inter,sans-serif", fontWeight: 500 }}>
+<<<<<<< HEAD
               CHARACTERISTICS (via Lagna Lord's strength)
+=======
+              {t("explorer:ascendant.characteristicsHeading")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </h4>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 10 }}>
               {lordStrength.dignity?.label && <Badge color="#9dc9ff">{lordStrength.dignity.label}</Badge>}
               {lordStrength.functionalNature?.nature && (
                 <Badge color={lordStrength.functionalNature.nature === "malefic" ? "#ff7b7b" : "#7effb2"}>
+<<<<<<< HEAD
                   Functionally {lordStrength.functionalNature.nature}
+=======
+                  {t("explorer:ascendant.functionallyNature", { nature: lordStrength.functionalNature.nature })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </Badge>
               )}
             </div>
@@ -77,13 +109,21 @@ function AscendantExplorerPanel({ userData, report, chart }) {
         )}
       </GlassCard>
 
+<<<<<<< HEAD
       <ExpandableSection icon="🔮" title="Predictions Linked to the Lagna Lord" color="#ffd700" count={relatedPredictions.length}>
+=======
+      <ExpandableSection icon="🔮" title={t("explorer:ascendant.predictionsLinkedTitle")} color="#ffd700" count={relatedPredictions.length}>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         {relatedPredictions.length > 0 ? (
           <div style={{ display: "grid", gap: 10, gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))" }}>
             {relatedPredictions.map((p, idx) => <PredictionCard key={p.category} prediction={p} idx={idx} />)}
           </div>
         ) : (
+<<<<<<< HEAD
           <EmptyState compact icon="🔮" title="No linked predictions" message={`No category prediction currently names ${lord || "the Lagna lord"} as its dominant or supporting planet.`} />
+=======
+          <EmptyState compact icon="🔮" title={t("explorer:common.noLinkedPredictionsTitle")} message={t("explorer:ascendant.noLinkedPredictionsMessage", { lord: lord || t("explorer:ascendant.lagnaLordFallback") })} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         )}
       </ExpandableSection>
 

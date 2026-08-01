@@ -38,6 +38,19 @@ body { margin: 0; }
 @keyframes fadeInOut { 0%,100%{opacity:0.4} 50%{opacity:1} }
 @keyframes shimmer { 0%{background-position:200% center} 100%{background-position:-200% center} }
 @keyframes spin { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
+<<<<<<< HEAD
+=======
+/* ── RTL (Phase 3.6, Section 4) ───────────────────────────────────────
+   Urdu is the only `rtl: true` language (see i18n/languages.js); when
+   LanguageContext sets document.documentElement.dir = "rtl" for it, this
+   flips the handful of CSS custom properties that a bare logical property
+   (insetInlineEnd, borderInlineStart, etc.) can't cover on its own —
+   currently just the slide-in drawer's shadow, whose sign has to mirror
+   by hand since box-shadow has no logical-property equivalent in CSS.
+   Every other language leaves dir="ltr" (or unset), so this block is
+   inert for all 14 of them. */
+[dir="rtl"] { --nv-drawer-shadow: 16px 0 50px rgba(0,0,0,0.45); }
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 @keyframes slideIn { from{opacity:0;transform:translateX(-10px)} to{opacity:1;transform:translateX(0)} }
 @keyframes orbitSpin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
 @keyframes orbitCounterSpin { from{transform:rotate(0deg)} to{transform:rotate(-360deg)} }

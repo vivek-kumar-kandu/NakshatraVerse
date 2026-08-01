@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "ہوم",
+    "features": "خصوصیات",
+    "about": "ہمارے بارے میں",
+    "faq": "اکثر پوچھے جانے والے سوالات"
+  },
+  "navbar": {
+    "brandAriaLabel": "نکشترورس — ہوم",
+    "primaryAriaLabel": "مرکزی",
+    "openMenu": "مینو کھولیں",
+    "closeMenu": "مینو بند کریں"
+  },
+  "auth": {
+    "home": "ہوم",
+    "dashboard": "ڈیش بورڈ",
+    "reports": "رپورٹس",
+    "profile": "پروفائل"
+  },
+  "accountMenu": {
+    "myProfile": "میری پروفائل",
+    "dashboard": "ڈیش بورڈ",
+    "savedReports": "محفوظ کردہ رپورٹس",
+    "settings": "ترتیبات",
+    "helpAbout": "مدد اور معلومات",
+    "memberSince": "{{date}} سے رکن",
+    "menuLabel": "اکاؤنٹ",
+    "triggerLabel": "{{name}} کے لیے اکاؤنٹ مینو"
+  },
+  "actionDock": {
+    "askAi": "AI سے پوچھیں",
+    "horoscope": "قسمت نامہ",
+    "calendar": "کیلنڈر",
+    "lifeCoach": "لائف کوچ",
+    "kundliMatching": "کنڈلی ملان",
+    "panchang": "پنچانگ",
+    "festivalCalendar": "تہوار کیلنڈر",
+    "notifications": "اطلاعات",
+    "saveReport": "رپورٹ محفوظ کریں",
+    "saving": "محفوظ کیا جا رہا ہے…",
+    "downloadPdf": "PDF ڈاؤن لوڈ کریں",
+    "preparing": "تیار کیا جا رہا ہے…",
+    "printPdf": "PDF پرنٹ کریں",
+    "opening": "کھولا جا رہا ہے…",
+    "reportActions": "رپورٹ کارروائیاں",
+    "openReportActions": "رپورٹ کارروائیاں کھولیں",
+    "close": "بند کریں",
+    "somethingWentWrong": "کچھ غلط ہو گیا۔"
+  },
+  "commandPalette": {
+    "ariaLabel": "کمانڈ پیلیٹ",
+    "searchAriaLabel": "کمانڈ پیلیٹ تلاش",
+    "commandsAriaLabel": "کمانڈز",
+    "sections": {
+      "navigate": "نیویگیٹ کریں",
+      "theme": "تھیم",
+      "settings": "ترتیبات",
+      "recent": "حالیہ",
+      "recentReports": "حالیہ رپورٹس",
+      "recentReportsLoading": "حالیہ رپورٹس · لوڈ ہو رہی ہیں…"
+    },
+    "nav": {
+      "dashboard": "ڈیش بورڈ",
+      "generateReport": "رپورٹ بنائیں",
+      "savedReports": "محفوظ کردہ رپورٹس",
+      "profile": "پروفائل",
+      "settings": "ترتیبات",
+      "horoscope": "قسمت نامہ",
+      "calendar": "کیلنڈر",
+      "aiAssistant": "AI معاون",
+      "aiLifeCoach": "AI لائف کوچ",
+      "kundliMatching": "کنڈلی ملان",
+      "dailyPanchang": "روزانہ پنچانگ اور مہورت",
+      "festivalCalendar": "تہوار کیلنڈر",
+      "todaysFestival": "آج کا تہوار",
+      "upcomingFestivals": "آنے والے تہوار",
+      "notificationCenter": "اطلاعاتی مرکز",
+      "unreadNotifications": "غیر پڑھی اطلاعات",
+      "familyProfiles": "خاندانی پروفائلز",
+      "relationshipHub": "تعلقات مرکز",
+      "help": "مدد"
+    },
+    "theme": {
+      "light": "سیکرڈ ڈان پر سوئچ کریں",
+      "dark": "مڈنائٹ کاسمک پر سوئچ کریں",
+      "system": "سسٹم تھیم پر سوئچ کریں"
+    },
+    "settingsSections": {
+      "account": "ترتیبات · اکاؤنٹ",
+      "appearance": "ترتیبات · ظاہری شکل",
+      "preferences": "ترتیبات · ترجیحات",
+      "privacy": "ترتیبات · رازداری",
+      "about": "ترتیبات · معلومات"
+    },
+    "untitledReport": "بلا عنوان رپورٹ",
+    "noMatches": "کوئی مماثل کمانڈ نہیں۔",
+    "noMatchesFor": "\"{{query}}\" کے لیے کوئی مماثل کمانڈ نہیں۔",
+    "searchPlaceholder": "صفحات، رپورٹس، یوگ، دوش، علاج تلاش کریں…"
+  }
+}

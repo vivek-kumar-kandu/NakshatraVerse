@@ -1,0 +1,87 @@
+{
+  "categories": {
+    "system": "सिस्टम",
+    "reminder": "रिमाइन्डर",
+    "ai": "AI",
+    "panchang": "पञ्चाङ्ग",
+    "muhurat": "मुहूर्त",
+    "prediction": "भविष्यवाणी",
+    "transit": "गोचर",
+    "family": "परिवार",
+    "festival": "चाड",
+    "general": "सामान्य"
+  },
+  "priorities": {
+    "critical": "अति महत्वपूर्ण",
+    "high": "उच्च",
+    "medium": "मध्यम",
+    "low": "न्यून"
+  },
+  "sort": {
+    "newest": "सबैभन्दा नयाँ पहिले",
+    "oldest": "सबैभन्दा पुरानो पहिले",
+    "priority": "प्राथमिकता"
+  },
+  "center": {
+    "back": "← पछाडि",
+    "title": "🔔 सूचना केन्द्र",
+    "totalSingle": "जम्मा {{count}} सूचना",
+    "totalPlural": "जम्मा {{count}} सूचनाहरू",
+    "searchPlaceholder": "सूचनाहरू खोज्नुहोस्…",
+    "searchAriaLabel": "सूचनाहरू खोज्नुहोस्",
+    "filterCategoryAriaLabel": "श्रेणी अनुसार फिल्टर गर्नुहोस्",
+    "allCategories": "सबै श्रेणीहरू",
+    "filterPriorityAriaLabel": "प्राथमिकता अनुसार फिल्टर गर्नुहोस्",
+    "allPriorities": "सबै प्राथमिकताहरू",
+    "filterReadStatusAriaLabel": "पढाइ स्थिति अनुसार फिल्टर गर्नुहोस्",
+    "all": "सबै",
+    "unread": "नपढिएको",
+    "read": "पढिएको",
+    "sortAriaLabel": "सूचनाहरू क्रमबद्ध गर्नुहोस्",
+    "markAllRead": "✓ सबैलाई पढिएको चिन्ह लगाउनुहोस्",
+    "clearRead": "🗑️ पढिएका खाली गर्नुहोस्",
+    "loadFailedTitle": "सूचनाहरू लोड हुन सकेनन्",
+    "retry": "फेरि प्रयास गर्नुहोस्",
+    "emptyTitle": "कुनै सूचना छैन",
+    "emptyMessage": "तपाईं पूर्ण रूपमा अद्यावधिक हुनुहुन्छ — तपाईंको हालको फिल्टरसँग यहाँ केही मेल खाँदैन।",
+    "prevPage": "← अघिल्लो",
+    "nextPage": "अर्को →",
+    "pageOf": "पृष्ठ {{page}} मध्ये {{totalPages}}",
+    "toasts": {
+      "markReadFailed": "सूचनालाई पढिएको चिन्ह लगाउन सकिएन।",
+      "markAllReadSuccess": "सबै सूचनाहरू पढिएको चिन्ह लगाइयो।",
+      "markAllReadFailed": "सबैलाई पढिएको चिन्ह लगाउन सकिएन।",
+      "deleteFailed": "सूचना मेटाउन सकिएन।",
+      "clearReadSuccess": "पढिएका सूचनाहरू खाली गरियो।",
+      "clearReadFailed": "पढिएका सूचनाहरू खाली गर्न सकिएन।"
+    },
+    "clearDialog": {
+      "title": "पढिएका सूचनाहरू खाली गर्ने हो?",
+      "message": "यसले हरेक पढिएको सूचना मेटाउनेछ। यसलाई फिर्ता ल्याउन सकिँदैन।",
+      "confirmLabel": "पढिएका खाली गर्नुहोस्",
+      "loadingLabel": "खाली गरिँदैछ…"
+    },
+    "loadFailedGeneric": "सूचनाहरू लोड हुन सकेनन्।"
+  },
+  "card": {
+    "open": "खोल्नुहोस् →",
+    "openTitle": "खोल्नुहोस्",
+    "openAriaLabel": "सम्बन्धित मोड्युल खोल्नुहोस्",
+    "markReadTitle": "पढिएको चिन्ह लगाउनुहोस्",
+    "markReadLabel": "✓ पढिएको",
+    "deleteTitle": "सूचना मेटाउनुहोस्",
+    "deleteAriaLabel": "सूचना मेटाउनुहोस्"
+  },
+  "group": {
+    "updateSingle": "{{count}} अद्यावधिक",
+    "updatePlural": "{{count}} अद्यावधिक",
+    "unreadBadge": "{{count}} नपढिएको"
+  },
+  "widget": {
+    "title": "🔔 सूचनाहरू",
+    "unreadCount": "{{count}} नपढिएको",
+    "loadFailed": "सूचनाहरू लोड हुन सकेनन्।",
+    "emptyMessage": "अहिलेसम्म कुनै सूचना छैन — तपाईं पूर्ण रूपमा अद्यावधिक हुनुहुन्छ।",
+    "openCenter": "सूचना केन्द्र खोल्नुहोस् →"
+  }
+}

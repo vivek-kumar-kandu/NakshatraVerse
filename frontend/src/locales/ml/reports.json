@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← ഡാഷ്ബോർഡിലേക്ക് മടങ്ങുക",
+    "title": "സംരക്ഷിച്ച റിപ്പോർട്ടുകൾ",
+    "titleWithCount": "സംരക്ഷിച്ച റിപ്പോർട്ടുകൾ ({{count}})",
+    "generateNewReport": "✦ പുതിയ റിപ്പോർട്ട് സൃഷ്ടിക്കുക",
+    "loadFailed": "നിങ്ങളുടെ സംരക്ഷിച്ച റിപ്പോർട്ടുകൾ ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "tryAgain": "↻ വീണ്ടും ശ്രമിക്കുക",
+    "deleteToastSuccess": "\"{{title}}\" ഇല്ലാതാക്കി.",
+    "deleteToastFallbackTitle": "റിപ്പോർട്ട്",
+    "deleteFailed": "ആ റിപ്പോർട്ട് ഇല്ലാതാക്കാൻ കഴിഞ്ഞില്ല.",
+    "downloadToastSuccess": "PDF ഡൗൺലോഡ് ചെയ്തു.",
+    "downloadFailed": "PDF സൃഷ്ടിക്കാൻ കഴിഞ്ഞില്ല.",
+    "emptyTitle": "ഇതുവരെ സംരക്ഷിച്ച റിപ്പോർട്ടില്ല",
+    "emptyMessage": "ഇവിടെ നിങ്ങളുടെ ശേഖരം നിർമ്മിക്കാൻ ഒരു റീഡിംഗ് സൃഷ്ടിച്ച് റിപ്പോർട്ട് സംരക്ഷിക്കുക ടാപ്പ് ചെയ്യുക.",
+    "emptyAction": "✦ പുതിയ റിപ്പോർട്ട് സൃഷ്ടിക്കുക",
+    "noMatchesTitle": "പൊരുത്തങ്ങളൊന്നും കണ്ടെത്തിയില്ല",
+    "noMatchesMessage": "സംരക്ഷിച്ച ഒരു റിപ്പോർട്ടും \"{{query}}\" യുമായി പൊരുത്തപ്പെടുന്നില്ല. വ്യത്യസ്തമായ ശീർഷകം, പേര് അല്ലെങ്കിൽ ലഗ്നം പരീക്ഷിക്കുക.",
+    "clearSearch": "തിരയൽ മായ്ക്കുക",
+    "deleteDialog": {
+      "title": "ഈ റിപ്പോർട്ട് ഇല്ലാതാക്കണോ?",
+      "message": "\"{{title}}\" ശാശ്വതമായി നീക്കം ചെയ്യപ്പെടും. ഇത് പഴയപടിയാക്കാൻ കഴിയില്ല.",
+      "fallbackTitle": "ഈ റിപ്പോർട്ട്",
+      "confirmLabel": "ഇല്ലാതാക്കുക",
+      "cancelLabel": "റദ്ദാക്കുക"
+    }
+  },
+  "detail": {
+    "loadFailed": "ആ റിപ്പോർട്ട് ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "backToSavedReports": "← സംരക്ഷിച്ച റിപ്പോർട്ടുകളിലേക്ക് മടങ്ങുക",
+    "loading": "നിങ്ങളുടെ സംരക്ഷിച്ച റീഡിംഗ് ലോഡ് ചെയ്യുന്നു…",
+    "openHoroscope": "🔮 രാശിഫലം",
+    "openCalendar": "📅 കലണ്ടർ",
+    "openLifeCoach": "🧭 ലൈഫ് കോച്ച്",
+    "askAI": "✨ AI യോട് ചോദിക്കുക"
+  },
+  "card": {
+    "savedOn": "{{date}} ന് സംരക്ഷിച്ചു",
+    "view": "കാണുക",
+    "preview": "പ്രിവ്യൂ",
+    "download": "PDF",
+    "delete": "ഇല്ലാതാക്കുക",
+    "deleting": "ഇല്ലാതാക്കുന്നു…",
+    "lagnaSuffix": "{{lagna}} ലഗ്നം",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "റിപ്പോർട്ട് ലേഔട്ട്",
+    "gridView": "ഗ്രിഡ് കാഴ്ച",
+    "listView": "ലിസ്റ്റ് കാഴ്ച",
+    "searchPlaceholder": "ശീർഷകം, പേര് അല്ലെങ്കിൽ ലഗ്നം ഉപയോഗിച്ച് തിരയുക…",
+    "searchAriaLabel": "സംരക്ഷിച്ച റിപ്പോർട്ടുകൾ തിരയുക",
+    "sortAriaLabel": "സംരക്ഷിച്ച റിപ്പോർട്ടുകൾ അടുക്കുക",
+    "resultCountSingle": "{{count}} റിപ്പോർട്ട്",
+    "resultCountPlural": "{{count}} റിപ്പോർട്ടുകൾ",
+    "resultCountFiltered": "{{total}} ൽ {{count}}"
+  },
+  "sort": {
+    "newest": "ഏറ്റവും പുതിയത് ആദ്യം",
+    "oldest": "ഏറ്റവും പഴയത് ആദ്യം",
+    "title-asc": "ശീർഷകം (A–Z)",
+    "title-desc": "ശീർഷകം (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} ന്റെ പ്രിവ്യൂ",
+    "closePreview": "പ്രിവ്യൂ അടയ്ക്കുക",
+    "savedOn": "{{date}} ന് സംരക്ഷിച്ചു",
+    "noDetails": "ഈ റിപ്പോർട്ടിനായി അധിക വിവരങ്ങളൊന്നും സംരക്ഷിച്ചിട്ടില്ല.",
+    "description": "ഇത് നിങ്ങളുടെ സംരക്ഷിച്ച റീഡിംഗിന്റെ വിശദാംശങ്ങളുടെ ദ്രുത പ്രിവ്യൂ ആണ്. ഓരോ വിഭാഗവും വായിക്കാൻ പൂർണ്ണ റിപ്പോർട്ട് തുറക്കുക — പ്രണയം, കരിയർ, സമ്പത്ത്, ആരോഗ്യം, ദോഷങ്ങളും യോഗങ്ങളും, പരിഹാരങ്ങൾ, നിങ്ങളുടെ ജീവിത സംഗ്രഹം.",
+    "viewFullReport": "✦ പൂർണ്ണ റിപ്പോർട്ട് കാണുക",
+    "preparingPdf": "PDF തയ്യാറാക്കുന്നു…",
+    "downloadPdf": "⭳ PDF ഡൗൺലോഡ് ചെയ്യുക"
+  },
+  "summarizeAiAria": "AI ഉപയോഗിച്ച് ഈ റിപ്പോർട്ട് സംഗ്രഹിക്കുക",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy is not part of this chart's backend-derived remedies."
+}

@@ -1,0 +1,6 @@
+{
+  "notFound": "రిపోర్ట్ కనుగొనబడలేదు.",
+  "fieldsRequired": "రిపోర్ట్ భద్రపరచడానికి userData, chart, మరియు report అన్నీ అవసరం.",
+  "pdfFieldsRequired": "PDF రూపొందించడానికి userData, chart, మరియు report అన్నీ అవసరం.",
+  "matchingPdfFieldsRequired": "PDF రూపొందించడానికి అన్ని వివరాలు అవసరం."
+}

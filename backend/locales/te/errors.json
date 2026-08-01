@@ -1,0 +1,16 @@
+{
+  "notFound": "రౌట్ లేదు {{method}} {{path}}",
+  "malformedJson": "అభ్యర్థన బాడీలో తప్పు JSON.",
+  "bodyTooLarge": "అభ్యర్థన బాడీ చాలా పెద్దది.",
+  "internalError": "అంతర్గత సర్వర్ లోపం.",
+  "internalErrorProduction": "అంతర్గత సర్వర్ లోపం. దయచేసి మళ్లీ ప్రయత్నించండి.",
+  "invalidRequest": "చెల్లని అభ్యర్థన: {{errors}}",
+  "serviceUnavailable": "{{feature}} ప్రస్తుతం అందుబాటులో లేదు.",
+  "invalidProfile": "చెల్లని ప్రొఫైల్: {{errors}}",
+  "chooseTwoDifferentProfiles": "పోల్చడానికి రెండు వేర్వేరు ప్రొఫైల్‌లను ఎంచుకోండి.",
+  "comparisonError": "ఈ రెండు ప్రొఫైల్‌లను పోల్చేటప్పుడు అంతర్గత సర్వర్ లోపం.",
+  "internalErrorWhile": "{{action}} చేస్తున్నప్పుడు అంతర్గత సర్వర్ లోపం.",
+  "occurrenceNotFound": "{{year}} సంవత్సరానికి \"{{key}}\" రికార్డు కనుగొనబడలేదు.",
+  "missingApiKey": "సర్వర్‌లో API కీ లేదు. backend/.env లో GOOGLE_API_KEY ని అమర్చండి.",
+  "tooManyRequests": "చాలా అభ్యర్థనలు. దయచేసి వేగం తగ్గించి కొద్దిసేపటి తర్వాత మళ్లీ ప్రయత్నించండి."
+}

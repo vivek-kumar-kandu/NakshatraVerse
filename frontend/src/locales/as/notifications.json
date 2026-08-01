@@ -1,0 +1,87 @@
+{
+  "categories": {
+    "system": "চিষ্টেম",
+    "reminder": "সোঁৱৰণী",
+    "ai": "AI",
+    "panchang": "পঞ্চাং",
+    "muhurat": "মুহূৰ্ত",
+    "prediction": "ভৱিষ্যদ্বাণী",
+    "transit": "গোচৰ",
+    "family": "পৰিয়াল",
+    "festival": "উৎসৱ",
+    "general": "সাধাৰণ"
+  },
+  "priorities": {
+    "critical": "অতি গুৰুত্বপূৰ্ণ",
+    "high": "উচ্চ",
+    "medium": "মধ্যম",
+    "low": "নিম্ন"
+  },
+  "sort": {
+    "newest": "আটাইতকৈ নতুন প্ৰথমে",
+    "oldest": "আটাইতকৈ পুৰণি প্ৰথমে",
+    "priority": "অগ্ৰাধিকাৰ"
+  },
+  "center": {
+    "back": "← উভতি যাওক",
+    "title": "🔔 জাননী কেন্দ্ৰ",
+    "totalSingle": "মুঠ {{count}} জাননী",
+    "totalPlural": "মুঠ {{count}} জাননীসমূহ",
+    "searchPlaceholder": "জাননীসমূহ সন্ধান কৰক…",
+    "searchAriaLabel": "জাননীসমূহ সন্ধান কৰক",
+    "filterCategoryAriaLabel": "শ্ৰেণীৰ ভিত্তিত ফিল্টাৰ কৰক",
+    "allCategories": "সকলো শ্ৰেণী",
+    "filterPriorityAriaLabel": "অগ্ৰাধিকাৰৰ ভিত্তিত ফিল্টাৰ কৰক",
+    "allPriorities": "সকলো অগ্ৰাধিকাৰ",
+    "filterReadStatusAriaLabel": "পঢ়া স্থিতিৰ ভিত্তিত ফিল্টাৰ কৰক",
+    "all": "সকলো",
+    "unread": "নপঢ়া",
+    "read": "পঢ়া",
+    "sortAriaLabel": "জাননীসমূহ সজাওক",
+    "markAllRead": "✓ সকলো পঢ়া বুলি চিহ্নিত কৰক",
+    "clearRead": "🗑️ পঢ়াসমূহ পৰিষ্কাৰ কৰক",
+    "loadFailedTitle": "জাননীসমূহ লোড হ’ব পৰা নাই",
+    "retry": "পুনৰ চেষ্টা কৰক",
+    "emptyTitle": "কোনো জাননী নাই",
+    "emptyMessage": "আপুনি সম্পূৰ্ণৰূপে আপ টু ডেট আছে — আপোনাৰ বৰ্তমান ফিল্টাৰৰ সৈতে ইয়াত একো মিলা নাই।",
+    "prevPage": "← পূৰ্বৱৰ্তী",
+    "nextPage": "পৰৱৰ্তী →",
+    "pageOf": "পৃষ্ঠা {{page}} ৰ {{totalPages}}",
+    "toasts": {
+      "markReadFailed": "জাননীটো পঢ়া বুলি চিহ্নিত কৰিব পৰা নগ’ল।",
+      "markAllReadSuccess": "সকলো জাননী পঢ়া বুলি চিহ্নিত কৰা হ’ল।",
+      "markAllReadFailed": "সকলোকে পঢ়া বুলি চিহ্নিত কৰিব পৰা নগ’ল।",
+      "deleteFailed": "জাননীটো মচিব পৰা নগ’ল।",
+      "clearReadSuccess": "পঢ়া জাননীসমূহ পৰিষ্কাৰ কৰা হ’ল।",
+      "clearReadFailed": "পঢ়া জাননীসমূহ পৰিষ্কাৰ কৰিব পৰা নগ’ল।"
+    },
+    "clearDialog": {
+      "title": "পঢ়া জাননীসমূহ পৰিষ্কাৰ কৰিব নেকি?",
+      "message": "এইটোৱে প্ৰতিটো পঢ়া জাননী মচি পেলাব। ইয়াক পূৰ্বাৱস্থালৈ অনাব নোৱাৰি।",
+      "confirmLabel": "পঢ়াসমূহ পৰিষ্কাৰ কৰক",
+      "loadingLabel": "পৰিষ্কাৰ কৰা হৈছে…"
+    },
+    "loadFailedGeneric": "জাননীসমূহ লোড হ’ব পৰা নাই।"
+  },
+  "card": {
+    "open": "খোলক →",
+    "openTitle": "খোলক",
+    "openAriaLabel": "সম্পৰ্কিত মডিউল খোলক",
+    "markReadTitle": "পঢ়া বুলি চিহ্নিত কৰক",
+    "markReadLabel": "✓ পঢ়া হ’ল",
+    "deleteTitle": "জাননী মচি পেলাওক",
+    "deleteAriaLabel": "জাননী মচি পেলাওক"
+  },
+  "group": {
+    "updateSingle": "{{count}} আপডেট",
+    "updatePlural": "{{count}} আপডেটসমূহ",
+    "unreadBadge": "{{count}} নপঢ়া"
+  },
+  "widget": {
+    "title": "🔔 জাননীসমূহ",
+    "unreadCount": "{{count}} নপঢ়া",
+    "loadFailed": "জাননীসমূহ লোড হ’ব পৰা নাই।",
+    "emptyMessage": "এতিয়ালৈকে কোনো জাননী নাই — আপুনি সম্পূৰ্ণৰূপে আপ টু ডেট আছে।",
+    "openCenter": "জাননী কেন্দ্ৰ খোলক →"
+  }
+}

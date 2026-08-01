@@ -1,6 +1,26 @@
+<<<<<<< HEAD
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+=======
+import { describe, it, expect, vi, beforeEach, beforeAll } from "vitest";
+import { render, screen, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+// Phase 2 (Timeline i18n migration): rendered directly here rather than
+// through App.jsx, and App.jsx (via ErrorBoundary.jsx) is normally what
+// triggers i18n/index.js's side-effecting i18next.init() call. Without
+// it, useTranslation() here resolves against an uninitialized i18next
+// singleton and t() returns raw keys instead of English text. See the
+// identical fix in FamilyRelationshipHub.test.jsx / FestivalPage.test.jsx
+// for the same root cause.
+import i18n from "../src/i18n/index.js";
+
+beforeAll(async () => {
+  if (!i18n.isInitialized) {
+    await new Promise((resolve) => i18n.on("initialized", resolve));
+  }
+});
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // V5.2 — AI Timeline

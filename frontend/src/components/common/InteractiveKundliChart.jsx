@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo, useCallback, useMemo, useRef, useState } from "react";
 import ZodiacWheel from "./ZodiacWheel.jsx";
 import { PLANET_COLORS, SIGN_NAMES, ZODIAC_SIGNS } from "../../constants/astrology.js";
@@ -53,6 +57,10 @@ function InteractiveKundliChart({
   onSelect,
   onNavigateExplorer,
 }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const lagna = userData?.lagna;
 
   // ── Zoom / pan state ────────────────────────────────────────────────
@@ -188,8 +196,13 @@ function InteractiveKundliChart({
     };
     if (forecast.saturn?.transitSign) pushMarker("Sa", "saturn", forecast.saturn.transitSign);
     if (forecast.jupiter?.transitSign) pushMarker("Ju", "jupiter", forecast.jupiter.transitSign);
+<<<<<<< HEAD
     (forecast.rahuKetu || []).forEach((t) => {
       if (t.transitSign) pushMarker(t.planet?.[0] || "?", t.planet, t.transitSign);
+=======
+    (forecast.rahuKetu || []).forEach((rkItem) => {
+      if (rkItem.transitSign) pushMarker(rkItem.planet?.[0] || "?", rkItem.planet, rkItem.transitSign);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     });
     return markers;
   }, [showTransits, report]);
@@ -206,6 +219,7 @@ function InteractiveKundliChart({
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12, width: "100%" }}>
       {/* Toolbar */}
+<<<<<<< HEAD
       <div role="toolbar" aria-label="Chart view controls" style={{ display: "flex", gap: 6, flexWrap: "wrap", justifyContent: "center" }}>
         <button type="button" className="pill-btn" onClick={() => zoomBy(ZOOM_STEP)} aria-label="Zoom in"
           style={toolbarBtnStyle}>➕ Zoom In</button>
@@ -213,6 +227,15 @@ function InteractiveKundliChart({
           style={toolbarBtnStyle}>➖ Zoom Out</button>
         <button type="button" className="pill-btn" onClick={resetView} aria-label="Reset view"
           style={toolbarBtnStyle}>🎯 Reset View</button>
+=======
+      <div role="toolbar" aria-label={t("results.chartControls", "Chart view controls")} style={{ display: "flex", gap: 6, flexWrap: "wrap", justifyContent: "center" }}>
+        <button type="button" className="pill-btn" onClick={() => zoomBy(ZOOM_STEP)} aria-label={t("results.zoomInAria", "Zoom in")}
+          style={toolbarBtnStyle}>{t("results.zoomIn", "➕ Zoom In")}</button>
+        <button type="button" className="pill-btn" onClick={() => zoomBy(-ZOOM_STEP)} aria-label={t("results.zoomOutAria", "Zoom out")}
+          style={toolbarBtnStyle}>{t("results.zoomOut", "➖ Zoom Out")}</button>
+        <button type="button" className="pill-btn" onClick={resetView} aria-label={t("results.resetViewAria", "Reset view")}
+          style={toolbarBtnStyle}>{t("results.resetView", "🎯 Reset View")}</button>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         <button type="button" className="pill-btn" onClick={() => setShowAspects((v) => !v)}
           aria-pressed={showAspects} aria-label={`${showAspects ? "Hide" : "Show"} aspects`}
           style={{ ...toolbarBtnStyle, borderColor: showAspects ? "rgba(126,255,178,0.5)" : toolbarBtnStyle.border }}>
@@ -228,7 +251,11 @@ function InteractiveKundliChart({
       {/* Pan/zoom viewport */}
       <div
         role="application"
+<<<<<<< HEAD
         aria-label="Interactive birth chart. Use the toolbar or plus, minus, and zero keys to zoom and reset. Tap or click a planet, house, sign, or aspect line to explore it."
+=======
+        aria-label={t("results.chartAria", "Interactive birth chart. Use the toolbar or plus, minus, and zero keys to zoom and reset. Tap or click a planet, house, sign, or aspect line to explore it.")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         tabIndex={0}
         onKeyDown={handleKeyDown}
         onWheel={handleWheel}

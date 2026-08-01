@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 import { describe, it, expect, vi, afterEach } from "vitest";
+=======
+import { describe, it, expect, vi, afterEach, beforeAll } from "vitest";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import PanchangPage from "../src/pages/PanchangPage.jsx";
 import * as panchangApi from "../src/utils/panchangApi.js";
+<<<<<<< HEAD
+=======
+import i18n from "../src/i18n/index.js";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 // ─────────────────────────────────────────────────────────────────────────
 // V4.1 Phase 2 (Daily Panchang & Muhurat Finder) — PanchangPage smoke
@@ -50,6 +58,18 @@ afterEach(() => {
   vi.restoreAllMocks();
 });
 
+<<<<<<< HEAD
+=======
+// Phase 3.6: MuhuratResultCard's confidence badge is now sourced from the
+// "festival" namespace (previously hardcoded English) and only mounts
+// several interactions deep (Muhurat Finder tab -> Find Best Muhurat), so
+// preload it up front rather than relying on the dynamic import() to race
+// ahead of that click sequence.
+beforeAll(async () => {
+  await i18n.loadNamespaces("festival");
+});
+
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 describe("PanchangPage", () => {
   it("loads and shows Today's Summary by default", async () => {
     vi.spyOn(panchangApi, "getDailyPanchang").mockResolvedValue(MOCK_PANCHANG);
@@ -89,7 +109,11 @@ describe("PanchangPage", () => {
     await user.click(screen.getByRole("button", { name: /Find Best Muhurat/i }));
 
     expect(await screen.findByText(/2026-08-14/)).toBeInTheDocument();
+<<<<<<< HEAD
     expect(screen.getByText(/High Confidence/i)).toBeInTheDocument();
+=======
+    expect(await screen.findByText(/High Confidence/i)).toBeInTheDocument();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   });
 
   it("calls onBack when the back button is clicked", async () => {

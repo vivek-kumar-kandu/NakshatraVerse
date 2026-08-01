@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← ഡാഷ്ബോർഡിലേക്ക് മടങ്ങുക",
+    "title": "എന്റെ പ്രൊഫൈൽ",
+    "photoHint": "എഡിറ്റ് ചെയ്യാൻ നിങ്ങളുടെ ഫോട്ടോയിൽ ക്ലിക്ക് ചെയ്യുക — അപ്‌ലോഡ് ചെയ്യുക, മാറ്റുക, അല്ലെങ്കിൽ നീക്കം ചെയ്യുക.",
+    "authProviderGoogle": "Google ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്തു",
+    "authProviderEmail": "ഇമെയിലും പാസ്‌വേഡും",
+    "accountInformation": "അക്കൗണ്ട് വിവരം",
+    "fullName": "പൂർണ്ണ നാമം",
+    "email": "ഇമെയിൽ",
+    "memberSince": "അംഗത്വം ആരംഭിച്ചത്",
+    "accountType": "അക്കൗണ്ട് തരം",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "പാസ്‌വേഡ് മാറ്റുക",
+    "editProfileInSettings": "ക്രമീകരണങ്ങളിൽ പ്രൊഫൈൽ എഡിറ്റ് ചെയ്യുക →",
+    "activitySummary": "പ്രൊഫൈൽ പ്രവർത്തന സംഗ്രഹം",
+    "totalReports": "ആകെ റിപ്പോർട്ടുകൾ",
+    "loadingValue": "…",
+    "lastGenerated": "അവസാനം സൃഷ്ടിച്ചത്",
+    "viewSavedReports": "സംരക്ഷിച്ച റിപ്പോർട്ടുകൾ കാണുക →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "ദയവായി JPG, PNG അല്ലെങ്കിൽ WEBP ചിത്രം തിരഞ്ഞെടുക്കുക.",
+    "fileTooLarge": "ആ ചിത്രം വളരെ വലുതാണ്. ദയവായി 8MB ൽ താഴെയുള്ള ഫയൽ തിരഞ്ഞെടുക്കുക.",
+    "processFailed": "ആ ചിത്രം പ്രോസസ്സ് ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "photoUpdated": "പ്രൊഫൈൽ ഫോട്ടോ അപ്ഡേറ്റ് ചെയ്തു.",
+    "saveFailed": "നിങ്ങളുടെ ഫോട്ടോ സംരക്ഷിക്കാൻ കഴിഞ്ഞില്ല.",
+    "photoRemoved": "പ്രൊഫൈൽ ഫോട്ടോ നീക്കം ചെയ്തു.",
+    "removeFailed": "നിങ്ങളുടെ ഫോട്ടോ നീക്കം ചെയ്യാൻ കഴിഞ്ഞില്ല.",
+    "changePhotoAriaLabel": "പ്രൊഫൈൽ ഫോട്ടോ മാറ്റുക",
+    "uploadPhotoAriaLabel": "പ്രൊഫൈൽ ഫോട്ടോ അപ്‌ലോഡ് ചെയ്യുക",
+    "menuAriaLabel": "പ്രൊഫൈൽ ഫോട്ടോ ഓപ്ഷനുകൾ",
+    "replacePhoto": "ഫോട്ടോ മാറ്റിസ്ഥാപിക്കുക",
+    "uploadPhoto": "ഫോട്ടോ അപ്‌ലോഡ് ചെയ്യുക",
+    "removePhoto": "ഫോട്ടോ നീക്കം ചെയ്യുക",
+    "previewDialogAriaLabel": "പുതിയ പ്രൊഫൈൽ ഫോട്ടോയുടെ പ്രിവ്യൂ",
+    "previewYourNewPhoto": "നിങ്ങളുടെ പുതിയ ഫോട്ടോ പ്രിവ്യൂ ചെയ്യുക",
+    "cancel": "റദ്ദാക്കുക",
+    "save": "സംരക്ഷിക്കുക"
+  }
+}

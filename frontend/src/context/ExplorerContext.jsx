@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { createContext, useCallback, useContext, useMemo, useState } from "react";
 import { EXPLORER_DEFAULT_EXPANDED } from "../constants/explorer.js";
 

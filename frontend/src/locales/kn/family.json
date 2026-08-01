@@ -1,0 +1,162 @@
+{
+  "relationships": {
+    "father": "ತಂದೆ",
+    "mother": "ತಾಯಿ",
+    "husband": "ಗಂಡ",
+    "wife": "ಹೆಂಡತಿ",
+    "son": "ಮಗ",
+    "daughter": "ಮಗಳು",
+    "brother": "ಸಹೋದರ",
+    "sister": "ಸಹೋದರಿ",
+    "friend": "ಸ್ನೇಹಿತ",
+    "client": "ಗ್ರಾಹಕ",
+    "custom": "ಕಸ್ಟಮ್"
+  },
+  "sort": {
+    "recent": "ಇತ್ತೀಚೆಗೆ ನವೀಕರಿಸಲಾಗಿದೆ",
+    "name": "ಹೆಸರು (A–Z)",
+    "relationship": "ಸಂಬಂಧ",
+    "dob": "ಜನ್ಮ ದಿನಾಂಕ"
+  },
+  "profilesPage": {
+    "backToDashboard": "← ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ",
+    "title": "ಕುಟುಂಬ ಪ್ರೊಫೈಲ್‌ಗಳು",
+    "subtitle": "ನಿಮ್ಮ ಕುಟುಂಬದ ಪ್ರತಿಯೊಂದು ಜನ್ಮಕುಂಡಲಿಯನ್ನು ಒಂದೇ ಸ್ಥಳದಲ್ಲಿ ನಿರ್ವಹಿಸಿ.",
+    "relationshipHub": "💞 ಸಂಬಂಧ ಕೇಂದ್ರ",
+    "addProfile": "+ ಪ್ರೊಫೈಲ್ ಸೇರಿಸಿ",
+    "loadFailed": "ನಿಮ್ಮ ಕುಟುಂಬ ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "recentlyOpened": "🕑 ಇತ್ತೀಚೆಗೆ ತೆರೆಯಲಾಗಿದೆ",
+    "searchPlaceholder": "ಹೆಸರು, ಸಂಬಂಧ ಅಥವಾ ಸ್ಥಳದಿಂದ ಹುಡುಕಿ…",
+    "searchAriaLabel": "ಕುಟುಂಬ ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ಹುಡುಕಿ",
+    "filterAriaLabel": "ಸಂಬಂಧದ ಆಧಾರದ ಮೇಲೆ ಫಿಲ್ಟರ್ ಮಾಡಿ",
+    "sortAriaLabel": "ಕುಟುಂಬ ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ವಿಂಗಡಿಸಿ",
+    "allRelationships": "ಎಲ್ಲಾ ಸಂಬಂಧಗಳು",
+    "showArchived": "ಆರ್ಕೈವ್ ಮಾಡಿದವುಗಳನ್ನು ತೋರಿಸಿ",
+    "emptyTitle": "ಇನ್ನೂ ಯಾವುದೇ ಪ್ರೊಫೈಲ್ ಇಲ್ಲ",
+    "emptyMessageFiltered": "ಯಾವುದೇ ಪ್ರೊಫೈಲ್ ನಿಮ್ಮ ಹುಡುಕಾಟ/ಫಿಲ್ಟರ್‌ಗೆ ಹೊಂದುವುದಿಲ್ಲ.",
+    "emptyMessageDefault": "ನಿಮ್ಮ ಸಂಬಂಧ ಕೇಂದ್ರವನ್ನು ನಿರ್ಮಿಸಲು ಪ್ರಾರಂಭಿಸಲು ನಿಮ್ಮ ಮೊದಲ ಕುಟುಂಬ ಪ್ರೊಫೈಲ್ ಸೇರಿಸಿ.",
+    "toasts": {
+      "updated": "{{name}} ನ ಪ್ರೊಫೈಲ್ ನವೀಕರಿಸಲಾಗಿದೆ.",
+      "added": "{{name}} ಅವರನ್ನು ಕುಟುಂಬ ಪ್ರೊಫೈಲ್‌ಗಳಿಗೆ ಸೇರಿಸಲಾಗಿದೆ.",
+      "saveFailed": "ಈ ಪ್ರೊಫೈಲ್ ಅನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+      "duplicated": "{{name}} ನ ಪ್ರತಿಯನ್ನು ರಚಿಸಲಾಗಿದೆ.",
+      "duplicateFailed": "ಈ ಪ್ರೊಫೈಲ್ ಅನ್ನು ನಕಲು ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+      "archived": "{{name}} ಆರ್ಕೈವ್ ಮಾಡಲಾಗಿದೆ.",
+      "archiveFailed": "ಈ ಪ್ರೊಫೈಲ್ ಅನ್ನು ಆರ್ಕೈವ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+      "restored": "{{name}} ಪುನಃಸ್ಥಾಪಿಸಲಾಗಿದೆ.",
+      "restoreFailed": "ಈ ಪ್ರೊಫೈಲ್ ಅನ್ನು ಪುನಃಸ್ಥಾಪಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+      "deleted": "{{name}} ಅಳಿಸಲಾಗಿದೆ.",
+      "deleteFailed": "ಈ ಪ್ರೊಫೈಲ್ ಅನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+    },
+    "deleteDialog": {
+      "title": "ಈ ಪ್ರೊಫೈಲ್ ಅನ್ನು ಅಳಿಸುವುದೇ?",
+      "message": "\"{{name}}\" ಮತ್ತು ಅದಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಯಾವುದೇ ಸಂಬಂಧ ಹೋಲಿಕೆ ಇನ್ನು ಮುಂದೆ ಪ್ರವೇಶಿಸಲಾಗುವುದಿಲ್ಲ. ಇದನ್ನು ಮರಳಿ ಪಡೆಯಲಾಗುವುದಿಲ್ಲ.",
+      "confirmLabel": "ಅಳಿಸಿ"
+    }
+  },
+  "profileCard": {
+    "openedOn": "{{date}} ರಂದು ತೆರೆಯಲಾಗಿದೆ",
+    "addedOn": "{{date}} ರಂದು ಸೇರಿಸಲಾಗಿದೆ",
+    "archived": "ಆರ್ಕೈವ್ ಮಾಡಲಾಗಿದೆ",
+    "open": "✦ ತೆರೆಯಿರಿ",
+    "compare": "💞 ಹೋಲಿಸಿ",
+    "edit": "✎ ಸಂಪಾದಿಸಿ",
+    "duplicate": "⧉ ನಕಲು ಮಾಡಿ",
+    "archiveAction": "🗄 ಆರ್ಕೈವ್ ಮಾಡಿ",
+    "restore": "↺ ಪುನಃಸ್ಥಾಪಿಸಿ",
+    "delete": "✕ ಅಳಿಸಿ",
+    "notAvailable": "—"
+  },
+  "formDialog": {
+    "editTitle": "ಕುಟುಂಬ ಪ್ರೊಫೈಲ್ ಅನ್ನು ಸಂಪಾದಿಸಿ",
+    "addTitle": "ಕುಟುಂಬ ಪ್ರೊಫೈಲ್ ಸೇರಿಸಿ",
+    "relationshipLabel": "ಸಂಬಂಧ",
+    "customRelationshipLabel": "ಕಸ್ಟಮ್ ಸಂಬಂಧ ಲೇಬಲ್",
+    "customRelationshipPlaceholder": "ಉದಾ. ಮಾರ್ಗದರ್ಶಕ, ಸೋದರ ಸಂಬಂಧಿ, ವ್ಯಾಪಾರ ಪಾಲುದಾರ",
+    "custom": "ಕಸ್ಟಮ್",
+    "genderLabel": "ಲಿಂಗ",
+    "genderMale": "♂ ಪುರುಷ",
+    "genderFemale": "♀ ಮಹಿಳೆ",
+    "genderOther": "⚧ ಇತರೆ",
+    "fields": {
+      "name": "ಪೂರ್ಣ ಹೆಸರು",
+      "namePlaceholder": "ಉದಾ. ಅರ್ಜುನ್ ಶರ್ಮಾ",
+      "dob": "ಜನ್ಮ ದಿನಾಂಕ",
+      "tob": "ಜನ್ಮ ಸಮಯ",
+      "pob": "ಜನ್ಮ ಸ್ಥಳ",
+      "pobPlaceholder": "ಉದಾ. ಮುಂಬೈ, ಭಾರತ"
+    },
+    "errors": {
+      "nameRequired": "ಹೆಸರು ಅಗತ್ಯವಿದೆ",
+      "relationshipRequired": "ಸಂಬಂಧವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "customRelationshipRequired": "ಕಸ್ಟಮ್ ಸಂಬಂಧ ಲೇಬಲ್ ನಮೂದಿಸಿ",
+      "dobRequired": "ಜನ್ಮ ದಿನಾಂಕ ಅಗತ್ಯವಿದೆ",
+      "tobRequired": "ಜನ್ಮ ಸಮಯ ಅಗತ್ಯವಿದೆ",
+      "pobRequired": "ಜನ್ಮ ಸ್ಥಳ ಅಗತ್ಯವಿದೆ",
+      "genderRequired": "ಲಿಂಗವನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+    },
+    "cancel": "ರದ್ದುಗೊಳಿಸಿ",
+    "saving": "ಉಳಿಸಲಾಗುತ್ತಿದೆ…",
+    "saveChanges": "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ",
+    "addProfile": "ಪ್ರೊಫೈಲ್ ಸೇರಿಸಿ"
+  },
+  "widget": {
+    "title": "👨‍👩‍👧‍👦 ಕುಟುಂಬ ಪ್ರೊಫೈಲ್‌ಗಳು",
+    "countSingle": "{{count}} ಪ್ರೊಫೈಲ್",
+    "countPlural": "{{count}} ಪ್ರೊಫೈಲ್‌ಗಳು",
+    "loadFailed": "ಕುಟುಂಬ ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "emptyMessage": "ಇನ್ನೂ ಯಾವುದೇ ಪ್ರೊಫೈಲ್ ಇಲ್ಲ — ಚಾರ್ಟ್ ಹೋಲಿಕೆ ಪ್ರಾರಂಭಿಸಲು ಕುಟುಂಬ, ಸ್ನೇಹಿತರು ಅಥವಾ ಗ್ರಾಹಕರನ್ನು ಸೇರಿಸಿ.",
+    "addProfile": "+ ಪ್ರೊಫೈಲ್ ಸೇರಿಸಿ",
+    "relationshipHub": "💞 ಸಂಬಂಧ ಕೇಂದ್ರ",
+    "viewAll": "ಎಲ್ಲಾ ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಿ →"
+  },
+  "relationshipHub": {
+    "back": "← ಹಿಂದೆ",
+    "title": "ಸಂಬಂಧ ಕೇಂದ್ರ",
+    "subtitle": "ಯಾವುದೇ ಎರಡು ಉಳಿಸಿದ ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ಹೋಲಿಸಿ — ಕುಂಡಲಿ ಹೊಂದಾಣಿಕೆ, ಚಾರ್ಟ್‌ಗಳು, ಶಕ್ತಿ, ದೋಷಗಳು, ನಕ್ಷತ್ರ ಮತ್ತು ಭವಿಷ್ಯವಾಣಿಗಳು.",
+    "loadingProfiles": "ನಿಮ್ಮ ಪ್ರೊಫೈಲ್‌ಗಳು ಲೋಡ್ ಆಗುತ್ತಿವೆ…",
+    "needTwoTitle": "ಕನಿಷ್ಠ ಎರಡು ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ಸೇರಿಸಿ",
+    "needTwoMessage": "ಸಂಬಂಧ ಕೇಂದ್ರವನ್ನು ಬಳಸಲು ನಿಮಗೆ ಎರಡು ಉಳಿಸಿದ ಕುಟುಂಬ ಪ್ರೊಫೈಲ್‌ಗಳು ಬೇಕಾಗುತ್ತವೆ.",
+    "profileALabel": "ಪ್ರೊಫೈಲ್ A",
+    "profileBLabel": "ಪ್ರೊಫೈಲ್ B",
+    "chooseProfile": "ಪ್ರೊಫೈಲ್ ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ…",
+    "compareFailed": "ಈ ಎರಡು ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ಹೋಲಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "comparing": "ಹೋಲಿಸಲಾಗುತ್ತಿದೆ…",
+    "compare": "✦ ಹೋಲಿಸಿ",
+    "tabs": {
+      "kundli": "ಕುಂಡಲಿ ಹೊಂದಾಣಿಕೆ",
+      "chart": "ಜನ್ಮ ಚಾರ್ಟ್",
+      "strength": "ಗ್ರಹ ಶಕ್ತಿ",
+      "dosha": "ದೋಷ",
+      "nakshatra": "ನಕ್ಷತ್ರ",
+      "prediction": "ಭವಿಷ್ಯವಾಣಿಗಳು"
+    },
+    "manglikStatusLabel": "{{name}} ನ ಮಾಂಗಲಿಕ ಸ್ಥಿತಿ",
+    "manglikPositive": "ಮಾಂಗಲಿಕ ({{severity}})",
+    "manglikNegative": "ಮಾಂಗಲಿಕವಲ್ಲ",
+    "notAvailable": "—",
+    "chart": {
+      "lagna": "ಲಗ್ನ",
+      "moonSign": "ಚಂದ್ರ ರಾಶಿ",
+      "sunSign": "ಸೂರ್ಯ ರಾಶಿ",
+      "nakshatra": "ನಕ್ಷತ್ರ",
+      "yogas": "ಯೋಗಗಳು",
+      "doshas": "ದೋಷಗಳು"
+    },
+    "strength": {
+      "strongestPlanet": "ಪ್ರಬಲ ಗ್ರಹ",
+      "weakestPlanet": "ದುರ್ಬಲ ಗ್ರಹ"
+    },
+    "doshaComparisonTitle": "ದೋಷ ಹೋಲಿಕೆ",
+    "nakshatraFields": {
+      "padaBadge": " · ಪಾದ {{pada}}",
+      "lordBadge": "ಒಡೆಯ: {{lord}}",
+      "nature": "ಸ್ವಭಾವ",
+      "gana": "ಗಣ",
+      "nadi": "ನಾಡಿ",
+      "sameNakshatra": "ಒಂದೇ ನಕ್ಷತ್ರವೇ?",
+      "yes": "ಹೌದು",
+      "no": "ಇಲ್ಲ"
+    }
+  }
+}

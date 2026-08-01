@@ -1,0 +1,6 @@
+{
+  "notFound": "ৰিপ'ৰ্ট পোৱা নগ'ল।",
+  "fieldsRequired": "ৰিপ'ৰ্ট সংৰক্ষণ কৰিবলৈ userData, chart, আৰু report আটাইবোৰ প্ৰয়োজন।",
+  "pdfFieldsRequired": "PDF প্ৰস্তুত কৰিবলৈ userData, chart, আৰু report আটাইবোৰ প্ৰয়োজন।",
+  "matchingPdfFieldsRequired": "PDF প্ৰস্তুত কৰিবলৈ সকলো তথ্য প্ৰয়োজন।"
+}

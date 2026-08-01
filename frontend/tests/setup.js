@@ -30,9 +30,20 @@ configure({ asyncUtilTimeout: 8000 });
 // "switch to sacred dawn"/"switch to midnight cosmic" commands) leaks into
 // later tests in that file instead of each test starting from a clean
 // launch.
+<<<<<<< HEAD
 beforeEach(() => {
   sessionStorage.clear();
   localStorage.clear();
+=======
+import i18nInstance from "../src/i18n/index.js";
+
+beforeEach(() => {
+  sessionStorage.clear();
+  localStorage.clear();
+  i18nInstance.changeLanguage("en");
+  document.documentElement.setAttribute("lang", "en");
+  document.documentElement.setAttribute("dir", "ltr");
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 });
 
 // jsdom doesn't implement Element.scrollIntoView at all (throws "not a

@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ",
+    "title": "ಉಳಿಸಿದ ವರದಿಗಳು",
+    "titleWithCount": "ಉಳಿಸಿದ ವರದಿಗಳು ({{count}})",
+    "generateNewReport": "✦ ಹೊಸ ವರದಿಯನ್ನು ರಚಿಸಿ",
+    "loadFailed": "ನಿಮ್ಮ ಉಳಿಸಿದ ವರದಿಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "tryAgain": "↻ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ",
+    "deleteToastSuccess": "\"{{title}}\" ಅಳಿಸಲಾಗಿದೆ.",
+    "deleteToastFallbackTitle": "ವರದಿ",
+    "deleteFailed": "ಆ ವರದಿಯನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "downloadToastSuccess": "PDF ಡೌನ್‌ಲೋಡ್ ಆಗಿದೆ.",
+    "downloadFailed": "PDF ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "emptyTitle": "ಇನ್ನೂ ಯಾವುದೇ ಉಳಿಸಿದ ವರದಿ ಇಲ್ಲ",
+    "emptyMessage": "ಇಲ್ಲಿ ನಿಮ್ಮ ಸಂಗ್ರಹವನ್ನು ನಿರ್ಮಿಸಲು ರೀಡಿಂಗ್ ರಚಿಸಿ ಮತ್ತು ವರದಿಯನ್ನು ಉಳಿಸಿ ಟ್ಯಾಪ್ ಮಾಡಿ.",
+    "emptyAction": "✦ ಹೊಸ ವರದಿಯನ್ನು ರಚಿಸಿ",
+    "noMatchesTitle": "ಯಾವುದೇ ಹೊಂದಾಣಿಕೆ ಕಂಡುಬಂದಿಲ್ಲ",
+    "noMatchesMessage": "ಯಾವುದೇ ಉಳಿಸಿದ ವರದಿ \"{{query}}\" ಗೆ ಹೊಂದುವುದಿಲ್ಲ. ಬೇರೆ ಶೀರ್ಷಿಕೆ, ಹೆಸರು ಅಥವಾ ಲಗ್ನವನ್ನು ಪ್ರಯತ್ನಿಸಿ.",
+    "clearSearch": "ಹುಡುಕಾಟವನ್ನು ತೆರವುಗೊಳಿಸಿ",
+    "deleteDialog": {
+      "title": "ಈ ವರದಿಯನ್ನು ಅಳಿಸುವುದೇ?",
+      "message": "\"{{title}}\" ಶಾಶ್ವತವಾಗಿ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ. ಇದನ್ನು ಮರಳಿ ಪಡೆಯಲಾಗುವುದಿಲ್ಲ.",
+      "fallbackTitle": "ಈ ವರದಿ",
+      "confirmLabel": "ಅಳಿಸಿ",
+      "cancelLabel": "ರದ್ದುಗೊಳಿಸಿ"
+    }
+  },
+  "detail": {
+    "loadFailed": "ಆ ವರದಿಯನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+    "backToSavedReports": "← ಉಳಿಸಿದ ವರದಿಗಳಿಗೆ ಹಿಂತಿರುಗಿ",
+    "loading": "ನಿಮ್ಮ ಉಳಿಸಿದ ರೀಡಿಂಗ್ ಲೋಡ್ ಆಗುತ್ತಿದೆ…",
+    "openHoroscope": "🔮 ರಾಶಿಫಲ",
+    "openCalendar": "📅 ಕ್ಯಾಲೆಂಡರ್",
+    "openLifeCoach": "🧭 ಜೀವನ ಮಾರ್ಗದರ್ಶಕ",
+    "askAI": "✨ AI ಅನ್ನು ಕೇಳಿ"
+  },
+  "card": {
+    "savedOn": "{{date}} ರಂದು ಉಳಿಸಲಾಗಿದೆ",
+    "view": "ವೀಕ್ಷಿಸಿ",
+    "preview": "ಮುನ್ನೋಟ",
+    "download": "PDF",
+    "delete": "ಅಳಿಸಿ",
+    "deleting": "ಅಳಿಸಲಾಗುತ್ತಿದೆ…",
+    "lagnaSuffix": "{{lagna}} ಲಗ್ನ",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "ವರದಿ ವಿನ್ಯಾಸ",
+    "gridView": "ಗ್ರಿಡ್ ವೀಕ್ಷಣೆ",
+    "listView": "ಪಟ್ಟಿ ವೀಕ್ಷಣೆ",
+    "searchPlaceholder": "ಶೀರ್ಷಿಕೆ, ಹೆಸರು ಅಥವಾ ಲಗ್ನದಿಂದ ಹುಡುಕಿ…",
+    "searchAriaLabel": "ಉಳಿಸಿದ ವರದಿಗಳನ್ನು ಹುಡುಕಿ",
+    "sortAriaLabel": "ಉಳಿಸಿದ ವರದಿಗಳನ್ನು ವಿಂಗಡಿಸಿ",
+    "resultCountSingle": "{{count}} ವರದಿ",
+    "resultCountPlural": "{{count}} ವರದಿಗಳು",
+    "resultCountFiltered": "{{total}} ರಲ್ಲಿ {{count}}"
+  },
+  "sort": {
+    "newest": "ಹೊಸತು ಮೊದಲು",
+    "oldest": "ಹಳೆಯದು ಮೊದಲು",
+    "title-asc": "ಶೀರ್ಷಿಕೆ (A–Z)",
+    "title-desc": "ಶೀರ್ಷಿಕೆ (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} ನ ಮುನ್ನೋಟ",
+    "closePreview": "ಮುನ್ನೋಟವನ್ನು ಮುಚ್ಚಿ",
+    "savedOn": "{{date}} ರಂದು ಉಳಿಸಲಾಗಿದೆ",
+    "noDetails": "ಈ ವರದಿಗಾಗಿ ಯಾವುದೇ ಹೆಚ್ಚುವರಿ ವಿವರಗಳನ್ನು ಉಳಿಸಲಾಗಿಲ್ಲ.",
+    "description": "ಇದು ನಿಮ್ಮ ಉಳಿಸಿದ ರೀಡಿಂಗ್‌ನ ವಿವರಗಳ ತ್ವರಿತ ಮುನ್ನೋಟ. ಪ್ರತಿ ವಿಭಾಗವನ್ನು ಓದಲು ಪೂರ್ಣ ವರದಿಯನ್ನು ತೆರೆಯಿರಿ — ಪ್ರೀತಿ, ವೃತ್ತಿ, ಸಂಪತ್ತು, ಆರೋಗ್ಯ, ದೋಷಗಳು ಮತ್ತು ಯೋಗಗಳು, ಪರಿಹಾರಗಳು, ಮತ್ತು ನಿಮ್ಮ ಜೀವನ ಸಾರಾಂಶ.",
+    "viewFullReport": "✦ ಪೂರ್ಣ ವರದಿಯನ್ನು ವೀಕ್ಷಿಸಿ",
+    "preparingPdf": "PDF ಸಿದ್ಧಪಡಿಸಲಾಗುತ್ತಿದೆ…",
+    "downloadPdf": "⭳ PDF ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "summarizeAiAria": "AI నొందిగె ఈ వరదియ సారాంశ రచిసి",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy is not part of this chart's backend-derived remedies."
+}

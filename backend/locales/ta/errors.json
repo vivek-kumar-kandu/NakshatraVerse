@@ -1,0 +1,16 @@
+{
+  "notFound": "வழிப்பாதை இல்லை {{method}} {{path}}",
+  "malformedJson": "கோரிக்கை உடற்பகுதியில் தவறான JSON.",
+  "bodyTooLarge": "கோரிக்கை உடற்பகுதி மிகவும் பெரியது.",
+  "internalError": "உள் சேவையக பிழை.",
+  "internalErrorProduction": "உள் சேவையக பிழை. மீண்டும் முயற்சிக்கவும்.",
+  "invalidRequest": "செல்லுபடியாகாத கோரிக்கை: {{errors}}",
+  "serviceUnavailable": "{{feature}} தற்போது கிடைக்கவில்லை.",
+  "invalidProfile": "செல்லுபடியாகாத சுயவிவரம்: {{errors}}",
+  "chooseTwoDifferentProfiles": "ஒப்பிட দুটি வெவ்வேறு சுயவிவரங்களைத் தேர்ந்தெடுக்கவும்.",
+  "comparisonError": "இந்த இரண்டு சுயவிவரங்களையும் ஒப்பிடும் போது உள் சேவையக பிழை.",
+  "internalErrorWhile": "{{action}} செய்யும் போது உள் சேவையக பிழை.",
+  "occurrenceNotFound": "{{year}} ஆண்டிற்கான \"{{key}}\" நிகழ்வு எதுவும் கிடைக்கவில்லை.",
+  "missingApiKey": "சேவையகத்தில் API சாவி இல்லை. backend/.env இல் GOOGLE_API_KEY அமை.",
+  "tooManyRequests": "மிக அதிகமான கோரிக்கைகள். தயவுசெய்து சிறிது நேரம் கழித்து மீண்டும் முயற்சிக்கவும்."
+}

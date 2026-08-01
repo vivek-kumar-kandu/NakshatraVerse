@@ -1,0 +1,111 @@
+{
+  "header": {
+    "title": "भवतः फलकम्",
+    "welcomeBack": "पुनरागमने स्वागतम्, {{name}} ✦",
+    "welcomeBackFallbackName": "यात्रिकः",
+    "generateNewReport": "✦ नूतनं प्रतिवेदनं निर्मातु"
+  },
+  "error": {
+    "loadFailed": "भवतः सुरक्षितप्रतिवेदनानि लोड्यितुं न शक्तानि।",
+    "tryAgain": "↻ पुनः प्रयतताम्"
+  },
+  "userSummary": {
+    "authProviderGoogle": "Google द्वारा साइन् इन् कृतम्",
+    "authProviderEmail": "विपत्रं गुप्तशब्दः च",
+    "viewFullProfile": "सम्पूर्णपरिचयं पश्यतु →"
+  },
+  "statistics": {
+    "sectionTitle": "सांख्यिकी",
+    "savedReports": "सुरक्षितप्रतिवेदनानि",
+    "memberSince": "सदस्यत्वस्य आरम्भः",
+    "latestReading": "नूतनतमं पठनम्",
+    "currentTheme": "वर्तमानविषयवस्तु",
+    "systemThemeLabel": "तन्त्रम् ({{themeName}})",
+    "notAvailable": "—",
+    "loadingValue": "…"
+  },
+  "astrologySummary": {
+    "sectionTitle": "ज्योतिषसारः",
+    "cardTitle": "भवतः नूतनतमपठनात्",
+    "padaBadge": " · पदम् {{pada}}",
+    "lordBadge": "स्वामी: {{lord}}",
+    "currentMahadasha": "वर्तमानमहादशा",
+    "currentAntardasha": "वर्तमानान्तर्दशा"
+  },
+  "quickActions": {
+    "sectionTitle": "शीघ्रक्रियाः",
+    "generateNewReport": {
+      "label": "नूतनं प्रतिवेदनं निर्मातु",
+      "desc": "एकं नूतनं वैदिकपठनम् आरभतु"
+    },
+    "continueReading": {
+      "label": "पठनं अनुवर्तताम्",
+      "desc": "भवतः अन्तिमदृष्टं प्रतिवेदनं पुनः उद्घाटयतु"
+    },
+    "myProfile": {
+      "label": "मम परिचयः",
+      "desc": "भवतः परिचयस्य विवरणं पश्यतु"
+    },
+    "savedReports": {
+      "label": "सुरक्षितप्रतिवेदनानि",
+      "desc": "भवतः सम्पूर्णसङ्ग्रहं अवलोकयतु"
+    },
+    "askAI": {
+      "label": "AI पृच्छतु",
+      "desc": "भवतः ज्योतिषसहायकेन सह संवदतु"
+    },
+    "aiLifeCoach": {
+      "label": "AI जीवनमार्गदर्शकः",
+      "desc": "दैनिकं, वृत्तिं, सम्बन्धान्, अर्थं, आरोग्यं च मार्गदर्शनम्"
+    },
+    "kundliMatching": {
+      "label": "कुण्डलीमेलनम्",
+      "desc": "द्वयोः व्यक्त्योः वैदिकानुकूलतां परीक्षतु"
+    },
+    "panchangMuhurat": {
+      "label": "पञ्चाङ्गं मुहूर्तं च",
+      "desc": "दैनिकपञ्चाङ्गं शुभमुहूर्तान्वेषकं च"
+    },
+    "familyProfiles": {
+      "label": "कुटुम्बपरिचयाः",
+      "desc": "भवतः कुटुम्बस्य प्रत्येकां जन्मकुण्डलीं व्यवस्थापयतु"
+    },
+    "relationshipHub": {
+      "label": "सम्बन्धकेन्द्रम्",
+      "desc": "कयोरपि द्वयोः सुरक्षितपरिचययोः तुलनां करोतु"
+    },
+    "settings": {
+      "label": "विन्यासाः",
+      "desc": "भवतः खातां व्यवस्थापयतु"
+    }
+  },
+  "recentReports": {
+    "sectionTitle": "नूतनतमप्रतिवेदनानि",
+    "viewAll": "सर्वाणि पश्यतु →",
+    "emptyTitle": "अद्यापि कोऽपि पाठः नास्ति",
+    "emptyMessage": "अत्र दर्शनार्थं भवतः प्रथमं वैदिकपठनं निर्मातु।",
+    "emptyAction": "✦ नूतनं प्रतिवेदनं निर्मातु"
+  },
+  "aiLifeCoach": "AI जीवन-मार्गदर्शकः",
+  "todaysFocus": "अद्यतन-लक्ष्यम्:",
+  "personalizedInsights": "व्यक्तिगत-अन्तर्दृष्टिः",
+  "yourPersonalizedGuidance": "✦ तव व्यक्तिगत-मार्गदर्शनम्",
+  "insightPeriod": "अन्तर्दृष्टि-कालः",
+  "whatsChanged": "किं परिवर्तितम्:",
+  "noUpcomingEvents": "न कोऽपि आगामि-कार्यक्रमः",
+  "loadingPanchang": "पञ्चाङ्ग-दृश्यं लोड् भवति…",
+  "bestTimeToday": "✨ अद्य श्रेष्ठः समयः",
+  "recommendedActivities": "✓ अनुशंसित-कार्याणि",
+  "thingsToAvoid": "⚠ वर्जनीय-विोयाः",
+  "noReadingYet": "अधुना पठनं न लभ्यते",
+  "astrologyCalendar": "📅 ज्योतिष-पञ्चाङ्गम्",
+  "dashaUnavailable": "दशा न लभ्यते",
+  "noUpcomingChanges": "न कोऽपि आगामि-परिवर्तनम्",
+  "noTransitData": "गोचर-डाटा न लभ्यते",
+  "auspicious": "✓ शुभम्",
+  "caution": "⚠ सावधानी",
+  "horoscopeDashboard": "🔮 राशिलक्षण-पट्टः",
+  "noWeeklyFocus": "सप्ताहिक-लक्ष्यं न लभ्यते",
+  "noMonthlySegments": "अस्मिन् मासे खण्डाः न सन्ति",
+  "dailyPanchangMuhurat": "🕉️ दैनिक-पञ्चाङ्गं मुहूर्तं च"
+}

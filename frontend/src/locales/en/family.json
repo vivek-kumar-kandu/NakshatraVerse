@@ -1,0 +1,162 @@
+{
+  "relationships": {
+    "father": "Father",
+    "mother": "Mother",
+    "husband": "Husband",
+    "wife": "Wife",
+    "son": "Son",
+    "daughter": "Daughter",
+    "brother": "Brother",
+    "sister": "Sister",
+    "friend": "Friend",
+    "client": "Client",
+    "custom": "Custom"
+  },
+  "sort": {
+    "recent": "Recently Updated",
+    "name": "Name (A–Z)",
+    "relationship": "Relationship",
+    "dob": "Date of Birth"
+  },
+  "profilesPage": {
+    "backToDashboard": "← Back to Dashboard",
+    "title": "Family Profiles",
+    "subtitle": "Manage every birth chart in your circle, in one place.",
+    "relationshipHub": "💞 Relationship Hub",
+    "addProfile": "+ Add Profile",
+    "loadFailed": "Could not load your family profiles.",
+    "recentlyOpened": "🕑 Recently Opened",
+    "searchPlaceholder": "Search by name, relationship, or place…",
+    "searchAriaLabel": "Search family profiles",
+    "filterAriaLabel": "Filter by relationship",
+    "sortAriaLabel": "Sort family profiles",
+    "allRelationships": "All Relationships",
+    "showArchived": "Show Archived",
+    "emptyTitle": "No profiles yet",
+    "emptyMessageFiltered": "No profiles match your search/filter.",
+    "emptyMessageDefault": "Add your first family profile to start building your relationship hub.",
+    "toasts": {
+      "updated": "{{name}}'s profile updated.",
+      "added": "{{name}} added to Family Profiles.",
+      "saveFailed": "Could not save this profile.",
+      "duplicated": "Duplicated {{name}}.",
+      "duplicateFailed": "Could not duplicate this profile.",
+      "archived": "{{name}} archived.",
+      "archiveFailed": "Could not archive this profile.",
+      "restored": "{{name}} restored.",
+      "restoreFailed": "Could not restore this profile.",
+      "deleted": "{{name}} deleted.",
+      "deleteFailed": "Could not delete this profile."
+    },
+    "deleteDialog": {
+      "title": "Delete this profile?",
+      "message": "\"{{name}}\" and any relationship comparisons involving them will no longer be accessible. This can't be undone.",
+      "confirmLabel": "Delete"
+    }
+  },
+  "profileCard": {
+    "openedOn": "opened {{date}}",
+    "addedOn": "added {{date}}",
+    "archived": "Archived",
+    "open": "✦ Open",
+    "compare": "💞 Compare",
+    "edit": "✎ Edit",
+    "duplicate": "⧉ Duplicate",
+    "archiveAction": "🗄 Archive",
+    "restore": "↺ Restore",
+    "delete": "✕ Delete",
+    "notAvailable": "—"
+  },
+  "formDialog": {
+    "editTitle": "Edit Family Profile",
+    "addTitle": "Add Family Profile",
+    "relationshipLabel": "Relationship",
+    "customRelationshipLabel": "Custom Relationship Label",
+    "customRelationshipPlaceholder": "e.g. Mentor, Cousin, Business Partner",
+    "custom": "Custom",
+    "genderLabel": "Gender",
+    "genderMale": "♂ Male",
+    "genderFemale": "♀ Female",
+    "genderOther": "⚧ Other",
+    "fields": {
+      "name": "Full Name",
+      "namePlaceholder": "e.g. Arjun Sharma",
+      "dob": "Date of Birth",
+      "tob": "Time of Birth",
+      "pob": "Place of Birth",
+      "pobPlaceholder": "e.g. Mumbai, India"
+    },
+    "errors": {
+      "nameRequired": "Name is required",
+      "relationshipRequired": "Choose a relationship",
+      "customRelationshipRequired": "Enter a custom relationship label",
+      "dobRequired": "Date of birth is required",
+      "tobRequired": "Time of birth is required",
+      "pobRequired": "Place of birth is required",
+      "genderRequired": "Choose a gender"
+    },
+    "cancel": "Cancel",
+    "saving": "Saving…",
+    "saveChanges": "Save Changes",
+    "addProfile": "Add Profile"
+  },
+  "widget": {
+    "title": "👨‍👩‍👧‍👦 Family Profiles",
+    "countSingle": "{{count}} profile",
+    "countPlural": "{{count}} profiles",
+    "loadFailed": "Could not load Family Profiles.",
+    "emptyMessage": "No profiles yet — add family, friends, or clients to start comparing charts.",
+    "addProfile": "+ Add Profile",
+    "relationshipHub": "💞 Relationship Hub",
+    "viewAll": "View All Profiles →"
+  },
+  "relationshipHub": {
+    "back": "← Back",
+    "title": "Relationship Hub",
+    "subtitle": "Compare any two saved profiles — Kundli Matching, charts, strengths, doshas, Nakshatra, and predictions.",
+    "loadingProfiles": "Loading your profiles…",
+    "needTwoTitle": "Add at least two profiles",
+    "needTwoMessage": "You need two saved Family Profiles to use the Relationship Hub.",
+    "profileALabel": "Profile A",
+    "profileBLabel": "Profile B",
+    "chooseProfile": "Choose a profile…",
+    "compareFailed": "Could not compare these two profiles.",
+    "comparing": "Comparing…",
+    "compare": "✦ Compare",
+    "tabs": {
+      "kundli": "Kundli Matching",
+      "chart": "Birth Chart",
+      "strength": "Planet Strength",
+      "dosha": "Dosha",
+      "nakshatra": "Nakshatra",
+      "prediction": "Predictions"
+    },
+    "manglikStatusLabel": "{{name}}'s Manglik Status",
+    "manglikPositive": "Manglik ({{severity}})",
+    "manglikNegative": "Not Manglik",
+    "notAvailable": "—",
+    "chart": {
+      "lagna": "Lagna",
+      "moonSign": "Moon Sign",
+      "sunSign": "Sun Sign",
+      "nakshatra": "Nakshatra",
+      "yogas": "Yogas",
+      "doshas": "Doshas"
+    },
+    "strength": {
+      "strongestPlanet": "Strongest Planet",
+      "weakestPlanet": "Weakest Planet"
+    },
+    "doshaComparisonTitle": "Dosha Comparison",
+    "nakshatraFields": {
+      "padaBadge": " · Pada {{pada}}",
+      "lordBadge": "Lord: {{lord}}",
+      "nature": "Nature",
+      "gana": "Gana",
+      "nadi": "Nadi",
+      "sameNakshatra": "Same Nakshatra?",
+      "yes": "Yes",
+      "no": "No"
+    }
+  }
+}

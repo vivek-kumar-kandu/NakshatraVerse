@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "ਹੋਮ",
+    "features": "ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ",
+    "about": "ਸਾਡੇ ਬਾਰੇ",
+    "faq": "ਅਕਸਰ ਪੁੱਛੇ ਜਾਂਦੇ ਸਵਾਲ"
+  },
+  "navbar": {
+    "brandAriaLabel": "ਨਕਸ਼ਤਰਵਰਸ — ਹੋਮ",
+    "primaryAriaLabel": "ਮੁੱਖ",
+    "openMenu": "ਮੀਨੂ ਖੋਲ੍ਹੋ",
+    "closeMenu": "ਮੀਨੂ ਬੰਦ ਕਰੋ"
+  },
+  "auth": {
+    "home": "ਹੋਮ",
+    "dashboard": "ਡੈਸ਼ਬੋਰਡ",
+    "reports": "ਰਿਪੋਰਟਾਂ",
+    "profile": "ਪ੍ਰੋਫਾਈਲ"
+  },
+  "accountMenu": {
+    "myProfile": "ਮੇਰੀ ਪ੍ਰੋਫਾਈਲ",
+    "dashboard": "ਡੈਸ਼ਬੋਰਡ",
+    "savedReports": "ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟਾਂ",
+    "settings": "ਸੈਟਿੰਗਾਂ",
+    "helpAbout": "ਮਦਦ ਅਤੇ ਜਾਣਕਾਰੀ",
+    "memberSince": "{{date}} ਤੋਂ ਮੈਂਬਰ",
+    "menuLabel": "ਖਾਤਾ",
+    "triggerLabel": "{{name}} ਲਈ ਖਾਤਾ ਮੀਨੂ"
+  },
+  "actionDock": {
+    "askAi": "AI ਨੂੰ ਪੁੱਛੋ",
+    "horoscope": "ਰਾਸ਼ੀਫਲ",
+    "calendar": "ਕੈਲੰਡਰ",
+    "lifeCoach": "ਲਾਈਫ ਕੋਚ",
+    "kundliMatching": "ਕੁੰਡਲੀ ਮਿਲਾਨ",
+    "panchang": "ਪੰਚਾਂਗ",
+    "festivalCalendar": "ਤਿਉਹਾਰ ਕੈਲੰਡਰ",
+    "notifications": "ਸੂਚਨਾਵਾਂ",
+    "saveReport": "ਰਿਪੋਰਟ ਸੁਰੱਖਿਅਤ ਕਰੋ",
+    "saving": "ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…",
+    "downloadPdf": "PDF ਡਾਊਨਲੋਡ ਕਰੋ",
+    "preparing": "ਤਿਆਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…",
+    "printPdf": "PDF ਪ੍ਰਿੰਟ ਕਰੋ",
+    "opening": "ਖੋਲ੍ਹਿਆ ਜਾ ਰਿਹਾ ਹੈ…",
+    "reportActions": "ਰਿਪੋਰਟ ਕਾਰਵਾਈਆਂ",
+    "openReportActions": "ਰਿਪੋਰਟ ਕਾਰਵਾਈਆਂ ਖੋਲ੍ਹੋ",
+    "close": "ਬੰਦ ਕਰੋ",
+    "somethingWentWrong": "ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ।"
+  },
+  "commandPalette": {
+    "ariaLabel": "ਕਮਾਂਡ ਪੈਲੇਟ",
+    "searchAriaLabel": "ਕਮਾਂਡ ਪੈਲੇਟ ਖੋਜ",
+    "commandsAriaLabel": "ਕਮਾਂਡਾਂ",
+    "sections": {
+      "navigate": "ਨੈਵੀਗੇਟ ਕਰੋ",
+      "theme": "ਥੀਮ",
+      "settings": "ਸੈਟਿੰਗਾਂ",
+      "recent": "ਹਾਲੀਆ",
+      "recentReports": "ਹਾਲੀਆ ਰਿਪੋਰਟਾਂ",
+      "recentReportsLoading": "ਹਾਲੀਆ ਰਿਪੋਰਟਾਂ · ਲੋਡ ਹੋ ਰਹੀਆਂ ਹਨ…"
+    },
+    "nav": {
+      "dashboard": "ਡੈਸ਼ਬੋਰਡ",
+      "generateReport": "ਰਿਪੋਰਟ ਬਣਾਓ",
+      "savedReports": "ਸੁਰੱਖਿਅਤ ਰਿਪੋਰਟਾਂ",
+      "profile": "ਪ੍ਰੋਫਾਈਲ",
+      "settings": "ਸੈਟਿੰਗਾਂ",
+      "horoscope": "ਰਾਸ਼ੀਫਲ",
+      "calendar": "ਕੈਲੰਡਰ",
+      "aiAssistant": "AI ਸਹਾਇਕ",
+      "aiLifeCoach": "AI ਲਾਈਫ ਕੋਚ",
+      "kundliMatching": "ਕੁੰਡਲੀ ਮਿਲਾਨ",
+      "dailyPanchang": "ਰੋਜ਼ਾਨਾ ਪੰਚਾਂਗ ਅਤੇ ਮੁਹੂਰਤ",
+      "festivalCalendar": "ਤਿਉਹਾਰ ਕੈਲੰਡਰ",
+      "todaysFestival": "ਅੱਜ ਦਾ ਤਿਉਹਾਰ",
+      "upcomingFestivals": "ਆਗਾਮੀ ਤਿਉਹਾਰ",
+      "notificationCenter": "ਸੂਚਨਾ ਕੇਂਦਰ",
+      "unreadNotifications": "ਨਾ ਪੜ੍ਹੀਆਂ ਸੂਚਨਾਵਾਂ",
+      "familyProfiles": "ਪਰਿਵਾਰਕ ਪ੍ਰੋਫਾਈਲ",
+      "relationshipHub": "ਰਿਲੇਸ਼ਨਸ਼ਿਪ ਹੱਬ",
+      "help": "ਮਦਦ"
+    },
+    "theme": {
+      "light": "ਸੇਕ੍ਰੇਡ ਡਾਨ 'ਤੇ ਸਵਿੱਚ ਕਰੋ",
+      "dark": "ਮਿਡਨਾਈਟ ਕੌਸਮਿਕ 'ਤੇ ਸਵਿੱਚ ਕਰੋ",
+      "system": "ਸਿਸਟਮ ਥੀਮ 'ਤੇ ਸਵਿੱਚ ਕਰੋ"
+    },
+    "settingsSections": {
+      "account": "ਸੈਟਿੰਗਾਂ · ਖਾਤਾ",
+      "appearance": "ਸੈਟਿੰਗਾਂ · ਦਿੱਖ",
+      "preferences": "ਸੈਟਿੰਗਾਂ · ਤਰਜੀਹਾਂ",
+      "privacy": "ਸੈਟਿੰਗਾਂ · ਗੋਪਨੀਯਤਾ",
+      "about": "ਸੈਟਿੰਗਾਂ · ਜਾਣਕਾਰੀ"
+    },
+    "untitledReport": "ਬਿਨਾਂ ਸਿਰਲੇਖ ਰਿਪੋਰਟ",
+    "noMatches": "ਕੋਈ ਮੇਲ ਖਾਂਦੀ ਕਮਾਂਡ ਨਹੀਂ।",
+    "noMatchesFor": "\"{{query}}\" ਲਈ ਕੋਈ ਮੇਲ ਖਾਂਦੀ ਕਮਾਂਡ ਨਹੀਂ।",
+    "searchPlaceholder": "ਪੰਨੇ, ਰਿਪੋਰਟਾਂ, ਯੋਗ, ਦੋਸ਼, ਉਪਾਅ ਖੋਜੋ…"
+  }
+}

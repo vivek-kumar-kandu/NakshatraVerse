@@ -85,6 +85,7 @@ function safeInsights(chart, label) {
 // below — a short string built from the explanation kind, the subject
 // identity, and only the specific chart facts that could change the
 // answer (never the whole chart object).
+<<<<<<< HEAD
 function cacheKey(kind, subjectId, chart) {
   const dob = chart?.userData?.dob || "?";
   const tob = chart?.userData?.tob || "?";
@@ -93,6 +94,22 @@ function cacheKey(kind, subjectId, chart) {
 }
 
 async function runExplanationPrompt({ kind, subject, focusInstruction, contextFacts, chart, report, history }) {
+=======
+function cacheKey(kind, subjectId, chart, language) {
+  const dob = chart?.userData?.dob || "?";
+  const tob = chart?.userData?.tob || "?";
+  const name = chart?.userData?.name || "?";
+  // Multilingual Foundation Phase: language is folded into the cache key
+  // so a Hindi (or any non-English) explanation request is never served a
+  // cached English response — "en" (the default/only populated language
+  // today) keeps existing cache keys, and therefore existing cached
+  // entries, byte-for-byte unchanged.
+  const lang = language || "en";
+  return `${kind}::${subjectId}::${name}|${dob}|${tob}::${lang}`;
+}
+
+async function runExplanationPrompt({ kind, subject, focusInstruction, contextFacts, chart, report, history, language }) {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const insights = safeInsights(chart, kind);
   const prompt = buildExplanationPrompt({
     buildChatPrompt,
@@ -104,6 +121,10 @@ async function runExplanationPrompt({ kind, subject, focusInstruction, contextFa
     subject,
     focusInstruction,
     contextFacts,
+<<<<<<< HEAD
+=======
+    language,
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   });
   const result = await callGemini(prompt);
   const shortAnswer = stripCodeFences(result?.shortAnswer) || stripCodeFences(result?.answer);
@@ -126,7 +147,11 @@ async function runExplanationPrompt({ kind, subject, focusInstruction, contextFa
 // predictions / dasha / transitForecast every other explanation surface
 // uses — nothing new is computed, only summarized.
 // ─────────────────────────────────────────────────────────────────────────
+<<<<<<< HEAD
 async function _getReportSummary({ chart, report, history }) {
+=======
+async function _getReportSummary({ chart, report, history, language }) {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const focusInstruction =
     "Write a concise, whole-report synthesis (not a repeat of any single section) covering: the single most " +
     "important theme of this chart right now, how the current Mahadasha/Antardasha and active transits are " +
@@ -142,6 +167,10 @@ async function _getReportSummary({ chart, report, history }) {
     chart,
     report,
     history,
+<<<<<<< HEAD
+=======
+    language,
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   });
 
   if (!outcome.shortAnswer && !outcome.detailedExplanation) {
@@ -162,7 +191,11 @@ async function _getReportSummary({ chart, report, history }) {
 
 export const getReportSummary = memoizeExplanation(
   _getReportSummary,
+<<<<<<< HEAD
   ({ chart }) => cacheKey("report-summary", "whole-report", chart)
+=======
+  ({ chart, language }) => cacheKey("report-summary", "whole-report", chart, language)
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 );
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -192,7 +225,11 @@ function buildDeterministicConfidenceEvidence(prediction) {
   return bullets.slice(0, 8);
 }
 
+<<<<<<< HEAD
 async function _getConfidenceExplanation({ chart, report, category, history }) {
+=======
+async function _getConfidenceExplanation({ chart, report, category, history, language }) {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const insights = safeInsights(chart, "confidence");
   const prediction = findPrediction(insights, category);
 
@@ -228,6 +265,10 @@ async function _getConfidenceExplanation({ chart, report, category, history }) {
         chart,
         report,
         history,
+<<<<<<< HEAD
+=======
+        language,
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       });
       narrative = outcome.detailedExplanation || outcome.shortAnswer || null;
     } catch (err) {
@@ -249,7 +290,11 @@ async function _getConfidenceExplanation({ chart, report, category, history }) {
 
 export const getConfidenceExplanation = memoizeExplanation(
   _getConfidenceExplanation,
+<<<<<<< HEAD
   ({ chart, category }) => cacheKey("confidence", category, chart)
+=======
+  ({ chart, category, language }) => cacheKey("confidence", category, chart, language)
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 );
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -274,7 +319,11 @@ function buildDeterministicPredictionEvidence(prediction) {
   return bullets.slice(0, 12);
 }
 
+<<<<<<< HEAD
 async function _getPredictionEvidence({ chart, report, category, history }) {
+=======
+async function _getPredictionEvidence({ chart, report, category, history, language }) {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const insights = safeInsights(chart, "prediction-evidence");
   const prediction = findPrediction(insights, category);
   const deterministicEvidence = buildDeterministicPredictionEvidence(prediction);
@@ -299,6 +348,10 @@ async function _getPredictionEvidence({ chart, report, category, history }) {
         chart,
         report,
         history,
+<<<<<<< HEAD
+=======
+        language,
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       });
       narrative = outcome.detailedExplanation || outcome.shortAnswer || null;
     } catch (err) {
@@ -317,7 +370,11 @@ async function _getPredictionEvidence({ chart, report, category, history }) {
 
 export const getPredictionEvidence = memoizeExplanation(
   _getPredictionEvidence,
+<<<<<<< HEAD
   ({ chart, category }) => cacheKey("prediction-evidence", category, chart)
+=======
+  ({ chart, category, language }) => cacheKey("prediction-evidence", category, chart, language)
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 );
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -333,7 +390,11 @@ function findRemedy(chart, remedyType) {
   return list.find((r) => String(r.type || "").toLowerCase() === needle) || null;
 }
 
+<<<<<<< HEAD
 async function _getRemedyExplanation({ chart, report, remedyType, history }) {
+=======
+async function _getRemedyExplanation({ chart, report, remedyType, history, language }) {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const remedy = findRemedy(chart, remedyType);
   const insights = safeInsights(chart, "remedy");
 
@@ -368,6 +429,10 @@ async function _getRemedyExplanation({ chart, report, remedyType, history }) {
       chart,
       report,
       history,
+<<<<<<< HEAD
+=======
+      language,
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     });
     narrative = outcome.detailedExplanation || outcome.shortAnswer || null;
   } catch (err) {
@@ -387,7 +452,11 @@ async function _getRemedyExplanation({ chart, report, remedyType, history }) {
 
 export const getRemedyExplanation = memoizeExplanation(
   _getRemedyExplanation,
+<<<<<<< HEAD
   ({ chart, remedyType }) => cacheKey("remedy", remedyType, chart)
+=======
+  ({ chart, remedyType, language }) => cacheKey("remedy", remedyType, chart, language)
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 );
 
 // ─────────────────────────────────────────────────────────────────────────

@@ -1,0 +1,42 @@
+{
+  "page": {
+    "backToDashboard": "← ডেশ্ব’ৰ্ডলৈ উভতি যাওক",
+    "title": "মোৰ প্ৰ’ফাইল",
+    "photoHint": "সম্পাদনা কৰিবলৈ আপোনাৰ ফট’ত ক্লিক কৰক — আপল’ড কৰক, সলনি কৰক, বা আঁতৰাওক।",
+    "authProviderGoogle": "Google ৰ সৈতে ছাইন ইন কৰা হৈছে",
+    "authProviderEmail": "ইমেইল আৰু পাছৱৰ্ড",
+    "accountInformation": "একাউণ্ট তথ্য",
+    "fullName": "সম্পূৰ্ণ নাম",
+    "email": "ইমেইল",
+    "memberSince": "সদস্যতাৰ আৰম্ভণি",
+    "accountType": "একাউণ্ট প্ৰকাৰ",
+    "accountTypeGoogle": "Google",
+    "notAvailable": "—",
+    "changePassword": "পাছৱৰ্ড সলনি কৰক",
+    "editProfileInSettings": "ছেটিংছত প্ৰ’ফাইল সম্পাদনা কৰক →",
+    "activitySummary": "প্ৰ’ফাইল কাৰ্যকলাপ সাৰাংশ",
+    "totalReports": "মুঠ প্ৰতিবেদনসমূহ",
+    "loadingValue": "…",
+    "lastGenerated": "শেষবাৰ সৃষ্টি কৰা হৈছিল",
+    "viewSavedReports": "সংৰক্ষিত প্ৰতিবেদনসমূহ চাওক →"
+  },
+  "photoManager": {
+    "unsupportedFileType": "অনুগ্ৰহ কৰি JPG, PNG, বা WEBP প্ৰতিচ্ছবি বাছক।",
+    "fileTooLarge": "সেই প্ৰতিচ্ছবিটো বহুত ডাঙৰ। অনুগ্ৰহ কৰি 8MB তকৈ কম আকাৰৰ ফাইল বাছক।",
+    "processFailed": "সেই প্ৰতিচ্ছবিটো প্ৰক্ৰিয়া কৰিব পৰা নগ’ল।",
+    "photoUpdated": "প্ৰ’ফাইল ফট’ আপডেট কৰা হ’ল।",
+    "saveFailed": "আপোনাৰ ফট’ সংৰক্ষণ কৰিব পৰা নগ’ল।",
+    "photoRemoved": "প্ৰ’ফাইল ফট’ আঁতৰোৱা হ’ল।",
+    "removeFailed": "আপোনাৰ ফট’ আঁতৰাব পৰা নগ’ল।",
+    "changePhotoAriaLabel": "প্ৰ’ফাইল ফট’ সলনি কৰক",
+    "uploadPhotoAriaLabel": "প্ৰ’ফাইল ফট’ আপল’ড কৰক",
+    "menuAriaLabel": "প্ৰ’ফাইল ফট’ বিকল্পসমূহ",
+    "replacePhoto": "ফট’ সলনি কৰক",
+    "uploadPhoto": "ফট’ আপল’ড কৰক",
+    "removePhoto": "ফট’ আঁতৰাওক",
+    "previewDialogAriaLabel": "নতুন প্ৰ’ফাইল ফট’ৰ পূৰ্বদৰ্শন",
+    "previewYourNewPhoto": "আপোনাৰ নতুন ফট’ পূৰ্বদৰ্শন কৰক",
+    "cancel": "বাতিল কৰক",
+    "save": "সংৰক্ষণ কৰক"
+  }
+}

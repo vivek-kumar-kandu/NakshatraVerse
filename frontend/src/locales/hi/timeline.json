@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "past": "अतीत",
+    "present": "वर्तमान",
+    "nearFuture": "निकट भविष्य",
+    "nextMonth": "अगला महीना",
+    "next3Months": "अगले 3 महीने",
+    "next6Months": "अगले 6 महीने",
+    "nextYear": "अगला वर्ष"
+  },
+  "horizons": {
+    "oneYear": "अगला 1 वर्ष",
+    "fiveYear": "अगले 5 वर्ष",
+    "tenYear": "अगले 10 वर्ष"
+  },
+  "filterCategories": {
+    "career": "करियर",
+    "finance": "वित्त",
+    "love": "प्रेम",
+    "marriage": "विवाह",
+    "health": "स्वास्थ्य",
+    "education": "शिक्षा",
+    "family": "परिवार",
+    "spiritual": "आध्यात्मिक"
+  },
+  "tab": {
+    "buildingTimeline": "आपकी AI टाइमलाइन बनाई जा रही है…",
+    "notAvailableTitle": "टाइमलाइन अभी उपलब्ध नहीं है",
+    "notAvailableMessage": "आपका चार्ट गणना हो जाने के बाद यहां आपकी महादशा/अंतर्दशा टाइमलाइन दिखाई देगी।",
+    "currentDashaHeading": "वर्तमान दशा",
+    "mahadashaBadge": "महादशा: {{value}}",
+    "antardashaBadge": "अंतर्दशा: {{value}}",
+    "dominantBadge": "प्रमुख: {{planet}}",
+    "notAvailableValue": "—",
+    "filterByLifeAreaHeading": "जीवन क्षेत्र के अनुसार फ़िल्टर करें",
+    "noEventsTitle": "इस फ़िल्टर के लिए कोई घटना नहीं",
+    "noEventsMessage": "चयनित जीवन क्षेत्र से अभी कोई AI टाइमलाइन घटना मेल नहीं खाती। एक अलग फ़िल्टर आज़माएं या सभी चुनें।",
+    "sectionEventsAriaLabel": "{{label}} टाइमलाइन घटनाएं"
+  },
+  "filters": {
+    "ariaLabel": "जीवन क्षेत्र के अनुसार AI टाइमलाइन घटनाएं फ़िल्टर करें",
+    "all": "सभी"
+  },
+  "eventCard": {
+    "generalCategoryFallback": "सामान्य",
+    "upcomingPeriod": "आगामी अवधि",
+    "dateRangeArrow": "{{start}} → {{end}}",
+    "entryAriaLabel": "{{start}} के लिए AI टाइमलाइन प्रविष्टि। AI से समझाने के लिए चुनें।",
+    "entryAriaLabelWithEnd": "{{start}} से {{end}} तक के लिए AI टाइमलाइन प्रविष्टि। AI से समझाने के लिए चुनें।",
+    "mahadashaBadge": "महादशा: {{value}}",
+    "antardashaBadge": "अंतर्दशा: {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI व्याख्या",
+    "eventLabelFallback": "जीवन-क्षेत्र",
+    "prompt": "इस {{category}} भविष्यवाणी की एक Gemini-संचालित व्याख्या पाएं, जो पूरी तरह इस चार्ट के अपने बैकएंड-गणना किए गए तथ्यों पर आधारित है।",
+    "explainAriaLabel": "इस {{category}} भविष्यवाणी को AI से समझाएं",
+    "explainButton": "✨ AI से समझाएं",
+    "generatingLabel": "इस {{category}} भविष्यवाणी के लिए AI व्याख्या बनाई जा रही है",
+    "loadFailed": "AI टाइमलाइन व्याख्या अभी उपलब्ध नहीं है।",
+    "tryAgain": "↻ फिर कोशिश करें"
+  },
+  "common": {
+    "nothingToShow": "अभी दिखाने के लिए कुछ नहीं है।"
+  },
+  "legacyCard": {
+    "upcomingPeriod": "आगामी अवधि",
+    "mahadashaBadge": "महादशा: {{value}}",
+    "antardashaBadge": "अंतर्दशा: {{value}}"
+  }
+}

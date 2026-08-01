@@ -1,8 +1,26 @@
+<<<<<<< HEAD
 import { describe, it, expect } from "vitest";
 import { render } from "@testing-library/react";
 import ZodiacWheel from "../src/components/common/ZodiacWheel.jsx";
 
 describe("ZodiacWheel (Priority 5.1 responsive fix)", () => {
+=======
+import { describe, it, expect, beforeAll } from "vitest";
+import { render } from "@testing-library/react";
+import ZodiacWheel from "../src/components/common/ZodiacWheel.jsx";
+import i18n from "../src/i18n/index.js";
+
+describe("ZodiacWheel (Priority 5.1 responsive fix)", () => {
+  // Phase 3.6: the wheel's aria-label is now built from the "results"
+  // namespace (previously a hardcoded English template literal), so it
+  // needs that namespace actually loaded before any assertion on its
+  // text — the namespace loader is a dynamic import(), which is async
+  // even though it resolves near-instantly in practice.
+  beforeAll(async () => {
+    await i18n.loadNamespaces("results");
+  });
+
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   it("does not use fixed pixel width/height attributes (regression guard against the mobile overflow bug)", () => {
     const { container } = render(<ZodiacWheel lagna="Taurus" planetary={{}} />);
     const svg = container.querySelector("svg");

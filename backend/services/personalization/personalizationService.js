@@ -2,7 +2,11 @@
 // backend-produced report data.  It does not run astrology, prediction, rule,
 // chat, or life-coach engines.
 import * as reportRepository from "../../repositories/report.repository.js";
+<<<<<<< HEAD
 import { TTLCache, memoizeSync } from "../utils/cache.js";
+=======
+import { TTLCache, memoizeAsync } from "../utils/cache.js";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
 export const personalizationCache = new TTLCache({ name: "personalizationCache", maxEntries: 200, ttlMs: 15 * 60 * 1000 });
 
@@ -77,11 +81,20 @@ export function buildPersonalizationFromRecords(records, reportId, period) {
   };
 }
 
+<<<<<<< HEAD
 function buildPersonalization(userId, reportId, period) {
   return buildPersonalizationFromRecords(reportRepository.findByUser(userId), reportId, period);
 }
 
 export const getPersonalization = memoizeSync(buildPersonalization, {
+=======
+async function buildPersonalization(userId, reportId, period) {
+  const records = await reportRepository.findByUser(userId);
+  return buildPersonalizationFromRecords(records, reportId, period);
+}
+
+export const getPersonalization = memoizeAsync(buildPersonalization, {
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   cache: personalizationCache,
   keyFn: (userId, reportId, period) => `${userId}|${reportId || "latest"}|${selectedPeriod(period)}`,
 });

@@ -1,0 +1,9 @@
+{
+  "nameRequired": "హెసరు అగత్యవిదె",
+  "validEmailRequired": "మాన్య ఇమేల్ అగత్యవిదె",
+  "passwordMinLength": "పాస్‌వర్డ్ కనిష్ఠ 8 అక్షరగళిరబేకు",
+  "passwordNeedsNumber": "పాస్‌వర్డ్ నల్లి ఒక సంఖ్యె ఇరబేకు",
+  "passwordRequired": "పాస్‌వర్డ్ అగత్యవిదె",
+  "festivalKeyRequired": "`festivalKey` నిరూపకవు అగత్యవిదె.",
+  "profileIdsRequired": "profileIdA మత్తు profileIdB ఎరడూ అగత్యవిదె."
+}

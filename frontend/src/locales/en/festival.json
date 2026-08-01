@@ -1,0 +1,165 @@
+{
+  "typeFilters": {
+    "All": "All",
+    "Festival": "Festival",
+    "Vrat": "Vrat"
+  },
+  "page": {
+    "back": "← Back",
+    "title": "🎉 Festival Calendar",
+    "subtitle": "Backend-computed Hindu festivals & Vrats — dates, rituals, and significance.",
+    "tabs": {
+      "today": "Today",
+      "upcoming": "Upcoming",
+      "browse": "Browse All"
+    },
+    "todayLoadFailed": "Could not load today's festival.",
+    "upcomingLoadFailed": "Could not load upcoming festivals.",
+    "yearLoadFailed": "Could not load the festival calendar.",
+    "openFestivalFailed": "Could not open that festival.",
+    "todaysFestivalsHeading": "Today's Festival{{plural}}",
+    "noFestivalTodayTitle": "No festival today",
+    "noFestivalTodayMessage": "There's no observed festival or Vrat on today's date.",
+    "nextUp": "Next Up",
+    "daysRemainingToday": "Today",
+    "daysRemainingSingle": "In {{count}} day",
+    "daysRemainingPlural": "In {{count}} days",
+    "noUpcomingTitle": "No upcoming festivals found",
+    "noUpcomingMessage": "Nothing found in the next 60 days.",
+    "searchPlaceholder": "Search festivals…",
+    "searchAriaLabel": "Search festivals",
+    "typeFilterAriaLabel": "Filter by type",
+    "yearAriaLabel": "Select year",
+    "noMatchTitle": "No festivals match",
+    "noMatchMessage": "Try a different search term or type filter.",
+    "explainFailed": "AI explanation unavailable right now."
+  },
+  "detailCard": {
+    "importanceSuffix": "{{importance}} Importance",
+    "notSpecified": "Not specified.",
+    "explainButton": "✨ {{status}}",
+    "askingGemini": "Asking Gemini…",
+    "explainThisFestival": "Explain This Festival",
+    "historicalBackground": "Historical Background",
+    "significance": "Significance",
+    "rituals": "Rituals",
+    "recommendedActivities": "Recommended Activities",
+    "fastingInformation": "Fasting Information",
+    "fastingObserved": "Fasting observed",
+    "noFastingObserved": "No fasting traditionally observed"
+  },
+  "familySuggestions": {
+    "title": "👨‍👩‍👧‍👦 Family Festival Suggestions",
+    "signInPrompt": "Sign in and add Family Profiles to get shared celebration suggestions and reminders for the people you care about.",
+    "loadFailed": "Could not load family festival suggestions right now.",
+    "remindersTitle": "Family Festival Reminders",
+    "noProfiles": "No Family Profiles saved yet.",
+    "addOne": "Add one →",
+    "sharedCelebrationTitle": "Shared Celebration Suggestions",
+    "suggestedActivitiesTitle": "Suggested Family Activities"
+  },
+  "intelligencePanel": {
+    "title": "🔮 Festival Intelligence",
+    "subtitle": "Spiritual meaning, mythological story, and puja overview — beyond the basics above.",
+    "loadFailed": "Could not load festival intelligence right now.",
+    "revealButton": "✨ {{status}}",
+    "askingGemini": "Asking Gemini…",
+    "revealDeeper": "Reveal Deeper Intelligence",
+    "spiritualMeaning": "Spiritual Meaning",
+    "mythologicalStory": "Mythological Story",
+    "modernPracticalMeaning": "Modern Practical Meaning",
+    "culturalSignificance": "Scientific / Cultural Significance",
+    "pujaOverview": "Puja Overview",
+    "thingsToAvoid": "Things To Avoid",
+    "aiAssistedBadge": "AI-assisted — traditions vary by region/family"
+  },
+  "preparationChecklist": {
+    "nothingSpecified": "Nothing specified.",
+    "loadFailed": "Could not load the preparation checklist right now.",
+    "sections": {
+      "preparationChecklist": "Preparation Checklist",
+      "shoppingChecklist": "Shopping Checklist",
+      "pujaMaterials": "Puja Materials",
+      "fastingPreparation": "Fasting Preparation",
+      "morningRoutine": "Morning Routine",
+      "eveningRitual": "Evening Ritual",
+      "postFestivalReflection": "Post-Festival Reflection"
+    }
+  },
+  "personalizedGuidance": {
+    "title": "🌟 Personalized Festival Guidance",
+    "noChartMessage": "Open this festival from one of your saved readings to see why it's especially meaningful for you — career, finance, relationships, health, spiritual, and personal-growth focus, all grounded in your own chart.",
+    "openSavedReading": "Open a Saved Reading →",
+    "subtitle": "Grounded in your own Dasha, Transits, and Predictions.",
+    "loadFailed": "Could not load personalized guidance right now.",
+    "askButton": "✨ {{status}}",
+    "whyMeaningful": "Why Is This Meaningful For Me?",
+    "focusFields": {
+      "careerFocus": "Career",
+      "financeFocus": "Finance",
+      "relationshipFocus": "Relationships",
+      "healthFocus": "Health",
+      "spiritualFocus": "Spiritual",
+      "personalGrowthFocus": "Personal Growth"
+    }
+  },
+  "intelligencePage": {
+    "back": "← Back",
+    "title": "🔮 Festival Intelligence",
+    "subtitle": "Deeper meaning, personalized guidance, preparation, and family suggestions for one festival.",
+    "loadFailed": "Could not load this festival.",
+    "loadUpcomingFailed": "Could not load an upcoming festival.",
+    "noFestivalTitle": "No festival selected",
+    "noFestivalMessage": "Open a festival from the Festival Calendar, Dashboard, or Calendar page to see its full intelligence.",
+    "ritualFlow": "Ritual Flow",
+    "timelineUnavailable": "Timeline unavailable for this festival.",
+    "festivalIntelligence": "Festival Intelligence",
+    "personalizedGuidance": "Personalized Guidance",
+    "festivalPreparation": "Festival Preparation",
+    "family": "Family"
+  },
+  "widget": {
+    "title": "Today's Festival",
+    "openCalendar": "Open Festival Calendar →",
+    "loading": "Loading…",
+    "noFestivalToday": "No festival today.",
+    "nextFestival": "Next Festival",
+    "daysRemainingLabel": "Days Remaining",
+    "daysRemainingSingle": "{{count}} day",
+    "daysRemainingPlural": "{{count}} days",
+    "importance": "Importance",
+    "preparationProgress": "Preparation Progress",
+    "preparationItemsReady": "{{count}} checklist items ready",
+    "upcomingRitual": "Upcoming Ritual",
+    "personalizedTip": "Personalized Tip",
+    "viewIntelligence": "🔮 View Festival Intelligence"
+  },
+  "muhurat": {
+    "bestMuhuratFor": "Best Muhurat for {{activity}}",
+    "confidence": {
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "confidenceBadge": "{{level}} Confidence",
+    "bestDate": "Best Date",
+    "bestTimeWindow": "Best Time Window",
+    "tithi": "Tithi",
+    "auspiciousWindow": "Auspicious Window",
+    "cautionPeriod": "Caution Period (avoid)",
+    "rahuKaal": "Rahu Kaal",
+    "yamaganda": "Yamaganda",
+    "gulikaKaal": "Gulika Kaal",
+    "otherStrongDates": "Other strong dates",
+    "askingAI": "Asking AI…",
+    "explainWhy": "🔮 Explain Why This Muhurat",
+    "nakshatra": "Nakshatra"
+  },
+  "calendarStrip": {
+    "heading": "🎉 This Month's Festivals",
+    "viewCalendarLink": "View Festival Calendar →",
+    "todayLabel": "Today:",
+    "loadingOverview": "Loading festival overview…",
+    "importanceSuffix": "Importance"
+  }
+}

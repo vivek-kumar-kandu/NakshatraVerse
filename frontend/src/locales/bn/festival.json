@@ -1,0 +1,165 @@
+{
+  "typeFilters": {
+    "All": "সব",
+    "Festival": "উৎসব",
+    "Vrat": "ব্রত"
+  },
+  "page": {
+    "back": "← পিছনে",
+    "title": "🎉 উৎসব ক্যালেন্ডার",
+    "subtitle": "ব্যাকএন্ড দ্বারা গণনাকৃত হিন্দু উৎসব ও ব্রত — তারিখ, রীতিনীতি, এবং তাৎপর্য।",
+    "tabs": {
+      "today": "আজ",
+      "upcoming": "আসন্ন",
+      "browse": "সব ব্রাউজ করুন"
+    },
+    "todayLoadFailed": "আজকের উৎসব লোড করা যায়নি।",
+    "upcomingLoadFailed": "আসন্ন উৎসব লোড করা যায়নি।",
+    "yearLoadFailed": "উৎসব ক্যালেন্ডার লোড করা যায়নি।",
+    "openFestivalFailed": "সেই উৎসবটি খোলা যায়নি।",
+    "todaysFestivalsHeading": "আজকের উৎসব{{plural}}",
+    "noFestivalTodayTitle": "আজ কোনো উৎসব নেই",
+    "noFestivalTodayMessage": "আজকের তারিখে কোনো পালনীয় উৎসব বা ব্রত নেই।",
+    "nextUp": "পরবর্তী কী",
+    "daysRemainingToday": "আজ",
+    "daysRemainingSingle": "{{count}} দিনে",
+    "daysRemainingPlural": "{{count}} দিনে",
+    "noUpcomingTitle": "কোনো আসন্ন উৎসব পাওয়া যায়নি",
+    "noUpcomingMessage": "আগামী 60 দিনে কিছু পাওয়া যায়নি।",
+    "searchPlaceholder": "উৎসব অনুসন্ধান করুন…",
+    "searchAriaLabel": "উৎসব অনুসন্ধান করুন",
+    "typeFilterAriaLabel": "ধরন অনুসারে ফিল্টার করুন",
+    "yearAriaLabel": "বছর নির্বাচন করুন",
+    "noMatchTitle": "কোনো উৎসব মেলে না",
+    "noMatchMessage": "একটি ভিন্ন অনুসন্ধান শব্দ বা ধরনের ফিল্টার চেষ্টা করুন।",
+    "explainFailed": "AI ব্যাখ্যা বর্তমানে উপলব্ধ নয়।"
+  },
+  "detailCard": {
+    "importanceSuffix": "{{importance}} গুরুত্ব",
+    "notSpecified": "নির্দিষ্ট নয়।",
+    "explainButton": "✨ {{status}}",
+    "askingGemini": "Gemini কে জিজ্ঞাসা করা হচ্ছে…",
+    "explainThisFestival": "এই উৎসবটি ব্যাখ্যা করুন",
+    "historicalBackground": "ঐতিহাসিক পটভূমি",
+    "significance": "তাৎপর্য",
+    "rituals": "রীতিনীতি",
+    "recommendedActivities": "সুপারিশকৃত কার্যক্রম",
+    "fastingInformation": "উপবাসের তথ্য",
+    "fastingObserved": "উপবাস পালন করা হয়",
+    "noFastingObserved": "ঐতিহ্যগতভাবে কোনো উপবাস পালন করা হয় না"
+  },
+  "familySuggestions": {
+    "title": "👨‍👩‍👧‍👦 পারিবারিক উৎসব পরামর্শ",
+    "signInPrompt": "আপনার প্রিয়জনদের জন্য যৌথ উদযাপনের পরামর্শ এবং অনুস্মারক পেতে সাইন ইন করুন এবং পারিবারিক প্রোফাইল যোগ করুন।",
+    "loadFailed": "বর্তমানে পারিবারিক উৎসব পরামর্শ লোড করা যায়নি।",
+    "remindersTitle": "পারিবারিক উৎসব অনুস্মারক",
+    "noProfiles": "এখনও কোনো পারিবারিক প্রোফাইল সংরক্ষিত নেই।",
+    "addOne": "একটি যোগ করুন →",
+    "sharedCelebrationTitle": "যৌথ উদযাপনের পরামর্শ",
+    "suggestedActivitiesTitle": "প্রস্তাবিত পারিবারিক কার্যক্রম"
+  },
+  "intelligencePanel": {
+    "title": "🔮 উৎসব বুদ্ধিমত্তা",
+    "subtitle": "আধ্যাত্মিক অর্থ, পৌরাণিক কাহিনী, এবং পূজার সংক্ষিপ্ত বিবরণ — উপরের মৌলিক বিষয়গুলির বাইরে।",
+    "loadFailed": "বর্তমানে উৎসব বুদ্ধিমত্তা লোড করা যায়নি।",
+    "revealButton": "✨ {{status}}",
+    "askingGemini": "Gemini কে জিজ্ঞাসা করা হচ্ছে…",
+    "revealDeeper": "গভীর বুদ্ধিমত্তা প্রকাশ করুন",
+    "spiritualMeaning": "আধ্যাত্মিক অর্থ",
+    "mythologicalStory": "পৌরাণিক কাহিনী",
+    "modernPracticalMeaning": "আধুনিক ব্যবহারিক অর্থ",
+    "culturalSignificance": "বৈজ্ঞানিক / সাংস্কৃতিক তাৎপর্য",
+    "pujaOverview": "পূজার সংক্ষিপ্ত বিবরণ",
+    "thingsToAvoid": "এড়িয়ে চলার বিষয়",
+    "aiAssistedBadge": "AI-সহায়িত — ঐতিহ্য অঞ্চল/পরিবার অনুসারে ভিন্ন হতে পারে"
+  },
+  "preparationChecklist": {
+    "nothingSpecified": "কিছু নির্দিষ্ট নয়।",
+    "loadFailed": "বর্তমানে প্রস্তুতি চেকলিস্ট লোড করা যায়নি।",
+    "sections": {
+      "preparationChecklist": "প্রস্তুতি চেকলিস্ট",
+      "shoppingChecklist": "কেনাকাটা চেকলিস্ট",
+      "pujaMaterials": "পূজার সামগ্রী",
+      "fastingPreparation": "উপবাসের প্রস্তুতি",
+      "morningRoutine": "সকালের রুটিন",
+      "eveningRitual": "সন্ধ্যার আচার",
+      "postFestivalReflection": "উৎসব-পরবর্তী চিন্তা"
+    }
+  },
+  "personalizedGuidance": {
+    "title": "🌟 ব্যক্তিগত উৎসব নির্দেশনা",
+    "noChartMessage": "এই উৎসবটি আপনার জন্য বিশেষভাবে কেন অর্থবহ তা জানতে — কর্মজীবন, অর্থ, সম্পর্ক, স্বাস্থ্য, আধ্যাত্মিক, এবং ব্যক্তিগত বিকাশের উপর কেন্দ্রীভূত, আপনার নিজের চার্টের উপর ভিত্তি করে — আপনার একটি সংরক্ষিত রিডিং থেকে এই উৎসবটি খুলুন।",
+    "openSavedReading": "একটি সংরক্ষিত রিডিং খুলুন →",
+    "subtitle": "আপনার নিজের দশা, গোচর, এবং ভবিষ্যদ্বাণীর উপর ভিত্তি করে।",
+    "loadFailed": "বর্তমানে ব্যক্তিগত নির্দেশনা লোড করা যায়নি।",
+    "askButton": "✨ {{status}}",
+    "whyMeaningful": "এটি আমার জন্য কেন অর্থবহ?",
+    "focusFields": {
+      "careerFocus": "কর্মজীবন",
+      "financeFocus": "অর্থ",
+      "relationshipFocus": "সম্পর্ক",
+      "healthFocus": "স্বাস্থ্য",
+      "spiritualFocus": "আধ্যাত্মিক",
+      "personalGrowthFocus": "ব্যক্তিগত বিকাশ"
+    }
+  },
+  "intelligencePage": {
+    "back": "← পিছনে",
+    "title": "🔮 উৎসব বুদ্ধিমত্তা",
+    "subtitle": "একটি উৎসবের জন্য গভীর অর্থ, ব্যক্তিগত নির্দেশনা, প্রস্তুতি, এবং পারিবারিক পরামর্শ।",
+    "loadFailed": "এই উৎসবটি লোড করা যায়নি।",
+    "loadUpcomingFailed": "কোনো আসন্ন উৎসব লোড করা যায়নি।",
+    "noFestivalTitle": "কোনো উৎসব নির্বাচিত নয়",
+    "noFestivalMessage": "এর সম্পূর্ণ বুদ্ধিমত্তা দেখতে উৎসব ক্যালেন্ডার, ড্যাশবোর্ড, বা ক্যালেন্ডার পৃষ্ঠা থেকে একটি উৎসব খুলুন।",
+    "ritualFlow": "আচার ক্রম",
+    "timelineUnavailable": "এই উৎসবের জন্য টাইমলাইন উপলব্ধ নয়।",
+    "festivalIntelligence": "উৎসব বুদ্ধিমত্তা",
+    "personalizedGuidance": "ব্যক্তিগত নির্দেশনা",
+    "festivalPreparation": "উৎসবের প্রস্তুতি",
+    "family": "পরিবার"
+  },
+  "widget": {
+    "title": "আজকের উৎসব",
+    "openCalendar": "উৎসব ক্যালেন্ডার খুলুন →",
+    "loading": "লোড হচ্ছে…",
+    "noFestivalToday": "আজ কোনো উৎসব নেই।",
+    "nextFestival": "পরবর্তী উৎসব",
+    "daysRemainingLabel": "অবশিষ্ট দিন",
+    "daysRemainingSingle": "{{count}} দিন",
+    "daysRemainingPlural": "{{count}} দিন",
+    "importance": "গুরুত্ব",
+    "preparationProgress": "প্রস্তুতির অগ্রগতি",
+    "preparationItemsReady": "{{count}} চেকলিস্ট আইটেম প্রস্তুত",
+    "upcomingRitual": "আসন্ন আচার",
+    "personalizedTip": "ব্যক্তিগত পরামর্শ",
+    "viewIntelligence": "🔮 উৎসব বুদ্ধিমত্তা দেখুন"
+  },
+  "muhurat": {
+    "bestMuhuratFor": "{{activity}}-এর জন্য সেরা মুহূর্ত",
+    "confidence": {
+      "high": "উচ্চ",
+      "medium": "মাঝারি",
+      "low": "কম"
+    },
+    "confidenceBadge": "{{level}} আস্থা",
+    "bestDate": "সেরা তারিখ",
+    "bestTimeWindow": "সেরা সময়সীমা",
+    "tithi": "তিথি",
+    "auspiciousWindow": "শুভ সময়",
+    "cautionPeriod": "সতর্কতা সময় (এড়িয়ে চলুন)",
+    "rahuKaal": "রাহু কাল",
+    "yamaganda": "যমগণ্ড",
+    "gulikaKaal": "গুলিক কাল",
+    "otherStrongDates": "অন্যান্য ভালো তারিখ",
+    "askingAI": "AI-কে জিজ্ঞাসা করা হচ্ছে…",
+    "explainWhy": "🔮 এই মুহূর্ত কেন ব্যাখ্যা করুন",
+    "nakshatra": "নক্ষত্র"
+  },
+  "calendarStrip": {
+    "heading": "🎉 এই মাসের উৎসব",
+    "viewCalendarLink": "উৎসব ক্যালেন্ডার দেখুন →",
+    "todayLabel": "আজ:",
+    "loadingOverview": "উৎসব সংক্ষিপ্ত বিবরণ লোড হচ্ছে…",
+    "importanceSuffix": "গুরুত্ব"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "nameRequired": "പേര് ആവശ്യമാണ്",
+  "validEmailRequired": "സാധുവായ ഇമെയിൽ ആവശ്യമാണ്",
+  "passwordMinLength": "പാസ്‌വേഡിൽ കുറഞ്ഞത് 8 അക്ഷരങ്ങൾ ഉണ്ടായിരിക്കണം",
+  "passwordNeedsNumber": "പാസ്‌വേഡിൽ കുറഞ്ഞത് ഒരു നമ്പറെങ്കിലും ഉണ്ടായിരിക്കണം",
+  "passwordRequired": "പാസ്‌വേഡ് ആവശ്യമാണ്",
+  "festivalKeyRequired": "`festivalKey` പാരാമീറ്റർ ആവശ്യമാണ്.",
+  "profileIdsRequired": "profileIdA, profileIdB എന്നിവ രണ്ടും ആവശ്യമാണ്."
+}

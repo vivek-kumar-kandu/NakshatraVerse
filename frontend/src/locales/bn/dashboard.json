@@ -1,0 +1,111 @@
+{
+  "header": {
+    "title": "আপনার ড্যাশবোর্ড",
+    "welcomeBack": "ফিরে আসার জন্য স্বাগতম, {{name}} ✦",
+    "welcomeBackFallbackName": "পথিক",
+    "generateNewReport": "✦ নতুন প্রতিবেদন তৈরি করুন"
+  },
+  "error": {
+    "loadFailed": "আপনার সংরক্ষিত প্রতিবেদনগুলি লোড করা যায়নি।",
+    "tryAgain": "↻ আবার চেষ্টা করুন"
+  },
+  "userSummary": {
+    "authProviderGoogle": "Google দিয়ে সাইন ইন করা হয়েছে",
+    "authProviderEmail": "ইমেল ও পাসওয়ার্ড",
+    "viewFullProfile": "সম্পূর্ণ প্রোফাইল দেখুন →"
+  },
+  "statistics": {
+    "sectionTitle": "পরিসংখ্যান",
+    "savedReports": "সংরক্ষিত প্রতিবেদন",
+    "memberSince": "সদস্যপদ শুরু",
+    "latestReading": "সর্বশেষ রিডিং",
+    "currentTheme": "বর্তমান থিম",
+    "systemThemeLabel": "সিস্টেম ({{themeName}})",
+    "notAvailable": "—",
+    "loadingValue": "…"
+  },
+  "astrologySummary": {
+    "sectionTitle": "জ্যোতিষ সারাংশ",
+    "cardTitle": "আপনার সর্বশেষ রিডিং থেকে",
+    "padaBadge": " · পদ {{pada}}",
+    "lordBadge": "অধিপতি: {{lord}}",
+    "currentMahadasha": "বর্তমান মহাদশা",
+    "currentAntardasha": "বর্তমান অন্তর্দশা"
+  },
+  "quickActions": {
+    "sectionTitle": "দ্রুত ক্রিয়া",
+    "generateNewReport": {
+      "label": "নতুন প্রতিবেদন তৈরি করুন",
+      "desc": "একটি নতুন বৈদিক রিডিং শুরু করুন"
+    },
+    "continueReading": {
+      "label": "রিডিং চালিয়ে যান",
+      "desc": "আপনার শেষ দেখা প্রতিবেদন আবার খুলুন"
+    },
+    "myProfile": {
+      "label": "আমার প্রোফাইল",
+      "desc": "আপনার প্রোফাইলের বিবরণ দেখুন"
+    },
+    "savedReports": {
+      "label": "সংরক্ষিত প্রতিবেদন",
+      "desc": "আপনার সম্পূর্ণ সংগ্রহ ব্রাউজ করুন"
+    },
+    "askAI": {
+      "label": "AI কে জিজ্ঞাসা করুন",
+      "desc": "আপনার জ্যোতিষ সহায়কের সাথে চ্যাট করুন"
+    },
+    "aiLifeCoach": {
+      "label": "AI লাইফ কোচ",
+      "desc": "দৈনিক, কর্মজীবন, সম্পর্ক, অর্থ ও স্বাস্থ্য নির্দেশনা"
+    },
+    "kundliMatching": {
+      "label": "কুণ্ডলী মিলান",
+      "desc": "দুই ব্যক্তির বৈদিক সামঞ্জস্য পরীক্ষা করুন"
+    },
+    "panchangMuhurat": {
+      "label": "পঞ্চাঙ্গ ও মুহূর্ত",
+      "desc": "দৈনিক পঞ্চাঙ্গ ও শুভ মুহূর্ত অনুসন্ধানকারী"
+    },
+    "familyProfiles": {
+      "label": "পারিবারিক প্রোফাইল",
+      "desc": "আপনার বৃত্তের প্রতিটি জন্মকুণ্ডলী পরিচালনা করুন"
+    },
+    "relationshipHub": {
+      "label": "রিলেশনশিপ হাব",
+      "desc": "যেকোনো দুটি সংরক্ষিত প্রোফাইল তুলনা করুন"
+    },
+    "settings": {
+      "label": "সেটিংস",
+      "desc": "আপনার অ্যাকাউন্ট পরিচালনা করুন"
+    }
+  },
+  "recentReports": {
+    "sectionTitle": "সাম্প্রতিক প্রতিবেদন",
+    "viewAll": "সব দেখুন →",
+    "emptyTitle": "এখনও কোনো রিডিং নেই",
+    "emptyMessage": "এখানে দেখানোর জন্য আপনার প্রথম বৈদিক রিডিং তৈরি করুন।",
+    "emptyAction": "✦ নতুন প্রতিবেদন তৈরি করুন"
+  },
+  "aiLifeCoach": "AI লাইফ কোচ",
+  "todaysFocus": "আজকের ফোকাস:",
+  "personalizedInsights": "ব্যক্তিগতকৃত পূর্বাভাস",
+  "yourPersonalizedGuidance": "✦ আপনার ব্যক্তিগত নির্দেশিকা",
+  "insightPeriod": "পূর্বাভাসের সময়কাল",
+  "whatsChanged": "কী পরিবর্তন হয়েছে:",
+  "noUpcomingEvents": "কোনো আসন্ন ঘটনা নেই",
+  "loadingPanchang": "পঞ্জিকা অবলোকন লোড হচ্ছে…",
+  "bestTimeToday": "✨ আজকের সেরা সময়",
+  "recommendedActivities": "✓ সুপারিশকৃত কাজসমূহ",
+  "thingsToAvoid": "⚠ বর্জনীয় বিষয়সমূহ",
+  "noReadingYet": "এখনও কোনো রিডিং উপলব্ধ নয়",
+  "astrologyCalendar": "📅 জ্যোতিষ ক্যালেন্ডার",
+  "dashaUnavailable": "দশা উপলব্ধ নয়",
+  "noUpcomingChanges": "কোনো আসন্ন পরিবর্তন নেই",
+  "noTransitData": "কোনো গোচর তথ্য নেই",
+  "auspicious": "✓ শুভ",
+  "caution": "⚠ সতর্কতা",
+  "horoscopeDashboard": "🔮 রাশিফল ড্যাশবোর্ড",
+  "noWeeklyFocus": "সাপ্তাহিক ফোকাস উপলব্ধ নয়",
+  "noMonthlySegments": "এই মাসে কোনো মাসিক বিভাগ নেই",
+  "dailyPanchangMuhurat": "🕉️ দৈনিক পঞ্জিকা ও মুহূর্ত"
+}

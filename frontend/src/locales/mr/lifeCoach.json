@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "daily": "दैनिक",
+    "weekly": "साप्ताहिक",
+    "monthly": "मासिक",
+    "career": "करिअर",
+    "relationship": "नाते",
+    "finance": "अर्थ",
+    "health": "आरोग्य",
+    "growth": "विकास"
+  },
+  "page": {
+    "back": "← मागे",
+    "title": "🧭 AI लाइफ कोच",
+    "dailyCompanion": "{{name}} चा दैनिक सोबती",
+    "updated": "{{time}} रोजी अद्ययावत",
+    "refreshing": "रिफ्रेश करत आहे…",
+    "refreshGuidance": "↻ मार्गदर्शन रिफ्रेश करा",
+    "tryAgain": "पुन्हा प्रयत्न करा",
+    "loadingAriaLabel": "तुमचे AI लाइफ कोच मार्गदर्शन लोड होत आहे",
+    "loadFailed": "तुमचे AI लाइफ कोच मार्गदर्शन लोड होऊ शकले नाही.",
+    "refreshFailed": "तुमचे AI लाइफ कोच मार्गदर्शन रिफ्रेश होऊ शकले नाही.",
+    "noReadingTitle": "अजून कोणतेही रीडिंग उपलब्ध नाही",
+    "noReadingMessage": "तुमचा वैयक्तिक AI लाइफ कोच पाहण्यासाठी प्रथम एक अहवाल तयार करा किंवा उघडा.",
+    "backAction": "← मागे"
+  },
+  "daily": {
+    "opportunities": "संधी",
+    "challenges": "आव्हाने",
+    "recommendedActions": "शिफारस केलेल्या कृती",
+    "thingsToAvoid": "टाळण्यासारख्या गोष्टी",
+    "spiritualGuidance": "🕉️ आध्यात्मिक मार्गदर्शन"
+  },
+  "outlook": {
+    "weeklyThemeTitle": "या आठवड्याची थीम",
+    "weeklyEnergyLabel": "साप्ताहिक ऊर्जा",
+    "monthlyThemeTitle": "या महिन्याची थीम",
+    "monthlyEnergyLabel": "मासिक ऊर्जा",
+    "weeklyUnavailableTitle": "साप्ताहिक दृष्टिकोन उपलब्ध नाही",
+    "weeklyUnavailableMessage": "आम्ही सध्या या आठवड्याचा दृष्टिकोन तयार करू शकलो नाही — कृपया रिफ्रेश करा.",
+    "monthlyUnavailableTitle": "मासिक दृष्टिकोन उपलब्ध नाही",
+    "monthlyUnavailableMessage": "आम्ही सध्या या महिन्याचा दृष्टिकोन तयार करू शकलो नाही — कृपया रिफ्रेश करा.",
+    "weeklyFocus": "साप्ताहिक फोकस",
+    "personalGrowthGoal": "वैयक्तिक विकास ध्येय",
+    "careerFocus": "करिअर फोकस",
+    "relationshipFocus": "नाते फोकस",
+    "opportunities": "संधी",
+    "challenges": "आव्हाने",
+    "bestDay": "सर्वोत्तम दिवस: {{weekday}} ({{date}})",
+    "cautionDay": "सावधगिरीचा दिवस: {{weekday}} ({{date}})"
+  },
+  "career": {
+    "cardTitle": "करिअर कोच",
+    "progress": "करिअर प्रगती",
+    "skillDevelopmentAdvice": "कौशल्य विकास सल्ला",
+    "promotionGuidance": "बढती मार्गदर्शन",
+    "businessSuggestions": "व्यवसाय सूचना",
+    "bestTimeForDecisions": "महत्त्वाच्या निर्णयांसाठी सर्वोत्तम वेळ"
+  },
+  "relationship": {
+    "cardTitle": "नाते कोच",
+    "guidance": "नाते मार्गदर्शन",
+    "marriageAdvice": "विवाह सल्ला",
+    "familyHarmonyTips": "कौटुंबिक सलोखा टिप्स",
+    "communicationSuggestions": "संवाद सूचना",
+    "emotionalWellbeing": "भावनिक स्वास्थ्य"
+  },
+  "finance": {
+    "cardTitle": "अर्थ कोच",
+    "outlook": "आर्थिक दृष्टिकोन",
+    "spendingSuggestions": "खर्च सूचना",
+    "savingAdvice": "बचत सल्ला",
+    "investmentAwareness": "गुंतवणूक जागरूकता",
+    "businessOpportunities": "व्यवसाय संधी"
+  },
+  "health": {
+    "cardTitle": "आरोग्य आणि तंदुरुस्ती",
+    "energyTrends": "ऊर्जा कल",
+    "stressAwareness": "तणाव जागरूकता",
+    "meditationSuggestions": "ध्यान सूचना",
+    "yogaRecommendations": "योग शिफारसी",
+    "spiritualPractices": "आध्यात्मिक सराव",
+    "lifestyleSuggestions": "जीवनशैली सूचना"
+  },
+  "growth": {
+    "dailyGoals": "दैनिक ध्येये",
+    "weeklyGoals": "साप्ताहिक ध्येये",
+    "monthlyFocus": "🌕 मासिक फोकस",
+    "habitSuggestions": "सवय सूचना",
+    "learningRecommendations": "शिकण्याच्या शिफारसी"
+  },
+  "scoreCard": {
+    "dailyEnergyLabel": "दैनिक ऊर्जा",
+    "todaysFocus": "आजचा फोकस"
+  },
+  "confidenceBadge": {
+    "withScore": "विश्वास: {{label}} ({{score}}/100)",
+    "withoutScore": "विश्वास: {{label}}"
+  },
+  "whyNote": {
+    "prefix": "का? "
+  },
+  "luckyElements": {
+    "title": "🍀 आजचे भाग्यशाली घटक",
+    "color": "रंग",
+    "number": "अंक",
+    "direction": "दिशा",
+    "favorableTime": "अनुकूल वेळ"
+  },
+  "affirmation": {
+    "dailyAffirmation": "✦ दैनिक पुष्टी",
+    "spiritualPractice": "🕉️ आजचा आध्यात्मिक सराव"
+  }
+}

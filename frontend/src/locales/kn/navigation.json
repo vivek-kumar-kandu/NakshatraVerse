@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "ಮುಖಪುಟ",
+    "features": "ವೈಶಿಷ್ಟ್ಯಗಳು",
+    "about": "ನಮ್ಮ ಬಗ್ಗೆ",
+    "faq": "ಪದೇ ಪದೇ ಕೇಳಲಾಗುವ ಪ್ರಶ್ನೆಗಳು"
+  },
+  "navbar": {
+    "brandAriaLabel": "ನಕ್ಷತ್ರವರ್ಸ್ — ಮುಖಪುಟ",
+    "primaryAriaLabel": "ಮುಖ್ಯ",
+    "openMenu": "ಮೆನುವನ್ನು ತೆರೆಯಿರಿ",
+    "closeMenu": "ಮೆನುವನ್ನು ಮುಚ್ಚಿ"
+  },
+  "auth": {
+    "home": "ಮುಖಪುಟ",
+    "dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+    "reports": "ವರದಿಗಳು",
+    "profile": "ಪ್ರೊಫೈಲ್"
+  },
+  "accountMenu": {
+    "myProfile": "ನನ್ನ ಪ್ರೊಫೈಲ್",
+    "dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+    "savedReports": "ಉಳಿಸಿದ ವರದಿಗಳು",
+    "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+    "helpAbout": "ಸಹಾಯ ಮತ್ತು ಮಾಹಿತಿ",
+    "memberSince": "{{date}} ರಿಂದ ಸದಸ್ಯ",
+    "menuLabel": "ಖಾತೆ",
+    "triggerLabel": "{{name}} ಗಾಗಿ ಖಾತೆ ಮೆನು"
+  },
+  "actionDock": {
+    "askAi": "AI ಅನ್ನು ಕೇಳಿ",
+    "horoscope": "ರಾಶಿಫಲ",
+    "calendar": "ಕ್ಯಾಲೆಂಡರ್",
+    "lifeCoach": "ಜೀವನ ಮಾರ್ಗದರ್ಶಕ",
+    "kundliMatching": "ಕುಂಡಲಿ ಹೊಂದಾಣಿಕೆ",
+    "panchang": "ಪಂಚಾಂಗ",
+    "festivalCalendar": "ಹಬ್ಬ ಕ್ಯಾಲೆಂಡರ್",
+    "notifications": "ಅಧಿಸೂಚನೆಗಳು",
+    "saveReport": "ವರದಿಯನ್ನು ಉಳಿಸಿ",
+    "saving": "ಉಳಿಸಲಾಗುತ್ತಿದೆ…",
+    "downloadPdf": "PDF ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+    "preparing": "ಸಿದ್ಧಪಡಿಸಲಾಗುತ್ತಿದೆ…",
+    "printPdf": "PDF ಮುದ್ರಿಸಿ",
+    "opening": "ತೆರೆಯಲಾಗುತ್ತಿದೆ…",
+    "reportActions": "ವರದಿ ಕ್ರಿಯೆಗಳು",
+    "openReportActions": "ವರದಿ ಕ್ರಿಯೆಗಳನ್ನು ತೆರೆಯಿರಿ",
+    "close": "ಮುಚ್ಚಿ",
+    "somethingWentWrong": "ಏನೋ ತಪ್ಪಾಗಿದೆ."
+  },
+  "commandPalette": {
+    "ariaLabel": "ಕಮಾಂಡ್ ಪ್ಯಾಲೆಟ್",
+    "searchAriaLabel": "ಕಮಾಂಡ್ ಪ್ಯಾಲೆಟ್ ಹುಡುಕಾಟ",
+    "commandsAriaLabel": "ಕಮಾಂಡ್‌ಗಳು",
+    "sections": {
+      "navigate": "ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ",
+      "theme": "ಥೀಮ್",
+      "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+      "recent": "ಇತ್ತೀಚಿನವು",
+      "recentReports": "ಇತ್ತೀಚಿನ ವರದಿಗಳು",
+      "recentReportsLoading": "ಇತ್ತೀಚಿನ ವರದಿಗಳು · ಲೋಡ್ ಆಗುತ್ತಿದೆ…"
+    },
+    "nav": {
+      "dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+      "generateReport": "ವರದಿ ರಚಿಸಿ",
+      "savedReports": "ಉಳಿಸಿದ ವರದಿಗಳು",
+      "profile": "ಪ್ರೊಫೈಲ್",
+      "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+      "horoscope": "ರಾಶಿಫಲ",
+      "calendar": "ಕ್ಯಾಲೆಂಡರ್",
+      "aiAssistant": "AI ಸಹಾಯಕ",
+      "aiLifeCoach": "AI ಜೀವನ ಮಾರ್ಗದರ್ಶಕ",
+      "kundliMatching": "ಕುಂಡಲಿ ಹೊಂದಾಣಿಕೆ",
+      "dailyPanchang": "ದೈನಂದಿನ ಪಂಚಾಂಗ ಮತ್ತು ಮುಹೂರ್ತ",
+      "festivalCalendar": "ಹಬ್ಬ ಕ್ಯಾಲೆಂಡರ್",
+      "todaysFestival": "ಇಂದಿನ ಹಬ್ಬ",
+      "upcomingFestivals": "ಮುಂಬರುವ ಹಬ್ಬಗಳು",
+      "notificationCenter": "ಅಧಿಸೂಚನೆ ಕೇಂದ್ರ",
+      "unreadNotifications": "ಓದದ ಅಧಿಸೂಚನೆಗಳು",
+      "familyProfiles": "ಕುಟುಂಬ ಪ್ರೊಫೈಲ್‌ಗಳು",
+      "relationshipHub": "ಸಂಬಂಧ ಕೇಂದ್ರ",
+      "help": "ಸಹಾಯ"
+    },
+    "theme": {
+      "light": "ಸೇಕ್ರೆಡ್ ಡಾನ್‌ಗೆ ಬದಲಿಸಿ",
+      "dark": "ಮಿಡ್‌ನೈಟ್ ಕಾಸ್ಮಿಕ್‌ಗೆ ಬದಲಿಸಿ",
+      "system": "ಸಿಸ್ಟಮ್ ಥೀಮ್‌ಗೆ ಬದಲಿಸಿ"
+    },
+    "settingsSections": {
+      "account": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು · ಖಾತೆ",
+      "appearance": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು · ನೋಟ",
+      "preferences": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು · ಆದ್ಯತೆಗಳು",
+      "privacy": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು · ಗೌಪ್ಯತೆ",
+      "about": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು · ಮಾಹಿತಿ"
+    },
+    "untitledReport": "ಶೀರ್ಷಿಕೆರಹಿತ ವರದಿ",
+    "noMatches": "ಹೊಂದಾಣಿಕೆಯ ಕಮಾಂಡ್ ಇಲ್ಲ.",
+    "noMatchesFor": "\"{{query}}\" ಗಾಗಿ ಹೊಂದಾಣಿಕೆಯ ಕಮಾಂಡ್ ಇಲ್ಲ.",
+    "searchPlaceholder": "ಪುಟಗಳು, ವರದಿಗಳು, ಯೋಗಗಳು, ದೋಷಗಳು, ಪರಿಹಾರಗಳನ್ನು ಹುಡುಕಿ…"
+  }
+}

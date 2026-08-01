@@ -1,4 +1,8 @@
 import { memo, useCallback, useMemo, useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../components/common/GlassCard.jsx";
 import Badge from "../components/common/Badge.jsx";
 import InsightRow from "../components/common/InsightRow.jsx";
@@ -35,6 +39,7 @@ import PredictionEvidencePanel from "../components/explanation/PredictionEvidenc
 // ─────────────────────────────────────────────────────────────────────────
 
 export const OverviewTab = memo(function OverviewTab({ userData, planetary, numerology, report, failed, onNavigateTab }) {
+<<<<<<< HEAD
   const infoItems = useMemo(() => [
     { label:"Date of Birth", value: userData.dob },
     { label:"Time of Birth", value: userData.tob },
@@ -43,6 +48,17 @@ export const OverviewTab = memo(function OverviewTab({ userData, planetary, nume
     { label:"Mulank (Life Path)", value: `${numerology.mulank} · ${MULANK_DESC[numerology.mulank]||""}`, color:"#ffd700" },
     { label:"Bhagyank (Destiny)", value: numerology.bhagyank, color:"#ffd700" },
   ], [userData.dob, userData.tob, userData.pob, userData.lagna, numerology.mulank, numerology.bhagyank]);
+=======
+  const { t } = useTranslation(["results"]);
+  const infoItems = useMemo(() => [
+    { label:t("results:overview.fields.dob"), value: userData.dob },
+    { label:t("results:overview.fields.tob"), value: userData.tob },
+    { label:t("results:overview.fields.pob"), value: userData.pob },
+    { label:t("results:overview.fields.lagna"), value: userData.lagna, color:"#bf7fff" },
+    { label:t("results:overview.fields.mulank"), value: `${numerology.mulank} · ${MULANK_DESC[numerology.mulank]||""}`, color:"#ffd700" },
+    { label:t("results:overview.fields.bhagyank"), value: numerology.bhagyank, color:"#ffd700" },
+  ], [t, userData.dob, userData.tob, userData.pob, userData.lagna, numerology.mulank, numerology.bhagyank]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   return (
     <div style={{ display:"grid", gap:16, gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))" }}>
@@ -59,9 +75,15 @@ export const OverviewTab = memo(function OverviewTab({ userData, planetary, nume
               {userData.name}
             </h2>
             <div style={{ display:"flex", flexWrap:"wrap", gap:8, marginTop:6 }}>
+<<<<<<< HEAD
               <Badge color="#ffd700">Lagna: {userData.lagna}</Badge>
               <Badge color="#bf7fff">Mulank: {numerology.mulank}</Badge>
               <Badge color="#9dc9ff">Bhagyank: {numerology.bhagyank}</Badge>
+=======
+              <Badge color="#ffd700">{t("results:overview.fields.lagna")}: {userData.lagna}</Badge>
+              <Badge color="#bf7fff">{t("results:numerologyCard.mulankLabel")}: {numerology.mulank}</Badge>
+              <Badge color="#9dc9ff">{t("results:numerologyCard.bhagyankLabel")}: {numerology.bhagyank}</Badge>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </div>
           </div>
         </div>
@@ -70,7 +92,11 @@ export const OverviewTab = memo(function OverviewTab({ userData, planetary, nume
       {/* Birth details */}
       <GlassCard style={{ padding:24, animation:"fadeIn 0.35s ease 0.05s both" }}>
         <h3 style={{ margin:"0 0 16px", fontSize:14, letterSpacing:1.5, textTransform:"uppercase",
+<<<<<<< HEAD
           color:"var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>BIRTH DETAILS</h3>
+=======
+          color:"var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>{t("results:overview.birthDetails")}</h3>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         {infoItems.map(r => <InsightRow key={r.label} {...r} />)}
       </GlassCard>
 
@@ -89,10 +115,17 @@ export const OverviewTab = memo(function OverviewTab({ userData, planetary, nume
       <GlassCard style={{ padding:24, gridColumn:"1/-1", borderColor:"rgba(255,215,0,0.25)", animation:"fadeIn 0.35s ease 0.15s both" }}>
         <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", gap:10, marginBottom:12, flexWrap:"wrap" }}>
           <h3 style={{ margin:0, fontSize:14, letterSpacing:1.5, textTransform:"uppercase",
+<<<<<<< HEAD
             color:"rgba(255,215,0,0.6)", fontFamily:"Inter,sans-serif", fontWeight:500 }}>✨ AI LIFE SUMMARY</h3>
           <Badge color="#ffd700" style={{ animation:"aiGlowPulse 2.6s ease-in-out infinite" }}>AI Insight</Badge>
         </div>
         <AiText text={report?.lifeSummary} placeholder="Weaving your cosmic story…" failed={failed} />
+=======
+            color:"rgba(255,215,0,0.6)", fontFamily:"Inter,sans-serif", fontWeight:500 }}>✨ {t("results:overview.aiLifeSummary")}</h3>
+          <Badge color="#ffd700" style={{ animation:"aiGlowPulse 2.6s ease-in-out infinite" }}>{t("results:aiInsight")}</Badge>
+        </div>
+        <AiText text={report?.lifeSummary} placeholder={t("results:overview.aiSummaryPlaceholder")} failed={failed} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </GlassCard>
     </div>
   );
@@ -121,6 +154,10 @@ export const KundliTab = memo(function KundliTab({
   // behaves exactly as before.
   report, selectedType = null, selectedItem = null, onSelect, onNavigateExplorer,
 }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["results"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [hoveredPlanet, setHoveredPlanet] = useState(null);
   const [hoveredHouse, setHoveredHouse] = useState(null);
   const [selectedPlanet, setSelectedPlanet] = useState(null);
@@ -159,7 +196,11 @@ export const KundliTab = memo(function KundliTab({
       {/* Zodiac wheel */}
       <GlassCard style={{ padding:24, display:"flex", flexDirection:"column", alignItems:"center", gap:16 }}>
         <h3 style={{ margin:0, fontSize:14, letterSpacing:1.5, textTransform:"uppercase",
+<<<<<<< HEAD
           color:"var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>BIRTH CHART</h3>
+=======
+          color:"var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>{t("results:kundli.birthChart")}</h3>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         <InteractiveKundliChart
           userData={userData}
           planetary={planetary}
@@ -171,10 +212,17 @@ export const KundliTab = memo(function KundliTab({
         />
         <div style={{ textAlign:"center", display:"flex", flexWrap:"wrap", justifyContent:"center", gap:8 }}>
           <Badge color="#ffd700" style={{ fontSize:12, padding:"5px 14px" }}>
+<<<<<<< HEAD
             Lagna: {userData.lagna} {ZODIAC_SIGNS[SIGN_NAMES.indexOf(userData.lagna)]}
           </Badge>
           <span style={{ fontSize:11, color:"var(--nv-text-muted, rgba(200,160,255,0.4))", fontFamily:"Inter,sans-serif", alignSelf:"center" }}>
             Tap a planet or house to explore
+=======
+            {t("results:overview.fields.lagna")}: {userData.lagna} {ZODIAC_SIGNS[SIGN_NAMES.indexOf(userData.lagna)]}
+          </Badge>
+          <span style={{ fontSize:11, color:"var(--nv-text-muted, rgba(200,160,255,0.4))", fontFamily:"Inter,sans-serif", alignSelf:"center" }}>
+            {t("results:kundli.tapHint")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </span>
         </div>
       </GlassCard>
@@ -182,7 +230,11 @@ export const KundliTab = memo(function KundliTab({
       {/* Planetary position cards */}
       <GlassCard style={{ padding:24 }}>
         <h3 style={{ margin:"0 0 16px", fontSize:14, letterSpacing:1.5, textTransform:"uppercase",
+<<<<<<< HEAD
           color:"var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>PLANETARY POSITIONS</h3>
+=======
+          color:"var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>{t("results:kundli.planetaryPositions")}</h3>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         <div style={{ display:"grid", gap:8 }}>
           {Object.entries(planetary).map(([planet, { house, sign }], idx) => (
             <div key={planet} style={{ animation:`fadeIn 0.35s ease ${idx * 0.04}s both` }}>
@@ -213,6 +265,7 @@ export const KundliTab = memo(function KundliTab({
               </span>
               <h3 style={{ margin:0, fontSize:16, color:selectedColor, fontFamily:"Cinzel,serif", fontWeight:600 }}>{selectedPlanet}</h3>
             </div>
+<<<<<<< HEAD
             <button type="button" onClick={() => setSelectedPlanet(null)} aria-label="Close planet detail"
               className="pill-btn" style={{ background:"rgba(255,255,255,0.05)", border:"1px solid rgba(180,120,255,0.25)",
                 color:"var(--nv-text-secondary, rgba(200,160,255,0.7))", borderRadius:20, padding:"5px 12px", fontSize:12, cursor:"pointer",
@@ -221,15 +274,33 @@ export const KundliTab = memo(function KundliTab({
           <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(140px,1fr))", gap:8, marginBottom:14 }}>
             <div style={{ padding:"10px 12px", background:`${selectedColor}10`, borderRadius:10, border:`1px solid ${selectedColor}30`, textAlign:"center" }}>
               <div style={{ fontSize:18, fontWeight:700, color:selectedColor, fontFamily:"Cinzel,serif" }}>House {selectedInfo.house}</div>
+=======
+            <button type="button" onClick={() => setSelectedPlanet(null)} aria-label={t("results:kundli.closePlanetDetail")}
+              className="pill-btn" style={{ background:"rgba(255,255,255,0.05)", border:"1px solid rgba(180,120,255,0.25)",
+                color:"var(--nv-text-secondary, rgba(200,160,255,0.7))", borderRadius:20, padding:"5px 12px", fontSize:12, cursor:"pointer",
+                fontFamily:"Inter,sans-serif" }}>{t("results:kundli.close")}</button>
+          </div>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(140px,1fr))", gap:8, marginBottom:14 }}>
+            <div style={{ padding:"10px 12px", background:`${selectedColor}10`, borderRadius:10, border:`1px solid ${selectedColor}30`, textAlign:"center" }}>
+              <div style={{ fontSize:18, fontWeight:700, color:selectedColor, fontFamily:"Cinzel,serif" }}>{t("results:kundli.house", { number: selectedInfo.house })}</div>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               <div style={{ fontSize:10, color:"var(--nv-text-muted, rgba(200,160,255,0.55))", marginTop:2, fontFamily:"Inter,sans-serif" }}>{HOUSE_MEANINGS[selectedInfo.house] || ""}</div>
             </div>
             <div style={{ padding:"10px 12px", background:`${selectedColor}10`, borderRadius:10, border:`1px solid ${selectedColor}30`, textAlign:"center" }}>
               <div style={{ fontSize:18, fontWeight:700, color:selectedColor, fontFamily:"Cinzel,serif" }}>{selectedInfo.sign}</div>
+<<<<<<< HEAD
               <div style={{ fontSize:10, color:"var(--nv-text-muted, rgba(200,160,255,0.55))", marginTop:2, fontFamily:"Inter,sans-serif" }}>Zodiac Sign</div>
             </div>
           </div>
           <p style={{ margin:0, fontSize:13, color:"var(--nv-text-primary, rgba(220,190,255,0.8))", lineHeight:1.7, fontFamily:"Inter,sans-serif" }}>
             {PLANET_SIGNIFICANCE[selectedPlanet] || "A key influence in this chart."}
+=======
+              <div style={{ fontSize:10, color:"var(--nv-text-muted, rgba(200,160,255,0.55))", marginTop:2, fontFamily:"Inter,sans-serif" }}>{t("results:kundli.zodiacSign")}</div>
+            </div>
+          </div>
+          <p style={{ margin:0, fontSize:13, color:"var(--nv-text-primary, rgba(220,190,255,0.8))", lineHeight:1.7, fontFamily:"Inter,sans-serif" }}>
+            {PLANET_SIGNIFICANCE[selectedPlanet] || t("results:kundli.defaultSignificance")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         </GlassCard>
       )}
@@ -237,7 +308,11 @@ export const KundliTab = memo(function KundliTab({
       {/* House overview grid */}
       <GlassCard style={{ padding:24, gridColumn:"1/-1" }}>
         <h3 style={{ margin:"0 0 16px", fontSize:14, letterSpacing:1.5, textTransform:"uppercase",
+<<<<<<< HEAD
           color:"var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>HOUSE OVERVIEW</h3>
+=======
+          color:"var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>{t("results:kundli.houseOverview")}</h3>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill,minmax(130px,1fr))", gap:8 }}>
           {Array.from({length:12},(_,i)=>i+1).map(h => {
             const planets = planetsByHouse[h] || [];
@@ -253,7 +328,11 @@ export const KundliTab = memo(function KundliTab({
                 onLeave={() => setHoveredHouse(null)}
                 onClick={() => {
                   setHoveredHouse(cur => (cur === h ? null : h));
+<<<<<<< HEAD
                   onSelect?.("house", { id: `house-${h}`, label: `House ${h}`, sublabel: HOUSE_MEANINGS[h] });
+=======
+                  onSelect?.("house", { id: `house-${h}`, label: t("results:kundli.house", { number: h }), sublabel: HOUSE_MEANINGS[h] });
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   onNavigateExplorer?.();
                 }}
               />
@@ -266,6 +345,10 @@ export const KundliTab = memo(function KundliTab({
 });
 
 export const TwoSectionTab = memo(function TwoSectionTab({ sections, failed }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["results"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <div style={{ display:"grid", gap:16, gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))" }}>
       {sections.map(({ title, icon, color, text, placeholder, extras }, idx) => (
@@ -274,7 +357,11 @@ export const TwoSectionTab = memo(function TwoSectionTab({ sections, failed }) {
           <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:16 }}>
             <span aria-hidden="true" style={{ fontSize:22 }}>{icon}</span>
             <h3 style={{ margin:0, fontSize:16, color, fontFamily:"Cinzel,serif", fontWeight:600 }}>{title}</h3>
+<<<<<<< HEAD
             <Badge color={color} style={{ marginLeft:"auto", animation:"aiGlowPulse 2.6s ease-in-out infinite" }}>AI Insight</Badge>
+=======
+            <Badge color={color} style={{ marginLeft:"auto", animation:"aiGlowPulse 2.6s ease-in-out infinite" }}>{t("results:aiInsight")}</Badge>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </div>
           {extras && (
             <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(100px,1fr))", gap:8, marginBottom:16 }}>
@@ -295,6 +382,10 @@ export const TwoSectionTab = memo(function TwoSectionTab({ sections, failed }) {
 });
 
 export const SingleTab = memo(function SingleTab({ icon, title, color, text, placeholder, failed, children }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["results"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <div style={{ display:"grid", gap:16 }}>
       <GlassCard style={{ padding:24, borderLeft:`3px solid ${color}`, borderTopLeftRadius:4, borderBottomLeftRadius:4,
@@ -302,7 +393,11 @@ export const SingleTab = memo(function SingleTab({ icon, title, color, text, pla
         <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:16 }}>
           <span aria-hidden="true" style={{ fontSize:24 }}>{icon}</span>
           <h3 style={{ margin:0, fontSize:18, color, fontFamily:"Cinzel,serif", fontWeight:600 }}>{title}</h3>
+<<<<<<< HEAD
           <Badge color={color} style={{ marginLeft:"auto", animation:"aiGlowPulse 2.6s ease-in-out infinite" }}>AI Insight</Badge>
+=======
+          <Badge color={color} style={{ marginLeft:"auto", animation:"aiGlowPulse 2.6s ease-in-out infinite" }}>{t("results:aiInsight")}</Badge>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </div>
         <AiText text={text} placeholder={placeholder} failed={failed} />
       </GlassCard>
@@ -332,6 +427,10 @@ export const SingleTab = memo(function SingleTab({ icon, title, color, text, pla
 // since both endpoints now expose these same backend-computed fields.
 // ─────────────────────────────────────────────────────────────────────────
 export const PredictionsTab = memo(function PredictionsTab({ report }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["results"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const predictions = report?.predictions;
   const nakshatraProfile = report?.nakshatraProfile;
   const transitForecast = report?.transitForecast;
@@ -343,8 +442,13 @@ export const PredictionsTab = memo(function PredictionsTab({ report }) {
     return (
       <EmptyState
         icon="🔮"
+<<<<<<< HEAD
         title="Predictions not available yet"
         message="Backend-computed predictions will appear here once your chart has been calculated."
+=======
+        title={t("results:predictions.notAvailableTitle")}
+        message={t("results:predictions.notAvailableMessage")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       />
     );
   }
@@ -354,7 +458,11 @@ export const PredictionsTab = memo(function PredictionsTab({ report }) {
       <NakshatraCard nakshatraProfile={nakshatraProfile} />
 
       {predictions?.length > 0 && (
+<<<<<<< HEAD
         <ExpandableSection icon="🔮" title="Category Predictions" color="#ffd700" count={predictions.length}>
+=======
+        <ExpandableSection icon="🔮" title={t("results:predictions.categoryPredictions")} color="#ffd700" count={predictions.length}>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           <div style={{ display:"grid", gap:16, gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))" }}>
             {predictions.map((p, idx) => (
               <div key={p.category}>
@@ -376,11 +484,19 @@ export const PredictionsTab = memo(function PredictionsTab({ report }) {
       {transitForecast && (
         <GlassCard style={{ padding:24 }}>
           <h3 style={{ margin:"0 0 16px", fontSize:14, letterSpacing:1.5, textTransform:"uppercase",
+<<<<<<< HEAD
             color:"var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>TRANSIT FORECAST</h3>
           {transitForecast.saturn && <InsightRow label="Saturn" value={`${transitForecast.saturn.transitSign} (House ${transitForecast.saturn.houseFromMoon ?? "?"} from Moon)`} />}
           {transitForecast.jupiter && <InsightRow label="Jupiter" value={`${transitForecast.jupiter.transitSign} (House ${transitForecast.jupiter.houseFromMoon ?? "?"} from Moon)`} />}
           {transitForecast.rahuKetu?.map((t) => (
             <InsightRow key={t.planet} label={t.planet} value={`${t.transitSign} (House ${t.houseFromMoon ?? "?"} from Moon)`} />
+=======
+            color:"var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>{t("results:predictions.transitForecast")}</h3>
+          {transitForecast.saturn && <InsightRow label="Saturn" value={`${transitForecast.saturn.transitSign} (House ${transitForecast.saturn.houseFromMoon ?? "?"} from Moon)`} />}
+          {transitForecast.jupiter && <InsightRow label="Jupiter" value={`${transitForecast.jupiter.transitSign} (House ${transitForecast.jupiter.houseFromMoon ?? "?"} from Moon)`} />}
+          {transitForecast.rahuKetu?.map((rk) => (
+            <InsightRow key={rk.planet} label={rk.planet} value={`${rk.transitSign} (House ${rk.houseFromMoon ?? "?"} from Moon)`} />
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           ))}
         </GlassCard>
       )}
@@ -410,7 +526,11 @@ export const PredictionsTab = memo(function PredictionsTab({ report }) {
 // breaks for it.
 // ─────────────────────────────────────────────────────────────────────────
 const TIMELINE_HORIZONS = [
+<<<<<<< HEAD
   { key: "oneYear", label: "Next 1 Year", icon: "🌒" },
+=======
+  {key: "oneYear", label: "Next 1 Year", icon: "🌒" },
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   { key: "fiveYear", label: "Next 5 Years", icon: "🌓" },
   { key: "tenYear", label: "Next 10 Years", icon: "🌕" },
 ];
@@ -476,6 +596,10 @@ function isEntryRelevant(entry, selectedType, selectedItem) {
 }
 
 export const TimelineTab = memo(function TimelineTab({ report, chart, selectedType = null, selectedItem = null }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["timeline"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const aiTimeline = report?.aiTimeline;
   const legacyTimeline = report?.predictionTimeline;
   const currentDasha = report?.predictions?.[0];
@@ -518,7 +642,11 @@ export const TimelineTab = memo(function TimelineTab({ report, chart, selectedTy
       <div role="status" aria-live="polite" style={{ display: "grid", gap: 12, justifyItems: "center", padding: 40 }}>
         <span aria-hidden="true" style={{ fontSize: 28 }}>🕓</span>
         <p style={{ margin: 0, fontSize: 13, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", fontFamily: "Inter,sans-serif" }}>
+<<<<<<< HEAD
           Building your AI Timeline…
+=======
+          {t("timeline:tab.buildingTimeline")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </p>
       </div>
     );
@@ -530,8 +658,13 @@ export const TimelineTab = memo(function TimelineTab({ report, chart, selectedTy
     return (
       <EmptyState
         icon="🕓"
+<<<<<<< HEAD
         title="Timeline not available yet"
         message="Your Mahadasha/Antardasha timeline will appear here once your chart has been calculated."
+=======
+        title={t("timeline:tab.notAvailableTitle")}
+        message={t("timeline:tab.notAvailableMessage")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       />
     );
   }
@@ -541,12 +674,21 @@ export const TimelineTab = memo(function TimelineTab({ report, chart, selectedTy
       {currentDasha && (
         <GlassCard style={{ padding:24, animation:"fadeIn 0.35s ease both" }}>
           <h3 style={{ margin:"0 0 16px", fontSize:14, letterSpacing:1.5, textTransform:"uppercase",
+<<<<<<< HEAD
             color:"var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>CURRENT DASHA</h3>
           <div style={{ display:"flex", flexWrap:"wrap", gap:8 }}>
             <Badge color="#bf7fff">Mahadasha: {currentDasha.activeMahadasha || "—"}</Badge>
             <Badge color="#bf7fff">Antardasha: {currentDasha.activeAntardasha || "—"}</Badge>
             {currentDasha.dominantPlanet && (
               <Badge color={PLANET_COLORS[currentDasha.dominantPlanet] || "#ffd700"}>Dominant: {currentDasha.dominantPlanet}</Badge>
+=======
+            color:"var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily:"Inter,sans-serif", fontWeight:500 }}>{t("timeline:tab.currentDashaHeading")}</h3>
+          <div style={{ display:"flex", flexWrap:"wrap", gap:8 }}>
+            <Badge color="#bf7fff">{t("timeline:tab.mahadashaBadge", { value: currentDasha.activeMahadasha || t("timeline:tab.notAvailableValue") })}</Badge>
+            <Badge color="#bf7fff">{t("timeline:tab.antardashaBadge", { value: currentDasha.activeAntardasha || t("timeline:tab.notAvailableValue") })}</Badge>
+            {currentDasha.dominantPlanet && (
+              <Badge color={PLANET_COLORS[currentDasha.dominantPlanet] || "#ffd700"}>{t("timeline:tab.dominantBadge", { planet: currentDasha.dominantPlanet })}</Badge>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             )}
           </div>
         </GlassCard>
@@ -557,7 +699,11 @@ export const TimelineTab = memo(function TimelineTab({ report, chart, selectedTy
           <GlassCard style={{ padding: 20 }}>
             <h3 style={{ margin: "0 0 12px", fontSize: 13, letterSpacing: 1.5, textTransform: "uppercase",
               color: "var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily: "Inter,sans-serif", fontWeight: 500 }}>
+<<<<<<< HEAD
               FILTER BY LIFE AREA
+=======
+              {t("timeline:tab.filterByLifeAreaHeading")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </h3>
             <AiTimelineFilters activeCategory={activeCategory} onChange={setActiveCategory} />
           </GlassCard>
@@ -570,16 +716,28 @@ export const TimelineTab = memo(function TimelineTab({ report, chart, selectedTy
             <EmptyState
               compact
               icon="🔍"
+<<<<<<< HEAD
               title="No events for this filter"
               message="No AI Timeline events match the selected life area yet. Try a different filter or select All."
+=======
+              title={t("timeline:tab.noEventsTitle")}
+              message={t("timeline:tab.noEventsMessage")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             />
           )}
 
           {filteredSections.map(({ key, label, icon, events }) => {
             if (!events.length) return null;
+<<<<<<< HEAD
             return (
               <ExpandableSection key={key} icon={icon} title={label} color="#ffd700" count={events.length}>
                 <div style={{ marginTop:8 }} role="list" aria-label={`${label} timeline events`}>
+=======
+            const sectionLabel = t(`timeline:sections.${key}`, label);
+            return (
+              <ExpandableSection key={key} icon={icon} title={sectionLabel} color="#ffd700" count={events.length}>
+                <div style={{ marginTop:8 }} role="list" aria-label={t("timeline:tab.sectionEventsAriaLabel", { label: sectionLabel })}>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                   {events.map((event, idx) => (
                     <div key={event.id} role="listitem">
                       <AiTimelineEventCard
@@ -607,7 +765,11 @@ export const TimelineTab = memo(function TimelineTab({ report, chart, selectedTy
         const entries = legacyTimeline?.[key];
         if (!entries?.length) return null;
         return (
+<<<<<<< HEAD
           <ExpandableSection key={key} icon={icon} title={label} color="#ffd700" count={entries.length}>
+=======
+          <ExpandableSection key={key} icon={icon} title={t(`timeline:horizons.${key}`, label)} color="#ffd700" count={entries.length}>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             <div style={{ marginTop:8 }}>
               {entries.map((entry, idx) => (
                 <TimelineCard

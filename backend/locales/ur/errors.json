@@ -1,0 +1,16 @@
+{
+  "notFound": "کوئی راستہ نہیں مل سکا {{method}} {{path}}",
+  "malformedJson": "درخواست کی باڈی میں غلط JSON۔",
+  "bodyTooLarge": "درخواست کی باڈی بہت بڑی ہے۔",
+  "internalError": "اندرونی سرور کی خرابی۔",
+  "internalErrorProduction": "اندرونی سرور کی خرابی۔ براہ کرم دوبارہ کوشش کریں۔",
+  "invalidRequest": "ناقابل قبول درخواست: {{errors}}",
+  "serviceUnavailable": "{{feature}} اس وقت دستیاب نہیں ہے۔",
+  "invalidProfile": "ناقابل قبول پروفائل: {{errors}}",
+  "chooseTwoDifferentProfiles": "موازنہ کرنے کے لیے دو مختلف پروفائلز منتخب کریں۔",
+  "comparisonError": "ان دونوں پروفائلز کا موازنہ کرتے وقت اندرونی سرور کی خرابی۔",
+  "internalErrorWhile": "{{action}} کرتے وقت اندرونی سرور کی خرابی۔",
+  "occurrenceNotFound": "سال {{year}} کے لیے \"{{key}}\" کا کوئی واقعہ نہیں ملا۔",
+  "missingApiKey": "سرور میں API کلید غائب ہے۔ backend/.env میں GOOGLE_API_KEY سیٹ کریں۔",
+  "tooManyRequests": "بہت زیادہ درخواستیں۔ براہ کرم دھیمے ہو جائیں اور تھوڑی دیر بعد دوبارہ کوشش کریں۔"
+}

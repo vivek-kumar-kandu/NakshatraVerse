@@ -1,0 +1,87 @@
+{
+  "categories": {
+    "system": "سسٹم",
+    "reminder": "یاد دہانی",
+    "ai": "AI",
+    "panchang": "پنچانگ",
+    "muhurat": "مہورت",
+    "prediction": "پیشین گوئی",
+    "transit": "گوچر",
+    "family": "خاندان",
+    "festival": "تہوار",
+    "general": "عام"
+  },
+  "priorities": {
+    "critical": "انتہائی اہم",
+    "high": "زیادہ",
+    "medium": "درمیانہ",
+    "low": "کم"
+  },
+  "sort": {
+    "newest": "تازہ ترین پہلے",
+    "oldest": "قدیم ترین پہلے",
+    "priority": "ترجیح"
+  },
+  "center": {
+    "back": "← واپس",
+    "title": "🔔 اطلاعاتی مرکز",
+    "totalSingle": "کل {{count}} اطلاع",
+    "totalPlural": "کل {{count}} اطلاعات",
+    "searchPlaceholder": "اطلاعات تلاش کریں…",
+    "searchAriaLabel": "اطلاعات تلاش کریں",
+    "filterCategoryAriaLabel": "قسم کی بنیاد پر فلٹر کریں",
+    "allCategories": "تمام اقسام",
+    "filterPriorityAriaLabel": "ترجیح کی بنیاد پر فلٹر کریں",
+    "allPriorities": "تمام ترجیحات",
+    "filterReadStatusAriaLabel": "پڑھنے کی حیثیت کی بنیاد پر فلٹر کریں",
+    "all": "تمام",
+    "unread": "غیر پڑھی",
+    "read": "پڑھی گئی",
+    "sortAriaLabel": "اطلاعات ترتیب دیں",
+    "markAllRead": "✓ تمام کو پڑھا ہوا نشان زد کریں",
+    "clearRead": "🗑️ پڑھی ہوئی صاف کریں",
+    "loadFailedTitle": "اطلاعات لوڈ نہیں ہو سکیں",
+    "retry": "دوبارہ کوشش کریں",
+    "emptyTitle": "کوئی اطلاع نہیں",
+    "emptyMessage": "آپ مکمل طور پر اپ ٹو ڈیٹ ہیں — آپ کے موجودہ فلٹر سے یہاں کچھ بھی مماثل نہیں۔",
+    "prevPage": "← پچھلا",
+    "nextPage": "اگلا →",
+    "pageOf": "صفحہ {{page}} از {{totalPages}}",
+    "toasts": {
+      "markReadFailed": "اطلاع کو پڑھا ہوا نشان زد نہیں کیا جا سکا۔",
+      "markAllReadSuccess": "تمام اطلاعات کو پڑھا ہوا نشان زد کر دیا گیا۔",
+      "markAllReadFailed": "تمام کو پڑھا ہوا نشان زد نہیں کیا جا سکا۔",
+      "deleteFailed": "اطلاع حذف نہیں کی جا سکی۔",
+      "clearReadSuccess": "پڑھی ہوئی اطلاعات صاف کر دی گئیں۔",
+      "clearReadFailed": "پڑھی ہوئی اطلاعات صاف نہیں کی جا سکیں۔"
+    },
+    "clearDialog": {
+      "title": "کیا پڑھی ہوئی اطلاعات صاف کریں؟",
+      "message": "یہ ہر پڑھی ہوئی اطلاع حذف کر دے گا۔ اسے واپس نہیں لایا جا سکتا۔",
+      "confirmLabel": "پڑھی ہوئی صاف کریں",
+      "loadingLabel": "صاف کیا جا رہا ہے…"
+    },
+    "loadFailedGeneric": "اطلاعات لوڈ نہیں ہو سکیں۔"
+  },
+  "card": {
+    "open": "کھولیں →",
+    "openTitle": "کھولیں",
+    "openAriaLabel": "متعلقہ ماڈیول کھولیں",
+    "markReadTitle": "پڑھا ہوا نشان زد کریں",
+    "markReadLabel": "✓ پڑھی گئی",
+    "deleteTitle": "اطلاع حذف کریں",
+    "deleteAriaLabel": "اطلاع حذف کریں"
+  },
+  "group": {
+    "updateSingle": "{{count}} اپ ڈیٹ",
+    "updatePlural": "{{count}} اپ ڈیٹس",
+    "unreadBadge": "{{count}} غیر پڑھی"
+  },
+  "widget": {
+    "title": "🔔 اطلاعات",
+    "unreadCount": "{{count}} غیر پڑھی",
+    "loadFailed": "اطلاعات لوڈ نہیں ہو سکیں۔",
+    "emptyMessage": "ابھی تک کوئی اطلاع نہیں — آپ مکمل طور پر اپ ٹو ڈیٹ ہیں۔",
+    "openCenter": "اطلاعاتی مرکز کھولیں →"
+  }
+}

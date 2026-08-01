@@ -1,0 +1,87 @@
+{
+  "categories": {
+    "system": "System",
+    "reminder": "Reminder",
+    "ai": "AI",
+    "panchang": "Panchang",
+    "muhurat": "Muhurat",
+    "prediction": "Prediction",
+    "transit": "Transit",
+    "family": "Family",
+    "festival": "Festival",
+    "general": "General"
+  },
+  "priorities": {
+    "critical": "Critical",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+  "sort": {
+    "newest": "Newest First",
+    "oldest": "Oldest First",
+    "priority": "Priority"
+  },
+  "center": {
+    "back": "← Back",
+    "title": "🔔 Notification Center",
+    "totalSingle": "{{count}} notification total",
+    "totalPlural": "{{count}} notifications total",
+    "searchPlaceholder": "Search notifications…",
+    "searchAriaLabel": "Search notifications",
+    "filterCategoryAriaLabel": "Filter by category",
+    "allCategories": "All Categories",
+    "filterPriorityAriaLabel": "Filter by priority",
+    "allPriorities": "All Priorities",
+    "filterReadStatusAriaLabel": "Filter by read status",
+    "all": "All",
+    "unread": "Unread",
+    "read": "Read",
+    "sortAriaLabel": "Sort notifications",
+    "markAllRead": "✓ Mark All Read",
+    "clearRead": "🗑️ Clear Read",
+    "loadFailedTitle": "Could not load notifications",
+    "retry": "Retry",
+    "emptyTitle": "No notifications",
+    "emptyMessage": "You're all caught up — nothing here matches your current filters.",
+    "prevPage": "← Prev",
+    "nextPage": "Next →",
+    "pageOf": "Page {{page}} of {{totalPages}}",
+    "toasts": {
+      "markReadFailed": "Could not mark notification as read.",
+      "markAllReadSuccess": "All notifications marked as read.",
+      "markAllReadFailed": "Could not mark all as read.",
+      "deleteFailed": "Could not delete notification.",
+      "clearReadSuccess": "Read notifications cleared.",
+      "clearReadFailed": "Could not clear read notifications."
+    },
+    "clearDialog": {
+      "title": "Clear read notifications?",
+      "message": "This deletes every read notification. This can't be undone.",
+      "confirmLabel": "Clear Read",
+      "loadingLabel": "Clearing…"
+    },
+    "loadFailedGeneric": "Could not load notifications."
+  },
+  "card": {
+    "open": "Open →",
+    "openTitle": "Open",
+    "openAriaLabel": "Open related module",
+    "markReadTitle": "Mark as read",
+    "markReadLabel": "✓ Read",
+    "deleteTitle": "Delete notification",
+    "deleteAriaLabel": "Delete notification"
+  },
+  "group": {
+    "updateSingle": "{{count}} update",
+    "updatePlural": "{{count}} updates",
+    "unreadBadge": "{{count}} unread"
+  },
+  "widget": {
+    "title": "🔔 Notifications",
+    "unreadCount": "{{count}} unread",
+    "loadFailed": "Could not load notifications.",
+    "emptyMessage": "No notifications yet — you're all caught up.",
+    "openCenter": "Open Notification Center →"
+  }
+}

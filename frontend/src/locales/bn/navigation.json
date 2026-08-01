@@ -1,0 +1,100 @@
+{
+  "guest": {
+    "home": "হোম",
+    "features": "বৈশিষ্ট্য",
+    "about": "আমাদের সম্পর্কে",
+    "faq": "সাধারণ প্রশ্নাবলী"
+  },
+  "navbar": {
+    "brandAriaLabel": "নক্ষত্রভার্স — হোম",
+    "primaryAriaLabel": "প্রধান",
+    "openMenu": "মেনু খুলুন",
+    "closeMenu": "মেনু বন্ধ করুন"
+  },
+  "auth": {
+    "home": "হোম",
+    "dashboard": "ড্যাশবোর্ড",
+    "reports": "প্রতিবেদন",
+    "profile": "প্রোফাইল"
+  },
+  "accountMenu": {
+    "myProfile": "আমার প্রোফাইল",
+    "dashboard": "ড্যাশবোর্ড",
+    "savedReports": "সংরক্ষিত প্রতিবেদন",
+    "settings": "সেটিংস",
+    "helpAbout": "সহায়তা ও তথ্য",
+    "memberSince": "{{date}} থেকে সদস্য",
+    "menuLabel": "অ্যাকাউন্ট",
+    "triggerLabel": "{{name}} এর জন্য অ্যাকাউন্ট মেনু"
+  },
+  "actionDock": {
+    "askAi": "AI কে জিজ্ঞাসা করুন",
+    "horoscope": "রাশিফল",
+    "calendar": "ক্যালেন্ডার",
+    "lifeCoach": "লাইফ কোচ",
+    "kundliMatching": "কুণ্ডলী মিলান",
+    "panchang": "পঞ্চাঙ্গ",
+    "festivalCalendar": "উৎসব ক্যালেন্ডার",
+    "notifications": "বিজ্ঞপ্তি",
+    "saveReport": "প্রতিবেদন সংরক্ষণ করুন",
+    "saving": "সংরক্ষণ করা হচ্ছে…",
+    "downloadPdf": "PDF ডাউনলোড করুন",
+    "preparing": "প্রস্তুত করা হচ্ছে…",
+    "printPdf": "PDF প্রিন্ট করুন",
+    "opening": "খোলা হচ্ছে…",
+    "reportActions": "প্রতিবেদন ক্রিয়া",
+    "openReportActions": "প্রতিবেদন ক্রিয়া খুলুন",
+    "close": "বন্ধ করুন",
+    "somethingWentWrong": "কিছু ভুল হয়েছে।"
+  },
+  "commandPalette": {
+    "ariaLabel": "কমান্ড প্যালেট",
+    "searchAriaLabel": "কমান্ড প্যালেট অনুসন্ধান",
+    "commandsAriaLabel": "কমান্ড",
+    "sections": {
+      "navigate": "নেভিগেট করুন",
+      "theme": "থিম",
+      "settings": "সেটিংস",
+      "recent": "সাম্প্রতিক",
+      "recentReports": "সাম্প্রতিক প্রতিবেদন",
+      "recentReportsLoading": "সাম্প্রতিক প্রতিবেদন · লোড হচ্ছে…"
+    },
+    "nav": {
+      "dashboard": "ড্যাশবোর্ড",
+      "generateReport": "প্রতিবেদন তৈরি করুন",
+      "savedReports": "সংরক্ষিত প্রতিবেদন",
+      "profile": "প্রোফাইল",
+      "settings": "সেটিংস",
+      "horoscope": "রাশিফল",
+      "calendar": "ক্যালেন্ডার",
+      "aiAssistant": "AI সহায়ক",
+      "aiLifeCoach": "AI লাইফ কোচ",
+      "kundliMatching": "কুণ্ডলী মিলান",
+      "dailyPanchang": "দৈনিক পঞ্চাঙ্গ ও মুহূর্ত",
+      "festivalCalendar": "উৎসব ক্যালেন্ডার",
+      "todaysFestival": "আজকের উৎসব",
+      "upcomingFestivals": "আসন্ন উৎসব",
+      "notificationCenter": "বিজ্ঞপ্তি কেন্দ্র",
+      "unreadNotifications": "অপঠিত বিজ্ঞপ্তি",
+      "familyProfiles": "পারিবারিক প্রোফাইল",
+      "relationshipHub": "রিলেশনশিপ হাব",
+      "help": "সহায়তা"
+    },
+    "theme": {
+      "light": "সেক্রেড ডন-এ স্যুইচ করুন",
+      "dark": "মিডনাইট কসমিক-এ স্যুইচ করুন",
+      "system": "সিস্টেম থিমে স্যুইচ করুন"
+    },
+    "settingsSections": {
+      "account": "সেটিংস · অ্যাকাউন্ট",
+      "appearance": "সেটিংস · চেহারা",
+      "preferences": "সেটিংস · পছন্দসমূহ",
+      "privacy": "সেটিংস · গোপনীয়তা",
+      "about": "সেটিংস · তথ্য"
+    },
+    "untitledReport": "শিরোনামহীন প্রতিবেদন",
+    "noMatches": "কোনো মিলে যাওয়া কমান্ড নেই।",
+    "noMatchesFor": "\"{{query}}\" এর জন্য কোনো মিলে যাওয়া কমান্ড নেই।",
+    "searchPlaceholder": "পাতা, প্রতিবেদন, যোগ, দোষ, প্রতিকার অনুসন্ধান করুন…"
+  }
+}

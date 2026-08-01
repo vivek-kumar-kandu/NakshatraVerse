@@ -1,0 +1,165 @@
+{
+  "typeFilters": {
+    "All": "সকলো",
+    "Festival": "উৎসৱ",
+    "Vrat": "ব্ৰত"
+  },
+  "page": {
+    "back": "← উভতি যাওক",
+    "title": "🎉 উৎসৱ কেলেণ্ডাৰ",
+    "subtitle": "বেকএণ্ডৰ দ্বাৰা গণনা কৰা হিন্দু উৎসৱ আৰু ব্ৰতসমূহ — তাৰিখ, ৰীতি-নীতি, আৰু গুৰুত্ব।",
+    "tabs": {
+      "today": "আজি",
+      "upcoming": "আগন্তুক",
+      "browse": "সকলো ব্ৰাউজ কৰক"
+    },
+    "todayLoadFailed": "আজিৰ উৎসৱ লোড হ’ব পৰা নাই।",
+    "upcomingLoadFailed": "আগন্তুক উৎসৱসমূহ লোড হ’ব পৰা নাই।",
+    "yearLoadFailed": "উৎসৱ কেলেণ্ডাৰ লোড হ’ব পৰা নাই।",
+    "openFestivalFailed": "সেই উৎসৱটো খোলিব পৰা নগ’ল।",
+    "todaysFestivalsHeading": "আজিৰ উৎসৱ{{plural}}",
+    "noFestivalTodayTitle": "আজি কোনো উৎসৱ নাই",
+    "noFestivalTodayMessage": "আজিৰ তাৰিখত পালন কৰিবলগীয়া কোনো উৎসৱ বা ব্ৰত নাই।",
+    "nextUp": "পৰৱৰ্তী কি",
+    "daysRemainingToday": "আজি",
+    "daysRemainingSingle": "{{count}} দিনত",
+    "daysRemainingPlural": "{{count}} দিনত",
+    "noUpcomingTitle": "কোনো আগন্তুক উৎসৱ পোৱা নগ’ল",
+    "noUpcomingMessage": "আগন্তুক 60 দিনত একো পোৱা নগ’ল।",
+    "searchPlaceholder": "উৎসৱসমূহ সন্ধান কৰক…",
+    "searchAriaLabel": "উৎসৱসমূহ সন্ধান কৰক",
+    "typeFilterAriaLabel": "প্ৰকাৰৰ ভিত্তিত ফিল্টাৰ কৰক",
+    "yearAriaLabel": "বৰ্ষ বাছক",
+    "noMatchTitle": "কোনো উৎসৱ মিলা নাই",
+    "noMatchMessage": "এটা বেলেগ সন্ধান শব্দ বা প্ৰকাৰ ফিল্টাৰ চেষ্টা কৰক।",
+    "explainFailed": "AI ব্যাখ্যা বৰ্তমান উপলব্ধ নহয়।"
+  },
+  "detailCard": {
+    "importanceSuffix": "{{importance}} গুৰুত্ব",
+    "notSpecified": "নিৰ্দিষ্ট কৰা হোৱা নাই।",
+    "explainButton": "✨ {{status}}",
+    "askingGemini": "Gemini ক সোধা হৈছে…",
+    "explainThisFestival": "এই উৎসৱটো ব্যাখ্যা কৰক",
+    "historicalBackground": "ঐতিহাসিক পটভূমি",
+    "significance": "গুৰুত্ব",
+    "rituals": "ৰীতি-নীতি",
+    "recommendedActivities": "পৰামৰ্শিত কাৰ্যকলাপসমূহ",
+    "fastingInformation": "লঘোন তথ্য",
+    "fastingObserved": "লঘোন পালন কৰা হয়",
+    "noFastingObserved": "পাৰম্পৰিকভাৱে কোনো লঘোন পালন কৰা নহয়"
+  },
+  "familySuggestions": {
+    "title": "👨‍👩‍👧‍👦 পাৰিয়াল উৎসৱ পৰামৰ্শ",
+    "signInPrompt": "আপোনাৰ প্ৰিয়জনৰ বাবে ভগাই লোৱা উদযাপন পৰামৰ্শ আৰু সোঁৱৰণী পাবলৈ ছাইন ইন কৰক আৰু পাৰিয়াল প্ৰ’ফাইল যোগ কৰক।",
+    "loadFailed": "বৰ্তমান পাৰিয়াল উৎসৱ পৰামৰ্শ লোড হ’ব পৰা নাই।",
+    "remindersTitle": "পাৰিয়াল উৎসৱ সোঁৱৰণীসমূহ",
+    "noProfiles": "এতিয়ালৈকে কোনো পাৰিয়াল প্ৰ’ফাইল সংৰক্ষিত নাই।",
+    "addOne": "এটা যোগ কৰক →",
+    "sharedCelebrationTitle": "ভগাই লোৱা উদযাপন পৰামৰ্শ",
+    "suggestedActivitiesTitle": "পৰামৰ্শিত পাৰিয়াল কাৰ্যকলাপসমূহ"
+  },
+  "intelligencePanel": {
+    "title": "🔮 উৎসৱ বুদ্ধিমত্তা",
+    "subtitle": "আধ্যাত্মিক অৰ্থ, পৌৰাণিক কাহিনী, আৰু পূজাৰ সাৰাংশ — ওপৰৰ মৌলিক তথ্যৰ বাহিৰে।",
+    "loadFailed": "বৰ্তমান উৎসৱ বুদ্ধিমত্তা লোড হ’ব পৰা নাই।",
+    "revealButton": "✨ {{status}}",
+    "askingGemini": "Gemini ক সোধা হৈছে…",
+    "revealDeeper": "গভীৰ বুদ্ধিমত্তা প্ৰকাশ কৰক",
+    "spiritualMeaning": "আধ্যাত্মিক অৰ্থ",
+    "mythologicalStory": "পৌৰাণিক কাহিনী",
+    "modernPracticalMeaning": "আধুনিক ব্যৱহাৰিক অৰ্থ",
+    "culturalSignificance": "বৈজ্ঞানিক / সাংস্কৃতিক গুৰুত্ব",
+    "pujaOverview": "পূজাৰ সাৰাংশ",
+    "thingsToAvoid": "এৰাই চলিবলগীয়া বিষয়সমূহ",
+    "aiAssistedBadge": "AI-সহায়িত — পৰম্পৰাসমূহ অঞ্চল/পৰিয়াল অনুসৰি ভিন্ন হ’ব পাৰে"
+  },
+  "preparationChecklist": {
+    "nothingSpecified": "একো নিৰ্দিষ্ট কৰা হোৱা নাই।",
+    "loadFailed": "বৰ্তমান প্ৰস্তুতি চেকলিষ্ট লোড হ’ব পৰা নাই।",
+    "sections": {
+      "preparationChecklist": "প্ৰস্তুতি চেকলিষ্ট",
+      "shoppingChecklist": "কিনাকাটা চেকলিষ্ট",
+      "pujaMaterials": "পূজা সামগ্ৰী",
+      "fastingPreparation": "লঘোনৰ প্ৰস্তুতি",
+      "morningRoutine": "ৰাতিপুৱাৰ দিনচৰ্যা",
+      "eveningRitual": "গধূলিৰ ৰীতি",
+      "postFestivalReflection": "উৎসৱৰ পাছৰ চিন্তন"
+    }
+  },
+  "personalizedGuidance": {
+    "title": "🌟 ব্যক্তিগতকৃত উৎসৱ পথনিৰ্দেশনা",
+    "noChartMessage": "এই উৎসৱ আপোনাৰ বাবে বিশেষভাৱে কিয় অৰ্থপূৰ্ণ চাবলৈ — কেৰিয়াৰ, বিত্ত, সম্পৰ্ক, স্বাস্থ্য, আধ্যাত্মিক, আৰু ব্যক্তিগত বিকাশৰ ওপৰত কেন্দ্ৰীভূত, আপোনাৰ নিজৰ চাৰ্টৰ ওপৰত ভিত্তি কৰি — আপোনাৰ কোনো সংৰক্ষিত ৰিডিংৰ পৰা এই উৎসৱটো খোলক।",
+    "openSavedReading": "এটা সংৰক্ষিত ৰিডিং খোলক →",
+    "subtitle": "আপোনাৰ নিজৰ দশা, গোচৰ, আৰু ভৱিষ্যদ্বাণীৰ ওপৰত ভিত্তি কৰি।",
+    "loadFailed": "বৰ্তমান ব্যক্তিগতকৃত পথনিৰ্দেশনা লোড হ’ব পৰা নাই।",
+    "askButton": "✨ {{status}}",
+    "whyMeaningful": "এইটো মোৰ বাবে কিয় অৰ্থপূৰ্ণ?",
+    "focusFields": {
+      "careerFocus": "কেৰিয়াৰ",
+      "financeFocus": "বিত্ত",
+      "relationshipFocus": "সম্পৰ্ক",
+      "healthFocus": "স্বাস্থ্য",
+      "spiritualFocus": "আধ্যাত্মিক",
+      "personalGrowthFocus": "ব্যক্তিগত বিকাশ"
+    }
+  },
+  "intelligencePage": {
+    "back": "← উভতি যাওক",
+    "title": "🔮 উৎসৱ বুদ্ধিমত্তা",
+    "subtitle": "এটা উৎসৱৰ বাবে গভীৰ অৰ্থ, ব্যক্তিগতকৃত পথনিৰ্দেশনা, প্ৰস্তুতি, আৰু পাৰিয়াল পৰামৰ্শ।",
+    "loadFailed": "এই উৎসৱটো লোড হ’ব পৰা নাই।",
+    "loadUpcomingFailed": "কোনো আগন্তুক উৎসৱ লোড হ’ব পৰা নাই।",
+    "noFestivalTitle": "কোনো উৎসৱ বাছি লোৱা হোৱা নাই",
+    "noFestivalMessage": "ইয়াৰ সম্পূৰ্ণ বুদ্ধিমত্তা চাবলৈ উৎসৱ কেলেণ্ডাৰ, ডেশ্ব’ৰ্ড, বা কেলেণ্ডাৰ পৃষ্ঠাৰ পৰা এটা উৎসৱ খোলক।",
+    "ritualFlow": "ৰীতিৰ ক্ৰম",
+    "timelineUnavailable": "এই উৎসৱৰ বাবে টাইমলাইন উপলব্ধ নহয়।",
+    "festivalIntelligence": "উৎসৱ বুদ্ধিমত্তা",
+    "personalizedGuidance": "ব্যক্তিগতকৃত পথনিৰ্দেশনা",
+    "festivalPreparation": "উৎসৱৰ প্ৰস্তুতি",
+    "family": "পৰিয়াল"
+  },
+  "widget": {
+    "title": "আজিৰ উৎসৱ",
+    "openCalendar": "উৎসৱ কেলেণ্ডাৰ খোলক →",
+    "loading": "লোড হৈ আছে…",
+    "noFestivalToday": "আজি কোনো উৎসৱ নাই।",
+    "nextFestival": "পৰৱৰ্তী উৎসৱ",
+    "daysRemainingLabel": "বাকী দিনসমূহ",
+    "daysRemainingSingle": "{{count}} দিন",
+    "daysRemainingPlural": "{{count}} দিন",
+    "importance": "গুৰুত্ব",
+    "preparationProgress": "প্ৰস্তুতিৰ অগ্ৰগতি",
+    "preparationItemsReady": "{{count}} চেকলিষ্ট বস্তু সাজু",
+    "upcomingRitual": "আগন্তুক ৰীতি",
+    "personalizedTip": "ব্যক্তিগতকৃত পৰামৰ্শ",
+    "viewIntelligence": "🔮 উৎসৱ বুদ্ধিমত্তা চাওক"
+  },
+  "muhurat": {
+    "bestMuhuratFor": "{{activity}} ৰ বাবে সৰ্বোত্তম মুহূৰ্ত",
+    "confidence": {
+      "high": "উচ্চ",
+      "medium": "মধ্যম",
+      "low": "কম"
+    },
+    "confidenceBadge": "{{level}} বিশ্বাস",
+    "bestDate": "সৰ্বোত্তম তাৰিখ",
+    "bestTimeWindow": "সৰ্বোত্তম সময়",
+    "tithi": "তিথি",
+    "auspiciousWindow": "শুভ সময়",
+    "cautionPeriod": "সাৱধানতা সময় (পৰিহাৰ কৰক)",
+    "rahuKaal": "ৰাহু কাল",
+    "yamaganda": "যমগণ্ড",
+    "gulikaKaal": "গুলিক কাল",
+    "otherStrongDates": "আন ভাল তাৰিখ",
+    "askingAI": "AI ক সোধা হৈছে…",
+    "explainWhy": "🔮 এই মুহূৰ্ত কিয় ব্যাখ্যা কৰক",
+    "nakshatra": "নক্ষত্ৰ"
+  },
+  "calendarStrip": {
+    "heading": "🎉 এই মাহৰ উৎসৱ",
+    "viewCalendarLink": "উৎসৱ কেলেণ্ডাৰ চাওক →",
+    "todayLabel": "আজি:",
+    "loadingOverview": "উৎসৱ অৱলোকন ল'ড হৈ আছে…",
+    "importanceSuffix": "গুৰুত্ব"
+  }
+}

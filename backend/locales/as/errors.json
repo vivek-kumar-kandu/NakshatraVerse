@@ -1,0 +1,16 @@
+{
+  "notFound": "কোনো ৰুট নাই {{method}} {{path}}",
+  "malformedJson": "অনুৰোধৰ বডিত ভুল JSON।",
+  "bodyTooLarge": "অনুৰোধ বডি অতি ডাঙৰ।",
+  "internalError": "অভ্যন্তৰীণ ছাৰ্ভাৰ ক্ৰুটি।",
+  "internalErrorProduction": "অভ্যন্তৰীণ ছাৰ্ভাৰ ক্ৰুটি। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক।",
+  "invalidRequest": "অসিদ্ধ অনুৰোধ: {{errors}}",
+  "serviceUnavailable": "{{feature}} এতিয়া উপলব্ধ নহয়।",
+  "invalidProfile": "অসিদ্ধ প্ৰফাইল: {{errors}}",
+  "chooseTwoDifferentProfiles": "তুলনা কৰিবলৈ দুটা বেলেগ প্ৰফাইল বাছক।",
+  "comparisonError": "এই দুটা প্ৰফাইল তুলনা কৰোঁতে অভ্যন্তৰীণ ছাৰ্ভাৰ ক্ৰুটি।",
+  "internalErrorWhile": "{{action}} কৰোঁতে অভ্যন্তৰীণ ছাৰ্ভাৰ ক্ৰুটি।",
+  "occurrenceNotFound": "{{year}} বৰ্ষৰ বাবে \"{{key}}\" ৰ কোনো তথ্য পোৱা নগ'ল।",
+  "missingApiKey": "ছাৰ্ভাৰত API কী নাই। backend/.env ত GOOGLE_API_KEY ছেট কৰক।",
+  "tooManyRequests": "অত্যাধিক অনুৰোধ। অনুগ্ৰহ কৰি লাহে লাহে পুনৰ চেষ্টা কৰক।"
+}

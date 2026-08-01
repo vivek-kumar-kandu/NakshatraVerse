@@ -1,4 +1,8 @@
 import { useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import AuthLocalStyles from "../components/common/auth/AuthLocalStyles.jsx";
@@ -7,8 +11,12 @@ import { GOLD_GRADIENT } from "../constants/astrology.js";
 import { emailError as getEmailError } from "../utils/authValidation.js";
 import { requestPasswordReset } from "../utils/authApi.js";
 
+<<<<<<< HEAD
 const INPUT_STYLE = {
   width: "100%", padding: "14px 18px",
+=======
+const INPUT_STYLE = {width: "100%", padding: "14px 18px",
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   background: "rgba(255,255,255,0.05)", border: "1px solid rgba(180,120,255,0.28)",
   borderRadius: 12, color: "var(--nv-text-primary, #e8d5ff)", fontSize: 15, outline: "none",
   fontFamily: "Inter,sans-serif", transition: "border-color var(--nv-duration-base) var(--nv-ease-standard), box-shadow var(--nv-duration-base) var(--nv-ease-standard)",
@@ -24,17 +32,29 @@ const INPUT_STYLE = {
 // matches LoginPage/SignupPage (CosmicBg, GlassCard, gold-gradient title).
 // ─────────────────────────────────────────────────────────────────────────
 function ForgotPasswordPage({ onNavigate }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["auth"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [email, setEmail] = useState("");
   const [touched, setTouched] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [sent, setSent] = useState(false);
 
+<<<<<<< HEAD
   const validationError = touched ? getEmailError(email) : null;
+=======
+  const validationError = touched ? getEmailError(email, t) : null;
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
     setTouched(true);
+<<<<<<< HEAD
     if (getEmailError(email)) return;
+=======
+    if (getEmailError(email, t)) return;
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     setSubmitting(true);
     try {
       await requestPasswordReset(email.trim());
@@ -56,10 +76,17 @@ function ForgotPasswordPage({ onNavigate }) {
           <h1 style={{ margin: "0 0 6px", fontSize: "clamp(26px,5vw,40px)", fontWeight: 700,
             letterSpacing: 2, background: GOLD_GRADIENT, WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent", fontFamily: "Cinzel,serif" }}>
+<<<<<<< HEAD
             Reset Your Password
           </h1>
           <p style={{ margin: 0, fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))" }}>
             {sent ? "Check your inbox for next steps" : "We'll email you a link to get back in"}
+=======
+            {t("auth:forgotPassword.title")}
+          </h1>
+          <p style={{ margin: 0, fontSize: 14, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))" }}>
+            {sent ? t("auth:forgotPassword.subtitleSent") : t("auth:forgotPassword.subtitleDefault")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         </div>
 
@@ -74,11 +101,18 @@ function ForgotPasswordPage({ onNavigate }) {
                 ✓
               </div>
               <p style={{ margin: "0 0 6px", fontSize: 14, color: "var(--nv-text-primary, #e8d5ff)", lineHeight: 1.6 }}>
+<<<<<<< HEAD
                 If an account exists for <strong style={{ color: "#bf7fff" }}>{email.trim()}</strong>, we've sent a
                 password reset link to it.
               </p>
               <p style={{ margin: "0 0 24px", fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
                 Didn't get it? Check your spam folder, or try again in a few minutes.
+=======
+                {t("auth:forgotPassword.confirmationMessage", { email: email.trim() })}
+              </p>
+              <p style={{ margin: "0 0 24px", fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.55))" }}>
+                {t("auth:forgotPassword.resendHint")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </p>
               <button
                 type="button"
@@ -93,22 +127,38 @@ function ForgotPasswordPage({ onNavigate }) {
                   transition: "all var(--nv-duration-base) var(--nv-ease-standard)", fontFamily: "Cinzel,serif",
                 }}
               >
+<<<<<<< HEAD
                 ← Back to Sign In
               </button>
               <p style={{ textAlign: "center", margin: "16px 0 0" }}>
                 <button onClick={() => onNavigate("home")} className="auth-link-btn" style={{ background: "none", border: "none", color: "rgba(180,130,255,0.5)", cursor: "pointer", fontSize: 12, padding: 0 }}>
                   ← Back to home
+=======
+                {t("auth:forgotPassword.backToSignIn")}
+              </button>
+              <p style={{ textAlign: "center", margin: "16px 0 0" }}>
+                <button onClick={() => onNavigate("home")} className="auth-link-btn" style={{ background: "none", border: "none", color: "rgba(180,130,255,0.5)", cursor: "pointer", fontSize: 12, padding: 0 }}>
+                  {t("auth:forgotPassword.backToHome")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </button>
               </p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} noValidate>
               <p style={{ margin: "0 0 20px", fontSize: 13, color: "var(--nv-text-muted, rgba(200,160,255,0.65))", lineHeight: 1.6 }}>
+<<<<<<< HEAD
                 Enter the email address on your account and we'll send you a link to reset your password.
               </p>
               <div style={{ marginBottom: 8, animation: "fadeIn 0.4s ease 0.05s both" }}>
                 <label htmlFor="forgot-email" style={{ display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 7, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500 }}>
                   Email
+=======
+                {t("auth:forgotPassword.instructions")}
+              </p>
+              <div style={{ marginBottom: 8, animation: "fadeIn 0.4s ease 0.05s both" }}>
+                <label htmlFor="forgot-email" style={{ display: "block", fontSize: 11, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", marginBottom: 7, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500 }}>
+                  {t("auth:forgotPassword.emailLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </label>
                 <input
                   id="forgot-email"
@@ -141,7 +191,11 @@ function ForgotPasswordPage({ onNavigate }) {
                 display: "flex", alignItems: "center", justifyContent: "center", gap: 10,
               }}>
                 {submitting && <Spinner size={16} />}
+<<<<<<< HEAD
                 {submitting ? "Sending link…" : "Send Reset Link"}
+=======
+                {submitting ? t("auth:forgotPassword.sending") : t("auth:forgotPassword.sendResetLink")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
               </button>
             </form>
           )}
@@ -150,7 +204,11 @@ function ForgotPasswordPage({ onNavigate }) {
             <>
               <p style={{ textAlign: "center", margin: "20px 0 0" }}>
                 <button onClick={() => onNavigate("login")} className="auth-link-btn" style={{ background: "none", border: "none", color: "rgba(180,130,255,0.6)", cursor: "pointer", fontSize: 12, padding: 0 }}>
+<<<<<<< HEAD
                   ← Back to Sign In
+=======
+                  {t("auth:forgotPassword.backToSignIn")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </button>
               </p>
               <p style={{ textAlign: "center", margin: "10px 0 0" }}>
@@ -158,7 +216,11 @@ function ForgotPasswordPage({ onNavigate }) {
                     back to the marketing Home page at all — only a link
                     back to Sign In. */}
                 <button onClick={() => onNavigate("home")} className="auth-link-btn" style={{ background: "none", border: "none", color: "rgba(180,130,255,0.5)", cursor: "pointer", fontSize: 12, padding: 0 }}>
+<<<<<<< HEAD
                   ← Back to home
+=======
+                  {t("auth:forgotPassword.backToHome")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
                 </button>
               </p>
             </>

@@ -1,0 +1,87 @@
+{
+  "categories": {
+    "system": "तन्त्रम्",
+    "reminder": "स्मारकम्",
+    "ai": "AI",
+    "panchang": "पञ्चाङ्गम्",
+    "muhurat": "मुहूर्तम्",
+    "prediction": "भविष्यवाणी",
+    "transit": "गोचरः",
+    "family": "कुटुम्बम्",
+    "festival": "उत्सवः",
+    "general": "सामान्यम्"
+  },
+  "priorities": {
+    "critical": "अत्यावश्यकम्",
+    "high": "उच्चम्",
+    "medium": "मध्यमम्",
+    "low": "न्यूनम्"
+  },
+  "sort": {
+    "newest": "नूतनतमं प्रथमम्",
+    "oldest": "प्राचीनतमं प्रथमम्",
+    "priority": "प्राथम्यम्"
+  },
+  "center": {
+    "back": "← पृष्ठतः",
+    "title": "🔔 सूचनाकेन्द्रम्",
+    "totalSingle": "सर्वाणि {{count}} सूचना",
+    "totalPlural": "सर्वाणि {{count}} सूचनानि",
+    "searchPlaceholder": "सूचनानि अन्विष्यतु…",
+    "searchAriaLabel": "सूचनानि अन्विष्यतु",
+    "filterCategoryAriaLabel": "वर्गानुसारं शोधयतु",
+    "allCategories": "सर्वे वर्गाः",
+    "filterPriorityAriaLabel": "प्राथम्यानुसारं शोधयतु",
+    "allPriorities": "सर्वाणि प्राथम्यानि",
+    "filterReadStatusAriaLabel": "पठनस्थित्यनुसारं शोधयतु",
+    "all": "सर्वाणि",
+    "unread": "अपठितम्",
+    "read": "पठितम्",
+    "sortAriaLabel": "सूचनानि क्रमबद्धं करोतु",
+    "markAllRead": "✓ सर्वाणि पठितानि चिह्नयतु",
+    "clearRead": "🗑️ पठितानि शोधयतु",
+    "loadFailedTitle": "सूचनानि लोड्यितुं न शक्तानि",
+    "retry": "पुनः प्रयतताम्",
+    "emptyTitle": "कोऽपि सूचना नास्ति",
+    "emptyMessage": "भवान् सम्पूर्णतया अद्यतनः अस्ति — भवतः वर्तमानशोधनेन सह अत्र किमपि न मेलति।",
+    "prevPage": "← पूर्वम्",
+    "nextPage": "अग्रे →",
+    "pageOf": "पृष्ठम् {{page}} मध्ये {{totalPages}}",
+    "toasts": {
+      "markReadFailed": "सूचना पठितम् इति चिह्नयितुं न शक्ता।",
+      "markAllReadSuccess": "सर्वाणि सूचनानि पठितानि चिह्नितानि।",
+      "markAllReadFailed": "सर्वाणि पठितानि चिह्नयितुं न शक्तानि।",
+      "deleteFailed": "सूचना अपाकर्तुं न शक्ता।",
+      "clearReadSuccess": "पठितानि सूचनानि शोधितानि।",
+      "clearReadFailed": "पठितानि सूचनानि शोधयितुं न शक्तानि।"
+    },
+    "clearDialog": {
+      "title": "पठितानि सूचनानि शोधनीयानि?",
+      "message": "एतत् प्रत्येकं पठितं सूचनां अपाकरिष्यति। एतत् पुनः स्थापयितुं न शक्यते।",
+      "confirmLabel": "पठितानि शोधयतु",
+      "loadingLabel": "शोध्यते…"
+    },
+    "loadFailedGeneric": "सूचनानि लोड्यितुं न शक्तानि।"
+  },
+  "card": {
+    "open": "उद्घाटयतु →",
+    "openTitle": "उद्घाटयतु",
+    "openAriaLabel": "सम्बद्धं भागं उद्घाटयतु",
+    "markReadTitle": "पठितम् इति चिह्नयतु",
+    "markReadLabel": "✓ पठितम्",
+    "deleteTitle": "सूचनां अपाकरोतु",
+    "deleteAriaLabel": "सूचनां अपाकरोतु"
+  },
+  "group": {
+    "updateSingle": "{{count}} अद्यतनम्",
+    "updatePlural": "{{count}} अद्यतनानि",
+    "unreadBadge": "{{count}} अपठितम्"
+  },
+  "widget": {
+    "title": "🔔 सूचनानि",
+    "unreadCount": "{{count}} अपठितम्",
+    "loadFailed": "सूचनानि लोड्यितुं न शक्तानि।",
+    "emptyMessage": "अद्यापि कोऽपि सूचना नास्ति — भवान् सम्पूर्णतया अद्यतनः अस्ति।",
+    "openCenter": "सूचनाकेन्द्रं उद्घाटयतु →"
+  }
+}

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo } from "react";
 import GlassCard from "../common/GlassCard.jsx";
 import ScoreRing from "../common/ScoreRing.jsx";
@@ -14,16 +18,27 @@ import { qualityColor } from "./panchangUiConstants.js";
 // scores) — no new scoring visualization is invented here.
 // ─────────────────────────────────────────────────────────────────────────
 function TodaySummaryCard({ panchang, onExplain, explaining }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   if (!panchang) return null;
   const color = qualityColor(panchang.auspiciousnessScore);
 
   return (
     <GlassCard style={{ padding: "24px" }}>
       <div style={{ display: "flex", flexWrap: "wrap", gap: 24, alignItems: "center", marginBottom: 18 }}>
+<<<<<<< HEAD
         <ScoreRing value={panchang.auspiciousnessScore} max={100} label="Auspiciousness" color={color} />
         <div style={{ flex: 1, minWidth: 200 }}>
           <div style={{ fontSize: 12, letterSpacing: 1.5, textTransform: "uppercase", color: "var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily: "Inter,sans-serif", marginBottom: 4 }}>
             Today's Summary
+=======
+        <ScoreRing value={panchang.auspiciousnessScore} max={100} label={t("dashboard.auspiciousness", "Auspiciousness")} color={color} />
+        <div style={{ flex: 1, minWidth: 200 }}>
+          <div style={{ fontSize: 12, letterSpacing: 1.5, textTransform: "uppercase", color: "var(--nv-text-muted, rgba(200,160,255,0.55))", fontFamily: "Inter,sans-serif", marginBottom: 4 }}>
+            {t("dashboard.todaysSummary", "Today's Summary")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </div>
           <div style={{ fontSize: 20, fontWeight: 700, color, fontFamily: "Cinzel,serif", marginBottom: 6 }}>
             {panchang.auspiciousnessLabel}
@@ -35,13 +50,21 @@ function TodaySummaryCard({ panchang, onExplain, explaining }) {
       </div>
 
       <div style={{ padding: "12px 16px", borderRadius: 12, background: "rgba(255,215,0,0.08)", border: "1px solid rgba(255,215,0,0.2)", marginBottom: 16 }}>
+<<<<<<< HEAD
         <div style={{ fontSize: 11.5, color: "#ffd700", fontWeight: 700, marginBottom: 4, fontFamily: "Inter,sans-serif" }}>✨ Best Time Today</div>
+=======
+        <div style={{ fontSize: 11.5, color: "#ffd700", fontWeight: 700, marginBottom: 4, fontFamily: "Inter,sans-serif" }}>{t("dashboard.bestTimeToday", "✨ Best Time Today")}</div>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         <div style={{ fontSize: 14, color: "var(--nv-text-primary, #f1e4ff)", fontFamily: "Inter,sans-serif" }}>{panchang.bestTimeToday}</div>
       </div>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
         <div>
+<<<<<<< HEAD
           <div style={{ fontSize: 12.5, color: "#7effb2", fontWeight: 600, marginBottom: 8 }}>✓ Recommended Activities</div>
+=======
+          <div style={{ fontSize: 12.5, color: "#7effb2", fontWeight: 600, marginBottom: 8 }}>{t("dashboard.recommendedActivities", "✓ Recommended Activities")}</div>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           <ul style={{ margin: 0, paddingLeft: 18, display: "grid", gap: 6 }}>
             {panchang.recommendedActivities.map((r, i) => (
               <li key={i} style={{ fontSize: 12.5, color: "var(--nv-text-secondary, rgba(200,160,255,0.75))", lineHeight: 1.5 }}>{r}</li>
@@ -49,7 +72,11 @@ function TodaySummaryCard({ panchang, onExplain, explaining }) {
           </ul>
         </div>
         <div>
+<<<<<<< HEAD
           <div style={{ fontSize: 12.5, color: "#ff8f7e", fontWeight: 600, marginBottom: 8 }}>⚠ Things to Avoid</div>
+=======
+          <div style={{ fontSize: 12.5, color: "#ff8f7e", fontWeight: 600, marginBottom: 8 }}>{t("dashboard.thingsToAvoid", "⚠ Things to Avoid")}</div>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           <ul style={{ margin: 0, paddingLeft: 18, display: "grid", gap: 6 }}>
             {panchang.thingsToAvoid.map((a, i) => (
               <li key={i} style={{ fontSize: 12.5, color: "var(--nv-text-secondary, rgba(200,160,255,0.75))", lineHeight: 1.5 }}>{a}</li>

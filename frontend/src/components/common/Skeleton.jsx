@@ -1,7 +1,12 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { memo } from "react";
 
 // ─────────────────────────────────────────────────────────────────────────
 // Skeleton (Phase 1 — Loading & Feedback)
+<<<<<<< HEAD
 //
 // Reusable skeleton-loader primitives (a shimmering block, plus a couple
 // of composed shapes for common layouts: a report-row skeleton and a
@@ -9,6 +14,8 @@ import { memo } from "react";
 // (already defined in styles/global.css but previously unused anywhere),
 // so no new global CSS is added — only the moving-gradient background
 // that consumes it lives here, scoped to this component.
+=======
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 // ─────────────────────────────────────────────────────────────────────────
 
 function SkeletonBlock({ width = "100%", height = 14, radius = 6, style = {} }) {
@@ -28,6 +35,10 @@ function SkeletonBlock({ width = "100%", height = 14, radius = 6, style = {} }) 
 
 // Skeleton for a single saved-report row (title + meta line + action pills).
 function SkeletonReportRow() {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <div style={{
       display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16, flexWrap: "wrap",
@@ -48,6 +59,10 @@ function SkeletonReportRow() {
 
 // Skeleton for a Recent Reports strip card (used while `reports === null`).
 function SkeletonReportCard() {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <div style={{
       padding: 18, minWidth: 220, flex: "0 0 auto", borderRadius: 16,
@@ -67,6 +82,10 @@ function SkeletonReportCard() {
 // "Grid" while data is still loading doesn't show a mismatched (row-shaped)
 // skeleton, and there's no layout shift once real cards arrive.
 function SkeletonReportGridCard() {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   return (
     <div style={{
       borderRadius: 16, overflow: "hidden", border: "1px solid var(--nv-accent-wash, rgba(180,120,255,0.12))",
@@ -96,6 +115,10 @@ function SkeletonReportGridCard() {
 }
 
 function SkeletonList({ rows = 3, variant = "row" }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const Item = variant === "card" ? SkeletonReportCard : variant === "grid" ? SkeletonReportGridCard : SkeletonReportRow;
   const wrapperStyle = variant === "card"
     ? { display: "flex", gap: 14, overflowX: "hidden" }
@@ -103,7 +126,11 @@ function SkeletonList({ rows = 3, variant = "row" }) {
       ? { display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 16 }
       : { display: "grid", gap: 14 };
   return (
+<<<<<<< HEAD
     <div style={{ ...wrapperStyle, animation: "fadeIn 0.3s ease both" }} role="status" aria-label="Loading">
+=======
+    <div style={{ ...wrapperStyle, animation: "fadeIn 0.3s ease both" }} role="status" aria-label={t("common.loading", "Loading")}>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       {Array.from({ length: rows }).map((_, i) => <Item key={i} />)}
     </div>
   );

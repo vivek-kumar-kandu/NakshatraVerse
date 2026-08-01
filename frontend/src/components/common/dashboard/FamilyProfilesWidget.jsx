@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import GlassCard from "../GlassCard.jsx";
 import SkeletonList from "../Skeleton.jsx";
 import * as familyProfilesApi from "../../../utils/familyProfilesApi.js";
@@ -12,6 +16,10 @@ import * as familyProfilesApi from "../../../utils/familyProfilesApi.js";
 // ─────────────────────────────────────────────────────────────────────────
 
 function FamilyProfilesWidget({ onOpenFamilyProfiles, onAddProfile, onOpenRelationshipHub }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["family"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [stats, setStats] = useState(null);
   const [recent, setRecent] = useState(null);
   const [error, setError] = useState(false);
@@ -26,22 +34,38 @@ function FamilyProfilesWidget({ onOpenFamilyProfiles, onAddProfile, onOpenRelati
     <GlassCard style={{ padding: "20px 22px" }}>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14 }}>
         <h3 style={{ margin: 0, fontSize: 15, color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Cinzel,serif" }}>
+<<<<<<< HEAD
           👨‍👩‍👧‍👦 Family Profiles
         </h3>
         {stats && (
           <span style={{ fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
             {stats.total} profile{stats.total === 1 ? "" : "s"}
+=======
+          {t("family:widget.title")}
+        </h3>
+        {stats && (
+          <span style={{ fontSize: 12, color: "var(--nv-text-muted, rgba(200,160,255,0.6))" }}>
+            {t(stats.total === 1 ? "family:widget.countSingle" : "family:widget.countPlural", { count: stats.total })}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </span>
         )}
       </div>
 
+<<<<<<< HEAD
       {error && <p style={{ fontSize: 12.5, color: "var(--nv-danger, #ff8888)" }}>Could not load Family Profiles.</p>}
+=======
+      {error && <p style={{ fontSize: 12.5, color: "var(--nv-danger, #ff8888)" }}>{t("family:widget.loadFailed")}</p>}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 
       {!error && recent === null && <SkeletonList rows={2} variant="row" />}
 
       {!error && recent?.length === 0 && (
         <p style={{ fontSize: 12.5, color: "var(--nv-text-muted, rgba(200,160,255,0.6))", margin: "0 0 14px" }}>
+<<<<<<< HEAD
           No profiles yet — add family, friends, or clients to start comparing charts.
+=======
+          {t("family:widget.emptyMessage")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </p>
       )}
 
@@ -72,21 +96,33 @@ function FamilyProfilesWidget({ onOpenFamilyProfiles, onAddProfile, onOpenRelati
           className="pill-btn tap-scale"
           style={{ flex: "1 1 auto", padding: "8px 12px", borderRadius: 16, fontSize: 12, fontWeight: 600, cursor: "pointer", border: "1px solid rgba(180,120,255,0.3)", background: "rgba(123,47,255,0.15)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif" }}
         >
+<<<<<<< HEAD
           + Add Profile
+=======
+          {t("family:widget.addProfile")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </button>
         <button
           onClick={onOpenRelationshipHub}
           className="pill-btn tap-scale"
           style={{ flex: "1 1 auto", padding: "8px 12px", borderRadius: 16, fontSize: 12, fontWeight: 600, cursor: "pointer", border: "1px solid rgba(180,120,255,0.3)", background: "rgba(123,47,255,0.15)", color: "var(--nv-text-primary, #e8d5ff)", fontFamily: "Inter,sans-serif" }}
         >
+<<<<<<< HEAD
           💞 Relationship Hub
+=======
+          {t("family:widget.relationshipHub")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </button>
         <button
           onClick={onOpenFamilyProfiles}
           className="pill-btn tap-scale"
           style={{ flex: "1 1 100%", padding: "8px 12px", borderRadius: 16, fontSize: 12, cursor: "pointer", border: "1px solid transparent", background: "transparent", color: "var(--nv-text-secondary, rgba(210,175,255,0.76))", fontFamily: "Inter,sans-serif" }}
         >
+<<<<<<< HEAD
           View All Profiles →
+=======
+          {t("family:widget.viewAll")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
         </button>
       </div>
     </GlassCard>

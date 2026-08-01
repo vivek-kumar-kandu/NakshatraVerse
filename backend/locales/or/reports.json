@@ -1,0 +1,6 @@
+{
+  "notFound": "ରିପୋର୍ଟ ମିଳିଲା ନାହିଁ।",
+  "fieldsRequired": "ରିପୋର୍ଟ ସଂରକ୍ଷଣ କରିବାକୁ userData, chart, ଏବଂ report ସମସ୍ତ ଆବଶ୍ୟକ।",
+  "pdfFieldsRequired": "PDF ସୃଷ୍ଟି କରିବାକୁ userData, chart, ଏବଂ report ସମସ୍ତ ଆବଶ୍ୟକ।",
+  "matchingPdfFieldsRequired": "PDF ସୃଷ୍ଟି କରିବାକୁ ସମସ୍ତ ତଥ୍ୟ ଆବଶ୍ୟକ।"
+}

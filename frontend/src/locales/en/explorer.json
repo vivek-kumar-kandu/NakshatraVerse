@@ -1,0 +1,169 @@
+{
+  "types": {
+    "planet": "Planets",
+    "house": "Houses",
+    "sign": "Zodiac Signs",
+    "yoga": "Yogas",
+    "dosha": "Doshas",
+    "nakshatra": "Nakshatras",
+    "ascendant": "Ascendant",
+    "aspect": "Aspects"
+  },
+  "typeSingular": {
+    "planet": "Planet",
+    "house": "House",
+    "sign": "Sign",
+    "yoga": "Yoga",
+    "dosha": "Dosha",
+    "nakshatra": "Nakshatra",
+    "ascendant": "Ascendant",
+    "aspect": "Aspect"
+  },
+  "header": {
+    "title": "Kundli Explorer",
+    "breadcrumb": "{{type}} · {{item}}",
+    "notAvailable": "—",
+    "selectPrompt": "Select an item to begin exploring"
+  },
+  "mainPanel": {
+    "loadingPanel": "Loading detail panel…",
+    "emptyTitle": "Nothing selected yet",
+    "emptyMessage": "Choose a planet, house, sign, yoga, dosha, nakshatra, ascendant, or aspect from the panel to explore it here.",
+    "regionAriaLabel": "Explorer detail panel"
+  },
+  "sidePanel": {
+    "treeAriaLabel": "Explorer selection categories",
+    "categoryAriaLabel": "{{label}} ({{count}})",
+    "housePrefix": "House {{num}}",
+    "lordBadge": "Lord: {{lord}}",
+    "aspectCountSingle": "{{count}} aspect",
+    "aspectCountPlural": "{{count}} aspects",
+    "netInfluence": "net {{value}}"
+  },
+  "aiPanel": {
+    "heading": "AI EXPLANATION",
+    "prompt": "Get a Gemini-powered explanation of {{label}}, grounded entirely in this chart's own backend-computed facts.",
+    "explainAriaLabel": "Explain {{label}} with AI",
+    "explainButton": "✨ Explain with AI",
+    "generatingLabel": "Generating an AI explanation for {{label}}",
+    "loadFailed": "The Explorer AI is unavailable right now.",
+    "tryAgain": "↻ Try again"
+  },
+  "common": {
+    "relatedPredictions": "Related Predictions",
+    "relatedRemedies": "Related Remedies",
+    "noLinkedPredictionsTitle": "No linked predictions",
+    "noLinkedRemediesTitle": "No linked remedies",
+    "noRemediesTitle": "No remedies available"
+  },
+  "planet": {
+    "notAvailableTitle": "Planet data not available",
+    "notAvailableMessage": "This chart doesn't have computed position data for this planet yet.",
+    "positionDignityHeading": "POSITION & DIGNITY",
+    "houseLabel": "House",
+    "signLabel": "Sign",
+    "retrogradeBadge": "Retrograde (Vakri)",
+    "combustBadge": "Combust (Asta)",
+    "functionallyNature": "Functionally {{nature}}",
+    "friendshipSignSuffix": "{{relation}} sign",
+    "adjustedStrengthScore": "Adjusted Strength Score",
+    "foundationShadbala": "Foundation Shadbala",
+    "notAvailableValue": "—",
+    "strengthUnavailable": "Detailed strength scoring isn't available for this chart.",
+    "noLinkedPredictionsMessage": "No category prediction currently names {{planet}} as its dominant or supporting planet.",
+    "noLinkedRemediesMessage": "No remedy is currently associated with {{planet}} through this chart's predictions."
+  },
+  "house": {
+    "notAvailableTitle": "House data not available",
+    "notAvailableMessage": "Select a house from the panel to explore it here.",
+    "signBadge": "Sign: {{sign}}",
+    "lordBadge": "Lord: {{lord}}",
+    "meaning": "Meaning",
+    "notAvailableValue": "—",
+    "occupantsHeading": "OCCUPANTS",
+    "noOccupants": "No planets currently occupy this house.",
+    "noLinkedPredictionsMessage": "No category prediction currently names House {{house}} as a supporting house.",
+    "noLinkedRemediesMessage": "No remedy is currently associated with House {{house}} through this chart's predictions.",
+    "itemLabel": "House {{num}}"
+  },
+  "sign": {
+    "notAvailableTitle": "Sign data not available",
+    "notAvailableMessage": "Select a zodiac sign from the panel to explore it here.",
+    "lordBadge": "Lord: {{lord}}",
+    "lagnaBadge": "This chart's Lagna",
+    "rulingPlanet": "Ruling Planet",
+    "notAvailableValue": "—",
+    "occupantsHeading": "PLANETS CURRENTLY IN THIS SIGN",
+    "noOccupants": "No planets currently occupy this sign in this chart.",
+    "noLinkedPredictionsMessage": "No category prediction currently traces back to a planet occupying this sign."
+  },
+  "yoga": {
+    "notFoundTitle": "Yoga not found",
+    "notFoundMessage": "This yoga isn't part of the currently detected set for this chart.",
+    "ruleMatchedBadge": "Rule matched: {{name}}",
+    "contributingPlanetsHeading": "CONTRIBUTING PLANETS",
+    "noContributingPlanets": "No category prediction currently attributes this yoga to specific planets.",
+    "confidenceEffectsTitle": "Confidence & Effects (from linked predictions)",
+    "noLinkedPredictionsMessage": "No category prediction currently cites this yoga as a supporting factor."
+  },
+  "dosha": {
+    "notFoundTitle": "Dosha not found",
+    "notFoundMessage": "This dosha isn't part of the currently detected set for this chart.",
+    "matchingRuleBadge": "Matching rule: {{name}}",
+    "severityBadge": "Severity: {{severity}}",
+    "affectedHousesHeading": "AFFECTED HOUSES",
+    "houseBadge": "House {{num}}",
+    "noAffectedHouses": "No category prediction currently traces this dosha to specific houses.",
+    "remedies": "Remedies",
+    "noRemediesMessage": "No remedy is currently associated with this dosha.",
+    "linkedPredictions": "Linked Predictions",
+    "noLinkedPredictionsMessage": "No category prediction currently cites this dosha as a supporting factor."
+  },
+  "nakshatra": {
+    "notAvailableTitle": "Nakshatra profile not available",
+    "notAvailableMessage": "This chart doesn't have a computed Nakshatra profile yet.",
+    "itemLabel": "Nakshatra",
+    "padaBadge": "Pada {{pada}}",
+    "lordBadge": "Lord: {{lord}}",
+    "ganaBadge": "{{gana}} Gana",
+    "deity": "Deity",
+    "symbol": "Symbol",
+    "nadi": "Nadi",
+    "yoni": "Yoni",
+    "notAvailableValue": "—",
+    "personalityHeading": "PERSONALITY",
+    "careerTendencies": "Career Tendencies",
+    "relationshipTendencies": "Relationship Tendencies",
+    "spiritualTendencies": "Spiritual Tendencies"
+  },
+  "ascendant": {
+    "notAvailableTitle": "Ascendant not available",
+    "notAvailableMessage": "This chart doesn't have a computed Lagna yet.",
+    "itemLabel": "Ascendant",
+    "lordBadge": "Lord: {{lord}}",
+    "risingSign": "Lagna (Rising Sign)",
+    "lagnaLord": "Lagna Lord",
+    "notAvailableValue": "—",
+    "characteristicsHeading": "CHARACTERISTICS (via Lagna Lord's strength)",
+    "functionallyNature": "Functionally {{nature}}",
+    "predictionsLinkedTitle": "Predictions Linked to the Lagna Lord",
+    "lagnaLordFallback": "the Lagna lord",
+    "noLinkedPredictionsMessage": "No category prediction currently names {{lord}} as its dominant or supporting planet."
+  },
+  "aspect": {
+    "notAvailableTitle": "Aspect data not available",
+    "notAvailableMessage": "Select an aspect from the panel to explore it here.",
+    "sourcesHeading": "ASPECT SOURCES → TARGET",
+    "beneficAspects": "Benefic Aspects",
+    "maleficAspects": "Malefic Aspects",
+    "netInfluenceStrength": "Net Influence (Strength)",
+    "housesAspected": "Houses Aspected",
+    "houseLabel": "House {{num}}",
+    "itemLabel": "Aspects on {{target}}",
+    "interpretPureBenefic": "Purely benefic aspects — a supportive influence.",
+    "interpretPureMalefic": "Purely malefic aspects — a challenging influence.",
+    "interpretMixedNetBenefic": "Mixed aspects, net benefic influence overall.",
+    "interpretMixedNetMalefic": "Mixed aspects, net malefic influence overall.",
+    "interpretMixedNeutral": "Mixed aspects with a balanced, neutral net influence."
+  }
+}

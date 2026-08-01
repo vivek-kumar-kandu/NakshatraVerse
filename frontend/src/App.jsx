@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { useState, useCallback, useEffect, lazy, Suspense } from "react";
 import LandingPage from "./pages/LandingPage.jsx";
 import LoadingPage from "./pages/LoadingPage.jsx";
@@ -31,6 +35,13 @@ import { AuthProvider, useAuth } from "./context/AuthContext.jsx";
 // on every stage (splash/home/login/dashboard/etc.), not only while
 // SettingsPage itself happens to be on screen. See its own file header.
 import { ThemeProvider } from "./context/ThemeContext.jsx";
+<<<<<<< HEAD
+=======
+// Multilingual Foundation Phase: mounted at the app root, alongside
+// ThemeProvider — same rationale as that file's own header (applies on
+// every stage, not only while Settings is open). See its own file header.
+import { LanguageProvider } from "./context/LanguageContext.jsx";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import AccountMenu from "./components/common/AccountMenu.jsx";
 import ActionDock from "./components/common/ActionDock.jsx";
 // V3.0 — Premium Command Palette: global Ctrl+K / Cmd+K launcher. Mounted
@@ -149,6 +160,10 @@ const FestivalPage = lazy(() => import("./pages/FestivalPage.jsx"));
 const FestivalIntelligencePage = lazy(() => import("./pages/FestivalIntelligencePage.jsx"));
 // ─── App Controller ───────────────────────────────────────────────────────────
 function AppContent() {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation();
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   // Priority 5.3 fix: the app used to always open on LandingPage (the birth-
   // data form), regardless of whether a session existed, so sign-in was
   // effectively hidden behind the account menu. `stage` now starts as
@@ -609,7 +624,11 @@ function AppContent() {
           chart={assistantContext?.chart}
           report={assistantContext?.report}
           initialQuestion={assistantContext?.initialQuestion}
+<<<<<<< HEAD
           onBack={() => setStage(assistantContext?.returnStage || "results")}
+=======
+          onBack={() => setStage(assistantContext?.returnStage || (isAuthenticated ? "dashboard" : "landing"))}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           onNavigate={handleNavigate}
         />
       </Suspense>
@@ -854,11 +873,21 @@ export default function App() {
   return (
     <ErrorBoundary>
       <ToastProvider>
+<<<<<<< HEAD
         <ThemeProvider>
           <AuthProvider>
             <AppContent />
           </AuthProvider>
         </ThemeProvider>
+=======
+        <LanguageProvider>
+          <ThemeProvider>
+            <AuthProvider>
+              <AppContent />
+            </AuthProvider>
+          </ThemeProvider>
+        </LanguageProvider>
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       </ToastProvider>
     </ErrorBoundary>
   );

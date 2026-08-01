@@ -1,0 +1,77 @@
+{
+  "list": {
+    "backToDashboard": "← డాష్‌బోర్డ్‌కు తిరిగి వెళ్లండి",
+    "title": "సేవ్ చేసిన నివేదికలు",
+    "titleWithCount": "సేవ్ చేసిన నివేదికలు ({{count}})",
+    "generateNewReport": "✦ కొత్త నివేదికను రూపొందించండి",
+    "loadFailed": "మీ సేవ్ చేసిన నివేదికలను లోడ్ చేయలేకపోయింది.",
+    "tryAgain": "↻ మళ్లీ ప్రయత్నించండి",
+    "deleteToastSuccess": "\"{{title}}\" తొలగించబడింది.",
+    "deleteToastFallbackTitle": "నివేదిక",
+    "deleteFailed": "ఆ నివేదికను తొలగించలేకపోయింది.",
+    "downloadToastSuccess": "PDF డౌన్‌లోడ్ అయింది.",
+    "downloadFailed": "PDF ను రూపొందించలేకపోయింది.",
+    "emptyTitle": "ఇంకా సేవ్ చేసిన నివేదిక లేదు",
+    "emptyMessage": "ఇక్కడ మీ సేకరణను నిర్మించడానికి రీడింగ్‌ను రూపొందించి, నివేదికను సేవ్ చేయండి పై నొక్కండి.",
+    "emptyAction": "✦ కొత్త నివేదికను రూపొందించండి",
+    "noMatchesTitle": "సరిపోలికలు కనుగొనబడలేదు",
+    "noMatchesMessage": "సేవ్ చేసిన నివేదిక ఏదీ \"{{query}}\" తో సరిపోలలేదు. వేరే శీర్షిక, పేరు లేదా లగ్నాన్ని ప్రయత్నించండి.",
+    "clearSearch": "శోధనను క్లియర్ చేయండి",
+    "deleteDialog": {
+      "title": "ఈ నివేదికను తొలగించాలా?",
+      "message": "\"{{title}}\" శాశ్వతంగా తీసివేయబడుతుంది. దీన్ని తిరిగి పొందలేరు.",
+      "fallbackTitle": "ఈ నివేదిక",
+      "confirmLabel": "తొలగించండి",
+      "cancelLabel": "రద్దు చేయండి"
+    }
+  },
+  "detail": {
+    "loadFailed": "ఆ నివేదికను లోడ్ చేయలేకపోయింది.",
+    "backToSavedReports": "← సేవ్ చేసిన నివేదికలకు తిరిగి వెళ్లండి",
+    "loading": "మీ సేవ్ చేసిన రీడింగ్ లోడ్ అవుతోంది…",
+    "openHoroscope": "🔮 రాశిఫలం",
+    "openCalendar": "📅 క్యాలెండర్",
+    "openLifeCoach": "🧭 లైఫ్ కోచ్",
+    "askAI": "✨ AI ని అడగండి"
+  },
+  "card": {
+    "savedOn": "{{date}} న సేవ్ చేయబడింది",
+    "view": "చూడండి",
+    "preview": "ప్రివ్యూ",
+    "download": "PDF",
+    "delete": "తొలగించండి",
+    "deleting": "తొలగిస్తోంది…",
+    "lagnaSuffix": "{{lagna}} లగ్నం",
+    "notAvailable": "—"
+  },
+  "searchFilterBar": {
+    "reportLayoutAriaLabel": "నివేదిక లేఅవుట్",
+    "gridView": "గ్రిడ్ వీక్షణ",
+    "listView": "జాబితా వీక్షణ",
+    "searchPlaceholder": "శీర్షిక, పేరు లేదా లగ్నం ద్వారా శోధించండి…",
+    "searchAriaLabel": "సేవ్ చేసిన నివేదికలను శోధించండి",
+    "sortAriaLabel": "సేవ్ చేసిన నివేదికలను క్రమబద్ధీకరించండి",
+    "resultCountSingle": "{{count}} నివేదిక",
+    "resultCountPlural": "{{count}} నివేదికలు",
+    "resultCountFiltered": "{{total}} లో {{count}}"
+  },
+  "sort": {
+    "newest": "కొత్తవి మొదట",
+    "oldest": "పాతవి మొదట",
+    "title-asc": "శీర్షిక (A–Z)",
+    "title-desc": "శీర్షిక (Z–A)"
+  },
+  "previewDrawer": {
+    "ariaLabel": "{{title}} యొక్క ప్రివ్యూ",
+    "closePreview": "ప్రివ్యూను మూసివేయండి",
+    "savedOn": "{{date}} న సేవ్ చేయబడింది",
+    "noDetails": "ఈ నివేదిక కోసం అదనపు వివరాలు సేవ్ చేయబడలేదు.",
+    "description": "ఇది మీ సేవ్ చేసిన రీడింగ్ వివరాల యొక్క శీఘ్ర ప్రివ్యూ. ప్రతి విభాగాన్ని చదవడానికి పూర్తి నివేదికను తెరవండి — ప్రేమ, కెరీర్, సంపద, ఆరోగ్యం, దోషాలు & యోగాలు, పరిహారాలు, మరియు మీ జీవిత సారాంశం.",
+    "viewFullReport": "✦ పూర్తి నివేదికను చూడండి",
+    "preparingPdf": "PDF సిద్ధం చేస్తోంది…",
+    "downloadPdf": "⭳ PDF డౌన్‌లోడ్ చేయండి"
+  },
+  "summarizeAiAria": "AI తో ఈ నివేదికను సంగ్రహించండి",
+  "whyThisRemedy": "💡 Why this remedy?",
+  "remedyNotFound": "This remedy is not part of this chart's backend-derived remedies."
+}

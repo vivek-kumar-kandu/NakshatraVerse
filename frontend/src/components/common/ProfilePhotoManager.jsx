@@ -1,4 +1,8 @@
 import { useEffect, useRef, useState } from "react";
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { PURPLE_GRADIENT } from "../../constants/astrology.js";
 import { useToast } from "./Toast.jsx";
 import {
@@ -72,6 +76,10 @@ function pillStyle(variant) {
 }
 
 function ProfilePhotoManager({ user, onUpdate, size = 96 }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["profile"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const toast = useToast();
   const fileInputRef = useRef(null);
   const containerRef = useRef(null);
@@ -133,11 +141,19 @@ function ProfilePhotoManager({ user, onUpdate, size = 96 }) {
     if (!file) return;
 
     if (!isSupportedPhotoFile(file)) {
+<<<<<<< HEAD
       toast.error("Please choose a JPG, PNG, or WEBP image.");
       return;
     }
     if (isPhotoFileTooLarge(file)) {
       toast.error("That image is too large. Please choose a file under 8MB.");
+=======
+      toast.error(t("profile:photoManager.unsupportedFileType"));
+      return;
+    }
+    if (isPhotoFileTooLarge(file)) {
+      toast.error(t("profile:photoManager.fileTooLarge"));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
       return;
     }
 
@@ -146,7 +162,11 @@ function ProfilePhotoManager({ user, onUpdate, size = 96 }) {
       const dataUrl = await fileToResizedDataUrl(file);
       setPreview(dataUrl);
     } catch (err) {
+<<<<<<< HEAD
       toast.error(err.message || "Could not process that image.");
+=======
+      toast.error(err.message || t("profile:photoManager.processFailed"));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     } finally {
       setReading(false);
     }
@@ -158,10 +178,17 @@ function ProfilePhotoManager({ user, onUpdate, size = 96 }) {
     try {
       saveStoredPhoto(user.id, preview);
       onUpdate({ picture: preview });
+<<<<<<< HEAD
       toast.success("Profile photo updated.");
       setPreview(null);
     } catch (err) {
       toast.error(err.message || "Could not save your photo.");
+=======
+      toast.success(t("profile:photoManager.photoUpdated"));
+      setPreview(null);
+    } catch (err) {
+      toast.error(err.message || t("profile:photoManager.saveFailed"));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     } finally {
       setSaving(false);
     }
@@ -180,9 +207,15 @@ function ProfilePhotoManager({ user, onUpdate, size = 96 }) {
     try {
       clearStoredPhoto(user.id);
       onUpdate({ picture: null });
+<<<<<<< HEAD
       toast.success("Profile photo removed.");
     } catch {
       toast.error("Could not remove your photo.");
+=======
+      toast.success(t("profile:photoManager.photoRemoved"));
+    } catch {
+      toast.error(t("profile:photoManager.removeFailed"));
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
     } finally {
       setRemoving(false);
     }
@@ -226,7 +259,11 @@ function ProfilePhotoManager({ user, onUpdate, size = 96 }) {
           disabled={busy}
           aria-haspopup="menu"
           aria-expanded={menuOpen}
+<<<<<<< HEAD
           aria-label={hasPhoto ? "Change profile photo" : "Upload profile photo"}
+=======
+          aria-label={hasPhoto ? t("profile:photoManager.changePhotoAriaLabel") : t("profile:photoManager.uploadPhotoAriaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           className="pill-btn tap-scale"
           style={{
             position: "absolute", bottom: -2, right: -2, width: 32, height: 32, borderRadius: "50%",
@@ -242,7 +279,11 @@ function ProfilePhotoManager({ user, onUpdate, size = 96 }) {
       {menuOpen && !preview && (
         <div
           role="menu"
+<<<<<<< HEAD
           aria-label="Profile photo options"
+=======
+          aria-label={t("profile:photoManager.menuAriaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           style={{
             position: "absolute", top: "calc(100% + 8px)", left: "50%", transform: "translateX(-50%)",
             width: 190, background: "var(--nv-surface-strong, rgba(18,0,38,0.96))", border: "1px solid var(--nv-surface-border, rgba(180,120,255,0.25))",
@@ -251,11 +292,19 @@ function ProfilePhotoManager({ user, onUpdate, size = 96 }) {
           }}
         >
           <button role="menuitem" onClick={openFilePicker} className="menu-item" style={menuItemStyle}>
+<<<<<<< HEAD
             <span aria-hidden="true">🖼️</span> {hasPhoto ? "Replace Photo" : "Upload Photo"}
           </button>
           {hasPhoto && (
             <button role="menuitem" onClick={handleRemove} className="menu-item" style={{ ...menuItemStyle, color: "var(--nv-danger, #ff9d9d)" }}>
               <span aria-hidden="true">🗑️</span> Remove Photo
+=======
+            <span aria-hidden="true">🖼️</span> {hasPhoto ? t("profile:photoManager.replacePhoto") : t("profile:photoManager.uploadPhoto")}
+          </button>
+          {hasPhoto && (
+            <button role="menuitem" onClick={handleRemove} className="menu-item" style={{ ...menuItemStyle, color: "var(--nv-danger, #ff9d9d)" }}>
+              <span aria-hidden="true">🗑️</span> {t("profile:photoManager.removePhoto")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           )}
         </div>
@@ -264,7 +313,11 @@ function ProfilePhotoManager({ user, onUpdate, size = 96 }) {
       {preview && (
         <div
           role="dialog"
+<<<<<<< HEAD
           aria-label="Preview new profile photo"
+=======
+          aria-label={t("profile:photoManager.previewDialogAriaLabel")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           style={{
             position: "absolute", top: "calc(100% + 8px)", left: "50%", transform: "translateX(-50%)",
             width: 210, background: "var(--nv-surface-strong, rgba(18,0,38,0.96))", border: "1px solid var(--nv-surface-border, rgba(180,120,255,0.25))",
@@ -273,6 +326,7 @@ function ProfilePhotoManager({ user, onUpdate, size = 96 }) {
           }}
         >
           <p style={{ margin: 0, fontSize: 11.5, color: "var(--nv-text-secondary, rgba(200,160,255,0.7))", textAlign: "center" }}>
+<<<<<<< HEAD
             Preview your new photo
           </p>
           <div style={{ display: "flex", gap: 8, justifyContent: "center" }}>
@@ -281,6 +335,16 @@ function ProfilePhotoManager({ user, onUpdate, size = 96 }) {
             </button>
             <button type="button" onClick={handleSavePreview} disabled={saving} className="pill-btn tap-scale" style={pillStyle("primary")}>
               {saving ? <Spinner size={12} /> : "Save"}
+=======
+            {t("profile:photoManager.previewYourNewPhoto")}
+          </p>
+          <div style={{ display: "flex", gap: 8, justifyContent: "center" }}>
+            <button type="button" onClick={handleCancelPreview} disabled={saving} className="pill-btn tap-scale" style={pillStyle()}>
+              {t("profile:photoManager.cancel")}
+            </button>
+            <button type="button" onClick={handleSavePreview} disabled={saving} className="pill-btn tap-scale" style={pillStyle("primary")}>
+              {saving ? <Spinner size={12} /> : t("profile:photoManager.save")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
             </button>
           </div>
         </div>

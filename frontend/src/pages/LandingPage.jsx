@@ -1,17 +1,29 @@
+<<<<<<< HEAD
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
 import { useState } from "react";
 import CosmicBg from "../components/common/CosmicBg.jsx";
 import GlassCard from "../components/common/GlassCard.jsx";
 import { GOLD_GRADIENT } from "../constants/astrology.js";
 
 const FIELDS = [
+<<<<<<< HEAD
   { key:"name", label:"Full Name", type:"text", placeholder:"e.g. Arjun Sharma", icon:"✦" },
+=======
+  {key:"name", label:"Full Name", type:"text", placeholder:"e.g. Arjun Sharma", icon:"✦" },
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   { key:"dob",  label:"Date of Birth", type:"date", placeholder:"", icon:"◈" },
   { key:"tob",  label:"Time of Birth", type:"time", placeholder:"", icon:"◉" },
   { key:"pob",  label:"Place of Birth", type:"text", placeholder:"e.g. Mumbai, India", icon:"◎" },
 ];
 
+<<<<<<< HEAD
 const INPUT_STYLE = {
   width:"100%", padding:"14px 18px",
+=======
+const INPUT_STYLE = {width:"100%", padding:"14px 18px",
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   background:"rgba(255,255,255,0.05)", border:"1px solid rgba(180,120,255,0.28)",
   borderRadius:12, color:"var(--nv-text-primary, #e8d5ff)", fontSize:15, outline:"none",
   fontFamily:"Inter,sans-serif", transition:"border-color var(--nv-duration-base) var(--nv-ease-standard), box-shadow var(--nv-duration-base) var(--nv-ease-standard)",
@@ -29,6 +41,10 @@ const INPUT_STYLE = {
 //     they aren't read aloud as meaningless symbols.
 // ─────────────────────────────────────────────────────────────────────────
 function LandingPage({ onSubmit }) {
+<<<<<<< HEAD
+=======
+  const { t } = useTranslation(["home", "common"]);
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
   const [form, setForm] = useState({ name:"", dob:"", tob:"", pob:"" });
   const [errors, setErrors] = useState({});
 
@@ -60,7 +76,11 @@ function LandingPage({ onSubmit }) {
             NakshatraVerse
           </h1>
           <p style={{ margin:0, fontSize:16, color:"var(--nv-text-secondary, rgba(200,160,255,0.7))", letterSpacing:3, fontStyle:"italic" }}>
+<<<<<<< HEAD
             Ancient Wisdom · Cosmic Intelligence
+=======
+            {t("home:hero.tagline", "Ancient Wisdom · Cosmic Intelligence")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
           <div aria-hidden="true" style={{ display:"flex", justifyContent:"center", gap:20, marginTop:18,
             fontSize:22, animation:"floatUp 3s ease-in-out infinite alternate" }}>
@@ -72,7 +92,11 @@ function LandingPage({ onSubmit }) {
           animation:"fadeIn 0.8s 0.2s ease both", opacity:0 }}>
           <h2 style={{ margin:"0 0 28px", textAlign:"center", fontSize:20, color:"#bf7fff",
             letterSpacing:1, fontFamily:"Cinzel,serif", fontWeight:600 }}>
+<<<<<<< HEAD
             Reveal Your Cosmic Blueprint
+=======
+            {t("home:hero.subtitle", "Reveal Your Cosmic Blueprint")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </h2>
           <form onSubmit={(ev) => { ev.preventDefault(); handleSubmit(); }} noValidate>
             {FIELDS.map(f => {
@@ -106,11 +130,19 @@ function LandingPage({ onSubmit }) {
               color:"var(--nv-text-on-accent, #fff)", fontSize:16, fontWeight:600, cursor:"pointer",
               letterSpacing:1, boxShadow:"0 4px 28px rgba(123,47,255,0.38)",
               transition:"all var(--nv-duration-base) var(--nv-ease-standard)", fontFamily:"Cinzel,serif",
+<<<<<<< HEAD
             }}>✦ Generate My Kundli ✦</button>
           </form>
           <p style={{ textAlign:"center", margin:"18px 0 0", fontSize:12,
             color:"rgba(180,130,255,0.45)", letterSpacing:0.5 }}>
             Powered by Vedic Astrology & Gemini AI · Your data stays private
+=======
+            }}>{t("home.generateMyKundli", "✦ Generate My Kundli ✦")}</button>
+          </form>
+          <p style={{ textAlign:"center", margin:"18px 0 0", fontSize:12,
+            color:"rgba(180,130,255,0.45)", letterSpacing:0.5 }}>
+            {t("home:footerNote", "Powered by Vedic Astrology & Gemini AI · Your data stays private")}
+>>>>>>> dd91dee (release: NakshatraVerse v1.0.0 Production Ready)
           </p>
         </GlassCard>
 
