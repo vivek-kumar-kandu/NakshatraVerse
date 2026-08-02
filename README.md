@@ -120,15 +120,15 @@ graph TD
 
 ## 3. Visual Showcase & Screenshots
 
-### 🖼️ Platform Interface
+### 🖼️ Platform Interface Showcase
 
-| Landing & Birth Form | Cosmic Birth Chart | Interactive Dashboard |
-|:---:|:---:|:---:|
-| ![Landing Page](./docs/assets/social-preview.png) | ![Birth Chart](./docs/assets/social-preview.png) | ![Dashboard](./docs/assets/social-preview.png) |
+| Birth Report Overview | Interactive Kundli Chart |
+|:---:|:---:|
+| ![Birth Details & Numerology Overview](./docs/assets/birth-overview.png) | ![Interactive Birth Chart & Planetary Positions](./docs/assets/interactive-chart.png) |
 
-| AI Astrology Assistant | Panchang & Muhurat | Kundli Matching |
+| AI Astrology Assistant | Daily Panchang & Muhurat | Kundli Matching |
 |:---:|:---:|:---:|
-| ![AI Assistant](./docs/assets/social-preview.png) | ![Panchang](./docs/assets/social-preview.png) | ![Kundli Matching](./docs/assets/social-preview.png) |
+| ![AI Astrology Assistant Chat](./docs/assets/ai-assistant.png) | ![Daily Panchang & Muhurat Selection](./docs/assets/daily-panchang.png) | ![Kundli Ashta Koota Matching](./docs/assets/kundli-matching.png) |
 
 ---
 
