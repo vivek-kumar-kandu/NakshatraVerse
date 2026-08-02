@@ -122,9 +122,9 @@ graph TD
 
 ### 🖼️ Platform Interface Showcase
 
-| Birth Report Overview | Interactive Kundli Chart |
-|:---:|:---:|
-| ![Birth Details & Numerology Overview](./docs/assets/birth-overview.png) | ![Interactive Birth Chart & Planetary Positions](./docs/assets/interactive-chart.png) |
+| User Dashboard Welcome | Birth Report Overview | Interactive Kundli Chart |
+|:---:|:---:|:---:|
+| ![User Dashboard Welcome](./docs/assets/dashboard-welcome.png) | ![Birth Details & Numerology Overview](./docs/assets/birth-overview.png) | ![Interactive Birth Chart & Planetary Positions](./docs/assets/interactive-chart.png) |
 
 | AI Astrology Assistant | Daily Panchang & Muhurat | Kundli Matching |
 |:---:|:---:|:---:|
