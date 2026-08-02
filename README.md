@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![NakshatraVerse Banner](./docs/assets/social-preview.png)
+![NakshatraVerse Banner](./docs/assets/banner.png)
 
 ### **Discover Your Cosmic Blueprint**
 *AI-Powered Vedic Astrology Platform with Deterministic Ephemeris Engine, Kundli Matching, Panchang, Life Coach & Multilingual AI Insights.*
