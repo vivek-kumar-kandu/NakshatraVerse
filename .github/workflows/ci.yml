@@ -16,6 +16,11 @@ jobs:
         image: mongo:7.0
         ports:
           - 27017:27017
+        options: >-
+          --health-cmd "mongosh --eval 'db.runCommand({ping: 1})' || mongo --eval 'db.runCommand({ping: 1})'"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
 
     steps:
       - name: Checkout Repository
@@ -35,7 +40,7 @@ jobs:
         run: cd backend && npm test
         env:
           NODE_ENV: test
-          MONGODB_URI: mongodb://localhost:27017/nakshatraverse_ci
+          MONGODB_URI: mongodb://127.0.0.1:27017/nakshatraverse_ci
           JWT_SECRET: ci-test-secret-32-chars-minimum-length-key
           GOOGLE_API_KEY: mock_key_for_ci_tests
 
