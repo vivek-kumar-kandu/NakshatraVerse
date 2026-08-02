@@ -8,6 +8,7 @@
 *AI-Powered Vedic Astrology Platform with Deterministic Ephemeris Engine, Kundli Matching, Panchang, Life Coach & Multilingual AI Insights.*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![CI Pipeline](https://github.com/vivek-kumar-kandu/NakshatraVerse/actions/workflows/ci.yml/badge.svg)](https://github.com/vivek-kumar-kandu/NakshatraVerse/actions)
 [![Build Status](https://img.shields.io/badge/status-production--ready-brightgreen.svg)]()
 [![Backend Tests](https://img.shields.io/badge/backend%20tests-461%2F461%20passing-success.svg)]()
 [![Frontend Tests](https://img.shields.io/badge/frontend%20tests-168%2F168%20passing-success.svg)]()
