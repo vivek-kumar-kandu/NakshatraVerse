@@ -1,11 +1,10 @@
 // ─────────────────────────────────────────────────────────────────────────
 // User Repository (Priority 5.2)
-// Single responsibility: persistence for user accounts. No password
-// hashing, token issuing, or HTTP concerns live here — see
+// Single responsibility: persistence for user accounts via Mongoose/MongoDB.
+// No password hashing, token issuing, or HTTP concerns live here — see
 // services/auth/* and controllers/auth.controller.js for that. Keeping
-// this layer thin means the underlying store (currently a JSON file, see
-// db/jsonFileStore.js) can be swapped for a real database later without
-// touching auth/user business logic.
+// this layer thin means the underlying store (MongoDB via Mongoose) can be
+// configured or swapped without touching auth/user business logic.
 // ─────────────────────────────────────────────────────────────────────────
 import User from "../models/User.model.js";
 

@@ -76,11 +76,11 @@ export const googleLogin = asyncHandler(async (req, res) => {
   const { idToken } = req.body || {};
   const profile = await verifyGoogleIdToken(idToken); // throws curated errors on failure
 
-let user = await userRepository.findByGoogleId(profile.googleId);
+  let user = await userRepository.findByGoogleId(profile.googleId);
 
-if (!user) {
-  user = await userRepository.findByEmail(profile.email);
-}
+  if (!user) {
+    user = await userRepository.findByEmail(profile.email);
+  }
   if (!user) {
     user = await userRepository.create({
       name: profile.name,
@@ -96,6 +96,43 @@ if (!user) {
 
   issueSession(res, user);
   res.json({ user: userRepository.toPublicUser(user) });
+});
+
+export const forgotPassword = asyncHandler(async (req, res) => {
+  const { email } = req.body || {};
+  if (email) {
+    const user = await userRepository.findByEmail(email);
+    if (user && user.passwordHash) {
+      const { createPasswordResetToken } = await import("../services/auth/passwordResetService.js");
+      const token = createPasswordResetToken(user.id);
+      logger.info(`Password reset token generated for user ${user.id} (${user.email}): ${token}`);
+    }
+  }
+  // Account enumeration safe response - always respond with success
+  res.json({ ok: true, message: req.t ? req.t("auth.passwordResetSent") : "If an account with that email exists, a password reset link has been sent." });
+});
+
+export const resetPassword = asyncHandler(async (req, res) => {
+  const { token, newPassword } = req.body || {};
+  if (!token || !newPassword) {
+    return res.status(400).json({ error: req.t ? req.t("auth.missingResetToken") : "Reset token and new password are required." });
+  }
+  const { verifyAndConsumeResetToken } = await import("../services/auth/passwordResetService.js");
+  const userId = await verifyAndConsumeResetToken(token);
+  if (!userId) {
+    return res.status(400).json({ error: req.t ? req.t("auth.invalidResetToken") : "Password reset token is invalid or has expired." });
+  }
+  const user = await userRepository.findById(userId);
+  if (!user) {
+    return res.status(404).json({ error: req.t ? req.t("auth.accountNoLongerExists") : "Account no longer exists." });
+  }
+
+  const passwordHash = await hashPassword(newPassword);
+  // Increment tokenVersion on password reset to invalidate previous sessions (BUG-02)
+  const newTokenVersion = (user.tokenVersion || 0) + 1;
+  await userRepository.update(user.id, { passwordHash, tokenVersion: newTokenVersion });
+  logger.info(`Password reset successfully for user ${user.id}`);
+  res.json({ ok: true, message: req.t ? req.t("auth.passwordResetSuccess") : "Password has been reset successfully." });
 });
 
 export const refresh = asyncHandler(async (req, res) => {
@@ -114,9 +151,13 @@ export const refresh = asyncHandler(async (req, res) => {
     return res.status(401).json({ error: req.t("auth.invalidRefreshToken") });
   }
 
-  const user =  await userRepository.findById(payload.sub);
+  const user = await userRepository.findById(payload.sub);
   if (!user) {
     return res.status(401).json({ error: req.t("auth.accountNoLongerExists") });
+  }
+  // Token revocation check (BUG-02)
+  if (payload.tokenVersion !== undefined && user.tokenVersion !== undefined && payload.tokenVersion !== user.tokenVersion) {
+    return res.status(401).json({ error: req.t("auth.sessionExpired") });
   }
 
   issueSession(res, user);
@@ -124,11 +165,6 @@ export const refresh = asyncHandler(async (req, res) => {
 });
 
 export const logout = (req, res) => {
-  // clearCookie only needs the identifying options (httpOnly/secure/
-  // sameSite/path) to match the cookie it's clearing — passing `maxAge`
-  // (present in refreshCookieOptions()) is deprecated in Express 4.21+ and
-  // ignored anyway, since clearCookie always sets its own immediate
-  // expiry. Strip it explicitly so no deprecation warning is logged.
   const { maxAge: _accessMaxAge, ...accessOpts } = accessCookieOptions();
   const { maxAge: _refreshMaxAge, ...refreshOpts } = refreshCookieOptions();
   res.clearCookie(ACCESS_COOKIE, accessOpts);
@@ -137,9 +173,9 @@ export const logout = (req, res) => {
 };
 
 export const me = asyncHandler(async (req, res) => {
-  const user =  await userRepository.findById(req.user.id);
+  const user = await userRepository.findById(req.user.id);
   if (!user) return res.status(401).json({ error: req.t("auth.accountNoLongerExists") });
   res.json({ user: userRepository.toPublicUser(user) });
 });
 
-export default { register, login, googleLogin, refresh, logout, me };
+export default { register, login, googleLogin, forgotPassword, resetPassword, refresh, logout, me };

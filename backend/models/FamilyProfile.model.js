@@ -9,11 +9,19 @@ const familyProfileSchema = new mongoose.Schema(
   {
     _id: { type: String, default: () => crypto.randomUUID() },
     userId: { type: String, required: true, index: true },
+    name: { type: String, required: true, trim: true },
+    dob: { type: String, required: true, trim: true },
+    tob: { type: String, default: "", trim: true },
+    pob: { type: String, default: "", trim: true },
+    gender: { type: String, default: "", trim: true },
+    relationship: { type: String, default: "", trim: true },
+    archived: { type: Boolean, default: false },
+    metadata: { type: mongoose.Schema.Types.Mixed, default: {} },
   },
   {
     timestamps: { createdAt: "createdAt", updatedAt: "updatedAt" },
     versionKey: false,
-    strict: false,
+    strict: true,
   }
 );
 

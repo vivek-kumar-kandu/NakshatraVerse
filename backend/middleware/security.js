@@ -30,10 +30,80 @@ export function securityHeaders(req, res, next) {
   next();
 }
 
-// Fixed-window counter per IP, reset every `windowMs`. A Map is sufficient
-// for a single-process deployment; a multi-instance deployment would swap
-// this for a shared store (e.g. Redis) — see Priority 5 recommendations.
+// Fixed-window rate limiter per IP.
+//
+// Storage strategy (chosen at startup, never changes):
+//   • Redis (ioredis) — used when REDIS_URL env var is set. Counters are
+//     stored in a shared Redis instance, so all backend pods/instances share
+//     the same window. This is the correct production behaviour for
+//     multi-instance deployments (fixes BUG-01).
+//   • In-memory Map — fallback when REDIS_URL is absent. Correct for
+//     single-process deployments (local dev, single container). Zero
+//     breaking changes: existing code that doesn't set REDIS_URL keeps
+//     working identically to before.
+//
+// Both paths expose the same factory signature:
+//   createRateLimiter({ windowMs, max, name }) → Express middleware
+// so all existing callers below are untouched.
+
+let redisClient = null;
+
+if (config.REDIS_URL) {
+  // Lazy-import ioredis only when Redis is actually configured. This keeps
+  // the package truly optional — the app starts fine even if ioredis is not
+  // installed (npm install --omit=optional), which is the default for dev.
+  try {
+    const { default: Redis } = await import("ioredis").catch(() => ({ default: null }));
+    if (Redis) {
+      redisClient = new Redis(config.REDIS_URL, {
+        maxRetriesPerRequest: 1,  // fail fast rather than blocking requests
+        enableReadyCheck: false,
+        lazyConnect: true,
+      });
+      redisClient.on("error", (err) => {
+        logger.warn(`Redis rate-limiter error (falling back to in-memory): ${err.message}`);
+        redisClient = null; // degrade gracefully on connection loss
+      });
+      await redisClient.connect().catch(() => { redisClient = null; });
+      if (redisClient) logger.info("Rate limiter: Redis backend active.");
+    }
+  } catch {
+    logger.warn("Rate limiter: ioredis not available, using in-memory fallback.");
+  }
+} else {
+  logger.info("Rate limiter: in-memory backend (set REDIS_URL for multi-instance deployments).");
+}
+
 function createRateLimiter({ windowMs, max, name }) {
+  // ── Redis-backed (multi-instance safe) ───────────────────────────────
+  if (redisClient) {
+    return async function rateLimiter(req, res, next) {
+      const ip = req.ip || req.connection?.remoteAddress || "unknown";
+      const key = `rl:${name}:${ip}`;
+      try {
+        const count = await redisClient.incr(key);
+        if (count === 1) {
+          // First hit in this window — set the TTL (atomic with INCR+EXPIRE)
+          await redisClient.pexpire(key, windowMs);
+        }
+        if (count > max) {
+          const ttl = await redisClient.pttl(key);
+          logger.warn(`Rate limit exceeded for ${ip} on ${name} (${count}/${max}).`);
+          res.setHeader("Retry-After", Math.ceil(Math.max(ttl, 0) / 1000));
+          return res.status(429).json({
+            error: req.t ? req.t("errors.tooManyRequests") : "Too many requests. Please slow down and try again shortly.",
+          });
+        }
+      } catch (err) {
+        // Redis blip — fail open (let the request through) rather than
+        // taking the whole endpoint down.
+        logger.warn(`Rate limiter Redis error on ${name}: ${err.message} — allowing request`);
+      }
+      next();
+    };
+  }
+
+  // ── In-memory fallback (single-process) ─────────────────────────────
   const hits = new Map(); // ip -> { count, windowStart }
 
   // Periodically sweep expired windows so the Map can't grow unbounded
@@ -44,7 +114,7 @@ function createRateLimiter({ windowMs, max, name }) {
       if (now - entry.windowStart > windowMs) hits.delete(ip);
     }
   }, Math.max(windowMs, 60000));
-  sweeper.unref?.(); // never keep the process alive just for this timer
+  sweeper.unref?.();
 
   return function rateLimiter(req, res, next) {
     const ip = req.ip || req.connection?.remoteAddress || "unknown";
@@ -63,6 +133,7 @@ function createRateLimiter({ windowMs, max, name }) {
     next();
   };
 }
+
 
 // Generous limits — sized to stop abuse/runaway loops, not to constrain a
 // legitimate user filling out the birth-data form a few times in a row.

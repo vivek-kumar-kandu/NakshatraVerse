@@ -28,15 +28,19 @@ function requireSecret() {
 }
 
 export function signAccessToken(user) {
-  return jwt.sign({ sub: user.id, email: user.email, name: user.name }, requireSecret(), {
-    expiresIn: config.JWT_ACCESS_EXPIRES_IN,
-  });
+  return jwt.sign(
+    { sub: user.id, email: user.email, name: user.name, tokenVersion: user.tokenVersion || 0 },
+    requireSecret(),
+    { expiresIn: config.JWT_ACCESS_EXPIRES_IN }
+  );
 }
 
 export function signRefreshToken(user) {
-  return jwt.sign({ sub: user.id, type: "refresh" }, requireSecret(), {
-    expiresIn: config.JWT_REFRESH_EXPIRES_IN,
-  });
+  return jwt.sign(
+    { sub: user.id, type: "refresh", tokenVersion: user.tokenVersion || 0 },
+    requireSecret(),
+    { expiresIn: config.JWT_REFRESH_EXPIRES_IN }
+  );
 }
 
 export function verifyToken(token) {

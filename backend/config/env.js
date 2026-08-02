@@ -252,6 +252,13 @@ const EXPLANATION_MAX_LABEL_LENGTH = Number(process.env.EXPLANATION_MAX_LABEL_LE
 const EXPLANATION_CACHE_TTL_MS = Number(process.env.EXPLANATION_CACHE_TTL_MS) || 60 * 60 * 1000; // 1h
 const EXPLANATION_CACHE_MAX_ENTRIES = Number(process.env.EXPLANATION_CACHE_MAX_ENTRIES) || 300;
 
+// Optional Redis URL for shared rate-limiting, session caching, and
+// password reset tokens in multi-instance deployments. When not set,
+// all features fall back to safe in-memory implementations that work
+// correctly for single-process deployments (local dev, single container).
+// Format: redis://[:password@]host[:port][/db]
+const REDIS_URL = (process.env.REDIS_URL || "").trim();
+
 export const config = {
   PORT,
   GOOGLE_API_KEY,
@@ -305,6 +312,7 @@ export const config = {
   EXPLANATION_MAX_LABEL_LENGTH,
   EXPLANATION_CACHE_TTL_MS,
   EXPLANATION_CACHE_MAX_ENTRIES,
+  REDIS_URL,
 };
 
 export default config;

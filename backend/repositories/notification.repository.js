@@ -1,9 +1,7 @@
 // ─────────────────────────────────────────────────────────────────────────
 // Notification Repository (V4.4 Phase 1 — Notification Infrastructure)
-// Persistence for user notifications. Mirrors familyProfile.repository.js
-// exactly: a thin wrapper around JsonFileStore, one JSON file per
-// collection (notifications.json), ownership enforcement left to the
-// service layer above this file.
+// Persistence for user notifications via Mongoose/MongoDB Notification model.
+// Ownership enforcement is handled by the service layer above this file.
 // ─────────────────────────────────────────────────────────────────────────
 import Notification from "../models/Notification.model.js";
 

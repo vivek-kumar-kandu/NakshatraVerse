@@ -13,6 +13,7 @@ const userSchema = new mongoose.Schema(
     passwordHash: { type: String, default: null },
     googleId: { type: String, default: null, index: true },
     picture: { type: String, default: null },
+    tokenVersion: { type: Number, default: 0 },
   },
   {
     timestamps: { createdAt: "createdAt", updatedAt: "updatedAt" },
