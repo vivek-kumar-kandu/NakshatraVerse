@@ -11,6 +11,12 @@ jobs:
     name: Backend Test Suite
     runs-on: ubuntu-latest
 
+    services:
+      mongodb:
+        image: mongo:7.0
+        ports:
+          - 27017:27017
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -23,13 +29,14 @@ jobs:
           cache-dependency-path: backend/package-lock.json
 
       - name: Install Backend Dependencies
-        run: cd backend && npm ci
+        run: cd backend && (npm ci || npm install --no-audit)
 
       - name: Run Backend Tests
         run: cd backend && npm test
         env:
           NODE_ENV: test
-          JWT_SECRET: ci-test-secret-32-chars-minimum-length
+          MONGODB_URI: mongodb://localhost:27017/nakshatraverse_ci
+          JWT_SECRET: ci-test-secret-32-chars-minimum-length-key
           GOOGLE_API_KEY: mock_key_for_ci_tests
 
   test-frontend:
@@ -48,7 +55,11 @@ jobs:
           cache-dependency-path: frontend/package-lock.json
 
       - name: Install Frontend Dependencies
-        run: cd frontend && npm ci
+        run: cd frontend && (npm ci || npm install --no-audit)
 
       - name: Run Frontend Tests
         run: cd frontend && npm test
+        env:
+          CI: true
+          NODE_ENV: test
+          VITE_API_BASE_URL: http://localhost:8617
